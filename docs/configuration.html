@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Configuration | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="canonical" href="http://hexo.io/docs/configuration.html">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'hexo.io');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body class="page">
+  <header id="header">
+  <div class="outer">
+    <div class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      <nav id="main-nav">
+        <ul id="main-nav-list">
+          
+            <li class="main-nav-item">
+              <a href="/docs/" class="main-nav-link current">Docs</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="/api/classes/Hexo.html" class="main-nav-link">API</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="https://github.com/tommy351/hexo/wiki/Plugins" class="main-nav-link">Plugins</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="https://github.com/tommy351/hexo/wiki/Themes" class="main-nav-link">Themes</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="https://github.com/tommy351/hexo" class="main-nav-link">Source</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+  <article class="page">
+  <header id="page-banner">
+  <div class="outer">
+    <div class="inner">
+      <h1 class="page-title">Configuration</h1>
+    </div>
+  </div>
+</header>
+  <div class="outer">
+    <div class="inner">
+  <select id="page-mobile-menu">
+    <option value="">Navigate...</option>
+    
+      <optgroup label="Getting Started">
+        
+          <option value="/docs/index.html">Overview</option>
+        
+          <option value="/docs/setup.html">Setup</option>
+        
+          <option value="/docs/configuration.html">Configuration</option>
+        
+          <option value="/docs/commands.html">Commands</option>
+        
+          <option value="/docs/migration.html">Migration</option>
+        
+      </optgroup>
+    
+      <optgroup label="Basic Usage">
+        
+          <option value="/docs/writing.html">Writing</option>
+        
+          <option value="/docs/generating.html">Generating</option>
+        
+          <option value="/docs/tag-plugins.html">Tag Plugins</option>
+        
+          <option value="/docs/server.html">Server</option>
+        
+          <option value="/docs/deployment.html">Deployment</option>
+        
+      </optgroup>
+    
+      <optgroup label="Customization">
+        
+          <option value="/docs/permalinks.html">Permalinks</option>
+        
+          <option value="/docs/themes.html">Themes</option>
+        
+          <option value="/docs/variables.html">Variables</option>
+        
+          <option value="/docs/pagination.html">Pagination</option>
+        
+          <option value="/docs/helpers.html">Helpers</option>
+        
+          <option value="/docs/i18n.html">i18n</option>
+        
+      </optgroup>
+    
+      <optgroup label="Advanced">
+        
+          <option value="/docs/models.html">Models</option>
+        
+          <option value="/docs/events.html">Events</option>
+        
+          <option value="/docs/plugins.html">Plugins</option>
+        
+      </optgroup>
+    
+      <optgroup label="Miscellaneous">
+        
+          <option value="/docs/troubleshooting.html">Troubleshooting</option>
+        
+          <option value="/docs/contributing.html">Contributing</option>
+        
+      </optgroup>
+    
+  </select>
+</div>
+    <div class="page-content">
+      <div class="toc-wrap">
+        <strong class="toc-title">Contents</strong>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Configuration"><span class="toc-number">1.</span> <span class="toc-text">Configuration</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Site"><span class="toc-number">1.1.</span> <span class="toc-text">Site</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#URL"><span class="toc-number">1.2.</span> <span class="toc-text">URL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Writing"><span class="toc-number">1.3.</span> <span class="toc-text">Writing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Category_&amp;_Tag"><span class="toc-number">1.4.</span> <span class="toc-text">Category &amp; Tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Archives"><span class="toc-number">1.5.</span> <span class="toc-text">Archives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Server"><span class="toc-number">1.6.</span> <span class="toc-text">Server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Date_/_Time_format"><span class="toc-number">1.7.</span> <span class="toc-text">Date / Time format</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pagination"><span class="toc-number">1.8.</span> <span class="toc-text">Pagination</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Comment"><span class="toc-number">1.9.</span> <span class="toc-text">Comment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Extensions"><span class="toc-number">1.10.</span> <span class="toc-text">Extensions</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Default_Configuration"><span class="toc-number">2.</span> <span class="toc-text">Default Configuration</span></a></li></ol>
+      </div>
+      <div class="page-entry">
+        <p>You can modify most of options in <code>_config.yml</code>.</p>
+<h2 id="Configuration">Configuration</h2>
+<h3 id="Site">Site</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>The title of your website</td>
+</tr>
+<tr>
+<td><code>subtitle</code></td>
+<td>The subtitle of your website</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>The description of your website</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>Your name</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td>Your email address</td>
+</tr>
+<tr>
+<td><code>language</code></td>
+<td>The language used in your website. Use <a href="http://www.w3.org/International/articles/language-tags/" target="_blank">IETF format</a>. (e.g. Traditional Chinese: <code>zh-TW</code>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="URL">URL</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>url</code></td>
+<td>The URL of your website</td>
+<td></td>
+</tr>
+<tr>
+<td><code>root</code></td>
+<td>The root directory of your website</td>
+<td></td>
+</tr>
+<tr>
+<td><code>permalink</code></td>
+<td>The <a href="permalinks.html">permalink</a> format of articles</td>
+<td>:year/:month/:day/:title/</td>
+</tr>
+<tr>
+<td><code>tag_dir</code></td>
+<td>Tag directory</td>
+<td>tags</td>
+</tr>
+<tr>
+<td><code>archive_dir</code></td>
+<td>Archive directory</td>
+<td>archives</td>
+</tr>
+<tr>
+<td><code>category_dir</code></td>
+<td>Category directory</td>
+<td>categories</td>
+</tr>
+<tr>
+<td><code>code_dir</code></td>
+<td>Include code directory</td>
+<td>downloads/code</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="note info"><strong class="note-title">Website in subdirectory</strong><p>If your website is put in subdirectory such as <code>http://yoursite.com/blog</code>.   Set <code>url</code> as <code>http://yoursite.com/blog</code> and <code>root</code> as <code>/blog/</code>.</p>
+</blockquote>
+
+
+<h3 id="Writing">Writing</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>new_post_name</code></td>
+<td>The filename of the new post</td>
+<td>:title.md</td>
+</tr>
+<tr>
+<td><code>default_layout</code></td>
+<td>Default layout</td>
+<td>post</td>
+</tr>
+<tr>
+<td><code>auto_spacing</code></td>
+<td>Add a space between eastern and western characters</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>titlecase</code></td>
+<td>Transform title into proper title case</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>external_link</code></td>
+<td>Open external links in new tab</td>
+<td>true</td>
+</tr>
+<tr>
+<td><code>max_open_file</code></td>
+<td>Maximum synchronous I/O when generating files</td>
+<td>100</td>
+</tr>
+<tr>
+<td><code>multi_thread</code></td>
+<td>Enable multi-thread generating</td>
+<td>true</td>
+</tr>
+<tr>
+<td><code>filename_case</code></td>
+<td>Transform filename into (1) lower case or (2) upper case</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>render_drafts</code></td>
+<td>Serve drafts as normal posts in server</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>highlight</code></td>
+<td>Code block settings</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Category_&amp;_Tag">Category &amp; Tag</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>default_category</code></td>
+<td>Default category</td>
+<td>uncategorized</td>
+</tr>
+<tr>
+<td><code>category_map</code></td>
+<td>Category slugs</td>
+<td></td>
+</tr>
+<tr>
+<td><code>tag_map</code></td>
+<td>Tag slugs</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Archives">Archives</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>archive</code></td>
+<td>2: Enable pagination, 1: Disable pagination, 0: Fully disable</td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>2: Enable pagination, 1: Disable pagination, 0: Fully disable</td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>tag</code></td>
+<td>2: Enable pagination, 1: Disable pagination, 0: Fully disable</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Server">Server</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>port</code></td>
+<td>Server port</td>
+<td>4000</td>
+</tr>
+<tr>
+<td><code>logger</code></td>
+<td>Display request info on the console. Always enabled in debug mode.</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>logger_format</code></td>
+<td>Logger format</td>
+<td></td>
+</tr>
+<tr>
+<td><code>server_ip</code></td>
+<td>Customize server IP</td>
+<td>0.0.0.0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Date_/_Time_format">Date / Time format</h3>
+<p>Hexo uses <a href="http://momentjs.com/" target="_blank">Moment.js</a> to parse and display date.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>date_format</code></td>
+<td>Date format</td>
+<td>MMM D YYYY</td>
+</tr>
+<tr>
+<td><code>time_format</code></td>
+<td>Time format</td>
+<td>H:mm:ss</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Pagination">Pagination</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>per_page</code></td>
+<td>The amount of the posts displayed in a single page (0 = Disable pagination)</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>pagination_dir</code></td>
+<td>Pagination directory</td>
+<td>page</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Comment">Comment</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>disqus_shortname</code></td>
+<td><a href="http://disqus.com/" target="_blank">Disqus</a> shortname</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Extensions">Extensions</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>theme</code></td>
+<td>Current theme</td>
+</tr>
+<tr>
+<td><code>exclude_generator</code></td>
+<td>Disabled generators (archive, category, home, page, post, tag)</td>
+</tr>
+<tr>
+<td><code>markdown</code></td>
+<td>Markdown settings (See <a href="https://github.com/chjj/marked" target="_blank">marked</a> for more info)</td>
+</tr>
+<tr>
+<td><code>stylus</code></td>
+<td>Stylus settings</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="note warn"><strong class="note-title">YAML format</strong><p>Don’t use tabs in configuration files, use spaces instead. Also, add a space after colons. Configuration files parsing error may cause Hexo can’t run properly.</p>
+</blockquote>
+
+
+<h2 id="Default_Configuration">Default Configuration</h2>
+<figure class="highlight yaml"><pre><span class="label">title:</span> Hexo
+<span class="label">subtitle:</span>
+<span class="label">description:</span>
+<span class="label">author:</span> John Doe
+<span class="label">email:</span>
+<span class="label">language:</span>
+
+<span class="label">url:</span> http://yoursite<span class="preprocessor">.com</span>
+<span class="label">root:</span> /
+<span class="label">permalink:</span> :year/:month/:day/:title/
+<span class="label">tag_dir:</span> tags
+<span class="label">archive_dir:</span> archives
+<span class="label">category_dir:</span> categories
+<span class="label">code_dir:</span> downloads/code
+
+<span class="label">new_post_name:</span> :title<span class="preprocessor">.md</span>
+<span class="label">default_layout:</span> post
+<span class="label">auto_spacing:</span> false
+<span class="label">titlecase:</span> false
+<span class="label">max_open_file:</span> <span class="number">100</span>
+<span class="label">multi_thread:</span> true
+<span class="label">filename_case:</span> <span class="number">0</span>
+<span class="label">render_drafts:</span> false
+<span class="label">highlight:</span>
+  enable: true
+  line_number: true
+  tab_replace:
+
+<span class="label">default_category:</span> uncategorized
+<span class="label">category_map:</span>
+<span class="label">tag_map:</span>
+
+<span class="label">archive:</span> <span class="number">2</span>
+<span class="label">category:</span> <span class="number">2</span>
+<span class="label">tag:</span> <span class="number">2</span>
+
+<span class="label">port:</span> <span class="number">4000</span>
+<span class="label">logger:</span> false
+<span class="label">logger_format:</span>
+
+<span class="label">date_format:</span> MMM D YYYY
+<span class="label">time_format:</span> H:mm:ss
+
+<span class="label">per_page:</span> <span class="number">10</span>
+<span class="label">pagination_dir:</span> page
+
+<span class="label">disqus_shortname:</span>
+
+<span class="label">theme:</span> light
+<span class="label">exclude_generator:</span>
+
+<span class="label">markdown:</span>
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+
+<span class="label">stylus:</span>
+  compress: false
+
+<span class="label">deploy:</span>
+  type:
+</pre></figure>
+
+
+      </div>
+      <footer id="page-footer">
+        <time id="page-footer-updated" datetime="2014-03-09T05:25:15.000Z">Last updated: Mar 9, 2014</time>
+        <a href="/docs/setup.html" id="page-footer-prev" class="page-footer-link">Prev</a>
+        <a href="/docs/commands.html" id="page-footer-next" class="page-footer-link">Next</a>
+      </footer>
+    </div>
+    <aside id="sidebar">
+  
+    <strong class="sidebar-title">Getting Started</strong>
+    
+      <a href="/docs/index.html" class="sidebar-link">Overview</a>
+    
+      <a href="/docs/setup.html" class="sidebar-link">Setup</a>
+    
+      <a href="/docs/configuration.html" class="sidebar-link current">Configuration</a>
+    
+      <a href="/docs/commands.html" class="sidebar-link">Commands</a>
+    
+      <a href="/docs/migration.html" class="sidebar-link">Migration</a>
+    
+  
+    <strong class="sidebar-title">Basic Usage</strong>
+    
+      <a href="/docs/writing.html" class="sidebar-link">Writing</a>
+    
+      <a href="/docs/generating.html" class="sidebar-link">Generating</a>
+    
+      <a href="/docs/tag-plugins.html" class="sidebar-link">Tag Plugins</a>
+    
+      <a href="/docs/server.html" class="sidebar-link">Server</a>
+    
+      <a href="/docs/deployment.html" class="sidebar-link">Deployment</a>
+    
+  
+    <strong class="sidebar-title">Customization</strong>
+    
+      <a href="/docs/permalinks.html" class="sidebar-link">Permalinks</a>
+    
+      <a href="/docs/themes.html" class="sidebar-link">Themes</a>
+    
+      <a href="/docs/variables.html" class="sidebar-link">Variables</a>
+    
+      <a href="/docs/pagination.html" class="sidebar-link">Pagination</a>
+    
+      <a href="/docs/helpers.html" class="sidebar-link">Helpers</a>
+    
+      <a href="/docs/i18n.html" class="sidebar-link">i18n</a>
+    
+  
+    <strong class="sidebar-title">Advanced</strong>
+    
+      <a href="/docs/models.html" class="sidebar-link">Models</a>
+    
+      <a href="/docs/events.html" class="sidebar-link">Events</a>
+    
+      <a href="/docs/plugins.html" class="sidebar-link">Plugins</a>
+    
+  
+    <strong class="sidebar-title">Miscellaneous</strong>
+    
+      <a href="/docs/troubleshooting.html" class="sidebar-link">Troubleshooting</a>
+    
+      <a href="/docs/contributing.html" class="sidebar-link">Contributing</a>
+    
+  
+</aside>
+  </div>
+</article>
+  <footer id="footer">
+  <div class="outer">
+    <div class="inner">
+      &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
+      Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+    </div>
+  </div>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/script.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+</body>
+</html>

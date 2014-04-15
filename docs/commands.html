@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Commands | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="canonical" href="http://hexo.io/docs/commands.html">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'hexo.io');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body class="page">
+  <header id="header">
+  <div class="outer">
+    <div class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      <nav id="main-nav">
+        <ul id="main-nav-list">
+          
+            <li class="main-nav-item">
+              <a href="/docs/" class="main-nav-link current">Docs</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="/api/classes/Hexo.html" class="main-nav-link">API</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="https://github.com/tommy351/hexo/wiki/Plugins" class="main-nav-link">Plugins</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="https://github.com/tommy351/hexo/wiki/Themes" class="main-nav-link">Themes</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="https://github.com/tommy351/hexo" class="main-nav-link">Source</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+  <article class="page">
+  <header id="page-banner">
+  <div class="outer">
+    <div class="inner">
+      <h1 class="page-title">Commands</h1>
+    </div>
+  </div>
+</header>
+  <div class="outer">
+    <div class="inner">
+  <select id="page-mobile-menu">
+    <option value="">Navigate...</option>
+    
+      <optgroup label="Getting Started">
+        
+          <option value="/docs/index.html">Overview</option>
+        
+          <option value="/docs/setup.html">Setup</option>
+        
+          <option value="/docs/configuration.html">Configuration</option>
+        
+          <option value="/docs/commands.html">Commands</option>
+        
+          <option value="/docs/migration.html">Migration</option>
+        
+      </optgroup>
+    
+      <optgroup label="Basic Usage">
+        
+          <option value="/docs/writing.html">Writing</option>
+        
+          <option value="/docs/generating.html">Generating</option>
+        
+          <option value="/docs/tag-plugins.html">Tag Plugins</option>
+        
+          <option value="/docs/server.html">Server</option>
+        
+          <option value="/docs/deployment.html">Deployment</option>
+        
+      </optgroup>
+    
+      <optgroup label="Customization">
+        
+          <option value="/docs/permalinks.html">Permalinks</option>
+        
+          <option value="/docs/themes.html">Themes</option>
+        
+          <option value="/docs/variables.html">Variables</option>
+        
+          <option value="/docs/pagination.html">Pagination</option>
+        
+          <option value="/docs/helpers.html">Helpers</option>
+        
+          <option value="/docs/i18n.html">i18n</option>
+        
+      </optgroup>
+    
+      <optgroup label="Advanced">
+        
+          <option value="/docs/models.html">Models</option>
+        
+          <option value="/docs/events.html">Events</option>
+        
+          <option value="/docs/plugins.html">Plugins</option>
+        
+      </optgroup>
+    
+      <optgroup label="Miscellaneous">
+        
+          <option value="/docs/troubleshooting.html">Troubleshooting</option>
+        
+          <option value="/docs/contributing.html">Contributing</option>
+        
+      </optgroup>
+    
+  </select>
+</div>
+    <div class="page-content">
+      <div class="toc-wrap">
+        <strong class="toc-title">Contents</strong>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#init"><span class="toc-number">1.</span> <span class="toc-text">init</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new"><span class="toc-number">2.</span> <span class="toc-text">new</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#generate"><span class="toc-number">3.</span> <span class="toc-text">generate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#publish"><span class="toc-number">4.</span> <span class="toc-text">publish</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#server"><span class="toc-number">5.</span> <span class="toc-text">server</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#deploy"><span class="toc-number">6.</span> <span class="toc-text">deploy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#render"><span class="toc-number">7.</span> <span class="toc-text">render</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#migrate"><span class="toc-number">8.</span> <span class="toc-text">migrate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#clean"><span class="toc-number">9.</span> <span class="toc-text">clean</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#list"><span class="toc-number">10.</span> <span class="toc-text">list</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#version"><span class="toc-number">11.</span> <span class="toc-text">version</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Options"><span class="toc-number">12.</span> <span class="toc-text">Options</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Safe_mode"><span class="toc-number">12.1.</span> <span class="toc-text">Safe mode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Debug_mode"><span class="toc-number">12.2.</span> <span class="toc-text">Debug mode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Silent_mode"><span class="toc-number">12.3.</span> <span class="toc-text">Silent mode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Customize_config_file_path"><span class="toc-number">12.4.</span> <span class="toc-text">Customize config file path</span></a></li></ol>
+      </div>
+      <div class="page-entry">
+        <h2 id="init">init</h2>
+<figure class="highlight bash"><pre>$ hexo init [folder]
+</pre></figure>
+
+<p>Setups a website. If <code>folder</code> isn’t defined, Hexo will setup the website at the current directory.</p>
+<h2 id="new">new</h2>
+<figure class="highlight bash"><pre>$ hexo new [layout] &lt;title&gt;
+</pre></figure>
+
+<p>Creates a new article. If <code>layout</code> isn’t defined, it’ll be <code>default_layout</code> setting. If the title is more than one word, wrap it with quotation marks.</p>
+<p><strong>Alias:</strong> n</p>
+<h2 id="generate">generate</h2>
+<figure class="highlight bash"><pre>$ hexo generate
+</pre></figure>
+
+<p>Generates static files.</p>
+<p><strong>Alias</strong>: g</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-d</code>, <code>--deploy</code></td>
+<td>Deploy after generate done</td>
+</tr>
+<tr>
+<td><code>-w</code>, <code>--watch</code></td>
+<td>Watch file changes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="publish">publish</h2>
+<figure class="highlight bash"><pre>$ hexo publish &lt;filename&gt;
+</pre></figure>
+
+<p>Publishes a draft.</p>
+<p><strong>Alias</strong>: p</p>
+<h2 id="server">server</h2>
+<figure class="highlight bash"><pre>$ hexo server
+</pre></figure>
+
+<p>Starts server.</p>
+<p><strong>Alias:</strong> s</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-p</code>, <code>--port</code></td>
+<td>Override default port</td>
+</tr>
+<tr>
+<td><code>-s</code>, <code>--static</code></td>
+<td>Only serve static files</td>
+</tr>
+<tr>
+<td><code>-l</code>, <code>--log</code></td>
+<td>Enable logger. Override logger format.</td>
+</tr>
+<tr>
+<td><code>-d</code>, <code>--drafts</code></td>
+<td>Serve drafts as normal posts.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="deploy">deploy</h2>
+<figure class="highlight bash"><pre>$ hexo deploy
+</pre></figure>
+
+<p>Deploys your website.</p>
+<p><strong>Alias:</strong> d</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>--setup</code></td>
+<td>Setup without deployment</td>
+</tr>
+<tr>
+<td><code>-g</code>, <code>--generate</code></td>
+<td>Generate before deployment</td>
+</tr>
+<tr>
+<td><code>-m</code>, <code>--message</code></td>
+<td>Customize commit message</td>
+</tr>
+</tbody>
+</table>
+<h2 id="render">render</h2>
+<figure class="highlight bash"><pre>$ hexo render &lt;file1&gt; [file2] ...
+</pre></figure>
+
+<p>Renders files.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-o</code>, <code>--output</code></td>
+<td>Output destination</td>
+</tr>
+</tbody>
+</table>
+<h2 id="migrate">migrate</h2>
+<figure class="highlight bash"><pre>$ hexo migrate &lt;<span class="built_in">type</span>&gt;
+</pre></figure>
+
+<p>Migrates from other blog systems.</p>
+<h2 id="clean">clean</h2>
+<figure class="highlight bash"><pre>$ hexo clean
+</pre></figure>
+
+<p>Cleans the cache file (<code>db.json</code>) and generated files (<code>public</code>).</p>
+<h2 id="list">list</h2>
+<figure class="highlight bash"><pre>$ hexo list &lt;<span class="built_in">type</span>&gt;
+</pre></figure>
+
+<p>Lists all routes.</p>
+<h2 id="version">version</h2>
+<figure class="highlight bash"><pre>$ hexo version
+</pre></figure>
+
+<p>Displays version information.</p>
+<h2 id="Options">Options</h2>
+<h3 id="Safe_mode">Safe mode</h3>
+<figure class="highlight bash"><pre>$ hexo --safe
+</pre></figure>
+
+<p>Plugins and scripts won’t be loaded in safe mode. You can try this when you encounter some problems after installing a new plugin.</p>
+<h3 id="Debug_mode">Debug mode</h3>
+<figure class="highlight bash"><pre>$ hexo --debug
+</pre></figure>
+
+<p>Displays verbose messages in terminal and saves log in <code>debug.log</code>. When you get some problems, try to run Hexo again in debug mode and submit the messages to GitHub.</p>
+<h3 id="Silent_mode">Silent mode</h3>
+<figure class="highlight bash"><pre>$ hexo --silent
+</pre></figure>
+
+<p>Hides output on console.</p>
+<h3 id="Customize_config_file_path">Customize config file path</h3>
+<figure class="highlight bash"><pre>$ hexo --config custom.yml
+</pre></figure>
+
+<p>Customize config file path instead of <code>_config.yml</code>.</p>
+
+      </div>
+      <footer id="page-footer">
+        <time id="page-footer-updated" datetime="2014-03-31T12:32:40.000Z">Last updated: Mar 31, 2014</time>
+        <a href="/docs/configuration.html" id="page-footer-prev" class="page-footer-link">Prev</a>
+        <a href="/docs/migration.html" id="page-footer-next" class="page-footer-link">Next</a>
+      </footer>
+    </div>
+    <aside id="sidebar">
+  
+    <strong class="sidebar-title">Getting Started</strong>
+    
+      <a href="/docs/index.html" class="sidebar-link">Overview</a>
+    
+      <a href="/docs/setup.html" class="sidebar-link">Setup</a>
+    
+      <a href="/docs/configuration.html" class="sidebar-link">Configuration</a>
+    
+      <a href="/docs/commands.html" class="sidebar-link current">Commands</a>
+    
+      <a href="/docs/migration.html" class="sidebar-link">Migration</a>
+    
+  
+    <strong class="sidebar-title">Basic Usage</strong>
+    
+      <a href="/docs/writing.html" class="sidebar-link">Writing</a>
+    
+      <a href="/docs/generating.html" class="sidebar-link">Generating</a>
+    
+      <a href="/docs/tag-plugins.html" class="sidebar-link">Tag Plugins</a>
+    
+      <a href="/docs/server.html" class="sidebar-link">Server</a>
+    
+      <a href="/docs/deployment.html" class="sidebar-link">Deployment</a>
+    
+  
+    <strong class="sidebar-title">Customization</strong>
+    
+      <a href="/docs/permalinks.html" class="sidebar-link">Permalinks</a>
+    
+      <a href="/docs/themes.html" class="sidebar-link">Themes</a>
+    
+      <a href="/docs/variables.html" class="sidebar-link">Variables</a>
+    
+      <a href="/docs/pagination.html" class="sidebar-link">Pagination</a>
+    
+      <a href="/docs/helpers.html" class="sidebar-link">Helpers</a>
+    
+      <a href="/docs/i18n.html" class="sidebar-link">i18n</a>
+    
+  
+    <strong class="sidebar-title">Advanced</strong>
+    
+      <a href="/docs/models.html" class="sidebar-link">Models</a>
+    
+      <a href="/docs/events.html" class="sidebar-link">Events</a>
+    
+      <a href="/docs/plugins.html" class="sidebar-link">Plugins</a>
+    
+  
+    <strong class="sidebar-title">Miscellaneous</strong>
+    
+      <a href="/docs/troubleshooting.html" class="sidebar-link">Troubleshooting</a>
+    
+      <a href="/docs/contributing.html" class="sidebar-link">Contributing</a>
+    
+  
+</aside>
+  </div>
+</article>
+  <footer id="footer">
+  <div class="outer">
+    <div class="inner">
+      &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
+      Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+    </div>
+  </div>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/script.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+</body>
+</html>

@@ -1,0 +1,2657 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Model | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="canonical" href="http://hexo.io/api/warehouse/classes/Model.html">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'hexo.io');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body class="page">
+  <header id="header">
+  <div class="outer">
+    <div class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      <nav id="main-nav">
+        <ul id="main-nav-list">
+          
+            <li class="main-nav-item">
+              <a href="/docs/" class="main-nav-link">Docs</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="/api/classes/Hexo.html" class="main-nav-link">API</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="https://github.com/tommy351/hexo/wiki/Plugins" class="main-nav-link">Plugins</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="https://github.com/tommy351/hexo/wiki/Themes" class="main-nav-link">Themes</a>
+            </li>
+          
+            <li class="main-nav-item">
+              <a href="https://github.com/tommy351/hexo" class="main-nav-link">Source</a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+  <article class="api">
+  <header id="page-banner">
+  <div class="outer">
+    <div class="inner">
+      <h1 class="page-title">API Reference</h1>
+    </div>
+  </div>
+</header>
+  <div class="outer">
+    <div class="inner"></div>
+    <div class="page-content"><header id="api-header">
+  <h1 id="api-title">Model Class</h1>
+  <div class="api-meta">
+    Defined in <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L27">lib/model.js:27</a>
+    
+    
+  </div>
+</header>
+
+<div class="page-entry">
+  <h2 class="api-section-title">Description</h2>
+  <p>The model constructor.</p>
+
+  
+    <h2 class="api-section-title">Constructor</h2>
+    <div id="constructor" class="api-item constructor public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#constructor">Model</a>
+    </h3>
+    
+      <span class="api-item-params">(name, schema, database)</span>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L27">lib/model.js:27</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>The model constructor.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>name</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>schema</strong>
+            <span class="api-item-type"><a href="/api/warehouse/classes/Schema.html">Schema</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>database</strong>
+            <span class="api-item-type"><a href="/api/warehouse/classes/Database.html">Database</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+  
+  
+    <h2 class="api-section-title">Methods</h2>
+    
+      <div id="method__applyGetter" class="api-item method private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method__applyGetter">_applyGetter</a>
+    </h3>
+    
+      <span class="api-item-params">(obj, name, value, [prefix])</span>
+    
+    
+      <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L217">lib/model.js:217</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Applies the schema.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>obj</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>name</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>value</strong>
+            <span class="api-item-type"><span>Any</span></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>prefix</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method__applySetter" class="api-item method private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method__applySetter">_applySetter</a>
+    </h3>
+    
+      <span class="api-item-params">(obj, name, value, [prefix])</span>
+    
+    
+      <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L390">lib/model.js:390</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Applies the schema.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>obj</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>name</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>value</strong>
+            <span class="api-item-type"><span>Any</span></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>prefix</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method__checkID" class="api-item method private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method__checkID">_checkID</a>
+    </h3>
+    
+      <span class="api-item-params">(id)</span>
+    
+    
+      <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L192">lib/model.js:192</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Checks if <code>id</code> is used.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>id</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Boolean">Boolean</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method__createQuery" class="api-item method private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method__createQuery">_createQuery</a>
+    </h3>
+    
+      <span class="api-item-params">([index])</span>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L177">lib/model.js:177</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Creates a new query.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>index</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Array</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method__getRaw" class="api-item method private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method__getRaw">_getRaw</a>
+    </h3>
+    
+      <span class="api-item-params">(id)</span>
+    
+    
+      <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L314">lib/model.js:314</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Finds raw data of a single document by id.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>id</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method__populate" class="api-item method private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method__populate">_populate</a>
+    </h3>
+    
+      <span class="api-item-params">(obj, populates)</span>
+    
+    
+      <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L979">lib/model.js:979</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Popluates document references.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>obj</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>populates</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Array</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method__save" class="api-item method private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method__save">_save</a>
+    </h3>
+    
+      <span class="api-item-params">(obj, callback)</span>
+    
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L472">lib/model.js:472</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Saves a document to the model.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>obj</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="method__update" class="api-item method private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method__update">_update</a>
+    </h3>
+    
+      <span class="api-item-params">(data, obj)</span>
+    
+    
+      <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L579">lib/model.js:579</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Combines the old and the new data.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>data</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>obj</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method__updateIndex" class="api-item method private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method__updateIndex">_updateIndex</a>
+    </h3>
+    
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L159">lib/model.js:159</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Updates the index.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="method_count" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_count">count</a>
+    </h3>
+    
+    
+      <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L371">lib/model.js:371</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Returns the number of items in the model.</p>
+
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_destroy" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_destroy">destroy</a>
+    </h3>
+    
+    
+    <span class="api-item-flag chainable">chainable</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L792">lib/model.js:792</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Deletes all documents in the model.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="method_each" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_each">each</a>
+    </h3>
+    
+      <span class="api-item-params">(iterator)</span>
+    
+    
+    <span class="api-item-flag chainable">chainable</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L345">lib/model.js:345</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Alias for </p>
+Model.forEach
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>iterator</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="method_eq" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_eq">eq</a>
+    </h3>
+    
+      <span class="api-item-params">(num)</span>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L806">lib/model.js:806</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Returns the document at the specified index.<br><code>num</code> can be a positive or negative number.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>num</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_filter" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_filter">filter</a>
+    </h3>
+    
+      <span class="api-item-params">(callback)</span>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L1070">lib/model.js:1070</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Iterates over the query and returns all elements the callback returns truey for.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_find" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_find">find</a>
+    </h3>
+    
+      <span class="api-item-params">(conditions, [options])</span>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L952">lib/model.js:952</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Finds the matching documents in the model.</p>
+<p>See </p>
+<a href="/api/warehouse/classes/Query.html#method_find">Query/find</a>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>conditions</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>options</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_findById" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_findById">findById</a>
+    </h3>
+    
+      <span class="api-item-params">(id)</span>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L305">lib/model.js:305</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Alias for </p>
+Model.get
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>id</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_findOne" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_findOne">findOne</a>
+    </h3>
+    
+      <span class="api-item-params">(conditions)</span>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L967">lib/model.js:967</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Finds the first matching document.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>conditions</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_first" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_first">first</a>
+    </h3>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L822">lib/model.js:822</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Returns the first document in the model.</p>
+<p>This method is an alias of:</p>
+<figure class="highlight js"><pre>model.eq(<span class="number">0</span>);
+</pre></figure>
+
+
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_forEach" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_forEach">forEach</a>
+    </h3>
+    
+      <span class="api-item-params">(iterator)</span>
+    
+    
+    <span class="api-item-flag chainable">chainable</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L327">lib/model.js:327</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Iterates over the model.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>iterator</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="method_get" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_get">get</a>
+    </h3>
+    
+      <span class="api-item-params">(id)</span>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L281">lib/model.js:281</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Finds a single document by id.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>id</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_insert" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_insert">insert</a>
+    </h3>
+    
+      <span class="api-item-params">(obj, [callback])</span>
+    
+    
+    <span class="api-item-flag chainable">chainable</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L517">lib/model.js:517</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Inserts a document to the model.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>obj</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Array</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="method_last" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_last">last</a>
+    </h3>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L839">lib/model.js:839</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Returns the last document in the model.</p>
+<p>This method is an alias of:</p>
+<figure class="highlight js"><pre>model.eq(-<span class="number">1</span>);
+</pre></figure>
+
+
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_limit" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_limit">limit</a>
+    </h3>
+    
+      <span class="api-item-params">(num)</span>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L869">lib/model.js:869</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Limits the number of items returned.</p>
+<p>This method is an alias of:</p>
+<figure class="highlight js"><pre>model.slice(<span class="number">0</span>, num);
+</pre></figure>
+
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>num</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_map" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_map">map</a>
+    </h3>
+    
+      <span class="api-item-params">(callback)</span>
+    
+    
+      <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Array</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L1035">lib/model.js:1035</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Creates an array of values by iterating each element in the collection.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Array</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_new" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_new">new</a>
+    </h3>
+    
+      <span class="api-item-params">(obj)</span>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L205">lib/model.js:205</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Creates a new document.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>obj</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_populate" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_populate">populate</a>
+    </h3>
+    
+      <span class="api-item-params">(name)</span>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L1023">lib/model.js:1023</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Sets the path to populate.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>name</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_random" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_random">random</a>
+    </h3>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L933">lib/model.js:933</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Returns the documents in the model in random order.</p>
+
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_reduce" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_reduce">reduce</a>
+    </h3>
+    
+      <span class="api-item-params">(callback, [initial])</span>
+    
+    
+      <span class="api-item-type"><span>Any</span></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L1046">lib/model.js:1046</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Reduces a collection to a value which is the accumulated result of iterating each element in the collection.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>initial</strong>
+            <span class="api-item-type"><span>Any</span></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+              <p>Initial value</p>
+
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><span>Any</span></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_reduceRight" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_reduceRight">reduceRight</a>
+    </h3>
+    
+      <span class="api-item-params">(callback, [initial])</span>
+    
+    
+      <span class="api-item-type"><span>Any</span></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L1058">lib/model.js:1058</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Reduces a collection to a value which is the accumulated result of iterating each element in the collection from right to left.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>initial</strong>
+            <span class="api-item-type"><span>Any</span></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+              <p>Initial value</p>
+
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><span>Any</span></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_remove" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_remove">remove</a>
+    </h3>
+    
+      <span class="api-item-params">(conditions, [callback])</span>
+    
+    
+    <span class="api-item-flag chainable">chainable</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L706">lib/model.js:706</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Removes documents matching the <code>conditions</code> in the model.<br><code>conditions</code> can be either a query object or the id of the document.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>conditions</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="method_removeById" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_removeById">removeById</a>
+    </h3>
+    
+      <span class="api-item-params">(id, [callback])</span>
+    
+    
+    <span class="api-item-flag chainable">chainable</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L726">lib/model.js:726</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Removes a document in the model by id.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>id</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="method_replace" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_replace">replace</a>
+    </h3>
+    
+      <span class="api-item-params">(conditions, obj, [callback])</span>
+    
+    
+    <span class="api-item-flag chainable">chainable</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L659">lib/model.js:659</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Replaces documents matching the <code>conditions</code> in the model.<br><code>conditions</code> can be either a query object or the id of the document.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>conditions</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>obj</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="method_replaceById" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_replaceById">replaceById</a>
+    </h3>
+    
+      <span class="api-item-params">(id, obj, [callback])</span>
+    
+    
+    <span class="api-item-flag chainable">chainable</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L680">lib/model.js:680</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Replaces a document in the model by id.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>id</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>obj</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="method_reverse" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_reverse">reverse</a>
+    </h3>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L905">lib/model.js:905</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Returns the model in reversed order.</p>
+
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_save" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_save">save</a>
+    </h3>
+    
+      <span class="api-item-params">(obj, [callback])</span>
+    
+    
+    <span class="api-item-flag chainable">chainable</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L773">lib/model.js:773</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Saves a document to the model.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>obj</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="method_shuffle" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_shuffle">shuffle</a>
+    </h3>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L944">lib/model.js:944</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Alias for </p>
+Model.random
+
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_size" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_size">size</a>
+    </h3>
+    
+    
+      <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L382">lib/model.js:382</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Alias for </p>
+Model.count
+
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_skip" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_skip">skip</a>
+    </h3>
+    
+      <span class="api-item-params">(num)</span>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L887">lib/model.js:887</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Specifies the number of items to skip.</p>
+<p>This method is an alias of:</p>
+<p><code>`` js
+model.slice(num);</code></p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>num</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_slice" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_slice">slice</a>
+    </h3>
+    
+      <span class="api-item-params">(start, [end])</span>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L856">lib/model.js:856</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Returns the specified range of documents in the model.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>start</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>end</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_sort" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_sort">sort</a>
+    </h3>
+    
+      <span class="api-item-params">(orderby, [order])</span>
+    
+    
+      <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L916">lib/model.js:916</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Sorts the documents in the model.</p>
+<p>See </p>
+<a href="/api/warehouse/classes/Query.html#method_sort">Query/sort</a>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>orderby</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>order</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="/api/warehouse/classes/Query.html">Query</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_toArray" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_toArray">toArray</a>
+    </h3>
+    
+    
+      <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Array</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L354">lib/model.js:354</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Returns an array containing all items in the model.</p>
+
+    
+    
+      <h4 class="api-item-subtitle">Returns</h4>
+      <ul>
+        <li>
+          <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Array</a></span>
+          
+        </li>
+      </ul>
+    
+  </div>
+</div>
+    
+      <div id="method_update" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_update">update</a>
+    </h3>
+    
+      <span class="api-item-params">(conditions, obj, [callback])</span>
+    
+    
+    <span class="api-item-flag chainable">chainable</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L558">lib/model.js:558</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Updates documents matching the <code>conditions</code> in the model.<br><code>conditions</code> can be either a query object or the id of the document.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>conditions</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>obj</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="method_updateById" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_updateById">updateById</a>
+    </h3>
+    
+      <span class="api-item-params">(id, obj, [callback])</span>
+    
+    
+    <span class="api-item-flag chainable">chainable</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L625">lib/model.js:625</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Updates a document in the model by id.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>id</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>obj</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+  
+  
+    <h2 class="api-section-title">Properties</h2>
+    
+      <div id="property__database" class="api-item property private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property__database">_database</a>
+    </h3>
+    
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L51">lib/model.js:51</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>The reference to the database.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property__doc" class="api-item property private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property__doc">_doc</a>
+    </h3>
+    
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L95">lib/model.js:95</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>The document constructor.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property__index" class="api-item property private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property__index">_index</a>
+    </h3>
+    
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L71">lib/model.js:71</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>The index of the model.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property__name" class="api-item property private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property__name">_name</a>
+    </h3>
+    
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L41">lib/model.js:41</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>The name of the model.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property__query" class="api-item property private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property__query">_query</a>
+    </h3>
+    
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L117">lib/model.js:117</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>The query constructor.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property__store" class="api-item property private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property__store">_store</a>
+    </h3>
+    
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L61">lib/model.js:61</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>The reference to the store in the database.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property_length" class="api-item property public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property_length">length</a>
+    </h3>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L135">lib/model.js:135</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Returns the number of items in the model.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property_schema" class="api-item property private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property_schema">schema</a>
+    </h3>
+    
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L81">lib/model.js:81</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>The schema of the model.</p>
+
+    
+    
+  </div>
+</div>
+    
+  
+  
+  
+    <h2 class="api-section-title">Events</h2>
+    
+      <div id="event_init" class="api-item event public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#event_init">init</a>
+    </h3>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L148">lib/model.js:148</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Fires when the model initialized.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="event_insert" class="api-item event public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#event_insert">insert</a>
+    </h3>
+    
+      <span class="api-item-params">(result)</span>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L545">lib/model.js:545</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Fires when a document inserted.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>result</strong>
+            <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="event_remove" class="api-item event public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#event_remove">remove</a>
+    </h3>
+    
+      <span class="api-item-params">(doc)</span>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L753">lib/model.js:753</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Fires when a document removed.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>doc</strong>
+            <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="event_update" class="api-item event public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#event_update">update</a>
+    </h3>
+    
+      <span class="api-item-params">(result)</span>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/model.js#L646">lib/model.js:646</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Fires when a document updated.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>result</strong>
+            <span class="api-item-type"><a href="/api/warehouse/classes/Document.html">Document</a></span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+  
+</div></div>
+    
+<aside id="sidebar">
+  <strong class="sidebar-title">Projects</strong>
+  <a href="/api/classes/Hexo.html" class="sidebar-link">Hexo</a>
+  <a href="/api/warehouse/classes/Database.html" class="sidebar-link current">Warehouse</a>
+  <strong class="sidebar-title">Classes</strong>
+  
+    <a href="/api/warehouse/classes/Database.html" class="sidebar-link">Database</a>
+  
+    <a href="/api/warehouse/classes/Document.html" class="sidebar-link">Document</a>
+  
+    <a href="/api/warehouse/classes/Model.html" class="sidebar-link current">Model</a>
+  
+    <a href="/api/warehouse/classes/Query.html" class="sidebar-link">Query</a>
+  
+    <a href="/api/warehouse/classes/Schema.html" class="sidebar-link">Schema</a>
+  
+    <a href="/api/warehouse/classes/SchemaType.html" class="sidebar-link">SchemaType</a>
+  
+    <a href="/api/warehouse/classes/SchemaType.Array.html" class="sidebar-link">SchemaType.Array</a>
+  
+    <a href="/api/warehouse/classes/SchemaType.Boolean.html" class="sidebar-link">SchemaType.Boolean</a>
+  
+    <a href="/api/warehouse/classes/SchemaType.Date.html" class="sidebar-link">SchemaType.Date</a>
+  
+    <a href="/api/warehouse/classes/SchemaType.Number.html" class="sidebar-link">SchemaType.Number</a>
+  
+    <a href="/api/warehouse/classes/SchemaType.Object.html" class="sidebar-link">SchemaType.Object</a>
+  
+    <a href="/api/warehouse/classes/SchemaType.String.html" class="sidebar-link">SchemaType.String</a>
+  
+    <a href="/api/warehouse/classes/Store.html" class="sidebar-link">Store</a>
+  
+    <a href="/api/warehouse/classes/Virtual.html" class="sidebar-link">Virtual</a>
+  
+    <a href="/api/warehouse/classes/util.html" class="sidebar-link">util</a>
+  
+</aside>
+  </div>
+</article>
+  <footer id="footer">
+  <div class="outer">
+    <div class="inner">
+      &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
+      Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+    </div>
+  </div>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/script.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+</body>
+</html>
