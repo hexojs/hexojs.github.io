@@ -69,7 +69,7 @@
     <div class="page-content"><header id="api-header">
   <h1 id="api-title">SchemaType Class</h1>
   <div class="api-meta">
-    Defined in <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L1">lib/schematype.js:1</a>
+    Defined in <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L1">lib/schematype.js:1</a>
     
     
   </div>
@@ -87,12 +87,14 @@ SchemaCustom.__proto__ = SchemaType;
 SchemaCustom.prototype.__proto__ = SchemaType.prototype;
 </pre></figure>
 
+
 <p><strong>Query operators</strong></p>
 <p>To add a query operator, adds a method whose name started with <code>q$</code>. For example:</p>
 <figure class="highlight js"><pre>SchemaCustom.q$foo = <span class="function"><span class="keyword">function</span><span class="params">(data, value)</span>{</span>
   <span class="comment">// ...</span>
 };
 </pre></figure>
+
 
 <p>The <code>data</code> parameter is the data in the database; the <code>value</code> parameter is the value passed to the query operator.<br>The return value should be a boolean indicating whether the data passed the test.</p>
 <p><strong>Update operators</strong></p>
@@ -101,6 +103,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
   <span class="comment">// ...</span>
 };
 </pre></figure>
+
 
 <p>The <code>data</code> parameter is the data in the database; the <code>value</code> parameter is the value passed to the update operator.<br>The return value will replace the original data.</p>
 
@@ -122,7 +125,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L1">lib/schematype.js:1</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L1">lib/schematype.js:1</a>
   </div>
   
   <div class="api-item-entry">
@@ -136,12 +139,14 @@ SchemaCustom.__proto__ = SchemaType;
 SchemaCustom.prototype.__proto__ = SchemaType.prototype;
 </pre></figure>
 
+
 <p><strong>Query operators</strong></p>
 <p>To add a query operator, adds a method whose name started with <code>q$</code>. For example:</p>
 <figure class="highlight js"><pre>SchemaCustom.q$foo = <span class="function"><span class="keyword">function</span><span class="params">(data, value)</span>{</span>
   <span class="comment">// ...</span>
 };
 </pre></figure>
+
 
 <p>The <code>data</code> parameter is the data in the database; the <code>value</code> parameter is the value passed to the query operator.<br>The return value should be a boolean indicating whether the data passed the test.</p>
 <p><strong>Update operators</strong></p>
@@ -150,6 +155,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
   <span class="comment">// ...</span>
 };
 </pre></figure>
+
 
 <p>The <code>data</code> parameter is the data in the database; the <code>value</code> parameter is the value passed to the update operator.<br>The return value will replace the original data.</p>
 
@@ -193,7 +199,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L89">lib/schematype.js:89</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L89">lib/schematype.js:89</a>
   </div>
   
   <div class="api-item-entry">
@@ -242,7 +248,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L77">lib/schematype.js:77</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L77">lib/schematype.js:77</a>
   </div>
   
   <div class="api-item-entry">
@@ -291,7 +297,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L113">lib/schematype.js:113</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L113">lib/schematype.js:113</a>
   </div>
   
   <div class="api-item-entry">
@@ -347,7 +353,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L126">lib/schematype.js:126</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L126">lib/schematype.js:126</a>
   </div>
   
   <div class="api-item-entry">
@@ -404,7 +410,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L182">lib/schematype.js:182</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L182">lib/schematype.js:182</a>
   </div>
   
   <div class="api-item-entry">
@@ -460,7 +466,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L195">lib/schematype.js:195</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L195">lib/schematype.js:195</a>
   </div>
   
   <div class="api-item-entry">
@@ -517,7 +523,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L210">lib/schematype.js:210</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L210">lib/schematype.js:210</a>
   </div>
   
   <div class="api-item-entry">
@@ -573,7 +579,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L154">lib/schematype.js:154</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L154">lib/schematype.js:154</a>
   </div>
   
   <div class="api-item-entry">
@@ -629,7 +635,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L167">lib/schematype.js:167</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L167">lib/schematype.js:167</a>
   </div>
   
   <div class="api-item-entry">
@@ -686,7 +692,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L141">lib/schematype.js:141</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L141">lib/schematype.js:141</a>
   </div>
   
   <div class="api-item-entry">
@@ -742,7 +748,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L229">lib/schematype.js:229</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L229">lib/schematype.js:229</a>
   </div>
   
   <div class="api-item-entry">
@@ -798,7 +804,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L274">lib/schematype.js:274</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L274">lib/schematype.js:274</a>
   </div>
   
   <div class="api-item-entry">
@@ -854,7 +860,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L248">lib/schematype.js:248</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L248">lib/schematype.js:248</a>
   </div>
   
   <div class="api-item-entry">
@@ -910,7 +916,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L261">lib/schematype.js:261</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L261">lib/schematype.js:261</a>
   </div>
   
   <div class="api-item-entry">
@@ -966,7 +972,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L101">lib/schematype.js:101</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L101">lib/schematype.js:101</a>
   </div>
   
   <div class="api-item-entry">
@@ -1015,7 +1021,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L54">lib/schematype.js:54</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L54">lib/schematype.js:54</a>
   </div>
   
   <div class="api-item-entry">
@@ -1040,7 +1046,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
     
       Defined in
     
-    <a href="https://github.com/tommy351/warehouse/blob/0.2.1/lib/schematype.js#L66">lib/schematype.js:66</a>
+    <a href="https://github.com/tommy351/warehouse/blob/0.2.2/lib/schematype.js#L66">lib/schematype.js:66</a>
   </div>
   
   <div class="api-item-entry">

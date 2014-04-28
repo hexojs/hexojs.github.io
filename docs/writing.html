@@ -144,6 +144,7 @@
 <figure class="highlight bash"><pre>$ hexo new [layout] &lt;title&gt;
 </pre></figure>
 
+
 <h3 id="Layout">Layout</h3>
 <p>Hexo has 3 default layouts: <code>post</code>, <code>page</code> and <code>draft</code>. Other layouts will be saved in <code>source/_posts</code> by default.</p>
 <table>
@@ -168,10 +169,12 @@
 </tr>
 </tbody>
 </table>
-<blockquote class="note tip"><strong class="note-title">Don't process my posts!</strong><p>If you don’t want your posts processed. You can set <code>layout: false</code> in front-matter.</p>
+<escape><blockquote class="note tip"><strong class="note-title">Don't process my posts!</strong>
+
+<p>If you don’t want your posts processed. You can set <code>layout: false</code> in front-matter.</p>
 </blockquote>
 
-
+<p></escape></p>
 <h3 id="Example">Example</h3>
 <figure class="highlight bash"><pre>$ hexo new <span class="string">"New Post"</span>
 <span class="comment"># =&gt; The file will be created at source/_posts/new-post.md</span>
@@ -182,6 +185,7 @@ $ hexo new page <span class="string">"New Page"</span>
 $ hexo new draft <span class="string">"New Draft"</span>
 <span class="comment"># =&gt; The file will be created at source/_drafts/new-draft.md</span>
 </pre></figure>
+
 
 <h3 id="Filename">Filename</h3>
 <p>You can modify the name of files created by Hexo in <code>new_post_name</code> setting.</p>
@@ -219,16 +223,19 @@ $ hexo new draft <span class="string">"New Draft"</span>
 </tr>
 </tbody>
 </table>
-<blockquote class="note tip"><strong class="note-title">Organize your posts by date</strong><p>You can set <code>new_post_name</code> as <code>:year-:month-:day-:title.md</code> to make your posts ordered by date.</p>
+<escape><blockquote class="note tip"><strong class="note-title">Organize your posts by date</strong>
+
+<p>You can set <code>new_post_name</code> as <code>:year-:month-:day-:title.md</code> to make your posts ordered by date.</p>
 </blockquote>
 
-
+<p></escape></p>
 <h2 id="Front-matter">Front-matter</h2>
 <p>Front-matter is a block wrapped with <code>---</code> in front of the file. For example:</p>
 <figure class="highlight yaml"><pre>title: Hello World
 <span class="header">date: 2013/7/13 20:46:25
 ---</span>
 </pre></figure>
+
 
 <p>You can configure all post configuration in the front-matter. The following is predefined settings.</p>
 <table>
@@ -282,10 +289,12 @@ $ hexo new draft <span class="string">"New Draft"</span>
 </tr>
 </tbody>
 </table>
-<blockquote class="note warn"><strong class="note-title">YAML front-matter</strong><p>Write the front-matter in YAML format. Don’t use tabs in the front-matter, use spaces instead. Also, add a space after colons.</p>
+<escape><blockquote class="note warn"><strong class="note-title">YAML front-matter</strong>
+
+<p>Write the front-matter in YAML format. Don’t use tabs in the front-matter, use spaces instead. Also, add a space after colons.</p>
 </blockquote>
 
-
+<p></escape></p>
 <h2 id="Categories_&amp;_Tags">Categories &amp; Tags</h2>
 <p>Hexo supports categories and tags. Categories and tags are only supported in posts and have to be set in the front-matter. For example:</p>
 <figure class="highlight yaml"><pre>categories:
@@ -294,6 +303,7 @@ $ hexo new draft <span class="string">"New Draft"</span>
 -<span class="ruby"> <span class="constant">PS3</span>
 </span>-<span class="ruby"> <span class="constant">Games</span></span>
 </pre></figure>
+
 
 <p>Categories and tags may sound fimiliar in other systems, but they’re totally different in Hexo. Categories have inhertiance and are ordered, which means <code>Foo, Bar</code> doesn’t equal to <code>Bar, Foo</code>. Tags are unordered and flat.</p>
 <h2 id="Excerpts">Excerpts</h2>
@@ -305,6 +315,7 @@ $ hexo new draft <span class="string">"New Draft"</span>
 Aenean sit amet mi tristique, luctus diam sit amet, pharetra justo. Quisque ac faucibus tellus, non viverra augue. Phasellus justo ligula, pharetra adipiscing vulputate eget, fringilla sit amet urna. Nunc aliquam fermentum est ac fringilla.
 </pre></figure>
 
+
 <h2 id="Code_Highlighting">Code Highlighting</h2>
 <p>There’re 2 ways for you to highlight your code snippets in your posts: <strong>Backtick code block</strong> and <strong>Swig code block</strong>. Both are ported from Octopress.</p>
 <h3 id="Backtick_Code_Block">Backtick Code Block</h3>
@@ -312,6 +323,7 @@ Aenean sit amet mi tristique, luctus diam sit amet, pharetra justo. Quisque ac f
 <span class="tag">code</span> <span class="tag">snippet</span>
 ```
 </pre></figure>
+
 
 
 <h3 id="Swig_Code_Block">Swig Code Block</h3>
@@ -324,6 +336,7 @@ Aenean sit amet mi tristique, luctus diam sit amet, pharetra justo. Quisque ac f
 <span class="comment"># =&gt; The file will be created at source/_posts/my-gallery.md</span>
 </pre></figure>
 
+
 <p>Hexo will find the scaffold file named <code>photo</code> in the <code>scaffolds</code> folder. If the scaffold not exists, use the post scaffold instead.</p>
 <h3 id="Example-1">Example</h3>
 <p>Variables are wrapped by double curly brackets. For example:</p>
@@ -332,6 +345,7 @@ title: {{ title }}
 date: {{ date }}
 ---
 </pre></figure>
+
 
 <h3 id="Variables">Variables</h3>
 <table>
@@ -359,7 +373,7 @@ date: {{ date }}
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-04-15T15:01:53.000Z">Last updated: Apr 15, 2014</time>
+        <time id="page-footer-updated" datetime="2014-04-15T15:03:40.000Z">Last updated: Apr 15, 2014</time>
         <a href="/docs/migration.html" id="page-footer-prev" class="page-footer-link">Prev</a>
         <a href="/docs/generating.html" id="page-footer-next" class="page-footer-link">Next</a>
       </footer>

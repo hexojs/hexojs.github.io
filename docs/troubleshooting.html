@@ -147,40 +147,49 @@ throw new YamlParseException(<span class="string">'Unable to parse.'</span>, thi
 YamlParseException: Unable to parse.
 </pre></figure>
 
+
 <p>When you encounter <code>YamlParseException</code>, check your configuration and front-matter in the post files. Make sure they are written in correct YAML format: use spaces instead of tabs and add a space before colons. For example:</p>
 <figure class="highlight yaml"><pre><span class="label">foo:</span> <span class="number">1</span>
 <span class="label">bar:</span>
   baz: <span class="number">2</span>
 </pre></figure>
 
+
 <h2 id="EMFILE_Error">EMFILE Error</h2>
 <figure class="highlight bash"><pre>Error: EMFILE, too many open files
 </pre></figure>
+
 
 <p>Though Node.js has non-blocking I/O, the number of synchronous I/O is still limited by system. You may come across EMFILE error when trying to generate a large number of files. You can try to run the following command to increase the number of synchronous I/O.</p>
 <figure class="highlight bash"><pre>$ ulimit -n <span class="number">10000</span>
 </pre></figure>
 
+
 <h2 id="GitHub_Deployment_Problems">GitHub Deployment Problems</h2>
 <figure class="highlight bash"><pre>fatal: <span class="string">'username.github.io'</span> does not appear to be a git repository
 </pre></figure>
+
 
 <p>Make sure you have <a href="https://help.github.com/articles/set-up-git" target="_blank">set up git</a> on your computer and try to use HTTPS repository URL instead.</p>
 <h2 id="Server_Problems">Server Problems</h2>
 <figure class="highlight bash"><pre>Error: listen EADDRINUSE
 </pre></figure>
 
+
 <p>You may open Hexo server twice or there’s other applications using the same port. Try to edit <code>port</code> setting or start Hexo server with <code>-p</code> flag.</p>
 <figure class="highlight bash"><pre>$ hexo server -p <span class="number">5000</span>
 </pre></figure>
+
 
 <h2 id="Plugin_Installation_Problems">Plugin Installation Problems</h2>
 <figure class="highlight bash"><pre>npm WARN package.json plugin-name@<span class="number">0.0</span>.<span class="number">1</span> No <span class="built_in">read</span> me data.
 </pre></figure>
 
+
 <p>This error comes out when you install a plugin which doesn’t provide read me file. Don’t be scared. This error won’t cause any problems.</p>
 <figure class="highlight bash"><pre>npm ERR! node-waf configure build
 </pre></figure>
+
 
 <p>This error may occurred when you trying to install a plugin written in C, C++ or other non-JavaScript language. Make sure you have installed compiler on your computer.</p>
 

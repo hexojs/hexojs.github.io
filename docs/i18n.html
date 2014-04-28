@@ -144,26 +144,32 @@
 <figure class="highlight yaml"><pre><span class="attribute">language</span>: <span class="string">zh-TW</span>
 </pre></figure>
 
+
 <h2 id="Structure">Structure</h2>
 <figure class="highlight plain"><pre>.
 ├── default.yml
 └── zh-TW.yml
 </pre></figure>
 
+
 <p>All language files must put into <code>languages</code> folder and be written in YAML format. All <code>languages</code> folder must have <code>default.yml</code> at least.</p>
-<blockquote class="note warn"><strong class="note-title">YAML format</strong><p>Don’t use tabs in language files, use spaces instead. Also, add a space after colons.</p>
+<escape><blockquote class="note warn"><strong class="note-title">YAML format</strong>
+
+<p>Don’t use tabs in language files, use spaces instead. Also, add a space after colons.</p>
 </blockquote>
 
-
+<p></escape></p>
 <h2 id="i18n_in_Theme">i18n in Theme</h2>
 <p>To use i18n in the theme. Use <code>__</code> (double underscores) with the key you set in language files.</p>
 <figure class="highlight js"><pre>&lt;%= __(<span class="string">'key'</span>) %&gt;
 </pre></figure>
 
+
 <p>You can even pass more than one arguments:</p>
 <figure class="highlight js"><pre>&lt;%= __(<span class="string">'Hello %s!'</span>, <span class="string">'World'</span>) %&gt;
 <span class="comment">// =&gt; Hello World!</span>
 </pre></figure>
+
 
 <p><code>%s</code> in the first string will be replaced with the second string. The result will be <code>Hello World!</code>.</p>
 
