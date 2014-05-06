@@ -136,7 +136,7 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What’s_Hexo?"><span class="toc-number">1.</span> <span class="toc-text">What’s Hexo?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-number">2.</span> <span class="toc-text">Installation</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Requirements"><span class="toc-number">2.1.</span> <span class="toc-text">Requirements</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Install_Git"><span class="toc-number">2.2.</span> <span class="toc-text">Install Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Install_Node-js"><span class="toc-number">2.3.</span> <span class="toc-text">Install Node.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Install_Hexo"><span class="toc-number">2.4.</span> <span class="toc-text">Install Hexo</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What’s_Hexo?"><span class="toc-number">1.</span> <span class="toc-text">What’s Hexo?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-number">2.</span> <span class="toc-text">Installation</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Requirements"><span class="toc-number">2.1.</span> <span class="toc-text">Requirements</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Install_Hexo"><span class="toc-number">2.2.</span> <span class="toc-text">Install Hexo</span></a></li></ol>
       </div>
       <div class="page-entry">
         <p>Welcome to the Hexo’s documentation. This documentation will help you get started fast. If you get any problems when using Hexo, you can find the answer in <a href="troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/tommy351/hexo/issues" target="_blank">GitHub</a>.</p>
@@ -154,37 +154,17 @@
 <figure class="highlight bash"><pre>$ npm install -g hexo
 </pre></figure>
 
-
 <p>If not, please follow the following instructions to install all the requirements.</p>
-<escape><blockquote class="note warn"><strong class="note-title">For Mac users</strong>
-
-<p>You may encounter some problems when compiling. Please install Xcode from App Store first. After Xcode is installed, open Xcode and go to <strong>Preferences -&gt; Download -&gt; Command Line Tools -&gt; Install</strong> to install command line tools.</p>
-</blockquote>
-
-<p></escape></p>
-<h3 id="Install_Git">Install Git</h3>
-<ul>
-<li>Windows: Download &amp; install <a href="http://code.google.com/p/msysgit/" target="_blank">msysgit</a>.</li>
-<li>Mac: Install it with <a href="http://mxcl.github.com/homebrew/" target="_blank">Homebrew</a>, <a href="http://www.macports.org/" target="_blank">MacPorts</a> or <a href="http://code.google.com/p/git-osx-installer/" target="_blank">installer</a>.</li>
-<li>Linux (Ubuntu, Debian): <code>sudo apt-get install git-core</code></li>
-<li>Linux (Fedora, Red Hat, CentOS): <code>sudo yum install git-core</code></li>
-</ul>
-<h3 id="Install_Node-js">Install Node.js</h3>
-<p>The best way to install Node.js is installing with <a href="https://github.com/creationix/nvm" target="_blank">nvm</a>.</p>
-<p>cURL:</p>
-<figure class="highlight bash"><pre>$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+<escape><blockquote class="note warn"><strong class="note-title">For Mac users</strong><br>You may encounter some problems when compiling. Please install Xcode from App Store first. After Xcode is installed, open Xcode and go to <strong>Preferences -&gt; Download -&gt; Command Line Tools -&gt; Install</strong> to install command line tools.<br></blockquote><br></escape><br><br>### Install Git<br><br>- Windows: Download &amp; install <a href="http://code.google.com/p/msysgit/" target="_blank">msysgit</a>.<br>- Mac: Install it with <a href="http://mxcl.github.com/homebrew/" target="_blank">Homebrew</a>, <a href="http://www.macports.org/" target="_blank">MacPorts</a> or <a href="http://code.google.com/p/git-osx-installer/" target="_blank">installer</a>.<br>- Linux (Ubuntu, Debian): <code>sudo apt-get install git-core</code><br>- Linux (Fedora, Red Hat, CentOS): <code>sudo yum install git-core</code><br><br>### Install Node.js<br><br>The best way to install Node.js is installing with <a href="https://github.com/creationix/nvm" target="_blank">nvm</a>.<br><br>cURL:<br><br><br><figure class="highlight bash"><pre>$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 </pre></figure>
-
 
 <p>Wget:</p>
 <figure class="highlight bash"><pre>$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh
 </pre></figure>
 
-
 <p>Once installed, restart the terminal and run the following command to install Node.js.</p>
 <figure class="highlight bash"><pre>$ nvm install <span class="number">0.10</span>
 </pre></figure>
-
 
 
 <p>Or you can download the <a href="http://nodejs.org/" target="_blank">installer</a> and install it.</p>
@@ -192,7 +172,6 @@
 <p>Once all the requirements are installed, you can install Hexo with npm.</p>
 <figure class="highlight bash"><pre>$ npm install -g hexo
 </pre></figure>
-
 
 
       </div>

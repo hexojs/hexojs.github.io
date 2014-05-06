@@ -144,34 +144,28 @@
 <figure class="highlight bash"><pre>$ npm install hexo-migrator-rss --save
 </pre></figure>
 
-
 <p>Once the plugin is installed, run the following command to migrate all posts from RSS. <code>source</code> can be the file path or URL.</p>
 <figure class="highlight bash"><pre>$ hexo migrate rss &lt;<span class="built_in">source</span>&gt;
 </pre></figure>
-
 
 <h2 id="Jekyll">Jekyll</h2>
 <p>Move all files in <code>_posts</code> folder to <code>source/_posts</code> folder and modify <code>new_post_name</code> setting in <code>_config.yml</code>.</p>
 <figure class="highlight yaml"><pre><span class="symbol">new_post_name:</span> <span class="symbol">:year-</span><span class="symbol">:month-</span><span class="symbol">:day-</span><span class="symbol">:title</span>.md
 </pre></figure>
 
-
 <h2 id="Octopress">Octopress</h2>
 <p>Move all files in <code>source/_posts</code> folder of Octopress to <code>source/_posts</code> of Hexo and modify <code>new_post_name</code> setting in <code>_config.yml</code>.</p>
 <figure class="highlight yaml"><pre><span class="symbol">new_post_name:</span> <span class="symbol">:year-</span><span class="symbol">:month-</span><span class="symbol">:day-</span><span class="symbol">:title</span>.md
 </pre></figure>
-
 
 <h2 id="WordPress">WordPress</h2>
 <p>First, install <code>hexo-migrator-wordpress</code> plugin.</p>
 <figure class="highlight bash"><pre>$ npm install hexo-migrator-wordpress --save
 </pre></figure>
 
-
 <p>Once the plugin is installed, run the following command to migrate all posts from RSS. <code>source</code> can be the file path or URL.</p>
 <figure class="highlight bash"><pre>$ hexo migrate wordpress &lt;<span class="built_in">source</span>&gt;
 </pre></figure>
-
 
 
       </div>

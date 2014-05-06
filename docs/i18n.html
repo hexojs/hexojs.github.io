@@ -136,7 +136,7 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Structure"><span class="toc-number">1.</span> <span class="toc-text">Structure</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#i18n_in_Theme"><span class="toc-number">2.</span> <span class="toc-text">i18n in Theme</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Structure"><span class="toc-number">1.</span> <span class="toc-text">Structure</span></a></li></ol>
       </div>
       <div class="page-entry">
         <p>Hexo has a simple i18n module built-in, which means you can make Hexo says your language!</p>
@@ -144,32 +144,20 @@
 <figure class="highlight yaml"><pre><span class="attribute">language</span>: <span class="string">zh-TW</span>
 </pre></figure>
 
-
 <h2 id="Structure">Structure</h2>
 <figure class="highlight plain"><pre>.
 ├── default.yml
 └── zh-TW.yml
 </pre></figure>
 
-
 <p>All language files must put into <code>languages</code> folder and be written in YAML format. All <code>languages</code> folder must have <code>default.yml</code> at least.</p>
-<escape><blockquote class="note warn"><strong class="note-title">YAML format</strong>
-
-<p>Don’t use tabs in language files, use spaces instead. Also, add a space after colons.</p>
-</blockquote>
-
-<p></escape></p>
-<h2 id="i18n_in_Theme">i18n in Theme</h2>
-<p>To use i18n in the theme. Use <code>__</code> (double underscores) with the key you set in language files.</p>
-<figure class="highlight js"><pre>&lt;%= __(<span class="string">'key'</span>) %&gt;
+<escape><blockquote class="note warn"><strong class="note-title">YAML format</strong><br>Don’t use tabs in language files, use spaces instead. Also, add a space after colons.<br></blockquote><br></escape><br><br>## i18n in Theme<br><br>To use i18n in the theme. Use <code>__</code> (double underscores) with the key you set in language files.<br><br><br><figure class="highlight js"><pre>&lt;%= __(<span class="string">'key'</span>) %&gt;
 </pre></figure>
-
 
 <p>You can even pass more than one arguments:</p>
 <figure class="highlight js"><pre>&lt;%= __(<span class="string">'Hello %s!'</span>, <span class="string">'World'</span>) %&gt;
 <span class="comment">// =&gt; Hello World!</span>
 </pre></figure>
-
 
 <p><code>%s</code> in the first string will be replaced with the second string. The result will be <code>Hello World!</code>.</p>
 

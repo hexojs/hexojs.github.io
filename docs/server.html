@@ -136,7 +136,7 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Express"><span class="toc-number">1.</span> <span class="toc-text">Express</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Static_Mode"><span class="toc-number">1.1.</span> <span class="toc-text">Static Mode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Custom_IP"><span class="toc-number">1.2.</span> <span class="toc-text">Custom IP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Drafts"><span class="toc-number">1.3.</span> <span class="toc-text">Drafts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Logger"><span class="toc-number">1.4.</span> <span class="toc-text">Logger</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Pow"><span class="toc-number">2.</span> <span class="toc-text">Pow</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Install"><span class="toc-number">2.1.</span> <span class="toc-text">Install</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Setup"><span class="toc-number">2.2.</span> <span class="toc-text">Setup</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Forever_/_PM2"><span class="toc-number">3.</span> <span class="toc-text">Forever / PM2</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Express"><span class="toc-number">1.</span> <span class="toc-text">Express</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Custom_IP"><span class="toc-number">1.1.</span> <span class="toc-text">Custom IP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Drafts"><span class="toc-number">1.2.</span> <span class="toc-text">Drafts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Logger"><span class="toc-number">1.3.</span> <span class="toc-text">Logger</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Pow"><span class="toc-number">2.</span> <span class="toc-text">Pow</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Install"><span class="toc-number">2.1.</span> <span class="toc-text">Install</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Setup"><span class="toc-number">2.2.</span> <span class="toc-text">Setup</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Forever_/_PM2"><span class="toc-number">3.</span> <span class="toc-text">Forever / PM2</span></a></li></ol>
       </div>
       <div class="page-entry">
         <h2 id="Express">Express</h2>
@@ -144,36 +144,23 @@
 <figure class="highlight bash"><pre>$ hexo server
 </pre></figure>
 
-
 <p>Your website will running at <code>http://localhost:4000</code>. You can edit the server port in <code>_config.yml</code> or use flags to override the default port. For example:</p>
 <figure class="highlight bash"><pre>$ hexo server -p <span class="number">5000</span>
 </pre></figure>
 
-
 <p>Server will watch for file changes and update automatically. However, server won’t update files in <code>public</code> folder. You should run <code>hexo generate</code> instead.</p>
-<escape><blockquote class="note info"><strong class="note-title">Restart Hexo after configuration changed</strong>
-
-<p>Hexo doesn’t watch for configuration file changes. You have to restart Hexo to make the new configurations take effects.</p>
-</blockquote>
-
-<p></escape></p>
-<h3 id="Static_Mode">Static Mode</h3>
-<p>In static mode, only files in <code>public</code> folder will be served and file watching is disabled. You have to run <code>hexo generate</code> before starting the server. Usually used in production.</p>
-<figure class="highlight bash"><pre>$ hexo server <span class="operator">-s</span>
+<escape><blockquote class="note info"><strong class="note-title">Restart Hexo after configuration changed</strong><br>Hexo doesn’t watch for configuration file changes. You have to restart Hexo to make the new configurations take effects.<br></blockquote><br></escape><br><br>### Static Mode<br><br>In static mode, only files in <code>public</code> folder will be served and file watching is disabled. You have to run <code>hexo generate</code> before starting the server. Usually used in production.<br><br><br><figure class="highlight bash"><pre>$ hexo server <span class="operator">-s</span>
 </pre></figure>
-
 
 <h3 id="Custom_IP">Custom IP</h3>
 <p>Hexo runs the server at <code>0.0.0.0</code> by default. You can override the default IP setting. For example:</p>
 <figure class="highlight bash"><pre>$ hexo server -i <span class="number">192.168</span>.<span class="number">1.1</span>
 </pre></figure>
 
-
 <h3 id="Drafts">Drafts</h3>
 <p>In draft mode, drafts will be served as normal posts. You can preview your drafts on the server. All changes you made on drafts will be updated at once.</p>
 <figure class="highlight bash"><pre>$ hexo server <span class="operator">-d</span>
 </pre></figure>
-
 
 <h3 id="Logger">Logger</h3>
 <p>To log requests of server, you can enable logger in <code>_config.yml</code>. Logger is always enabled in debug mode.</p>
@@ -181,11 +168,9 @@
 <span class="attribute">logger_format</span>: <span class="string">default</span>
 </pre></figure>
 
-
 <p>Or use flags to override default settings. For example:</p>
 <figure class="highlight bash"><pre>$ hexo server <span class="operator">-l</span> default
 </pre></figure>
-
 
 <p><strong>Pre-defined formats:</strong></p>
 <table>
@@ -276,13 +261,11 @@
 <figure class="highlight bash"><pre>$ curl get.pow.cx | sh
 </pre></figure>
 
-
 <h3 id="Setup">Setup</h3>
 <p>Symlink the folder into <code>~/.pow</code></p>
 <figure class="highlight bash"><pre>$ <span class="built_in">cd</span> ~/.pow
 $ ln <span class="operator">-s</span> /path/to/myapp
 </pre></figure>
-
 
 <p>Your website will be up and running at <code>http://myapp.dev</code>. The URL is based on the name of symlink.</p>
 <h2 id="Forever_/_PM2">Forever / PM2</h2>
@@ -292,18 +275,15 @@ $ ln <span class="operator">-s</span> /path/to/myapp
 <figure class="highlight bash"><pre>$ npm install hexo --save
 </pre></figure>
 
-
 <p><strong>2. Add a JavaScript file with the following content.</strong></p>
 <figure class="highlight js"><figcaption><span>app.js</span></figcaption><pre><span class="built_in">require</span>(<span class="string">'hexo'</span>).init({command: <span class="string">'server'</span>});
 </pre></figure>
-
 
 <p><strong>3. Run the JavaScript file you just created with <a href="https://github.com/nodejitsu/forever" target="_blank">Forever</a> or <a href="https://github.com/Unitech/pm2" target="_blank">PM2</a>.</strong></p>
 <p>PM2 has a <a href="https://github.com/Unitech/pm2#known-bugs-and-workarounds" target="_blank">known issue</a> that the port isn’t released when the script is stopped unless PM2 is killed. You have to run the script in fork mode.</p>
 <figure class="highlight bash"><pre>$ forever start app.js
 $ pm2 start app.js -x
 </pre></figure>
-
 
 
       </div>
