@@ -237,6 +237,13 @@
         <a href="/docs/troubleshooting.html" id="page-footer-prev" class="page-footer-link">Prev</a>
         
       </footer>
+      
+      <section id="comments">
+        <div id="disqus_thread">
+          <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+      </section>
+      
     </div>
     <aside id="sidebar">
   
@@ -308,6 +315,21 @@
     </div>
   </div>
 </footer>
+
+<script>
+  var disqus_shortname = 'hexojs';
+  
+  var disqus_url = 'http://hexo.io/docs/contributing.html';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
