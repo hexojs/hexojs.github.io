@@ -145,6 +145,7 @@
 <figure class="highlight js"><pre>&lt;%- css(path, ...) %&gt;
 </pre></figure>
 
+
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- css(<span class="string">'style.css'</span>) %&gt;
 <span class="comment">// &lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</span>
@@ -154,10 +155,12 @@
 <span class="comment">// &lt;link rel="stylesheet" href="/screen.css" type="text/css"&gt;</span>
 </pre></figure>
 
+
 <h3 id="js">js</h3>
 <p>Loads JavaScript files. <code>path</code> can be an array or a string. If <code>path</code> isn’t prefixed with <code>/</code> or any protocol, it’ll be prefixed with root URL. If you didn’t add extension name <code>.js</code> after <code>path</code>, it’ll be added.</p>
 <figure class="highlight js"><pre>&lt;%- js(path, ...) %&gt;
 </pre></figure>
+
 
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- js(<span class="string">'script.js'</span>) %&gt;
@@ -167,6 +170,7 @@
 <span class="comment">// &lt;script type="text/javascript" src="/script.js"&gt;&lt;/script&gt;</span>
 <span class="comment">// &lt;script type="text/javascript" src="/gallery.js"&gt;&lt;/script&gt;</span>
 </pre></figure>
+
 
 <h3 id="Conditional_Tags">Conditional Tags</h3>
 <p>Conditional tags help you check the status of current page.</p>
@@ -217,6 +221,7 @@
 <figure class="highlight js"><pre>&lt;%- gravatar(email, [size]);
 </pre></figure>
 
+
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- gravatar(<span class="string">'a@abc.com'</span>) %&gt;
 <span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787</span>
@@ -225,40 +230,48 @@
 <span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40</span>
 </pre></figure>
 
+
 <h3 id="trim">trim</h3>
 <p>Clears all spaces in a string.</p>
 <figure class="highlight js"><pre>&lt;%- trim(string) %&gt;
 </pre></figure>
+
 
 <h3 id="strip_html">strip_html</h3>
 <p>Sanitizes all HTML tags in a string.</p>
 <figure class="highlight js"><pre>&lt;%- strip_html(string) %&gt;
 </pre></figure>
 
+
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- strip_html('It's not &lt;b&gt;important&lt;/b&gt; anymore!') %&gt;
 // It's not important anymore!
 </pre></figure>
+
 
 <h3 id="titlecase">titlecase</h3>
 <p>Transforms a string into proper title caps.</p>
 <figure class="highlight js"><pre>&lt;%- titlecase(string) %&gt;
 </pre></figure>
 
+
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- titlecase(<span class="string">'this is an apple'</span>) %&gt;
 # This is an Apple
 </pre></figure>
+
 
 <h3 id="partial">partial</h3>
 <p>Loads other template files. You can define local variables in <code>local</code>.</p>
 <figure class="highlight js"><pre>&lt;%- partial(layout, [locals], [only]) %&gt;
 </pre></figure>
 
+
 <h3 id="tagcloud">tagcloud</h3>
 <p>Inserts a tag cloud.</p>
 <figure class="highlight js"><pre>&lt;%- tagcloud([tags], [options]) %&gt;
 </pre></figure>
+
 
 <table>
 <thead>
@@ -320,6 +333,7 @@
 <p>Inserts a paginator.</p>
 <figure class="highlight js"><pre>&lt;%- paginator(options) %&gt;
 </pre></figure>
+
 
 <table>
 <thead>
@@ -392,6 +406,7 @@
 <figure class="highlight js"><pre>&lt;%- date(date, [format]) %&gt;
 </pre></figure>
 
+
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- date(<span class="built_in">Date</span>.now()) %&gt;
 <span class="comment">// Jan 1, 2013</span>
@@ -400,20 +415,24 @@
 <span class="comment">// 2013/1/1</span>
 </pre></figure>
 
+
 <h3 id="date_xml">date_xml</h3>
 <p>Inserts date in XML format. <code>date</code> can be unix time, ISO string, date object, or moment.js object. <code>format</code> is <code>date_format</code> setting by default.</p>
 <figure class="highlight js"><pre>&lt;%- date_xml(date) %&gt;
 </pre></figure>
+
 
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- date_xml(<span class="built_in">Date</span>.now()) %&gt;
 <span class="comment">// 2013-01-01T00:00:00.000Z</span>
 </pre></figure>
 
+
 <h3 id="time">time</h3>
 <p>Inserts formatted time. <code>date</code> can be unix time, ISO string, date object, or moment.js object. <code>format</code> is <code>time_format</code> setting by default.</p>
 <figure class="highlight js"><pre>&lt;%- time(date, [format]) %&gt;
 </pre></figure>
+
 
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- time(<span class="built_in">Date</span>.now()) %&gt;
@@ -423,10 +442,12 @@
 <span class="comment">// 1:05:12 pm</span>
 </pre></figure>
 
+
 <h3 id="full_date">full_date</h3>
 <p>Inserts formatted date and time. <code>date</code> can be unix time, ISO string, date object, or moment.js object. <code>format</code> is <code>date_format + time_format</code> setting by default.</p>
 <figure class="highlight js"><pre>&lt;%- full_date(date, [format]) %&gt;
 </pre></figure>
+
 
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>()) %&gt;
@@ -436,12 +457,14 @@
 <span class="comment">// Tuesday, January 1st 2013, 12:00:00 am</span>
 </pre></figure>
 
+
 <h3 id="moment">moment</h3>
 <p>[Moment.js] library.</p>
 <h3 id="search_form">search_form</h3>
 <p>Inserts a Google search form.</p>
 <figure class="highlight js"><pre>&lt;%- search_form(options) %&gt;
 </pre></figure>
+
 
 <table>
 <thead>
@@ -474,45 +497,54 @@
 <figure class="highlight js"><pre>&lt;%- markdown(str) %&gt;
 </pre></figure>
 
+
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- markdown(<span class="string">'make me **strong**'</span>) %&gt;
 <span class="comment">// make me &lt;strong&gt;strong&lt;/strong&gt;</span>
 </pre></figure>
+
 
 <h3 id="word_wrap">word_wrap</h3>
 <p>Wraps text into lines no longer than <code>length</code>. <code>length</code> is 80 by default.</p>
 <figure class="highlight js"><pre>&lt;%- word_wrap(str, [length]) %&gt;
 </pre></figure>
 
+
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- word_wrap(<span class="string">'Once upon a time'</span>, <span class="number">8</span>) %&gt;
 <span class="comment">// Once upon\n a time</span>
 </pre></figure>
+
 
 <h3 id="truncate">truncate</h3>
 <p>Truncates text after <code>length</code>.</p>
 <figure class="highlight js"><pre>&lt;%- truncate(text, length) %&gt;
 </pre></figure>
 
+
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, <span class="number">16</span>) %&gt;
 <span class="comment">// Once upon a time</span>
 </pre></figure>
+
 
 <h3 id="truncate_words">truncate_words</h3>
 <p>Truncates words after <code>length</code>.</p>
 <figure class="highlight js"><pre>&lt;%- truncate_words(text, length) %&gt;
 </pre></figure>
 
+
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- truncate_words(<span class="string">'Once upon a time in a world far far away'</span>, <span class="number">4</span>) %&gt;
 <span class="comment">// Once upon a time</span>
 </pre></figure>
 
+
 <h3 id="link_to">link_to</h3>
 <p>Inserts a link.</p>
 <figure class="highlight js"><pre>&lt;%- link_to(path, [text], [external]) %&gt;
 </pre></figure>
+
 
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- link_to(<span class="string">'http://www.google.com'</span>) %&gt;
@@ -525,10 +557,12 @@
 <span class="comment">// &lt;a href="http://www.google.com" title="Google" target="_blank" rel="external"&gt;Google&lt;/a&gt;</span>
 </pre></figure>
 
+
 <h3 id="mail_to">mail_to</h3>
 <p>Inserts a mail link.</p>
 <figure class="highlight js"><pre>&lt;%- mail_to(path, [text]) %&gt;
 </pre></figure>
+
 
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- mail_to(<span class="string">'a@abc.com'</span>) %&gt;
@@ -538,10 +572,12 @@
 <span class="comment">// &lt;a href="mailto:a@abc.com" title="Email"&gt;Email&lt;/a&gt;</span>
 </pre></figure>
 
+
 <h3 id="list_categories">list_categories</h3>
 <p>Inserts a list of all categories.</p>
 <figure class="highlight js"><pre>&lt;%- list_categories([options]) %&gt;
 </pre></figure>
+
 
 <table>
 <thead>
@@ -594,6 +630,7 @@
 <figure class="highlight js"><pre>&lt;%- list_tags([options]) %&gt;
 </pre></figure>
 
+
 <table>
 <thead>
 <tr>
@@ -639,6 +676,7 @@
 <p>Inserts a list of archives.</p>
 <figure class="highlight js"><pre>&lt;%- list_archive([options]) %&gt;
 </pre></figure>
+
 
 <table>
 <thead>
@@ -691,6 +729,7 @@
 <figure class="highlight js"><pre>&lt;%- list_archive([options]) %&gt;
 </pre></figure>
 
+
 <table>
 <thead>
 <tr>
@@ -732,6 +771,7 @@
 <figure class="highlight js"><pre>&lt;% get_posts([options]) %&gt;
 </pre></figure>
 
+
 <table>
 <thead>
 <tr>
@@ -767,6 +807,7 @@
 <p>Formats a number.</p>
 <figure class="highlight js"><pre>&lt;%- number_format(number, [options]) %&gt;
 </pre></figure>
+
 
 <table>
 <thead>
@@ -811,10 +852,12 @@
 <span class="comment">// 12,345/67</span>
 </pre></figure>
 
+
 <h3 id="open_graph">open_graph</h3>
 <p>Inserts open graph data.</p>
 <figure class="highlight js"><pre>&lt;%- open_graph([options]) %&gt;
 </pre></figure>
+
 
 <table>
 <thead>
@@ -886,6 +929,7 @@
 <figure class="highlight js"><pre>&lt;%- toc(str, [options]) %&gt;
 </pre></figure>
 
+
 <table>
 <thead>
 <tr>
@@ -910,6 +954,7 @@
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- toc(page.content) %&gt;
 </pre></figure>
+
 
 
       </div>

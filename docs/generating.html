@@ -136,20 +136,31 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Watch_for_File_Changes"><span class="toc-number">1.</span> <span class="toc-text">Watch for File Changes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_After_Generating"><span class="toc-number">2.</span> <span class="toc-text">Deploy After Generating</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Watch_for_File_Changes"><span class="toc-number">1.</span> <span class="toc-text">Watch for File Changes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Multi-thread_Generating"><span class="toc-number">2.</span> <span class="toc-text">Multi-thread Generating</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_After_Generating"><span class="toc-number">3.</span> <span class="toc-text">Deploy After Generating</span></a></li></ol>
       </div>
       <div class="page-entry">
         <p>Generate static files with Hexo is quite easy and fast.</p>
 <figure class="highlight bash"><pre>$ hexo generate
 </pre></figure>
 
+
 <h3 id="Watch_for_File_Changes">Watch for File Changes</h3>
 <p>Hexo can watch for file changes and regenerate files immediately. </p>
 <figure class="highlight bash"><pre>$ hexo generate --watch
 </pre></figure>
 
-<escape><blockquote class="note info"><strong class="note-title">Restart Hexo after configuration changed</strong><br>Hexo doesn’t watch for configuration file changes. You have to restart Hexo to make the new configurations take effects.<br></blockquote><br></escape><br><br>### Multi-thread Generating<br><br>Hexo supports multi-thread generating since 2.0. To enable this feature, edit <code>_config.yml</code>.<br><br><br><figure class="highlight yaml"><pre><span class="attribute">multi_thread</span>: <span class="string">true</span>
+
+<escape><blockquote class="note info"><strong class="note-title">Restart Hexo after configuration changed</strong>
+
+<p>Hexo doesn’t watch for configuration file changes. You have to restart Hexo to make the new configurations take effects.</p>
+</blockquote>
+
+<p></escape></p>
+<h3 id="Multi-thread_Generating">Multi-thread Generating</h3>
+<p>Hexo supports multi-thread generating since 2.0. To enable this feature, edit <code>_config.yml</code>.</p>
+<figure class="highlight yaml"><pre><span class="attribute">multi_thread</span>: <span class="string">true</span>
 </pre></figure>
+
 
 <p>You can change how many threads to use. Just edit <code>multi_thread</code> with the number of threads. The number of threads is the number of CPU cores by default. It’s not recommended to set any value higher than it.</p>
 <h3 id="Deploy_After_Generating">Deploy After Generating</h3>
@@ -157,6 +168,7 @@
 <figure class="highlight bash"><pre>$ hexo generate --deploy
 $ hexo deploy --generate
 </pre></figure>
+
 
 
       </div>

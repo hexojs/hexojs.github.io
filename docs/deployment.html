@@ -143,6 +143,7 @@
 <figure class="highlight bash"><pre>$ hexo deploy
 </pre></figure>
 
+
 <h2 id="GitHub">GitHub</h2>
 <p>Edit <code>_config.yml</code>.</p>
 <figure class="highlight yaml"><pre>deploy:
@@ -151,6 +152,7 @@
   branch: [branch]
   <span class="keyword">message</span>: [<span class="keyword">message</span>]
 </pre></figure>
+
 
 <table>
 <thead>
@@ -179,10 +181,12 @@
 <figure class="highlight bash"><pre>$ rm -rf .deploy
 </pre></figure>
 
+
 <h3 id="Custom_Domain">Custom Domain</h3>
 <p>Create a file named <code>CNAME</code> in <code>source</code> folder with the following content.</p>
 <figure class="highlight"><pre>example<span class="preprocessor">.com</span>
 </pre></figure>
+
 
 <ul>
 <li><strong>Top-level Domain:</strong> Add A records: <code>192.30.252.153</code>, <code>192.30.252.154</code>.</li>
@@ -196,6 +200,7 @@
   repo: &lt;repository url&gt;
   <span class="keyword">message</span>: [<span class="keyword">message</span>]
 </pre></figure>
+
 
 <table>
 <thead>
@@ -227,6 +232,7 @@
   port: [port] # <span class="keyword">Default</span> <span class="keyword">is</span> <span class="number">22</span>
   delete: [<span class="keyword">true</span>|<span class="keyword">false</span>] # <span class="keyword">Default</span> <span class="keyword">is</span> <span class="keyword">true</span>
 </pre></figure>
+
 
 <table>
 <thead>
@@ -272,6 +278,7 @@
   branch: [upstream git branch] # <span class="keyword">Default</span> <span class="keyword">is</span> master
 </pre></figure>
 
+
 <table>
 <thead>
 <tr>
@@ -303,6 +310,7 @@
     <span class="tag">gitcafe</span>: &lt;<span class="tag">repository</span> <span class="tag">url</span>&gt;,<span class="attr_selector">[branch]</span>
 </pre></figure>
 
+
 <table>
 <thead>
 <tr>
@@ -330,6 +338,7 @@
   repo: <span class="keyword">...</span>
 </pre></figure>
 
+
 <h2 id="Commit_message">Commit message</h2>
 <p>You can customize commit message in <strong>github</strong>, <strong>heroku</strong>, <strong>git</strong> deployer. The default message is <code>Site updated: )</code>.</p>
 <p>Swig is availble in commit message. You can use <code>now(format)</code> to display deployment time.</p>
@@ -337,12 +346,14 @@
 <figure class="highlight bash"><pre>$ hexo deploy -m <span class="string">"Commit message"</span>
 </pre></figure>
 
+
 <p>or in <code>_config.yml</code>.</p>
 <figure class="highlight yaml"><pre>deploy:
   type: github
   repo: <span class="keyword">...</span>
   message: <span class="string">"Commit message"</span>
 </pre></figure>
+
 
 <h2 id="Other_Methods">Other Methods</h2>
 <p>All generated files are saved in <code>public</code> folder. You can copy it to wherever you like.</p>

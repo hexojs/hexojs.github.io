@@ -136,7 +136,7 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Configuration"><span class="toc-number">1.</span> <span class="toc-text">Configuration</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Site"><span class="toc-number">1.1.</span> <span class="toc-text">Site</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#URL"><span class="toc-number">1.2.</span> <span class="toc-text">URL</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Configuration"><span class="toc-number">1.</span> <span class="toc-text">Configuration</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Site"><span class="toc-number">1.1.</span> <span class="toc-text">Site</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#URL"><span class="toc-number">1.2.</span> <span class="toc-text">URL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Writing"><span class="toc-number">1.3.</span> <span class="toc-text">Writing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Category_&amp;_Tag"><span class="toc-number">1.4.</span> <span class="toc-text">Category &amp; Tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Archives"><span class="toc-number">1.5.</span> <span class="toc-text">Archives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Server"><span class="toc-number">1.6.</span> <span class="toc-text">Server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Date_/_Time_format"><span class="toc-number">1.7.</span> <span class="toc-text">Date / Time format</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pagination"><span class="toc-number">1.8.</span> <span class="toc-text">Pagination</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Comment"><span class="toc-number">1.9.</span> <span class="toc-text">Comment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Extensions"><span class="toc-number">1.10.</span> <span class="toc-text">Extensions</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Default_Configuration"><span class="toc-number">2.</span> <span class="toc-text">Default Configuration</span></a></li></ol>
       </div>
       <div class="page-entry">
         <p>You can modify most of options in <code>_config.yml</code>.</p>
@@ -223,7 +223,255 @@
 </tr>
 </tbody>
 </table>
-<escape><blockquote class="note info"><strong class="note-title">Website in subdirectory</strong><br>If your website is put in subdirectory such as <code>http://yoursite.com/blog</code>.   Set <code>url</code> as <code>http://yoursite.com/blog</code> and <code>root</code> as <code>/blog/</code>.<br></blockquote><br></escape><br><br>### Writing<br><br>Setting | Description | Default<br>—- | —- | —-<br><code>new_post_name</code> | The filename of the new post | :title.md<br><code>default_layout</code> | Default layout | post<br><code>auto_spacing</code> | Add a space between eastern and western characters | false<br><code>titlecase</code> | Transform title into proper title case | false<br><code>external_link</code> | Open external links in new tab | true<br><code>max_open_file</code> | Maximum synchronous I/O when generating files | 100<br><code>multi_thread</code> | Enable multi-thread generating | true<br><code>filename_case</code> | Transform filename into (1) lower case or (2) upper case | 0<br><code>render_drafts</code> | Serve drafts as normal posts in server | false<br><code>highlight</code> | Code block settings |<br><br>### Category &amp; Tag<br><br>Setting | Description | Default<br>—- | —- | —-<br><code>default_category</code> | Default category | uncategorized<br><code>category_map</code> | Category slugs |<br><code>tag_map</code> | Tag slugs |<br><br>### Archives<br><br>Setting | Description | Default<br>—- | —- | —-<br><code>archive</code> | 2: Enable pagination, 1: Disable pagination, 0: Fully disable | 2<br><code>category</code> | 2: Enable pagination, 1: Disable pagination, 0: Fully disable | 2<br><code>tag</code> | 2: Enable pagination, 1: Disable pagination, 0: Fully disable | 2<br><br>### Server<br><br>Setting | Description | Default<br>—- | —- | —-<br><code>port</code> | Server port | 4000<br><code>logger</code> | Display request info on the console. Always enabled in debug mode. | false<br><code>logger_format</code> | Logger format |<br><code>server_ip</code> | Customize server IP | 0.0.0.0<br><br>### Date / Time format<br><br>Hexo uses <a href="http://momentjs.com/" target="_blank">Moment.js</a> to parse and display date.<br><br>Setting | Description | Default<br>—- | —- | —-<br><code>date_format</code> | Date format | MMM D YYYY<br><code>time_format</code> | Time format | H:mm:ss<br><br>### Pagination<br><br>Setting | Description | Default<br>—- | —- | —-<br><code>per_page</code> | The amount of the posts displayed in a single page (0 = Disable pagination) | 10<br><code>pagination_dir</code> | Pagination directory | page<br><br>### Comment<br><br>Setting | Description<br>—- | —-<br><code>disqus_shortname</code> | <a href="http://disqus.com/" target="_blank">Disqus</a> shortname<br><br>### Extensions<br><br>Setting | Description<br>—- | —-<br><code>theme</code> | Current theme<br><code>exclude_generator</code> | Disabled generators (archive, category, home, page, post, tag)<br><code>markdown</code> | Markdown settings (See <a href="https://github.com/chjj/marked" target="_blank">marked</a> for more info)<br><code>stylus</code> | Stylus settings<br><br><br><escape><blockquote class="note warn"><strong class="note-title">YAML format</strong><br>Don’t use tabs in configuration files, use spaces instead. Also, add a space after colons. Configuration files parsing error may cause Hexo can’t run properly.<br></blockquote><br></escape><br><br>## Default Configuration<br><br><br><figure class="highlight yaml"><pre><span class="label">title:</span> Hexo
+<escape><blockquote class="note info"><strong class="note-title">Website in subdirectory</strong>
+
+<p>If your website is put in subdirectory such as <code>http://yoursite.com/blog</code>.   Set <code>url</code> as <code>http://yoursite.com/blog</code> and <code>root</code> as <code>/blog/</code>.</p>
+</blockquote>
+
+<p></escape></p>
+<h3 id="Writing">Writing</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>new_post_name</code></td>
+<td>The filename of the new post</td>
+<td>:title.md</td>
+</tr>
+<tr>
+<td><code>default_layout</code></td>
+<td>Default layout</td>
+<td>post</td>
+</tr>
+<tr>
+<td><code>auto_spacing</code></td>
+<td>Add a space between eastern and western characters</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>titlecase</code></td>
+<td>Transform title into proper title case</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>external_link</code></td>
+<td>Open external links in new tab</td>
+<td>true</td>
+</tr>
+<tr>
+<td><code>max_open_file</code></td>
+<td>Maximum synchronous I/O when generating files</td>
+<td>100</td>
+</tr>
+<tr>
+<td><code>multi_thread</code></td>
+<td>Enable multi-thread generating</td>
+<td>true</td>
+</tr>
+<tr>
+<td><code>filename_case</code></td>
+<td>Transform filename into (1) lower case or (2) upper case</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>render_drafts</code></td>
+<td>Serve drafts as normal posts in server</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>highlight</code></td>
+<td>Code block settings</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Category_&amp;_Tag">Category &amp; Tag</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>default_category</code></td>
+<td>Default category</td>
+<td>uncategorized</td>
+</tr>
+<tr>
+<td><code>category_map</code></td>
+<td>Category slugs</td>
+<td></td>
+</tr>
+<tr>
+<td><code>tag_map</code></td>
+<td>Tag slugs</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Archives">Archives</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>archive</code></td>
+<td>2: Enable pagination, 1: Disable pagination, 0: Fully disable</td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>2: Enable pagination, 1: Disable pagination, 0: Fully disable</td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>tag</code></td>
+<td>2: Enable pagination, 1: Disable pagination, 0: Fully disable</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Server">Server</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>port</code></td>
+<td>Server port</td>
+<td>4000</td>
+</tr>
+<tr>
+<td><code>logger</code></td>
+<td>Display request info on the console. Always enabled in debug mode.</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>logger_format</code></td>
+<td>Logger format</td>
+<td></td>
+</tr>
+<tr>
+<td><code>server_ip</code></td>
+<td>Customize server IP</td>
+<td>0.0.0.0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Date_/_Time_format">Date / Time format</h3>
+<p>Hexo uses <a href="http://momentjs.com/" target="_blank">Moment.js</a> to parse and display date.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>date_format</code></td>
+<td>Date format</td>
+<td>MMM D YYYY</td>
+</tr>
+<tr>
+<td><code>time_format</code></td>
+<td>Time format</td>
+<td>H:mm:ss</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Pagination">Pagination</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>per_page</code></td>
+<td>The amount of the posts displayed in a single page (0 = Disable pagination)</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>pagination_dir</code></td>
+<td>Pagination directory</td>
+<td>page</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Comment">Comment</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>disqus_shortname</code></td>
+<td><a href="http://disqus.com/" target="_blank">Disqus</a> shortname</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Extensions">Extensions</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>theme</code></td>
+<td>Current theme</td>
+</tr>
+<tr>
+<td><code>exclude_generator</code></td>
+<td>Disabled generators (archive, category, home, page, post, tag)</td>
+</tr>
+<tr>
+<td><code>markdown</code></td>
+<td>Markdown settings (See <a href="https://github.com/chjj/marked" target="_blank">marked</a> for more info)</td>
+</tr>
+<tr>
+<td><code>stylus</code></td>
+<td>Stylus settings</td>
+</tr>
+</tbody>
+</table>
+<escape><blockquote class="note warn"><strong class="note-title">YAML format</strong>
+
+<p>Don’t use tabs in configuration files, use spaces instead. Also, add a space after colons. Configuration files parsing error may cause Hexo can’t run properly.</p>
+</blockquote>
+
+<p></escape></p>
+<h2 id="Default_Configuration">Default Configuration</h2>
+<figure class="highlight yaml"><pre><span class="label">title:</span> Hexo
 <span class="label">subtitle:</span>
 <span class="label">description:</span>
 <span class="label">author:</span> John Doe
@@ -289,6 +537,7 @@
 <span class="label">deploy:</span>
   type:
 </pre></figure>
+
 
 
       </div>

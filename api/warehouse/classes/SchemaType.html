@@ -87,12 +87,14 @@ SchemaCustom.__proto__ = SchemaType;
 SchemaCustom.prototype.__proto__ = SchemaType.prototype;
 </pre></figure>
 
+
 <p><strong>Query operators</strong></p>
 <p>To add a query operator, adds a method whose name started with <code>q$</code>. For example:</p>
 <figure class="highlight js"><pre>SchemaCustom.q$foo = <span class="function"><span class="keyword">function</span><span class="params">(data, value)</span>{</span>
   <span class="comment">// ...</span>
 };
 </pre></figure>
+
 
 <p>The <code>data</code> parameter is the data in the database; the <code>value</code> parameter is the value passed to the query operator.<br>The return value should be a boolean indicating whether the data passed the test.</p>
 <p><strong>Update operators</strong></p>
@@ -101,6 +103,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
   <span class="comment">// ...</span>
 };
 </pre></figure>
+
 
 <p>The <code>data</code> parameter is the data in the database; the <code>value</code> parameter is the value passed to the update operator.<br>The return value will replace the original data.</p>
 
@@ -136,12 +139,14 @@ SchemaCustom.__proto__ = SchemaType;
 SchemaCustom.prototype.__proto__ = SchemaType.prototype;
 </pre></figure>
 
+
 <p><strong>Query operators</strong></p>
 <p>To add a query operator, adds a method whose name started with <code>q$</code>. For example:</p>
 <figure class="highlight js"><pre>SchemaCustom.q$foo = <span class="function"><span class="keyword">function</span><span class="params">(data, value)</span>{</span>
   <span class="comment">// ...</span>
 };
 </pre></figure>
+
 
 <p>The <code>data</code> parameter is the data in the database; the <code>value</code> parameter is the value passed to the query operator.<br>The return value should be a boolean indicating whether the data passed the test.</p>
 <p><strong>Update operators</strong></p>
@@ -150,6 +155,7 @@ SchemaCustom.prototype.__proto__ = SchemaType.prototype;
   <span class="comment">// ...</span>
 };
 </pre></figure>
+
 
 <p>The <code>data</code> parameter is the data in the database; the <code>value</code> parameter is the value passed to the update operator.<br>The return value will replace the original data.</p>
 

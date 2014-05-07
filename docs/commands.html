@@ -143,16 +143,19 @@
 <figure class="highlight bash"><pre>$ hexo init [folder]
 </pre></figure>
 
+
 <p>Setups a website. If <code>folder</code> isn’t defined, Hexo will setup the website at the current directory.</p>
 <h2 id="new">new</h2>
 <figure class="highlight bash"><pre>$ hexo new [layout] &lt;title&gt;
 </pre></figure>
+
 
 <p>Creates a new article. If <code>layout</code> isn’t defined, it’ll be <code>default_layout</code> setting. If the title is more than one word, wrap it with quotation marks.</p>
 <p><strong>Alias:</strong> n</p>
 <h2 id="generate">generate</h2>
 <figure class="highlight bash"><pre>$ hexo generate
 </pre></figure>
+
 
 <p>Generates static files.</p>
 <p><strong>Alias</strong>: g</p>
@@ -178,11 +181,13 @@
 <figure class="highlight bash"><pre>$ hexo publish &lt;filename&gt;
 </pre></figure>
 
+
 <p>Publishes a draft.</p>
 <p><strong>Alias</strong>: p</p>
 <h2 id="server">server</h2>
 <figure class="highlight bash"><pre>$ hexo server
 </pre></figure>
+
 
 <p>Starts server.</p>
 <p><strong>Alias:</strong> s</p>
@@ -216,6 +221,7 @@
 <figure class="highlight bash"><pre>$ hexo deploy
 </pre></figure>
 
+
 <p>Deploys your website.</p>
 <p><strong>Alias:</strong> d</p>
 <table>
@@ -244,6 +250,7 @@
 <figure class="highlight bash"><pre>$ hexo render &lt;file1&gt; [file2] ...
 </pre></figure>
 
+
 <p>Renders files.</p>
 <table>
 <thead>
@@ -263,20 +270,24 @@
 <figure class="highlight bash"><pre>$ hexo migrate &lt;<span class="built_in">type</span>&gt;
 </pre></figure>
 
+
 <p>Migrates from other blog systems.</p>
 <h2 id="clean">clean</h2>
 <figure class="highlight bash"><pre>$ hexo clean
 </pre></figure>
+
 
 <p>Cleans the cache file (<code>db.json</code>) and generated files (<code>public</code>).</p>
 <h2 id="list">list</h2>
 <figure class="highlight bash"><pre>$ hexo list &lt;<span class="built_in">type</span>&gt;
 </pre></figure>
 
+
 <p>Lists all routes.</p>
 <h2 id="version">version</h2>
 <figure class="highlight bash"><pre>$ hexo version
 </pre></figure>
+
 
 <p>Displays version information.</p>
 <h2 id="Options">Options</h2>
@@ -284,20 +295,24 @@
 <figure class="highlight bash"><pre>$ hexo --safe
 </pre></figure>
 
+
 <p>Plugins and scripts won’t be loaded in safe mode. You can try this when you encounter some problems after installing a new plugin.</p>
 <h3 id="Debug_mode">Debug mode</h3>
 <figure class="highlight bash"><pre>$ hexo --debug
 </pre></figure>
+
 
 <p>Displays verbose messages in terminal and saves log in <code>debug.log</code>. When you get some problems, try to run Hexo again in debug mode and submit the messages to GitHub.</p>
 <h3 id="Silent_mode">Silent mode</h3>
 <figure class="highlight bash"><pre>$ hexo --silent
 </pre></figure>
 
+
 <p>Hides output on console.</p>
 <h3 id="Customize_config_file_path">Customize config file path</h3>
 <figure class="highlight bash"><pre>$ hexo --config custom.yml
 </pre></figure>
+
 
 <p>Customize config file path instead of <code>_config.yml</code>.</p>
 
