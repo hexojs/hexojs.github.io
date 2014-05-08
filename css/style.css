@@ -1,3 +1,10 @@
+@font-face {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/fontawesome-webfont.eot?v=#4.0.3");
+  src: url("fonts/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff?v=#4.0.3") format("woff"), url("fonts/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
+}
 html,
 body,
 div,
@@ -89,16 +96,8 @@ td {
 a img {
   border: none;
 }
-@font-face {
-  font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  src: url("fonts/fontawesome-webfont.eot?v=#4.0.3");
-  src: url("fonts/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff?v=#4.0.3") format("woff"), url("fonts/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), url("fonts/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
-}
 body {
   width: 100%;
-  zoom: 1;
 }
 body:before,
 body:after {
@@ -110,9 +109,9 @@ body:after {
 }
 body {
   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
 }
 .outer {
-  zoom: 1;
   max-width: 1045px;
   margin: 0 auto;
   padding: 0 25px;
@@ -137,14 +136,15 @@ body {
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding-top: 30px;
   padding-bottom: 30px;
+  position: relative;
 }
 #logo-wrap {
-  float: left;
+  text-align: center;
+  position: relative;
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 769px) {
   #logo-wrap {
-    float: none;
-    text-align: center;
+    float: left;
   }
 }
 #logo {
@@ -153,78 +153,169 @@ body {
   text-transform: lowercase;
   text-decoration: none;
   font-size: 35px;
+  line-height: 1;
 }
-#main-nav {
+#main-nav-toggle {
   float: right;
+  width: 35px;
+  height: 35px;
   text-align: center;
+  color: #999;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-@media screen and (max-width: 768px) {
-  #main-nav {
-    float: none;
-    margin-top: 20px;
+#main-nav-toggle:before {
+  content: "\f0c9";
+  width: 24px;
+  height: 24px;
+  font: 24px FontAwesome;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+#main-nav-toggle:hover,
+#main-nav-toggle:active {
+  color: #555;
+}
+@media (min-width: 769px) {
+  #main-nav-toggle {
+    display: none;
   }
 }
-#main-nav-list {
-  margin: 0 auto;
-  width: auto;
+#main-nav.on {
+  display: block;
+}
+@media (max-width: 768px) {
+  #main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: -20px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    display: none;
+    z-index: 1;
+  }
+}
+@media (min-width: 769px) {
+  #main-nav {
+    float: right;
+    display: block;
+    margin: 0;
+    margin-right: -25px;
+  }
 }
 .main-nav-item {
-  padding-left: 50px;
-  padding-top: 13px;
-  display: inline-block;
+  margin: 10px;
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 769px) {
   .main-nav-item {
-    padding-left: 25px;
-    padding-right: 25px;
+    float: left;
+    margin: 0 10px;
   }
 }
 .main-nav-link {
-  color: #444;
+  display: block;
   font-weight: 300;
   text-transform: uppercase;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
-  display: inline-block;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  -ms-transition: 0.2s;
-  transition: 0.2s;
+  color: #444;
+  text-align: center;
+  padding: 10px 15px;
+  line-height: 1;
 }
 .main-nav-link:hover,
+.main-nav-link:active,
 .main-nav-link.current {
-  padding-bottom: 5px;
-  border-color: #555;
+  background: #0e83cd;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
 }
 #page-banner {
-  background: url("images/shattered.png") #ddd;
-  padding: 40px 0;
+  background-color: #ddd;
+  background-image: url("images/shattered.png");
+  padding: 30px 0;
+  text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media all and (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5/1),(min-device-pixel-ratio:1.5),(min-resolution:138dpi),(min-resolution:1.5dppx) {
   #page-banner {
-    padding: 30px 0;
+    background-image: url("images/shattered@2x.png");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
   }
 }
-.page-title {
+@media (min-width: 769px) {
+  #page-banner {
+    padding: 40px 0;
+    text-align: left;
+  }
+}
+#page-banner-inner {
+  position: relative;
+}
+#page-title {
   color: #555;
   font: 300 35px Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-shadow: 1px 0 #eee;
 }
+#page-edit-link {
+  color: #aaa;
+  text-shadow: 1px 0 #eee;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  transition: color 0.2s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+#page-edit-link:hover {
+  color: #888;
+}
+#page-edit-link:before {
+  content: "\f040";
+  font: 24px FontAwesome;
+}
+@media (max-width: 768px) {
+  #page-edit-link {
+    display: none;
+  }
+}
 .page-content {
   display: inline;
   float: left;
-  width: 72.5490196078431%;
+  width: 97.5490196078431%;
   margin: 0 1.2254901960784%;
-  float: right;
   padding: 20px 0;
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 769px) {
   .page-content {
     display: inline;
     float: left;
-    width: 97.5490196078431%;
+    width: 72.5490196078431%;
     margin: 0 1.2254901960784%;
+    float: right;
   }
 }
 .page-entry {
@@ -313,12 +404,16 @@ body {
   border-left: 4px solid #ddd;
   padding: 0 20px;
   position: relative;
-  margin-left: 45px;
+}
+@media (min-width: 769px) {
+  .page-entry blockquote {
+    margin-left: 40px;
+  }
 }
 .page-entry blockquote:before {
   content: "\f10d";
   position: absolute;
-  left: -45px;
+  left: -40px;
   top: 20px;
   font-size: 25px;
   font-family: FontAwesome;
@@ -380,7 +475,6 @@ body {
   background: #eee;
 }
 #page-footer {
-  zoom: 1;
   border-top: 1px solid #ddd;
   color: #999;
   padding: 1em 0 30px;
@@ -396,6 +490,12 @@ body {
 }
 #page-footer-updated {
   font-size: 0.9em;
+  display: none;
+}
+@media (min-width: 769px) {
+  #page-footer-updated {
+    display: block;
+  }
 }
 .page-footer-link {
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -429,7 +529,7 @@ body {
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0 0 40px;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   #sidebar {
     display: none;
   }
@@ -476,7 +576,7 @@ body {
   margin: 30px 0 0;
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   #page-mobile-menu {
     display: block;
   }
@@ -507,7 +607,6 @@ body {
   margin-left: 1em;
 }
 #api-header {
-  zoom: 1;
   margin: 1.6em 0;
 }
 #api-header:before,
@@ -617,11 +716,25 @@ body {
   margin: 1.6em 0;
 }
 body.index {
-  background: url("images/shattered.png") #ddd;
+  background-color: #ddd;
+  background-image: url("images/shattered.png");
+}
+@media all and (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5/1),(min-device-pixel-ratio:1.5),(min-resolution:138dpi),(min-resolution:1.5dppx) {
+  body.index {
+    background-image: url("images/shattered@2x.png");
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto auto;
+    background-size: auto auto;
+  }
 }
 #banner {
-  padding-top: 150px;
+  padding-top: 50px;
   padding-bottom: 50px;
+}
+@media (min-width: 769px) {
+  #banner {
+    padding-top: 150px;
+  }
 }
 #banner-title {
   color: #555;
@@ -630,8 +743,7 @@ body.index {
   line-height: 1.3;
 }
 #banner-getting-started {
-  zoom: 1;
-  padding: 30px 0;
+  padding-top: 30px;
 }
 #banner-getting-started:before,
 #banner-getting-started:after {
@@ -645,7 +757,7 @@ body.index {
   float: left;
   background: #c8c8c8;
   font-family: "Source Code Pro", Monaco, Menlo, Consolas, monospace;
-  font-size: 16px;
+  font-size: 14px;
   padding-left: 15px;
   color: #999;
   line-height: 40px;
@@ -653,7 +765,7 @@ body.index {
 #banner-getting-started-input {
   float: left;
   background: #c8c8c8;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Source Code Pro", Monaco, Menlo, Consolas, monospace;
   color: #555;
   border: none;
@@ -661,24 +773,35 @@ body.index {
   margin: 0;
   line-height: 40px;
   height: 40px;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
 #banner-getting-started-btn {
   float: left;
   background: #bbb;
-  padding: 0 15px;
-  color: #555;
+  color: #777;
   text-decoration: none;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
-  font-weight: 300;
+  width: 40px;
+  height: 40px;
+  text-align: center;
   line-height: 40px;
+}
+#banner-getting-started-btn:before {
+  content: "\f061";
+  font: 16px FontAwesome;
 }
 #banner-getting-started-btn:hover {
   background: #aaa;
-  color: #444;
+  color: #555;
 }
 #banner-share {
   padding: 100px 0 0;
+  display: none;
+}
+@media (min-width: 769px) {
+  #banner-share {
+    display: block;
+  }
 }
 .intro-wrap {
   background: #fff;
@@ -698,30 +821,30 @@ body.index {
 .intro-feature {
   display: inline;
   float: left;
-  width: 30.8823529411765%;
+  width: 97.5490196078431%;
   margin: 0 1.2254901960784%;
   padding-top: 30px;
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 769px) {
   .intro-feature {
     display: inline;
     float: left;
-    width: 97.5490196078431%;
+    width: 30.8823529411765%;
     margin: 0 1.2254901960784%;
   }
 }
 .intro-quick-start {
   display: inline;
   float: left;
-  width: 47.5490196078431%;
+  width: 97.5490196078431%;
   margin: 0 1.2254901960784%;
   padding-top: 30px;
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 769px) {
   .intro-quick-start {
     display: inline;
     float: left;
-    width: 97.5490196078431%;
+    width: 47.5490196078431%;
     margin: 0 1.2254901960784%;
   }
 }
@@ -786,7 +909,6 @@ pre code {
   margin: 0;
 }
 .highlight figcaption {
-  zoom: 1;
   margin: -5px 0 5px;
   font-size: 0.9em;
   color: #999;
