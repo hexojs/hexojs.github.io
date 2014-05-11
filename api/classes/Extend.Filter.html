@@ -78,7 +78,7 @@
     <div class="page-content"><header id="api-header">
   <h1 id="api-title">Extend.Filter Class</h1>
   <div class="api-meta">
-    Defined in <a href="https://github.com/tommy351/hexo/blob/2.5.6/lib/extend/filter.js#L3">lib/extend/filter.js:3</a>
+    Defined in <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/extend/filter.js#L4">lib/extend/filter.js:4</a>
     
     
   </div>
@@ -104,7 +104,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.5.6/lib/extend/filter.js#L3">lib/extend/filter.js:3</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/extend/filter.js#L4">lib/extend/filter.js:4</a>
   </div>
   
   <div class="api-item-entry">
@@ -118,14 +118,14 @@
   
     <h2 class="api-section-title">Methods</h2>
     
-      <div id="method_list" class="api-item method public">
+      <div id="method_apply" class="api-item method public">
   <header class="api-item-header">
     <h3 class="api-item-title">
-      <a href="#method_list">list</a>
+      <a href="#method_apply">apply</a>
     </h3>
     
+      <span class="api-item-params">(type, [args], [callback], [context])</span>
     
-      <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
     
     
     
@@ -134,18 +134,100 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.5.6/lib/extend/filter.js#L24">lib/extend/filter.js:24</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/extend/filter.js#L85">lib/extend/filter.js:85</a>
   </div>
   
   <div class="api-item-entry">
-    <p>Returns a list of filter plugins.</p>
+    <p>Runs all filter plugins of a specified type.</p>
 
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>type</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>args</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Array</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>context</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="method_list" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_list">list</a>
+    </h3>
+    
+      <span class="api-item-params">([type])</span>
+    
+    
+      <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Array</a></span>
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/extend/filter.js#L22">lib/extend/filter.js:22</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Returns a list of filter plugins. Use <code>type</code> argument to get filter plugins of a specified type.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>type</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
     
     
       <h4 class="api-item-subtitle">Returns</h4>
       <ul>
         <li>
-          <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
+          <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Array</a></span>
           
         </li>
       </ul>
@@ -159,7 +241,7 @@
       <a href="#method_register">register</a>
     </h3>
     
-      <span class="api-item-params">([type=post], fn)</span>
+      <span class="api-item-params">([type=after_post_render], fn, [priority=10])</span>
     
     
     
@@ -169,7 +251,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.5.6/lib/extend/filter.js#L35">lib/extend/filter.js:35</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/extend/filter.js#L57">lib/extend/filter.js:57</a>
   </div>
   
   <div class="api-item-entry">
@@ -186,7 +268,7 @@
               <span class="api-item-flag optional">optional</span>
             
             
-              <p>The type of filter plugins can be either <code>pre</code> or <code>post</code>.</p>
+              <p>The type of filter plugins.</p>
 
             
           </li>
@@ -195,6 +277,69 @@
             <strong>fn</strong>
             <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
             
+            
+          </li>
+        
+          <li>
+            <strong>priority</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Number">Number</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+              <p>The execution priority of the plugin. It must be a positive number.</p>
+
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
+      <div id="method_unregister" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_unregister">unregister</a>
+    </h3>
+    
+      <span class="api-item-params">(type, [fn])</span>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/extend/filter.js#L118">lib/extend/filter.js:118</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Unregisters a filter plugin.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>type</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+          </li>
+        
+          <li>
+            <strong>fn</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+              <p>If <code>fn</code> is not defined. All filter plugins of the specified type will be unregistered.</p>
+
             
           </li>
         
@@ -222,7 +367,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.5.6/lib/extend/filter.js#L13">lib/extend/filter.js:13</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/extend/filter.js#L14">lib/extend/filter.js:14</a>
   </div>
   
   <div class="api-item-entry">
@@ -289,6 +434,8 @@
   
     <a href="/api/classes/Router.html" class="sidebar-link">Router</a>
   
+    <a href="/api/classes/Scaffold.html" class="sidebar-link">Scaffold</a>
+  
     <a href="/api/classes/Source.html" class="sidebar-link">Source</a>
   
     <a href="/api/classes/Theme.html" class="sidebar-link">Theme</a>
@@ -300,8 +447,6 @@
     <a href="/api/classes/post.html" class="sidebar-link">post</a>
   
     <a href="/api/classes/render.html" class="sidebar-link">render</a>
-  
-    <a href="/api/classes/scaffold.html" class="sidebar-link">scaffold</a>
   
     <a href="/api/classes/util.html" class="sidebar-link">util</a>
   

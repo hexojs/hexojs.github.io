@@ -2,13 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://hexo.io/index.html</loc>
-    <lastmod>2014-05-07T16:28:06.000Z</lastmod>
+    <loc>http://hexo.io/docs/deployment.html</loc>
+    <lastmod>2014-05-11T16:02:30.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/writing.html</loc>
-    <lastmod>2014-04-15T15:03:42.000Z</lastmod>
+    <loc>http://hexo.io/docs/helpers.html</loc>
+    <lastmod>2014-05-11T14:22:44.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/index.html</loc>
+    <lastmod>2014-05-07T16:28:06.000Z</lastmod>
   </url>
   
   <url>
@@ -17,17 +22,12 @@
   </url>
   
   <url>
+    <loc>http://hexo.io/docs/writing.html</loc>
+    <lastmod>2014-04-15T15:03:42.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://hexo.io/docs/plugins.html</loc>
-    <lastmod>2014-04-15T15:03:42.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hexo.io/docs/deployment.html</loc>
-    <lastmod>2014-04-15T15:03:42.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hexo.io/docs/helpers.html</loc>
     <lastmod>2014-04-15T15:03:42.000Z</lastmod>
   </url>
   

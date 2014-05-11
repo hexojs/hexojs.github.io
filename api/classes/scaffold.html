@@ -2,18 +2,18 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>scaffold | Hexo</title>
+  <title>Scaffold | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <link rel="canonical" href="http://hexo.io/api/classes/scaffold.html">
+  <link rel="canonical" href="http://hexo.io/api/classes/Scaffold.html">
   <link rel="stylesheet" href="/css/style.css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
   <meta content="article" property="og:type">
-<meta content="scaffold" property="og:title">
-<meta content="http://hexo.io/api/classes/scaffold.html" property="og:url">
+<meta content="Scaffold" property="og:title">
+<meta content="http://hexo.io/api/classes/Scaffold.html" property="og:url">
 <meta property="og:image">
 <meta content="Hexo" property="og:site_name">
-<meta content="<p>Scaffold functions.</p>" property="og:description">
+<meta content="<p>This module manages all files in the scaffold folder.</p>" property="og:description">
 <meta content="summary" name="twitter:card">
 <meta content="100000247608790" property="fb:admins">
   
@@ -76,9 +76,11 @@
   <div class="outer">
     <div id="mobile-menu-wrap"></div>
     <div class="page-content"><header id="api-header">
-  <h1 id="api-title">scaffold Class</h1>
+  <h1 id="api-title">Scaffold Class</h1>
   <div class="api-meta">
-    Defined in <a href="https://github.com/tommy351/hexo/blob/2.5.6/lib/core/scaffold.js#L1">lib/core/scaffold.js:1</a>
+    Defined in <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/core/scaffold.js#L36">lib/core/scaffold.js:36</a>
+    
+      <br>Extends <span class="api-item-type"><a href="/api/classes/Box.html">Box</a></span>
     
     
   </div>
@@ -86,49 +88,83 @@
 
 <div class="page-entry">
   <h2 class="api-section-title">Description</h2>
-  <p>Scaffold functions.</p>
+  <p>This module manages all files in the scaffold folder.</p>
 
   
-  
-    <h2 class="api-section-title">Methods</h2>
-    
-      <div id="method_create" class="api-item method public">
+    <h2 class="api-section-title">Constructor</h2>
+    <div id="constructor" class="api-item constructor public">
   <header class="api-item-header">
     <h3 class="api-item-title">
-      <a href="#method_create">create</a>
+      <a href="#constructor">Scaffold</a>
     </h3>
     
-      <span class="api-item-params">(layout, content, [callback])</span>
     
     
-    <span class="api-item-flag static">static</span><span class="api-item-flag async">async</span>
     
   </header>
   <div class="api-item-meta">
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.5.6/lib/core/scaffold.js#L104">lib/core/scaffold.js:104</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/core/scaffold.js#L36">lib/core/scaffold.js:36</a>
   </div>
   
   <div class="api-item-entry">
-    <p>Creates a scaffold.</p>
+    <p>This module manages all files in the scaffold folder.</p>
+
+    
+    
+  </div>
+</div>
+  
+  
+    <h2 class="api-section-title">Methods</h2>
+    
+      <div id="method__dispatch" class="api-item method private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method__dispatch">_dispatch</a>
+    </h3>
+    
+      <span class="api-item-params">(type, path, [callback])</span>
+    
+    
+    <span class="api-item-flag async">async</span>
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Inherited from <a href="/api/classes/Box.html#method__dispatch"></a>:
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/box/index.js#L98">lib/box/index.js:98</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Dispatches files to processors.</p>
 
     
       <h4 class="api-item-subtitle">Parameters</h4>
       <ul>
         
           <li>
-            <strong>layout</strong>
+            <strong>type</strong>
             <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
             
+            
+              <p>Available types: create, update, delete</p>
+
             
           </li>
         
           <li>
-            <strong>content</strong>
+            <strong>path</strong>
             <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
             
+            
+              <p>File path</p>
+
             
           </li>
         
@@ -147,6 +183,61 @@
   </div>
 </div>
     
+      <div id="method_addProcessor" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_addProcessor">addProcessor</a>
+    </h3>
+    
+      <span class="api-item-params">(pattern, fn)</span>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Inherited from <a href="/api/classes/Box.html#method_addProcessor"></a>:
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/box/index.js#L84">lib/box/index.js:84</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Adds a processor to the box.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>pattern</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/RegExp">RegExp</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+            
+              <p>The path pattern of the processor. See </p>
+<a href="/api/classes/Box.Pattern.html">Box.Pattern</a>
+
+<p> for more info.</p>
+
+            
+          </li>
+        
+          <li>
+            <strong>fn</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+            
+              <p>The processor function.</p>
+
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
       <div id="method_get" class="api-item method public">
   <header class="api-item-header">
     <h3 class="api-item-title">
@@ -156,14 +247,14 @@
       <span class="api-item-params">(layout, callback)</span>
     
     
-    <span class="api-item-flag static">static</span><span class="api-item-flag async">async</span>
+    <span class="api-item-flag async">async</span>
     
   </header>
   <div class="api-item-meta">
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.5.6/lib/core/scaffold.js#L82">lib/core/scaffold.js:82</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/core/scaffold.js#L84">lib/core/scaffold.js:84</a>
   </div>
   
   <div class="api-item-entry">
@@ -193,6 +284,59 @@
   </div>
 </div>
     
+      <div id="method_process" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_process">process</a>
+    </h3>
+    
+      <span class="api-item-params">([files], [callback])</span>
+    
+    
+    <span class="api-item-flag async">async</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Inherited from <a href="/api/classes/Box.html#method_process"></a>:
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/box/index.js#L158">lib/box/index.js:158</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Loads all files and runs processors.</p>
+
+    
+      <h4 class="api-item-subtitle">Parameters</h4>
+      <ul>
+        
+          <li>
+            <strong>files</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array">Array</a> | <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+              <p>Files to be processed</p>
+
+            
+          </li>
+        
+          <li>
+            <strong>callback</strong>
+            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function">Function</a></span>
+            
+              <span class="api-item-flag optional">optional</span>
+            
+            
+          </li>
+        
+      </ul>
+    
+    
+  </div>
+</div>
+    
       <div id="method_remove" class="api-item method public">
   <header class="api-item-header">
     <h3 class="api-item-title">
@@ -202,14 +346,14 @@
       <span class="api-item-params">(layout, [callback])</span>
     
     
-    <span class="api-item-flag static">static</span><span class="api-item-flag async">async</span>
+    <span class="api-item-flag async">async</span>
     
   </header>
   <div class="api-item-meta">
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.5.6/lib/core/scaffold.js#L157">lib/core/scaffold.js:157</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/core/scaffold.js#L142">lib/core/scaffold.js:142</a>
   </div>
   
   <div class="api-item-entry">
@@ -241,27 +385,27 @@
   </div>
 </div>
     
-      <div id="method_update" class="api-item method public">
+      <div id="method_set" class="api-item method public">
   <header class="api-item-header">
     <h3 class="api-item-title">
-      <a href="#method_update">update</a>
+      <a href="#method_set">set</a>
     </h3>
     
       <span class="api-item-params">(layout, content, [callback])</span>
     
     
-    <span class="api-item-flag static">static</span><span class="api-item-flag async">async</span>
+    <span class="api-item-flag async">async</span>
     
   </header>
   <div class="api-item-meta">
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.5.6/lib/core/scaffold.js#L130">lib/core/scaffold.js:130</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/core/scaffold.js#L115">lib/core/scaffold.js:115</a>
   </div>
   
   <div class="api-item-entry">
-    <p>Updates the scaffold.</p>
+    <p>Creates/updates a scaffold.</p>
 
     
       <h4 class="api-item-subtitle">Parameters</h4>
@@ -296,14 +440,64 @@
   </div>
 </div>
     
+      <div id="method_unwatch" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_unwatch">unwatch</a>
+    </h3>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Inherited from <a href="/api/classes/Box.html#method_unwatch"></a>:
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/box/index.js#L287">lib/box/index.js:287</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Stops watching.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="method_watch" class="api-item method public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#method_watch">watch</a>
+    </h3>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Inherited from <a href="/api/classes/Box.html#method_watch"></a>:
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/box/index.js#L238">lib/box/index.js:238</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Starts watching.</p>
+
+    
+    
+  </div>
+</div>
+    
   
   
     <h2 class="api-section-title">Properties</h2>
     
-      <div id="property_defaults" class="api-item property public">
+      <div id="property_Box.File" class="api-item property public">
   <header class="api-item-header">
     <h3 class="api-item-title">
-      <a href="#property_defaults">defaults</a>
+      <a href="#property_Box.File">Box.File</a>
     </h3>
     
     
@@ -312,13 +506,270 @@
   </header>
   <div class="api-item-meta">
     
-      Defined in
+      Inherited from <a href="/api/classes/Box.html#property_Box.File"></a>:
     
-    <a href="https://github.com/tommy351/hexo/blob/2.5.6/lib/core/scaffold.js#L16">lib/core/scaffold.js:16</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/box/index.js#L299">lib/box/index.js:299</a>
   </div>
   
   <div class="api-item-entry">
-    <p>Default scaffolds.</p>
+    <p>See </p>
+<a href="/api/classes/Box.File.html">Box.File</a>
+
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property_Box.Pattern" class="api-item property public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property_Box.Pattern">Box.Pattern</a>
+    </h3>
+    
+    
+    <span class="api-item-flag static">static</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Inherited from <a href="/api/classes/Box.html#property_Box.Pattern"></a>:
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/box/index.js#L308">lib/box/index.js:308</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>See </p>
+<a href="/api/classes/Box.Pattern.html">Box.Pattern</a>
+
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property_asset_dir" class="api-item property public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property_asset_dir">asset_dir</a>
+    </h3>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/core/scaffold.js#L47">lib/core/scaffold.js:47</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Asset folder.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property_base" class="api-item property public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property_base">base</a>
+    </h3>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Inherited from <a href="/api/classes/Box.html#property_base"></a>:
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/box/index.js#L29">lib/box/index.js:29</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Base path.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property_defaults" class="api-item property public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property_defaults">defaults</a>
+    </h3>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/core/scaffold.js#L63">lib/core/scaffold.js:63</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>The default scaffold collection.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property_isProcessing" class="api-item property private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property_isProcessing">isProcessing</a>
+    </h3>
+    
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Inherited from <a href="/api/classes/Box.html#property_isProcessing"></a>:
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/box/index.js#L62">lib/box/index.js:62</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Indicates if the box is processing.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property_options" class="api-item property public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property_options">options</a>
+    </h3>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Inherited from <a href="/api/classes/Box.html#property_options"></a>:
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/box/index.js#L71">lib/box/index.js:71</a>
+  </div>
+  
+  <div class="api-item-entry">
+    
+    
+    
+  </div>
+</div>
+    
+      <div id="property_processingFiles" class="api-item property private">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property_processingFiles">processingFiles</a>
+    </h3>
+    
+    
+    
+    
+      <span class="api-item-flag private">private</span>
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Inherited from <a href="/api/classes/Box.html#property_processingFiles"></a>:
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/box/index.js#L45">lib/box/index.js:45</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Processing files.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property_processors" class="api-item property public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property_processors">processors</a>
+    </h3>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Inherited from <a href="/api/classes/Box.html#property_processors"></a>:
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/box/index.js#L37">lib/box/index.js:37</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>Processor collection.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property_scaffolds" class="api-item property public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property_scaffolds">scaffolds</a>
+    </h3>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/core/scaffold.js#L55">lib/core/scaffold.js:55</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>The scaffold collection.</p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property_watcher" class="api-item property public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property_watcher">watcher</a>
+    </h3>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Inherited from <a href="/api/classes/Box.html#property_watcher"></a>:
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.5.7/lib/box/index.js#L54">lib/box/index.js:54</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>A instance of watcher.</p>
 
     
     
@@ -382,6 +833,8 @@
   
     <a href="/api/classes/Router.html" class="sidebar-link">Router</a>
   
+    <a href="/api/classes/Scaffold.html" class="sidebar-link current">Scaffold</a>
+  
     <a href="/api/classes/Source.html" class="sidebar-link">Source</a>
   
     <a href="/api/classes/Theme.html" class="sidebar-link">Theme</a>
@@ -393,8 +846,6 @@
     <a href="/api/classes/post.html" class="sidebar-link">post</a>
   
     <a href="/api/classes/render.html" class="sidebar-link">render</a>
-  
-    <a href="/api/classes/scaffold.html" class="sidebar-link current">scaffold</a>
   
     <a href="/api/classes/util.html" class="sidebar-link">util</a>
   
@@ -427,7 +878,7 @@
 <script>
   var disqus_shortname = 'hexojs';
   
-  var disqus_url = 'http://hexo.io/api/classes/scaffold.html';
+  var disqus_url = 'http://hexo.io/api/classes/Scaffold.html';
   
   (function(){
     var dsq = document.createElement('script');

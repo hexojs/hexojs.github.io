@@ -294,8 +294,13 @@ deploy:
 
 
 <h2 id="Commit_message">Commit message</h2>
-<p>You can customize commit message in <strong>github</strong>, <strong>heroku</strong>, <strong>git</strong> deployer. The default message is <code>Site updated: )</code>.</p>
-<p>Swig is availble in commit message. You can use <code>now(format)</code> to display deployment time.</p>
+<p>You can customize commit message in <strong>github</strong>, <strong>heroku</strong>, <strong>git</strong> deployer.</p>
+<p>Swig is availble in commit message. You can use <code>now(format)</code> to display deployment time. For example, the default message is <code>Site updated: {{ now(&#39;YYYY-MM-DD HH:mm:ss&#39;) }}</code>:</p>
+<figure class="highlight js"><pre>Site updated: {{ now(<span class="string">'YYYY-MM-DD HH:mm:ss'</span>) }}
+<span class="comment">// Site updated: 2014-05-12 00:02:25</span>
+</pre></figure>
+
+
 <p>Commit message can be set either in shell</p>
 <figure class="highlight bash"><pre>$ hexo deploy -m <span class="string">"Commit message"</span>
 </pre></figure>
@@ -314,7 +319,7 @@ deploy:
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-04-15T15:03:40.000Z">Last updated: Apr 15, 2014</time>
+        <time id="page-footer-updated" datetime="2014-05-11T16:02:30.000Z">Last updated: May 12, 2014</time>
         <a href="/docs/server.html" id="page-footer-prev" class="page-footer-link">Prev</a>
         <a href="/docs/permalinks.html" id="page-footer-next" class="page-footer-link">Next</a>
       </footer>
