@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://hexo.io/docs/configuration.html</loc>
+    <lastmod>2014-05-12T07:46:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/docs/plugins.html</loc>
+    <lastmod>2014-05-12T07:46:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/docs/setup.html</loc>
+    <lastmod>2014-05-12T07:46:52.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://hexo.io/docs/models.html</loc>
     <lastmod>2014-05-12T06:50:59.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hexo.io/docs/writing.html</loc>
-    <lastmod>2014-05-12T06:50:59.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hexo.io/docs/configuration.html</loc>
-    <lastmod>2014-05-12T06:50:59.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hexo.io/docs/contributing.html</loc>
-    <lastmod>2014-05-12T06:50:57.000Z</lastmod>
   </url>
   
   <url>
@@ -72,7 +72,7 @@
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/plugins.html</loc>
+    <loc>http://hexo.io/docs/writing.html</loc>
     <lastmod>2014-05-12T06:50:59.000Z</lastmod>
   </url>
   
@@ -82,7 +82,7 @@
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/setup.html</loc>
+    <loc>http://hexo.io/docs/contributing.html</loc>
     <lastmod>2014-05-12T06:50:57.000Z</lastmod>
   </url>
   
