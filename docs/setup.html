@@ -68,15 +68,16 @@ After build, here’s how the folder looks like:
             </li>
           
         </ul>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
   </div>
 </header>
-  <article class="page">
+  <article class="page" itemscope itemtype="http://schema.org/Article">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title">Setup</h1>
+        <h1 id="page-title" itemprop="name">Setup</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/setup.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -88,7 +89,7 @@ After build, here’s how the folder looks like:
         <strong class="toc-title">Contents</strong>
         <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#_config-yml"><span class="toc-number">1.</span> <span class="toc-text">_config.yml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#package-json"><span class="toc-number">2.</span> <span class="toc-text">package.json</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scaffolds"><span class="toc-number">3.</span> <span class="toc-text">scaffolds</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scripts"><span class="toc-number">4.</span> <span class="toc-text">scripts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#source"><span class="toc-number">5.</span> <span class="toc-text">source</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#themes"><span class="toc-number">6.</span> <span class="toc-text">themes</span></a></li></ol>
       </div>
-      <div class="page-entry">
+      <div class="page-entry" itemprop="articleBody">
         <p>Once Hexo is installed, run the following command and hexo will build all files you need in the target folder.</p>
 <figure class="highlight bash"><pre>$ hexo init &lt;folder&gt;
 </pre></figure>
@@ -131,9 +132,8 @@ After build, here’s how the folder looks like:
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2013-08-26T14:24:53.000Z">Last updated: Aug 26, 2013</time>
-        <a href="/docs/installation.html" id="page-footer-prev" class="page-footer-link">Prev</a>
-        <a href="/docs/configuration.html" id="page-footer-next" class="page-footer-link">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <a href="index.html" id="page-footer-prev" class="page-footer-link" title="Overview">Prev</a><a href="configuration.html" id="page-footer-next" class="page-footer-link" title="Configuration">Next</a>
       </footer>
       
       <section id="comments">
@@ -214,6 +214,7 @@ After build, here’s how the folder looks like:
   </div>
 </footer>
 
+<!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
   
@@ -228,6 +229,22 @@ After build, here’s how the folder looks like:
   })();
 </script>
 
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+  (function() {
+    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//s.swiftypecdn.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
+</script>
+<form>
+  <input type="text" id="st-search-input" class="st-search-input" />
+</form>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

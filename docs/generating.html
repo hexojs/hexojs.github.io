@@ -19,12 +19,12 @@ $ hexo generate
 
 
 Watch for File Changes
-Hexo can watch for file changes and regenerate files immediately. 
+Hexo can watch for file changes and regenerate files immediately.
 $ hexo generate --watch
 
 
 
-Restart" property="og:description">
+Restart H" property="og:description">
 <meta content="summary" name="twitter:card">
 <meta content="100000247608790" property="fb:admins">
   
@@ -72,15 +72,16 @@ Restart" property="og:description">
             </li>
           
         </ul>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
   </div>
 </header>
-  <article class="page">
+  <article class="page" itemscope itemtype="http://schema.org/Article">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title">Generating</h1>
+        <h1 id="page-title" itemprop="name">Generating</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/generating.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -92,14 +93,14 @@ Restart" property="og:description">
         <strong class="toc-title">Contents</strong>
         <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Watch_for_File_Changes"><span class="toc-number">1.</span> <span class="toc-text">Watch for File Changes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Multi-thread_Generating"><span class="toc-number">2.</span> <span class="toc-text">Multi-thread Generating</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_After_Generating"><span class="toc-number">3.</span> <span class="toc-text">Deploy After Generating</span></a></li></ol>
       </div>
-      <div class="page-entry">
+      <div class="page-entry" itemprop="articleBody">
         <p>Generate static files with Hexo is quite easy and fast.</p>
 <figure class="highlight bash"><pre>$ hexo generate
 </pre></figure>
 
 
 <h3 id="Watch_for_File_Changes">Watch for File Changes</h3>
-<p>Hexo can watch for file changes and regenerate files immediately. </p>
+<p>Hexo can watch for file changes and regenerate files immediately.</p>
 <figure class="highlight bash"><pre>$ hexo generate --watch
 </pre></figure>
 
@@ -127,9 +128,8 @@ $ hexo deploy --generate
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2013-07-20T02:58:38.000Z">Last updated: Jul 20, 2013</time>
-        <a href="/docs/writing.html" id="page-footer-prev" class="page-footer-link">Prev</a>
-        <a href="/docs/tag-plugins.html" id="page-footer-next" class="page-footer-link">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <a href="writing.html" id="page-footer-prev" class="page-footer-link" title="Writing">Prev</a><a href="tag-plugins.html" id="page-footer-next" class="page-footer-link" title="Tag Plugins">Next</a>
       </footer>
       
       <section id="comments">
@@ -210,6 +210,7 @@ $ hexo deploy --generate
   </div>
 </footer>
 
+<!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
   
@@ -224,6 +225,22 @@ $ hexo deploy --generate
   })();
 </script>
 
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+  (function() {
+    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//s.swiftypecdn.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
+</script>
+<form>
+  <input type="text" id="st-search-input" class="st-search-input" />
+</form>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

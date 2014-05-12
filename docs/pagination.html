@@ -62,15 +62,16 @@ Before we start, you have to enable pa" property="og:description">
             </li>
           
         </ul>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
   </div>
 </header>
-  <article class="page">
+  <article class="page" itemscope itemtype="http://schema.org/Article">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title">Pagination</h1>
+        <h1 id="page-title" itemprop="name">Pagination</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/pagination.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -82,14 +83,14 @@ Before we start, you have to enable pa" property="og:description">
         <strong class="toc-title">Contents</strong>
         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Basic"><span class="toc-number">1.</span> <span class="toc-text">Basic</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Paginator_helper"><span class="toc-number">2.</span> <span class="toc-text">Paginator helper</span></a></li></ol>
       </div>
-      <div class="page-entry">
+      <div class="page-entry" itemprop="articleBody">
         <p>When there’re many posts in your blog, it’s useful to separate into several pages. Hexo supports pagination. The following is how you can use pagination in Hexo.</p>
 <p>Before we start, you have to enable pagination. Edit <code>per_page</code> setting to change how many posts displayed in a single page. To disable pagination, just set it to <code>0</code>.</p>
 <figure class="highlight yaml"><pre><span class="attribute">per_page</span>: <span class="string">10</span>
 </pre></figure>
 
 
-<p>You can edit the following setting to enable or disable pagination for specific pages. </p>
+<p>You can edit the following setting to enable or disable pagination for specific pages.</p>
 <ul>
 <li>2: Enable pagination</li>
 <li>1: Disable pagination</li>
@@ -121,9 +122,8 @@ Before we start, you have to enable pa" property="og:description">
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2013-07-17T15:07:49.000Z">Last updated: Jul 17, 2013</time>
-        <a href="/docs/variables.html" id="page-footer-prev" class="page-footer-link">Prev</a>
-        <a href="/docs/helpers.html" id="page-footer-next" class="page-footer-link">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <a href="variables.html" id="page-footer-prev" class="page-footer-link" title="Variables">Prev</a><a href="helpers.html" id="page-footer-next" class="page-footer-link" title="Helpers">Next</a>
       </footer>
       
       <section id="comments">
@@ -204,6 +204,7 @@ Before we start, you have to enable pa" property="og:description">
   </div>
 </footer>
 
+<!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
   
@@ -218,6 +219,22 @@ Before we start, you have to enable pa" property="og:description">
   })();
 </script>
 
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+  (function() {
+    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//s.swiftypecdn.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
+</script>
+<form>
+  <input type="text" id="st-search-input" class="st-search-input" />
+</form>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

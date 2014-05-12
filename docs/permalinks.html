@@ -63,15 +63,16 @@ Besides the following variables, you can use any attributes in the permalink sin
             </li>
           
         </ul>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
   </div>
 </header>
-  <article class="page">
+  <article class="page" itemscope itemtype="http://schema.org/Article">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title">Permalinks</h1>
+        <h1 id="page-title" itemprop="name">Permalinks</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/permalinks.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -83,7 +84,7 @@ Besides the following variables, you can use any attributes in the permalink sin
         <strong class="toc-title">Contents</strong>
         <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Variables"><span class="toc-number">1.</span> <span class="toc-text">Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Examples"><span class="toc-number">2.</span> <span class="toc-text">Examples</span></a></li></ol>
       </div>
-      <div class="page-entry">
+      <div class="page-entry" itemprop="articleBody">
         <p>You can specify the permalinks for your site in <code>_config.yml</code> or in the front-matter for each post.</p>
 <h3 id="Variables">Variables</h3>
 <p>Besides the following variables, you can use any attributes in the permalink since Hexo 2.5.</p>
@@ -133,7 +134,7 @@ Besides the following variables, you can use any attributes in the permalink sin
 <p>Given a post named <code>hello-world.md</code> in <code>source/_posts</code> folder with   the following content.</p>
 <figure class="highlight yaml"><pre>title: Hello World
 date: 2013-07-14 17:01:34
-categories: 
+categories:
 -<span class="ruby"> foo
 </span>-<span class="ruby"> bar</span>
 </pre></figure>
@@ -164,9 +165,8 @@ categories:
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-03-09T05:36:09.000Z">Last updated: Mar 9, 2014</time>
-        <a href="/docs/deployment.html" id="page-footer-prev" class="page-footer-link">Prev</a>
-        <a href="/docs/themes.html" id="page-footer-next" class="page-footer-link">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <a href="deployment.html" id="page-footer-prev" class="page-footer-link" title="Deployment">Prev</a><a href="themes.html" id="page-footer-next" class="page-footer-link" title="Themes">Next</a>
       </footer>
       
       <section id="comments">
@@ -247,6 +247,7 @@ categories:
   </div>
 </footer>
 
+<!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
   
@@ -261,6 +262,22 @@ categories:
   })();
 </script>
 
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+  (function() {
+    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//s.swiftypecdn.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
+</script>
+<form>
+  <input type="text" id="st-search-input" class="st-search-input" />
+</form>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

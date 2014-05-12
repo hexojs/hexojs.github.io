@@ -61,15 +61,16 @@
             </li>
           
         </ul>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
   </div>
 </header>
-  <article class="page">
+  <article class="page" itemscope itemtype="http://schema.org/Article">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title">Documentation</h1>
+        <h1 id="page-title" itemprop="name">Documentation</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/index.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -81,7 +82,7 @@
         <strong class="toc-title">Contents</strong>
         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What’s_Hexo?"><span class="toc-number">1.</span> <span class="toc-text">What’s Hexo?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-number">2.</span> <span class="toc-text">Installation</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Requirements"><span class="toc-number">2.1.</span> <span class="toc-text">Requirements</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Install_Git"><span class="toc-number">2.2.</span> <span class="toc-text">Install Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Install_Node-js"><span class="toc-number">2.3.</span> <span class="toc-text">Install Node.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Install_Hexo"><span class="toc-number">2.4.</span> <span class="toc-text">Install Hexo</span></a></li></ol>
       </div>
-      <div class="page-entry">
+      <div class="page-entry" itemprop="articleBody">
         <p>Welcome to the Hexo’s documentation. This documentation will help you get started fast. If you get any problems when using Hexo, you can find the answer in <a href="troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/tommy351/hexo/issues" target="_blank">GitHub</a>.</p>
 <h2 id="What’s_Hexo?">What’s Hexo?</h2>
 <p>Hexo is a fast, simple and powerful blog framework. It parses your posts with <a href="http://daringfireball.net/projects/markdown/" target="_blank">Markdown</a> or other render engine and generates static files with the beautiful theme. All of these just take seconds.</p>
@@ -129,7 +130,6 @@
 </pre></figure>
 
 
-
 <p>Or you can download the <a href="http://nodejs.org/" target="_blank">installer</a> and install it.</p>
 <h3 id="Install_Hexo">Install Hexo</h3>
 <p>Once all the requirements are installed, you can install Hexo with npm.</p>
@@ -140,9 +140,8 @@
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-03-14T07:04:24.000Z">Last updated: Mar 14, 2014</time>
-        
-        <a href="/docs/setup.html" id="page-footer-next" class="page-footer-link">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <a href="setup.html" id="page-footer-next" class="page-footer-link" title="Setup">Next</a>
       </footer>
       
       <section id="comments">
@@ -223,6 +222,7 @@
   </div>
 </footer>
 
+<!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
   
@@ -237,6 +237,22 @@
   })();
 </script>
 
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+  (function() {
+    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//s.swiftypecdn.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
+</script>
+<form>
+  <input type="text" id="st-search-input" class="st-search-input" />
+</form>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

@@ -62,15 +62,16 @@ You can create a new post by yourself or run the following command. If layout is
             </li>
           
         </ul>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
   </div>
 </header>
-  <article class="page">
+  <article class="page" itemscope itemtype="http://schema.org/Article">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title">Writing</h1>
+        <h1 id="page-title" itemprop="name">Writing</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/writing.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -82,7 +83,7 @@ You can create a new post by yourself or run the following command. If layout is
         <strong class="toc-title">Contents</strong>
         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Create_a_New_Post"><span class="toc-number">1.</span> <span class="toc-text">Create a New Post</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Layout"><span class="toc-number">1.1.</span> <span class="toc-text">Layout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Filename"><span class="toc-number">1.3.</span> <span class="toc-text">Filename</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Front-matter"><span class="toc-number">2.</span> <span class="toc-text">Front-matter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Categories_&amp;_Tags"><span class="toc-number">3.</span> <span class="toc-text">Categories &amp; Tags</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Excerpts"><span class="toc-number">4.</span> <span class="toc-text">Excerpts</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code_Highlighting"><span class="toc-number">5.</span> <span class="toc-text">Code Highlighting</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Backtick_Code_Block"><span class="toc-number">5.1.</span> <span class="toc-text">Backtick Code Block</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Swig_Code_Block"><span class="toc-number">5.2.</span> <span class="toc-text">Swig Code Block</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Scaffold"><span class="toc-number">6.</span> <span class="toc-text">Scaffold</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1"><span class="toc-number">6.1.</span> <span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Variables"><span class="toc-number">6.2.</span> <span class="toc-text">Variables</span></a></li></ol>
       </div>
-      <div class="page-entry">
+      <div class="page-entry" itemprop="articleBody">
         <h2 id="Create_a_New_Post">Create a New Post</h2>
 <p>You can create a new post by yourself or run the following command. If <code>layout</code> isn’t defined, it’ll be the <code>default_layout</code> setting. If there’re spaces or other special characters in <code>title</code>, wrap it with quotation marks.</p>
 <figure class="highlight bash"><pre>$ hexo new [layout] &lt;title&gt;
@@ -317,9 +318,8 @@ date: {{ date }}
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-04-15T15:03:40.000Z">Last updated: Apr 15, 2014</time>
-        <a href="/docs/migration.html" id="page-footer-prev" class="page-footer-link">Prev</a>
-        <a href="/docs/generating.html" id="page-footer-next" class="page-footer-link">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <a href="migration.html" id="page-footer-prev" class="page-footer-link" title="Migration">Prev</a><a href="generating.html" id="page-footer-next" class="page-footer-link" title="Generating">Next</a>
       </footer>
       
       <section id="comments">
@@ -400,6 +400,7 @@ date: {{ date }}
   </div>
 </footer>
 
+<!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
   
@@ -414,6 +415,22 @@ date: {{ date }}
   })();
 </script>
 
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+  (function() {
+    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//s.swiftypecdn.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
+</script>
+<form>
+  <input type="text" id="st-search-input" class="st-search-input" />
+</form>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

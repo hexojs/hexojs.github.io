@@ -63,15 +63,16 @@ There’re 2 ways to extend Hexo: Script and Plugin. If" property="og:descriptio
             </li>
           
         </ul>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
   </div>
 </header>
-  <article class="page">
+  <article class="page" itemscope itemtype="http://schema.org/Article">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title">Plugins</h1>
+        <h1 id="page-title" itemprop="name">Plugins</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/plugins.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -83,7 +84,7 @@ There’re 2 ways to extend Hexo: Script and Plugin. If" property="og:descriptio
         <strong class="toc-title">Contents</strong>
         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.</span> <span class="toc-text">Overview</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Script"><span class="toc-number">1.1.</span> <span class="toc-text">Script</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Plugin"><span class="toc-number">1.2.</span> <span class="toc-text">Plugin</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Generator"><span class="toc-number">2.</span> <span class="toc-text">Generator</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax"><span class="toc-number">2.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Render"><span class="toc-number">2.2.</span> <span class="toc-text">Render</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">2.3.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Renderer"><span class="toc-number">3.</span> <span class="toc-text">Renderer</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-1"><span class="toc-number">3.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1"><span class="toc-number">3.2.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Helper"><span class="toc-number">4.</span> <span class="toc-text">Helper</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-2"><span class="toc-number">4.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-2"><span class="toc-number">4.2.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Deployer"><span class="toc-number">5.</span> <span class="toc-text">Deployer</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-3"><span class="toc-number">5.1.</span> <span class="toc-text">Syntax</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Processor"><span class="toc-number">6.</span> <span class="toc-text">Processor</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-4"><span class="toc-number">6.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#File_data"><span class="toc-number">6.2.</span> <span class="toc-text">File data</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Tag"><span class="toc-number">7.</span> <span class="toc-text">Tag</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-5"><span class="toc-number">7.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Options"><span class="toc-number">7.2.</span> <span class="toc-text">Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-3"><span class="toc-number">7.3.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Console"><span class="toc-number">8.</span> <span class="toc-text">Console</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-6"><span class="toc-number">8.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Options-1"><span class="toc-number">8.2.</span> <span class="toc-text">Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-4"><span class="toc-number">8.3.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Migrator"><span class="toc-number">9.</span> <span class="toc-text">Migrator</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-7"><span class="toc-number">9.1.</span> <span class="toc-text">Syntax</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Filter"><span class="toc-number">10.</span> <span class="toc-text">Filter</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-8"><span class="toc-number">10.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-5"><span class="toc-number">10.2.</span> <span class="toc-text">Example</span></a></li></ol>
       </div>
-      <div class="page-entry">
+      <div class="page-entry" itemprop="articleBody">
         <h2 id="Overview">Overview</h2>
 <p>Hexo has powerful plugin system. Most of built-in plugins are extensions of Hexo. This makes you easy to hook up your custom code easily.</p>
 <p>There’re 2 ways to extend Hexo: <strong>Script</strong> and <strong>Plugin</strong>. If your code is simple and doesn’t have any dependencies, you can choose <strong>Script</strong>. If your code is complicated and have dependencies, or you want to publish it on NPM registry, you should use <strong>Plugin</strong>.</p>
@@ -719,9 +720,8 @@ file.renderSync([options]);
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-04-15T15:03:40.000Z">Last updated: Apr 15, 2014</time>
-        <a href="/docs/scripts.html" id="page-footer-prev" class="page-footer-link">Prev</a>
-        <a href="/docs/troubleshooting.html" id="page-footer-next" class="page-footer-link">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <a href="events.html" id="page-footer-prev" class="page-footer-link" title="Events">Prev</a><a href="troubleshooting.html" id="page-footer-next" class="page-footer-link" title="Troubleshooting">Next</a>
       </footer>
       
       <section id="comments">
@@ -802,6 +802,7 @@ file.renderSync([options]);
   </div>
 </footer>
 
+<!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
   
@@ -816,6 +817,22 @@ file.renderSync([options]);
   })();
 </script>
 
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+  (function() {
+    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//s.swiftypecdn.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
+</script>
+<form>
+  <input type="text" id="st-search-input" class="st-search-input" />
+</form>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

@@ -63,15 +63,16 @@ Loads CSS files. path can be an array or a string. If path isn’t prefixed with
             </li>
           
         </ul>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
   </div>
 </header>
-  <article class="page">
+  <article class="page" itemscope itemtype="http://schema.org/Article">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title">Helpers</h1>
+        <h1 id="page-title" itemprop="name">Helpers</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/helpers.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -83,7 +84,7 @@ Loads CSS files. path can be an array or a string. If path isn’t prefixed with
         <strong class="toc-title">Contents</strong>
         <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#css"><span class="toc-number">1.</span> <span class="toc-text">css</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js"><span class="toc-number">2.</span> <span class="toc-text">js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Conditional_Tags"><span class="toc-number">3.</span> <span class="toc-text">Conditional Tags</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gravatar"><span class="toc-number">4.</span> <span class="toc-text">gravatar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#trim"><span class="toc-number">5.</span> <span class="toc-text">trim</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#strip_html"><span class="toc-number">6.</span> <span class="toc-text">strip_html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#titlecase"><span class="toc-number">7.</span> <span class="toc-text">titlecase</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#partial"><span class="toc-number">8.</span> <span class="toc-text">partial</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tagcloud"><span class="toc-number">9.</span> <span class="toc-text">tagcloud</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#paginator"><span class="toc-number">10.</span> <span class="toc-text">paginator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#date"><span class="toc-number">11.</span> <span class="toc-text">date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#date_xml"><span class="toc-number">12.</span> <span class="toc-text">date_xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#time"><span class="toc-number">13.</span> <span class="toc-text">time</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#full_date"><span class="toc-number">14.</span> <span class="toc-text">full_date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#moment"><span class="toc-number">15.</span> <span class="toc-text">moment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#search_form"><span class="toc-number">16.</span> <span class="toc-text">search_form</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#markdown"><span class="toc-number">17.</span> <span class="toc-text">markdown</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#word_wrap"><span class="toc-number">18.</span> <span class="toc-text">word_wrap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#truncate"><span class="toc-number">19.</span> <span class="toc-text">truncate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#truncate_words"><span class="toc-number">20.</span> <span class="toc-text">truncate_words</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#link_to"><span class="toc-number">21.</span> <span class="toc-text">link_to</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mail_to"><span class="toc-number">22.</span> <span class="toc-text">mail_to</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_categories"><span class="toc-number">23.</span> <span class="toc-text">list_categories</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_tags"><span class="toc-number">24.</span> <span class="toc-text">list_tags</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_archives"><span class="toc-number">25.</span> <span class="toc-text">list_archives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_posts"><span class="toc-number">26.</span> <span class="toc-text">list_posts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_posts"><span class="toc-number">27.</span> <span class="toc-text">get_posts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#number_format"><span class="toc-number">28.</span> <span class="toc-text">number_format</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#open_graph"><span class="toc-number">29.</span> <span class="toc-text">open_graph</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#toc"><span class="toc-number">30.</span> <span class="toc-text">toc</span></a></li></ol>
       </div>
-      <div class="page-entry">
+      <div class="page-entry" itemprop="articleBody">
         <p>Helpers help you inserts specified content in theme or processes contents in theme quickly.</p>
 <h3 id="css">css</h3>
 <p>Loads CSS files. <code>path</code> can be an array or a string. If <code>path</code> isn’t prefixed with <code>/</code> or any protocol, it’ll be prefixed with root URL. If you didn’t add extension name <code>.css</code> after <code>path</code>, it’ll be added.</p>
@@ -556,7 +557,7 @@ Loads CSS files. path can be an array or a string. If path isn’t prefixed with
 <tr>
 <td><code>separator</code></td>
 <td>Separator between categories. (Only works if <code>style</code> is <code>none</code>)</td>
-<td>, </td>
+<td>,</td>
 </tr>
 <tr>
 <td><code>depth</code></td>
@@ -608,7 +609,7 @@ Loads CSS files. path can be an array or a string. If path isn’t prefixed with
 <tr>
 <td><code>separator</code></td>
 <td>Separator between tags. (Only works if <code>style</code> is <code>none</code>)</td>
-<td>, </td>
+<td>,</td>
 </tr>
 <tr>
 <td><code>class</code></td>
@@ -660,7 +661,7 @@ Loads CSS files. path can be an array or a string. If path isn’t prefixed with
 <tr>
 <td><code>separator</code></td>
 <td>Separator between archives. (Only works if <code>style</code> is <code>none</code>)</td>
-<td>, </td>
+<td>,</td>
 </tr>
 <tr>
 <td><code>class</code></td>
@@ -702,7 +703,7 @@ Loads CSS files. path can be an array or a string. If path isn’t prefixed with
 <tr>
 <td><code>separator</code></td>
 <td>Separator between archives. (Only works if <code>style</code> is <code>none</code>)</td>
-<td>, </td>
+<td>,</td>
 </tr>
 <tr>
 <td><code>class</code></td>
@@ -904,9 +905,8 @@ Loads CSS files. path can be an array or a string. If path isn’t prefixed with
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-05-11T14:22:42.000Z">Last updated: May 11, 2014</time>
-        <a href="/docs/pagination.html" id="page-footer-prev" class="page-footer-link">Prev</a>
-        <a href="/docs/i18n.html" id="page-footer-next" class="page-footer-link">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <a href="pagination.html" id="page-footer-prev" class="page-footer-link" title="Pagination">Prev</a><a href="i18n.html" id="page-footer-next" class="page-footer-link" title="i18n">Next</a>
       </footer>
       
       <section id="comments">
@@ -987,6 +987,7 @@ Loads CSS files. path can be an array or a string. If path isn’t prefixed with
   </div>
 </footer>
 
+<!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
   
@@ -1001,6 +1002,22 @@ Loads CSS files. path can be an array or a string. If path isn’t prefixed with
   })();
 </script>
 
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+  (function() {
+    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//s.swiftypecdn.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
+</script>
+<form>
+  <input type="text" id="st-search-input" class="st-search-input" />
+</form>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

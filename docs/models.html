@@ -81,15 +81,16 @@ Post date (Moment" property="og:description">
             </li>
           
         </ul>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
   </div>
 </header>
-  <article class="page">
+  <article class="page" itemscope itemtype="http://schema.org/Article">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title">Models</h1>
+        <h1 id="page-title" itemprop="name">Models</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/models.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -101,7 +102,7 @@ Post date (Moment" property="og:description">
         <strong class="toc-title">Contents</strong>
         <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Post"><span class="toc-number">1.</span> <span class="toc-text">Post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Page"><span class="toc-number">2.</span> <span class="toc-text">Page</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Category"><span class="toc-number">3.</span> <span class="toc-text">Category</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tag"><span class="toc-number">4.</span> <span class="toc-text">Tag</span></a></li></ol>
       </div>
-      <div class="page-entry">
+      <div class="page-entry" itemprop="articleBody">
         <p>Hexo store everything in data model. It’s very important for you to know what’s inside the data model.</p>
 <h3 id="Post">Post</h3>
 <table>
@@ -318,9 +319,8 @@ Post date (Moment" property="og:description">
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-01-13T05:18:13.000Z">Last updated: Jan 13, 2014</time>
-        <a href="/docs/i18n.html" id="page-footer-prev" class="page-footer-link">Prev</a>
-        <a href="/docs/events.html" id="page-footer-next" class="page-footer-link">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <a href="i18n.html" id="page-footer-prev" class="page-footer-link" title="i18n">Prev</a><a href="events.html" id="page-footer-next" class="page-footer-link" title="Events">Next</a>
       </footer>
       
       <section id="comments">
@@ -401,6 +401,7 @@ Post date (Moment" property="og:description">
   </div>
 </footer>
 
+<!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
   
@@ -415,6 +416,22 @@ Post date (Moment" property="og:description">
   })();
 </script>
 
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+  (function() {
+    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//s.swiftypecdn.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
+</script>
+<form>
+  <input type="text" id="st-search-input" class="st-search-input" />
+</form>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

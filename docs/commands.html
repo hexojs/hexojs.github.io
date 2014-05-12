@@ -72,15 +72,16 @@ Creates a new article. If layout" property="og:description">
             </li>
           
         </ul>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
   </div>
 </header>
-  <article class="page">
+  <article class="page" itemscope itemtype="http://schema.org/Article">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title">Commands</h1>
+        <h1 id="page-title" itemprop="name">Commands</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/commands.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -92,7 +93,7 @@ Creates a new article. If layout" property="og:description">
         <strong class="toc-title">Contents</strong>
         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#init"><span class="toc-number">1.</span> <span class="toc-text">init</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#new"><span class="toc-number">2.</span> <span class="toc-text">new</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#generate"><span class="toc-number">3.</span> <span class="toc-text">generate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#publish"><span class="toc-number">4.</span> <span class="toc-text">publish</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#server"><span class="toc-number">5.</span> <span class="toc-text">server</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#deploy"><span class="toc-number">6.</span> <span class="toc-text">deploy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#render"><span class="toc-number">7.</span> <span class="toc-text">render</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#migrate"><span class="toc-number">8.</span> <span class="toc-text">migrate</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#clean"><span class="toc-number">9.</span> <span class="toc-text">clean</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#list"><span class="toc-number">10.</span> <span class="toc-text">list</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#version"><span class="toc-number">11.</span> <span class="toc-text">version</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Options"><span class="toc-number">12.</span> <span class="toc-text">Options</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Safe_mode"><span class="toc-number">12.1.</span> <span class="toc-text">Safe mode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Debug_mode"><span class="toc-number">12.2.</span> <span class="toc-text">Debug mode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Silent_mode"><span class="toc-number">12.3.</span> <span class="toc-text">Silent mode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Customize_config_file_path"><span class="toc-number">12.4.</span> <span class="toc-text">Customize config file path</span></a></li></ol>
       </div>
-      <div class="page-entry">
+      <div class="page-entry" itemprop="articleBody">
         <h2 id="init">init</h2>
 <figure class="highlight bash"><pre>$ hexo init [folder]
 </pre></figure>
@@ -272,9 +273,8 @@ Creates a new article. If layout" property="og:description">
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-04-15T15:03:40.000Z">Last updated: Apr 15, 2014</time>
-        <a href="/docs/configuration.html" id="page-footer-prev" class="page-footer-link">Prev</a>
-        <a href="/docs/migration.html" id="page-footer-next" class="page-footer-link">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <a href="configuration.html" id="page-footer-prev" class="page-footer-link" title="Configuration">Prev</a><a href="migration.html" id="page-footer-next" class="page-footer-link" title="Migration">Next</a>
       </footer>
       
       <section id="comments">
@@ -355,6 +355,7 @@ Creates a new article. If layout" property="og:description">
   </div>
 </footer>
 
+<!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
   
@@ -369,6 +370,22 @@ Creates a new article. If layout" property="og:description">
   })();
 </script>
 
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+  (function() {
+    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//s.swiftypecdn.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
+</script>
+<form>
+  <input type="text" id="st-search-input" class="st-search-input" />
+</form>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

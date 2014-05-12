@@ -67,15 +67,16 @@ Once the plugin is installed, run the following command to migrate all posts fro
             </li>
           
         </ul>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
   </div>
 </header>
-  <article class="page">
+  <article class="page" itemscope itemtype="http://schema.org/Article">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title">Migration</h1>
+        <h1 id="page-title" itemprop="name">Migration</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/migration.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -87,7 +88,7 @@ Once the plugin is installed, run the following command to migrate all posts fro
         <strong class="toc-title">Contents</strong>
         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#RSS"><span class="toc-number">1.</span> <span class="toc-text">RSS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jekyll"><span class="toc-number">2.</span> <span class="toc-text">Jekyll</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Octopress"><span class="toc-number">3.</span> <span class="toc-text">Octopress</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WordPress"><span class="toc-number">4.</span> <span class="toc-text">WordPress</span></a></li></ol>
       </div>
-      <div class="page-entry">
+      <div class="page-entry" itemprop="articleBody">
         <h2 id="RSS">RSS</h2>
 <p>First, install <code>hexo-migrator-rss</code> plugin.</p>
 <figure class="highlight bash"><pre>$ npm install hexo-migrator-rss --save
@@ -125,9 +126,8 @@ Once the plugin is installed, run the following command to migrate all posts fro
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2013-07-14T08:09:12.000Z">Last updated: Jul 14, 2013</time>
-        <a href="/docs/commands.html" id="page-footer-prev" class="page-footer-link">Prev</a>
-        <a href="/docs/writing.html" id="page-footer-next" class="page-footer-link">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <a href="commands.html" id="page-footer-prev" class="page-footer-link" title="Commands">Prev</a><a href="writing.html" id="page-footer-next" class="page-footer-link" title="Writing">Next</a>
       </footer>
       
       <section id="comments">
@@ -208,6 +208,7 @@ Once the plugin is installed, run the following command to migrate all posts fro
   </div>
 </footer>
 
+<!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
   
@@ -222,6 +223,22 @@ Once the plugin is installed, run the following command to migrate all posts fro
   })();
 </script>
 
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+  (function() {
+    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//s.swiftypecdn.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
+</script>
+<form>
+  <input type="text" id="st-search-input" class="st-search-input" />
+</form>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

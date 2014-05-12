@@ -63,15 +63,16 @@ Inserts quotes with author, source and title in post" property="og:description">
             </li>
           
         </ul>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
   </div>
 </header>
-  <article class="page">
+  <article class="page" itemscope itemtype="http://schema.org/Article">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title">Tag Plugins</h1>
+        <h1 id="page-title" itemprop="name">Tag Plugins</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/tag-plugins.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -83,7 +84,7 @@ Inserts quotes with author, source and title in post" property="og:description">
         <strong class="toc-title">Contents</strong>
         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Block_Quote"><span class="toc-number">1.</span> <span class="toc-text">Block Quote</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.1.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Code_Block"><span class="toc-number">2.</span> <span class="toc-text">Code Block</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1"><span class="toc-number">2.1.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Backtick_Code_Block"><span class="toc-number">3.</span> <span class="toc-text">Backtick Code Block</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pull_Quote"><span class="toc-number">4.</span> <span class="toc-text">Pull Quote</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jsFiddle"><span class="toc-number">5.</span> <span class="toc-text">jsFiddle</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Gist"><span class="toc-number">6.</span> <span class="toc-text">Gist</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#iframe"><span class="toc-number">7.</span> <span class="toc-text">iframe</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Image"><span class="toc-number">8.</span> <span class="toc-text">Image</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Link"><span class="toc-number">9.</span> <span class="toc-text">Link</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Include_Code"><span class="toc-number">10.</span> <span class="toc-text">Include Code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Youtube"><span class="toc-number">11.</span> <span class="toc-text">Youtube</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vimeo"><span class="toc-number">12.</span> <span class="toc-text">Vimeo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Raw"><span class="toc-number">13.</span> <span class="toc-text">Raw</span></a></li></ol>
       </div>
-      <div class="page-entry">
+      <div class="page-entry" itemprop="articleBody">
         <p>Tag plugins are different from tags in posts. They’re ported from Octopress and can help you insert specific contents in posts quickly.</p>
 <h2 id="Block_Quote">Block Quote</h2>
 <p>Inserts quotes with author, source and title in posts.</p>
@@ -100,7 +101,7 @@ Inserts quotes with author, source and title in post" property="og:description">
 
 <blockquote>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem. </p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit lacus ut purus iaculis feugiat. Sed nec tempor elit, quis aliquam neque. Curabitur sed diam eget dolor fermentum semper at eu lorem.</p>
 </blockquote>
 
 
@@ -257,9 +258,8 @@ Inserts quotes with author, source and title in post" property="og:description">
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-03-09T07:40:31.000Z">Last updated: Mar 9, 2014</time>
-        <a href="/docs/generating.html" id="page-footer-prev" class="page-footer-link">Prev</a>
-        <a href="/docs/server.html" id="page-footer-next" class="page-footer-link">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <a href="generating.html" id="page-footer-prev" class="page-footer-link" title="Generating">Prev</a><a href="server.html" id="page-footer-next" class="page-footer-link" title="Server">Next</a>
       </footer>
       
       <section id="comments">
@@ -340,6 +340,7 @@ Inserts quotes with author, source and title in post" property="og:description">
   </div>
 </footer>
 
+<!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
   
@@ -354,6 +355,22 @@ Inserts quotes with author, source and title in post" property="og:description">
   })();
 </script>
 
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+  (function() {
+    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//s.swiftypecdn.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
+</script>
+<form>
+  <input type="text" id="st-search-input" class="st-search-input" />
+</form>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>

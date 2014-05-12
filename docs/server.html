@@ -67,15 +67,16 @@ Your website will running at http://localhost:4000. You can edit the server port
             </li>
           
         </ul>
+        <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
   </div>
 </header>
-  <article class="page">
+  <article class="page" itemscope itemtype="http://schema.org/Article">
   <header id="page-banner">
     <div class="outer">
       <div id="page-banner-inner" class="inner">
-        <h1 id="page-title">Server</h1>
+        <h1 id="page-title" itemprop="name">Server</h1>
         <a href="https://github.com/hexojs/site/blob/master/source/docs/server.md" title="Improve this doc" id="page-edit-link"></a>
       </div>
     </div>
@@ -87,7 +88,7 @@ Your website will running at http://localhost:4000. You can edit the server port
         <strong class="toc-title">Contents</strong>
         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Express"><span class="toc-number">1.</span> <span class="toc-text">Express</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Static_Mode"><span class="toc-number">1.1.</span> <span class="toc-text">Static Mode</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Custom_IP"><span class="toc-number">1.2.</span> <span class="toc-text">Custom IP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Drafts"><span class="toc-number">1.3.</span> <span class="toc-text">Drafts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Logger"><span class="toc-number">1.4.</span> <span class="toc-text">Logger</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Pow"><span class="toc-number">2.</span> <span class="toc-text">Pow</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Install"><span class="toc-number">2.1.</span> <span class="toc-text">Install</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Setup"><span class="toc-number">2.2.</span> <span class="toc-text">Setup</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Forever_/_PM2"><span class="toc-number">3.</span> <span class="toc-text">Forever / PM2</span></a></li></ol>
       </div>
-      <div class="page-entry">
+      <div class="page-entry" itemprop="articleBody">
         <h2 id="Express">Express</h2>
 <p>To start server, run the following command:</p>
 <figure class="highlight bash"><pre>$ hexo server
@@ -257,9 +258,8 @@ $ pm2 start app.js -x
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-03-09T09:57:54.000Z">Last updated: Mar 9, 2014</time>
-        <a href="/docs/tag-plugins.html" id="page-footer-prev" class="page-footer-link">Prev</a>
-        <a href="/docs/deployment.html" id="page-footer-next" class="page-footer-link">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <a href="tag-plugins.html" id="page-footer-prev" class="page-footer-link" title="Tag Plugins">Prev</a><a href="deployment.html" id="page-footer-next" class="page-footer-link" title="Deployment">Next</a>
       </footer>
       
       <section id="comments">
@@ -340,6 +340,7 @@ $ pm2 start app.js -x
   </div>
 </footer>
 
+<!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
   
@@ -354,6 +355,22 @@ $ pm2 start app.js -x
   })();
 </script>
 
+<!-- Swiftype -->
+<script>
+var Swiftype = window.Swiftype || {};
+  (function() {
+    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+
+    /** DO NOT EDIT BELOW THIS LINE **/
+    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+    script.src = "//s.swiftypecdn.com/embed.js";
+    var entry = document.getElementsByTagName('script')[0];
+    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+  }());
+</script>
+<form>
+  <input type="text" id="st-search-input" class="st-search-input" />
+</form>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
