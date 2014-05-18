@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://hexo.io/index.html</loc>
+    <lastmod>2014-05-18T10:14:52.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/docs/pagination.html</loc>
+    <lastmod>2014-05-18T09:45:16.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://hexo.io/docs/contributing.html</loc>
     <lastmod>2014-05-18T09:45:16.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://hexo.io/index.html</loc>
+    <loc>http://hexo.io/docs/troubleshooting.html</loc>
     <lastmod>2014-05-18T09:45:14.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://hexo.io/docs/deployment.html</loc>
+    <lastmod>2014-05-18T09:45:16.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/docs/themes.html</loc>
     <lastmod>2014-05-18T09:45:16.000Z</lastmod>
   </url>
   
@@ -27,28 +42,8 @@
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/index.html</loc>
-    <lastmod>2014-05-18T09:45:16.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hexo.io/docs/configuration.html</loc>
-    <lastmod>2014-05-18T09:45:14.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hexo.io/docs/pagination.html</loc>
-    <lastmod>2014-05-18T09:45:16.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://hexo.io/docs/models.html</loc>
     <lastmod>2014-05-18T09:45:14.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hexo.io/docs/plugins.html</loc>
-    <lastmod>2014-05-18T09:45:16.000Z</lastmod>
   </url>
   
   <url>
@@ -57,18 +52,18 @@
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/themes.html</loc>
-    <lastmod>2014-05-18T09:45:16.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hexo.io/docs/troubleshooting.html</loc>
+    <loc>http://hexo.io/docs/configuration.html</loc>
     <lastmod>2014-05-18T09:45:14.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/migration.html</loc>
-    <lastmod>2014-05-17T17:34:09.000Z</lastmod>
+    <loc>http://hexo.io/docs/index.html</loc>
+    <lastmod>2014-05-18T09:45:16.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/docs/plugins.html</loc>
+    <lastmod>2014-05-18T09:45:16.000Z</lastmod>
   </url>
   
   <url>
@@ -77,7 +72,12 @@
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/writing.html</loc>
+    <loc>http://hexo.io/docs/permalinks.html</loc>
+    <lastmod>2014-05-17T17:34:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/docs/migration.html</loc>
     <lastmod>2014-05-17T17:34:09.000Z</lastmod>
   </url>
   
@@ -87,22 +87,22 @@
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/commands.html</loc>
-    <lastmod>2014-05-17T17:34:09.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://hexo.io/docs/generating.html</loc>
     <lastmod>2014-05-17T17:34:09.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/variables.html</loc>
+    <loc>http://hexo.io/docs/writing.html</loc>
     <lastmod>2014-05-17T17:34:09.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/permalinks.html</loc>
+    <loc>http://hexo.io/docs/commands.html</loc>
+    <lastmod>2014-05-17T17:34:09.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/docs/variables.html</loc>
     <lastmod>2014-05-17T17:34:09.000Z</lastmod>
   </url>
   
