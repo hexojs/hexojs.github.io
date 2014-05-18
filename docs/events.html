@@ -5,26 +5,53 @@
   <title>Events | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://hexo.io/docs/events.html">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+  <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+  <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
   <link rel="stylesheet" href="/css/style.css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
-  <meta content="website" property="og:type">
-<meta content="Events" property="og:title">
-<meta content="http://hexo.io/docs/events.html" property="og:url">
-<meta property="og:image">
-<meta content="Hexo" property="og:site_name">
-<meta content="Overview
+  <meta name="description" content="Overview
 Hexo inherits EventEmitter of Node.js. You can subscribe or publish specified events. For example:
 hexo.on('ready', function(){
   console.log('Hexo is ready to go!');
 });
 
 
+Events
+ready
+Calle">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Events">
+<meta property="og:url" content="http://hexo.io/docs/events.html">
+<meta property="og:image" content="http://hexo.io/logo.png">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Overview
+Hexo inherits EventEmitter of Node.js. You can subscribe or publish specified events. For example:
+hexo.on('ready', function(){
+  console.log('Hexo is ready to go!');
+});
 
-Methods
-All metho" property="og:description">
-<meta content="summary" name="twitter:card">
-<meta content="100000247608790" property="fb:admins">
+
+Events
+ready
+Calle">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Events">
+<meta name="twitter:description" content="Overview
+Hexo inherits EventEmitter of Node.js. You can subscribe or publish specified events. For example:
+hexo.on('ready', function(){
+  console.log('Hexo is ready to go!');
+});
+
+
+Events
+ready
+Calle">
+<meta name="twitter:site" content="@hexojs">
+<meta property="fb:admins" content="100000247608790">
   
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -50,7 +77,7 @@ All metho" property="og:description">
         <ul id="main-nav-list">
           
             <li class="main-nav-item">
-              <a href="/docs/" class="main-nav-link current">Docs</a>
+              <a href="/docs/" class="main-nav-link">Docs</a>
             </li>
           
             <li class="main-nav-item">
@@ -89,7 +116,7 @@ All metho" property="og:description">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.</span> <span class="toc-text">Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Methods"><span class="toc-number">2.</span> <span class="toc-text">Methods</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#addListener(event,_listener)"><span class="toc-number">2.1.</span> <span class="toc-text">addListener(event, listener)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#on(event,_listener)"><span class="toc-number">2.2.</span> <span class="toc-text">on(event, listener)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#once(event,_listener)"><span class="toc-number">2.3.</span> <span class="toc-text">once(event, listener)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#removeListener(event,_listener)"><span class="toc-number">2.4.</span> <span class="toc-text">removeListener(event, listener)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#removeAllListeners([event])"><span class="toc-number">2.5.</span> <span class="toc-text">removeAllListeners([event])</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#emit(event,_[arg1],_[arg2],_[…])"><span class="toc-number">2.6.</span> <span class="toc-text">emit(event, [arg1], [arg2], […])</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Events"><span class="toc-number">3.</span> <span class="toc-text">Events</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ready"><span class="toc-number">3.1.</span> <span class="toc-text">ready</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#generateBefore"><span class="toc-number">3.2.</span> <span class="toc-text">generateBefore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#generateAfter"><span class="toc-number">3.3.</span> <span class="toc-text">generateAfter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#processBefore"><span class="toc-number">3.4.</span> <span class="toc-text">processBefore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#processAfter"><span class="toc-number">3.5.</span> <span class="toc-text">processAfter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#new"><span class="toc-number">3.6.</span> <span class="toc-text">new</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#server"><span class="toc-number">3.7.</span> <span class="toc-text">server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#exit"><span class="toc-number">3.8.</span> <span class="toc-text">exit</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deployBefore"><span class="toc-number">3.9.</span> <span class="toc-text">deployBefore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deployAfter"><span class="toc-number">3.10.</span> <span class="toc-text">deployAfter</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.</span> <span class="toc-text">Overview</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Events"><span class="toc-number">2.</span> <span class="toc-text">Events</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ready"><span class="toc-number">2.1.</span> <span class="toc-text">ready</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#generateBefore"><span class="toc-number">2.2.</span> <span class="toc-text">generateBefore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#generateAfter"><span class="toc-number">2.3.</span> <span class="toc-text">generateAfter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#processBefore"><span class="toc-number">2.4.</span> <span class="toc-text">processBefore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#processAfter"><span class="toc-number">2.5.</span> <span class="toc-text">processAfter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#new"><span class="toc-number">2.6.</span> <span class="toc-text">new</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#server"><span class="toc-number">2.7.</span> <span class="toc-text">server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#exit"><span class="toc-number">2.8.</span> <span class="toc-text">exit</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deployBefore"><span class="toc-number">2.9.</span> <span class="toc-text">deployBefore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#deployAfter"><span class="toc-number">2.10.</span> <span class="toc-text">deployAfter</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
         <h2 id="Overview">Overview</h2>
@@ -99,20 +126,6 @@ All metho" property="og:description">
 });
 </pre></figure>
 
-
-<h2 id="Methods">Methods</h2>
-<p>All methods except <code>emit</code> returns the emitter itself, so calls can be chained.</p>
-<h3 id="addListener(event,_listener)">addListener(event, listener)</h3>
-<h3 id="on(event,_listener)">on(event, listener)</h3>
-<p>Listens to the specific event.</p>
-<h3 id="once(event,_listener)">once(event, listener)</h3>
-<p>Listens to the specified event <strong>only once</strong>. After the event is fired, the listener will be removed.</p>
-<h3 id="removeListener(event,_listener)">removeListener(event, listener)</h3>
-<p>Removes a listener from the specified event.</p>
-<h3 id="removeAllListeners([event])">removeAllListeners([event])</h3>
-<p>Removes all listeners.</p>
-<h3 id="emit(event,_[arg1],_[arg2],_[…])">emit(event, [arg1], [arg2], […])</h3>
-<p>Fires the specified event. Returns <code>true</code> if event had listener, <code>false</code> otherwise.</p>
 <h2 id="Events">Events</h2>
 <h3 id="ready">ready</h3>
 <p>Called once Hexo is initialized.</p>
@@ -166,6 +179,10 @@ All metho" property="og:description">
 <td><code>path</code></td>
 <td>Absolute path of the post file</td>
 </tr>
+<tr>
+<td><code>content</code></td>
+<td>Content of the post file</td>
+</tr>
 </tbody>
 </table>
 <h3 id="server">server</h3>
@@ -179,8 +196,8 @@ All metho" property="og:description">
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
-        <a href="models.html" id="page-footer-prev" class="page-footer-link" title="Models">Prev</a><a href="plugins.html" id="page-footer-next" class="page-footer-link" title="Plugins">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-18T09:45:14.000Z" itemprop="dateModified">Last updated: May 18, 2014</time>
+        <a href="models.html" id="page-footer-prev" title="Models">Prev</a><a href="troubleshooting.html" id="page-footer-next" title="Troubleshooting">Next</a>
       </footer>
       
       <section id="comments">
@@ -230,7 +247,7 @@ All metho" property="og:description">
     
       <a href="/docs/helpers.html" class="sidebar-link">Helpers</a>
     
-      <a href="/docs/i18n.html" class="sidebar-link">i18n</a>
+      <a href="/docs/plugins.html" class="sidebar-link">Plugins</a>
     
   
     <strong class="sidebar-title">Advanced</strong>
@@ -238,8 +255,6 @@ All metho" property="og:description">
       <a href="/docs/models.html" class="sidebar-link">Models</a>
     
       <a href="/docs/events.html" class="sidebar-link current">Events</a>
-    
-      <a href="/docs/plugins.html" class="sidebar-link">Plugins</a>
     
   
     <strong class="sidebar-title">Miscellaneous</strong>
@@ -255,12 +270,18 @@ All metho" property="og:description">
   <footer id="footer">
   <div class="outer">
     <div class="inner">
-      &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
-      Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+      <div id="footer-copyright">
+        &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
+        Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+      </div>
+      <div id="footer-links">
+        <a href="https://twitter.com/hexojs" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>
+        <a href="https://github.com/tommy351/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
+      </div>
     </div>
   </div>
 </footer>
-
+  
 <!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
@@ -292,5 +313,7 @@ var Swiftype = window.Swiftype || {};
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 </body>
 </html>

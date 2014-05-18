@@ -5,17 +5,59 @@
   <title>Themes | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://hexo.io/docs/themes.html">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+  <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+  <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
   <link rel="stylesheet" href="/css/style.css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
-  <meta content="website" property="og:type">
-<meta content="Themes" property="og:title">
-<meta content="http://hexo.io/docs/themes.html" property="og:url">
-<meta property="og:image">
-<meta content="Hexo" property="og:site_name">
-<meta content="Hexo uses EJS to process theme layout by default. You can use helpers to insert specified content quickly. It’s recommended to enable debug mode in development. All layouts and source files will be up" property="og:description">
-<meta content="summary" name="twitter:card">
-<meta content="100000247608790" property="fb:admins">
+  <meta name="description" content="Structure
+.
+├── _config.yml
+├── languages
+├── layout
+├── scripts
+└── source
+
+
+_config.yml
+Theme configuration file. It’ll be updated when changed automatically. You don’t have to restart the server.
+l">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Themes">
+<meta property="og:url" content="http://hexo.io/docs/themes.html">
+<meta property="og:image" content="http://hexo.io/logo.png">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Structure
+.
+├── _config.yml
+├── languages
+├── layout
+├── scripts
+└── source
+
+
+_config.yml
+Theme configuration file. It’ll be updated when changed automatically. You don’t have to restart the server.
+l">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Themes">
+<meta name="twitter:description" content="Structure
+.
+├── _config.yml
+├── languages
+├── layout
+├── scripts
+└── source
+
+
+_config.yml
+Theme configuration file. It’ll be updated when changed automatically. You don’t have to restart the server.
+l">
+<meta name="twitter:site" content="@hexojs">
+<meta property="fb:admins" content="100000247608790">
   
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -41,7 +83,7 @@
         <ul id="main-nav-list">
           
             <li class="main-nav-item">
-              <a href="/docs/" class="main-nav-link current">Docs</a>
+              <a href="/docs/" class="main-nav-link">Docs</a>
             </li>
           
             <li class="main-nav-item">
@@ -80,15 +122,10 @@
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Structure"><span class="toc-number">1.</span> <span class="toc-text">Structure</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#_config-yml"><span class="toc-number">1.1.</span> <span class="toc-text">_config.yml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#languages"><span class="toc-number">1.2.</span> <span class="toc-text">languages</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#layout"><span class="toc-number">1.3.</span> <span class="toc-text">layout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scripts"><span class="toc-number">1.4.</span> <span class="toc-text">scripts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#source"><span class="toc-number">1.5.</span> <span class="toc-text">source</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Structure"><span class="toc-number">1.</span> <span class="toc-text">Structure</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#_config-yml"><span class="toc-number">1.1.</span> <span class="toc-text">_config.yml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#languages"><span class="toc-number">1.2.</span> <span class="toc-text">languages</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#layout"><span class="toc-number">1.3.</span> <span class="toc-text">layout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scripts"><span class="toc-number">1.4.</span> <span class="toc-text">scripts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#source"><span class="toc-number">1.5.</span> <span class="toc-text">source</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Publishing"><span class="toc-number">2.</span> <span class="toc-text">Publishing</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <p>Hexo uses <a href="https://github.com/visionmedia/ejs" target="_blank">EJS</a> to process theme layout by default. You can use <a href="helpers.html">helpers</a> to insert specified content quickly. It’s recommended to enable debug mode in development. All layouts and source files will be updated automatically in debug mode.</p>
-<figure class="highlight bash"><pre>$ hexo server --debug
-</pre></figure>
-
-
-<h2 id="Structure">Structure</h2>
+        <h2 id="Structure">Structure</h2>
 <figure class="highlight plain"><pre>.
 ├── _config.yml
 ├── languages
@@ -97,20 +134,39 @@
 └── source
 </pre></figure>
 
-
 <h3 id="_config-yml">_config.yml</h3>
-<p>Theme configuration file.</p>
+<p>Theme configuration file. It’ll be updated when changed automatically. You don’t have to restart the server.</p>
 <h3 id="languages">languages</h3>
-<p>Folder of language files.</p>
+<p>Language folder. Hexo provides a simple i18n module built-in. To enable this feature, edit <code>language</code> setting. The language code must be written in <a href="http://www.w3.org/International/articles/language-tags/" target="_blank">IETF format</a>. For example:</p>
+<figure class="highlight yaml"><pre><span class="attribute">language</span>: <span class="string">zh-TW</span>
+</pre></figure>
+
+<p>A language folder must contain a language file named <code>default.yml</code> at least. Language files can be written in YAML or JSON format.</p>
+<p>You can get the localized string in templates from <code>__</code> and <code>_p</code> helper. The former is for common usage and the letter is for plural strings. You can even use <a href="https://github.com/alexei/sprintf.js" target="_blank">printf format</a>. For example:</p>
+<figure class="highlight yaml"><figcaption><span>default.yml</span></figcaption><pre>index:
+  title: Home
+  <span class="built_in">add</span>: Add
+  video:
+    <span class="constant">zero</span>: No videos
+    <span class="constant">one</span>: One video
+    other: %d videos
+</pre></figure>
+
+<figure class="highlight js"><pre>&lt;%= __(<span class="string">'index.title'</span>) %&gt;
+<span class="comment">// Home</span>
+
+&lt;%= _p(<span class="string">'index.video'</span>, <span class="number">3</span>) %&gt;
+<span class="comment">// 3 videos</span>
+</pre></figure>
+
 <h3 id="layout">layout</h3>
 <p>Layout folder. File or folder whose name is prefixed with <code>_</code> (underscore) and hidden files will be ignored.</p>
-<p>Hexo provides <a href="https://github.com/visionmedia/ejs" target="_blank">EJS</a> and <a href="http://paularmstrong.github.com/swig/" target="_blank">Swig</a> template engine. You can install other template engines such as Haml, Jade. Hexo chooses template engines based on the extension name of files. For example:</p>
+<p>Hexo provides built-in <a href="https://github.com/visionmedia/ejs" target="_blank">EJS</a> and <a href="http://paularmstrong.github.com/swig/" target="_blank">Swig</a> template engines. You can install some renderer plugins for <a href="https://github.com/hexojs/hexo-renderer-haml" target="_blank">Haml</a>, <a href="https://github.com/hexojs/hexo-renderer-jade" target="_blank">Jade</a> support. Hexo chooses template engines based on the extension name of files. For example:</p>
 <figure class="highlight plain"><pre>EJS: layout.ejs
 Swig: layout.swig
 </pre></figure>
 
-
-<p>Every theme should at least has <code>index</code> layout.</p>
+<p>Every theme should at least contain <code>index</code> layout.</p>
 <table>
 <thead>
 <tr>
@@ -152,30 +208,32 @@ Swig: layout.swig
 </tr>
 </tbody>
 </table>
-<p>Hexo supports <strong>Layout</strong> and <strong>Partials</strong>. Every template file use <code>layout.ejs</code> as layout by default. You can set <code>layout: false</code> in front-matter or delete <code>layout.ejs</code> to disable the layout.</p>
-<escape><blockquote class="note info"><strong class="note-title">Custom layout</strong>
+<p>Hexo supports <strong>Layout</strong> and <strong>Partial</strong>. Every template file use <code>layout.ejs</code> as layout by default. You can set <code>layout: false</code> in front-matter or delete <code>layout.ejs</code> to disable the layout.</p>
+<blockquote class="note info"><strong class="note-title">Customize layouts</strong>
 
-<p>If you set a custom for your posts. You have to add a new layout file in <code>layout</code> folder or it’ll fallback to <code>post</code> layout. Page variables in the custom layout is same as <code>post</code> layout.</p>
+<p>If you want to customize a layout for your posts. You have to add a new layout file in <code>layout</code> folder or it’ll fallback to <code>post</code> layout. Page variables in the custom layout is same as <code>post</code> layout.</p>
 </blockquote>
 
-<p></escape></p>
+
 <h3 id="scripts">scripts</h3>
 <p>Script folder. JavaScript files in this folder will be loaded when Hexo started. This feature requires Hexo 2.4 and above.</p>
-<p>For more info, see <a href="plugins.html">plugins</a>.</p>
+<p>For more info, see <a href="plugins.html">Plugins</a>.</p>
 <h3 id="source">source</h3>
-<p>Source folder. Asset files like CSS and Javascript files should be placed in this folder. File or folder whose name is prefixed with <code>_</code> (underscore) and hidden files will be ignored. Stylus files will be processed and put into <code>public</code> folder, while other files will be copied.</p>
-<p>Hexo supports <a href="http://learnboost.github.com/stylus/" target="_blank">Stylus</a> and <a href="http://visionmedia.github.com/nib/" target="_blank">nib</a>. You can install other plugins such as Less, CoffeeScript.</p>
-<escape><blockquote class="note info"><strong class="note-title">Get config in Stylus File</strong>
+<p>Source folder. Asset files like CSS and Javascript files should be placed in this folder. File or folder whose name is prefixed with <code>_</code> (underscore) and hidden files will be ignored. </p>
+<p>Files which are able to rendered by renderer plugins will be rendered, such as Stylus files. Hexo provides built-in <a href="http://learnboost.github.com/stylus/" target="_blank">Stylus</a> renderer plugin (with <a href="http://visionmedia.github.com/nib/" target="_blank">nib</a> support). You can install some renderer plugins for <a href="https://github.com/hexojs/hexo-renderer-less" target="_blank">Less</a>, <a href="https://github.com/hexojs/hexo-renderer-coffeescript" target="_blank">CoffeeScript</a> support.</p>
+<blockquote class="note info"><strong class="note-title">Get config in Stylus File</strong>
 
 <p>You can get global and theme configuration by using <code>hexo-config(key)</code> in stylus file.</p>
 </blockquote>
 
-<p></escape></p>
+
+<h2 id="Publishing">Publishing</h2>
+<p>You can publish your theme to the <a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank">theme list</a> on wiki. Before publishing, you should test it with <a href="https://github.com/hexojs/hexo-theme-unit-test" target="_blank">Theme Unit Test</a>.</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
-        <a href="permalinks.html" id="page-footer-prev" class="page-footer-link" title="Permalinks">Prev</a><a href="variables.html" id="page-footer-next" class="page-footer-link" title="Variables">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-18T09:45:14.000Z" itemprop="dateModified">Last updated: May 18, 2014</time>
+        <a href="permalinks.html" id="page-footer-prev" title="Permalinks">Prev</a><a href="variables.html" id="page-footer-next" title="Variables">Next</a>
       </footer>
       
       <section id="comments">
@@ -225,7 +283,7 @@ Swig: layout.swig
     
       <a href="/docs/helpers.html" class="sidebar-link">Helpers</a>
     
-      <a href="/docs/i18n.html" class="sidebar-link">i18n</a>
+      <a href="/docs/plugins.html" class="sidebar-link">Plugins</a>
     
   
     <strong class="sidebar-title">Advanced</strong>
@@ -233,8 +291,6 @@ Swig: layout.swig
       <a href="/docs/models.html" class="sidebar-link">Models</a>
     
       <a href="/docs/events.html" class="sidebar-link">Events</a>
-    
-      <a href="/docs/plugins.html" class="sidebar-link">Plugins</a>
     
   
     <strong class="sidebar-title">Miscellaneous</strong>
@@ -250,12 +306,18 @@ Swig: layout.swig
   <footer id="footer">
   <div class="outer">
     <div class="inner">
-      &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
-      Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+      <div id="footer-copyright">
+        &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
+        Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+      </div>
+      <div id="footer-links">
+        <a href="https://twitter.com/hexojs" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>
+        <a href="https://github.com/tommy351/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
+      </div>
     </div>
   </div>
 </footer>
-
+  
 <!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
@@ -287,5 +349,7 @@ var Swiftype = window.Swiftype || {};
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 </body>
 </html>

@@ -5,17 +5,16 @@
   <title>Generating | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://hexo.io/docs/generating.html">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+  <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+  <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
   <link rel="stylesheet" href="/css/style.css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
-  <meta content="website" property="og:type">
-<meta content="Generating" property="og:title">
-<meta content="http://hexo.io/docs/generating.html" property="og:url">
-<meta property="og:image">
-<meta content="Hexo" property="og:site_name">
-<meta content="Generate static files with Hexo is quite easy and fast.
+  <meta name="description" content="Generate static files with Hexo is quite easy and fast.
 $ hexo generate
-
 
 
 Watch for File Changes
@@ -23,10 +22,36 @@ Hexo can watch for file changes and regenerate files immediately.
 $ hexo generate --watch
 
 
+Restart Hex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Generating">
+<meta property="og:url" content="http://hexo.io/docs/generating.html">
+<meta property="og:image" content="http://hexo.io/logo.png">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Generate static files with Hexo is quite easy and fast.
+$ hexo generate
 
-Restart H" property="og:description">
-<meta content="summary" name="twitter:card">
-<meta content="100000247608790" property="fb:admins">
+
+Watch for File Changes
+Hexo can watch for file changes and regenerate files immediately.
+$ hexo generate --watch
+
+
+Restart Hex">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Generating">
+<meta name="twitter:description" content="Generate static files with Hexo is quite easy and fast.
+$ hexo generate
+
+
+Watch for File Changes
+Hexo can watch for file changes and regenerate files immediately.
+$ hexo generate --watch
+
+
+Restart Hex">
+<meta name="twitter:site" content="@hexojs">
+<meta property="fb:admins" content="100000247608790">
   
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -52,7 +77,7 @@ Restart H" property="og:description">
         <ul id="main-nav-list">
           
             <li class="main-nav-item">
-              <a href="/docs/" class="main-nav-link current">Docs</a>
+              <a href="/docs/" class="main-nav-link">Docs</a>
             </li>
           
             <li class="main-nav-item">
@@ -98,24 +123,21 @@ Restart H" property="og:description">
 <figure class="highlight bash"><pre>$ hexo generate
 </pre></figure>
 
-
 <h3 id="Watch_for_File_Changes">Watch for File Changes</h3>
 <p>Hexo can watch for file changes and regenerate files immediately.</p>
 <figure class="highlight bash"><pre>$ hexo generate --watch
 </pre></figure>
 
-
-<escape><blockquote class="note info"><strong class="note-title">Restart Hexo after configuration changed</strong>
+<blockquote class="note info"><strong class="note-title">Restart Hexo after configuration changed</strong>
 
 <p>Hexo doesn’t watch for configuration file changes. You have to restart Hexo to make the new configurations take effects.</p>
 </blockquote>
 
-<p></escape></p>
+
 <h3 id="Multi-thread_Generating">Multi-thread Generating</h3>
 <p>Hexo supports multi-thread generating since 2.0. To enable this feature, edit <code>_config.yml</code>.</p>
 <figure class="highlight yaml"><pre><span class="attribute">multi_thread</span>: <span class="string">true</span>
 </pre></figure>
-
 
 <p>You can change how many threads to use. Just edit <code>multi_thread</code> with the number of threads. The number of threads is the number of CPU cores by default. It’s not recommended to set any value higher than it.</p>
 <h3 id="Deploy_After_Generating">Deploy After Generating</h3>
@@ -123,13 +145,10 @@ Restart H" property="og:description">
 <figure class="highlight bash"><pre>$ hexo generate --deploy
 $ hexo deploy --generate
 </pre></figure>
-
-
-
       </div>
       <footer id="page-footer">
         <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
-        <a href="writing.html" id="page-footer-prev" class="page-footer-link" title="Writing">Prev</a><a href="tag-plugins.html" id="page-footer-next" class="page-footer-link" title="Tag Plugins">Next</a>
+        <a href="writing.html" id="page-footer-prev" title="Writing">Prev</a><a href="tag-plugins.html" id="page-footer-next" title="Tag Plugins">Next</a>
       </footer>
       
       <section id="comments">
@@ -179,7 +198,7 @@ $ hexo deploy --generate
     
       <a href="/docs/helpers.html" class="sidebar-link">Helpers</a>
     
-      <a href="/docs/i18n.html" class="sidebar-link">i18n</a>
+      <a href="/docs/plugins.html" class="sidebar-link">Plugins</a>
     
   
     <strong class="sidebar-title">Advanced</strong>
@@ -187,8 +206,6 @@ $ hexo deploy --generate
       <a href="/docs/models.html" class="sidebar-link">Models</a>
     
       <a href="/docs/events.html" class="sidebar-link">Events</a>
-    
-      <a href="/docs/plugins.html" class="sidebar-link">Plugins</a>
     
   
     <strong class="sidebar-title">Miscellaneous</strong>
@@ -204,12 +221,18 @@ $ hexo deploy --generate
   <footer id="footer">
   <div class="outer">
     <div class="inner">
-      &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
-      Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+      <div id="footer-copyright">
+        &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
+        Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+      </div>
+      <div id="footer-links">
+        <a href="https://twitter.com/hexojs" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>
+        <a href="https://github.com/tommy351/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
+      </div>
     </div>
   </div>
 </footer>
-
+  
 <!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
@@ -241,5 +264,7 @@ var Swiftype = window.Swiftype || {};
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 </body>
 </html>

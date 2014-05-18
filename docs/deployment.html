@@ -5,28 +5,56 @@
   <title>Deployment | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://hexo.io/docs/deployment.html">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+  <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+  <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
   <link rel="stylesheet" href="/css/style.css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
-  <meta content="website" property="og:type">
-<meta content="Deployment" property="og:title">
-<meta content="http://hexo.io/docs/deployment.html" property="og:url">
-<meta property="og:image">
-<meta content="Hexo" property="og:site_name">
-<meta content="To deploy your site with Hexo, you only need one command.
+  <meta name="description" content="To deploy your site with Hexo, you only need one command.
 $ hexo deploy
 
 
-
-GitHub
+GitHub Pages
 Edit _config.yml.
 deploy:
   type: github
   repo: &lt;repository url&gt;
   branch: [branch]
-  message: [message]" property="og:description">
-<meta content="summary" name="twitter:card">
-<meta content="100000247608790" property="fb:admins">
+  message: [message]">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Deployment">
+<meta property="og:url" content="http://hexo.io/docs/deployment.html">
+<meta property="og:image" content="http://hexo.io/logo.png">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="To deploy your site with Hexo, you only need one command.
+$ hexo deploy
+
+
+GitHub Pages
+Edit _config.yml.
+deploy:
+  type: github
+  repo: &lt;repository url&gt;
+  branch: [branch]
+  message: [message]">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Deployment">
+<meta name="twitter:description" content="To deploy your site with Hexo, you only need one command.
+$ hexo deploy
+
+
+GitHub Pages
+Edit _config.yml.
+deploy:
+  type: github
+  repo: &lt;repository url&gt;
+  branch: [branch]
+  message: [message]">
+<meta name="twitter:site" content="@hexojs">
+<meta property="fb:admins" content="100000247608790">
   
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -52,7 +80,7 @@ deploy:
         <ul id="main-nav-list">
           
             <li class="main-nav-item">
-              <a href="/docs/" class="main-nav-link current">Docs</a>
+              <a href="/docs/" class="main-nav-link">Docs</a>
             </li>
           
             <li class="main-nav-item">
@@ -91,15 +119,14 @@ deploy:
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub"><span class="toc-number">1.</span> <span class="toc-text">GitHub</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Remove"><span class="toc-number">1.1.</span> <span class="toc-text">Remove</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Custom_Domain"><span class="toc-number">1.2.</span> <span class="toc-text">Custom Domain</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Heroku"><span class="toc-number">2.</span> <span class="toc-text">Heroku</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Remove-1"><span class="toc-number">2.1.</span> <span class="toc-text">Remove</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Rsync"><span class="toc-number">3.</span> <span class="toc-text">Rsync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OpenShift_DIY_Cartridge"><span class="toc-number">4.</span> <span class="toc-text">OpenShift DIY Cartridge</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-number">5.</span> <span class="toc-text">Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Batch_Deploy"><span class="toc-number">6.</span> <span class="toc-text">Batch Deploy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Commit_message"><span class="toc-number">7.</span> <span class="toc-text">Commit message</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Other_Methods"><span class="toc-number">8.</span> <span class="toc-text">Other Methods</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub_Pages"><span class="toc-number">1.</span> <span class="toc-text">GitHub Pages</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Remove"><span class="toc-number">1.1.</span> <span class="toc-text">Remove</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Custom_Domain"><span class="toc-number">1.2.</span> <span class="toc-text">Custom Domain</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Heroku"><span class="toc-number">2.</span> <span class="toc-text">Heroku</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Remove-1"><span class="toc-number">2.1.</span> <span class="toc-text">Remove</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Rsync"><span class="toc-number">3.</span> <span class="toc-text">Rsync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OpenShift_DIY_Cartridge"><span class="toc-number">4.</span> <span class="toc-text">OpenShift DIY Cartridge</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-number">5.</span> <span class="toc-text">Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Batch_Deploy"><span class="toc-number">6.</span> <span class="toc-text">Batch Deploy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Commit_message"><span class="toc-number">7.</span> <span class="toc-text">Commit message</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Other_Methods"><span class="toc-number">8.</span> <span class="toc-text">Other Methods</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
         <p>To deploy your site with Hexo, you only need one command.</p>
 <figure class="highlight bash"><pre>$ hexo deploy
 </pre></figure>
 
-
-<h2 id="GitHub">GitHub</h2>
+<h2 id="GitHub_Pages">GitHub Pages</h2>
 <p>Edit <code>_config.yml</code>.</p>
 <figure class="highlight yaml"><pre>deploy:
   <span class="keyword">type</span>: github
@@ -107,7 +134,6 @@ deploy:
   branch: [branch]
   <span class="keyword">message</span>: [<span class="keyword">message</span>]
 </pre></figure>
-
 
 <table>
 <thead>
@@ -136,16 +162,14 @@ deploy:
 <figure class="highlight bash"><pre>$ rm -rf .deploy
 </pre></figure>
 
-
 <h3 id="Custom_Domain">Custom Domain</h3>
 <p>Create a file named <code>CNAME</code> in <code>source</code> folder with the following content.</p>
-<figure class="highlight"><pre>example<span class="preprocessor">.com</span>
+<figure class="highlight plain"><pre>example.com
 </pre></figure>
-
 
 <ul>
 <li><strong>Top-level Domain:</strong> Add A records: <code>192.30.252.153</code>, <code>192.30.252.154</code>.</li>
-<li><strong>Subdomain</strong>: Add CNAME record <code>blog.example.com</code>.</li>
+<li><strong>Subdomain</strong>: Add a CNAME record <code>blog.example.com</code>.</li>
 </ul>
 <p>Check <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages" target="_blank">GitHub Pages</a> for more info.</p>
 <h2 id="Heroku">Heroku</h2>
@@ -155,7 +179,6 @@ deploy:
   repo: &lt;repository url&gt;
   <span class="keyword">message</span>: [<span class="keyword">message</span>]
 </pre></figure>
-
 
 <table>
 <thead>
@@ -187,7 +210,6 @@ deploy:
   port: [port] # <span class="keyword">Default</span> <span class="keyword">is</span> <span class="number">22</span>
   delete: [<span class="keyword">true</span>|<span class="keyword">false</span>] # <span class="keyword">Default</span> <span class="keyword">is</span> <span class="keyword">true</span>
 </pre></figure>
-
 
 <table>
 <thead>
@@ -233,7 +255,6 @@ deploy:
   branch: [upstream git branch] # <span class="keyword">Default</span> <span class="keyword">is</span> master
 </pre></figure>
 
-
 <table>
 <thead>
 <tr>
@@ -265,7 +286,6 @@ deploy:
     <span class="tag">gitcafe</span>: &lt;<span class="tag">repository</span> <span class="tag">url</span>&gt;,<span class="attr_selector">[branch]</span>
 </pre></figure>
 
-
 <table>
 <thead>
 <tr>
@@ -293,7 +313,6 @@ deploy:
   repo: <span class="keyword">...</span>
 </pre></figure>
 
-
 <h2 id="Commit_message">Commit message</h2>
 <p>You can customize commit message in <strong>github</strong>, <strong>heroku</strong>, <strong>git</strong> deployer.</p>
 <p>Swig is availble in commit message. You can use <code>now(format)</code> to display deployment time. For example, the default message is <code>Site updated: {{ now(&#39;YYYY-MM-DD HH:mm:ss&#39;) }}</code>:</p>
@@ -301,11 +320,9 @@ deploy:
 <span class="comment">// Site updated: 2014-05-12 00:02:25</span>
 </pre></figure>
 
-
 <p>Commit message can be set either in shell</p>
 <figure class="highlight bash"><pre>$ hexo deploy -m <span class="string">"Commit message"</span>
 </pre></figure>
-
 
 <p>or in <code>_config.yml</code>.</p>
 <figure class="highlight yaml"><pre>deploy:
@@ -314,14 +331,13 @@ deploy:
   message: <span class="string">"Commit message"</span>
 </pre></figure>
 
-
 <h2 id="Other_Methods">Other Methods</h2>
 <p>All generated files are saved in <code>public</code> folder. You can copy it to wherever you like.</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
-        <a href="server.html" id="page-footer-prev" class="page-footer-link" title="Server">Prev</a><a href="permalinks.html" id="page-footer-next" class="page-footer-link" title="Permalinks">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-18T09:45:14.000Z" itemprop="dateModified">Last updated: May 18, 2014</time>
+        <a href="server.html" id="page-footer-prev" title="Server">Prev</a><a href="permalinks.html" id="page-footer-next" title="Permalinks">Next</a>
       </footer>
       
       <section id="comments">
@@ -371,7 +387,7 @@ deploy:
     
       <a href="/docs/helpers.html" class="sidebar-link">Helpers</a>
     
-      <a href="/docs/i18n.html" class="sidebar-link">i18n</a>
+      <a href="/docs/plugins.html" class="sidebar-link">Plugins</a>
     
   
     <strong class="sidebar-title">Advanced</strong>
@@ -379,8 +395,6 @@ deploy:
       <a href="/docs/models.html" class="sidebar-link">Models</a>
     
       <a href="/docs/events.html" class="sidebar-link">Events</a>
-    
-      <a href="/docs/plugins.html" class="sidebar-link">Plugins</a>
     
   
     <strong class="sidebar-title">Miscellaneous</strong>
@@ -396,12 +410,18 @@ deploy:
   <footer id="footer">
   <div class="outer">
     <div class="inner">
-      &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
-      Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+      <div id="footer-copyright">
+        &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
+        Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+      </div>
+      <div id="footer-links">
+        <a href="https://twitter.com/hexojs" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>
+        <a href="https://github.com/tommy351/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
+      </div>
     </div>
   </div>
 </footer>
-
+  
 <!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
@@ -433,5 +453,7 @@ var Swiftype = window.Swiftype || {};
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 </body>
 </html>

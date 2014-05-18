@@ -5,18 +5,29 @@
   <title>Writing | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://hexo.io/docs/writing.html">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+  <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+  <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
   <link rel="stylesheet" href="/css/style.css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
-  <meta content="website" property="og:type">
-<meta content="Writing" property="og:title">
-<meta content="http://hexo.io/docs/writing.html" property="og:url">
-<meta property="og:image">
-<meta content="Hexo" property="og:site_name">
-<meta content="Create a New Post
-You can create a new post by yourself or run the following command. If layout isn’t defined, it’ll be the default_layout setting. If there’re spaces or other special characters in ti" property="og:description">
-<meta content="summary" name="twitter:card">
-<meta content="100000247608790" property="fb:admins">
+  <meta name="description" content="Create a New Post
+You can create a new post by yourself or run the following command. If layout isn’t defined, it’ll be the default_layout setting. If there’re spaces or other special characters in ti">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Writing">
+<meta property="og:url" content="http://hexo.io/docs/writing.html">
+<meta property="og:image" content="http://hexo.io/logo.png">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Create a New Post
+You can create a new post by yourself or run the following command. If layout isn’t defined, it’ll be the default_layout setting. If there’re spaces or other special characters in ti">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Writing">
+<meta name="twitter:description" content="Create a New Post
+You can create a new post by yourself or run the following command. If layout isn’t defined, it’ll be the default_layout setting. If there’re spaces or other special characters in ti">
+<meta name="twitter:site" content="@hexojs">
+<meta property="fb:admins" content="100000247608790">
   
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -42,7 +53,7 @@ You can create a new post by yourself or run the following command. If layout is
         <ul id="main-nav-list">
           
             <li class="main-nav-item">
-              <a href="/docs/" class="main-nav-link current">Docs</a>
+              <a href="/docs/" class="main-nav-link">Docs</a>
             </li>
           
             <li class="main-nav-item">
@@ -89,7 +100,6 @@ You can create a new post by yourself or run the following command. If layout is
 <figure class="highlight bash"><pre>$ hexo new [layout] &lt;title&gt;
 </pre></figure>
 
-
 <h3 id="Layout">Layout</h3>
 <p>Hexo has 3 default layouts: <code>post</code>, <code>page</code> and <code>draft</code>. Other layouts will be saved in <code>source/_posts</code> by default.</p>
 <table>
@@ -114,12 +124,12 @@ You can create a new post by yourself or run the following command. If layout is
 </tr>
 </tbody>
 </table>
-<escape><blockquote class="note tip"><strong class="note-title">Don't process my posts!</strong>
+<blockquote class="note tip"><strong class="note-title">Don't process my posts!</strong>
 
 <p>If you don’t want your posts processed. You can set <code>layout: false</code> in front-matter.</p>
 </blockquote>
 
-<p></escape></p>
+
 <h3 id="Example">Example</h3>
 <figure class="highlight bash"><pre>$ hexo new <span class="string">"New Post"</span>
 <span class="comment"># =&gt; The file will be created at source/_posts/new-post.md</span>
@@ -130,7 +140,6 @@ $ hexo new page <span class="string">"New Page"</span>
 $ hexo new draft <span class="string">"New Draft"</span>
 <span class="comment"># =&gt; The file will be created at source/_drafts/new-draft.md</span>
 </pre></figure>
-
 
 <h3 id="Filename">Filename</h3>
 <p>You can modify the name of files created by Hexo in <code>new_post_name</code> setting.</p>
@@ -168,19 +177,18 @@ $ hexo new draft <span class="string">"New Draft"</span>
 </tr>
 </tbody>
 </table>
-<escape><blockquote class="note tip"><strong class="note-title">Organize your posts by date</strong>
+<blockquote class="note tip"><strong class="note-title">Organize your posts by date</strong>
 
 <p>You can set <code>new_post_name</code> as <code>:year-:month-:day-:title.md</code> to make your posts ordered by date.</p>
 </blockquote>
 
-<p></escape></p>
+
 <h2 id="Front-matter">Front-matter</h2>
 <p>Front-matter is a block wrapped with <code>---</code> in front of the file. For example:</p>
 <figure class="highlight yaml"><pre>title: Hello World
 <span class="header">date: 2013/7/13 20:46:25
 ---</span>
 </pre></figure>
-
 
 <p>You can configure all post configuration in the front-matter. The following is predefined settings.</p>
 <table>
@@ -234,12 +242,12 @@ $ hexo new draft <span class="string">"New Draft"</span>
 </tr>
 </tbody>
 </table>
-<escape><blockquote class="note warn"><strong class="note-title">YAML front-matter</strong>
+<blockquote class="note warn"><strong class="note-title">YAML front-matter</strong>
 
 <p>Write the front-matter in YAML format. Don’t use tabs in the front-matter, use spaces instead. Also, add a space after colons.</p>
 </blockquote>
 
-<p></escape></p>
+
 <h2 id="Categories_&amp;_Tags">Categories &amp; Tags</h2>
 <p>Hexo supports categories and tags. Categories and tags are only supported in posts and have to be set in the front-matter. For example:</p>
 <figure class="highlight yaml"><pre>categories:
@@ -248,7 +256,6 @@ $ hexo new draft <span class="string">"New Draft"</span>
 -<span class="ruby"> <span class="constant">PS3</span>
 </span>-<span class="ruby"> <span class="constant">Games</span></span>
 </pre></figure>
-
 
 <p>Categories and tags may sound fimiliar in other systems, but they’re totally different in Hexo. Categories have inhertiance and are ordered, which means <code>Foo, Bar</code> doesn’t equal to <code>Bar, Foo</code>. Tags are unordered and flat.</p>
 <h2 id="Excerpts">Excerpts</h2>
@@ -260,7 +267,6 @@ $ hexo new draft <span class="string">"New Draft"</span>
 Aenean sit amet mi tristique, luctus diam sit amet, pharetra justo. Quisque ac faucibus tellus, non viverra augue. Phasellus justo ligula, pharetra adipiscing vulputate eget, fringilla sit amet urna. Nunc aliquam fermentum est ac fringilla.
 </pre></figure>
 
-
 <h2 id="Code_Highlighting">Code Highlighting</h2>
 <p>There’re 2 ways for you to highlight your code snippets in your posts: <strong>Backtick code block</strong> and <strong>Swig code block</strong>. Both are ported from Octopress.</p>
 <h3 id="Backtick_Code_Block">Backtick Code Block</h3>
@@ -268,8 +274,6 @@ Aenean sit amet mi tristique, luctus diam sit amet, pharetra justo. Quisque ac f
 <span class="tag">code</span> <span class="tag">snippet</span>
 ```
 </pre></figure>
-
-
 
 <h3 id="Swig_Code_Block">Swig Code Block</h3>
 <figure class="highlight"><pre>{% code [title] [lang:language] [url] [link text] %}<br>code snippet<br>{% endcode %}<br></pre></figure>
@@ -281,7 +285,6 @@ Aenean sit amet mi tristique, luctus diam sit amet, pharetra justo. Quisque ac f
 <span class="comment"># =&gt; The file will be created at source/_posts/my-gallery.md</span>
 </pre></figure>
 
-
 <p>Hexo will find the scaffold file named <code>photo</code> in the <code>scaffolds</code> folder. If the scaffold not exists, use the post scaffold instead.</p>
 <h3 id="Example-1">Example</h3>
 <p>Variables are wrapped by double curly brackets. For example:</p>
@@ -290,7 +293,6 @@ title: {{ title }}
 date: {{ date }}
 ---
 </pre></figure>
-
 
 <h3 id="Variables">Variables</h3>
 <table>
@@ -319,7 +321,7 @@ date: {{ date }}
       </div>
       <footer id="page-footer">
         <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
-        <a href="migration.html" id="page-footer-prev" class="page-footer-link" title="Migration">Prev</a><a href="generating.html" id="page-footer-next" class="page-footer-link" title="Generating">Next</a>
+        <a href="migration.html" id="page-footer-prev" title="Migration">Prev</a><a href="generating.html" id="page-footer-next" title="Generating">Next</a>
       </footer>
       
       <section id="comments">
@@ -369,7 +371,7 @@ date: {{ date }}
     
       <a href="/docs/helpers.html" class="sidebar-link">Helpers</a>
     
-      <a href="/docs/i18n.html" class="sidebar-link">i18n</a>
+      <a href="/docs/plugins.html" class="sidebar-link">Plugins</a>
     
   
     <strong class="sidebar-title">Advanced</strong>
@@ -377,8 +379,6 @@ date: {{ date }}
       <a href="/docs/models.html" class="sidebar-link">Models</a>
     
       <a href="/docs/events.html" class="sidebar-link">Events</a>
-    
-      <a href="/docs/plugins.html" class="sidebar-link">Plugins</a>
     
   
     <strong class="sidebar-title">Miscellaneous</strong>
@@ -394,12 +394,18 @@ date: {{ date }}
   <footer id="footer">
   <div class="outer">
     <div class="inner">
-      &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
-      Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+      <div id="footer-copyright">
+        &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
+        Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+      </div>
+      <div id="footer-links">
+        <a href="https://twitter.com/hexojs" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>
+        <a href="https://github.com/tommy351/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
+      </div>
     </div>
   </div>
 </footer>
-
+  
 <!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
@@ -431,5 +437,7 @@ var Swiftype = window.Swiftype || {};
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 </body>
 </html>

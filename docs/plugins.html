@@ -5,19 +5,35 @@
   <title>Plugins | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://hexo.io/docs/plugins.html">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link href="/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
+  <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
+  <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
   <link rel="stylesheet" href="/css/style.css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
-  <meta content="website" property="og:type">
-<meta content="Plugins" property="og:title">
-<meta content="http://hexo.io/docs/plugins.html" property="og:url">
-<meta property="og:image">
-<meta content="Hexo" property="og:site_name">
-<meta content="Overview
-Hexo has powerful plugin system. Most of built-in plugins are extensions of Hexo. This makes you easy to hook up your custom code easily.
-There’re 2 ways to extend Hexo: Script and Plugin. If" property="og:description">
-<meta content="summary" name="twitter:card">
-<meta content="100000247608790" property="fb:admins">
+  <meta name="description" content="Overview
+Hexo has a powerful plugin system. Most of built-in plugins are extensions of Hexo. This makes you easy to hook up your code.
+Script
+If your code is simple, it’s recommended to use a script.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Plugins">
+<meta property="og:url" content="http://hexo.io/docs/plugins.html">
+<meta property="og:image" content="http://hexo.io/logo.png">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Overview
+Hexo has a powerful plugin system. Most of built-in plugins are extensions of Hexo. This makes you easy to hook up your code.
+Script
+If your code is simple, it’s recommended to use a script.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Plugins">
+<meta name="twitter:description" content="Overview
+Hexo has a powerful plugin system. Most of built-in plugins are extensions of Hexo. This makes you easy to hook up your code.
+Script
+If your code is simple, it’s recommended to use a script.">
+<meta name="twitter:site" content="@hexojs">
+<meta property="fb:admins" content="100000247608790">
   
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -43,7 +59,7 @@ There’re 2 ways to extend Hexo: Script and Plugin. If" property="og:descriptio
         <ul id="main-nav-list">
           
             <li class="main-nav-item">
-              <a href="/docs/" class="main-nav-link current">Docs</a>
+              <a href="/docs/" class="main-nav-link">Docs</a>
             </li>
           
             <li class="main-nav-item">
@@ -82,53 +98,37 @@ There’re 2 ways to extend Hexo: Script and Plugin. If" property="og:descriptio
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.</span> <span class="toc-text">Overview</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Script"><span class="toc-number">1.1.</span> <span class="toc-text">Script</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Plugin"><span class="toc-number">1.2.</span> <span class="toc-text">Plugin</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Generator"><span class="toc-number">2.</span> <span class="toc-text">Generator</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax"><span class="toc-number">2.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Render"><span class="toc-number">2.2.</span> <span class="toc-text">Render</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">2.3.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Renderer"><span class="toc-number">3.</span> <span class="toc-text">Renderer</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-1"><span class="toc-number">3.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1"><span class="toc-number">3.2.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Helper"><span class="toc-number">4.</span> <span class="toc-text">Helper</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-2"><span class="toc-number">4.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-2"><span class="toc-number">4.2.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Deployer"><span class="toc-number">5.</span> <span class="toc-text">Deployer</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-3"><span class="toc-number">5.1.</span> <span class="toc-text">Syntax</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Processor"><span class="toc-number">6.</span> <span class="toc-text">Processor</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-4"><span class="toc-number">6.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#File_data"><span class="toc-number">6.2.</span> <span class="toc-text">File data</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Tag"><span class="toc-number">7.</span> <span class="toc-text">Tag</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-5"><span class="toc-number">7.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Options"><span class="toc-number">7.2.</span> <span class="toc-text">Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-3"><span class="toc-number">7.3.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Console"><span class="toc-number">8.</span> <span class="toc-text">Console</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-6"><span class="toc-number">8.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Options-1"><span class="toc-number">8.2.</span> <span class="toc-text">Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-4"><span class="toc-number">8.3.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Migrator"><span class="toc-number">9.</span> <span class="toc-text">Migrator</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-7"><span class="toc-number">9.1.</span> <span class="toc-text">Syntax</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Filter"><span class="toc-number">10.</span> <span class="toc-text">Filter</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-8"><span class="toc-number">10.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-5"><span class="toc-number">10.2.</span> <span class="toc-text">Example</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Overview"><span class="toc-number">1.</span> <span class="toc-text">Overview</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Script"><span class="toc-number">1.1.</span> <span class="toc-text">Script</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Plugin"><span class="toc-number">1.2.</span> <span class="toc-text">Plugin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Publishing"><span class="toc-number">1.3.</span> <span class="toc-text">Publishing</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Generator"><span class="toc-number">2.</span> <span class="toc-text">Generator</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax"><span class="toc-number">2.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Render_Function"><span class="toc-number">2.2.</span> <span class="toc-text">Render Function</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">2.3.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Renderer"><span class="toc-number">3.</span> <span class="toc-text">Renderer</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-1"><span class="toc-number">3.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1"><span class="toc-number">3.2.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Helper"><span class="toc-number">4.</span> <span class="toc-text">Helper</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-2"><span class="toc-number">4.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-2"><span class="toc-number">4.2.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Deployer"><span class="toc-number">5.</span> <span class="toc-text">Deployer</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-3"><span class="toc-number">5.1.</span> <span class="toc-text">Syntax</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Processor"><span class="toc-number">6.</span> <span class="toc-text">Processor</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-4"><span class="toc-number">6.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#File_data"><span class="toc-number">6.2.</span> <span class="toc-text">File data</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Tag"><span class="toc-number">7.</span> <span class="toc-text">Tag</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-5"><span class="toc-number">7.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Options"><span class="toc-number">7.2.</span> <span class="toc-text">Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-3"><span class="toc-number">7.3.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Console"><span class="toc-number">8.</span> <span class="toc-text">Console</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-6"><span class="toc-number">8.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Options-1"><span class="toc-number">8.2.</span> <span class="toc-text">Options</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-4"><span class="toc-number">8.3.</span> <span class="toc-text">Example</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Migrator"><span class="toc-number">9.</span> <span class="toc-text">Migrator</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-7"><span class="toc-number">9.1.</span> <span class="toc-text">Syntax</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Filter"><span class="toc-number">10.</span> <span class="toc-text">Filter</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Syntax-8"><span class="toc-number">10.1.</span> <span class="toc-text">Syntax</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Post_Filter"><span class="toc-number">10.2.</span> <span class="toc-text">Post Filter</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
         <h2 id="Overview">Overview</h2>
-<p>Hexo has powerful plugin system. Most of built-in plugins are extensions of Hexo. This makes you easy to hook up your custom code easily.</p>
-<p>There’re 2 ways to extend Hexo: <strong>Script</strong> and <strong>Plugin</strong>. If your code is simple and doesn’t have any dependencies, you can choose <strong>Script</strong>. If your code is complicated and have dependencies, or you want to publish it on NPM registry, you should use <strong>Plugin</strong>.</p>
+<p>Hexo has a powerful plugin system. Most of built-in plugins are extensions of Hexo. This makes you easy to hook up your code.</p>
 <h3 id="Script">Script</h3>
-<p>To use script, put JavaScript files in <code>scripts</code> folder and it’ll be loaded once Hexo is initialized.</p>
+<p>If your code is simple, it’s recommended to use a script. All you need to do is putting JavaScript files in <code>scripts</code> folder and they’ll be loaded once Hexo is initialized.</p>
 <h3 id="Plugin">Plugin</h3>
-<p>To use plugin, create a new folder. The folder name must <code>hexo-</code> prefixed so it could be loaded by Hexo. The folder must contained 2 files at least. One is your code and the other is <code>package.json</code>.</p>
+<p>If your code is complicated or you want to publish it to NPM registry, it’s recommended to use a plugin. First, create a folder in <code>node_modules</code> folder. The name of the folder must be started with <code>hexo-</code> so it could be loaded by Hexo. The folder must be contained at least 2 files: One is the main program and the other is <code>package.json</code> describing the purpose and the dependencies of the plugin.</p>
 <figure class="highlight plain"><pre>.
 ├── index.js
 └── package.json
 </pre></figure>
 
-
-<p>You should at least describe <code>name</code>, <code>version</code>, <code>main</code> and <code>dependencies</code> in <code>package.json</code>. For example:</p>
-<figure class="highlight json"><pre>{
+<p>You should at least describe <code>name</code>, <code>version</code>, <code>main</code> in <code>package.json</code>. For example:</p>
+<figure class="highlight json"><figcaption><span>package.json</span></figcaption><pre>{
   "<span class="attribute">name</span>": <span class="value"><span class="string">"hexo-my-plugin"</span></span>,
   "<span class="attribute">version</span>": <span class="value"><span class="string">"0.0.1"</span></span>,
-  "<span class="attribute">main</span>": <span class="value"><span class="string">"index"</span></span>,
-  "<span class="attribute">dependencies</span>": <span class="value">{
-  }
+  "<span class="attribute">main</span>": <span class="value"><span class="string">"index"</span>
 </span>}
 </pre></figure>
 
-
-<p>Hexo has 9 categories of plugins:</p>
-<ol>
-<li>Generator</li>
-<li>Renderer</li>
-<li>Helper</li>
-<li>Deployer</li>
-<li>Processor</li>
-<li>Tag</li>
-<li>Console</li>
-<li>Migrator</li>
-<li>Filter</li>
-</ol>
+<h3 id="Publishing">Publishing</h3>
+<p>You can publish your plugin to the <a href="https://github.com/tommy351/hexo/wiki/Plugins" target="_blank">plugin list</a> on wiki.</p>
 <h2 id="Generator">Generator</h2>
-<p>Generator generates content based on processed source files.</p>
+<p>Generators are used to generate static files based on processed source files.</p>
 <h3 id="Syntax">Syntax</h3>
-<figure class="highlight js"><pre>extend.generator.register(<span class="function"><span class="keyword">function</span><span class="params">(locals, render, callback)</span>{</span>
+<figure class="highlight js"><pre>hexo.extend.generator.register(<span class="function"><span class="keyword">function</span><span class="params">(locals, render, callback)</span>{</span>
   <span class="comment">// ...</span>
 });
 </pre></figure>
-
 
 <table>
 <thead>
@@ -152,11 +152,10 @@ There’re 2 ways to extend Hexo: Script and Plugin. If" property="og:descriptio
 </tr>
 </tbody>
 </table>
-<h3 id="Render">Render</h3>
-<p>To render your content with theme, you have to use render function.</p>
+<h3 id="Render_Function">Render Function</h3>
+<p>To render contents with templates, use the render function.</p>
 <figure class="highlight js"><pre>render(path, layout, locals)
 </pre></figure>
-
 
 <table>
 <thead>
@@ -180,10 +179,9 @@ There’re 2 ways to extend Hexo: Script and Plugin. If" property="og:descriptio
 </tr>
 </tbody>
 </table>
-<p>If you don’t need to render your content with theme. You can bind the content on the routes directly. For example:</p>
-<figure class="highlight js"><pre>route.set(<span class="string">'feed.xml'</span>, content);
+<p>If you don’t need to render contents with templates. You can bind contents on routes directly:</p>
+<figure class="highlight js"><pre>hexo.route.set(<span class="string">'feed.xml'</span>, content);
 </pre></figure>
-
 
 <h3 id="Example">Example</h3>
 <figure class="highlight js"><pre>hexo.extend.generator.register(<span class="function"><span class="keyword">function</span><span class="params">(locals, render, callback)</span>{</span>
@@ -192,29 +190,29 @@ There’re 2 ways to extend Hexo: Script and Plugin. If" property="og:descriptio
 });
 </pre></figure>
 
-
 <h2 id="Renderer">Renderer</h2>
-<p>If you want to use a new markup language in Hexo, you can implement it with renderer plugin.</p>
+<p>Renderers are used to render contents. You can find available renderers in <a href="https://github.com/tommy351/hexo/wiki/Plugins#renderer" target="_blank">plugin list</a>.</p>
 <h3 id="Syntax-1">Syntax</h3>
-<figure class="highlight js"><pre>hexo.extend.renderer.register(name, output, fn, [sync]);
+<figure class="highlight js"><pre>hexo.extend.renderer.register(name, output, <span class="function"><span class="keyword">function</span><span class="params">(data, options, callback)</span>{</span>
+  <span class="comment">// ...</span>
+}, sync);
 </pre></figure>
-
 
 <table>
 <thead>
 <tr>
-<th>Paramter</th>
+<th>Parameter</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>name</code></td>
-<td>Input file extension (lowercase, not included <code>.</code>)</td>
+<td>Input file extension (lowercase, without prefixing <code>.</code>)</td>
 </tr>
 <tr>
 <td><code>output</code></td>
-<td>Output file extension (lowercase, not included <code>.</code>)</td>
+<td>Output file extension (lowercase, without prefixing <code>.</code>)</td>
 </tr>
 <tr>
 <td><code>fn</code></td>
@@ -241,7 +239,7 @@ There’re 2 ways to extend Hexo: Script and Plugin. If" property="og:descriptio
 </tr>
 <tr>
 <td><code>options</code></td>
-<td>Options or local variables.</td>
+<td>Options.</td>
 </tr>
 <tr>
 <td><code>callback</code></td>
@@ -259,28 +257,27 @@ hexo.extend.renderer.register(<span class="string">'ejs'</span>, <span class="st
 }, <span class="literal">true</span>);
 </pre></figure>
 
-
 <p><strong>Async mode:</strong></p>
 <figure class="highlight js"><pre><span class="keyword">var</span> stylus = <span class="built_in">require</span>(<span class="string">'stylus'</span>);
 
-hexo.extend.renderer.register(<span class="string">'styl'</span>, <span class="string">'css'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, callback)</span>{</span>
+hexo.extend.renderer.register(<span class="string">'styl'</span>, <span class="string">'css'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, options, callback)</span>{</span>
   stylus(data.text).set(<span class="string">'filename'</span>, data.path).render(callback);
 });
 </pre></figure>
 
-
 <h2 id="Helper">Helper</h2>
-<p>Helper is used in theme to help you insert specified content quickly. If you write something in your theme many times. You should consider to put it in the helper. (Don’t repeat yourself, right?)</p>
+<p>Helpers are used in templates to help you insert snippets quickly. It’s recommended to put complicated or often used code in helpers instead of templates. (Don’t repeat yourself, right?)</p>
 <h3 id="Syntax-2">Syntax</h3>
 <p>You can get all local variables from <code>this</code>.</p>
-<figure class="highlight js"><pre>hexo.extend.helper.register(name, fn);
+<figure class="highlight js"><pre>hexo.extend.helper.register(name, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
+  <span class="comment">// ...</span>
+});
 </pre></figure>
-
 
 <table>
 <thead>
 <tr>
-<th>Paramter</th>
+<th>Parameter</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -301,23 +298,17 @@ hexo.extend.renderer.register(<span class="string">'styl'</span>, <span class="s
 });
 </pre></figure>
 
-
-<p>Input:</p>
 <figure class="highlight js"><pre>&lt;%- js(<span class="string">'script.js'</span>) %&gt;
+<span class="comment">// &lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;</span>
 </pre></figure>
-
-
-<p>Output:</p>
-<figure class="highlight html"><pre><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span> <span class="attribute">src</span>=<span class="value">"script.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
-</pre></figure>
-
 
 <h2 id="Deployer">Deployer</h2>
 <p>Deployer plugin helps you deploy your site on web without complicated commands.</p>
 <h3 id="Syntax-3">Syntax</h3>
-<figure class="highlight js"><pre>hexo.extend.deployer.register(name, fn);
+<figure class="highlight js"><pre>hexo.extend.deployer.register(name, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span>{</span>
+  <span class="comment">// ...</span>
+});
 </pre></figure>
-
 
 <table>
 <thead>
@@ -348,7 +339,7 @@ hexo.extend.renderer.register(<span class="string">'styl'</span>, <span class="s
 <tbody>
 <tr>
 <td><code>args</code></td>
-<td>Deployer options and arguments.</td>
+<td>Deployer options and <a href="https://github.com/substack/minimist" target="_blank">Minimist</a> arguments.</td>
 </tr>
 <tr>
 <td><code>callback</code></td>
@@ -357,17 +348,18 @@ hexo.extend.renderer.register(<span class="string">'styl'</span>, <span class="s
 </tbody>
 </table>
 <h2 id="Processor">Processor</h2>
-<p>Processor processes raw data and stores them in database. If you want to process some specified files in <code>source</code> folder. You can implement it with the processor plugin.</p>
-<escape><blockquote class="note info"><strong class="note-title">Hidden files won't be processed</strong>
+<p>Processors are used to process raw data in <code>source</code> folder.</p>
+<blockquote class="note info"><strong class="note-title">Hidden files will be ignored</strong>
 
 <p>Hexo won’t process hidden files.</p>
 </blockquote>
 
-<p></escape></p>
-<h3 id="Syntax-4">Syntax</h3>
-<figure class="highlight js"><pre>hexo.extend.processor.register([rule], fn);
-</pre></figure>
 
+<h3 id="Syntax-4">Syntax</h3>
+<figure class="highlight js"><pre>hexo.extend.processor.register(rule, <span class="function"><span class="keyword">function</span><span class="params">(file, callback)</span>{</span>
+  <span class="comment">// ...</span>
+});
+</pre></figure>
 
 <table>
 <thead>
@@ -407,6 +399,7 @@ hexo.extend.renderer.register(<span class="string">'styl'</span>, <span class="s
 </tbody>
 </table>
 <h3 id="File_data">File data</h3>
+<p>You can check <a href="/api/classes/Box.File.html">Box.File</a> for more info.</p>
 <table>
 <thead>
 <tr>
@@ -458,7 +451,6 @@ hexo.extend.renderer.register(<span class="string">'styl'</span>, <span class="s
 file.readSync([options]);
 </pre></figure>
 
-
 <table>
 <thead>
 <tr>
@@ -485,19 +477,18 @@ file.readSync([options]);
 file.statSync();
 </pre></figure>
 
-
 <p><strong>Renders the file:</strong></p>
 <figure class="highlight js"><pre>file.render([options], callback);
 file.renderSync([options]);
 </pre></figure>
 
-
 <h2 id="Tag">Tag</h2>
-<p>Tag helps you insert specified content in your post quickly.</p>
+<p>Tags are used in posts to help your insert snippets quickly.</p>
 <h3 id="Syntax-5">Syntax</h3>
-<figure class="highlight js"><pre>hexo.extend.tag.register(name, fn, [ends]);
+<figure class="highlight js"><pre>hexo.extend.tag.register(name, <span class="function"><span class="keyword">function</span><span class="params">(args, content, options)</span>{</span>
+  <span class="comment">// ...</span>
+}, options);
 </pre></figure>
-
 
 <table>
 <thead>
@@ -517,11 +508,11 @@ file.renderSync([options]);
 </tr>
 <tr>
 <td><code>options</code></td>
-<td>Options</td>
+<td>Options (See below)</td>
 </tr>
 </tbody>
 </table>
-<p><code>fn</code> is invoked with 2 arguments:</p>
+<p><code>fn</code> is invoked with 3 arguments:</p>
 <table>
 <thead>
 <tr>
@@ -536,11 +527,11 @@ file.renderSync([options]);
 </tr>
 <tr>
 <td><code>content</code></td>
-<td>Content (Only available when the tag has end tag)</td>
+<td>Content (Only available when <code>options.end</code> is true)</td>
 </tr>
 <tr>
 <td><code>options</code></td>
-<td>Options</td>
+<td>Swig options</td>
 </tr>
 </tbody>
 </table>
@@ -574,7 +565,6 @@ file.renderSync([options]);
 });
 </pre></figure>
 
-
 <p><strong>With end tag:</strong> Inserts a pull quote.</p>
 <figure class="highlight js"><pre>hexo.extend.tag.register(<span class="string">'pullquote'</span>, <span class="function"><span class="keyword">function</span><span class="params">(args, content, options)</span>{</span>
   <span class="keyword">var</span> className = args.length ? <span class="string">' '</span> + args.join(<span class="string">' '</span>) : <span class="string">''</span>;
@@ -582,13 +572,13 @@ file.renderSync([options]);
 }, <span class="literal">true</span>);
 </pre></figure>
 
-
 <h2 id="Console">Console</h2>
-<p>Console is the interface between Hexo and you.</p>
+<p>Consoles are the interface between Hexo and you.</p>
 <h3 id="Syntax-6">Syntax</h3>
-<figure class="highlight js"><pre>hexo.extend.console.register(name, desc, [options], fn);
+<figure class="highlight js"><pre>hexo.extend.console.register(name, desc, options, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span>{</span>
+  <span class="comment">// ...</span>
+});
 </pre></figure>
-
 
 <table>
 <thead>
@@ -600,7 +590,7 @@ file.renderSync([options]);
 <tbody>
 <tr>
 <td><code>name</code></td>
-<td>Console name (lowercase)</td>
+<td>Console name (must be in lowercase)</td>
 </tr>
 <tr>
 <td><code>desc</code></td>
@@ -612,7 +602,26 @@ file.renderSync([options]);
 </tr>
 <tr>
 <td><code>fn</code></td>
-<td>Console function. Invoked with a [Optimist] argument.</td>
+<td>Console function</td>
+</tr>
+</tbody>
+</table>
+<p><code>fn</code> is invoked with 2 arguments:</p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>args</code></td>
+<td><a href="https://github.com/substack/minimist" target="_blank">Minimist</a> arguments</td>
+</tr>
+<tr>
+<td><code>callback</code></td>
+<td>Callback function</td>
 </tr>
 </tbody>
 </table>
@@ -627,37 +636,32 @@ file.renderSync([options]);
 <tbody>
 <tr>
 <td><code>init</code></td>
-<td>Display in a non-Hexo folder</td>
+<td>Whether the console plugin should display in a non-Hexo folder.</td>
 </tr>
 <tr>
 <td><code>debug</code></td>
-<td>Display in debug mode</td>
+<td>Only display in debug mode.</td>
 </tr>
 <tr>
 <td><code>alias</code></td>
-<td>Console alias</td>
+<td>The alias for the console plugin.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="Example-4">Example</h3>
-<figure class="highlight bash"><pre>$ hexo config
-</pre></figure>
-
-
-
-
-<figure class="highlight js"><pre>hexo.extend.console.register(<span class="string">'config'</span>, <span class="string">'Display configuration'</span>, <span class="function"><span class="keyword">function</span><span class="params">(args)</span>{</span>
+<figure class="highlight js"><pre>hexo.extend.console.register(<span class="string">'config'</span>, <span class="string">'Display configuration'</span>, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span>{</span>
   console.log(hexo.config);
+  callback();
 });
 </pre></figure>
 
-
 <h2 id="Migrator">Migrator</h2>
-<p>Migrator helps you migrate from other blog system to Hexo.</p>
+<p>Migrators are used to migrate from other system to Hexo.</p>
 <h3 id="Syntax-7">Syntax</h3>
-<figure class="highlight js"><pre>hexo.extend.migrator.register(name, fn);
+<figure class="highlight js"><pre>hexo.extend.migrator.register(name, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span>{</span>
+  <span class="comment">// ...</span>
+});
 </pre></figure>
-
 
 <table>
 <thead>
@@ -673,21 +677,36 @@ file.renderSync([options]);
 </tr>
 <tr>
 <td><code>fn</code></td>
-<td>Migrator function. Invoked with a <a href="https://github.com/substack/minimist" target="_blank">Minimist</a> argument.</td>
+<td>Migrator function</td>
+</tr>
+</tbody>
+</table>
+<p><code>fn</code> is invoked with 2 arguments:</p>
+<table>
+<thead>
+<tr>
+<th>Argument</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>args</code></td>
+<td><a href="https://github.com/substack/minimist" target="_blank">Minimist</a> arguments</td>
+</tr>
+<tr>
+<td><code>callback</code></td>
+<td>Callback function</td>
 </tr>
 </tbody>
 </table>
 <h2 id="Filter">Filter</h2>
-<p>Filters are similar with tags, but more powerful and customizable. You can process any attributes such as titles and contents in posts. It’s recommended to run asynchronous tasks in filters.</p>
-<p>There’re two types of filters: <strong>pre-filter</strong> process uncompiled data, while <strong>post-filter</strong> process compiled data.</p>
-<iframe src="plugins/filter-flow.html" width="100%" height="40" frameborder="0" allowfullscreen></iframe>
-
-
-
+<p>Filters are used to modify certain data. Hexo passes data through filters and you can modify everything as long as it’s provided. This concept is stolen from <a href="http://codex.wordpress.org/Plugin_API#Filters" target="_blank">WordPress</a>. Filter API is rewritten in 2.6 and more filter types are added.</p>
 <h3 id="Syntax-8">Syntax</h3>
-<figure class="highlight js"><pre>hexo.extend.filter.register([type], fn);
+<figure class="highlight js"><pre>hexo.extend.filter.register(type, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
+  <span class="comment">// ...</span>
+}, priority);
 </pre></figure>
-
 
 <table>
 <thead>
@@ -699,29 +718,54 @@ file.renderSync([options]);
 <tbody>
 <tr>
 <td><code>type</code></td>
-<td>Filter type. The value can be <code>pre</code> or <code>post</code> (Default).</td>
+<td>Filter type (See below)</td>
 </tr>
 <tr>
 <td><code>fn</code></td>
-<td>Filter function. Invoked with a argument: post data.</td>
+<td>Filter function (Arguments are depend on the filter type)</td>
+</tr>
+<tr>
+<td><code>priority</code></td>
+<td>Priority of the filter (Default is 10)</td>
 </tr>
 </tbody>
 </table>
-<h3 id="Example-5">Example</h3>
-<p>Replaces <code>#username</code> in post content to a Twitter link.</p>
-<figure class="highlight js"><pre>hexo.extend.filter.register(<span class="string">'post'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, callback)</span>{</span>
-  data.content = data.content.replace(<span class="regexp">/#(\d+)/</span>, <span class="string">'&lt;a href="http://twitter.com/$1"&gt;#$1&lt;/a&gt;'</span>);
-
+<h3 id="Post_Filter">Post Filter</h3>
+<p><strong>before_post_render</strong></p>
+<p>Runs before posts are rendered by Markdown. For example, transform a title into titlecase:</p>
+<figure class="highlight js"><pre>hexo.extend.filter.register(<span class="string">'before_post_render'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, callback)</span>{</span>
+  data.title = hexo.util.titlecase(data.title);
   callback(<span class="literal">null</span>, data);
 });
 </pre></figure>
 
+<p><strong>after_post_render</strong></p>
+<p>Runs after posts are rendered by Markdown. For example, replace <code>@username</code> to a Twitter profile link.</p>
+<figure class="highlight js"><pre>hexo.extend.filter.register(<span class="string">'after_post_render'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, callback)</span>{</span>
+  data.content = data.content.replace(<span class="regexp">/@(\d+)/</span>, <span class="string">'&lt;a href="http://twitter.com/$1"&gt;#$1&lt;/a&gt;'</span>);
+  callback(<span class="literal">null</span>, data);
+});
+</pre></figure>
+
+<p><strong>new_post_path</strong></p>
+<p>Runs when creating a post. Used to determine the file path of a post.</p>
+<figure class="highlight js"><pre>hexo.extend.filter.register(<span class="string">'new_post_path'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, replace, callback)</span>{</span>
+  <span class="comment">// ...</span>
+});
+</pre></figure>
+
+<p><strong>post_permalink</strong></p>
+<p>Used to determine the permalink of a post.</p>
+<figure class="highlight js"><pre>hexo.extend.filter.register(<span class="string">'post_permalink'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data)</span>{</span>
+  <span class="comment">// ...</span>
+});
+</pre></figure>
 
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-05-12T07:46:50.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
-        <a href="events.html" id="page-footer-prev" class="page-footer-link" title="Events">Prev</a><a href="troubleshooting.html" id="page-footer-next" class="page-footer-link" title="Troubleshooting">Next</a>
+        <time id="page-footer-updated" datetime="2014-05-18T09:45:14.000Z" itemprop="dateModified">Last updated: May 18, 2014</time>
+        <a href="helpers.html" id="page-footer-prev" title="Helpers">Prev</a><a href="models.html" id="page-footer-next" title="Models">Next</a>
       </footer>
       
       <section id="comments">
@@ -771,7 +815,7 @@ file.renderSync([options]);
     
       <a href="/docs/helpers.html" class="sidebar-link">Helpers</a>
     
-      <a href="/docs/i18n.html" class="sidebar-link">i18n</a>
+      <a href="/docs/plugins.html" class="sidebar-link current">Plugins</a>
     
   
     <strong class="sidebar-title">Advanced</strong>
@@ -779,8 +823,6 @@ file.renderSync([options]);
       <a href="/docs/models.html" class="sidebar-link">Models</a>
     
       <a href="/docs/events.html" class="sidebar-link">Events</a>
-    
-      <a href="/docs/plugins.html" class="sidebar-link current">Plugins</a>
     
   
     <strong class="sidebar-title">Miscellaneous</strong>
@@ -796,12 +838,18 @@ file.renderSync([options]);
   <footer id="footer">
   <div class="outer">
     <div class="inner">
-      &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
-      Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+      <div id="footer-copyright">
+        &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
+        Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
+      </div>
+      <div id="footer-links">
+        <a href="https://twitter.com/hexojs" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>
+        <a href="https://github.com/tommy351/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
+      </div>
     </div>
   </div>
 </footer>
-
+  
 <!-- Disqus -->
 <script>
   var disqus_shortname = 'hexojs';
@@ -833,5 +881,7 @@ var Swiftype = window.Swiftype || {};
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="/js/script.js"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 </body>
 </html>
