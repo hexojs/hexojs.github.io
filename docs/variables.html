@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
   <title>Variables | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,9 +10,10 @@
   <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
   <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
   <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
+  <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   <meta name="description" content="Global Variables
 
 
@@ -40,7 +41,6 @@ Theme configurati">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Variables">
 <meta property="og:url" content="http://hexo.io/docs/variables.html">
-<meta property="og:image" content="http://hexo.io/logo.png">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Global Variables
 
@@ -107,7 +107,7 @@ Theme configurati">
 
 </head>
 
-<body class="page">
+<body>
   <header id="header">
   <div class="outer">
     <div class="inner">
@@ -127,6 +127,10 @@ Theme configurati">
             </li>
           
             <li class="main-nav-item">
+              <a href="/news/" class="main-nav-link">News</a>
+            </li>
+          
+            <li class="main-nav-item">
               <a href="https://github.com/tommy351/hexo/wiki/Plugins" class="main-nav-link">Plugins</a>
             </li>
           
@@ -134,11 +138,8 @@ Theme configurati">
               <a href="https://github.com/tommy351/hexo/wiki/Themes" class="main-nav-link">Themes</a>
             </li>
           
-            <li class="main-nav-item">
-              <a href="https://github.com/tommy351/hexo" class="main-nav-link">Source</a>
-            </li>
-          
         </ul>
+        <a href="https://github.com/tommy351/hexo" id="github-btn" title="GitHub" target="_blank"></a>
         <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
@@ -158,7 +159,7 @@ Theme configurati">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Global_Variables"><span class="toc-number">1.</span> <span class="toc-text">Global Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Site_Variables"><span class="toc-number">2.</span> <span class="toc-text">Site Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Page_Vairables"><span class="toc-number">3.</span> <span class="toc-text">Page Vairables</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Global_Variables"><span class="toc-number">1.</span> <span class="toc-text">Global Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Site_Variables"><span class="toc-number">2.</span> <span class="toc-text">Site Variables</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Page_Variables"><span class="toc-number">3.</span> <span class="toc-text">Page Variables</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
         <h3 id="Global_Variables">Global Variables</h3>
@@ -188,7 +189,7 @@ Theme configurati">
 </tr>
 <tr>
 <td><code>_</code> (single underscore)</td>
-<td><a href="http://lodash.com/" target="_blank">Lodash</a> library</td>
+<td><a href="http://lodash.com/" target="_blank" rel="external">Lodash</a> library</td>
 </tr>
 <tr>
 <td><code>__</code> (double underscores)</td>
@@ -238,7 +239,7 @@ Theme configurati">
 </tr>
 </tbody>
 </table>
-<h3 id="Page_Vairables">Page Vairables</h3>
+<h3 id="Page_Variables">Page Variables</h3>
 <p><strong>Article (post, page, …)</strong></p>
 <table>
 <thead>
@@ -254,11 +255,11 @@ Theme configurati">
 </tr>
 <tr>
 <td><code>page.date</code></td>
-<td>Article created date (<a href="http://momentjs.com/" target="_blank">Moment.js</a> object)</td>
+<td>Article created date (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object)</td>
 </tr>
 <tr>
 <td><code>page.updated</code></td>
-<td>Article last updated date (<a href="http://momentjs.com/" target="_blank">Moment.js</a> object)</td>
+<td>Article last updated date (<a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object)</td>
 </tr>
 <tr>
 <td><code>page.categories</code></td>
@@ -294,7 +295,7 @@ Theme configurati">
 </tr>
 <tr>
 <td><code>page.path</code></td>
-<td>The URL of the article without root URL. We usually use <code>config.root + page.path</code> in theme.</td>
+<td>The URL of the article without root URL. We usually use <code>url_for(page.path)</code> in theme.</td>
 </tr>
 <tr>
 <td><code>page.permalink</code></td>
@@ -375,7 +376,7 @@ Theme configurati">
 </tr>
 <tr>
 <td><code>page.path</code></td>
-<td>The URL of current page without root URL. We usually use <code>config.root + page.path</code> in theme.</td>
+<td>The URL of current page without root URL. We usually use <code>url_for(page.path)</code> in theme.</td>
 </tr>
 </tbody>
 </table>
@@ -435,16 +436,16 @@ Theme configurati">
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-05-12T06:50:57.000Z" itemprop="dateModified">Last updated: May 12, 2014</time>
+        <time id="page-footer-updated" datetime="2014-06-14T00:59:58.000Z" itemprop="dateModified">Last updated: Jun 14 2014</time>
         <a href="themes.html" id="page-footer-prev" title="Themes">Prev</a><a href="pagination.html" id="page-footer-next" title="Pagination">Next</a>
       </footer>
       
-      <section id="comments">
-        <div id="disqus_thread">
-          <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </div>
-      </section>
-      
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
     </div>
     <aside id="sidebar">
   
@@ -510,7 +511,7 @@ Theme configurati">
   <div class="outer">
     <div class="inner">
       <div id="footer-copyright">
-        &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
+        &copy; 2014 <a href="http://zespia.tw/">SkyArrow</a><br>
         Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
       </div>
       <div id="footer-links">
@@ -539,19 +540,21 @@ Theme configurati">
 <!-- Swiftype -->
 <script>
 var Swiftype = window.Swiftype || {};
-  (function() {
-    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+(function() {
+  Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
 
-    /** DO NOT EDIT BELOW THIS LINE **/
-    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-    script.src = "//s.swiftypecdn.com/embed.js";
-    var entry = document.getElementsByTagName('script')[0];
-    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
-  }());
+  /** DO NOT EDIT BELOW THIS LINE **/
+  var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+  script.src = "//s.swiftypecdn.com/embed.js";
+  var entry = document.getElementsByTagName('script')[0];
+  document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+}());
 </script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/script.js"></script>
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/script.js" type="text/javascript"></script>
+<!-- Google+ -->
+<script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
+<!-- Twitter -->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 </body>

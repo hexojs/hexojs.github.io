@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
   <title>Helpers | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,25 +10,25 @@
   <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
   <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
   <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
+  <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   <meta name="description" content="Helpers are used in templates to help you insert snippets quickly. You can see Plugins to learn how to build a helper plugin.
-css
-Loads CSS files. path can be an array or a string. If path isn’t prefi">
+url_for
+Returns a url with the root path prefixed. You should use this hel">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Helpers">
 <meta property="og:url" content="http://hexo.io/docs/helpers.html">
-<meta property="og:image" content="http://hexo.io/logo.png">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Helpers are used in templates to help you insert snippets quickly. You can see Plugins to learn how to build a helper plugin.
-css
-Loads CSS files. path can be an array or a string. If path isn’t prefi">
+url_for
+Returns a url with the root path prefixed. You should use this hel">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Helpers">
 <meta name="twitter:description" content="Helpers are used in templates to help you insert snippets quickly. You can see Plugins to learn how to build a helper plugin.
-css
-Loads CSS files. path can be an array or a string. If path isn’t prefi">
+url_for
+Returns a url with the root path prefixed. You should use this hel">
 <meta name="twitter:site" content="@hexojs">
 <meta property="fb:admins" content="100000247608790">
   
@@ -44,7 +44,7 @@ Loads CSS files. path can be an array or a string. If path isn’t prefi">
 
 </head>
 
-<body class="page">
+<body>
   <header id="header">
   <div class="outer">
     <div class="inner">
@@ -64,6 +64,10 @@ Loads CSS files. path can be an array or a string. If path isn’t prefi">
             </li>
           
             <li class="main-nav-item">
+              <a href="/news/" class="main-nav-link">News</a>
+            </li>
+          
+            <li class="main-nav-item">
               <a href="https://github.com/tommy351/hexo/wiki/Plugins" class="main-nav-link">Plugins</a>
             </li>
           
@@ -71,11 +75,8 @@ Loads CSS files. path can be an array or a string. If path isn’t prefi">
               <a href="https://github.com/tommy351/hexo/wiki/Themes" class="main-nav-link">Themes</a>
             </li>
           
-            <li class="main-nav-item">
-              <a href="https://github.com/tommy351/hexo" class="main-nav-link">Source</a>
-            </li>
-          
         </ul>
+        <a href="https://github.com/tommy351/hexo" id="github-btn" title="GitHub" target="_blank"></a>
         <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
@@ -95,10 +96,15 @@ Loads CSS files. path can be an array or a string. If path isn’t prefi">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#css"><span class="toc-number">1.</span> <span class="toc-text">css</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js"><span class="toc-number">2.</span> <span class="toc-text">js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Conditional_Tags"><span class="toc-number">3.</span> <span class="toc-text">Conditional Tags</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gravatar"><span class="toc-number">4.</span> <span class="toc-text">gravatar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#trim"><span class="toc-number">5.</span> <span class="toc-text">trim</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#strip_html"><span class="toc-number">6.</span> <span class="toc-text">strip_html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#titlecase"><span class="toc-number">7.</span> <span class="toc-text">titlecase</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#partial"><span class="toc-number">8.</span> <span class="toc-text">partial</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tagcloud"><span class="toc-number">9.</span> <span class="toc-text">tagcloud</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#paginator"><span class="toc-number">10.</span> <span class="toc-text">paginator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#date"><span class="toc-number">11.</span> <span class="toc-text">date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#date_xml"><span class="toc-number">12.</span> <span class="toc-text">date_xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#time"><span class="toc-number">13.</span> <span class="toc-text">time</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#full_date"><span class="toc-number">14.</span> <span class="toc-text">full_date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#moment"><span class="toc-number">15.</span> <span class="toc-text">moment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#search_form"><span class="toc-number">16.</span> <span class="toc-text">search_form</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#markdown"><span class="toc-number">17.</span> <span class="toc-text">markdown</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#word_wrap"><span class="toc-number">18.</span> <span class="toc-text">word_wrap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#truncate"><span class="toc-number">19.</span> <span class="toc-text">truncate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#truncate_words"><span class="toc-number">20.</span> <span class="toc-text">truncate_words</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#link_to"><span class="toc-number">21.</span> <span class="toc-text">link_to</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mail_to"><span class="toc-number">22.</span> <span class="toc-text">mail_to</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_categories"><span class="toc-number">23.</span> <span class="toc-text">list_categories</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_tags"><span class="toc-number">24.</span> <span class="toc-text">list_tags</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_archives"><span class="toc-number">25.</span> <span class="toc-text">list_archives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_posts"><span class="toc-number">26.</span> <span class="toc-text">list_posts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_posts"><span class="toc-number">27.</span> <span class="toc-text">get_posts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#number_format"><span class="toc-number">28.</span> <span class="toc-text">number_format</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#open_graph"><span class="toc-number">29.</span> <span class="toc-text">open_graph</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#toc"><span class="toc-number">30.</span> <span class="toc-text">toc</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#url_for"><span class="toc-number">1.</span> <span class="toc-text">url_for</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#css"><span class="toc-number">2.</span> <span class="toc-text">css</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js"><span class="toc-number">3.</span> <span class="toc-text">js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Conditional_Tags"><span class="toc-number">4.</span> <span class="toc-text">Conditional Tags</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gravatar"><span class="toc-number">5.</span> <span class="toc-text">gravatar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#trim"><span class="toc-number">6.</span> <span class="toc-text">trim</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#strip_html"><span class="toc-number">7.</span> <span class="toc-text">strip_html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#titlecase"><span class="toc-number">8.</span> <span class="toc-text">titlecase</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#partial"><span class="toc-number">9.</span> <span class="toc-text">partial</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#fragment_cache"><span class="toc-number">10.</span> <span class="toc-text">fragment_cache</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tagcloud"><span class="toc-number">11.</span> <span class="toc-text">tagcloud</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#paginator"><span class="toc-number">12.</span> <span class="toc-text">paginator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#date"><span class="toc-number">13.</span> <span class="toc-text">date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#date_xml"><span class="toc-number">14.</span> <span class="toc-text">date_xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#time"><span class="toc-number">15.</span> <span class="toc-text">time</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#full_date"><span class="toc-number">16.</span> <span class="toc-text">full_date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#moment"><span class="toc-number">17.</span> <span class="toc-text">moment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#search_form"><span class="toc-number">18.</span> <span class="toc-text">search_form</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#markdown"><span class="toc-number">19.</span> <span class="toc-text">markdown</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#word_wrap"><span class="toc-number">20.</span> <span class="toc-text">word_wrap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#truncate"><span class="toc-number">21.</span> <span class="toc-text">truncate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#truncate_words"><span class="toc-number">22.</span> <span class="toc-text">truncate_words</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#link_to"><span class="toc-number">23.</span> <span class="toc-text">link_to</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mail_to"><span class="toc-number">24.</span> <span class="toc-text">mail_to</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_tag"><span class="toc-number">25.</span> <span class="toc-text">image_tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#favicon_tag"><span class="toc-number">26.</span> <span class="toc-text">favicon_tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#feed_tag"><span class="toc-number">27.</span> <span class="toc-text">feed_tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_categories"><span class="toc-number">28.</span> <span class="toc-text">list_categories</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_tags"><span class="toc-number">29.</span> <span class="toc-text">list_tags</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_archives"><span class="toc-number">30.</span> <span class="toc-text">list_archives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_posts"><span class="toc-number">31.</span> <span class="toc-text">list_posts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_posts"><span class="toc-number">32.</span> <span class="toc-text">get_posts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#number_format"><span class="toc-number">33.</span> <span class="toc-text">number_format</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#open_graph"><span class="toc-number">34.</span> <span class="toc-text">open_graph</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#toc"><span class="toc-number">35.</span> <span class="toc-text">toc</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
         <p>Helpers are used in templates to help you insert snippets quickly. You can see <a href="plugins.html#Helper">Plugins</a> to learn how to build a helper plugin.</p>
+<h3 id="url_for">url_for</h3>
+<p>Returns a url with the root path prefixed. You should use this helper instead of <code>config.root + path</code> since Hexo 2.7.</p>
+<figure class="highlight js"><pre>&lt;%- url_for(path) %&gt;
+</pre></figure>
+
 <h3 id="css">css</h3>
 <p>Loads CSS files. <code>path</code> can be an array or a string. If <code>path</code> isn’t prefixed with <code>/</code> or any protocol, it’ll be prefixed with root URL. If you didn’t add extension name <code>.css</code> after <code>path</code>, it’ll be added.</p>
 <figure class="highlight js"><pre>&lt;%- css(path, ...) %&gt;
@@ -210,8 +216,40 @@ Loads CSS files. path can be an array or a string. If path isn’t prefi">
 </pre></figure>
 
 <h3 id="partial">partial</h3>
-<p>Loads other template files. You can define local variables in <code>local</code>.</p>
-<figure class="highlight js"><pre>&lt;%- partial(layout, [locals], [only]) %&gt;
+<p>Loads other template files. You can define local variables in <code>locals</code>.</p>
+<figure class="highlight js"><pre>&lt;%- partial(layout, [locals], [options]) %&gt;
+</pre></figure>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cache</code></td>
+<td>Cache contents</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>only</code></td>
+<td>Strict local variables</td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="fragment_cache">fragment_cache</h3>
+<p>Caches the contents in a fragment. It saves the contents within a fragment and serves the cache when the next request comes in.</p>
+<figure class="highlight js"><pre>&lt;%- fragment_cache(id, fn);
+</pre></figure>
+
+<p><strong>Examples:</strong></p>
+<figure class="highlight js"><pre>&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
+  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;
+}) %&gt;
 </pre></figure>
 
 <h3 id="tagcloud">tagcloud</h3>
@@ -265,12 +303,12 @@ Loads CSS files. path can be an array or a string. If path isn’t prefi">
 </tr>
 <tr>
 <td><code>start_color</code></td>
-<td>Start color. You can use hex (<code>#b700ff</code>), rgba (<code>rgba(183, 0, 255, 1)</code>), hsla (<code>hsla(283, 100%, 50%, 1)</code>) or <a href="http://www.w3.org/TR/css3-color/#svg-color" target="_blank">color keywords</a>. This option only works when <code>color</code> is true.</td>
+<td>Start color. You can use hex (<code>#b700ff</code>), rgba (<code>rgba(183, 0, 255, 1)</code>), hsla (<code>hsla(283, 100%, 50%, 1)</code>) or <a href="http://www.w3.org/TR/css3-color/#svg-color" target="_blank" rel="external">color keywords</a>. This option only works when <code>color</code> is true.</td>
 <td></td>
 </tr>
 <tr>
 <td><code>end_color</code></td>
-<td>End color. You can use hex (<code>#b700ff</code>), rgba (<code>rgba(183, 0, 255, 1)</code>), hsla (<code>hsla(283, 100%, 50%, 1)</code>) or <a href="http://www.w3.org/TR/css3-color/#svg-color" target="_blank">color keywords</a>. This option only works when <code>color</code> is true.</td>
+<td>End color. You can use hex (<code>#b700ff</code>), rgba (<code>rgba(183, 0, 255, 1)</code>), hsla (<code>hsla(283, 100%, 50%, 1)</code>) or <a href="http://www.w3.org/TR/css3-color/#svg-color" target="_blank" rel="external">color keywords</a>. This option only works when <code>color</code> is true.</td>
 <td></td>
 </tr>
 </tbody>
@@ -470,9 +508,35 @@ Loads CSS files. path can be an array or a string. If path isn’t prefi">
 
 <h3 id="link_to">link_to</h3>
 <p>Inserts a link.</p>
-<figure class="highlight js"><pre>&lt;%- link_to(path, [text], [external]) %&gt;
+<figure class="highlight js"><pre>&lt;%- link_to(path, [text], [options]) %&gt;
 </pre></figure>
 
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>external</td>
+<td>Opens the link in a new tab</td>
+<td>false</td>
+</tr>
+<tr>
+<td>class</td>
+<td>Class name</td>
+<td></td>
+</tr>
+<tr>
+<td>id</td>
+<td>ID</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- link_to(<span class="string">'http://www.google.com'</span>) %&gt;
 <span class="comment">// &lt;a href="http://www.google.com" title="http://www.google.com"&gt;http://www.google.com&lt;/a&gt;</span>
@@ -480,15 +544,49 @@ Loads CSS files. path can be an array or a string. If path isn’t prefi">
 &lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>) %&gt;
 <span class="comment">// &lt;a href="http://www.google.com" title="Google"&gt;Google&lt;/a&gt;</span>
 
-&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>, <span class="literal">true</span>) %&gt;
+&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>, {external: <span class="literal">true</span>}) %&gt;
 <span class="comment">// &lt;a href="http://www.google.com" title="Google" target="_blank" rel="external"&gt;Google&lt;/a&gt;</span>
 </pre></figure>
 
 <h3 id="mail_to">mail_to</h3>
 <p>Inserts a mail link.</p>
-<figure class="highlight js"><pre>&lt;%- mail_to(path, [text]) %&gt;
+<figure class="highlight js"><pre>&lt;%- mail_to(path, [text], [options]) %&gt;
 </pre></figure>
 
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>class</td>
+<td>Class name</td>
+</tr>
+<tr>
+<td>id</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>subject</td>
+<td>Mail subject</td>
+</tr>
+<tr>
+<td>cc</td>
+<td>CC</td>
+</tr>
+<tr>
+<td>bcc</td>
+<td>BCC</td>
+</tr>
+<tr>
+<td>body</td>
+<td>Mail contents</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Examples:</strong></p>
 <figure class="highlight js"><pre>&lt;%- mail_to(<span class="string">'a@abc.com'</span>) %&gt;
 <span class="comment">// &lt;a href="mailto:a@abc.com" title="a@abc.com"&gt;a@abc.com&lt;/a&gt;</span>
@@ -497,6 +595,72 @@ Loads CSS files. path can be an array or a string. If path isn’t prefi">
 <span class="comment">// &lt;a href="mailto:a@abc.com" title="Email"&gt;Email&lt;/a&gt;</span>
 </pre></figure>
 
+<h3 id="image_tag">image_tag</h3>
+<p>Inserts a image.</p>
+<figure class="highlight js"><pre>&lt;%- image_tag(path, [options]) %&gt;
+</pre></figure>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alt</td>
+<td>Alternative text of the image</td>
+</tr>
+<tr>
+<td>class</td>
+<td>Class name</td>
+</tr>
+<tr>
+<td>id</td>
+<td>ID</td>
+</tr>
+<tr>
+<td>width</td>
+<td>Image width</td>
+</tr>
+<tr>
+<td>height</td>
+<td>Image height</td>
+</tr>
+</tbody>
+</table>
+<h3 id="favicon_tag">favicon_tag</h3>
+<p>Inserts a favicon.</p>
+<figure class="highlight js"><pre>&lt;%- favicon_tag(path) %&gt;
+</pre></figure>
+
+<h3 id="feed_tag">feed_tag</h3>
+<p>Inserts a feed link.</p>
+<figure class="highlight js"><pre>&lt;%- feed_tag(path, [options]) %&gt;
+</pre></figure>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>Feed title</td>
+<td></td>
+</tr>
+<tr>
+<td>type</td>
+<td>Feed type</td>
+<td>atom</td>
+</tr>
+</tbody>
+</table>
 <h3 id="list_categories">list_categories</h3>
 <p>Inserts a list of all categories.</p>
 <figure class="highlight js"><pre>&lt;%- list_categories([options]) %&gt;
@@ -879,16 +1043,16 @@ Loads CSS files. path can be an array or a string. If path isn’t prefi">
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-05-18T09:45:14.000Z" itemprop="dateModified">Last updated: May 18, 2014</time>
+        <time id="page-footer-updated" datetime="2014-06-14T00:59:58.000Z" itemprop="dateModified">Last updated: Jun 14 2014</time>
         <a href="pagination.html" id="page-footer-prev" title="Pagination">Prev</a><a href="plugins.html" id="page-footer-next" title="Plugins">Next</a>
       </footer>
       
-      <section id="comments">
-        <div id="disqus_thread">
-          <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </div>
-      </section>
-      
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
     </div>
     <aside id="sidebar">
   
@@ -954,7 +1118,7 @@ Loads CSS files. path can be an array or a string. If path isn’t prefi">
   <div class="outer">
     <div class="inner">
       <div id="footer-copyright">
-        &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
+        &copy; 2014 <a href="http://zespia.tw/">SkyArrow</a><br>
         Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
       </div>
       <div id="footer-links">
@@ -983,19 +1147,21 @@ Loads CSS files. path can be an array or a string. If path isn’t prefi">
 <!-- Swiftype -->
 <script>
 var Swiftype = window.Swiftype || {};
-  (function() {
-    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+(function() {
+  Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
 
-    /** DO NOT EDIT BELOW THIS LINE **/
-    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-    script.src = "//s.swiftypecdn.com/embed.js";
-    var entry = document.getElementsByTagName('script')[0];
-    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
-  }());
+  /** DO NOT EDIT BELOW THIS LINE **/
+  var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+  script.src = "//s.swiftypecdn.com/embed.js";
+  var entry = document.getElementsByTagName('script')[0];
+  document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+}());
 </script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/script.js"></script>
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/script.js" type="text/javascript"></script>
+<!-- Google+ -->
+<script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
+<!-- Twitter -->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 </body>

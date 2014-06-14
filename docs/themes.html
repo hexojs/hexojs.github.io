@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
   <title>Themes | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,9 +10,10 @@
   <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
   <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
   <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
+  <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   <meta name="description" content="Structure
 .
 ├── _config.yml
@@ -28,7 +29,6 @@ l">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Themes">
 <meta property="og:url" content="http://hexo.io/docs/themes.html">
-<meta property="og:image" content="http://hexo.io/logo.png">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Structure
 .
@@ -71,7 +71,7 @@ l">
 
 </head>
 
-<body class="page">
+<body>
   <header id="header">
   <div class="outer">
     <div class="inner">
@@ -91,6 +91,10 @@ l">
             </li>
           
             <li class="main-nav-item">
+              <a href="/news/" class="main-nav-link">News</a>
+            </li>
+          
+            <li class="main-nav-item">
               <a href="https://github.com/tommy351/hexo/wiki/Plugins" class="main-nav-link">Plugins</a>
             </li>
           
@@ -98,11 +102,8 @@ l">
               <a href="https://github.com/tommy351/hexo/wiki/Themes" class="main-nav-link">Themes</a>
             </li>
           
-            <li class="main-nav-item">
-              <a href="https://github.com/tommy351/hexo" class="main-nav-link">Source</a>
-            </li>
-          
         </ul>
+        <a href="https://github.com/tommy351/hexo" id="github-btn" title="GitHub" target="_blank"></a>
         <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
@@ -122,7 +123,7 @@ l">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Structure"><span class="toc-number">1.</span> <span class="toc-text">Structure</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#_config-yml"><span class="toc-number">1.1.</span> <span class="toc-text">_config.yml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#languages"><span class="toc-number">1.2.</span> <span class="toc-text">languages</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#layout"><span class="toc-number">1.3.</span> <span class="toc-text">layout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scripts"><span class="toc-number">1.4.</span> <span class="toc-text">scripts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#source"><span class="toc-number">1.5.</span> <span class="toc-text">source</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Publishing"><span class="toc-number">2.</span> <span class="toc-text">Publishing</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Structure"><span class="toc-number">1.</span> <span class="toc-text">Structure</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#_config-yml"><span class="toc-number">1.1.</span> <span class="toc-text">_config.yml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#languages"><span class="toc-number">1.2.</span> <span class="toc-text">languages</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#layout"><span class="toc-number">1.3.</span> <span class="toc-text">layout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scripts"><span class="toc-number">1.4.</span> <span class="toc-text">scripts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#source"><span class="toc-number">1.5.</span> <span class="toc-text">source</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Layout"><span class="toc-number">2.</span> <span class="toc-text">Layout</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Partial"><span class="toc-number">3.</span> <span class="toc-text">Partial</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Optimization"><span class="toc-number">4.</span> <span class="toc-text">Optimization</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Publishing"><span class="toc-number">5.</span> <span class="toc-text">Publishing</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
         <h2 id="Structure">Structure</h2>
@@ -137,12 +138,12 @@ l">
 <h3 id="_config-yml">_config.yml</h3>
 <p>Theme configuration file. It’ll be updated when changed automatically. You don’t have to restart the server.</p>
 <h3 id="languages">languages</h3>
-<p>Language folder. Hexo provides a simple i18n module built-in. To enable this feature, edit <code>language</code> setting. The language code must be written in <a href="http://www.w3.org/International/articles/language-tags/" target="_blank">IETF format</a>. For example:</p>
+<p>Language folder. Hexo provides a simple i18n module built-in. To enable this feature, edit <code>language</code> setting. The language code must be written in <a href="http://www.w3.org/International/articles/language-tags/" target="_blank" rel="external">IETF format</a>. For example:</p>
 <figure class="highlight yaml"><pre><span class="attribute">language</span>: <span class="string">zh-TW</span>
 </pre></figure>
 
 <p>A language folder must contain a language file named <code>default.yml</code> at least. Language files can be written in YAML or JSON format.</p>
-<p>You can get the localized string in templates from <code>__</code> and <code>_p</code> helper. The former is for common usage and the letter is for plural strings. You can even use <a href="https://github.com/alexei/sprintf.js" target="_blank">printf format</a>. For example:</p>
+<p>You can get the localized string in templates from <code>__</code> and <code>_p</code> helper. The former is for common usage and the letter is for plural strings. You can even use <a href="https://github.com/alexei/sprintf.js" target="_blank" rel="external">printf format</a>. For example:</p>
 <figure class="highlight yaml"><figcaption><span>default.yml</span></figcaption><pre>index:
   title: Home
   <span class="built_in">add</span>: Add
@@ -161,7 +162,7 @@ l">
 
 <h3 id="layout">layout</h3>
 <p>Layout folder. File or folder whose name is prefixed with <code>_</code> (underscore) and hidden files will be ignored.</p>
-<p>Hexo provides built-in <a href="https://github.com/visionmedia/ejs" target="_blank">EJS</a> and <a href="http://paularmstrong.github.com/swig/" target="_blank">Swig</a> template engines. You can install some renderer plugins for <a href="https://github.com/hexojs/hexo-renderer-haml" target="_blank">Haml</a>, <a href="https://github.com/hexojs/hexo-renderer-jade" target="_blank">Jade</a> support. Hexo chooses template engines based on the extension name of files. For example:</p>
+<p>Hexo provides built-in <a href="https://github.com/visionmedia/ejs" target="_blank" rel="external">EJS</a> and <a href="http://paularmstrong.github.com/swig/" target="_blank" rel="external">Swig</a> template engines. You can install some renderer plugins for <a href="https://github.com/hexojs/hexo-renderer-haml" target="_blank" rel="external">Haml</a>, <a href="https://github.com/hexojs/hexo-renderer-jade" target="_blank" rel="external">Jade</a> support. Hexo chooses template engines based on the extension name of files. For example:</p>
 <figure class="highlight plain"><pre>EJS: layout.ejs
 Swig: layout.swig
 </pre></figure>
@@ -208,40 +209,84 @@ Swig: layout.swig
 </tr>
 </tbody>
 </table>
-<p>Hexo supports <strong>Layout</strong> and <strong>Partial</strong>. Every template file use <code>layout.ejs</code> as layout by default. You can set <code>layout: false</code> in front-matter or delete <code>layout.ejs</code> to disable the layout.</p>
-<blockquote class="note info"><strong class="note-title">Customize layouts</strong>
-
-<p>If you want to customize a layout for your posts. You have to add a new layout file in <code>layout</code> folder or it’ll fallback to <code>post</code> layout. Page variables in the custom layout is same as <code>post</code> layout.</p>
-</blockquote>
-
-
 <h3 id="scripts">scripts</h3>
 <p>Script folder. JavaScript files in this folder will be loaded when Hexo started. This feature requires Hexo 2.4 and above.</p>
 <p>For more info, see <a href="plugins.html">Plugins</a>.</p>
 <h3 id="source">source</h3>
 <p>Source folder. Asset files like CSS and Javascript files should be placed in this folder. File or folder whose name is prefixed with <code>_</code> (underscore) and hidden files will be ignored. </p>
-<p>Files which are able to rendered by renderer plugins will be rendered, such as Stylus files. Hexo provides built-in <a href="http://learnboost.github.com/stylus/" target="_blank">Stylus</a> renderer plugin (with <a href="http://visionmedia.github.com/nib/" target="_blank">nib</a> support). You can install some renderer plugins for <a href="https://github.com/hexojs/hexo-renderer-less" target="_blank">Less</a>, <a href="https://github.com/hexojs/hexo-renderer-coffeescript" target="_blank">CoffeeScript</a> support.</p>
+<p>Files which are able to rendered by renderer plugins will be rendered, such as Stylus files. Hexo provides built-in <a href="http://learnboost.github.com/stylus/" target="_blank" rel="external">Stylus</a> renderer plugin (with <a href="http://visionmedia.github.com/nib/" target="_blank" rel="external">nib</a> support). You can install some renderer plugins for <a href="https://github.com/hexojs/hexo-renderer-less" target="_blank" rel="external">Less</a>, <a href="https://github.com/hexojs/hexo-renderer-coffeescript" target="_blank" rel="external">CoffeeScript</a> support.</p>
 <blockquote class="note info"><strong class="note-title">Get config in Stylus File</strong>
 
 <p>You can get global and theme configuration by using <code>hexo-config(key)</code> in stylus file.</p>
 </blockquote>
 
 
+<h2 id="Layout">Layout</h2>
+<p>Layout wraps a template to another layout template. A layout must contain <code>&lt;%- body %&gt;</code> so that it can show the contents of the template. For example:</p>
+<figure class="highlight html"><figcaption><span>index.ejs</span></figcaption><pre>index
+</pre></figure>
+
+<figure class="highlight html"><figcaption><span>layout.ejs</span></figcaption><pre><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">body</span>&gt;</span><span class="vbscript">&lt;%- body %&gt;</span><span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</pre></figure>
+
+<p>yields:</p>
+<figure class="highlight html"><pre><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">body</span>&gt;</span>index<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</pre></figure>
+
+<p>By default, every template file uses <code>layout.ejs</code> as the layout. You can specify other layouts in front-matter or use <code>false</code> to disable the layout. You can also use a layout in another layout to create nested layouts.</p>
+<h2 id="Partial">Partial</h2>
+<p>Partial helps you share components across templates. For example:</p>
+<figure class="highlight html"><figcaption><span>_partial/header.ejs</span></figcaption><pre><span class="tag">&lt;<span class="title">header</span>&gt;</span><span class="tag">&lt;/<span class="title">header</span>&gt;</span>
+</pre></figure>
+
+<figure class="highlight html"><figcaption><span>index.ejs</span></figcaption><pre><span class="vbscript">&lt;%- partial(<span class="comment">'_partial/header') %&gt;</span></span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"content"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></figure>
+
+<p>yields:</p>
+<figure class="highlight"><pre><span class="tag">&lt;<span class="title">header</span>&gt;</span><span class="tag">&lt;/<span class="title">header</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"content"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+</pre></figure>
+
+<p>You can pass data to partials by defining local variables:</p>
+<figure class="highlight js"><pre>&lt;%- partial(<span class="string">'_partial/header'</span>, {title: <span class="string">'Hello World'</span>}) %&gt;
+</pre></figure>
+
+<p>For more info, see <a href="helpers.html#partial">partial helper</a>.</p>
+<h2 id="Optimization">Optimization</h2>
+<p>If your theme is too complicated and too may source files needed to be generate. Generation performance may decrease a lot. Besides simplifying your theme, you can also try <strong>Fragment Caching</strong> introduced in Hexo 2.7.</p>
+<p>This feature is stolen from <a href="http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching" target="_blank" rel="external">Ruby on Rails</a>. It saves the contents within a fragment and serves the cache when the next request comes in. It can reduce database queries and make generation faster.</p>
+<p>It can be used in header, footer, sidebar or static contents that won’t be changed in your templates. For example:</p>
+<figure class="highlight js"><pre>&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
+  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;
+});
+</pre></figure>
+
+<p>It would be easier if you use partial:</p>
+<figure class="highlight js"><pre>&lt;%- partial(<span class="string">'header'</span>, {}, {cache: <span class="literal">true</span>});
+</pre></figure>
+
 <h2 id="Publishing">Publishing</h2>
-<p>You can publish your theme to the <a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank">theme list</a> on wiki. Before publishing, you should test it with <a href="https://github.com/hexojs/hexo-theme-unit-test" target="_blank">Theme Unit Test</a>.</p>
+<p>You can publish your theme to the <a href="https://github.com/tommy351/hexo/wiki/Themes" target="_blank" rel="external">theme list</a> on wiki. Before publishing, you should test it with <a href="https://github.com/hexojs/hexo-theme-unit-test" target="_blank" rel="external">Theme Unit Test</a>.</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-05-18T09:45:14.000Z" itemprop="dateModified">Last updated: May 18, 2014</time>
+        <time id="page-footer-updated" datetime="2014-06-14T00:59:58.000Z" itemprop="dateModified">Last updated: Jun 14 2014</time>
         <a href="permalinks.html" id="page-footer-prev" title="Permalinks">Prev</a><a href="variables.html" id="page-footer-next" title="Variables">Next</a>
       </footer>
       
-      <section id="comments">
-        <div id="disqus_thread">
-          <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </div>
-      </section>
-      
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
     </div>
     <aside id="sidebar">
   
@@ -307,7 +352,7 @@ Swig: layout.swig
   <div class="outer">
     <div class="inner">
       <div id="footer-copyright">
-        &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
+        &copy; 2014 <a href="http://zespia.tw/">SkyArrow</a><br>
         Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
       </div>
       <div id="footer-links">
@@ -336,19 +381,21 @@ Swig: layout.swig
 <!-- Swiftype -->
 <script>
 var Swiftype = window.Swiftype || {};
-  (function() {
-    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+(function() {
+  Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
 
-    /** DO NOT EDIT BELOW THIS LINE **/
-    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-    script.src = "//s.swiftypecdn.com/embed.js";
-    var entry = document.getElementsByTagName('script')[0];
-    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
-  }());
+  /** DO NOT EDIT BELOW THIS LINE **/
+  var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+  script.src = "//s.swiftypecdn.com/embed.js";
+  var entry = document.getElementsByTagName('script')[0];
+  document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+}());
 </script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/script.js"></script>
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/script.js" type="text/javascript"></script>
+<!-- Google+ -->
+<script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
+<!-- Twitter -->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 </body>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
   <title>Documentation | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,14 +10,14 @@
   <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
   <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
   <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'>
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
+  <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   <meta name="description" content="Welcome to the Hexo’s documentation. This documentation will help you get started fast. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Documentation">
 <meta property="og:url" content="http://hexo.io/docs/index.html">
-<meta property="og:image" content="http://hexo.io/logo.png">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Welcome to the Hexo’s documentation. This documentation will help you get started fast. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub">
 <meta name="twitter:card" content="summary">
@@ -38,7 +38,7 @@
 
 </head>
 
-<body class="page">
+<body>
   <header id="header">
   <div class="outer">
     <div class="inner">
@@ -58,6 +58,10 @@
             </li>
           
             <li class="main-nav-item">
+              <a href="/news/" class="main-nav-link">News</a>
+            </li>
+          
+            <li class="main-nav-item">
               <a href="https://github.com/tommy351/hexo/wiki/Plugins" class="main-nav-link">Plugins</a>
             </li>
           
@@ -65,11 +69,8 @@
               <a href="https://github.com/tommy351/hexo/wiki/Themes" class="main-nav-link">Themes</a>
             </li>
           
-            <li class="main-nav-item">
-              <a href="https://github.com/tommy351/hexo" class="main-nav-link">Source</a>
-            </li>
-          
         </ul>
+        <a href="https://github.com/tommy351/hexo" id="github-btn" title="GitHub" target="_blank"></a>
         <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
@@ -92,16 +93,16 @@
         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What’s_Hexo?"><span class="toc-number">1.</span> <span class="toc-text">What’s Hexo?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Installation"><span class="toc-number">2.</span> <span class="toc-text">Installation</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Requirements"><span class="toc-number">2.1.</span> <span class="toc-text">Requirements</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Install_Git"><span class="toc-number">2.2.</span> <span class="toc-text">Install Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Install_Node-js"><span class="toc-number">2.3.</span> <span class="toc-text">Install Node.js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Install_Hexo"><span class="toc-number">2.4.</span> <span class="toc-text">Install Hexo</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <p>Welcome to the Hexo’s documentation. This documentation will help you get started fast. If you get any problems when using Hexo, you can find the answer in <a href="troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/tommy351/hexo/issues" target="_blank">GitHub</a> or <a href="https://groups.google.com/group/hexo" target="_blank">Google Group</a>.</p>
+        <p>Welcome to the Hexo’s documentation. This documentation will help you get started fast. If you get any problems when using Hexo, you can find the answer in <a href="troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/tommy351/hexo/issues" target="_blank" rel="external">GitHub</a> or <a href="https://groups.google.com/group/hexo" target="_blank" rel="external">Google Group</a>.</p>
 <h2 id="What’s_Hexo?">What’s Hexo?</h2>
-<p>Hexo is a fast, simple and powerful blog framework. It parses your posts with <a href="http://daringfireball.net/projects/markdown/" target="_blank">Markdown</a> or other render engine and generates static files with the beautiful theme. All of these just take seconds.</p>
+<p>Hexo is a fast, simple and powerful blog framework. It parses your posts with <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">Markdown</a> or other render engine and generates static files with the beautiful theme. All of these just take seconds.</p>
 <h2 id="Installation">Installation</h2>
-<p>It only takes few minutes for you to get Hexo ready. If you encounter any problems on installation and you can’t find the solution here. Please <a href="https://github.com/tommy351/hexo/issues" target="_blank">submit an issue</a> and I’ll try to solve your problems.</p>
+<p>It only takes few minutes for you to get Hexo ready. If you encounter any problems on installation and you can’t find the solution here. Please <a href="https://github.com/tommy351/hexo/issues" target="_blank" rel="external">submit an issue</a> and I’ll try to solve your problems.</p>
 <h3 id="Requirements">Requirements</h3>
 <p>Installing Hexo is quite easy. However, there’re something required before you get started.</p>
 <ul>
-<li><a href="http://nodejs.org/" target="_blank">Node.js</a></li>
-<li><a href="http://git-scm.com/" target="_blank">Git</a></li>
+<li><a href="http://nodejs.org/" target="_blank" rel="external">Node.js</a></li>
+<li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></li>
 </ul>
 <p>If your computer has been installed the requirements above already. Congratulations! Just install Hexo with npm.</p>
 <figure class="highlight bash"><pre>$ npm install -g hexo
@@ -116,13 +117,13 @@
 
 <h3 id="Install_Git">Install Git</h3>
 <ul>
-<li>Windows: Download &amp; install <a href="http://code.google.com/p/msysgit/" target="_blank">msysgit</a>.</li>
-<li>Mac: Install it with <a href="http://mxcl.github.com/homebrew/" target="_blank">Homebrew</a>, <a href="http://www.macports.org/" target="_blank">MacPorts</a> or <a href="http://code.google.com/p/git-osx-installer/" target="_blank">installer</a>.</li>
+<li>Windows: Download &amp; install <a href="http://code.google.com/p/msysgit/" target="_blank" rel="external">msysgit</a>.</li>
+<li>Mac: Install it with <a href="http://mxcl.github.com/homebrew/" target="_blank" rel="external">Homebrew</a>, <a href="http://www.macports.org/" target="_blank" rel="external">MacPorts</a> or <a href="http://code.google.com/p/git-osx-installer/" target="_blank" rel="external">installer</a>.</li>
 <li>Linux (Ubuntu, Debian): <code>sudo apt-get install git-core</code></li>
 <li>Linux (Fedora, Red Hat, CentOS): <code>sudo yum install git-core</code></li>
 </ul>
 <h3 id="Install_Node-js">Install Node.js</h3>
-<p>The best way to install Node.js is installing with <a href="https://github.com/creationix/nvm" target="_blank">nvm</a>.</p>
+<p>The best way to install Node.js is installing with <a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a>.</p>
 <p>cURL:</p>
 <figure class="highlight bash"><pre>$ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 </pre></figure>
@@ -135,23 +136,23 @@
 <figure class="highlight bash"><pre>$ nvm install <span class="number">0.10</span>
 </pre></figure>
 
-<p>Or you can download the <a href="http://nodejs.org/" target="_blank">installer</a> and install it.</p>
+<p>Or you can download the <a href="http://nodejs.org/" target="_blank" rel="external">installer</a> and install it.</p>
 <h3 id="Install_Hexo">Install Hexo</h3>
 <p>Once all the requirements are installed, you can install Hexo with npm.</p>
 <figure class="highlight bash"><pre>$ npm install -g hexo
 </pre></figure>
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-05-18T09:45:14.000Z" itemprop="dateModified">Last updated: May 18, 2014</time>
+        <time id="page-footer-updated" datetime="2014-05-18T09:45:14.000Z" itemprop="dateModified">Last updated: May 18 2014</time>
         <a href="setup.html" id="page-footer-next" title="Setup">Next</a>
       </footer>
       
-      <section id="comments">
-        <div id="disqus_thread">
-          <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        </div>
-      </section>
-      
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+
     </div>
     <aside id="sidebar">
   
@@ -217,7 +218,7 @@
   <div class="outer">
     <div class="inner">
       <div id="footer-copyright">
-        &copy; 2014 <a href="http://zespia.tw">SkyArrow</a><br>
+        &copy; 2014 <a href="http://zespia.tw/">SkyArrow</a><br>
         Background: <a href="http://subtlepatterns.com/shattered/" target="_blank">Shattered</a> by <a href="http://luukvanbaars.com/" target="_blank">Luuk van Baars</a>
       </div>
       <div id="footer-links">
@@ -246,19 +247,21 @@
 <!-- Swiftype -->
 <script>
 var Swiftype = window.Swiftype || {};
-  (function() {
-    Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
+(function() {
+  Swiftype.key = 'DDvzs7LQ9kdKssQNQLcv';
 
-    /** DO NOT EDIT BELOW THIS LINE **/
-    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-    script.src = "//s.swiftypecdn.com/embed.js";
-    var entry = document.getElementsByTagName('script')[0];
-    document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
-  }());
+  /** DO NOT EDIT BELOW THIS LINE **/
+  var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+  script.src = "//s.swiftypecdn.com/embed.js";
+  var entry = document.getElementsByTagName('script')[0];
+  document.getElementsByTagName('script')[0].parentNode.insertBefore(script, entry);
+}());
 </script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="/js/script.js"></script>
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/script.js" type="text/javascript"></script>
+<!-- Google+ -->
+<script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
+<!-- Twitter -->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 </body>
