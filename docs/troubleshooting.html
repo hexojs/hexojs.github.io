@@ -5,12 +5,23 @@
   <title>Troubleshooting | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://hexo.io/docs/troubleshooting.html">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link href="/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
-  <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
-  <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -25,6 +36,7 @@
 <meta name="twitter:description" content="You may encounter some problems when using Hexo. The following are the solutions to the problems that people frequently asked. If you can’t find the answer here, you can try to find the answer on GitH">
 <meta name="twitter:site" content="@hexojs">
 <meta property="fb:admins" content="100000247608790">
+
   
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -70,7 +82,7 @@
             </li>
           
         </ul>
-        <a href="https://github.com/tommy351/hexo" id="github-btn" title="GitHub" target="_blank"></a>
+        <a href="https://github.com/hexojs/hexo" id="github-btn" title="GitHub" target="_blank"></a>
         <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
@@ -93,63 +105,48 @@
         <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#YAML_Parsing_Error"><span class="toc-number">1.</span> <span class="toc-text">YAML Parsing Error</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EMFILE_Error"><span class="toc-number">2.</span> <span class="toc-text">EMFILE Error</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub_Deployment_Problems"><span class="toc-number">3.</span> <span class="toc-text">GitHub Deployment Problems</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Server_Problems"><span class="toc-number">4.</span> <span class="toc-text">Server Problems</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Plugin_Installation_Problems"><span class="toc-number">5.</span> <span class="toc-text">Plugin Installation Problems</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Iterate_Data_Model_on_Jade_or_Swig"><span class="toc-number">6.</span> <span class="toc-text">Iterate Data Model on Jade or Swig</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Stylesheets_Not_Updated"><span class="toc-number">7.</span> <span class="toc-text">Stylesheets Not Updated</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Escape_in_Posts"><span class="toc-number">8.</span> <span class="toc-text">Escape in Posts</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
-        <p>You may encounter some problems when using Hexo. The following are the solutions to the problems that people frequently asked. If you can’t find the answer here, you can try to find the answer on <a href="https://github.com/tommy351/hexo/issues" target="_blank" rel="external">GitHub</a> or <a href="https://groups.google.com/group/hexo" target="_blank" rel="external">Google Group</a>.</p>
+        <p>You may encounter some problems when using Hexo. The following are the solutions to the problems that people frequently asked. If you can’t find the answer here, you can try to find the answer on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a> or <a href="https://groups.google.com/group/hexo" target="_blank" rel="external">Google Group</a>.</p>
 <h2 id="YAML_Parsing_Error">YAML Parsing Error</h2>
-<figure class="highlight plain"><pre>/usr/local/lib/node_modules/hexo/node_modules/yamljs/bin/yaml.js:1219
-throw new YamlParseException('Unable to parse.', this.getRealCurrentLineNb
-^
-YamlParseException: Unable to parse.
-</pre></figure>
+<figure class="highlight plain"><pre><div class="line">/usr/local/lib/node_modules/hexo/node_modules/yamljs/bin/yaml.js:1219</div><div class="line">throw new YamlParseException('Unable to parse.', this.getRealCurrentLineNb</div><div class="line">^</div><div class="line">YamlParseException: Unable to parse.</div></pre></figure>
 
 <p>When you encounter <code>YamlParseException</code>, check your configuration and front-matter in the post files. Make sure they are written in correct YAML format: use spaces instead of tabs and add a space before colons. For example:</p>
-<figure class="highlight yaml"><pre><span class="label">foo:</span> <span class="number">1</span>
-<span class="label">bar:</span>
-  baz: <span class="number">2</span>
-</pre></figure>
+<figure class="highlight yaml"><pre><div class="line"><span class="label">foo:</span> <span class="number">1</span></div><div class="line"><span class="label">bar:</span></div><div class="line">  baz: <span class="number">2</span></div></pre></figure>
 
 <h2 id="EMFILE_Error">EMFILE Error</h2>
-<figure class="highlight plain"><pre>Error: EMFILE, too many open files
-</pre></figure>
+<figure class="highlight plain"><pre><div class="line">Error: EMFILE, too many open files</div></pre></figure>
 
 <p>Though Node.js has non-blocking I/O, the number of synchronous I/O is still limited by system. You may come across EMFILE error when trying to generate a large number of files. You can try to run the following command to increase the number of synchronous I/O.</p>
-<figure class="highlight bash"><pre>$ ulimit -n <span class="number">10000</span>
-</pre></figure>
+<figure class="highlight bash"><pre><div class="line">$ ulimit -n <span class="number">10000</span></div></pre></figure>
 
 <h2 id="GitHub_Deployment_Problems">GitHub Deployment Problems</h2>
-<figure class="highlight plain"><pre>fatal: 'username.github.io' does not appear to be a git repository
-</pre></figure>
+<figure class="highlight plain"><pre><div class="line">fatal: 'username.github.io' does not appear to be a git repository</div></pre></figure>
 
 <p>Make sure you have <a href="https://help.github.com/articles/set-up-git" target="_blank" rel="external">set up git</a> on your computer and try to use HTTPS repository URL instead.</p>
 <h2 id="Server_Problems">Server Problems</h2>
-<figure class="highlight plain"><pre>Error: listen EADDRINUSE
-</pre></figure>
+<figure class="highlight plain"><pre><div class="line">Error: listen EADDRINUSE</div></pre></figure>
 
 <p>You may open Hexo server twice or there’s other applications using the same port. Try to edit <code>port</code> setting or start Hexo server with <code>-p</code> flag.</p>
-<figure class="highlight bash"><pre>$ hexo server -p <span class="number">5000</span>
-</pre></figure>
+<figure class="highlight bash"><pre><div class="line">$ hexo server -p <span class="number">5000</span></div></pre></figure>
 
 <h2 id="Plugin_Installation_Problems">Plugin Installation Problems</h2>
-<figure class="highlight plain"><pre>npm WARN package.json plugin-name@0.0.1 No read me data.
-</pre></figure>
+<figure class="highlight plain"><pre><div class="line">npm WARN package.json plugin-name@0.0.1 No read me data.</div></pre></figure>
 
 <p>This error comes out when you install a plugin which doesn’t provide read me file. Don’t be scared. This error won’t cause any problems.</p>
-<figure class="highlight plain"><pre>npm ERR! node-waf configure build
-</pre></figure>
+<figure class="highlight plain"><pre><div class="line">npm ERR! node-waf configure build</div></pre></figure>
 
 <p>This error may occurred when you trying to install a plugin written in C, C++ or other non-JavaScript language. Make sure you have installed compiler on your computer.</p>
 <h2 id="Iterate_Data_Model_on_Jade_or_Swig">Iterate Data Model on Jade or Swig</h2>
 <p>Hexo uses <a href="https://github.com/tommy351/warehouse" target="_blank" rel="external">Warehouse</a> as data model. It’s not an array so you have to transform them into to iterate. For more information about <a href="https://github.com/tommy351/warehouse" target="_blank" rel="external">Warehouse</a>, see the <a href="/api/warehouse/classes/Database.html">API</a>.</p>
 <h2 id="Stylesheets_Not_Updated">Stylesheets Not Updated</h2>
 <p>You may find that stylesheets updated in Hexo server but not applied to static files. It’s because Hexo compares modified date of files when generating. You can clean cache to solve this problem.</p>
-<figure class="highlight bash"><pre>$ hexo clean
-</pre></figure>
+<figure class="highlight bash"><pre><div class="line">$ hexo clean</div></pre></figure>
 
 <h2 id="Escape_in_Posts">Escape in Posts</h2>
 <p>Hexo uses <a href="http://paularmstrong.github.io/swig/" target="_blank" rel="external">Swig</a> to render posts. Contents wrapped with <code>{{ }}</code> or <code>{% %}</code> will be parsed and may cause problems. You can wrap sensitive contents with <code>raw</code> tag plugin.</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-05-18T09:45:14.000Z" itemprop="dateModified">Last updated: May 18 2014</time>
+        <time id="page-footer-updated" datetime="2014-07-06T09:40:15.000Z" itemprop="dateModified">Last updated: Jul 6 2014</time>
         <a href="events.html" id="page-footer-prev" title="Events">Prev</a><a href="contributing.html" id="page-footer-next" title="Contributing">Next</a>
       </footer>
       
@@ -178,6 +175,8 @@ YamlParseException: Unable to parse.
     <strong class="sidebar-title">Basic Usage</strong>
     
       <a href="/docs/writing.html" class="sidebar-link">Writing</a>
+    
+      <a href="/docs/drafts.html" class="sidebar-link">Drafts</a>
     
       <a href="/docs/generating.html" class="sidebar-link">Generating</a>
     
@@ -229,7 +228,7 @@ YamlParseException: Unable to parse.
       </div>
       <div id="footer-links">
         <a href="https://twitter.com/hexojs" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>
-        <a href="https://github.com/tommy351/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
+        <a href="https://github.com/hexojs/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
       </div>
     </div>
   </div>
@@ -264,7 +263,10 @@ var Swiftype = window.Swiftype || {};
 }());
 </script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/retina.min.js" type="text/javascript"></script>
+
 <script src="/js/script.js" type="text/javascript"></script>
+
 <!-- Google+ -->
 <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 <!-- Twitter -->

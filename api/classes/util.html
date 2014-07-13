@@ -5,12 +5,23 @@
   <title>util | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://hexo.io/api/classes/util.html">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link href="/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
-  <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
-  <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -25,6 +36,7 @@
 <meta name="twitter:description" content="<p>Utilities.</p>">
 <meta name="twitter:site" content="@hexojs">
 <meta property="fb:admins" content="100000247608790">
+
   
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -70,7 +82,7 @@
             </li>
           
         </ul>
-        <a href="https://github.com/tommy351/hexo" id="github-btn" title="GitHub" target="_blank"></a>
+        <a href="https://github.com/hexojs/hexo" id="github-btn" title="GitHub" target="_blank"></a>
         <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
@@ -89,7 +101,7 @@
     <div class="page-content"><header id="api-header">
   <h1 id="api-title">util Class</h1>
   <div class="api-meta">
-    Defined in <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/index.js#L1">lib/util/index.js:1</a>
+    Defined in <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/index.js#L1">lib/util/index.js:1</a>
     
     
   </div>
@@ -119,7 +131,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/exec.js#L3">lib/util/exec.js:3</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/exec.js#L3">lib/util/exec.js:3</a>
   </div>
   
   <div class="api-item-entry">
@@ -160,7 +172,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/highlight.js#L24">lib/util/highlight.js:24</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/highlight.js#L24">lib/util/highlight.js:24</a>
   </div>
   
   <div class="api-item-entry">
@@ -219,20 +231,16 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/html_tag.js#L1">lib/util/html_tag.js:1</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/html_tag.js#L1">lib/util/html_tag.js:1</a>
   </div>
   
   <div class="api-item-entry">
     <p>Creates a snippet of HTML tag.</p>
 <p><strong>Examples:</strong></p>
-<figure class="highlight"><pre><span class="function">html_tag(<span class="string">'a'</span>, {href: <span class="string">'http://www.google.com'</span>}, <span class="string">'Google'</span>)</span>;
-<span class="function">html_tag(<span class="string">'img'</span>, {src: <span class="string">'foo.jpg'</span>})</span>;
-</pre></figure>
+<figure class="highlight"><pre><div class="line"><span class="function">html_tag(<span class="string">'a'</span>, {href: <span class="string">'http://www.google.com'</span>}, <span class="string">'Google'</span>)</span>;</div><div class="line"><span class="function">html_tag(<span class="string">'img'</span>, {src: <span class="string">'foo.jpg'</span>})</span>;</div></pre></figure>
 
 <p>yields:</p>
-<figure class="highlight"><pre><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"http://www.google.com"</span>&gt;</span>Google<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
-<span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"foo.jpg"</span>&gt;</span>
-</pre></figure>
+<figure class="highlight"><pre><div class="line"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"http://www.google.com"</span>&gt;</span>Google<span class="tag">&lt;/<span class="title">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"foo.jpg"</span>&gt;</span></div></pre></figure>
     
       <h4 class="api-item-subtitle">Parameters</h4>
       <ul>
@@ -290,7 +298,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/spawn.js#L3">lib/util/spawn.js:3</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/spawn.js#L3">lib/util/spawn.js:3</a>
   </div>
   
   <div class="api-item-entry">
@@ -331,7 +339,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/index.js#L69">lib/util/index.js:69</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/index.js#L69">lib/util/index.js:69</a>
   </div>
   
   <div class="api-item-entry">
@@ -362,55 +370,6 @@
   </div>
 </div>
     
-      <div id="method_yfm" class="api-item method public">
-  <header class="api-item-header">
-    <h3 class="api-item-title">
-      <a href="#method_yfm">yfm</a>
-    </h3>
-    
-      <span class="api-item-params">(str)</span>
-    
-    
-      <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
-    
-    <span class="api-item-flag static">static</span>
-    
-  </header>
-  <div class="api-item-meta">
-    
-      Defined in
-    
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/yfm.js#L1">lib/util/yfm.js:1</a>
-  </div>
-  
-  <div class="api-item-entry">
-    <p>See <a href="/api/classes/util.yfm.html#method_parse">util.yfm/parse</a>.</p>
-
-    
-      <h4 class="api-item-subtitle">Parameters</h4>
-      <ul>
-        
-          <li>
-            <strong>str</strong>
-            <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String">String</a></span>
-            
-            
-          </li>
-        
-      </ul>
-    
-    
-      <h4 class="api-item-subtitle">Returns</h4>
-      <ul>
-        <li>
-          <span class="api-item-type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Object">Object</a></span>
-          
-        </li>
-      </ul>
-    
-  </div>
-</div>
-    
   
   
     <h2 class="api-section-title">Properties</h2>
@@ -429,7 +388,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/index.js#L41">lib/util/index.js:41</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/index.js#L41">lib/util/index.js:41</a>
   </div>
   
   <div class="api-item-entry">
@@ -454,7 +413,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/index.js#L10">lib/util/index.js:10</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/index.js#L10">lib/util/index.js:10</a>
   </div>
   
   <div class="api-deprecated-msg">
@@ -483,7 +442,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/index.js#L32">lib/util/index.js:32</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/index.js#L32">lib/util/index.js:32</a>
   </div>
   
   <div class="api-item-entry">
@@ -508,7 +467,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/index.js#L79">lib/util/index.js:79</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/index.js#L79">lib/util/index.js:79</a>
   </div>
   
   <div class="api-item-entry">
@@ -533,11 +492,36 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/index.js#L60">lib/util/index.js:60</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/index.js#L60">lib/util/index.js:60</a>
   </div>
   
   <div class="api-item-entry">
     <p>See <a href="/api/classes/util.inflector.html">util.inflector</a></p>
+
+    
+    
+  </div>
+</div>
+    
+      <div id="property_permalink" class="api-item property public">
+  <header class="api-item-header">
+    <h3 class="api-item-title">
+      <a href="#property_permalink">permalink</a>
+    </h3>
+    
+    
+    
+    
+  </header>
+  <div class="api-item-meta">
+    
+      Defined in
+    
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/index.js#L96">lib/util/index.js:96</a>
+  </div>
+  
+  <div class="api-item-entry">
+    <p>See <a href="/api/classes/util.Permalink.html">util.Permalink</a></p>
 
     
     
@@ -558,7 +542,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/index.js#L50">lib/util/index.js:50</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/index.js#L50">lib/util/index.js:50</a>
   </div>
   
   <div class="api-item-entry">
@@ -583,7 +567,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/index.js#L88">lib/util/index.js:88</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/index.js#L88">lib/util/index.js:88</a>
   </div>
   
   <div class="api-item-entry">
@@ -608,11 +592,11 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.7.0/lib/util/index.js#L20">lib/util/index.js:20</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/util/index.js#L20">lib/util/index.js:20</a>
   </div>
   
   <div class="api-item-entry">
-    <p>See <a href="/api/classes/util.yfm.html">util.yfm</a></p>
+    <p>See <a href="https://github.com/hexojs/front-matter" target="_blank" rel="external">front-matter</a></p>
 
     
     
@@ -692,6 +676,8 @@
   
     <a href="/api/classes/util.html" class="sidebar-link current">util</a>
   
+    <a href="/api/classes/util.Permalink.html" class="sidebar-link">util.Permalink</a>
+  
     <a href="/api/classes/util.Pool.html" class="sidebar-link">util.Pool</a>
   
     <a href="/api/classes/util.escape.html" class="sidebar-link">util.escape</a>
@@ -706,8 +692,6 @@
   
     <a href="/api/classes/util.server.html" class="sidebar-link">util.server</a>
   
-    <a href="/api/classes/util.yfm.html" class="sidebar-link">util.yfm</a>
-  
 </aside>
   </div>
 </article>
@@ -720,7 +704,7 @@
       </div>
       <div id="footer-links">
         <a href="https://twitter.com/hexojs" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>
-        <a href="https://github.com/tommy351/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
+        <a href="https://github.com/hexojs/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
       </div>
     </div>
   </div>
@@ -755,7 +739,10 @@ var Swiftype = window.Swiftype || {};
 }());
 </script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/retina.min.js" type="text/javascript"></script>
+
 <script src="/js/script.js" type="text/javascript"></script>
+
 <!-- Google+ -->
 <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 <!-- Twitter -->

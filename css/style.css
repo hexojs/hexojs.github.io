@@ -500,6 +500,10 @@ body {
 .page-entry li .highlight {
   margin: 1em 0;
 }
+.page-entry img,
+.page-entry video {
+  max-width: 100%;
+}
 .page-entry blockquote {
   border: 1px solid #ddd;
   border-left: 4px solid #ddd;
@@ -737,22 +741,6 @@ a.post-title:hover {
 }
 .post-date-wrap {
   padding: 20px 0;
-  position: relative;
-}
-.post-date-wrap:before {
-  content: "";
-  width: 300px;
-  height: 1px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  background: -webkit-radial-gradient(circle, #999, #fff);
-  background: -moz-radial-gradient(circle, #999, #fff);
-  background: -ms-radial-gradient(circle, #999, #fff);
-  background: radial-gradient(circle, #999, #fff);
 }
 .post-date {
   font: 300 0.9em Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -769,6 +757,9 @@ a.post-title:hover {
 }
 .post-date:hover {
   color: #444;
+}
+.post-footer {
+  padding: 20px 0 40px;
 }
 #api-header {
   margin: 1.6em 0;
@@ -1196,6 +1187,9 @@ pre code {
   padding: 0;
   border: none;
   background: none;
+}
+.highlight .line {
+  height: 22px;
 }
 pre .comment,
 pre .title {

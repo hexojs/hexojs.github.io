@@ -5,12 +5,23 @@
   <title>Helpers | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://hexo.io/docs/helpers.html">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link href="/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
-  <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
-  <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -31,6 +42,7 @@ url_for
 Returns a url with the root path prefixed. You should use this hel">
 <meta name="twitter:site" content="@hexojs">
 <meta property="fb:admins" content="100000247608790">
+
   
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -76,7 +88,7 @@ Returns a url with the root path prefixed. You should use this hel">
             </li>
           
         </ul>
-        <a href="https://github.com/tommy351/hexo" id="github-btn" title="GitHub" target="_blank"></a>
+        <a href="https://github.com/hexojs/hexo" id="github-btn" title="GitHub" target="_blank"></a>
         <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
@@ -96,42 +108,31 @@ Returns a url with the root path prefixed. You should use this hel">
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#url_for"><span class="toc-number">1.</span> <span class="toc-text">url_for</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#css"><span class="toc-number">2.</span> <span class="toc-text">css</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js"><span class="toc-number">3.</span> <span class="toc-text">js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Conditional_Tags"><span class="toc-number">4.</span> <span class="toc-text">Conditional Tags</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gravatar"><span class="toc-number">5.</span> <span class="toc-text">gravatar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#trim"><span class="toc-number">6.</span> <span class="toc-text">trim</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#strip_html"><span class="toc-number">7.</span> <span class="toc-text">strip_html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#titlecase"><span class="toc-number">8.</span> <span class="toc-text">titlecase</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#partial"><span class="toc-number">9.</span> <span class="toc-text">partial</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#fragment_cache"><span class="toc-number">10.</span> <span class="toc-text">fragment_cache</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tagcloud"><span class="toc-number">11.</span> <span class="toc-text">tagcloud</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#paginator"><span class="toc-number">12.</span> <span class="toc-text">paginator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#date"><span class="toc-number">13.</span> <span class="toc-text">date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#date_xml"><span class="toc-number">14.</span> <span class="toc-text">date_xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#time"><span class="toc-number">15.</span> <span class="toc-text">time</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#full_date"><span class="toc-number">16.</span> <span class="toc-text">full_date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#moment"><span class="toc-number">17.</span> <span class="toc-text">moment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#search_form"><span class="toc-number">18.</span> <span class="toc-text">search_form</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#markdown"><span class="toc-number">19.</span> <span class="toc-text">markdown</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#word_wrap"><span class="toc-number">20.</span> <span class="toc-text">word_wrap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#truncate"><span class="toc-number">21.</span> <span class="toc-text">truncate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#truncate_words"><span class="toc-number">22.</span> <span class="toc-text">truncate_words</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#link_to"><span class="toc-number">23.</span> <span class="toc-text">link_to</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mail_to"><span class="toc-number">24.</span> <span class="toc-text">mail_to</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_tag"><span class="toc-number">25.</span> <span class="toc-text">image_tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#favicon_tag"><span class="toc-number">26.</span> <span class="toc-text">favicon_tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#feed_tag"><span class="toc-number">27.</span> <span class="toc-text">feed_tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_categories"><span class="toc-number">28.</span> <span class="toc-text">list_categories</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_tags"><span class="toc-number">29.</span> <span class="toc-text">list_tags</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_archives"><span class="toc-number">30.</span> <span class="toc-text">list_archives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_posts"><span class="toc-number">31.</span> <span class="toc-text">list_posts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_posts"><span class="toc-number">32.</span> <span class="toc-text">get_posts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#number_format"><span class="toc-number">33.</span> <span class="toc-text">number_format</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#open_graph"><span class="toc-number">34.</span> <span class="toc-text">open_graph</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#toc"><span class="toc-number">35.</span> <span class="toc-text">toc</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#url_for"><span class="toc-number">1.</span> <span class="toc-text">url_for</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#relative_url"><span class="toc-number">2.</span> <span class="toc-text">relative_url</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#css"><span class="toc-number">3.</span> <span class="toc-text">css</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js"><span class="toc-number">4.</span> <span class="toc-text">js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Conditional_Tags"><span class="toc-number">5.</span> <span class="toc-text">Conditional Tags</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gravatar"><span class="toc-number">6.</span> <span class="toc-text">gravatar</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#trim"><span class="toc-number">7.</span> <span class="toc-text">trim</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#strip_html"><span class="toc-number">8.</span> <span class="toc-text">strip_html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#titlecase"><span class="toc-number">9.</span> <span class="toc-text">titlecase</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#partial"><span class="toc-number">10.</span> <span class="toc-text">partial</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#fragment_cache"><span class="toc-number">11.</span> <span class="toc-text">fragment_cache</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tagcloud"><span class="toc-number">12.</span> <span class="toc-text">tagcloud</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#paginator"><span class="toc-number">13.</span> <span class="toc-text">paginator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#date"><span class="toc-number">14.</span> <span class="toc-text">date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#date_xml"><span class="toc-number">15.</span> <span class="toc-text">date_xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#time"><span class="toc-number">16.</span> <span class="toc-text">time</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#full_date"><span class="toc-number">17.</span> <span class="toc-text">full_date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#moment"><span class="toc-number">18.</span> <span class="toc-text">moment</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#search_form"><span class="toc-number">19.</span> <span class="toc-text">search_form</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#markdown"><span class="toc-number">20.</span> <span class="toc-text">markdown</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#word_wrap"><span class="toc-number">21.</span> <span class="toc-text">word_wrap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#truncate"><span class="toc-number">22.</span> <span class="toc-text">truncate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#truncate_words"><span class="toc-number">23.</span> <span class="toc-text">truncate_words</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#link_to"><span class="toc-number">24.</span> <span class="toc-text">link_to</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mail_to"><span class="toc-number">25.</span> <span class="toc-text">mail_to</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image_tag"><span class="toc-number">26.</span> <span class="toc-text">image_tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#favicon_tag"><span class="toc-number">27.</span> <span class="toc-text">favicon_tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#feed_tag"><span class="toc-number">28.</span> <span class="toc-text">feed_tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_categories"><span class="toc-number">29.</span> <span class="toc-text">list_categories</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_tags"><span class="toc-number">30.</span> <span class="toc-text">list_tags</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_archives"><span class="toc-number">31.</span> <span class="toc-text">list_archives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list_posts"><span class="toc-number">32.</span> <span class="toc-text">list_posts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#get_posts"><span class="toc-number">33.</span> <span class="toc-text">get_posts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#number_format"><span class="toc-number">34.</span> <span class="toc-text">number_format</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#open_graph"><span class="toc-number">35.</span> <span class="toc-text">open_graph</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#toc"><span class="toc-number">36.</span> <span class="toc-text">toc</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
         <p>Helpers are used in templates to help you insert snippets quickly. You can see <a href="plugins.html#Helper">Plugins</a> to learn how to build a helper plugin.</p>
 <h3 id="url_for">url_for</h3>
 <p>Returns a url with the root path prefixed. You should use this helper instead of <code>config.root + path</code> since Hexo 2.7.</p>
-<figure class="highlight js"><pre>&lt;%- url_for(path) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- url_for(path) %&gt;</div></pre></figure>
+
+<h3 id="relative_url">relative_url</h3>
+<p>Solves the relative URL from <code>from</code> to <code>to</code>.</p>
+<figure class="highlight js"><pre><div class="line">&lt;%- relative_url(from, to) %&gt;</div></pre></figure>
 
 <h3 id="css">css</h3>
 <p>Loads CSS files. <code>path</code> can be an array or a string. If <code>path</code> isn’t prefixed with <code>/</code> or any protocol, it’ll be prefixed with root URL. If you didn’t add extension name <code>.css</code> after <code>path</code>, it’ll be added.</p>
-<figure class="highlight js"><pre>&lt;%- css(path, ...) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- css(path, ...) %&gt;</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- css(<span class="string">'style.css'</span>) %&gt;
-<span class="comment">// &lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</span>
-
-&lt;%- css([<span class="string">'style.css'</span>, <span class="string">'screen.css'</span>]) %&gt;
-<span class="comment">// &lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</span>
-<span class="comment">// &lt;link rel="stylesheet" href="/screen.css" type="text/css"&gt;</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- css(<span class="string">'style.css'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</span></div><div class="line"></div><div class="line">&lt;%- css([<span class="string">'style.css'</span>, <span class="string">'screen.css'</span>]) %&gt;</div><div class="line"><span class="comment">// &lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</span></div><div class="line"><span class="comment">// &lt;link rel="stylesheet" href="/screen.css" type="text/css"&gt;</span></div></pre></figure>
 
 <h3 id="js">js</h3>
 <p>Loads JavaScript files. <code>path</code> can be an array or a string. If <code>path</code> isn’t prefixed with <code>/</code> or any protocol, it’ll be prefixed with root URL. If you didn’t add extension name <code>.js</code> after <code>path</code>, it’ll be added.</p>
-<figure class="highlight js"><pre>&lt;%- js(path, ...) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- js(path, ...) %&gt;</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- js(<span class="string">'script.js'</span>) %&gt;
-<span class="comment">// &lt;script type="text/javascript" src="/script.js"&gt;&lt;/script&gt;</span>
-
-&lt;%- js([<span class="string">'script.js'</span>, <span class="string">'gallery.js'</span>]) %&gt;
-<span class="comment">// &lt;script type="text/javascript" src="/script.js"&gt;&lt;/script&gt;</span>
-<span class="comment">// &lt;script type="text/javascript" src="/gallery.js"&gt;&lt;/script&gt;</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- js(<span class="string">'script.js'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;script type="text/javascript" src="/script.js"&gt;&lt;/script&gt;</span></div><div class="line"></div><div class="line">&lt;%- js([<span class="string">'script.js'</span>, <span class="string">'gallery.js'</span>]) %&gt;</div><div class="line"><span class="comment">// &lt;script type="text/javascript" src="/script.js"&gt;&lt;/script&gt;</span></div><div class="line"><span class="comment">// &lt;script type="text/javascript" src="/gallery.js"&gt;&lt;/script&gt;</span></div></pre></figure>
 
 <h3 id="Conditional_Tags">Conditional Tags</h3>
 <p>Conditional tags help you check the status of current page.</p>
@@ -179,46 +180,32 @@ Returns a url with the root path prefixed. You should use this hel">
 </table>
 <h3 id="gravatar">gravatar</h3>
 <p>Inserts a Gravatar image.</p>
-<figure class="highlight js"><pre>&lt;%- gravatar(email, [size]);
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- gravatar(email, [size]);</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- gravatar(<span class="string">'a@abc.com'</span>) %&gt;
-<span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787</span>
-
-&lt;%- gravatar(<span class="string">'a@abc.com'</span>, <span class="number">40</span>) %&gt;
-<span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>) %&gt;</div><div class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787</span></div><div class="line"></div><div class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>, <span class="number">40</span>) %&gt;</div><div class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40</span></div></pre></figure>
 
 <h3 id="trim">trim</h3>
 <p>Clears all spaces in a string.</p>
-<figure class="highlight js"><pre>&lt;%- trim(string) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- trim(string) %&gt;</div></pre></figure>
 
 <h3 id="strip_html">strip_html</h3>
 <p>Sanitizes all HTML tags in a string.</p>
-<figure class="highlight js"><pre>&lt;%- strip_html(string) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- strip_html(string) %&gt;</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- strip_html('It's not &lt;b&gt;important&lt;/b&gt; anymore!') %&gt;
-// It's not important anymore!
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- strip_html('It's not &lt;b&gt;important&lt;/b&gt; anymore!') %&gt;</div><div class="line">// It's not important anymore!</div></pre></figure>
 
 <h3 id="titlecase">titlecase</h3>
 <p>Transforms a string into proper title caps.</p>
-<figure class="highlight js"><pre>&lt;%- titlecase(string) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- titlecase(string) %&gt;</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- titlecase(<span class="string">'this is an apple'</span>) %&gt;
-# This is an Apple
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- titlecase(<span class="string">'this is an apple'</span>) %&gt;</div><div class="line"># This is an Apple</div></pre></figure>
 
 <h3 id="partial">partial</h3>
 <p>Loads other template files. You can define local variables in <code>locals</code>.</p>
-<figure class="highlight js"><pre>&lt;%- partial(layout, [locals], [options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- partial(layout, [locals], [options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -243,19 +230,14 @@ Returns a url with the root path prefixed. You should use this hel">
 </table>
 <h3 id="fragment_cache">fragment_cache</h3>
 <p>Caches the contents in a fragment. It saves the contents within a fragment and serves the cache when the next request comes in.</p>
-<figure class="highlight js"><pre>&lt;%- fragment_cache(id, fn);
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- fragment_cache(id, fn);</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
-  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;
-}) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span></div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</div><div class="line">}) %&gt;</div></pre></figure>
 
 <h3 id="tagcloud">tagcloud</h3>
 <p>Inserts a tag cloud.</p>
-<figure class="highlight js"><pre>&lt;%- tagcloud([tags], [options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- tagcloud([tags], [options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -315,8 +297,7 @@ Returns a url with the root path prefixed. You should use this hel">
 </table>
 <h3 id="paginator">paginator</h3>
 <p>Inserts a paginator.</p>
-<figure class="highlight js"><pre>&lt;%- paginator(options) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- paginator(options) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -386,59 +367,37 @@ Returns a url with the root path prefixed. You should use this hel">
 </table>
 <h3 id="date">date</h3>
 <p>Inserts formatted date. <code>date</code> can be unix time, ISO string, date object, or moment.js object. <code>format</code> is <code>date_format</code> setting by default.</p>
-<figure class="highlight js"><pre>&lt;%- date(date, [format]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- date(date, [format]) %&gt;</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- date(<span class="built_in">Date</span>.now()) %&gt;
-<span class="comment">// Jan 1, 2013</span>
-
-&lt;%- date(<span class="built_in">Date</span>.now(), <span class="string">'YYYY/M/D'</span>) %&gt;
-<span class="comment">// 2013/1/1</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- date(<span class="built_in">Date</span>.now()) %&gt;</div><div class="line"><span class="comment">// Jan 1, 2013</span></div><div class="line"></div><div class="line">&lt;%- date(<span class="built_in">Date</span>.now(), <span class="string">'YYYY/M/D'</span>) %&gt;</div><div class="line"><span class="comment">// 2013/1/1</span></div></pre></figure>
 
 <h3 id="date_xml">date_xml</h3>
 <p>Inserts date in XML format. <code>date</code> can be unix time, ISO string, date object, or moment.js object. <code>format</code> is <code>date_format</code> setting by default.</p>
-<figure class="highlight js"><pre>&lt;%- date_xml(date) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- date_xml(date) %&gt;</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- date_xml(<span class="built_in">Date</span>.now()) %&gt;
-<span class="comment">// 2013-01-01T00:00:00.000Z</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- date_xml(<span class="built_in">Date</span>.now()) %&gt;</div><div class="line"><span class="comment">// 2013-01-01T00:00:00.000Z</span></div></pre></figure>
 
 <h3 id="time">time</h3>
 <p>Inserts formatted time. <code>date</code> can be unix time, ISO string, date object, or moment.js object. <code>format</code> is <code>time_format</code> setting by default.</p>
-<figure class="highlight js"><pre>&lt;%- time(date, [format]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- time(date, [format]) %&gt;</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- time(<span class="built_in">Date</span>.now()) %&gt;
-<span class="comment">// 13:05:12</span>
-
-&lt;%- time(<span class="built_in">Date</span>.now(), <span class="string">'h:mm:ss a'</span>) %&gt;
-<span class="comment">// 1:05:12 pm</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- time(<span class="built_in">Date</span>.now()) %&gt;</div><div class="line"><span class="comment">// 13:05:12</span></div><div class="line"></div><div class="line">&lt;%- time(<span class="built_in">Date</span>.now(), <span class="string">'h:mm:ss a'</span>) %&gt;</div><div class="line"><span class="comment">// 1:05:12 pm</span></div></pre></figure>
 
 <h3 id="full_date">full_date</h3>
 <p>Inserts formatted date and time. <code>date</code> can be unix time, ISO string, date object, or moment.js object. <code>format</code> is <code>date_format + time_format</code> setting by default.</p>
-<figure class="highlight js"><pre>&lt;%- full_date(date, [format]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- full_date(date, [format]) %&gt;</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>()) %&gt;
-<span class="comment">// Jan 1, 2013 0:00:00</span>
-
-&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>(), <span class="string">'dddd, MMMM Do YYYY, h:mm:ss a'</span>) %&gt;
-<span class="comment">// Tuesday, January 1st 2013, 12:00:00 am</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>()) %&gt;</div><div class="line"><span class="comment">// Jan 1, 2013 0:00:00</span></div><div class="line"></div><div class="line">&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>(), <span class="string">'dddd, MMMM Do YYYY, h:mm:ss a'</span>) %&gt;</div><div class="line"><span class="comment">// Tuesday, January 1st 2013, 12:00:00 am</span></div></pre></figure>
 
 <h3 id="moment">moment</h3>
 <p>[Moment.js] library.</p>
 <h3 id="search_form">search_form</h3>
 <p>Inserts a Google search form.</p>
-<figure class="highlight js"><pre>&lt;%- search_form(options) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- search_form(options) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -468,48 +427,35 @@ Returns a url with the root path prefixed. You should use this hel">
 </table>
 <h3 id="markdown">markdown</h3>
 <p>Renders a string with Markdown.</p>
-<figure class="highlight js"><pre>&lt;%- markdown(str) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- markdown(str) %&gt;</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- markdown(<span class="string">'make me **strong**'</span>) %&gt;
-<span class="comment">// make me &lt;strong&gt;strong&lt;/strong&gt;</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- markdown(<span class="string">'make me **strong**'</span>) %&gt;</div><div class="line"><span class="comment">// make me &lt;strong&gt;strong&lt;/strong&gt;</span></div></pre></figure>
 
 <h3 id="word_wrap">word_wrap</h3>
 <p>Wraps text into lines no longer than <code>length</code>. <code>length</code> is 80 by default.</p>
-<figure class="highlight js"><pre>&lt;%- word_wrap(str, [length]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- word_wrap(str, [length]) %&gt;</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- word_wrap(<span class="string">'Once upon a time'</span>, <span class="number">8</span>) %&gt;
-<span class="comment">// Once upon\n a time</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- word_wrap(<span class="string">'Once upon a time'</span>, <span class="number">8</span>) %&gt;</div><div class="line"><span class="comment">// Once upon\n a time</span></div></pre></figure>
 
 <h3 id="truncate">truncate</h3>
 <p>Truncates text after <code>length</code>.</p>
-<figure class="highlight js"><pre>&lt;%- truncate(text, length) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- truncate(text, length) %&gt;</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, <span class="number">16</span>) %&gt;
-<span class="comment">// Once upon a time</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, <span class="number">16</span>) %&gt;</div><div class="line"><span class="comment">// Once upon a time</span></div></pre></figure>
 
 <h3 id="truncate_words">truncate_words</h3>
 <p>Truncates words after <code>length</code>.</p>
-<figure class="highlight js"><pre>&lt;%- truncate_words(text, length) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- truncate_words(text, length) %&gt;</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- truncate_words(<span class="string">'Once upon a time in a world far far away'</span>, <span class="number">4</span>) %&gt;
-<span class="comment">// Once upon a time</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- truncate_words(<span class="string">'Once upon a time in a world far far away'</span>, <span class="number">4</span>) %&gt;</div><div class="line"><span class="comment">// Once upon a time</span></div></pre></figure>
 
 <h3 id="link_to">link_to</h3>
 <p>Inserts a link.</p>
-<figure class="highlight js"><pre>&lt;%- link_to(path, [text], [options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- link_to(path, [text], [options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -538,20 +484,11 @@ Returns a url with the root path prefixed. You should use this hel">
 </tbody>
 </table>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- link_to(<span class="string">'http://www.google.com'</span>) %&gt;
-<span class="comment">// &lt;a href="http://www.google.com" title="http://www.google.com"&gt;http://www.google.com&lt;/a&gt;</span>
-
-&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>) %&gt;
-<span class="comment">// &lt;a href="http://www.google.com" title="Google"&gt;Google&lt;/a&gt;</span>
-
-&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>, {external: <span class="literal">true</span>}) %&gt;
-<span class="comment">// &lt;a href="http://www.google.com" title="Google" target="_blank" rel="external"&gt;Google&lt;/a&gt;</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;a href="http://www.google.com" title="http://www.google.com"&gt;http://www.google.com&lt;/a&gt;</span></div><div class="line"></div><div class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;a href="http://www.google.com" title="Google"&gt;Google&lt;/a&gt;</span></div><div class="line"></div><div class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>, {external: <span class="literal">true</span>}) %&gt;</div><div class="line"><span class="comment">// &lt;a href="http://www.google.com" title="Google" target="_blank" rel="external"&gt;Google&lt;/a&gt;</span></div></pre></figure>
 
 <h3 id="mail_to">mail_to</h3>
 <p>Inserts a mail link.</p>
-<figure class="highlight js"><pre>&lt;%- mail_to(path, [text], [options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- mail_to(path, [text], [options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -588,17 +525,11 @@ Returns a url with the root path prefixed. You should use this hel">
 </tbody>
 </table>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- mail_to(<span class="string">'a@abc.com'</span>) %&gt;
-<span class="comment">// &lt;a href="mailto:a@abc.com" title="a@abc.com"&gt;a@abc.com&lt;/a&gt;</span>
-
-&lt;%- mail_to(<span class="string">'a@abc.com'</span>, <span class="string">'Email'</span>) %&gt;
-<span class="comment">// &lt;a href="mailto:a@abc.com" title="Email"&gt;Email&lt;/a&gt;</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- mail_to(<span class="string">'a@abc.com'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;a href="mailto:a@abc.com" title="a@abc.com"&gt;a@abc.com&lt;/a&gt;</span></div><div class="line"></div><div class="line">&lt;%- mail_to(<span class="string">'a@abc.com'</span>, <span class="string">'Email'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;a href="mailto:a@abc.com" title="Email"&gt;Email&lt;/a&gt;</span></div></pre></figure>
 
 <h3 id="image_tag">image_tag</h3>
 <p>Inserts a image.</p>
-<figure class="highlight js"><pre>&lt;%- image_tag(path, [options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- image_tag(path, [options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -632,13 +563,11 @@ Returns a url with the root path prefixed. You should use this hel">
 </table>
 <h3 id="favicon_tag">favicon_tag</h3>
 <p>Inserts a favicon.</p>
-<figure class="highlight js"><pre>&lt;%- favicon_tag(path) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- favicon_tag(path) %&gt;</div></pre></figure>
 
 <h3 id="feed_tag">feed_tag</h3>
 <p>Inserts a feed link.</p>
-<figure class="highlight js"><pre>&lt;%- feed_tag(path, [options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- feed_tag(path, [options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -663,8 +592,7 @@ Returns a url with the root path prefixed. You should use this hel">
 </table>
 <h3 id="list_categories">list_categories</h3>
 <p>Inserts a list of all categories.</p>
-<figure class="highlight js"><pre>&lt;%- list_categories([options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- list_categories([options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -714,8 +642,7 @@ Returns a url with the root path prefixed. You should use this hel">
 </table>
 <h3 id="list_tags">list_tags</h3>
 <p>Inserts a list of all tags.</p>
-<figure class="highlight js"><pre>&lt;%- list_tags([options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- list_tags([options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -760,8 +687,7 @@ Returns a url with the root path prefixed. You should use this hel">
 </table>
 <h3 id="list_archives">list_archives</h3>
 <p>Inserts a list of archives.</p>
-<figure class="highlight js"><pre>&lt;%- list_archive([options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- list_archive([options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -811,8 +737,7 @@ Returns a url with the root path prefixed. You should use this hel">
 </table>
 <h3 id="list_posts">list_posts</h3>
 <p>Inserts a list of posts.</p>
-<figure class="highlight js"><pre>&lt;%- list_posts([options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- list_posts([options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -852,8 +777,7 @@ Returns a url with the root path prefixed. You should use this hel">
 </table>
 <h3 id="get_posts">get_posts</h3>
 <p>Gets post data.</p>
-<figure class="highlight js"><pre>&lt;% get_posts([options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;% get_posts([options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -888,8 +812,7 @@ Returns a url with the root path prefixed. You should use this hel">
 </table>
 <h3 id="number_format">number_format</h3>
 <p>Formats a number.</p>
-<figure class="highlight js"><pre>&lt;%- number_format(number, [options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- number_format(number, [options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -918,26 +841,11 @@ Returns a url with the root path prefixed. You should use this hel">
 </tbody>
 </table>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- number_format(<span class="number">12345.67</span>, {precision: <span class="number">1</span>}) %&gt;
-<span class="comment">// 12,345.68</span>
-
-&lt;%- number_format(<span class="number">12345.67</span>, {precision: <span class="number">4</span>}) %&gt;
-<span class="comment">// 12,345.6700</span>
-
-&lt;%- number_format(<span class="number">12345.67</span>, {precision: <span class="number">0</span>}) %&gt;
-<span class="comment">// 12,345</span>
-
-&lt;%- number_format(<span class="number">12345.67</span>, {delimiter: <span class="string">''</span>}) %&gt;
-<span class="comment">// 12345.67</span>
-
-&lt;%- number_format(<span class="number">12345.67</span>, {separator: <span class="string">'/'</span>}) %&gt;
-<span class="comment">// 12,345/67</span>
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, {precision: <span class="number">1</span>}) %&gt;</div><div class="line"><span class="comment">// 12,345.68</span></div><div class="line"></div><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, {precision: <span class="number">4</span>}) %&gt;</div><div class="line"><span class="comment">// 12,345.6700</span></div><div class="line"></div><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, {precision: <span class="number">0</span>}) %&gt;</div><div class="line"><span class="comment">// 12,345</span></div><div class="line"></div><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, {delimiter: <span class="string">''</span>}) %&gt;</div><div class="line"><span class="comment">// 12345.67</span></div><div class="line"></div><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, {separator: <span class="string">'/'</span>}) %&gt;</div><div class="line"><span class="comment">// 12,345/67</span></div></pre></figure>
 
 <h3 id="open_graph">open_graph</h3>
 <p>Inserts open graph data.</p>
-<figure class="highlight js"><pre>&lt;%- open_graph([options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- open_graph([options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -1012,8 +920,7 @@ Returns a url with the root path prefixed. You should use this hel">
 </table>
 <h3 id="toc">toc</h3>
 <p>Parses all heading tags (h1~h6) in the content and inserts a table of contents.</p>
-<figure class="highlight js"><pre>&lt;%- toc(str, [options]) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- toc(str, [options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -1037,13 +944,12 @@ Returns a url with the root path prefixed. You should use this hel">
 </tbody>
 </table>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre>&lt;%- toc(page.content) %&gt;
-</pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- toc(page.content) %&gt;</div></pre></figure>
 
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-14T00:59:58.000Z" itemprop="dateModified">Last updated: Jun 14 2014</time>
+        <time id="page-footer-updated" datetime="2014-07-10T16:52:42.000Z" itemprop="dateModified">Last updated: Jul 11 2014</time>
         <a href="pagination.html" id="page-footer-prev" title="Pagination">Prev</a><a href="plugins.html" id="page-footer-next" title="Plugins">Next</a>
       </footer>
       
@@ -1072,6 +978,8 @@ Returns a url with the root path prefixed. You should use this hel">
     <strong class="sidebar-title">Basic Usage</strong>
     
       <a href="/docs/writing.html" class="sidebar-link">Writing</a>
+    
+      <a href="/docs/drafts.html" class="sidebar-link">Drafts</a>
     
       <a href="/docs/generating.html" class="sidebar-link">Generating</a>
     
@@ -1123,7 +1031,7 @@ Returns a url with the root path prefixed. You should use this hel">
       </div>
       <div id="footer-links">
         <a href="https://twitter.com/hexojs" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>
-        <a href="https://github.com/tommy351/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
+        <a href="https://github.com/hexojs/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
       </div>
     </div>
   </div>
@@ -1158,7 +1066,10 @@ var Swiftype = window.Swiftype || {};
 }());
 </script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/retina.min.js" type="text/javascript"></script>
+
 <script src="/js/script.js" type="text/javascript"></script>
+
 <!-- Google+ -->
 <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 <!-- Twitter -->

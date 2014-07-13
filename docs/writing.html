@@ -5,12 +5,23 @@
   <title>Writing | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="canonical" href="http://hexo.io/docs/writing.html">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <link href="/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76">
-  <link href="/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120">
-  <link href="/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
+
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -28,6 +39,7 @@ You can create a new post by yourself or run the following command. If layout is
 You can create a new post by yourself or run the following command. If layout isn’t defined, it’ll be the default_layout setting. If there’re spaces or other special characters in ti">
 <meta name="twitter:site" content="@hexojs">
 <meta property="fb:admins" content="100000247608790">
+
   
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -73,7 +85,7 @@ You can create a new post by yourself or run the following command. If layout is
             </li>
           
         </ul>
-        <a href="https://github.com/tommy351/hexo" id="github-btn" title="GitHub" target="_blank"></a>
+        <a href="https://github.com/hexojs/hexo" id="github-btn" title="GitHub" target="_blank"></a>
         <a id="search-btn" class="st-search-launcher" title="Search"></a>
       </nav>
     </div>
@@ -93,16 +105,15 @@ You can create a new post by yourself or run the following command. If layout is
     <div class="page-content">
       <div class="toc-wrap">
         <strong class="toc-title">Contents</strong>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Create_a_New_Post"><span class="toc-number">1.</span> <span class="toc-text">Create a New Post</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Layout"><span class="toc-number">1.1.</span> <span class="toc-text">Layout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Filename"><span class="toc-number">1.3.</span> <span class="toc-text">Filename</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Front-matter"><span class="toc-number">2.</span> <span class="toc-text">Front-matter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Categories_&amp;_Tags"><span class="toc-number">3.</span> <span class="toc-text">Categories &amp; Tags</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Excerpts"><span class="toc-number">4.</span> <span class="toc-text">Excerpts</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code_Highlighting"><span class="toc-number">5.</span> <span class="toc-text">Code Highlighting</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Backtick_Code_Block"><span class="toc-number">5.1.</span> <span class="toc-text">Backtick Code Block</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Swig_Code_Block"><span class="toc-number">5.2.</span> <span class="toc-text">Swig Code Block</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Scaffold"><span class="toc-number">6.</span> <span class="toc-text">Scaffold</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1"><span class="toc-number">6.1.</span> <span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Variables"><span class="toc-number">6.2.</span> <span class="toc-text">Variables</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Asset_Folder"><span class="toc-number">7.</span> <span class="toc-text">Asset Folder</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Create_a_New_Post"><span class="toc-number">1.</span> <span class="toc-text">Create a New Post</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Layout"><span class="toc-number">1.1.</span> <span class="toc-text">Layout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example"><span class="toc-number">1.2.</span> <span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Filename"><span class="toc-number">1.3.</span> <span class="toc-text">Filename</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Front-matter"><span class="toc-number">2.</span> <span class="toc-text">Front-matter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Categories_&_Tags"><span class="toc-number">3.</span> <span class="toc-text">Categories & Tags</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Excerpts"><span class="toc-number">4.</span> <span class="toc-text">Excerpts</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code_Highlighting"><span class="toc-number">5.</span> <span class="toc-text">Code Highlighting</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Backtick_Code_Block"><span class="toc-number">5.1.</span> <span class="toc-text">Backtick Code Block</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Swig_Code_Block"><span class="toc-number">5.2.</span> <span class="toc-text">Swig Code Block</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Scaffold"><span class="toc-number">6.</span> <span class="toc-text">Scaffold</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1"><span class="toc-number">6.1.</span> <span class="toc-text">Example</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Variables"><span class="toc-number">6.2.</span> <span class="toc-text">Variables</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Asset_Folder"><span class="toc-number">7.</span> <span class="toc-text">Asset Folder</span></a></li></ol>
       </div>
       <div class="page-entry" itemprop="articleBody">
         <h2 id="Create_a_New_Post">Create a New Post</h2>
 <p>You can create a new post by yourself or run the following command. If <code>layout</code> isn’t defined, it’ll be the <code>default_layout</code> setting. If there’re spaces or other special characters in <code>title</code>, wrap it with quotation marks.</p>
-<figure class="highlight bash"><pre>$ hexo new [layout] &lt;title&gt;
-</pre></figure>
+<figure class="highlight bash"><pre><div class="line">$ hexo new [layout] &lt;title&gt;</div></pre></figure>
 
 <h3 id="Layout">Layout</h3>
-<p>Hexo has 3 default layouts: <code>post</code>, <code>page</code> and <code>draft</code>. Other layouts will be saved in <code>source/_posts</code> by default.</p>
+<p>Hexo has 2 default layouts: <code>post</code> and <code>page</code>. Other layouts will be saved in <code>source/_posts</code> by default.</p>
 <table>
 <thead>
 <tr>
@@ -119,10 +130,6 @@ You can create a new post by yourself or run the following command. If layout is
 <td><code>page</code></td>
 <td>source</td>
 </tr>
-<tr>
-<td><code>draft</code></td>
-<td>source/_drafts</td>
-</tr>
 </tbody>
 </table>
 <blockquote class="note tip"><strong class="note-title">Don't process my posts!</strong>
@@ -132,15 +139,7 @@ You can create a new post by yourself or run the following command. If layout is
 
 
 <h3 id="Example">Example</h3>
-<figure class="highlight bash"><pre>$ hexo new <span class="string">"New Post"</span>
-<span class="comment"># =&gt; The file will be created at source/_posts/new-post.md</span>
-
-$ hexo new page <span class="string">"New Page"</span>
-<span class="comment"># =&gt; The file will be created at source/new-page/index.html</span>
-
-$ hexo new draft <span class="string">"New Draft"</span>
-<span class="comment"># =&gt; The file will be created at source/_drafts/new-draft.md</span>
-</pre></figure>
+<figure class="highlight bash"><pre><div class="line">$ hexo new <span class="string">"New Post"</span></div><div class="line"><span class="comment"># =&gt; The file will be created at source/_posts/new-post.md</span></div><div class="line"></div><div class="line">$ hexo new page <span class="string">"New Page"</span></div><div class="line"><span class="comment"># =&gt; The file will be created at source/new-page/index.html</span></div></pre></figure>
 
 <h3 id="Filename">Filename</h3>
 <p>You can modify the name of files created by Hexo in <code>new_post_name</code> setting.</p>
@@ -186,10 +185,7 @@ $ hexo new draft <span class="string">"New Draft"</span>
 
 <h2 id="Front-matter">Front-matter</h2>
 <p>Front-matter is a block wrapped with <code>---</code> in front of the file. For example:</p>
-<figure class="highlight yaml"><pre>title: Hello World
-<span class="header">date: 2013/7/13 20:46:25
----</span>
-</pre></figure>
+<figure class="highlight yaml"><pre><div class="line">title: Hello World</div><div class="line"><span class="header">date: 2013/7/13 20:46:25</span></div><div class="line">---</div></pre></figure>
 
 <p>You can configure all post configuration in the front-matter. The following is predefined settings.</p>
 <table>
@@ -251,30 +247,17 @@ $ hexo new draft <span class="string">"New Draft"</span>
 
 <h2 id="Categories_&amp;_Tags">Categories &amp; Tags</h2>
 <p>Hexo supports categories and tags. Categories and tags are only supported in posts and have to be set in the front-matter. For example:</p>
-<figure class="highlight yaml"><pre>categories:
--<span class="ruby"> <span class="constant">Diary</span>
-</span>tags:
--<span class="ruby"> <span class="constant">PS3</span>
-</span>-<span class="ruby"> <span class="constant">Games</span></span>
-</pre></figure>
+<figure class="highlight yaml"><pre><div class="line">categories:</div><div class="line">-<span class="ruby"> <span class="constant">Diary</span></span></div><div class="line">tags:</div><div class="line">-<span class="ruby"> <span class="constant">PS3</span></span></div><div class="line">-<span class="ruby"> <span class="constant">Games</span></span></div></pre></figure>
 
 <p>Categories and tags may sound familiar in other systems, but they’re totally different in Hexo. Categories are hierarchical and ordered, which means <code>Foo, Bar</code> doesn’t equal to <code>Bar, Foo</code>. Tags are unordered and flat.</p>
 <h2 id="Excerpts">Excerpts</h2>
 <p>You can hide parts of your post by adding <code>&lt;!-- more --&gt;</code> in the content. Index page will only show the post from the first to the first occurrence of <code>&lt;!-- more --&gt;</code>.</p>
-<figure class="highlight markdown"><pre>...
-
-<span class="xml"><span class="comment">&lt;!-- more --&gt;</span></span>
-
-...
-</pre></figure>
+<figure class="highlight markdown"><pre><div class="line">...</div><div class="line"></div><div class="line"><span class="xml"><span class="comment">&lt;!-- more --&gt;</span></span></div><div class="line"></div><div class="line">...</div></pre></figure>
 
 <h2 id="Code_Highlighting">Code Highlighting</h2>
 <p>There’re 2 ways for you to highlight your code snippets in your posts: <strong>Backtick code block</strong> and <strong>Swig code block</strong>. Both are ported from Octopress.</p>
 <h3 id="Backtick_Code_Block">Backtick Code Block</h3>
-<figure class="highlight"><pre>``` <span class="attr_selector">[language]</span> <span class="attr_selector">[title]</span> <span class="attr_selector">[url]</span> <span class="attr_selector">[link text]</span>
-<span class="tag">code</span> <span class="tag">snippet</span>
-```
-</pre></figure>
+<figure class="highlight"><pre><div class="line">``` <span class="attr_selector">[language]</span> <span class="attr_selector">[title]</span> <span class="attr_selector">[url]</span> <span class="attr_selector">[link text]</span></div><div class="line"><span class="tag">code</span> <span class="tag">snippet</span></div><div class="line">```</div></pre></figure>
 
 <h3 id="Swig_Code_Block">Swig Code Block</h3>
 <figure class="highlight"><pre>{% code [title] [lang:language] [url] [link text] %}<br>code snippet<br>{% endcode %}<br></pre></figure>
@@ -282,18 +265,12 @@ $ hexo new draft <span class="string">"New Draft"</span>
 
 <h2 id="Scaffold">Scaffold</h2>
 <p>Hexo will create a new post based on the correspond scaffold. For example:</p>
-<figure class="highlight bash"><pre>$ hexo new photo <span class="string">"My Gallery"</span>
-<span class="comment"># =&gt; The file will be created at source/_posts/my-gallery.md</span>
-</pre></figure>
+<figure class="highlight bash"><pre><div class="line">$ hexo new photo <span class="string">"My Gallery"</span></div><div class="line"><span class="comment"># =&gt; The file will be created at source/_posts/my-gallery.md</span></div></pre></figure>
 
 <p>Hexo will find the scaffold file named <code>photo</code> in the <code>scaffolds</code> folder. If the scaffold not exists, use the post scaffold instead.</p>
 <h3 id="Example-1">Example</h3>
 <p>Variables are wrapped by double curly brackets. For example:</p>
-<figure class="highlight plain"><pre>layout: {{ layout }}
-title: {{ title }}
-date: {{ date }}
----
-</pre></figure>
+<figure class="highlight plain"><pre><div class="line">layout: {{ layout }}</div><div class="line">title: {{ title }}</div><div class="line">date: {{ date }}</div><div class="line">---</div></pre></figure>
 
 <h3 id="Variables">Variables</h3>
 <table>
@@ -320,15 +297,14 @@ date: {{ date }}
 </table>
 <h2 id="Asset_Folder">Asset Folder</h2>
 <p>If you put all images and other assets in <code>source</code> folder. You can try to enable <code>post_asset_folder</code> setting.</p>
-<figure class="highlight yaml"><pre><span class="attribute">post_asset_folder</span>: <span class="string">true</span>
-</pre></figure>
+<figure class="highlight yaml"><pre><div class="line"><span class="attribute">post_asset_folder</span>: <span class="string">true</span></div></pre></figure>
 
 <p>After enabling this setting, a folder will be created when you create a new post. This folder is for you to put all asset files used in the post in. It would be much easier to use a image in a post.</p>
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-06-14T00:59:58.000Z" itemprop="dateModified">Last updated: Jun 14 2014</time>
-        <a href="migration.html" id="page-footer-prev" title="Migration">Prev</a><a href="generating.html" id="page-footer-next" title="Generating">Next</a>
+        <time id="page-footer-updated" datetime="2014-07-10T16:52:42.000Z" itemprop="dateModified">Last updated: Jul 11 2014</time>
+        <a href="migration.html" id="page-footer-prev" title="Migration">Prev</a><a href="drafts.html" id="page-footer-next" title="Drafts">Next</a>
       </footer>
       
 <section id="comments">
@@ -356,6 +332,8 @@ date: {{ date }}
     <strong class="sidebar-title">Basic Usage</strong>
     
       <a href="/docs/writing.html" class="sidebar-link current">Writing</a>
+    
+      <a href="/docs/drafts.html" class="sidebar-link">Drafts</a>
     
       <a href="/docs/generating.html" class="sidebar-link">Generating</a>
     
@@ -407,7 +385,7 @@ date: {{ date }}
       </div>
       <div id="footer-links">
         <a href="https://twitter.com/hexojs" id="footer-link-twitter" class="footer-link" target="_blank"><span>Twitter</span></a>
-        <a href="https://github.com/tommy351/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
+        <a href="https://github.com/hexojs/hexo" id="footer-link-github" class="footer-link" target="_blank"><span>GitHub</span></a>
       </div>
     </div>
   </div>
@@ -442,7 +420,10 @@ var Swiftype = window.Swiftype || {};
 }());
 </script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="/js/retina.min.js" type="text/javascript"></script>
+
 <script src="/js/script.js" type="text/javascript"></script>
+
 <!-- Google+ -->
 <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 <!-- Twitter -->
