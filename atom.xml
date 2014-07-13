@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Hexo is a fast, simple & powerful blog framework powered by Node.js.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://hexo.io/"/>
-  <updated>2014-07-13T14:39:45.588Z</updated>
+  <updated>2014-07-13T14:41:45.002Z</updated>
   <id>http://hexo.io/</id>
   
   <author>
@@ -19,12 +19,12 @@
     <link href="http://hexo.io/news/2014/07/13/hexo-2-8-released/"/>
     <id>http://hexo.io/news/2014/07/13/hexo-2-8-released/</id>
     <published>2014-07-12T16:00:00.000Z</published>
-    <updated>2014-07-13T14:33:34.000Z</updated>
+    <updated>2014-07-13T14:41:33.000Z</updated>
     <content type="html"><![CDATA[<p>Hexo 2.8 was rewritten, brings you better performance and many improvements. The following is the highlights in this version. You can check <a href="https://github.com/hexojs/hexo/releases/tag/2.8.0" target="_blank" rel="external">detail</a> on GitHub.</p>
 <h2 id="Faster_Processing_Speed">Faster Processing Speed</h2>
 <p>Before Hexo 2.8, all source files have to be processed each time you use Hexo. In Hexo 2.8, the entire database will be saved to <code>db.json</code> so Hexo don’t have to process all files again. Also, a new data type “<strong>skip</strong>“ was added for processors to detect whether a file was changed or not.</p>
 <p>Generating was also changed in Hexo 2.8. You can check the elapsed time of each file in console now. However, I found multi-process generating didn’t affect generating speed a lot. Thus, <code>multi_thread</code> and <code>max_open_file</code> setting are deprecated in Hexo 2.8.</p>
-<p><img src="/news/2014/07/07/hexo-2-8-released/generate-console.png" alt=""></p>
+<p><img src="/news/2014/07/13/hexo-2-8-released/generate-console.png" alt=""></p>
 <h2 id="Draft_Publish">Draft Publish</h2>
 <p>You don’t have to enter full file name to publish a post anymore. Draft publish system is rewritten in Hexo 2.8. <code>new_post_name</code> setting will be applied until drafts are published. Besides, you can choose which layout to apply when publishing.</p>
 <figure class="highlight bash"><pre><div class="line">$ hexo publish [layout] &lt;filename&gt;</div></pre></figure>
