@@ -2,53 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://hexo.io/docs/plugins.html</loc>
-    <lastmod>2014-07-13T14:25:09.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://hexo.io/news/2014/07/07/hexo-2-8-released/</loc>
-    <lastmod>2014-07-11T15:29:26.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hexo.io/docs/permalinks.html</loc>
-    <lastmod>2014-07-10T16:52:42.000Z</lastmod>
+    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://hexo.io/docs/writing.html</loc>
-    <lastmod>2014-07-10T16:52:42.000Z</lastmod>
+    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/docs/permalinks.html</loc>
+    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/docs/plugins.html</loc>
+    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://hexo.io/docs/commands.html</loc>
-    <lastmod>2014-07-10T16:52:42.000Z</lastmod>
+    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://hexo.io/docs/configuration.html</loc>
-    <lastmod>2014-07-10T16:52:42.000Z</lastmod>
+    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://hexo.io/docs/deployment.html</loc>
-    <lastmod>2014-07-10T16:52:42.000Z</lastmod>
+    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://hexo.io/docs/drafts.html</loc>
-    <lastmod>2014-07-10T16:52:42.000Z</lastmod>
+    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://hexo.io/docs/generating.html</loc>
-    <lastmod>2014-07-10T16:52:42.000Z</lastmod>
+    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
   </url>
   
   <url>
     <loc>http://hexo.io/docs/helpers.html</loc>
-    <lastmod>2014-07-10T16:52:42.000Z</lastmod>
+    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
   </url>
   
   <url>
