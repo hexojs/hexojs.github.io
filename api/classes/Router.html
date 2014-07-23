@@ -25,15 +25,15 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  <meta name="description" content="<p>This module is used to manage routes.</p>">
+  <meta name="description" content="<p&amp;This module is used to manage routes.</p&amp;">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Router">
 <meta property="og:url" content="http://hexo.io/api/classes/Router.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="<p>This module is used to manage routes.</p>">
+<meta property="og:description" content="<p&amp;This module is used to manage routes.</p&amp;">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Router">
-<meta name="twitter:description" content="<p>This module is used to manage routes.</p>">
+<meta name="twitter:description" content="<p&amp;This module is used to manage routes.</p&amp;">
 <meta name="twitter:site" content="@hexojs">
 <meta property="fb:admins" content="100000247608790">
 
@@ -101,7 +101,7 @@
     <div class="page-content"><header id="api-header">
   <h1 id="api-title">Router Class</h1>
   <div class="api-meta">
-    Defined in <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/core/router.js#L3">lib/core/router.js:3</a>
+    Defined in <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/core/router.js#L3">lib/core/router.js:3</a>
     
       <br>Extends <span class="api-item-type"><a href="http://nodejs.org/api/events.html">EventEmitter</a></span>
     
@@ -129,7 +129,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/core/router.js#L3">lib/core/router.js:3</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/core/router.js#L3">lib/core/router.js:3</a>
   </div>
   
   <div class="api-item-entry">
@@ -161,7 +161,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/core/router.js#L23">lib/core/router.js:23</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/core/router.js#L23">lib/core/router.js:23</a>
   </div>
   
   <div class="api-item-entry">
@@ -216,13 +216,15 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/core/router.js#L48">lib/core/router.js:48</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/core/router.js#L48">lib/core/router.js:48</a>
   </div>
   
   <div class="api-item-entry">
     <p>Gets a router.</p>
 <p><strong>Example:</strong></p>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> route = router.get(<span class="string">'index.html'</span>);</div><div class="line"></div><div class="line">route(<span class="function"><span class="keyword">function</span><span class="params">(err, content)</span>{</span></div><div class="line">  <span class="comment">// do something...</span></div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> route = router.get(<span class="string">'index.html'</span>);</div><div class="line"></div><div class="line">route(<span class="function"><span class="keyword">function</span><span class="params">(err, content)</span></span>{</div><div class="line">  <span class="comment">// do something...</span></div><div class="line">});</div></pre></figure>
+
+
     
       <h4 class="api-item-subtitle">Parameters</h4>
       <ul>
@@ -264,7 +266,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/core/router.js#L127">lib/core/router.js:127</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/core/router.js#L127">lib/core/router.js:127</a>
   </div>
   
   <div class="api-item-entry">
@@ -303,16 +305,18 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/core/router.js#L70">lib/core/router.js:70</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/core/router.js#L70">lib/core/router.js:70</a>
   </div>
   
   <div class="api-item-entry">
     <p>Sets a router.</p>
 <p>You can use either a function:</p>
-<figure class="highlight"><pre><div class="line">router.<span class="keyword">set</span>(<span class="string">'index.html'</span>, <span class="function"><span class="keyword">function</span><span class="params">(callback)</span>{</span></div><div class="line">  fs.readFile(<span class="string">'index.txt'</span>, <span class="function"><span class="keyword">function</span><span class="params">(err, content)</span>{</span></div><div class="line">    <span class="keyword">if</span> (err) <span class="keyword">return</span> callback(err);</div><div class="line"></div><div class="line">    callback(<span class="literal">null</span>, content);</div><div class="line">  });</div><div class="line">});</div></pre></figure>
+<figure class="highlight"><pre><div class="line">router.set(<span class="string">'index.html'</span>, <span class="function"><span class="keyword">function</span><span class="params">(callback)</span></span>{</div><div class="line">  fs.readFile(<span class="string">'index.txt'</span>, <span class="function"><span class="keyword">function</span><span class="params">(err, content)</span></span>{</div><div class="line">    <span class="keyword">if</span> (err) <span class="keyword">return</span> <span class="keyword">callback</span>(err);</div><div class="line"></div><div class="line">    <span class="keyword">callback</span>(<span class="literal">null</span>, content);</div><div class="line">  });</div><div class="line">});</div></pre></figure>
 
 <p>or a string:</p>
-<figure class="highlight"><pre><div class="line">router.<span class="operator"><span class="keyword">set</span>(<span class="string">'foo.html'</span>, <span class="string">'foo'</span>);</span></div></pre></figure>
+<figure class="highlight"><pre><div class="line">router.<span class="keyword">set</span>(<span class="string">'foo.html'</span>, <span class="string">'foo'</span>);</div></pre></figure>
+
+
     
       <h4 class="api-item-subtitle">Parameters</h4>
       <ul>
@@ -355,7 +359,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/core/router.js#L13">lib/core/router.js:13</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/core/router.js#L13">lib/core/router.js:13</a>
   </div>
   
   <div class="api-item-entry">
@@ -386,7 +390,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/core/router.js#L140">lib/core/router.js:140</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/core/router.js#L140">lib/core/router.js:140</a>
   </div>
   
   <div class="api-item-entry">
@@ -425,7 +429,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/core/router.js#L114">lib/core/router.js:114</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/core/router.js#L114">lib/core/router.js:114</a>
   </div>
   
   <div class="api-item-entry">

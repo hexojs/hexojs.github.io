@@ -170,13 +170,13 @@ Inserts quotes with author, source and title in post">
 <figure class="highlight"><pre>{% codeblock %}<br>alert(‘Hello World!’);<br>{% endcodeblock %}<br></pre></figure>
 
 
-<figure class="highlight"><pre><div class="line"><span class="function">alert(<span class="string">'Hello World!'</span>)</span>;</div></pre></figure>
+<figure class="highlight"><pre><div class="line">alert(<span class="string">'Hello World!'</span>);</div></pre></figure>
 
 <p><strong>Specify language</strong></p>
 <figure class="highlight"><pre>{% codeblock lang:objc %}<br>[rectangle setX: 10 y: 10 width: 20 height: 20];<br>{% endcodeblock %}<br></pre></figure>
 
 
-<figure class="highlight objc"><pre><div class="line"><span class="title">[rectangle setX: 10 y: 10 width: 20 height: 20]</span><span class="comment">;</span></div></pre></figure>
+<figure class="highlight objc"><pre><div class="line">[rectangle setX: <span class="number">10</span> y: <span class="number">10</span> width: <span class="number">20</span> height: <span class="number">20</span>];</div></pre></figure>
 
 <p><strong>Add caption to code block</strong></p>
 <figure class="highlight"><pre>{% codeblock Array.map %}<br>array.map(callback[, thisArg])<br>{% endcodeblock %}<br></pre></figure>
@@ -189,7 +189,7 @@ Inserts quotes with author, source and title in post">
 </em>.compact([0, 1, false, 2, ‘’, 3]);<br>=&gt; [1, 2, 3]<br>{% endcodeblock %}<br></pre></figure>
 
 
-<figure class="highlight"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="external">Underscore.js</a></figcaption><pre><div class="line">_.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="keyword">false</span>, <span class="number">2</span>, <span class="string">''</span>, <span class="number">3</span>]);</div><div class="line">=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</div></pre></figure>
+<figure class="highlight"><figcaption><span>_.compact</span><a href="http://underscorejs.org/#compact" target="_blank" rel="external">Underscore.js</a></figcaption><pre><div class="line"><span class="number">_</span>.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="keyword">false</span>, <span class="number">2</span>, <span class="string">''</span>, <span class="number">3</span>]);</div><div class="line"><span class="output"><span class="status">=&gt;</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]</span></div></pre></figure>
 
 <h2 id="Backtick_Code_Block">Backtick Code Block</h2>
 <p>This plugin is same as code block, but in backtick style.</p>

@@ -132,7 +132,7 @@ Before Hexo 2.8, a">
 <figure class="highlight bash"><pre><div class="line">$ hexo publish [layout] &lt;filename&gt;</div></pre></figure>
 
 <p>A new API <code>post.publish</code> was added to help you publish drafts more easily.</p>
-<figure class="highlight js"><pre><div class="line">hexo.post.publish({slug: <span class="string">'hello-world'</span>, layout: <span class="string">'post'</span>}, <span class="function"><span class="keyword">function</span><span class="params">(err, target)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.post.publish({slug: <span class="string">'hello-world'</span>, layout: <span class="string">'post'</span>}, <span class="function"><span class="keyword">function</span><span class="params">(err, target)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <h2 id="Permalink">Permalink</h2>
 <p>File name and permalink now share a more universal variable system. Every variables in file name can also be read in permalink. Here’s a config for example:</p>
@@ -149,7 +149,9 @@ Before Hexo 2.8, a">
 <figure class="highlight bash"><pre><div class="line">$ hexo new <span class="string">"Hello World"</span> --lang en</div><div class="line"><span class="comment"># =&gt; This post will be saved to source/_posts/en/Hello-World.md</span></div><div class="line"><span class="comment"># =&gt; URL: http://localhost:4000/en/Hello-World/</span></div><div class="line"></div><div class="line">$ hexo new <span class="string">"你好世界"</span> --lang tw</div><div class="line"><span class="comment"># =&gt; This post will be saved to source/_posts/tw/你好世界.md</span></div><div class="line"><span class="comment"># =&gt; URL: http://localhost:4000/tw/你好世界/</span></div></pre></figure>
 
 <p>You can define the default value of permalink variables in <code>permalink_defaults</code> setting. For example, we define the defualt language as English.</p>
-<figure class="highlight yaml"><pre><div class="line"><span class="label">permalink_defaults:</span></div><div class="line">  lang: en</div></pre></figure>
+<figure class="highlight yaml"><pre><div class="line">permalink_default<span class="variable">s:</span></div><div class="line">  <span class="keyword">lan</span><span class="variable">g:</span> <span class="keyword">en</span></div></pre></figure>
+
+
     </div>
   
   

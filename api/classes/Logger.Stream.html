@@ -25,21 +25,21 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  <meta name="description" content="<p>Logger stream.</p>
-<p>This is an abstract class. Every logger stream should inherit this class and implement <code>_write</code> method. For example:</p>
-<figure class="highlight js"><pre><div clas">
+  <meta name="description" content="<p&amp;Logger stream.</p&amp;
+<p&amp;This is an abstract class. Every logger stream should inherit this class and implement <code&amp;_write</code&amp; method. For example:</p&amp;
+<figure class='highlight js'&amp;<pre&amp;<div clas">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Logger.Stream">
 <meta property="og:url" content="http://hexo.io/api/classes/Logger.Stream.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="<p>Logger stream.</p>
-<p>This is an abstract class. Every logger stream should inherit this class and implement <code>_write</code> method. For example:</p>
-<figure class="highlight js"><pre><div clas">
+<meta property="og:description" content="<p&amp;Logger stream.</p&amp;
+<p&amp;This is an abstract class. Every logger stream should inherit this class and implement <code&amp;_write</code&amp; method. For example:</p&amp;
+<figure class='highlight js'&amp;<pre&amp;<div clas">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Logger.Stream">
-<meta name="twitter:description" content="<p>Logger stream.</p>
-<p>This is an abstract class. Every logger stream should inherit this class and implement <code>_write</code> method. For example:</p>
-<figure class="highlight js"><pre><div clas">
+<meta name="twitter:description" content="<p&amp;Logger stream.</p&amp;
+<p&amp;This is an abstract class. Every logger stream should inherit this class and implement <code&amp;_write</code&amp; method. For example:</p&amp;
+<figure class='highlight js'&amp;<pre&amp;<div clas">
 <meta name="twitter:site" content="@hexojs">
 <meta property="fb:admins" content="100000247608790">
 
@@ -107,7 +107,7 @@
     <div class="page-content"><header id="api-header">
   <h1 id="api-title">Logger.Stream Class</h1>
   <div class="api-meta">
-    Defined in <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/logger/stream.js#L3">lib/logger/stream.js:3</a>
+    Defined in <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/logger/stream.js#L3">lib/logger/stream.js:3</a>
     
     
   </div>
@@ -117,7 +117,9 @@
   <h2 class="api-section-title">Description</h2>
   <p>Logger stream.</p>
 <p>This is an abstract class. Every logger stream should inherit this class and implement <code>_write</code> method. For example:</p>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> CustomStream = <span class="function"><span class="keyword">function</span><span class="params">(logger, options)</span>{</span></div><div class="line">  Stream.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</div><div class="line">};</div><div class="line"></div><div class="line">CustomStream.prototype.__proto__ = Stream.prototype;</div><div class="line"></div><div class="line">CustomStream.prototype._write = <span class="function"><span class="keyword">function</span><span class="params">(data)</span>{</span></div><div class="line">  <span class="comment">//</span></div><div class="line">};</div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> CustomStream = <span class="function"><span class="keyword">function</span><span class="params">(logger, options)</span></span>{</div><div class="line">  Stream.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</div><div class="line">};</div><div class="line"></div><div class="line">CustomStream.prototype.__proto__ = Stream.prototype;</div><div class="line"></div><div class="line">CustomStream.prototype._write = <span class="function"><span class="keyword">function</span><span class="params">(data)</span></span>{</div><div class="line">  <span class="comment">//</span></div><div class="line">};</div></pre></figure>
+
+
   
     <h2 class="api-section-title">Constructor</h2>
     <div id="constructor" class="api-item constructor public">
@@ -136,13 +138,15 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/logger/stream.js#L3">lib/logger/stream.js:3</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/logger/stream.js#L3">lib/logger/stream.js:3</a>
   </div>
   
   <div class="api-item-entry">
     <p>Logger stream.</p>
 <p>This is an abstract class. Every logger stream should inherit this class and implement <code>_write</code> method. For example:</p>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> CustomStream = <span class="function"><span class="keyword">function</span><span class="params">(logger, options)</span>{</span></div><div class="line">  Stream.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</div><div class="line">};</div><div class="line"></div><div class="line">CustomStream.prototype.__proto__ = Stream.prototype;</div><div class="line"></div><div class="line">CustomStream.prototype._write = <span class="function"><span class="keyword">function</span><span class="params">(data)</span>{</span></div><div class="line">  <span class="comment">//</span></div><div class="line">};</div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> CustomStream = <span class="function"><span class="keyword">function</span><span class="params">(logger, options)</span></span>{</div><div class="line">  Stream.apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</div><div class="line">};</div><div class="line"></div><div class="line">CustomStream.prototype.__proto__ = Stream.prototype;</div><div class="line"></div><div class="line">CustomStream.prototype._write = <span class="function"><span class="keyword">function</span><span class="params">(data)</span></span>{</div><div class="line">  <span class="comment">//</span></div><div class="line">};</div></pre></figure>
+
+
     
       <h4 class="api-item-subtitle">Parameters</h4>
       <ul>
@@ -186,7 +190,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/logger/stream.js#L51">lib/logger/stream.js:51</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/logger/stream.js#L51">lib/logger/stream.js:51</a>
   </div>
   
   <div class="api-item-entry">
@@ -227,7 +231,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/logger/stream.js#L31">lib/logger/stream.js:31</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/logger/stream.js#L31">lib/logger/stream.js:31</a>
   </div>
   
   <div class="api-item-entry">

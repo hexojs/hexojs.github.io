@@ -133,6 +133,8 @@ languag">
 <p>You can get the localized string in templates from <code>__</code> and <code>_p</code> helper. The former is for common usage and the letter is for plural strings. You can even use <a href="https://github.com/alexei/sprintf.js" target="_blank" rel="external">printf format</a>. For example:</p>
 <figure class="highlight yaml"><figcaption><span>default.yml</span></figcaption><pre><div class="line">index:</div><div class="line">  title: Home</div><div class="line">  <span class="built_in">add</span>: Add</div><div class="line">  video:</div><div class="line">    <span class="constant">zero</span>: No videos</div><div class="line">    <span class="constant">one</span>: One video</div><div class="line">    other: %d videos</div></pre></figure>
 
+
+
 <figure class="highlight js"><pre><div class="line">&lt;%= __(<span class="string">'index.title'</span>) %&gt;</div><div class="line"><span class="comment">// Home</span></div><div class="line"></div><div class="line">&lt;%= _p(<span class="string">'index.video'</span>, <span class="number">3</span>) %&gt;</div><div class="line"><span class="comment">// 3 videos</span></div></pre></figure>
 
 <h3 id="layout">layout</h3>
@@ -198,6 +200,8 @@ languag">
 <p>Layout wraps a template to another layout template. A layout must contain <code>&lt;%- body %&gt;</code> so that it can show the contents of the template. For example:</p>
 <figure class="highlight html"><figcaption><span>index.ejs</span></figcaption><pre><div class="line">index</div></pre></figure>
 
+
+
 <figure class="highlight html"><figcaption><span>layout.ejs</span></figcaption><pre><div class="line"><span class="doctype">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="title">html</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="title">body</span>&gt;</span><span class="vbscript">&lt;%- body %&gt;</span><span class="tag">&lt;/<span class="title">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="title">html</span>&gt;</span></div></pre></figure>
 
 <p>yields:</p>
@@ -207,6 +211,8 @@ languag">
 <h2 id="Partial">Partial</h2>
 <p>Partial helps you share components across templates. For example:</p>
 <figure class="highlight html"><figcaption><span>_partial/header.ejs</span></figcaption><pre><div class="line"><span class="tag">&lt;<span class="title">header</span>&gt;</span><span class="tag">&lt;/<span class="title">header</span>&gt;</span></div></pre></figure>
+
+
 
 <figure class="highlight html"><figcaption><span>index.ejs</span></figcaption><pre><div class="line"><span class="vbscript">&lt;%- partial(<span class="comment">'_partial/header') %&gt;</span></span></div><div class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"content"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></div></pre></figure>
 
@@ -221,7 +227,7 @@ languag">
 <p>If your theme is too complicated and too may source files needed to be generate. Generation performance may decrease a lot. Besides simplifying your theme, you can also try <strong>Fragment Caching</strong> introduced in Hexo 2.7.</p>
 <p>This feature is stolen from <a href="http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching" target="_blank" rel="external">Ruby on Rails</a>. It saves the contents within a fragment and serves the cache when the next request comes in. It can reduce database queries and make generation faster.</p>
 <p>It can be used in header, footer, sidebar or static contents that won’t be changed in your templates. For example:</p>
-<figure class="highlight js"><pre><div class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span></div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</div><div class="line">});</div></pre></figure>
 
 <p>It would be easier if you use partial:</p>
 <figure class="highlight js"><pre><div class="line">&lt;%- partial(<span class="string">'header'</span>, {}, {cache: <span class="literal">true</span>});</div></pre></figure>

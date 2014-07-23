@@ -25,15 +25,15 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  <meta name="description" content="<p>Post functions.</p>">
+  <meta name="description" content="<p&amp;Post functions.</p&amp;">
 <meta property="og:type" content="website">
 <meta property="og:title" content="post">
 <meta property="og:url" content="http://hexo.io/api/classes/post.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="<p>Post functions.</p>">
+<meta property="og:description" content="<p&amp;Post functions.</p&amp;">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="post">
-<meta name="twitter:description" content="<p>Post functions.</p>">
+<meta name="twitter:description" content="<p&amp;Post functions.</p&amp;">
 <meta name="twitter:site" content="@hexojs">
 <meta property="fb:admins" content="100000247608790">
 
@@ -101,7 +101,7 @@
     <div class="page-content"><header id="api-header">
   <h1 id="api-title">post Class</h1>
   <div class="api-meta">
-    Defined in <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/post/index.js#L1">lib/post/index.js:1</a>
+    Defined in <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/post/index.js#L1">lib/post/index.js:1</a>
     
     
   </div>
@@ -131,7 +131,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/post/create.js#L17">lib/post/create.js:17</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/post/create.js#L17">lib/post/create.js:17</a>
   </div>
   
   <div class="api-item-entry">
@@ -189,7 +189,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/post/load.js#L4">lib/post/load.js:4</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/post/load.js#L4">lib/post/load.js:4</a>
   </div>
   
   <div class="api-item-entry">
@@ -247,7 +247,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/post/publish.js#L9">lib/post/publish.js:9</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/post/publish.js#L9">lib/post/publish.js:9</a>
   </div>
   
   <div class="api-item-entry">
@@ -286,7 +286,7 @@
     
       Defined in
     
-    <a href="https://github.com/tommy351/hexo/blob/2.8.0/lib/post/render.js#L11">lib/post/render.js:11</a>
+    <a href="https://github.com/tommy351/hexo/blob/2.8.1/lib/post/render.js#L11">lib/post/render.js:11</a>
   </div>
   
   <div class="api-item-entry">
@@ -294,9 +294,9 @@
 <p>Rendering flow:</p>
 <ul>
 <li>Compiles with Swig</li>
-<li>Runs pre-filter</li>
+<li>Runs before_post_render filter</li>
 <li>Compiles with Markdown (or other render engines, depends on the extension name of source files)</li>
-<li>Runs post-filter</li>
+<li>Runs after_post_render filter</li>
 </ul>
 
     

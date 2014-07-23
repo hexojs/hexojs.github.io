@@ -233,7 +233,7 @@ Returns a url with the root path prefixed. You should use this hel">
 <figure class="highlight js"><pre><div class="line">&lt;%- fragment_cache(id, fn);</div></pre></figure>
 
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><pre><div class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span></div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</div><div class="line">}) %&gt;</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</div><div class="line">}) %&gt;</div></pre></figure>
 
 <h3 id="tagcloud">tagcloud</h3>
 <p>Inserts a tag cloud.</p>
@@ -683,11 +683,16 @@ Returns a url with the root path prefixed. You should use this hel">
 <td>Class name of tags list.</td>
 <td>tag</td>
 </tr>
+<tr>
+<td><code>amount</code></td>
+<td>The number of tags to display (0 = unlimited)</td>
+<td>0</td>
+</tr>
 </tbody>
 </table>
 <h3 id="list_archives">list_archives</h3>
 <p>Inserts a list of archives.</p>
-<figure class="highlight js"><pre><div class="line">&lt;%- list_archive([options]) %&gt;</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">&lt;%- list_archives([options]) %&gt;</div></pre></figure>
 
 <table>
 <thead>
@@ -949,7 +954,7 @@ Returns a url with the root path prefixed. You should use this hel">
 
       </div>
       <footer id="page-footer">
-        <time id="page-footer-updated" datetime="2014-07-13T14:33:34.000Z" itemprop="dateModified">Last updated: Jul 13 2014</time>
+        <time id="page-footer-updated" datetime="2014-07-23T15:00:49.000Z" itemprop="dateModified">Last updated: Jul 23 2014</time>
         <a href="pagination.html" id="page-footer-prev" title="Pagination">Prev</a><a href="plugins.html" id="page-footer-next" title="Plugins">Next</a>
       </footer>
       

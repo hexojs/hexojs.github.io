@@ -130,7 +130,7 @@ If your code is simple, it’s recommended to use a script.">
 <h2 id="Generator">Generator</h2>
 <p>Generators are used to generate static files based on processed source files.</p>
 <h3 id="Syntax">Syntax</h3>
-<figure class="highlight js"><pre><div class="line">hexo.extend.generator.register(name, <span class="function"><span class="keyword">function</span><span class="params">(locals, render, callback)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.generator.register(name, <span class="function"><span class="keyword">function</span><span class="params">(locals, render, callback)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <table>
 <thead>
@@ -203,12 +203,12 @@ If your code is simple, it’s recommended to use a script.">
 <figure class="highlight js"><pre><div class="line">hexo.route.set(<span class="string">'feed.xml'</span>, content);</div></pre></figure>
 
 <h3 id="Example">Example</h3>
-<figure class="highlight js"><pre><div class="line">hexo.extend.generator.register(<span class="function"><span class="keyword">function</span><span class="params">(locals, render, callback)</span>{</span></div><div class="line">  render(<span class="string">'archive.html'</span>, [<span class="string">'archive'</span>, <span class="string">'index'</span>], locals);</div><div class="line">  callback();</div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.generator.register(<span class="function"><span class="keyword">function</span><span class="params">(locals, render, callback)</span></span>{</div><div class="line">  render(<span class="string">'archive.html'</span>, [<span class="string">'archive'</span>, <span class="string">'index'</span>], locals);</div><div class="line">  callback();</div><div class="line">});</div></pre></figure>
 
 <h2 id="Renderer">Renderer</h2>
 <p>Renderers are used to render contents. You can find available renderers in <a href="https://github.com/hexojs/hexo/wiki/Plugins#renderer" target="_blank" rel="external">plugin list</a>.</p>
 <h3 id="Syntax-1">Syntax</h3>
-<figure class="highlight js"><pre><div class="line">hexo.extend.renderer.register(name, output, <span class="function"><span class="keyword">function</span><span class="params">(data, options, callback)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">}, sync);</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.renderer.register(name, output, <span class="function"><span class="keyword">function</span><span class="params">(data, options, callback)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">}, sync);</div></pre></figure>
 
 <table>
 <thead>
@@ -261,16 +261,16 @@ If your code is simple, it’s recommended to use a script.">
 </table>
 <h3 id="Example-1">Example</h3>
 <p><strong>Sync mode:</strong></p>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> ejs = <span class="built_in">require</span>(<span class="string">'ejs'</span>);</div><div class="line"></div><div class="line">hexo.extend.renderer.register(<span class="string">'ejs'</span>, <span class="string">'html'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, options)</span>{</span></div><div class="line">  options.filename = data.path;</div><div class="line">  <span class="keyword">return</span> ejs.render(data.text, options);</div><div class="line">}, <span class="literal">true</span>);</div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> ejs = <span class="built_in">require</span>(<span class="string">'ejs'</span>);</div><div class="line"></div><div class="line">hexo.extend.renderer.register(<span class="string">'ejs'</span>, <span class="string">'html'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, options)</span></span>{</div><div class="line">  options.filename = data.path;</div><div class="line">  <span class="keyword">return</span> ejs.render(data.text, options);</div><div class="line">}, <span class="literal">true</span>);</div></pre></figure>
 
 <p><strong>Async mode:</strong></p>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> stylus = <span class="built_in">require</span>(<span class="string">'stylus'</span>);</div><div class="line"></div><div class="line">hexo.extend.renderer.register(<span class="string">'styl'</span>, <span class="string">'css'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, options, callback)</span>{</span></div><div class="line">  stylus(data.text).set(<span class="string">'filename'</span>, data.path).render(callback);</div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> stylus = <span class="built_in">require</span>(<span class="string">'stylus'</span>);</div><div class="line"></div><div class="line">hexo.extend.renderer.register(<span class="string">'styl'</span>, <span class="string">'css'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, options, callback)</span></span>{</div><div class="line">  stylus(data.text).set(<span class="string">'filename'</span>, data.path).render(callback);</div><div class="line">});</div></pre></figure>
 
 <h2 id="Helper">Helper</h2>
 <p>Helpers are used in templates to help you insert snippets quickly. It’s recommended to put complicated or often used code in helpers instead of templates. (Don’t repeat yourself, right?)</p>
 <h3 id="Syntax-2">Syntax</h3>
 <p>You can get all local variables from <code>this</code>.</p>
-<figure class="highlight js"><pre><div class="line">hexo.extend.helper.register(name, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.helper.register(name, <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <table>
 <thead>
@@ -291,14 +291,16 @@ If your code is simple, it’s recommended to use a script.">
 </tbody>
 </table>
 <h3 id="Example-2">Example</h3>
-<figure class="highlight js"><pre><div class="line">hexo.extend.helper.register(<span class="string">'js'</span>, <span class="function"><span class="keyword">function</span><span class="params">(path)</span>{</span></div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;script type="text/javascript" src="'</span> + path + <span class="string">'"&gt;&lt;/script&gt;'</span>;</div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.helper.register(<span class="string">'js'</span>, <span class="function"><span class="keyword">function</span><span class="params">(path)</span></span>{</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;script type="text/javascript" src="'</span> + path + <span class="string">'"&gt;&lt;/script&gt;'</span>;</div><div class="line">});</div></pre></figure>
+
+
 
 <figure class="highlight js"><pre><div class="line">&lt;%- js(<span class="string">'script.js'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;</span></div></pre></figure>
 
 <h2 id="Deployer">Deployer</h2>
 <p>Deployer plugin helps you deploy your site on web without complicated commands.</p>
 <h3 id="Syntax-3">Syntax</h3>
-<figure class="highlight js"><pre><div class="line">hexo.extend.deployer.register(name, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.deployer.register(name, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <table>
 <thead>
@@ -346,7 +348,7 @@ If your code is simple, it’s recommended to use a script.">
 
 
 <h3 id="Syntax-4">Syntax</h3>
-<figure class="highlight js"><pre><div class="line">hexo.extend.processor.register(rule, <span class="function"><span class="keyword">function</span><span class="params">(file, callback)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.processor.register(rule, <span class="function"><span class="keyword">function</span><span class="params">(file, callback)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <table>
 <thead>
@@ -466,7 +468,7 @@ If your code is simple, it’s recommended to use a script.">
 <h2 id="Tag">Tag</h2>
 <p>Tags are used in posts to help your insert snippets quickly.</p>
 <h3 id="Syntax-5">Syntax</h3>
-<figure class="highlight js"><pre><div class="line">hexo.extend.tag.register(name, <span class="function"><span class="keyword">function</span><span class="params">(args, content, options)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">}, options);</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.tag.register(name, <span class="function"><span class="keyword">function</span><span class="params">(args, content, options)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">}, options);</div></pre></figure>
 
 <table>
 <thead>
@@ -537,15 +539,15 @@ If your code is simple, it’s recommended to use a script.">
 </table>
 <h3 id="Example-3">Example</h3>
 <p><strong>Without end tag:</strong> Inserts a Youtube video.</p>
-<figure class="highlight js"><pre><div class="line">hexo.extend.tag.register(<span class="string">'youtube'</span>, <span class="function"><span class="keyword">function</span><span class="params">(args, content, options)</span>{</span></div><div class="line">  <span class="keyword">var</span> id = args[<span class="number">0</span>];</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;div class="video-container"&gt;&lt;iframe width="560" height="315" src="http://www.youtube.com/embed/'</span> + id + <span class="string">'" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;'</span>;</div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.tag.register(<span class="string">'youtube'</span>, <span class="function"><span class="keyword">function</span><span class="params">(args, content, options)</span></span>{</div><div class="line">  <span class="keyword">var</span> id = args[<span class="number">0</span>];</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;div class="video-container"&gt;&lt;iframe width="560" height="315" src="http://www.youtube.com/embed/'</span> + id + <span class="string">'" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;'</span>;</div><div class="line">});</div></pre></figure>
 
 <p><strong>With end tag:</strong> Inserts a pull quote.</p>
-<figure class="highlight js"><pre><div class="line">hexo.extend.tag.register(<span class="string">'pullquote'</span>, <span class="function"><span class="keyword">function</span><span class="params">(args, content, options)</span>{</span></div><div class="line">  <span class="keyword">var</span> className = args.length ? <span class="string">' '</span> + args.join(<span class="string">' '</span>) : <span class="string">''</span>;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;blockquote class="pullquote'</span> + className + <span class="string">'"&gt;'</span> + content + <span class="string">'&lt;/blockquote&gt;'</span>;</div><div class="line">}, <span class="literal">true</span>);</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.tag.register(<span class="string">'pullquote'</span>, <span class="function"><span class="keyword">function</span><span class="params">(args, content, options)</span></span>{</div><div class="line">  <span class="keyword">var</span> className = args.length ? <span class="string">' '</span> + args.join(<span class="string">' '</span>) : <span class="string">''</span>;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;blockquote class="pullquote'</span> + className + <span class="string">'"&gt;'</span> + content + <span class="string">'&lt;/blockquote&gt;'</span>;</div><div class="line">}, <span class="literal">true</span>);</div></pre></figure>
 
 <h2 id="Console">Console</h2>
 <p>Consoles are the interface between Hexo and you.</p>
 <h3 id="Syntax-6">Syntax</h3>
-<figure class="highlight js"><pre><div class="line">hexo.extend.console.register(name, desc, options, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.console.register(name, desc, options, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <table>
 <thead>
@@ -616,12 +618,12 @@ If your code is simple, it’s recommended to use a script.">
 </tbody>
 </table>
 <h3 id="Example-4">Example</h3>
-<figure class="highlight js"><pre><div class="line">hexo.extend.console.register(<span class="string">'config'</span>, <span class="string">'Display configuration'</span>, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span>{</span></div><div class="line">  console.log(hexo.config);</div><div class="line">  callback();</div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.console.register(<span class="string">'config'</span>, <span class="string">'Display configuration'</span>, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span></span>{</div><div class="line">  <span class="built_in">console</span>.log(hexo.config);</div><div class="line">  callback();</div><div class="line">});</div></pre></figure>
 
 <h2 id="Migrator">Migrator</h2>
 <p>Migrators are used to migrate from other system to Hexo.</p>
 <h3 id="Syntax-7">Syntax</h3>
-<figure class="highlight js"><pre><div class="line">hexo.extend.migrator.register(name, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.migrator.register(name, <span class="function"><span class="keyword">function</span><span class="params">(args, callback)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <table>
 <thead>
@@ -663,7 +665,7 @@ If your code is simple, it’s recommended to use a script.">
 <h2 id="Filter">Filter</h2>
 <p>Filters are used to modify certain data. Hexo passes data through filters and you can modify everything as long as it’s provided. This concept is stolen from <a href="http://codex.wordpress.org/Plugin_API#Filters" target="_blank" rel="external">WordPress</a>. Filter API is rewritten in 2.6 and more filter types are added.</p>
 <h3 id="Syntax-8">Syntax</h3>
-<figure class="highlight js"><pre><div class="line">hexo.extend.filter.register(type, <span class="function"><span class="keyword">function</span><span class="params">()</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">}, priority);</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.filter.register(type, <span class="function"><span class="keyword">function</span><span class="params">()</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">}, priority);</div></pre></figure>
 
 <table>
 <thead>
@@ -690,23 +692,23 @@ If your code is simple, it’s recommended to use a script.">
 <h3 id="Post_Filter">Post Filter</h3>
 <p><strong>before_post_render</strong></p>
 <p>Runs before posts are rendered by Markdown. For example, transform a title into titlecase:</p>
-<figure class="highlight js"><pre><div class="line">hexo.extend.filter.register(<span class="string">'before_post_render'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, callback)</span>{</span></div><div class="line">  data.title = hexo.util.titlecase(data.title);</div><div class="line">  callback(<span class="literal">null</span>, data);</div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.filter.register(<span class="string">'before_post_render'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, callback)</span></span>{</div><div class="line">  data.title = hexo.util.titlecase(data.title);</div><div class="line">  callback(<span class="literal">null</span>, data);</div><div class="line">});</div></pre></figure>
 
 <p><strong>after_post_render</strong></p>
 <p>Runs after posts are rendered by Markdown. For example, replace <code>@username</code> to a Twitter profile link.</p>
-<figure class="highlight js"><pre><div class="line">hexo.extend.filter.register(<span class="string">'after_post_render'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, callback)</span>{</span></div><div class="line">  data.content = data.content.replace(<span class="regexp">/@(\d+)/</span>, <span class="string">'&lt;a href="http://twitter.com/$1"&gt;#$1&lt;/a&gt;'</span>);</div><div class="line">  callback(<span class="literal">null</span>, data);</div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.filter.register(<span class="string">'after_post_render'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, callback)</span></span>{</div><div class="line">  data.content = data.content.replace(<span class="regexp">/@(\d+)/</span>, <span class="string">'&lt;a href="http://twitter.com/$1"&gt;#$1&lt;/a&gt;'</span>);</div><div class="line">  callback(<span class="literal">null</span>, data);</div><div class="line">});</div></pre></figure>
 
 <p><strong>new_post_path</strong></p>
 <p>Runs when creating a post. Used to determine the file path of a post.</p>
-<figure class="highlight js"><pre><div class="line">hexo.extend.filter.register(<span class="string">'new_post_path'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, replace, callback)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.filter.register(<span class="string">'new_post_path'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data, replace, callback)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <p><strong>post_permalink</strong></p>
 <p>Used to determine the permalink of a post.</p>
-<figure class="highlight js"><pre><div class="line">hexo.extend.filter.register(<span class="string">'post_permalink'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.filter.register(<span class="string">'post_permalink'</span>, <span class="function"><span class="keyword">function</span><span class="params">(data)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">});</div></pre></figure>
 
 <p><strong>server_middleware</strong></p>
 <p>Adds a middleware to the server. <code>app</code> is an instance of the <a href="https://github.com/senchalabs/connect" target="_blank" rel="external">Connect</a> server.</p>
-<figure class="highlight js"><pre><div class="line">hexo.extend.filter.register(<span class="string">'server_middleware'</span>, <span class="function"><span class="keyword">function</span><span class="params">(app)</span>{</span></div><div class="line">  app.use(<span class="function"><span class="keyword">function</span><span class="params">(req, res, next)</span>{</span></div><div class="line">    res.setHeader(<span class="string">'X-Powered-By'</span>, <span class="string">'Hexo'</span>);</div><div class="line">    next();</div><div class="line">  });</div><div class="line">});</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">hexo.extend.filter.register(<span class="string">'server_middleware'</span>, <span class="function"><span class="keyword">function</span><span class="params">(app)</span></span>{</div><div class="line">  app.use(<span class="function"><span class="keyword">function</span><span class="params">(req, res, next)</span></span>{</div><div class="line">    res.setHeader(<span class="string">'X-Powered-By'</span>, <span class="string">'Hexo'</span>);</div><div class="line">    next();</div><div class="line">  });</div><div class="line">});</div></pre></figure>
 
 
       </div>

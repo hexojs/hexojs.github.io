@@ -25,21 +25,21 @@
   <link href="//fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet" type="text/css">
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
   <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  <meta name="description" content="<p>The basic schema type constructor.</p>
-<p>This is an abstract class. Every schema type should inherit this class. For example:</p>
-<figure class="highlight js"><pre><div class="line"><span class="k">
+  <meta name="description" content="<p&amp;The basic schema type constructor.</p&amp;
+<p&amp;This is an abstract class. Every schema type should inherit this class. For example:</p&amp;
+<figure class='highlight js'&amp;<pre&amp;<div class='line'&amp;<span class='k">
 <meta property="og:type" content="website">
 <meta property="og:title" content="SchemaType">
 <meta property="og:url" content="http://hexo.io/api/warehouse/classes/SchemaType.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="<p>The basic schema type constructor.</p>
-<p>This is an abstract class. Every schema type should inherit this class. For example:</p>
-<figure class="highlight js"><pre><div class="line"><span class="k">
+<meta property="og:description" content="<p&amp;The basic schema type constructor.</p&amp;
+<p&amp;This is an abstract class. Every schema type should inherit this class. For example:</p&amp;
+<figure class='highlight js'&amp;<pre&amp;<div class='line'&amp;<span class='k">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SchemaType">
-<meta name="twitter:description" content="<p>The basic schema type constructor.</p>
-<p>This is an abstract class. Every schema type should inherit this class. For example:</p>
-<figure class="highlight js"><pre><div class="line"><span class="k">
+<meta name="twitter:description" content="<p&amp;The basic schema type constructor.</p&amp;
+<p&amp;This is an abstract class. Every schema type should inherit this class. For example:</p&amp;
+<figure class='highlight js'&amp;<pre&amp;<div class='line'&amp;<span class='k">
 <meta name="twitter:site" content="@hexojs">
 <meta property="fb:admins" content="100000247608790">
 
@@ -117,16 +117,16 @@
   <h2 class="api-section-title">Description</h2>
   <p>The basic schema type constructor.</p>
 <p>This is an abstract class. Every schema type should inherit this class. For example:</p>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> SchemaCustom = <span class="function"><span class="keyword">function</span><span class="params">(options)</span>{</span></div><div class="line">  SchemaType.call(<span class="keyword">this</span>, options);</div><div class="line">};</div><div class="line"></div><div class="line">SchemaCustom.__proto__ = SchemaType;</div><div class="line">SchemaCustom.prototype.__proto__ = SchemaType.prototype;</div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> SchemaCustom = <span class="function"><span class="keyword">function</span><span class="params">(options)</span></span>{</div><div class="line">  SchemaType.call(<span class="keyword">this</span>, options);</div><div class="line">};</div><div class="line"></div><div class="line">SchemaCustom.__proto__ = SchemaType;</div><div class="line">SchemaCustom.prototype.__proto__ = SchemaType.prototype;</div></pre></figure>
 
 <p><strong>Query operators</strong></p>
 <p>To add a query operator, adds a method whose name started with <code>q$</code>. For example:</p>
-<figure class="highlight js"><pre><div class="line">SchemaCustom.q$foo = <span class="function"><span class="keyword">function</span><span class="params">(data, value)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">};</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">SchemaCustom.q$foo = <span class="function"><span class="keyword">function</span><span class="params">(data, value)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">};</div></pre></figure>
 
 <p>The <code>data</code> parameter is the data in the database; the <code>value</code> parameter is the value passed to the query operator.<br>The return value should be a boolean indicating whether the data passed the test.</p>
 <p><strong>Update operators</strong></p>
 <p>To add a update operator, adds a method whose name started with <code>u$</code>. For example:</p>
-<figure class="highlight js"><pre><div class="line">SchemaCustom.u$bar = <span class="function"><span class="keyword">function</span><span class="params">(data, value)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">};</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">SchemaCustom.u$bar = <span class="function"><span class="keyword">function</span><span class="params">(data, value)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">};</div></pre></figure>
 
 <p>The <code>data</code> parameter is the data in the database; the <code>value</code> parameter is the value passed to the update operator.<br>The return value will replace the original data.</p>
 
@@ -154,16 +154,16 @@
   <div class="api-item-entry">
     <p>The basic schema type constructor.</p>
 <p>This is an abstract class. Every schema type should inherit this class. For example:</p>
-<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> SchemaCustom = <span class="function"><span class="keyword">function</span><span class="params">(options)</span>{</span></div><div class="line">  SchemaType.call(<span class="keyword">this</span>, options);</div><div class="line">};</div><div class="line"></div><div class="line">SchemaCustom.__proto__ = SchemaType;</div><div class="line">SchemaCustom.prototype.__proto__ = SchemaType.prototype;</div></pre></figure>
+<figure class="highlight js"><pre><div class="line"><span class="keyword">var</span> SchemaCustom = <span class="function"><span class="keyword">function</span><span class="params">(options)</span></span>{</div><div class="line">  SchemaType.call(<span class="keyword">this</span>, options);</div><div class="line">};</div><div class="line"></div><div class="line">SchemaCustom.__proto__ = SchemaType;</div><div class="line">SchemaCustom.prototype.__proto__ = SchemaType.prototype;</div></pre></figure>
 
 <p><strong>Query operators</strong></p>
 <p>To add a query operator, adds a method whose name started with <code>q$</code>. For example:</p>
-<figure class="highlight js"><pre><div class="line">SchemaCustom.q$foo = <span class="function"><span class="keyword">function</span><span class="params">(data, value)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">};</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">SchemaCustom.q$foo = <span class="function"><span class="keyword">function</span><span class="params">(data, value)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">};</div></pre></figure>
 
 <p>The <code>data</code> parameter is the data in the database; the <code>value</code> parameter is the value passed to the query operator.<br>The return value should be a boolean indicating whether the data passed the test.</p>
 <p><strong>Update operators</strong></p>
 <p>To add a update operator, adds a method whose name started with <code>u$</code>. For example:</p>
-<figure class="highlight js"><pre><div class="line">SchemaCustom.u$bar = <span class="function"><span class="keyword">function</span><span class="params">(data, value)</span>{</span></div><div class="line">  <span class="comment">// ...</span></div><div class="line">};</div></pre></figure>
+<figure class="highlight js"><pre><div class="line">SchemaCustom.u$bar = <span class="function"><span class="keyword">function</span><span class="params">(data, value)</span></span>{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">};</div></pre></figure>
 
 <p>The <code>data</code> parameter is the data in the database; the <code>value</code> parameter is the value passed to the update operator.<br>The return value will replace the original data.</p>
 
