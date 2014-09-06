@@ -7,17 +7,7 @@
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/setup.html</loc>
-    <lastmod>2014-09-06T14:31:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hexo.io/docs/configuration.html</loc>
-    <lastmod>2014-09-06T14:31:00.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hexo.io/docs/index.html</loc>
+    <loc>http://hexo.io/docs/writing.html</loc>
     <lastmod>2014-09-06T14:31:00.000Z</lastmod>
   </url>
   
@@ -27,7 +17,17 @@
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/writing.html</loc>
+    <loc>http://hexo.io/docs/configuration.html</loc>
+    <lastmod>2014-09-06T14:31:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/docs/setup.html</loc>
+    <lastmod>2014-09-06T14:31:00.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/docs/index.html</loc>
     <lastmod>2014-09-06T14:31:00.000Z</lastmod>
   </url>
   
@@ -42,7 +42,7 @@
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/permalinks.html</loc>
+    <loc>http://hexo.io/docs/plugins.html</loc>
     <lastmod>2014-07-13T14:33:34.000Z</lastmod>
   </url>
   
@@ -52,17 +52,17 @@
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/generating.html</loc>
-    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://hexo.io/docs/plugins.html</loc>
-    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://hexo.io/docs/drafts.html</loc>
+    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/docs/permalinks.html</loc>
+    <lastmod>2014-07-13T14:33:34.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://hexo.io/docs/generating.html</loc>
     <lastmod>2014-07-13T14:33:34.000Z</lastmod>
   </url>
   
@@ -112,12 +112,12 @@
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/migration.html</loc>
+    <loc>http://hexo.io/docs/tag-plugins.html</loc>
     <lastmod>2014-05-12T06:50:57.000Z</lastmod>
   </url>
   
   <url>
-    <loc>http://hexo.io/docs/tag-plugins.html</loc>
+    <loc>http://hexo.io/docs/migration.html</loc>
     <lastmod>2014-05-12T06:50:57.000Z</lastmod>
   </url>
   
