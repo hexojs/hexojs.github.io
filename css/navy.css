@@ -828,6 +828,11 @@ a.article-title:hover {
 .article-footer-updated {
   font-size: 0.9em;
 }
+.post {
+  max-width: 800px;
+  margin: 0 auto;
+  float: none;
+}
 #plugin-list-header {
   margin: 40px 0;
 }
