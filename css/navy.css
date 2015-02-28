@@ -197,7 +197,7 @@ body {
 #main-nav {
   display: none;
   float: left;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 @media (min-width: 769px) {
   #main-nav {
