@@ -1034,6 +1034,40 @@ a.article-title:hover {
   -ms-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
+.archive-post {
+  padding: 1em 0;
+  border-top: 1px solid #e3e3e3;
+}
+.archive-post:last-child {
+  padding-bottom: 40px;
+}
+.archive-post-link {
+  display: block;
+  color: #444;
+  text-decoration: none;
+  line-height: 1.6em;
+}
+.archive-post-link:before,
+.archive-post-link:after {
+  content: "";
+  display: table;
+}
+.archive-post-link:after {
+  clear: both;
+}
+.archive-post-link:hover {
+  color: #1094e8;
+}
+.archive-post-title {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  float: left;
+  font-weight: bold;
+}
+.archive-post-date {
+  color: #999;
+  float: right;
+  font-size: 0.9em;
+}
 #mobile-nav {
   position: fixed;
   top: 0;
