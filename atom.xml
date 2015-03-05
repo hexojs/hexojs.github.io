@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A fast, simple & powerful blog framework powered by Node.js.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://hexo.io/"/>
-  <updated>2015-03-04T15:20:06.208Z</updated>
+  <updated>2015-03-05T04:44:33.971Z</updated>
   <id>http://hexo.io/</id>
   
   <author>
@@ -15,11 +15,52 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[Hexo 3.0 Released]]></title>
+    <link href="http://hexo.io/news/2015/03/05/hexo-3-0-released/"/>
+    <id>http://hexo.io/news/2015/03/05/hexo-3-0-released/</id>
+    <published>2015-03-05T00:00:00.000Z</published>
+    <updated>2015-03-05T04:44:33.971Z</updated>
+    <content type="html"><![CDATA[<p>Hexo 3.0 has finally come out! After four beta and four RC versions, Hexo 3 become more stable and more powerful. Thanks for the contributors and testers! </p>
+<h2 id="What’s_Changed?">What’s Changed?</h2><p>There’re many improvements in Hexo 3. Better performance, API is easier to use, higher coverage, etc. Here’re some notable changes:</p>
+<ul>
+<li><strong><a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#new-cli" target="_blank" rel="external">New CLI</a></strong>: Command line interface is separated into a stand-alone module: <a href="https://github.com/hexojs/hexo-cli" target="_blank" rel="external">hexo-cli</a></li>
+<li><strong><a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#slimmer-core-module" target="_blank" rel="external">Slimmer Core Module</a></strong>: Generators, deployers and server are also separated from the main module.</li>
+<li><strong><a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#new-generator-api" target="_blank" rel="external">New Generator API</a></strong>: Generator API changed a lot in Hexo 3.</li>
+<li><strong><a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#render-pipeline-changed" target="_blank" rel="external">Include Assets in a Post</a></strong>: Serveral useful tag plugins are added in Hexo 3: <code>post_path</code>, <code>post_link</code>, <code>asset_path</code>, <code>asset_link</code>, <code>asset_img</code>.</li>
+<li><strong><a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#async-tag-plugins" target="_blank" rel="external">Async Tag Plugins</a></strong>: Tag plugins can do async jobs now!</li>
+<li><strong><a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#timezone-support" target="_blank" rel="external">Timezone Support</a></strong>: You can define the timezone of your site now.</li>
+</ul>
+<p>More info: <a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0" target="_blank" rel="external">Breaking Changes in Hexo 3.0</a>, <a href="https://github.com/hexojs/hexo/releases" target="_blank" rel="external">changelog</a></p>
+<h2 id="How_to_Update?">How to Update?</h2><ol>
+<li><p>Modify <code>package.json</code>.</p>
+ <figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  "<span class="attribute">hexo</span>": <span class="value">&#123;</span><br><span class="line">    "<span class="attribute">version</span>": <span class="value"><span class="string">""</span></span><br><span class="line">  </span>&#125;</span><br><span class="line"></span>&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Install <a href="https://github.com/hexojs/hexo-cli" target="_blank" rel="external">hexo-cli</a>. If any error occurred, try to remove hexo first.</p>
+ <figure class="highlight stata"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-<span class="keyword">cli</span> -<span class="keyword">g</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Install Hexo.</p>
+ <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Install plugins. You don’t have to install all the following plugins. It depends on your need.</p>
+ <figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">$ npm <span class="operator"><span class="keyword">install</span> hexo-<span class="keyword">server</span> <span class="comment">--save</span></span><br><span class="line">$ npm <span class="keyword">install</span> hexo-generator-<span class="keyword">index</span> <span class="comment">--save</span></span><br><span class="line">$ npm <span class="keyword">install</span> hexo-generator-archive <span class="comment">--save</span></span><br><span class="line">$ npm <span class="keyword">install</span> hexo-generator-category <span class="comment">--save</span></span><br><span class="line">$ npm <span class="keyword">install</span> hexo-generator-tag <span class="comment">--save</span></span><br><span class="line">$ npm <span class="keyword">install</span> hexo-deployer-git <span class="comment">--save</span></span><br><span class="line">$ npm <span class="keyword">install</span> hexo-deployer-heroku <span class="comment">--save</span></span><br><span class="line">$ npm <span class="keyword">install</span> hexo-deployer-rsync <span class="comment">--save</span></span><br><span class="line">$ npm <span class="keyword">install</span> hexo-deployer-openshift <span class="comment">--save</span></span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Update plugins. Especially generators and filters. Since the API has breaking changes in Hexo 3.</p>
+</li>
+</ol>
+<p>More info: <a href="https://github.com/hexojs/hexo/wiki/Migrating-from-2.x-to-3.0" target="_blank" rel="external">Migration from 2.x to 3.0</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Hexo 3.0 has finally come out! After four beta and four RC versions, Hexo 3 become more stable and more powerful. Thanks for the contribu]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[New Documentation and Registry]]></title>
     <link href="http://hexo.io/news/2015/02/27/new-documentation-and-registry/"/>
     <id>http://hexo.io/news/2015/02/27/new-documentation-and-registry/</id>
     <published>2015-02-27T00:00:00.000Z</published>
-    <updated>2015-03-04T15:20:06.208Z</updated>
+    <updated>2015-03-05T04:44:33.971Z</updated>
     <content type="html"><![CDATA[<p>The Hexo site has just been updated and changed to a brand new theme. The documentation is also updated and more detailed. Some handy features will make your browsing more convenient.</p>
 <h2 id="Official_Registry">Official Registry</h2><p>Besides the new theme, a official registry for plugins and themes finally comes. The registry makes you easier to browse and search plugins. And you can preview themes with screenshots.</p>
 <h3 id="How_to_add_my_plugin/theme_to_the_registry?">How to add my plugin/theme to the registry?</h3><p>See the following articles for more info. Your plugin/theme will be published to the registry once the pull request is merged.</p>
@@ -41,7 +82,7 @@
     <link href="http://hexo.io/news/2014/07/13/hexo-2-8-released/"/>
     <id>http://hexo.io/news/2014/07/13/hexo-2-8-released/</id>
     <published>2014-07-13T00:00:00.000Z</published>
-    <updated>2015-03-04T15:20:06.203Z</updated>
+    <updated>2015-03-05T04:44:33.967Z</updated>
     <content type="html"><![CDATA[<p>Hexo 2.8 was rewritten, brings you better performance and many improvements. The following is the highlights in this version. You can check <a href="https://github.com/hexojs/hexo/releases/tag/2.8.0" target="_blank" rel="external">detail</a> on GitHub.</p>
 <h2 id="Faster_Processing_Speed">Faster Processing Speed</h2><p>Before Hexo 2.8, all source files have to be processed each time you use Hexo. In Hexo 2.8, the entire database will be saved to <code>db.json</code> so Hexo don’t have to process all files again. Also, a new data type “<strong>skip</strong>“ was added for processors to detect whether a file was changed or not.</p>
 <p>Generating was also changed in Hexo 2.8. You can check the elapsed time of each file in console now. However, I found multi-process generating didn’t affect generating speed a lot. Thus, <code>multi_thread</code> and <code>max_open_file</code> setting are deprecated in Hexo 2.8.</p>
@@ -71,7 +112,7 @@
     <link href="http://hexo.io/news/2014/06/14/hexo-2-7-released/"/>
     <id>http://hexo.io/news/2014/06/14/hexo-2-7-released/</id>
     <published>2014-06-14T00:00:00.000Z</published>
-    <updated>2015-03-04T15:20:06.203Z</updated>
+    <updated>2015-03-05T04:44:33.967Z</updated>
     <content type="html"><![CDATA[<p>Hexo 2.7 has been released with three new features. I’m going to introduce them below.</p>
 <h2 id="Fragment_Caching">Fragment Caching</h2><p>Although Hexo is fast, it may become slow if you have thousands of source files or complicated categories or tags. Before the data model upgraded, I borrowed a feature from Ruby on Rails: <strong>Fragment Caching</strong>.</p>
 <p>Fragment Caching saves contents within a fragment and serves the cache when the next request come in. A fragment will only be processed once. It can reduce database queries and decrease generation time significantly. For instance, a Hexo site with 300+ source files needs 6 minutes to generate. In Hexo 2.7, it only need 10 seconds!</p>
