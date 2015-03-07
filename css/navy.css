@@ -1462,7 +1462,7 @@ pre code {
 .highlight figcaption {
   margin: -5px 0 5px;
   font-size: 0.9em;
-  color: color-grey;
+  color: #999;
 }
 .highlight figcaption:before,
 .highlight figcaption:after {
