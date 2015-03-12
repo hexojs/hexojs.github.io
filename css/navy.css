@@ -858,9 +858,7 @@ a.article-title:hover {
 }
 @media print {
   .article-footer-prev,
-  .article-footer-next,
-.article-footer-prev,
-.article-footer-next {
+  .article-footer-next {
     display: none;
   }
 }
