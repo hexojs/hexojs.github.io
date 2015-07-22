@@ -1151,6 +1151,7 @@ a.article-title:hover {
   bottom: 40px;
   left: 0;
   right: 0;
+  -webkit-overflow-scrolling: touch;
 }
 #mobile-nav-toggle {
   position: absolute;
@@ -1327,6 +1328,7 @@ a.article-title:hover {
   transition: 0.4s;
   height: 100%;
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .mobile-nav-on #container {
   -webkit-transform: translateX(260px);
