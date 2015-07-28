@@ -461,11 +461,11 @@ body {
   color: #fff;
 }
 #sidebar {
-  width: 200px;
+  width: 220px;
   float: left;
   padding-bottom: 40px;
   opacity: 0.8;
-  margin-left: -200px;
+  margin-left: -220px;
   display: none;
 }
 @media screen and (min-width: 769px) {
@@ -526,7 +526,7 @@ body {
 }
 @media screen and (min-width: 769px) {
   #content-inner {
-    margin-left: 200px;
+    margin-left: 220px;
   }
 }
 @media screen and (min-width: 769px) {
@@ -545,7 +545,7 @@ body {
 }
 @media screen and (min-width: 769px) {
   .article-inner {
-    margin-right: 200px;
+    margin-right: 220px;
   }
 }
 .article {
@@ -561,8 +561,8 @@ body {
 #article-toc {
   display: none;
   float: right;
-  width: 200px;
-  margin-right: -200px;
+  width: 220px;
+  margin-right: -220px;
   opacity: 0.8;
 }
 @media screen and (min-width: 769px) {
@@ -574,12 +574,12 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 200px;
+  right: 220px;
 }
 #article-toc-inner {
   overflow-x: hidden;
   overflow-y: auto;
-  width: 200px;
+  width: 220px;
 }
 .fixed #article-toc-inner {
   position: fixed;
