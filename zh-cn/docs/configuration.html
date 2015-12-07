@@ -71,27 +71,7 @@ language
 
 
 timezone
-网站时区。Hexo 预设使用您电脑的时区。时区列表
-
-
-
-网址
-
-
-参数
-描述
-默认值
-
-
-
-
-url
-网址
-
-
-
-root
-网站根">
+网站时区。Hexo 默认使用您电脑的时区。时区列表。比如说：America/New_York, Japan, 和 UTC 。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="配置">
 <meta property="og:url" content="https://hexo.io/zh-cn/docs/configuration.html">
@@ -127,28 +107,8 @@ language
 
 
 timezone
-网站时区。Hexo 预设使用您电脑的时区。时区列表
-
-
-
-网址
-
-
-参数
-描述
-默认值
-
-
-
-
-url
-网址
-
-
-
-root
-网站根">
-<meta property="og:updated_time" content="2015-12-06T17:35:34.330Z">
+网站时区。Hexo 默认使用您电脑的时区。时区列表。比如说：America/New_York, Japan, 和 UTC 。">
+<meta property="og:updated_time" content="2015-12-07T01:28:54.206Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="配置">
 <meta name="twitter:description" content="您可以在 _config.yml 中修改大部份的配置。
@@ -182,27 +142,7 @@ language
 
 
 timezone
-网站时区。Hexo 预设使用您电脑的时区。时区列表
-
-
-
-网址
-
-
-参数
-描述
-默认值
-
-
-
-
-url
-网址
-
-
-
-root
-网站根">
+网站时区。Hexo 默认使用您电脑的时区。时区列表。比如说：America/New_York, Japan, 和 UTC 。">
 <meta name="twitter:site" content="hexojs">
 <meta property="fb:admins" content="100000247608790">
   <!-- Swiftype -->
@@ -301,7 +241,7 @@ root
 </tr>
 <tr>
 <td><code>timezone</code></td>
-<td>网站时区。Hexo 预设使用您电脑的时区。<a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="external">时区列表</a></td>
+<td>网站时区。Hexo 默认使用您电脑的时区。<a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="external">时区列表</a>。比如说：<code>America/New_York</code>, <code>Japan</code>, 和 <code>UTC</code> 。</td>
 </tr>
 </tbody>
 </table>
@@ -327,7 +267,7 @@ root
 <tr>
 <td><code>permalink</code></td>
 <td>文章的 <a href="permalinks.html">永久链接</a> 格式</td>
-<td>:year/:month/:day/:title/</td>
+<td><code>:year/:month/:day/:title/</code></td>
 </tr>
 <tr>
 <td><code>permalink_default</code></td>
@@ -350,41 +290,41 @@ root
 <tr>
 <td><code>source_dir</code></td>
 <td>资源文件夹，这个文件夹用来存放内容。</td>
-<td>source</td>
+<td><code>source</code></td>
 </tr>
 <tr>
 <td><code>public_dir</code></td>
 <td>公共文件夹，这个文件夹用于存放生成的站点文件。</td>
-<td>public</td>
+<td><code>public</code></td>
 </tr>
 <tr>
 <td><code>tag_dir</code></td>
 <td>标签文件夹</td>
-<td>tags</td>
+<td><code>tags</code></td>
 </tr>
 <tr>
 <td><code>archive_dir</code></td>
 <td>归档文件夹</td>
-<td>archives</td>
+<td><code>archives</code></td>
 </tr>
 <tr>
 <td><code>category_dir</code></td>
 <td>分类文件夹</td>
-<td>categories</td>
+<td><code>categories</code></td>
 </tr>
 <tr>
 <td><code>code_dir</code></td>
 <td>Include code 文件夹</td>
-<td>downloads/code</td>
+<td>`downloads/code</td>
 </tr>
 <tr>
 <td><code>i18n_dir</code></td>
 <td>国际化（i18n）文件夹</td>
-<td>:lang</td>
+<td><code>:lang</code></td>
 </tr>
 <tr>
 <td><code>skip_render</code></td>
-<td>跳过指定文件的渲染，您可使用 glob 来配置路径。</td>
+<td>跳过指定文件的渲染，您可使用 <a href="https://github.com/isaacs/node-glob" target="_blank" rel="external">glob 表达式</a>来匹配路径。</td>
 <td></td>
 </tr>
 </tbody>
@@ -467,7 +407,7 @@ root
 <tr>
 <td><code>default_category</code></td>
 <td>默认分类</td>
-<td>uncategorized</td>
+<td><code>uncategorized</code></td>
 </tr>
 <tr>
 <td><code>category_map</code></td>
@@ -494,12 +434,12 @@ root
 <tr>
 <td><code>date_format</code></td>
 <td>日期格式</td>
-<td>MMM D YYYY</td>
+<td><code>MMM D YYYY</code></td>
 </tr>
 <tr>
 <td><code>time_format</code></td>
 <td>时间格式</td>
-<td>H:mm:ss</td>
+<td><code>H:mm:ss</code></td>
 </tr>
 </tbody>
 </table>
@@ -515,12 +455,12 @@ root
 <tr>
 <td><code>per_page</code></td>
 <td>每页显示的文章量 (0 = 关闭分页功能)</td>
-<td>10</td>
+<td><code>10</code></td>
 </tr>
 <tr>
 <td><code>pagination_dir</code></td>
 <td>分页目录</td>
-<td>page</td>
+<td><code>page</code></td>
 </tr>
 </tbody>
 </table>
@@ -534,18 +474,18 @@ root
 <tbody>
 <tr>
 <td><code>theme</code></td>
-<td>当前主题名称</td>
+<td>当前主题名称。值为<code>false</code>时禁用主题</td>
 </tr>
 <tr>
 <td><code>deploy</code></td>
-<td>部署</td>
+<td>部署部分的设置</td>
 </tr>
 </tbody>
 </table>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2015-12-06T17:35:34.330Z" itemprop="dateModified">上次更新：2015-12-06</time>
+                <time class="article-footer-updated" datetime="2015-12-07T01:28:54.206Z" itemprop="dateModified">上次更新：2015-12-07</time>
                 <a href="setup.html" class="article-footer-prev" title="建站"><i class="fa fa-chevron-left"></i><span>上一页</span></a><a href="commands.html" class="article-footer-next" title="命令"><span>下一页</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

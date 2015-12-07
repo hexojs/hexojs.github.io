@@ -40,31 +40,31 @@
   <!-- RSS -->
   <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   <!-- Open Graph -->
-  <meta name="description" content="辅助函数帮助您在模版中快速插入内容。
-网址url_for在路径前加上根路径，从 Hexo 2.7 开始您应该使用此函数，避免使用 config.root + path。
+  <meta name="description" content="辅助函数帮助您在模版中快速插入内容。辅助函数不能在源文件中使用。
+网址url_for在路径前加上根路径，从 Hexo 2.7 开始您应该使用此函数而不是 config.root + path。
 &amp;lt;%- url_for(path) %&amp;gt;
 relative_url取得与 from 相对的 to 路径。
 &amp;lt;%- relative_url(from, to) %&amp;gt;
-gravatar插入 Gravatar">
+gravatar">
 <meta property="og:type" content="website">
 <meta property="og:title" content="辅助函数（Helpers）">
 <meta property="og:url" content="https://hexo.io/zh-cn/docs/helpers.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="辅助函数帮助您在模版中快速插入内容。
-网址url_for在路径前加上根路径，从 Hexo 2.7 开始您应该使用此函数，避免使用 config.root + path。
+<meta property="og:description" content="辅助函数帮助您在模版中快速插入内容。辅助函数不能在源文件中使用。
+网址url_for在路径前加上根路径，从 Hexo 2.7 开始您应该使用此函数而不是 config.root + path。
 &amp;lt;%- url_for(path) %&amp;gt;
 relative_url取得与 from 相对的 to 路径。
 &amp;lt;%- relative_url(from, to) %&amp;gt;
-gravatar插入 Gravatar">
-<meta property="og:updated_time" content="2015-12-06T17:35:34.330Z">
+gravatar">
+<meta property="og:updated_time" content="2015-12-07T01:28:54.206Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="辅助函数（Helpers）">
-<meta name="twitter:description" content="辅助函数帮助您在模版中快速插入内容。
-网址url_for在路径前加上根路径，从 Hexo 2.7 开始您应该使用此函数，避免使用 config.root + path。
+<meta name="twitter:description" content="辅助函数帮助您在模版中快速插入内容。辅助函数不能在源文件中使用。
+网址url_for在路径前加上根路径，从 Hexo 2.7 开始您应该使用此函数而不是 config.root + path。
 &amp;lt;%- url_for(path) %&amp;gt;
 relative_url取得与 from 相对的 to 路径。
 &amp;lt;%- relative_url(from, to) %&amp;gt;
-gravatar插入 Gravatar">
+gravatar">
 <meta name="twitter:site" content="hexojs">
 <meta property="fb:admins" content="100000247608790">
   <!-- Swiftype -->
@@ -132,15 +132,15 @@ gravatar插入 Gravatar">
                 <a href="https://github.com/hexojs/site/edit/master/source/zh-cn/docs/helpers.md" class="article-edit-link" title="改进本文"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody" data-swiftype-name="body" data-swiftype-type="text">
-                <p>辅助函数帮助您在模版中快速插入内容。</p>
-<h2 id="u7F51_u5740" class="article-heading"><a href="#u7F51_u5740" class="headerlink" title="网址"></a>网址<a class="article-anchor" href="#u7F51_u5740" aria-hidden="true"></a></h2><h3 id="url_for" class="article-heading"><a href="#url_for" class="headerlink" title="url_for"></a>url_for<a class="article-anchor" href="#url_for" aria-hidden="true"></a></h3><p>在路径前加上根路径，从 Hexo 2.7 开始您应该使用此函数，避免使用 <code>config.root + path</code>。</p>
+                <p>辅助函数帮助您在模版中快速插入内容。辅助函数不能在源文件中使用。</p>
+<h2 id="u7F51_u5740" class="article-heading"><a href="#u7F51_u5740" class="headerlink" title="网址"></a>网址<a class="article-anchor" href="#u7F51_u5740" aria-hidden="true"></a></h2><h3 id="url_for" class="article-heading"><a href="#url_for" class="headerlink" title="url_for"></a>url_for<a class="article-anchor" href="#url_for" aria-hidden="true"></a></h3><p>在路径前加上根路径，从 Hexo 2.7 开始您应该使用此函数而不是 <code>config.root + path</code>。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- url_for(path) %&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="relative_url" class="article-heading"><a href="#relative_url" class="headerlink" title="relative_url"></a>relative_url<a class="article-anchor" href="#relative_url" aria-hidden="true"></a></h3><p>取得与 <code>from</code> 相对的 <code>to</code> 路径。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- relative_url(from, to) %&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="gravatar" class="article-heading"><a href="#gravatar" class="headerlink" title="gravatar"></a>gravatar<a class="article-anchor" href="#gravatar" aria-hidden="true"></a></h3><p>插入 Gravatar 图片。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- gravatar(email, [size]);</span><br></pre></td></tr></table></figure>
+<h3 id="gravatar" class="article-heading"><a href="#gravatar" class="headerlink" title="gravatar"></a>gravatar<a class="article-anchor" href="#gravatar" aria-hidden="true"></a></h3><p>插入 Gravatar 图片。<br>如果你不指定 <code>options</code> 参数，将会应用默认参数。否则，你可以将其设置为一个数字，这个数字将会作为 Gravatar 的大小参数。最后，如果你设置它一个对象，它将会被转换为 Gravatar 的一个查询字符串参数。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- gravatar(email, [options]);</span><br></pre></td></tr></table></figure>
 <p><strong>示例：</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>) %&gt;</span><br><span class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787</span></span><br><span class="line"></span><br><span class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>, <span class="number">40</span>) %&gt;</span><br><span class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>) %&gt;</span><br><span class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787</span></span><br><span class="line"></span><br><span class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>, <span class="number">40</span>) %&gt;</span><br><span class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40</span></span><br><span class="line"></span><br><span class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span> &#123;s: <span class="number">40</span>, d: <span class="string">'http://example.com/image.png'</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40&amp;d=http%3A%2F%2Fexample.com%2Fimage.png</span></span><br></pre></td></tr></table></figure>
 <h2 id="HTML__u6807_u7B7E" class="article-heading"><a href="#HTML__u6807_u7B7E" class="headerlink" title="HTML 标签"></a>HTML 标签<a class="article-anchor" href="#HTML__u6807_u7B7E" aria-hidden="true"></a></h2><h3 id="css" class="article-heading"><a href="#css" class="headerlink" title="css"></a>css<a class="article-anchor" href="#css" aria-hidden="true"></a></h3><p>载入 CSS 文件。<code>path</code> 可以是数组或字符串，如果 <code>path</code> 开头不是 <code>/</code> 或任何协议，则会自动加上根路径；如果后面没有加上 <code>.css</code> 扩展名的话，也会自动加上。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- css(path, ...) %&gt;</span><br></pre></td></tr></table></figure>
 <p><strong>示例：</strong></p>
@@ -286,10 +286,10 @@ gravatar插入 Gravatar">
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_year() %&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="is_month" class="article-heading"><a href="#is_month" class="headerlink" title="is_month"></a>is_month<a class="article-anchor" href="#is_month" aria-hidden="true"></a></h3><p>检查目前是否为月度归档页面。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_month() %&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="is_category" class="article-heading"><a href="#is_category" class="headerlink" title="is_category"></a>is_category<a class="article-anchor" href="#is_category" aria-hidden="true"></a></h3><p>检查目前是否为分类归档页面。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_category() %&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="is_tag" class="article-heading"><a href="#is_tag" class="headerlink" title="is_tag"></a>is_tag<a class="article-anchor" href="#is_tag" aria-hidden="true"></a></h3><p>检查目前是否为标签归档页面。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_tag() %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="is_category" class="article-heading"><a href="#is_category" class="headerlink" title="is_category"></a>is_category<a class="article-anchor" href="#is_category" aria-hidden="true"></a></h3><p>检查目前是否为分类归档页面。<br>如果给定一个字符串作为参数，将会检查目前是否为指定分类。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_category() %&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">%-</span> <span class="attribute">is_category</span>('<span class="attribute">hobby</span>') %&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h3 id="is_tag" class="article-heading"><a href="#is_tag" class="headerlink" title="is_tag"></a>is_tag<a class="article-anchor" href="#is_tag" aria-hidden="true"></a></h3><p>检查目前是否为标签归档页面。<br>如果给定一个字符串作为参数，将会检查目前是否为指定标签。</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_tag() %&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">%-</span> <span class="attribute">is_tag</span>('<span class="attribute">hobby</span>') %&gt;</span></span></span><br></pre></td></tr></table></figure>
 <h2 id="u5B57_u7B26_u4E32_u5904_u7406" class="article-heading"><a href="#u5B57_u7B26_u4E32_u5904_u7406" class="headerlink" title="字符串处理"></a>字符串处理<a class="article-anchor" href="#u5B57_u7B26_u4E32_u5904_u7406" aria-hidden="true"></a></h2><h3 id="trim" class="article-heading"><a href="#trim" class="headerlink" title="trim"></a>trim<a class="article-anchor" href="#trim" aria-hidden="true"></a></h3><p>清除字符串开头和结尾的空格。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- trim(string) %&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="strip_html" class="article-heading"><a href="#strip_html" class="headerlink" title="strip_html"></a>strip_html<a class="article-anchor" href="#strip_html" aria-hidden="true"></a></h3><p>清除字符串中的 HTML 标签。</p>
@@ -313,7 +313,7 @@ gravatar插入 Gravatar">
 <h3 id="truncate" class="article-heading"><a href="#truncate" class="headerlink" title="truncate"></a>truncate<a class="article-anchor" href="#truncate" aria-hidden="true"></a></h3><p>移除超过 <code>length</code> 长度的字符串。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- truncate(text, length) %&gt;</span><br></pre></td></tr></table></figure>
 <p><strong>示例：</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, <span class="number">16</span>) %&gt;</span><br><span class="line"><span class="comment">// Once upon a time</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, &#123;length: <span class="number">17</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// Once upon a ti...</span></span><br><span class="line"></span><br><span class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, &#123;length: <span class="number">17</span>, separator: <span class="string">' '</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// Once upon a...</span></span><br><span class="line"></span><br><span class="line">&lt;%- truncate(<span class="string">'And they found that many people were sleeping better.'</span>, &#123;length: <span class="number">25</span>, omission: <span class="string">'... (continued)'</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// And they f... (continued)</span></span><br></pre></td></tr></table></figure>
 <h2 id="u6A21_u677F" class="article-heading"><a href="#u6A21_u677F" class="headerlink" title="模板"></a>模板<a class="article-anchor" href="#u6A21_u677F" aria-hidden="true"></a></h2><h3 id="partial" class="article-heading"><a href="#partial" class="headerlink" title="partial"></a>partial<a class="article-anchor" href="#partial" aria-hidden="true"></a></h3><p>载入其他模板文件，您可在 <code>locals</code> 设定区域变量。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- partial(layout, [locals], [options]) %&gt;</span><br></pre></td></tr></table></figure>
 <table>
@@ -344,7 +344,7 @@ gravatar插入 Gravatar">
 <h2 id="u65E5_u671F_u4E0E_u65F6_u95F4" class="article-heading"><a href="#u65E5_u671F_u4E0E_u65F6_u95F4" class="headerlink" title="日期与时间"></a>日期与时间<a class="article-anchor" href="#u65E5_u671F_u4E0E_u65F6_u95F4" aria-hidden="true"></a></h2><h3 id="date" class="article-heading"><a href="#date" class="headerlink" title="date"></a>date<a class="article-anchor" href="#date" aria-hidden="true"></a></h3><p>插入格式化的日期。<code>date</code> 可以是 UNIX 时间、ISO 字符串、Date 对象或 <a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> 对象。<code>format</code> 默认为 <code>date_format</code> 配置信息。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- date(date, [format]) %&gt;</span><br></pre></td></tr></table></figure>
 <p><strong>示例：</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- date(<span class="built_in">Date</span>.now()) %&gt;</span><br><span class="line"><span class="comment">// Jan 1, 2013</span></span><br><span class="line"></span><br><span class="line">&lt;%- date(<span class="built_in">Date</span>.now(), <span class="string">'YYYY/M/D'</span>) %&gt;</span><br><span class="line"><span class="comment">// 2013/1/1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- date(<span class="built_in">Date</span>.now()) %&gt;</span><br><span class="line"><span class="comment">// 2013-01-01</span></span><br><span class="line"></span><br><span class="line">&lt;%- date(<span class="built_in">Date</span>.now(), <span class="string">'YYYY/M/D'</span>) %&gt;</span><br><span class="line"><span class="comment">// Jan 1 2013</span></span><br></pre></td></tr></table></figure>
 <h3 id="date_xml" class="article-heading"><a href="#date_xml" class="headerlink" title="date_xml"></a>date_xml<a class="article-anchor" href="#date_xml" aria-hidden="true"></a></h3><p>插入 XML 格式的日期。<code>date</code> 可以是 UNIX 时间、ISO 字符串、Date 对象或 <a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> 对象。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- date_xml(date) %&gt;</span><br></pre></td></tr></table></figure>
 <p><strong>示例：</strong></p>
@@ -353,13 +353,13 @@ gravatar插入 Gravatar">
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- time(date, [format]) %&gt;</span><br></pre></td></tr></table></figure>
 <p><strong>示例：</strong></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- time(<span class="built_in">Date</span>.now()) %&gt;</span><br><span class="line"><span class="comment">// 13:05:12</span></span><br><span class="line"></span><br><span class="line">&lt;%- time(<span class="built_in">Date</span>.now(), <span class="string">'h:mm:ss a'</span>) %&gt;</span><br><span class="line"><span class="comment">// 1:05:12 pm</span></span><br></pre></td></tr></table></figure>
-<h3 id="full_date" class="article-heading"><a href="#full_date" class="headerlink" title="full_date"></a>full_date<a class="article-anchor" href="#full_date" aria-hidden="true"></a></h3><p>插入格式化的日期和时间。<code>date</code> 可以是 UNIX 时间、ISO 字符串、Date 对象或 <a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> 对象。<code>format</code> 默认为 <code>time_format</code> 配置信息。</p>
+<h3 id="full_date" class="article-heading"><a href="#full_date" class="headerlink" title="full_date"></a>full_date<a class="article-anchor" href="#full_date" aria-hidden="true"></a></h3><p>插入格式化的日期和时间。<code>date</code> 可以是 UNIX 时间、ISO 字符串、Date 对象或 <a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> 对象。<code>format</code> 默认为 <code>date_format + time_format</code>。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- full_date(date, [format]) %&gt;</span><br></pre></td></tr></table></figure>
 <p><strong>示例：</strong></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>()) %&gt;</span><br><span class="line"><span class="comment">// Jan 1, 2013 0:00:00</span></span><br><span class="line"></span><br><span class="line">&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>(), <span class="string">'dddd, MMMM Do YYYY, h:mm:ss a'</span>) %&gt;</span><br><span class="line"><span class="comment">// Tuesday, January 1st 2013, 12:00:00 am</span></span><br></pre></td></tr></table></figure>
 <h3 id="moment" class="article-heading"><a href="#moment" class="headerlink" title="moment"></a>moment<a class="article-anchor" href="#moment" aria-hidden="true"></a></h3><p><a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> 函数库。</p>
 <h2 id="u5217_u8868" class="article-heading"><a href="#u5217_u8868" class="headerlink" title="列表"></a>列表<a class="article-anchor" href="#u5217_u8868" aria-hidden="true"></a></h2><h3 id="list_categories" class="article-heading"><a href="#list_categories" class="headerlink" title="list_categories"></a>list_categories<a class="article-anchor" href="#list_categories" aria-hidden="true"></a></h3><p>插入分类列表。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- list_categories([categories], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- list_categories([options]) %&gt;</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -412,7 +412,7 @@ gravatar插入 Gravatar">
 </tbody>
 </table>
 <h3 id="list_tags" class="article-heading"><a href="#list_tags" class="headerlink" title="list_tags"></a>list_tags<a class="article-anchor" href="#list_tags" aria-hidden="true"></a></h3><p>插入标签列表。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- list_tags([tags], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- list_tags([options]) %&gt;</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -850,7 +850,7 @@ gravatar插入 Gravatar">
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2015-12-06T17:35:34.330Z" itemprop="dateModified">上次更新：2015-12-06</time>
+                <time class="article-footer-updated" datetime="2015-12-07T01:28:54.206Z" itemprop="dateModified">上次更新：2015-12-07</time>
                 <a href="variables.html" class="article-footer-prev" title="变量"><i class="fa fa-chevron-left"></i><span>上一页</span></a><a href="internationalization.html" class="article-footer-next" title="国际化 (i18n)"><span>下一页</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

@@ -66,7 +66,7 @@ Fork hexojs/hexo
 Fork hexojs/hexo
 把库（repository）复制到电脑上，并安装所依赖的插件。
  $ git clone https://github.com/&amp;#60;userna">
-<meta property="og:updated_time" content="2015-12-06T17:35:34.330Z">
+<meta property="og:updated_time" content="2015-12-07T01:28:54.206Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="贡献">
 <meta name="twitter:description" content="开发我们非常欢迎您加入 Hexo 的开发，这份文件将帮助您了解开发流程。
@@ -167,7 +167,7 @@ Fork hexojs/hexo
 <li><p>推送（push）分支。</p>
  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git push origin new_feature</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>对 <code>master</code> 分支建立一个新的合并申请（pull request）并描述变动。</p>
+<li><p>建立一个新的合并申请（pull request）并描述变动。</p>
 </li>
 </ol>
 <h3 id="u6CE8_u610F_u4E8B_u9879" class="article-heading"><a href="#u6CE8_u610F_u4E8B_u9879" class="headerlink" title="注意事项"></a>注意事项<a class="article-anchor" href="#u6CE8_u610F_u4E8B_u9879" aria-hidden="true"></a></h3><ul>
@@ -176,8 +176,8 @@ Fork hexojs/hexo
   <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm test</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="u66F4_u65B0_u6587_u4EF6" class="article-heading"><a href="#u66F4_u65B0_u6587_u4EF6" class="headerlink" title="更新文件"></a>更新文件<a class="article-anchor" href="#u66F4_u65B0_u6587_u4EF6" aria-hidden="true"></a></h2><p>Hexo 文件开放源代码，您可以在 <a href="https://github.com/hexojs/site" target="_blank" rel="external">hexojs/site</a> 找到源代码，若要修改文件：</p>
-<ol>
+<h2 id="u66F4_u65B0_u6587_u6863" class="article-heading"><a href="#u66F4_u65B0_u6587_u6863" class="headerlink" title="更新文档"></a>更新文档<a class="article-anchor" href="#u66F4_u65B0_u6587_u6863" aria-hidden="true"></a></h2><p>Hexo 文档开放源代码，您可以在 <a href="https://github.com/hexojs/site" target="_blank" rel="external">hexojs/site</a> 找到源代码。</p>
+<h3 id="u5DE5_u4F5C_u6D41_u7A0B-1" class="article-heading"><a href="#u5DE5_u4F5C_u6D41_u7A0B-1" class="headerlink" title="工作流程"></a>工作流程<a class="article-anchor" href="#u5DE5_u4F5C_u6D41_u7A0B-1" aria-hidden="true"></a></h3><ol>
 <li>Fork <a href="https://github.com/hexojs/site" target="_blank" rel="external">hexojs/site</a></li>
 <li><p>把库（repository）复制到电脑上，并安装所依赖的插件。</p>
  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone https://github.com/&#60;username&#62;/site.git&#10;$ cd site&#10;$ npm install</span><br></pre></td></tr></table></figure>
@@ -187,28 +187,24 @@ Fork hexojs/hexo
 </li>
 <li><p>推送（push）分支。</p>
 </li>
-<li>对 <code>master</code> 分支建立一个新的合并申请（pull request）并描述变动。</li>
+<li>建立一个新的合并申请（pull request）并描述变动。</li>
 </ol>
-<h2 id="u7FFB_u8BD1_u6587_u4EF6" class="article-heading"><a href="#u7FFB_u8BD1_u6587_u4EF6" class="headerlink" title="翻译文件"></a>翻译文件<a class="article-anchor" href="#u7FFB_u8BD1_u6587_u4EF6" aria-hidden="true"></a></h2><p>翻译文件的流程与上述的文件更新非常相似，如果要新增语言的话，请遵照以下步骤：</p>
-<ol>
+<h3 id="u7FFB_u8BD1" class="article-heading"><a href="#u7FFB_u8BD1" class="headerlink" title="翻译"></a>翻译<a class="article-anchor" href="#u7FFB_u8BD1" aria-hidden="true"></a></h3><ol>
 <li>在 <code>source</code> 资料夹中建立一个新的语言资料夹（全小写）。</li>
 <li>把 <code>source</code> 资料夹中相关的文件（Markdown 和模板文件）复制到新的语言资料夹中。</li>
 <li>在 <code>source/_data/language.yml</code> 中新增语言。</li>
-<li>在 <code>themes/navy/languages</code> 复制 <code>en.yml</code> 并命名为语言名称（全小写）。</li>
+<li>将 <code>en.yml</code> 复制到 <code>themes/navy/languages</code>中并命名为语言名称（全小写）。</li>
 </ol>
-<h2 id="u53CD_u9988_u95EE_u9898" class="article-heading"><a href="#u53CD_u9988_u95EE_u9898" class="headerlink" title="反馈问题"></a>反馈问题<a class="article-anchor" href="#u53CD_u9988_u95EE_u9898" aria-hidden="true"></a></h2><p>当您在使用 Hexo 时遇到问题，您可以尝试在 <a href="troubleshooting.html">问题解答</a> 中寻找解答，或是在 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a> 或 <a href="https://groups.google.com/group/hexo" target="_blank" rel="external">Google Group</a> 上提问。提问时请务必附上以下信息：</p>
+<h2 id="u53CD_u9988_u95EE_u9898" class="article-heading"><a href="#u53CD_u9988_u95EE_u9898" class="headerlink" title="反馈问题"></a>反馈问题<a class="article-anchor" href="#u53CD_u9988_u95EE_u9898" aria-hidden="true"></a></h2><p>当您在使用 Hexo 时遇到问题，您可以尝试在 <a href="troubleshooting.html">问题解答</a> 中寻找解答，或是在 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a> 或 <a href="https://groups.google.com/group/hexo" target="_blank" rel="external">Google Group</a> 上提问。如果你没有找答案，请在 Github 报告它。</p>
 <ol>
-<li>以 <a href="commands.html#调试模式">调试模式</a> 再执行一次。</li>
-<li><p>检查版本信息。</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ hexo version</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>把调试信息和版本信息都贴到 GitHub。</p>
-</li>
+<li>在 <a href="commands.html#调试模式">调试模式</a> 中重现问题。</li>
+<li>运行 <code>hexo version</code> 并检查版本信息。</li>
+<li>把调试信息和版本信息都贴到 GitHub。</li>
 </ol>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2015-12-06T17:35:34.330Z" itemprop="dateModified">上次更新：2015-12-06</time>
+                <time class="article-footer-updated" datetime="2015-12-07T01:28:54.206Z" itemprop="dateModified">上次更新：2015-12-07</time>
                 <a href="troubleshooting.html" class="article-footer-prev" title="问题解答"><i class="fa fa-chevron-left"></i><span>上一页</span></a>
               </footer>
               
@@ -234,7 +230,7 @@ Fork hexojs/hexo
           <aside id="article-toc" role="navigation">
             <div id="article-toc-inner">
               <strong class="sidebar-title">目录</strong>
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#u5F00_u53D1"><span class="toc-text">开发</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u5F00_u59CB_u4E4B_u524D"><span class="toc-text">开始之前</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u5DE5_u4F5C_u6D41_u7A0B"><span class="toc-text">工作流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u6CE8_u610F_u4E8B_u9879"><span class="toc-text">注意事项</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u66F4_u65B0_u6587_u4EF6"><span class="toc-text">更新文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u7FFB_u8BD1_u6587_u4EF6"><span class="toc-text">翻译文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u53CD_u9988_u95EE_u9898"><span class="toc-text">反馈问题</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#u5F00_u53D1"><span class="toc-text">开发</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u5F00_u59CB_u4E4B_u524D"><span class="toc-text">开始之前</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u5DE5_u4F5C_u6D41_u7A0B"><span class="toc-text">工作流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u6CE8_u610F_u4E8B_u9879"><span class="toc-text">注意事项</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u66F4_u65B0_u6587_u6863"><span class="toc-text">更新文档</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#u5DE5_u4F5C_u6D41_u7A0B-1"><span class="toc-text">工作流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u7FFB_u8BD1"><span class="toc-text">翻译</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u53CD_u9988_u95EE_u9898"><span class="toc-text">反馈问题</span></a></li></ol>
               <a href="#" id="article-toc-top">回到顶部</a>
             </div>
           </aside>
