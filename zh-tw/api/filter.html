@@ -50,7 +50,7 @@
 <meta property="og:description" content="過濾器用於修改特定資料，Hexo 將資料依序傳給過濾器，而過濾器可以針對資料進行修改，這個概念是從 WordPress 借來的。
 概要hexo.extend.filter.register(type, function()&amp;#123;  // ...&amp;#125;, priority);
 您可指定過濾器的優先度 priority，priority 值越低的過濾器會越先執行，預設的 priority">
-<meta property="og:updated_time" content="2015-12-10T05:17:18.194Z">
+<meta property="og:updated_time" content="2015-12-10T05:21:18.623Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="過濾器（Filter）">
 <meta name="twitter:description" content="過濾器用於修改特定資料，Hexo 將資料依序傳給過濾器，而過濾器可以針對資料進行修改，這個概念是從 WordPress 借來的。
@@ -146,7 +146,7 @@
 </tbody>
 </table>
 <p><code>data</code> 會作為第一個參數傳入每個過濾器，而您可在過濾器中透過回傳值改變下一個過濾器中的 <code>data</code>，如果什麼都沒回傳的話則會保持原本的 <code>data</code>。您還可使用 <code>args</code> 指定過濾器的其他參數。舉例來說：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.extend.filter.register(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// data === 'some data'</span></span><br><span class="line">  <span class="comment">// arg1 === 'foo'</span></span><br><span class="line">  <span class="comment">// arg2 === 'bar'</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> <span class="string">'something'</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">hexo.extend.filter.register(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// data === 'something'</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">hexo.extend.filter.exec(<span class="string">'test'</span>, <span class="string">'some data'</span>, &#123;</span><br><span class="line">  args: [<span class="string">'foo'</span>, <span class="string">'bar'</span>]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.extend.filter.register(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// data === 'some data'</span></span><br><span class="line">  <span class="comment">// arg1 === 'foo'</span></span><br><span class="line">  <span class="comment">// arg2 === 'bar'</span></span><br><span class="line">  </span><br><span class="line">  <span class="keyword">return</span> <span class="string">'something'</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">hexo.extend.filter.register(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// data === 'something'</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">hexo.extend.filter.exec(<span class="string">'test'</span>, <span class="string">'some data'</span>, &#123;</span><br><span class="line">  args: [<span class="string">'foo'</span>, <span class="string">'bar'</span>]</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p>您也可使用以下方法來執行過濾器：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.execFilter(type, data, options);</span><br><span class="line">hexo.execFilterSync(type, data, options);</span><br></pre></td></tr></table></figure>
 <h2 id="u79FB_u9664_u904E_u6FFE_u5668" class="article-heading"><a href="#u79FB_u9664_u904E_u6FFE_u5668" class="headerlink" title="移除過濾器"></a>移除過濾器<a class="article-anchor" href="#u79FB_u9664_u904E_u6FFE_u5668" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.extend.filter.unregister(type, filter);</span><br></pre></td></tr></table></figure>
@@ -179,7 +179,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2015-12-10T05:17:18.194Z" itemprop="dateModified">上次更新：2015-12-10</time>
+                <time class="article-footer-updated" datetime="2015-12-10T05:21:18.623Z" itemprop="dateModified">上次更新：2015-12-10</time>
                 <a href="deployer.html" class="article-footer-prev" title="佈署器 (Deployer)"><i class="fa fa-chevron-left"></i><span>上一頁</span></a><a href="generator.html" class="article-footer-next" title="產生器 (Generator)"><span>下一頁</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
