@@ -94,7 +94,7 @@ sync
 
 
 渲染函數中會傳入兩個">
-<meta property="og:updated_time" content="2015-12-10T01:42:40.697Z">
+<meta property="og:updated_time" content="2015-12-10T05:17:18.194Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="渲染引擎（Renderer）">
 <meta name="twitter:description" content="渲染引擎用於渲染內容。
@@ -236,7 +236,7 @@ sync
 <h3 id="u540C_u6B65_u6A21_u5F0F" class="article-heading"><a href="#u540C_u6B65_u6A21_u5F0F" class="headerlink" title="同步模式"></a>同步模式<a class="article-anchor" href="#u540C_u6B65_u6A21_u5F0F" aria-hidden="true"></a></h3><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> ejs = <span class="built_in">require</span>(<span class="string">'ejs'</span>);</span><br><span class="line"></span><br><span class="line">hexo.extend.renderer.register(<span class="string">'ejs'</span>, <span class="string">'html'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, options</span>)</span>&#123;</span><br><span class="line">  options.filename = data.path;</span><br><span class="line">  <span class="keyword">return</span> ejs.render(data.text, options);</span><br><span class="line">&#125;, <span class="literal">true</span>);</span><br></pre></td></tr></table></figure>
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2015-12-10T01:42:40.697Z" itemprop="dateModified">上次更新：2015-12-10</time>
+                <time class="article-footer-updated" datetime="2015-12-10T05:17:18.194Z" itemprop="dateModified">上次更新：2015-12-10</time>
                 <a href="processor.html" class="article-footer-prev" title="處理器 (Processor)"><i class="fa fa-chevron-left"></i><span>上一頁</span></a><a href="tag.html" class="article-footer-next" title="標籤外掛 (Tag)"><span>下一頁</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
