@@ -26,9 +26,10 @@
   <meta name="msapplication-TileColor" content="#2f83cd">
   <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
   <!-- CSS -->
-  <link rel="stylesheet" href="/build/css/navy-d2058b2d44.css">
+  <link rel="stylesheet" href="/build/css/navy-dfb30beb6e.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
   <!-- RSS -->
   <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   <!-- Open Graph -->
@@ -38,14 +39,12 @@
 <meta property="og:url" content="https://hexo.io/plugins/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Hexo is a fast, simple &amp; powerful blog framework powered by Node.js.">
-<meta property="og:updated_time" content="2015-12-29T08:00:29.366Z">
+<meta property="og:updated_time" content="2015-12-29T17:20:42.714Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Plugins">
 <meta name="twitter:description" content="Hexo is a fast, simple &amp; powerful blog framework powered by Node.js.">
 <meta name="twitter:site" content="hexojs">
 <meta property="fb:admins" content="100000247608790">
-  <!-- Swiftype -->
-  <meta name="st:title" content="Plugins">
   <!-- Google Analytics -->
   
 <script>
@@ -59,6 +58,7 @@
 </script>
 
 </head>
+
 <body>
   <div id="container">
     <header id="header" class="wrapper">
@@ -67,13 +67,12 @@
       <a href="/" id="logo">Hexo</a>
     </h1>
     <nav id="main-nav">
-      <ul>
-        <li class="main-nav-item"><a href="/docs/" class="main-nav-link">Docs</a></li><li class="main-nav-item"><a href="/api/" class="main-nav-link">API</a></li><li class="main-nav-item"><a href="/news/" class="main-nav-link">News</a></li><li class="main-nav-item"><a href="/plugins/" class="main-nav-link">Plugins</a></li><li class="main-nav-item"><a href="/themes/" class="main-nav-link">Themes</a></li>
-        <li class="main-nav-item">
-          <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
-        </li>
-      </ul>
+      <a href="/docs/" class="main-nav-link">Docs</a><a href="/api/" class="main-nav-link">API</a><a href="/news/" class="main-nav-link">News</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/themes/" class="main-nav-link">Themes</a>
+      <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
     </nav>
+    <div id="search-input-wrap">
+      <input type="search" id="search-input" placeholder="Search...">
+    </div>
     <div id="lang-select-wrap">
       <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
       <select id="lang-select" data-canonical="">
@@ -86,17 +85,14 @@
         
       </select>
     </div>
-    <div id="search-btn-wrap" class="main-nav-item">
-      <a id="search-btn" class="main-nav-link st-search-show-outputs"><i class="fa fa-search"></i></a>
-    </div>
     <a id="mobile-nav-toggle">
       <span class="mobile-nav-toggle-bar"></span>
       <span class="mobile-nav-toggle-bar"></span>
       <span class="mobile-nav-toggle-bar"></span>
     </a>
-    <a id="mobile-search-btn" class="st-search-launcher"></a>
   </div>
 </header>
+
     <div id="content-wrap">
   <div class="wrapper">
     <div class="inner">
@@ -1345,7 +1341,7 @@
   <nav id="mobile-nav">
   <div id="mobile-nav-inner">
     <ul id="mobile-nav-list">
-      <li class="mobile-nav-item"><a href="/docs/" class="mobile-nav-link">Docs</a></li><li class="mobile-nav-item"><a href="/api/" class="mobile-nav-link">API</a></li><li class="mobile-nav-item"><a href="/news/" class="mobile-nav-link">News</a></li><li class="mobile-nav-item"><a href="/plugins/" class="mobile-nav-link">Plugins</a></li><li class="mobile-nav-item"><a href="/themes/" class="mobile-nav-link">Themes</a></li>
+      <a href="/docs/" class="mobile-nav-link">Docs</a><a href="/api/" class="mobile-nav-link">API</a><a href="/news/" class="mobile-nav-link">News</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/themes/" class="mobile-nav-link">Themes</a>
       <li class="mobile-nav-item">
         <a href="https://github.com/hexojs/hexo" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
       </li>
@@ -1373,14 +1369,15 @@
 <script src="https://cdn.jsdelivr.net/lunr/0.6.0/lunr.min.js"></script>
 <script src="/build/js/plugins-7139553de0.js"></script>
 
-<!-- Swiftype -->
+<!-- Algolia -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
 <script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','https://s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install','EwN4HMy_KMxTK_GMjV1z','2.0.0');
+docsearch({
+  apiKey: 'c3d5d4c995b5e0c2ffb5623900279a66',
+  indexName: 'hexo',
+  inputSelector: '#search-input'
+});
 </script>
+
 </body>
 </html>

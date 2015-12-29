@@ -34,9 +34,10 @@
   <meta name="msapplication-TileColor" content="#2f83cd">
   <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
   <!-- CSS -->
-  <link rel="stylesheet" href="/build/css/navy-d2058b2d44.css">
+  <link rel="stylesheet" href="/build/css/navy-dfb30beb6e.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
   <!-- RSS -->
   <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   <!-- Open Graph -->
@@ -48,15 +49,13 @@ ScriptIf your plugin is relativ">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Hexo has a powerful plugin system, which makes it easy to extend functions without modifying the source code of the core module. There are two kinds of plugins in Hexo:
 ScriptIf your plugin is relativ">
-<meta property="og:updated_time" content="2015-12-29T08:00:29.362Z">
+<meta property="og:updated_time" content="2015-12-29T17:20:42.714Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Plugins">
 <meta name="twitter:description" content="Hexo has a powerful plugin system, which makes it easy to extend functions without modifying the source code of the core module. There are two kinds of plugins in Hexo:
 ScriptIf your plugin is relativ">
 <meta name="twitter:site" content="hexojs">
 <meta property="fb:admins" content="100000247608790">
-  <!-- Swiftype -->
-  <meta name="st:title" content="Plugins">
   <!-- Google Analytics -->
   
 <script>
@@ -70,6 +69,7 @@ ScriptIf your plugin is relativ">
 </script>
 
 </head>
+
 <body>
   <div id="container">
     <header id="header" class="wrapper">
@@ -78,13 +78,12 @@ ScriptIf your plugin is relativ">
       <a href="/" id="logo">Hexo</a>
     </h1>
     <nav id="main-nav">
-      <ul>
-        <li class="main-nav-item"><a href="/docs/" class="main-nav-link">Docs</a></li><li class="main-nav-item"><a href="/api/" class="main-nav-link">API</a></li><li class="main-nav-item"><a href="/news/" class="main-nav-link">News</a></li><li class="main-nav-item"><a href="/plugins/" class="main-nav-link">Plugins</a></li><li class="main-nav-item"><a href="/themes/" class="main-nav-link">Themes</a></li>
-        <li class="main-nav-item">
-          <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
-        </li>
-      </ul>
+      <a href="/docs/" class="main-nav-link">Docs</a><a href="/api/" class="main-nav-link">API</a><a href="/news/" class="main-nav-link">News</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/themes/" class="main-nav-link">Themes</a>
+      <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
     </nav>
+    <div id="search-input-wrap">
+      <input type="search" id="search-input" placeholder="Search...">
+    </div>
     <div id="lang-select-wrap">
       <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
       <select id="lang-select" data-canonical="docs/plugins.html">
@@ -97,17 +96,14 @@ ScriptIf your plugin is relativ">
         
       </select>
     </div>
-    <div id="search-btn-wrap" class="main-nav-item">
-      <a id="search-btn" class="main-nav-link st-search-show-outputs"><i class="fa fa-search"></i></a>
-    </div>
     <a id="mobile-nav-toggle">
       <span class="mobile-nav-toggle-bar"></span>
       <span class="mobile-nav-toggle-bar"></span>
       <span class="mobile-nav-toggle-bar"></span>
     </a>
-    <a id="mobile-search-btn" class="st-search-launcher"></a>
   </div>
 </header>
+
     <div id="content-wrap">
   <div id="content" class="wrapper">
     <div id="content-inner">
@@ -116,10 +112,10 @@ ScriptIf your plugin is relativ">
           <div class="article">
             <div class="inner">
               <header class="article-header">
-                <h1 class="article-title" itemprop="name" data-swiftype-name="title" data-swiftype-type="string">Plugins</h1>
+                <h1 class="article-title" itemprop="name">Plugins</h1>
                 <a href="https://github.com/hexojs/site/edit/master/source/docs/plugins.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
               </header>
-              <div class="article-content" itemprop="articleBody" data-swiftype-name="body" data-swiftype-type="text">
+              <div class="article-content" itemprop="articleBody">
                 <p>Hexo has a powerful plugin system, which makes it easy to extend functions without modifying the source code of the core module. There are two kinds of plugins in Hexo:</p>
 <h3 id="Script" class="article-heading"><a href="#Script" class="headerlink" title="Script"></a>Script<a class="article-anchor" href="#Script" aria-hidden="true"></a></h3><p>If your plugin is relatively simple, it’s recommended to use a script. All you need to do is put your JavaScript files in the <code>scripts</code> folder and Hexo will load them during initialization.</p>
 <h3 id="Plugin" class="article-heading"><a href="#Plugin" class="headerlink" title="Plugin"></a>Plugin<a class="article-anchor" href="#Plugin" aria-hidden="true"></a></h3><p>If your code is complicated or if you want to publish it to the NPM registry, we recommend using a plugin. First, create a folder in the <code>node_modules</code> folder. The name of this folder must begin with <code>hexo-</code> or Hexo will ignore it.</p>
@@ -150,7 +146,7 @@ ScriptIf your plugin is relativ">
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2015-12-29T08:00:29.362Z" itemprop="dateModified">Last updated: 2015-12-29</time>
+                <time class="article-footer-updated" datetime="2015-12-29T17:20:42.714Z" itemprop="dateModified">Last updated: 2015-12-29</time>
                 <a href="internationalization.html" class="article-footer-prev" title="Internationalization (i18n)"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="troubleshooting.html" class="article-footer-next" title="Troubleshooting"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -188,6 +184,7 @@ ScriptIf your plugin is relativ">
     </div>
   </div>
 </div>
+
     <footer id="footer" class="wrapper">
   <div class="inner">
     <div id="footer-copyright">
@@ -205,7 +202,7 @@ ScriptIf your plugin is relativ">
   <nav id="mobile-nav">
   <div id="mobile-nav-inner">
     <ul id="mobile-nav-list">
-      <li class="mobile-nav-item"><a href="/docs/" class="mobile-nav-link">Docs</a></li><li class="mobile-nav-item"><a href="/api/" class="mobile-nav-link">API</a></li><li class="mobile-nav-item"><a href="/news/" class="mobile-nav-link">News</a></li><li class="mobile-nav-item"><a href="/plugins/" class="mobile-nav-link">Plugins</a></li><li class="mobile-nav-item"><a href="/themes/" class="mobile-nav-link">Themes</a></li>
+      <a href="/docs/" class="mobile-nav-link">Docs</a><a href="/api/" class="mobile-nav-link">API</a><a href="/news/" class="mobile-nav-link">News</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/themes/" class="mobile-nav-link">Themes</a>
       <li class="mobile-nav-item">
         <a href="https://github.com/hexojs/hexo" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
       </li>
@@ -231,14 +228,15 @@ ScriptIf your plugin is relativ">
 <script src="/build/js/main-d6635cef24.js"></script>
 <script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
 
-<!-- Swiftype -->
+<!-- Algolia -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
 <script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','https://s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install','EwN4HMy_KMxTK_GMjV1z','2.0.0');
+docsearch({
+  apiKey: 'c3d5d4c995b5e0c2ffb5623900279a66',
+  indexName: 'hexo',
+  inputSelector: '#search-input'
+});
 </script>
+
 </body>
 </html>
