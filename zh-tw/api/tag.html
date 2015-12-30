@@ -34,7 +34,7 @@
   <meta name="msapplication-TileColor" content="#2f83cd">
   <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
   <!-- CSS -->
-  <link rel="stylesheet" href="/build/css/navy-416ff2c8a5.css">
+  <link rel="stylesheet" href="/build/css/navy-bec5f468a7.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
@@ -53,7 +53,7 @@
 概要hexo.extend.tag.register(name, function(args, content)&amp;#123;  // ...&amp;#125;, options);
 標籤函數會傳入兩個參數：args 和 content，前者代表使用者在使用標籤外掛時傳入的參數，而後者則是標籤外掛所包覆的內容。
 自 Hexo 3 開始，因為新增了非同步渲染功能，而">
-<meta property="og:updated_time" content="2015-12-30T15:17:56.461Z">
+<meta property="og:updated_time" content="2015-12-30T15:35:43.842Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="標籤外掛（Tag）">
 <meta name="twitter:description" content="標籤外掛幫助使用者在文章中快速插入內容。
@@ -140,7 +140,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2015-12-30T15:17:56.461Z" itemprop="dateModified">上次更新：2015-12-30</time>
+                <time class="article-footer-updated" datetime="2015-12-30T15:35:43.842Z" itemprop="dateModified">上次更新：2015-12-30</time>
                 <a href="renderer.html" class="article-footer-prev" title="渲染引擎 (Renderer)"><i class="fa fa-chevron-left"></i><span>上一頁</span></a>
               </footer>
               
@@ -191,6 +191,7 @@
     </div>
   </div>
 </footer>
+
   </div>
   <div id="mobile-nav-dimmer"></div>
   <nav id="mobile-nav">
@@ -223,14 +224,17 @@
 <script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
 
 <!-- Algolia -->
+
 <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
 <script type="text/javascript">
+document.getElementById('search-input-wrap').classList.add('on');
 docsearch({
-  apiKey: 'c3d5d4c995b5e0c2ffb5623900279a66',
-  indexName: 'hexo',
+  apiKey: 'c83d2ec3440f40aec6d0e695ecec7ef3',
+  indexName: 'hexo_zh-tw',
   inputSelector: '#search-input'
 });
 </script>
+
 
 </body>
 </html>
