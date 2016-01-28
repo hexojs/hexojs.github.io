@@ -4,7 +4,7 @@
   <subtitle><![CDATA[A fast, simple & powerful blog framework powered by Node.js.]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="https://hexo.io/"/>
-  <updated>2016-01-28T06:38:09.145Z</updated>
+  <updated>2016-01-28T06:40:16.142Z</updated>
   <id>https://hexo.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="https://hexo.io/news/2015/03/05/hexo-3-0-released/"/>
     <id>https://hexo.io/news/2015/03/05/hexo-3-0-released/</id>
     <published>2015-03-05T00:00:00.000Z</published>
-    <updated>2016-01-28T06:38:09.145Z</updated>
+    <updated>2016-01-28T06:40:16.142Z</updated>
     <content type="html"><![CDATA[<p>Hexo 3.0 has finally come out! After four beta and four RC versions, Hexo 3 become more stable and more powerful. Thanks for the contributors and testers! </p>
 <h2 id="What_u2019s_Changed_3F"><a href="#What_u2019s_Changed_3F" class="headerlink" title="What’s Changed?"></a>What’s Changed?</h2><p>There’re many improvements in Hexo 3. Better performance, API is easier to use, higher coverage, etc. Here’re some notable changes:</p>
 <ul>
@@ -60,7 +60,7 @@
     <link href="https://hexo.io/news/2015/02/27/new-documentation-and-registry/"/>
     <id>https://hexo.io/news/2015/02/27/new-documentation-and-registry/</id>
     <published>2015-02-27T00:00:00.000Z</published>
-    <updated>2016-01-28T06:38:09.145Z</updated>
+    <updated>2016-01-28T06:40:16.142Z</updated>
     <content type="html"><![CDATA[<p>The Hexo site has just been updated and changed to a brand new theme. The documentation is also updated and more detailed. Some handy features will make your browsing more convenient.</p>
 <h2 id="Official_Registry"><a href="#Official_Registry" class="headerlink" title="Official Registry"></a>Official Registry</h2><p>Besides the new theme, a official registry for plugins and themes finally comes. The registry makes you easier to browse and search plugins. And you can preview themes with screenshots.</p>
 <h3 id="How_to_add_my_plugin/theme_to_the_registry_3F"><a href="#How_to_add_my_plugin/theme_to_the_registry_3F" class="headerlink" title="How to add my plugin/theme to the registry?"></a>How to add my plugin/theme to the registry?</h3><p>See the following articles for more info. Your plugin/theme will be published to the registry once the pull request is merged.</p>
@@ -82,7 +82,7 @@
     <link href="https://hexo.io/news/2014/07/13/hexo-2-8-released/"/>
     <id>https://hexo.io/news/2014/07/13/hexo-2-8-released/</id>
     <published>2014-07-13T00:00:00.000Z</published>
-    <updated>2016-01-28T06:38:09.141Z</updated>
+    <updated>2016-01-28T06:40:16.138Z</updated>
     <content type="html"><![CDATA[<p>Hexo 2.8 was rewritten, brings you better performance and many improvements. The following is the highlights in this version. You can check <a href="https://github.com/hexojs/hexo/releases/tag/2.8.0" target="_blank" rel="external">detail</a> on GitHub.</p>
 <h2 id="Faster_Processing_Speed"><a href="#Faster_Processing_Speed" class="headerlink" title="Faster Processing Speed"></a>Faster Processing Speed</h2><p>Before Hexo 2.8, all source files have to be processed each time you use Hexo. In Hexo 2.8, the entire database will be saved to <code>db.json</code> so Hexo don’t have to process all files again. Also, a new data type “<strong>skip</strong>“ was added for processors to detect whether a file was changed or not.</p>
 <p>Generating was also changed in Hexo 2.8. You can check the elapsed time of each file in console now. However, I found multi-process generating didn’t affect generating speed a lot. Thus, <code>multi_thread</code> and <code>max_open_file</code> setting are deprecated in Hexo 2.8.</p>
@@ -112,7 +112,7 @@
     <link href="https://hexo.io/news/2014/06/14/hexo-2-7-released/"/>
     <id>https://hexo.io/news/2014/06/14/hexo-2-7-released/</id>
     <published>2014-06-14T00:00:00.000Z</published>
-    <updated>2016-01-28T06:38:09.141Z</updated>
+    <updated>2016-01-28T06:40:16.138Z</updated>
     <content type="html"><![CDATA[<p>Hexo 2.7 has been released with three new features. I’m going to introduce them below.</p>
 <h2 id="Fragment_Caching"><a href="#Fragment_Caching" class="headerlink" title="Fragment Caching"></a>Fragment Caching</h2><p>Although Hexo is fast, it may become slow if you have thousands of source files or complicated categories or tags. Before the data model upgraded, I borrowed a feature from Ruby on Rails: <strong>Fragment Caching</strong>.</p>
 <p>Fragment Caching saves contents within a fragment and serves the cache when the next request come in. A fragment will only be processed once. It can reduce database queries and decrease generation time significantly. For instance, a Hexo site with 300+ source files needs 6 minutes to generate. In Hexo 2.7, it only need 10 seconds!</p>
