@@ -55,7 +55,7 @@
 設定模板hexo.theme.setView(path, data);
 移除模板hexo.theme.removeView(path);
 模板模板本身有兩個方法可供使用：render 和 renderSync，兩者功能一樣，只是前者為非同步函數，而後者為同步函數，因此以下僅">
-<meta property="og:updated_time" content="2016-02-07T07:58:27.463Z">
+<meta property="og:updated_time" content="2016-02-07T08:24:44.893Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="主題">
 <meta name="twitter:description" content="hexo.theme 除了繼承 盒子 外，還身兼儲存模板的功能。
@@ -128,17 +128,17 @@
                 <a href="https://github.com/hexojs/site/edit/master/source/zh-tw/api/themes.md" class="article-edit-link" title="改善這篇文件"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <p><code>hexo.theme</code> 除了繼承 <a href="/box.html">盒子</a> 外，還身兼儲存模板的功能。</p>
+                <p><code>hexo.theme</code> 除了繼承 <a href="box.html">盒子</a> 外，還身兼儲存模板的功能。</p>
 <h2 id="u53D6_u5F97_u6A21_u677F" class="article-heading"><a href="#u53D6_u5F97_u6A21_u677F" class="headerlink" title="取得模板"></a>取得模板<a class="article-anchor" href="#u53D6_u5F97_u6A21_u677F" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.theme.getView(path);</span><br></pre></td></tr></table></figure>
 <h2 id="u8A2D_u5B9A_u6A21_u677F" class="article-heading"><a href="#u8A2D_u5B9A_u6A21_u677F" class="headerlink" title="設定模板"></a>設定模板<a class="article-anchor" href="#u8A2D_u5B9A_u6A21_u677F" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.theme.setView(path, data);</span><br></pre></td></tr></table></figure>
 <h2 id="u79FB_u9664_u6A21_u677F" class="article-heading"><a href="#u79FB_u9664_u6A21_u677F" class="headerlink" title="移除模板"></a>移除模板<a class="article-anchor" href="#u79FB_u9664_u6A21_u677F" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.theme.removeView(path);</span><br></pre></td></tr></table></figure>
 <h2 id="u6A21_u677F" class="article-heading"><a href="#u6A21_u677F" class="headerlink" title="模板"></a>模板<a class="article-anchor" href="#u6A21_u677F" aria-hidden="true"></a></h2><p>模板本身有兩個方法可供使用：<code>render</code> 和 <code>renderSync</code>，兩者功能一樣，只是前者為非同步函數，而後者為同步函數，因此以下僅以 <code>render</code> 舉例。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> view = hexo.theme.getView(<span class="string">'layout.swig'</span>);</span><br><span class="line"></span><br><span class="line">view.render(&#123;foo: <span class="number">1</span>, bar: <span class="number">2</span>&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>您可在 <code>render</code> 方法傳入選項作為參數，<code>render</code> 方法會先使用相應的渲染引擎進行處理，並載入 <a href="/helper.html">輔助函數</a>，渲染完成後，會試著尋找佈局（layout）是否存在，當 <code>layout</code> 設為 <code>false</code> 或不存在時則會直接回傳渲染結果。</p>
+<p>您可在 <code>render</code> 方法傳入選項作為參數，<code>render</code> 方法會先使用相應的渲染引擎進行處理，並載入 <a href="helper.html">輔助函數</a>，渲染完成後，會試著尋找佈局（layout）是否存在，當 <code>layout</code> 設為 <code>false</code> 或不存在時則會直接回傳渲染結果。</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-02-07T07:58:27.463Z" itemprop="dateModified">上次更新：2016-02-07</time>
+                <time class="article-footer-updated" datetime="2016-02-07T08:24:44.893Z" itemprop="dateModified">上次更新：2016-02-07</time>
                 <a href="scaffolds.html" class="article-footer-prev" title="鷹架 (Scaffold)"><i class="fa fa-chevron-left"></i><span>上一頁</span></a><a href="console.html" class="article-footer-next" title="控制台 (Console)"><span>下一頁</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

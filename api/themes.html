@@ -55,7 +55,7 @@ Get a Viewhexo.theme.getView(path);
 Set a Viewhexo.theme.setView(path, data);
 Remove a Viewhexo.theme.removeView(path);
 ViewViews have two metho">
-<meta property="og:updated_time" content="2016-02-07T07:58:27.427Z">
+<meta property="og:updated_time" content="2016-02-07T08:24:44.861Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Themes">
 <meta name="twitter:description" content="hexo.theme inherits from Box, and also saves templates.
@@ -128,17 +128,17 @@ ViewViews have two metho">
                 <a href="https://github.com/hexojs/site/edit/master/source/api/themes.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <p><code>hexo.theme</code> inherits from <a href="/box.html">Box</a>, and also saves templates.</p>
+                <p><code>hexo.theme</code> inherits from <a href="box.html">Box</a>, and also saves templates.</p>
 <h2 id="Get_a_View" class="article-heading"><a href="#Get_a_View" class="headerlink" title="Get a View"></a>Get a View<a class="article-anchor" href="#Get_a_View" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.theme.getView(path);</span><br></pre></td></tr></table></figure>
 <h2 id="Set_a_View" class="article-heading"><a href="#Set_a_View" class="headerlink" title="Set a View"></a>Set a View<a class="article-anchor" href="#Set_a_View" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.theme.setView(path, data);</span><br></pre></td></tr></table></figure>
 <h2 id="Remove_a_View" class="article-heading"><a href="#Remove_a_View" class="headerlink" title="Remove a View"></a>Remove a View<a class="article-anchor" href="#Remove_a_View" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.theme.removeView(path);</span><br></pre></td></tr></table></figure>
 <h2 id="View" class="article-heading"><a href="#View" class="headerlink" title="View"></a>View<a class="article-anchor" href="#View" aria-hidden="true"></a></h2><p>Views have two methods: <code>render</code> and <code>renderSync</code>. These two methods are identical, but the former is asynchronous and the latter is synchronous. So for the sake of simplicity, we will only discuss <code>render</code> here.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> view = hexo.theme.getView(<span class="string">'layout.swig'</span>);</span><br><span class="line"></span><br><span class="line">view.render(&#123;foo: <span class="number">1</span>, bar: <span class="number">2</span>&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>You can pass options to the <code>render</code> method and it will try to process the template with the corresponding renderer and load the <a href="/helper.html">helpers</a>. When rendering is complete, it will try to find whether a layout exists. If <code>layout</code> is <code>false</code> or if it doesn’t exist, the result will be returned directly.</p>
+<p>You can pass options to the <code>render</code> method and it will try to process the template with the corresponding renderer and load the <a href="helper.html">helpers</a>. When rendering is complete, it will try to find whether a layout exists. If <code>layout</code> is <code>false</code> or if it doesn’t exist, the result will be returned directly.</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-02-07T07:58:27.427Z" itemprop="dateModified">Last updated: 2016-02-07</time>
+                <time class="article-footer-updated" datetime="2016-02-07T08:24:44.861Z" itemprop="dateModified">Last updated: 2016-02-07</time>
                 <a href="scaffolds.html" class="article-footer-prev" title="Scaffolds"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="console.html" class="article-footer-next" title="Console"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
