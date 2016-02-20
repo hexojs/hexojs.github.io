@@ -281,6 +281,7 @@ body {
   font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   outline: none;
+  -webkit-appearance: none;
 }
 #lang-select-wrap {
   display: none;
