@@ -39,21 +39,27 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
   <!-- RSS -->
-  <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  <link rel="alternate" href="/atom.xml" title="Hexo">
   <!-- Open Graph -->
   <meta name="description" content="创建 Hexo 主题非常容易，您只要在 themes 文件夹内，新增一个任意名称的文件夹，并修改 _config.yml 内的 theme 设定，即可切换主题。一个主题可能会有以下的结构：
-.&amp;#10;&amp;#9500;&amp;#9472;&amp;#9472; _config.yml&amp;#10;&amp;#9500;&amp;#9472;&amp;#9472; languages&amp;#10;&amp;#9500;&amp;#9472;&amp;#9472; lay">
+.├── _config.yml├── languages├── layout├── scripts└── source
+_config.yml主题的配置文件。修改时会自动更新，无需重启服务器。
+languag">
 <meta property="og:type" content="website">
 <meta property="og:title" content="主题">
 <meta property="og:url" content="https://hexo.io/zh-cn/docs/themes.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="创建 Hexo 主题非常容易，您只要在 themes 文件夹内，新增一个任意名称的文件夹，并修改 _config.yml 内的 theme 设定，即可切换主题。一个主题可能会有以下的结构：
-.&amp;#10;&amp;#9500;&amp;#9472;&amp;#9472; _config.yml&amp;#10;&amp;#9500;&amp;#9472;&amp;#9472; languages&amp;#10;&amp;#9500;&amp;#9472;&amp;#9472; lay">
-<meta property="og:updated_time" content="2016-02-26T11:42:46.657Z">
+.├── _config.yml├── languages├── layout├── scripts└── source
+_config.yml主题的配置文件。修改时会自动更新，无需重启服务器。
+languag">
+<meta property="og:updated_time" content="2016-02-28T06:13:22.865Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="主题">
 <meta name="twitter:description" content="创建 Hexo 主题非常容易，您只要在 themes 文件夹内，新增一个任意名称的文件夹，并修改 _config.yml 内的 theme 设定，即可切换主题。一个主题可能会有以下的结构：
-.&amp;#10;&amp;#9500;&amp;#9472;&amp;#9472; _config.yml&amp;#10;&amp;#9500;&amp;#9472;&amp;#9472; languages&amp;#10;&amp;#9500;&amp;#9472;&amp;#9472; lay">
+.├── _config.yml├── languages├── layout├── scripts└── source
+_config.yml主题的配置文件。修改时会自动更新，无需重启服务器。
+languag">
 <meta name="twitter:site" content="hexojs">
 <meta property="fb:admins" content="100000247608790">
   <!-- Google Analytics -->
@@ -120,23 +126,23 @@
               </header>
               <div class="article-content" itemprop="articleBody">
                 <p>创建 Hexo 主题非常容易，您只要在 <code>themes</code> 文件夹内，新增一个任意名称的文件夹，并修改 <code>_config.yml</code> 内的 <code>theme</code> 设定，即可切换主题。一个主题可能会有以下的结构：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.&#10;&#9500;&#9472;&#9472; _config.yml&#10;&#9500;&#9472;&#9472; languages&#10;&#9500;&#9472;&#9472; layout&#10;&#9500;&#9472;&#9472; scripts&#10;&#9492;&#9472;&#9472; source</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── languages</span><br><span class="line">├── layout</span><br><span class="line">├── scripts</span><br><span class="line">└── source</span><br></pre></td></tr></table></figure>
 <h3 id="config-yml" class="article-heading"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml<a class="article-anchor" href="#config-yml" aria-hidden="true"></a></h3><p>主题的配置文件。修改时会自动更新，无需重启服务器。</p>
 <h3 id="languages" class="article-heading"><a href="#languages" class="headerlink" title="languages"></a>languages<a class="article-anchor" href="#languages" aria-hidden="true"></a></h3><p>语言文件夹。请参见 <a href="internationalization.html">国际化 (i18n)</a>。</p>
 <h3 id="layout" class="article-heading"><a href="#layout" class="headerlink" title="layout"></a>layout<a class="article-anchor" href="#layout" aria-hidden="true"></a></h3><p>布局文件夹。用于存放主题的模板文件，决定了网站内容的呈现方式，Hexo 内建 <a href="http://paularmstrong.github.com/swig/" target="_blank" rel="external">Swig</a> 模板引擎，您可以另外安装插件来获得 <a href="https://github.com/hexojs/hexo-renderer-ejs" target="_blank" rel="external">EJS</a>、<a href="https://github.com/hexojs/hexo-renderer-haml" target="_blank" rel="external">Haml</a> 或 <a href="https://github.com/hexojs/hexo-renderer-jade" target="_blank" rel="external">Jade</a> 支持，Hexo 根据模板文件的扩展名来决定所使用的模板引擎，例如：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">layout.ejs   - &#20351;&#29992; EJS&#10;layout.swig  - &#20351;&#29992; Swig</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">layout.ejs   - 使用 EJS</span><br><span class="line">layout.swig  - 使用 Swig</span><br></pre></td></tr></table></figure>
 <p>您可参考 <a href="templates.html">模板</a> 以获得更多信息。</p>
 <h3 id="scripts" class="article-heading"><a href="#scripts" class="headerlink" title="scripts"></a>scripts<a class="article-anchor" href="#scripts" aria-hidden="true"></a></h3><p>脚本文件夹。在启动时，Hexo 会载入此文件夹内的 JavaScript 文件，请参见 <a href="plugins.html">插件</a> 以获得更多信息。</p>
 <h3 id="source" class="article-heading"><a href="#source" class="headerlink" title="source"></a>source<a class="article-anchor" href="#source" aria-hidden="true"></a></h3><p>资源文件夹，除了模板以外的 Asset，例如 CSS、JavaScript 文件等，都应该放在这个文件夹中。文件或文件夹开头名称为 <code>_</code>（下划线线）或隐藏的文件会被忽略。</p>
 <p>如果文件可以被渲染的话，会经过解析然后储存到 <code>public</code> 文件夹，否则会直接拷贝到 <code>public</code> 文件夹。</p>
-<h3 id="u53D1_u5E03" class="article-heading"><a href="#u53D1_u5E03" class="headerlink" title="发布"></a>发布<a class="article-anchor" href="#u53D1_u5E03" aria-hidden="true"></a></h3><p>当您完成主题后，可以考虑将它发布到 <a href="/themes">主题列表</a>，让更多人能够使用您的主题。在发布前建议先进行 <a href="https://github.com/hexojs/hexo-theme-unit-test" target="_blank" rel="external">主题单元测试</a>，确保每一项功能都能正常使用。发布主题的步骤和 <a href="contributing.html#更新文档">更新文档</a> 非常类似。</p>
+<h3 id="发布" class="article-heading"><a href="#发布" class="headerlink" title="发布"></a>发布<a class="article-anchor" href="#发布" aria-hidden="true"></a></h3><p>当您完成主题后，可以考虑将它发布到 <a href="/themes">主题列表</a>，让更多人能够使用您的主题。在发布前建议先进行 <a href="https://github.com/hexojs/hexo-theme-unit-test" target="_blank" rel="external">主题单元测试</a>，确保每一项功能都能正常使用。发布主题的步骤和 <a href="contributing.html#更新文档">更新文档</a> 非常类似。</p>
 <ol>
 <li>Fork <a href="https://github.com/hexojs/site" target="_blank" rel="external">hexojs/site</a></li>
 <li><p>把库（repository）复制到电脑上，并安装所依赖的插件。</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone https://github.com/&#60;username&#62;/site.git&#10;$ cd site&#10;$ npm install</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ git clone https://github.com/&lt;username&gt;/site.git</span><br><span class="line">$ cd site</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>编辑 <code>source/_data/themes.yml</code>，在文件中新增您的主题，例如：</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">- name: landscape&#10;  description: A brand new default theme for Hexo.&#10;  link: https://github.com/hexojs/hexo-theme-landscape&#10;  preview: http://hexo.io/hexo-theme-landscape&#10;  tags:&#10;    - official&#10;    - responsive&#10;    - widget&#10;    - two_column&#10;    - one_column</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">- name: landscape</span><br><span class="line">  description: A brand new default theme for Hexo.</span><br><span class="line">  link: https://github.com/hexojs/hexo-theme-landscape</span><br><span class="line">  preview: http://hexo.io/hexo-theme-landscape</span><br><span class="line">  tags:</span><br><span class="line">    - official</span><br><span class="line">    - responsive</span><br><span class="line">    - widget</span><br><span class="line">    - two_column</span><br><span class="line">    - one_column</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>在 <code>source/themes/screenshots</code> 新增同名的截图档案，图片必须为 800x500 的 PNG 文件。</p>
 </li>
@@ -146,7 +152,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-02-26T11:42:46.657Z" itemprop="dateModified">上次更新：2016-02-26</time>
+                <time class="article-footer-updated" datetime="2016-02-28T06:13:22.865Z" itemprop="dateModified">上次更新：2016-02-28</time>
                 <a href="permalinks.html" class="article-footer-prev" title="永久链接"><i class="fa fa-chevron-left"></i><span>上一页</span></a><a href="templates.html" class="article-footer-next" title="模版"><span>下一页</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -172,7 +178,7 @@
           <aside id="article-toc" role="navigation">
             <div id="article-toc-inner">
               <strong class="sidebar-title">目录</strong>
-              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#config-yml"><span class="toc-text">_config.yml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#languages"><span class="toc-text">languages</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#layout"><span class="toc-text">layout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scripts"><span class="toc-text">scripts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#source"><span class="toc-text">source</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#u53D1_u5E03"><span class="toc-text">发布</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#config-yml"><span class="toc-text">_config.yml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#languages"><span class="toc-text">languages</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#layout"><span class="toc-text">layout</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#scripts"><span class="toc-text">scripts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#source"><span class="toc-text">source</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#发布"><span class="toc-text">发布</span></a></li></ol>
               <a href="#" id="article-toc-top">回到顶部</a>
             </div>
           </aside>
