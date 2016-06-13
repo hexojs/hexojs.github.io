@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Конфигурация | Hexo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://hexo.io/ru/docs/configuration.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://hexo.io/docs/configuration.html">
+    
+      <link rel="alternative" hreflang="zh-tw" href="https://hexo.io/zh-tw/docs/configuration.html">
+    
+      <link rel="alternative" hreflang="zh-cn" href="https://hexo.io/zh-cn/docs/configuration.html">
+    
+      <link rel="alternative" hreflang="ru" href="https://hexo.io/ru/docs/configuration.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/build/css/navy-95fcbb15f6.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="Hexo">
+  <!-- Open Graph -->
+  <meta name="description" content="Можно изменить настройки в файле _config.yml.
+Сайт
+
+
+Настройки
+Описание
+
+
+
+
+title
+Название сайта
+
+
+subtitle
+Подзаголовок сайта
+
+
+description
+Описание сайта
+
+
+author
+Ваше имя
+
+
+language
+Язык сайта. Исп">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Конфигурация">
+<meta property="og:url" content="https://hexo.io/ru/docs/configuration.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Можно изменить настройки в файле _config.yml.
+Сайт
+
+
+Настройки
+Описание
+
+
+
+
+title
+Название сайта
+
+
+subtitle
+Подзаголовок сайта
+
+
+description
+Описание сайта
+
+
+author
+Ваше имя
+
+
+language
+Язык сайта. Исп">
+<meta property="og:updated_time" content="2016-06-13T12:54:38.194Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Конфигурация">
+<meta name="twitter:description" content="Можно изменить настройки в файле _config.yml.
+Сайт
+
+
+Настройки
+Описание
+
+
+
+
+title
+Название сайта
+
+
+subtitle
+Подзаголовок сайта
+
+
+description
+Описание сайта
+
+
+author
+Ваше имя
+
+
+language
+Язык сайта. Исп">
+<meta name="twitter:site" content="hexojs">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/ru/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/ru/docs/" class="main-nav-link">Docs</a><a href="/ru/api/" class="main-nav-link">API</a><a href="/news/" class="main-nav-link">Новости</a><a href="/plugins/" class="main-nav-link">Плагины</a><a href="/themes/" class="main-nav-link">Темы</a>
+      <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>Русский</span></label>
+      <select id="lang-select" data-canonical="docs/configuration.html">
+        
+          <option value="en">English</option>
+        
+          <option value="zh-tw">正體中文</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+          <option value="ru" selected>Русский</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Конфигурация</h1>
+                <a href="https://github.com/hexojs/site/edit/master/source/ru/docs/configuration.md" class="article-edit-link" title="Предложить улучшение"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p>Можно изменить настройки в файле <code>_config.yml</code>.</p>
+<h3 id="Сайт" class="article-heading"><a href="#Сайт" class="headerlink" title="Сайт"></a>Сайт<a class="article-anchor" href="#Сайт" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Настройки</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>Название сайта</td>
+</tr>
+<tr>
+<td><code>subtitle</code></td>
+<td>Подзаголовок сайта</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>Описание сайта</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>Ваше имя</td>
+</tr>
+<tr>
+<td><code>language</code></td>
+<td>Язык сайта. Используйте <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" target="_blank" rel="external">2-значный код ISO-639-1</a>. По умолчанию: <code>en</code>.</td>
+</tr>
+<tr>
+<td><code>timezone</code></td>
+<td>Временной пояс. Hexo использует настройки компьютера по умолчанию. Список доступных часовых поясов можно найти <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="external">здесь</a>. Несколько примеров: <code>America/New_York</code>, <code>Japan</code> и <code>UTC</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="URL" class="article-heading"><a href="#URL" class="headerlink" title="URL"></a>URL<a class="article-anchor" href="#URL" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Описание</th>
+<th>Умолчание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>url</code></td>
+<td>URL-адрес сайта</td>
+<td></td>
+</tr>
+<tr>
+<td><code>root</code></td>
+<td>Корневая папка сайта</td>
+<td></td>
+</tr>
+<tr>
+<td><code>permalink</code></td>
+<td><a href="permalinks.html">Постоянная ссылка</a> используются ссылки на статьи</td>
+<td><code>:year/:month/:day/:title/</code></td>
+</tr>
+<tr>
+<td><code>permalink_default</code></td>
+<td>Значение по умолчанию для каждого сегмента постоянной ссылки</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="note info"><strong class="note-title">Сайт в подпапке</strong><p>Если ваш сайт располагается в поддиректории (к примеру <code>http://example.org/blog</code>) поменяйте значение <code>url</code> на <code>http://example.org/blog</code> и установите переменной <code>root</code> значение <code>/blog/</code>.</p>
+</blockquote>
+<h3 id="Папки" class="article-heading"><a href="#Папки" class="headerlink" title="Папки"></a>Папки<a class="article-anchor" href="#Папки" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Описание</th>
+<th>Умолчание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>source_dir</code></td>
+<td>Папка с исходниками. Здесь хранится контент</td>
+<td><code>source</code></td>
+</tr>
+<tr>
+<td><code>public_dir</code></td>
+<td>Папка публикации. Здесь хранится сгененированный сайт</td>
+<td><code>public</code></td>
+</tr>
+<tr>
+<td><code>tag_dir</code></td>
+<td>Папка с тэгами</td>
+<td><code>tags</code></td>
+</tr>
+<tr>
+<td><code>archive_dir</code></td>
+<td>Папака с архивами</td>
+<td><code>archives</code></td>
+</tr>
+<tr>
+<td><code>category_dir</code></td>
+<td>Папка с каьегориями</td>
+<td><code>categories</code></td>
+</tr>
+<tr>
+<td><code>code_dir</code></td>
+<td>Папка с кодом</td>
+<td><code>downloads/code</code></td>
+</tr>
+<tr>
+<td><code>i18n_dir</code></td>
+<td>Папка  i18n</td>
+<td><code>:lang</code></td>
+</tr>
+<tr>
+<td><code>skip_render</code></td>
+<td>Пути, которые исключены из обработки. Можно использовать <a href="https://github.com/isaacs/minimatch" target="_blank" rel="external">глобальные выражения</a> для определения путей</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Написание" class="article-heading"><a href="#Написание" class="headerlink" title="Написание"></a>Написание<a class="article-anchor" href="#Написание" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Описание</th>
+<th>Умолчание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>new_post_name</code></td>
+<td>Имя файла для создания новых постов</td>
+<td><code>:title.md</code></td>
+</tr>
+<tr>
+<td><code>default_layout</code></td>
+<td>Макет по умолчанию</td>
+<td><code>post</code></td>
+</tr>
+<tr>
+<td><code>titlecase</code></td>
+<td>Преобразовать текст в заглавные?</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>external_link</code></td>
+<td>Открывать внешние ссылки в новой вкладке?</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>filename_case</code></td>
+<td>Преобразовать имена файлов в <code>1</code> нижний регистр; <code>2</code> верхний регистр</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>render_drafts</code></td>
+<td>Отображать черновики?</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>post_asset_folder</code></td>
+<td>Включать <a href="asset-folders.html">папку с материалами</a>?</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>relative_link</code></td>
+<td>Создание ссылок относительно корневой папки?</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>future</code></td>
+<td>Отображать будущие посты?</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>highlight</code></td>
+<td>Настройки блоков кода</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Категории-и-тэги" class="article-heading"><a href="#Категории-и-тэги" class="headerlink" title="Категории и тэги"></a>Категории и тэги<a class="article-anchor" href="#Категории-и-тэги" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Описание</th>
+<th>Умолчание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>default_category</code></td>
+<td>Категория по умолчанию</td>
+<td><code>uncategorized</code></td>
+</tr>
+<tr>
+<td><code>category_map</code></td>
+<td>Карта категорий</td>
+<td></td>
+</tr>
+<tr>
+<td><code>tag_map</code></td>
+<td>Карта тэгов</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Даты-Времени-формат" class="article-heading"><a href="#Даты-Времени-формат" class="headerlink" title="Даты / Времени формат"></a>Даты / Времени формат<a class="article-anchor" href="#Даты-Времени-формат" aria-hidden="true"></a></h3><p>Hexo использует <a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> Для работы с датами.</p>
+<table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Описание</th>
+<th>Умолчание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>date_format</code></td>
+<td>Формат даты</td>
+<td><code>MMM D YYYY</code></td>
+</tr>
+<tr>
+<td><code>time_format</code></td>
+<td>Формат времени</td>
+<td><code>H:mm:ss</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Разбивка-на-страницы" class="article-heading"><a href="#Разбивка-на-страницы" class="headerlink" title="Разбивка на страницы"></a>Разбивка на страницы<a class="article-anchor" href="#Разбивка-на-страницы" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Описание</th>
+<th>Умолчание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>per_page</code></td>
+<td>Количество постов, отображаемых на странице. <code>0</code> отключает разбивку.</td>
+<td><code>10</code></td>
+</tr>
+<tr>
+<td><code>pagination_dir</code></td>
+<td>Каталог разбивки</td>
+<td><code>page</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Расширения" class="article-heading"><a href="#Расширения" class="headerlink" title="Расширения"></a>Расширения<a class="article-anchor" href="#Расширения" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Описание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>theme</code></td>
+<td>Имя темы. <code>false</code> отклюдчает применение тем</td>
+</tr>
+<tr>
+<td><code>deploy</code></td>
+<td>Параметры публикации</td>
+</tr>
+</tbody>
+</table>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2016-06-13T12:54:38.194Z" itemprop="dateModified">Последнее обновление: 2016-06-13</time>
+                <a href="setup.html" class="article-footer-prev" title="Установка"><i class="fa fa-chevron-left"></i><span>Пред</span></a><a href="commands.html" class="article-footer-next" title="Команды"><span>След</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'hexojs';
+  var disqus_url = 'https://hexo.io/ru/docs/configuration.html';
+  var disqus_title = "Конфигурация";
+  var disqus_config = function(){
+    this.language = 'ru';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Содержание</strong>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Сайт"><span class="toc-text">Сайт</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#URL"><span class="toc-text">URL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Папки"><span class="toc-text">Папки</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Написание"><span class="toc-text">Написание</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Категории-и-тэги"><span class="toc-text">Категории и тэги</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Даты-Времени-формат"><span class="toc-text">Даты / Времени формат</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Разбивка-на-страницы"><span class="toc-text">Разбивка на страницы</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Расширения"><span class="toc-text">Расширения</span></a></li></ol>
+              <a href="#" id="article-toc-top">Наверх</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Начало работы</strong><a href="index.html" class="sidebar-link">Обзор</a><a href="setup.html" class="sidebar-link">Установка</a><a href="configuration.html" class="sidebar-link current">Конфигурация</a><a href="commands.html" class="sidebar-link">Команды</a><a href="migration.html" class="sidebar-link">Миграция</a><strong class="sidebar-title">Основы</strong><a href="writing.html" class="sidebar-link">Написание</a><a href="front-matter.html" class="sidebar-link">Шапка файла</a><a href="tag-plugins.html" class="sidebar-link">Плагины тэгов</a><a href="asset-folders.html" class="sidebar-link">Папки с материалами</a><a href="data-files.html" class="sidebar-link">Файлы с данными</a><a href="server.html" class="sidebar-link">Сервер</a><a href="generating.html" class="sidebar-link">Генерация</a><a href="deployment.html" class="sidebar-link">Публикация</a><strong class="sidebar-title">Кастомизация</strong><a href="permalinks.html" class="sidebar-link">Постоянные ссылки</a><a href="themes.html" class="sidebar-link">Темы</a><a href="templates.html" class="sidebar-link">Шаблоны</a><a href="variables.html" class="sidebar-link">Переменные</a><a href="helpers.html" class="sidebar-link">Помощники</a><a href="internationalization.html" class="sidebar-link">Интернацинализация (i18n)</a><a href="plugins.html" class="sidebar-link">Плагины</a><strong class="sidebar-title">Разное</strong><a href="troubleshooting.html" class="sidebar-link">Решение проблем</a><a href="contributing.html" class="sidebar-link">Содействие</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2016 <a href="https://zespia.tw/" target="_blank">Tommy Chen</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/hexojs" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/hexojs/hexo" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/ru/docs/" class="mobile-nav-link">Docs</a><a href="/ru/api/" class="mobile-nav-link">API</a><a href="/news/" class="mobile-nav-link">Новости</a><a href="/plugins/" class="mobile-nav-link">Плагины</a><a href="/themes/" class="mobile-nav-link">Темы</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/hexojs/hexo" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Начало работы</strong><a href="index.html" class="mobile-nav-link">Обзор</a><a href="setup.html" class="mobile-nav-link">Установка</a><a href="configuration.html" class="mobile-nav-link current">Конфигурация</a><a href="commands.html" class="mobile-nav-link">Команды</a><a href="migration.html" class="mobile-nav-link">Миграция</a><strong class="mobile-nav-title">Основы</strong><a href="writing.html" class="mobile-nav-link">Написание</a><a href="front-matter.html" class="mobile-nav-link">Шапка файла</a><a href="tag-plugins.html" class="mobile-nav-link">Плагины тэгов</a><a href="asset-folders.html" class="mobile-nav-link">Папки с материалами</a><a href="data-files.html" class="mobile-nav-link">Файлы с данными</a><a href="server.html" class="mobile-nav-link">Сервер</a><a href="generating.html" class="mobile-nav-link">Генерация</a><a href="deployment.html" class="mobile-nav-link">Публикация</a><strong class="mobile-nav-title">Кастомизация</strong><a href="permalinks.html" class="mobile-nav-link">Постоянные ссылки</a><a href="themes.html" class="mobile-nav-link">Темы</a><a href="templates.html" class="mobile-nav-link">Шаблоны</a><a href="variables.html" class="mobile-nav-link">Переменные</a><a href="helpers.html" class="mobile-nav-link">Помощники</a><a href="internationalization.html" class="mobile-nav-link">Интернацинализация (i18n)</a><a href="plugins.html" class="mobile-nav-link">Плагины</a><strong class="mobile-nav-title">Разное</strong><a href="troubleshooting.html" class="mobile-nav-link">Решение проблем</a><a href="contributing.html" class="mobile-nav-link">Содействие</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>Русский</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/configuration.html">
+      
+        <option value="en">English</option>
+      
+        <option value="zh-tw">正體中文</option>
+      
+        <option value="zh-cn">简体中文</option>
+      
+        <option value="ru" selected>Русский</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<script src="/build/js/main-d6635cef24.js"></script>
+<script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+
+<!-- Algolia -->
+
+
+</body>
+</html>
