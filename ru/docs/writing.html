@@ -53,7 +53,7 @@ post - это layout по умолчанию, но можно установит
 <meta property="og:description" content="Чтобы создать новый пост, можно выполнить следующую команду:
 $ hexo new [layout] &amp;lt;title&amp;gt;
 post - это layout по умолчанию, но можно установить свой собственный изменив значение default_layout в _c">
-<meta property="og:updated_time" content="2016-06-13T12:54:38.198Z">
+<meta property="og:updated_time" content="2016-06-14T15:44:21.830Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Написание">
 <meta name="twitter:description" content="Чтобы создать новый пост, можно выполнить следующую команду:
@@ -154,7 +154,7 @@ post - это layout по умолчанию, но можно установит
 </table>
 <blockquote class="note tip"><strong class="note-title">Не обрабатывайте мои посты!</strong><p>Если не хотите чтобы ваши посты обрабатывались, можно настроить макет: установив <code>layout: false</code> в заголовке страницы.</p>
 </blockquote>
-<h3 id="Имя-файла" class="article-heading"><a href="#Имя-файла" class="headerlink" title="Имя файла"></a>Имя файла<a class="article-anchor" href="#Имя-файла" aria-hidden="true"></a></h3><p>По умолчанию Hexo использует название поста для создания имени. Для изменения имени файла по умолчанию можно отредактировать настройки изменив <code>new_post_name</code> в <code>_config.yml</code>. Например у значения <code>:year-:month-:day-:title.md</code> будет префикс с именем файлов и датой создания поста. Возможно использовать следующие подстановки:</p>
+<h3 id="Имя-файла" class="article-heading"><a href="#Имя-файла" class="headerlink" title="Имя файла"></a>Имя файла<a class="article-anchor" href="#Имя-файла" aria-hidden="true"></a></h3><p>По умолчанию Hexo использует название поста для создания имени. Для изменения имени файла по умолчанию, можно отредактировать настройки, изменив <code>new_post_name</code> в <code>_config.yml</code>. Например, у значения <code>:year-:month-:day-:title.md</code>, будет префикс с именем файлов и датой создания поста. Можно использовать следующие подстановки:</p>
 <table>
 <thead>
 <tr>
@@ -189,9 +189,9 @@ post - это layout по умолчанию, но можно установит
 </tr>
 </tbody>
 </table>
-<h3 id="Черновики" class="article-heading"><a href="#Черновики" class="headerlink" title="Черновики"></a>Черновики<a class="article-anchor" href="#Черновики" aria-hidden="true"></a></h3><p>Ранее упоминалось о специальном макете в Hexo: <code>draft</code>. В нём сообщения при создании сохраняются в папку <code>source/_drafts</code>. Можно использовать команду <code>publish</code>, чтобы переместить черновик в папку <code>source/_posts</code>. <code>publish</code> похожа на команду <code>new</code>.</p>
+<h3 id="Черновики" class="article-heading"><a href="#Черновики" class="headerlink" title="Черновики"></a>Черновики<a class="article-anchor" href="#Черновики" aria-hidden="true"></a></h3><p>Ранее упоминалось о специальном макете в Hexo: <code>draft</code>. В нём, сообщения при создании, сохраняются в папку <code>source/_drafts</code>. Можно использовать команду <code>publish</code>, чтобы переместить черновик в папку <code>source/_posts</code>. <code>publish</code> похожа на команду <code>new</code>.</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<p>Черновики по умолчанию не отображаются. Добавьте опцию <code>--draft</code> при запуске Hexo или измените значение   Вы можете добавить параметр-проект при запуске Hexo или установить значение <code>render_drafts: true</code> в <code>_config.yml</code>.</p>
+<p>Черновики, по умолчанию, не отображаются. Можно добавить параметр <code>--draft</code> при запуске Hexo или установить значение <code>render_drafts: true</code> в <code>_config.yml</code>, чтобы включить обработку черновиков.</p>
 <h3 id="Заготовки" class="article-heading"><a href="#Заготовки" class="headerlink" title="Заготовки"></a>Заготовки<a class="article-anchor" href="#Заготовки" aria-hidden="true"></a></h3><p>При создании сообщения, Hexo строит файлы на основе соответствующего <code>scaffolds</code> файла. Например:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new photo <span class="string">"My Gallery"</span></span><br></pre></td></tr></table></figure>
 <p>Когда выпонится эта команда, Hexo постарается найти <code>photo.md</code> в папке <code>scaffolds</code> и создать пост на его основе. Эти подстановочные части доступны в заготовках:</p>
@@ -220,7 +220,7 @@ post - это layout по умолчанию, но можно установит
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-06-13T12:54:38.198Z" itemprop="dateModified">Последнее обновление: 2016-06-13</time>
+                <time class="article-footer-updated" datetime="2016-06-14T15:44:21.830Z" itemprop="dateModified">Последнее обновление: 2016-06-14</time>
                 <a href="migration.html" class="article-footer-prev" title="Миграция"><i class="fa fa-chevron-left"></i><span>Пред</span></a><a href="front-matter.html" class="article-footer-next" title="Шапка файла"><span>След</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

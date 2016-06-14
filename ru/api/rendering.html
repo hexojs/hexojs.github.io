@@ -2,7 +2,7 @@
 <html lang="ru">
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
-  <title>Обработка | Hexo</title>
+  <title>Рендеринг | Hexo</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Canonical links -->
@@ -43,16 +43,16 @@
   <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Hexo">
   <!-- Open Graph -->
-  <meta name="description" content="Существует два метода обработки файлов или строк для рендеринга асинхронный hexo.render.render и синхронный hexo.render.renderSync. Нет ничего удивительного в похожести этих методов. Ниже описываются">
+  <meta name="description" content="Существует два метода обработки файлов или строк для рендеринга: асинхронный hexo.render.render и синхронный hexo.render.renderSync. Нет ничего удивительного в похожести этих методов. Ниже описываются">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Обработка">
+<meta property="og:title" content="Рендеринг">
 <meta property="og:url" content="https://hexo.io/ru/api/rendering.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Существует два метода обработки файлов или строк для рендеринга асинхронный hexo.render.render и синхронный hexo.render.renderSync. Нет ничего удивительного в похожести этих методов. Ниже описываются">
-<meta property="og:updated_time" content="2016-06-13T12:54:38.194Z">
+<meta property="og:description" content="Существует два метода обработки файлов или строк для рендеринга: асинхронный hexo.render.render и синхронный hexo.render.renderSync. Нет ничего удивительного в похожести этих методов. Ниже описываются">
+<meta property="og:updated_time" content="2016-06-14T15:44:21.830Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Обработка">
-<meta name="twitter:description" content="Существует два метода обработки файлов или строк для рендеринга асинхронный hexo.render.render и синхронный hexo.render.renderSync. Нет ничего удивительного в похожести этих методов. Ниже описываются">
+<meta name="twitter:title" content="Рендеринг">
+<meta name="twitter:description" content="Существует два метода обработки файлов или строк для рендеринга: асинхронный hexo.render.render и синхронный hexo.render.renderSync. Нет ничего удивительного в похожести этих методов. Ниже описываются">
 <meta name="twitter:site" content="hexojs">
 <meta property="fb:admins" content="100000247608790">
   <!-- Google Analytics -->
@@ -116,27 +116,27 @@
           <div class="article">
             <div class="inner">
               <header class="article-header">
-                <h1 class="article-title" itemprop="name">Обработка</h1>
+                <h1 class="article-title" itemprop="name">Рендеринг</h1>
                 <a href="https://github.com/hexojs/site/edit/master/source/ru/api/rendering.md" class="article-edit-link" title="Предложить улучшение"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <p>Существует два метода обработки файлов или строк для рендеринга асинхронный <code>hexo.render.render</code> и синхронный <code>hexo.render.renderSync</code>. Нет ничего удивительного в похожести этих методов. Ниже описываются только асинхронные методы.</p>
+                <p>Существует два метода обработки файлов или строк для рендеринга: асинхронный <code>hexo.render.render</code> и синхронный <code>hexo.render.renderSync</code>. Нет ничего удивительного в похожести этих методов. Ниже описываются только асинхронные методы.</p>
 <h2 id="Обработка-строки" class="article-heading"><a href="#Обработка-строки" class="headerlink" title="Обработка строки"></a>Обработка строки<a class="article-anchor" href="#Обработка-строки" aria-hidden="true"></a></h2><p>При рендеринге строки Hexo необходимо указать каким обработчиком (<code>engine</code>) её обрабатывать.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.render.render(&#123;text: <span class="string">'example'</span>, engine: <span class="string">'swig'</span>&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="Обработка-файла" class="article-heading"><a href="#Обработка-файла" class="headerlink" title="Обработка файла"></a>Обработка файла<a class="article-anchor" href="#Обработка-файла" aria-hidden="true"></a></h2><p>При обработке файла, не нужно указывать <code>engine</code>, потому что Hexo сам обнаружит соответствующий обработчик автоматически в зависимости от расширения файла. Конечно, можно явно задать обработчик.</p>
+<h2 id="Обработка-файла" class="article-heading"><a href="#Обработка-файла" class="headerlink" title="Обработка файла"></a>Обработка файла<a class="article-anchor" href="#Обработка-файла" aria-hidden="true"></a></h2><p>При обработке файла, не нужно указывать <code>engine</code>, потому что Hexo сам обнаружит соответствующий рендер автоматически в зависимости от расширения файла. Конечно, возможно и явно задать обработчик.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.render.render(&#123;path: <span class="string">'path/to/file.swig'</span>&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <h2 id="Опции-обработчика" class="article-heading"><a href="#Опции-обработчика" class="headerlink" title="Опции обработчика"></a>Опции обработчика<a class="article-anchor" href="#Опции-обработчика" aria-hidden="true"></a></h2><p>Можно задать опции в качестве второго аргумента.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.render.render(&#123;text: <span class="string">''</span>&#125;, &#123;foo: <span class="string">'foo'</span>&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <h2 id="Фильтр-after-render" class="article-heading"><a href="#Фильтр-after-render" class="headerlink" title="Фильтр after_render"></a>Фильтр after_render<a class="article-anchor" href="#Фильтр-after-render" aria-hidden="true"></a></h2><p>При окончании обработки Hexo выполнит соответствующие фильтры, заданные в переменной <code>after_render</code>. Например эта функция запустит минификацию JavaScript’а.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> UglifyJS = <span class="built_in">require</span>(<span class="string">'uglify-js'</span>);</span><br><span class="line"></span><br><span class="line">hexo.extend.filter.register(<span class="string">'after_render:js'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">str, data</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">var</span> result = UglifyJS.minify(str);</span><br><span class="line">  <span class="keyword">return</span> result.code;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="Проверка-существует-ли-обработчик-для-типа-файла" class="article-heading"><a href="#Проверка-существует-ли-обработчик-для-типа-файла" class="headerlink" title="Проверка существует ли обработчик для типа файла"></a>Проверка существует ли обработчик для типа файла<a class="article-anchor" href="#Проверка-существует-ли-обработчик-для-типа-файла" aria-hidden="true"></a></h2><p>Можно использовать метод <code>isRenderable</code> или <code>isRenderableSync</code> для проверки зарегистрирован ли обработчик для типа файла. Только когда соответствующий обработчик зарегистрирован будет возвращёно true.</p>
+<h2 id="Проверка-существует-ли-обработчик-для-типа-файла" class="article-heading"><a href="#Проверка-существует-ли-обработчик-для-типа-файла" class="headerlink" title="Проверка существует ли обработчик для типа файла"></a>Проверка существует ли обработчик для типа файла<a class="article-anchor" href="#Проверка-существует-ли-обработчик-для-типа-файла" aria-hidden="true"></a></h2><p>Можно использовать метод <code>isRenderable</code> или <code>isRenderableSync</code> для проверки зарегистрирован ли обработчик для типа файла. Только когда соответствующий обработчик был зарегистрирован будет возвращёно true.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.render.isRenderable(<span class="string">'layout.swig'</span>) <span class="comment">// true</span></span><br><span class="line">hexo.render.isRenderable(<span class="string">'image.png'</span>) <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
 <h2 id="Определение-расширения-на-выходе" class="article-heading"><a href="#Определение-расширения-на-выходе" class="headerlink" title="Определение расширения на выходе"></a>Определение расширения на выходе<a class="article-anchor" href="#Определение-расширения-на-выходе" aria-hidden="true"></a></h2><p>Метод <code>getOutput</code> получает расширение на выходе обработчика. Если передать необрабатываемый файл, то обработчик вернёт пустую строку.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.render.getOutput(<span class="string">'layout.swig'</span>) <span class="comment">// html</span></span><br><span class="line">hexo.render.getOutput(<span class="string">'image.png'</span>) <span class="comment">// '''</span></span><br></pre></td></tr></table></figure>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-06-13T12:54:38.194Z" itemprop="dateModified">Последнее обновление: 2016-06-13</time>
+                <time class="article-footer-updated" datetime="2016-06-14T15:44:21.830Z" itemprop="dateModified">Последнее обновление: 2016-06-14</time>
                 <a href="box.html" class="article-footer-prev" title="Модуль"><i class="fa fa-chevron-left"></i><span>Пред</span></a><a href="posts.html" class="article-footer-next" title="Посты"><span>След</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -146,7 +146,7 @@
 <script>
   var disqus_shortname = 'hexojs';
   var disqus_url = 'https://hexo.io/ru/api/rendering.html';
-  var disqus_title = "Обработка";
+  var disqus_title = "Рендеринг";
   var disqus_config = function(){
     this.language = 'ru';
   };

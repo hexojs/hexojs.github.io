@@ -43,22 +43,22 @@
   <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Hexo">
   <!-- Open Graph -->
-  <meta name="description" content="Маршрутизатор сохраняет все пути используемые на сайте.
-Получение путиМетод get возвращает поток Stream. Пример, для сохранения данных о путях в указанное место:
-var data = hexo.route.get(&apos;index.html&apos;">
+  <meta name="description" content="Маршрутизатор сохраняет все ссылки используемые на сайте.
+Получение путиМетод get возвращает поток Stream. Пример, для сохранения данных о ссылках в указанное место:
+var data = hexo.route.get(&apos;index.h">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Маршрутизатор">
 <meta property="og:url" content="https://hexo.io/ru/api/router.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Маршрутизатор сохраняет все пути используемые на сайте.
-Получение путиМетод get возвращает поток Stream. Пример, для сохранения данных о путях в указанное место:
-var data = hexo.route.get(&apos;index.html&apos;">
-<meta property="og:updated_time" content="2016-06-13T12:54:38.194Z">
+<meta property="og:description" content="Маршрутизатор сохраняет все ссылки используемые на сайте.
+Получение путиМетод get возвращает поток Stream. Пример, для сохранения данных о ссылках в указанное место:
+var data = hexo.route.get(&apos;index.h">
+<meta property="og:updated_time" content="2016-06-14T15:44:21.830Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Маршрутизатор">
-<meta name="twitter:description" content="Маршрутизатор сохраняет все пути используемые на сайте.
-Получение путиМетод get возвращает поток Stream. Пример, для сохранения данных о путях в указанное место:
-var data = hexo.route.get(&apos;index.html&apos;">
+<meta name="twitter:description" content="Маршрутизатор сохраняет все ссылки используемые на сайте.
+Получение путиМетод get возвращает поток Stream. Пример, для сохранения данных о ссылках в указанное место:
+var data = hexo.route.get(&apos;index.h">
 <meta name="twitter:site" content="hexojs">
 <meta property="fb:admins" content="100000247608790">
   <!-- Google Analytics -->
@@ -126,21 +126,21 @@ var data = hexo.route.get(&apos;index.html&apos;">
                 <a href="https://github.com/hexojs/site/edit/master/source/ru/api/router.md" class="article-edit-link" title="Предложить улучшение"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <p>Маршрутизатор сохраняет все пути используемые на сайте.</p>
-<h2 id="Получение-пути" class="article-heading"><a href="#Получение-пути" class="headerlink" title="Получение пути"></a>Получение пути<a class="article-anchor" href="#Получение-пути" aria-hidden="true"></a></h2><p>Метод <code>get</code> возвращает поток <a href="http://nodejs.org/api/stream.html" target="_blank" rel="external">Stream</a>. Пример, для сохранения данных о путях в указанное место:</p>
+                <p>Маршрутизатор сохраняет все ссылки используемые на сайте.</p>
+<h2 id="Получение-пути" class="article-heading"><a href="#Получение-пути" class="headerlink" title="Получение пути"></a>Получение пути<a class="article-anchor" href="#Получение-пути" aria-hidden="true"></a></h2><p>Метод <code>get</code> возвращает поток <a href="http://nodejs.org/api/stream.html" target="_blank" rel="external">Stream</a>. Пример, для сохранения данных о ссылках в указанное место:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> data = hexo.route.get(<span class="string">'index.html'</span>);</span><br><span class="line"><span class="keyword">var</span> dest = fs.createWriteStream(<span class="string">'somewhere'</span>);</span><br><span class="line"></span><br><span class="line">data.pipe(dest);</span><br></pre></td></tr></table></figure>
 <h2 id="Установка-пути" class="article-heading"><a href="#Установка-пути" class="headerlink" title="Установка пути"></a>Установка пути<a class="article-anchor" href="#Установка-пути" aria-hidden="true"></a></h2><p>Метод <code>set</code> принимает строку, <a href="http://nodejs.org/api/buffer.html" target="_blank" rel="external">Buffer</a> или функцию.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Строка</span></span><br><span class="line">hexo.route.set(<span class="string">'index.html'</span>, <span class="string">'index'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Buffer</span></span><br><span class="line">hexo.route.set(<span class="string">'index.html'</span>, <span class="keyword">new</span> Buffer(<span class="string">'index'</span>));</span><br><span class="line"></span><br><span class="line"><span class="comment">// Функция (Запрос)</span></span><br><span class="line">hexo.route.set(<span class="string">'index.html'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve, reject</span>)</span>&#123;</span><br><span class="line">    resolve(<span class="string">'index'</span>);</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Функция (Обратный вызов)</span></span><br><span class="line">hexo.route.set(<span class="string">'index.html'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">callback</span>)</span>&#123;</span><br><span class="line">  callback(<span class="literal">null</span>, <span class="string">'index'</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>Можно также установить логическое значение был ли путь изменён. Это позволяет увеличить скорость создания файлов, поскольку позволяет игнорировать неизменённые.</p>
+<p>Можно, также, установить логическое значение была ли изменён путь. Это позволяет увеличить скорость создания файлов, поскольку игнорируются неизменённые ссылки.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.route.set(<span class="string">'index.html'</span>, &#123;</span><br><span class="line">    data: <span class="string">'index'</span>,</span><br><span class="line">    modified: <span class="literal">false</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// hexo.route.isModified('index.html') =&gt; false</span></span><br></pre></td></tr></table></figure>
-<h2 id="Удаление-пути" class="article-heading"><a href="#Удаление-пути" class="headerlink" title="Удаление пути"></a>Удаление пути<a class="article-anchor" href="#Удаление-пути" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.route.remove(<span class="string">'index.html'</span>);</span><br></pre></td></tr></table></figure>
-<h2 id="Получение-списка-путей" class="article-heading"><a href="#Получение-списка-путей" class="headerlink" title="Получение списка путей"></a>Получение списка путей<a class="article-anchor" href="#Получение-списка-путей" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.route.list();</span><br></pre></td></tr></table></figure>
-<h2 id="Формат-пути" class="article-heading"><a href="#Формат-пути" class="headerlink" title="Формат пути"></a>Формат пути<a class="article-anchor" href="#Формат-пути" aria-hidden="true"></a></h2><p>Метод <code>format</code> преобразует строку в правильный путь.</p>
+<h2 id="Удаление-ссылки" class="article-heading"><a href="#Удаление-ссылки" class="headerlink" title="Удаление ссылки"></a>Удаление ссылки<a class="article-anchor" href="#Удаление-ссылки" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.route.remove(<span class="string">'index.html'</span>);</span><br></pre></td></tr></table></figure>
+<h2 id="Получение-списка-ссылок" class="article-heading"><a href="#Получение-списка-ссылок" class="headerlink" title="Получение списка ссылок"></a>Получение списка ссылок<a class="article-anchor" href="#Получение-списка-ссылок" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.route.list();</span><br></pre></td></tr></table></figure>
+<h2 id="Формат-пути" class="article-heading"><a href="#Формат-пути" class="headerlink" title="Формат пути"></a>Формат пути<a class="article-anchor" href="#Формат-пути" aria-hidden="true"></a></h2><p>Метод <code>format</code> преобразует строку в правильную ссылку.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.route.format(<span class="string">'archives/'</span>);</span><br><span class="line"><span class="comment">// archives/index.html</span></span><br></pre></td></tr></table></figure>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-06-13T12:54:38.194Z" itemprop="dateModified">Последнее обновление: 2016-06-13</time>
+                <time class="article-footer-updated" datetime="2016-06-14T15:44:21.830Z" itemprop="dateModified">Последнее обновление: 2016-06-14</time>
                 <a href="locals.html" class="article-footer-prev" title="Переменные"><i class="fa fa-chevron-left"></i><span>Пред</span></a><a href="box.html" class="article-footer-next" title="Модуль"><span>След</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -166,7 +166,7 @@ var data = hexo.route.get(&apos;index.html&apos;">
           <aside id="article-toc" role="navigation">
             <div id="article-toc-inner">
               <strong class="sidebar-title">Содержание</strong>
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Получение-пути"><span class="toc-text">Получение пути</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Установка-пути"><span class="toc-text">Установка пути</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Удаление-пути"><span class="toc-text">Удаление пути</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Получение-списка-путей"><span class="toc-text">Получение списка путей</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Формат-пути"><span class="toc-text">Формат пути</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Получение-пути"><span class="toc-text">Получение пути</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Установка-пути"><span class="toc-text">Установка пути</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Удаление-ссылки"><span class="toc-text">Удаление ссылки</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Получение-списка-ссылок"><span class="toc-text">Получение списка ссылок</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Формат-пути"><span class="toc-text">Формат пути</span></a></li></ol>
               <a href="#" id="article-toc-top">Наверх</a>
             </div>
           </aside>

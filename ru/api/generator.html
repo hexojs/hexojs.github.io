@@ -43,22 +43,22 @@
   <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Hexo">
   <!-- Open Graph -->
-  <meta name="description" content="Генератор создаёт маршруты на основе обработанных файлов.
+  <meta name="description" content="Генератор создаёт ссылки на основе обработанных файлов.
 Краткий обзорhexo.extend.generator.register(name, function(locals)&amp;#123;  // ...&amp;#125;);
-Аргумент locals передается в функцию, содержащую пере">
+Аргумент locals передается в функцию, содержащую переме">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Генератор">
 <meta property="og:url" content="https://hexo.io/ru/api/generator.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Генератор создаёт маршруты на основе обработанных файлов.
+<meta property="og:description" content="Генератор создаёт ссылки на основе обработанных файлов.
 Краткий обзорhexo.extend.generator.register(name, function(locals)&amp;#123;  // ...&amp;#125;);
-Аргумент locals передается в функцию, содержащую пере">
-<meta property="og:updated_time" content="2016-06-13T12:54:38.194Z">
+Аргумент locals передается в функцию, содержащую переме">
+<meta property="og:updated_time" content="2016-06-14T15:44:21.830Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Генератор">
-<meta name="twitter:description" content="Генератор создаёт маршруты на основе обработанных файлов.
+<meta name="twitter:description" content="Генератор создаёт ссылки на основе обработанных файлов.
 Краткий обзорhexo.extend.generator.register(name, function(locals)&amp;#123;  // ...&amp;#125;);
-Аргумент locals передается в функцию, содержащую пере">
+Аргумент locals передается в функцию, содержащую переме">
 <meta name="twitter:site" content="hexojs">
 <meta property="fb:admins" content="100000247608790">
   <!-- Google Analytics -->
@@ -126,9 +126,9 @@
                 <a href="https://github.com/hexojs/site/edit/master/source/ru/api/generator.md" class="article-edit-link" title="Предложить улучшение"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <p>Генератор создаёт маршруты на основе обработанных файлов.</p>
+                <p>Генератор создаёт ссылки на основе обработанных файлов.</p>
 <h2 id="Краткий-обзор" class="article-heading"><a href="#Краткий-обзор" class="headerlink" title="Краткий обзор"></a>Краткий обзор<a class="article-anchor" href="#Краткий-обзор" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.extend.generator.register(name, <span class="function"><span class="keyword">function</span>(<span class="params">locals</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>Аргумент <code>locals</code> передается в функцию, содержащую переменные сайта. Нужно использовать этот аргумент, чтобы получить <a href="../docs/variables.html#Переменные-сайта">переменные сайта</a>, тем самым избегая необходимости обращаться к базе данных напрямую.</p>
+<p>Аргумент <code>locals</code> передается в функцию, содержащую переменные сайта. Нужно использовать этот аргумент, чтобы получить <a href="../docs/variables.html#Переменные-сайта">переменные сайта</a>, тем самым убирается необходимость обращаться к базе данных напрямую.</p>
 <h2 id="Обновление-путей" class="article-heading"><a href="#Обновление-путей" class="headerlink" title="Обновление путей"></a>Обновление путей<a class="article-anchor" href="#Обновление-путей" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.extend.generator.register(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">locals</span>)</span>&#123;</span><br><span class="line">  <span class="comment">// Object</span></span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    path: <span class="string">'foo'</span>,</span><br><span class="line">    data: <span class="string">'foo'</span></span><br><span class="line">  &#125;;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// Array</span></span><br><span class="line">  <span class="keyword">return</span> [</span><br><span class="line">    &#123;path: <span class="string">'foo'</span>, data: <span class="string">'foo'</span>&#125;,</span><br><span class="line">    &#123;path: <span class="string">'bar'</span>, data: <span class="string">'bar'</span>&#125;</span><br><span class="line">  ];</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
@@ -148,11 +148,11 @@
 </tr>
 <tr>
 <td><code>layout</code></td>
-<td>Макет. Укажите макеты для рендеринга. Значение может быть строкой или массивом. Если это игнорировать, то путь будет возвращать данные <code>data</code> напрямую.</td>
+<td>Макет. Укажите макеты для рендеринга. Значение может быть строкой или массивом. Если это проигнорировать, то путь будет возвращать данные <code>data</code> напрямую.</td>
 </tr>
 </tbody>
 </table>
-<p>Когда исходные файлы обновляются, Hexo выполняет генераторы и пересоздаёт маршруты. <strong>Пожалуйста, возвращайте данные, а не доступ к пути напрямую.</strong></p>
+<p>Когда исходные файлы обновляются, Hexo выполняет генерацию и пересоздаёт ссылки. <strong>Пожалуйста, генерируйте данные, а не создавайте ссылки напрямую.</strong></p>
 <h2 id="Примеры" class="article-heading"><a href="#Примеры" class="headerlink" title="Примеры"></a>Примеры<a class="article-anchor" href="#Примеры" aria-hidden="true"></a></h2><h3 id="Страница-архива" class="article-heading"><a href="#Страница-архива" class="headerlink" title="Страница архива"></a>Страница архива<a class="article-anchor" href="#Страница-архива" aria-hidden="true"></a></h3><p>Создаёт страницу архива в <code>archives/index.html</code>. Проходит по данным всех постов, указанных в шаблонах. Эти данные соответствуют переменной <code>page</code> в шаблонах.</p>
 <p>Далее, устанавливается атрибут <code>layout</code> для рендеринга шаблонов. В этом примере два варианта: если макета для <code>archive</code> нет, будет использоваться макет <code>index</code>.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.extend.generator.register(<span class="string">'archive'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">locals</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    path: <span class="string">'archives/index.html'</span>,</span><br><span class="line">    data: locals.posts,</span><br><span class="line">    layout: [<span class="string">'archive'</span>, <span class="string">'index'</span>]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
@@ -165,7 +165,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-06-13T12:54:38.194Z" itemprop="dateModified">Последнее обновление: 2016-06-13</time>
+                <time class="article-footer-updated" datetime="2016-06-14T15:44:21.830Z" itemprop="dateModified">Последнее обновление: 2016-06-14</time>
                 <a href="filter.html" class="article-footer-prev" title="Фильтр"><i class="fa fa-chevron-left"></i><span>Пред</span></a><a href="helper.html" class="article-footer-next" title="Помошник"><span>След</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

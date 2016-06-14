@@ -51,7 +51,7 @@ URLurl_forВозвращает URL-адрес корневого пути с п�
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Помощники используются в шаблонах, чтобы быстро вставлять фрагменты. Помощники не могут быть использованы в исходных файлах .
 URLurl_forВозвращает URL-адрес корневого пути с префиксом. Нужно использов">
-<meta property="og:updated_time" content="2016-06-13T12:54:38.194Z">
+<meta property="og:updated_time" content="2016-06-14T15:44:21.830Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Помощники">
 <meta name="twitter:description" content="Помощники используются в шаблонах, чтобы быстро вставлять фрагменты. Помощники не могут быть использованы в исходных файлах .
@@ -297,11 +297,11 @@ URLurl_forВозвращает URL-адрес корневого пути с п�
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- markdown(<span class="string">'make me **strong**'</span>) %&gt;</span><br><span class="line"><span class="comment">// make me &lt;strong&gt;strong&lt;/strong&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="render" class="article-heading"><a href="#render" class="headerlink" title="render"></a>render<a class="article-anchor" href="#render" aria-hidden="true"></a></h3><p>Обрабатывает строку.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- render(str, engine, [options]) %&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="word-wrap" class="article-heading"><a href="#word-wrap" class="headerlink" title="word_wrap"></a>word_wrap<a class="article-anchor" href="#word-wrap" aria-hidden="true"></a></h3><p>Переносит строки длинне указазанного в <code>length</code> количества символов. <code>length</code> равняется 80 по умолчанию.</p>
+<h3 id="word-wrap" class="article-heading"><a href="#word-wrap" class="headerlink" title="word_wrap"></a>word_wrap<a class="article-anchor" href="#word-wrap" aria-hidden="true"></a></h3><p>Переносит строки длиннее указанного в <code>length</code> количества символов. <code>length</code> равняется 80 по умолчанию.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- word_wrap(str, [length]) %&gt;</span><br></pre></td></tr></table></figure>
 <p><strong>Примеры:</strong></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- word_wrap(<span class="string">'Once upon a time'</span>, <span class="number">8</span>) %&gt;</span><br><span class="line"><span class="comment">// Once upon\n a time</span></span><br></pre></td></tr></table></figure>
-<h3 id="truncate" class="article-heading"><a href="#truncate" class="headerlink" title="truncate"></a>truncate<a class="article-anchor" href="#truncate" aria-hidden="true"></a></h3><p>Обрезает текст после определенного в <code>length</code> количества символов. По умолчанию <code>length</code> 30 символов.</p>
+<h3 id="truncate" class="article-heading"><a href="#truncate" class="headerlink" title="truncate"></a>truncate<a class="article-anchor" href="#truncate" aria-hidden="true"></a></h3><p>Обрезает текст после определённого в <code>length</code> количества символов. По умолчанию <code>length</code> 30 символов.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- truncate(text, [options]) %&gt;</span><br></pre></td></tr></table></figure>
 <p><strong>Примеры:</strong></p>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, &#123;length: <span class="number">17</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// Once upon a ti...</span></span><br><span class="line"></span><br><span class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, &#123;length: <span class="number">17</span>, separator: <span class="string">' '</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// Once upon a...</span></span><br><span class="line"></span><br><span class="line">&lt;%- truncate(<span class="string">'And they found that many people were sleeping better.'</span>, &#123;length: <span class="number">25</span>, omission: <span class="string">'... (continued)'</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// And they f... (continued)</span></span><br></pre></td></tr></table></figure>
@@ -323,7 +323,7 @@ URLurl_forВозвращает URL-адрес корневого пути с п�
 </tr>
 <tr>
 <td><code>only</code></td>
-<td>Строгие локальные переменные. Использовать только только указанные в шаблоне переменные <code>locals</code>.</td>
+<td>Строгие локальные переменные. Использовать только указанные в шаблоне переменные <code>locals</code>.</td>
 <td><code>false</code></td>
 </tr>
 </tbody>
@@ -450,7 +450,7 @@ URLurl_forВозвращает URL-адрес корневого пути с п�
 </tr>
 <tr>
 <td><code>amount</code></td>
-<td>Ограничени количества отображаемых тэгов (0 = неограниченно)</td>
+<td>Ограничение количества отображаемых тэгов (0 = неограниченно)</td>
 <td>0</td>
 </tr>
 </tbody>
@@ -841,7 +841,7 @@ URLurl_forВозвращает URL-адрес корневого пути с п�
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-06-13T12:54:38.194Z" itemprop="dateModified">Последнее обновление: 2016-06-13</time>
+                <time class="article-footer-updated" datetime="2016-06-14T15:44:21.830Z" itemprop="dateModified">Последнее обновление: 2016-06-14</time>
                 <a href="variables.html" class="article-footer-prev" title="Переменные"><i class="fa fa-chevron-left"></i><span>Пред</span></a><a href="internationalization.html" class="article-footer-next" title="Интернацинализация (i18n)"><span>След</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

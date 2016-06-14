@@ -44,18 +44,18 @@
   <link rel="alternate" href="/atom.xml" title="Hexo">
   <!-- Open Graph -->
   <meta name="description" content="Что такое: i18n
-Можно использовать интернационализацию на вашем сайте для поддержки многоязычности. Язык по умолчанию устанавливается путем изменения настройки языка language в _config.yml. Возможно,">
+Можно использовать интернационализацию на вашем сайте для поддержки многоязычности. Язык по умолчанию устанавливается путём изменения настройки языка language в _config.yml. Возможно,">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Интернационализация (i18n)">
 <meta property="og:url" content="https://hexo.io/ru/docs/internationalization.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Что такое: i18n
-Можно использовать интернационализацию на вашем сайте для поддержки многоязычности. Язык по умолчанию устанавливается путем изменения настройки языка language в _config.yml. Возможно,">
-<meta property="og:updated_time" content="2016-06-13T12:54:38.194Z">
+Можно использовать интернационализацию на вашем сайте для поддержки многоязычности. Язык по умолчанию устанавливается путём изменения настройки языка language в _config.yml. Возможно,">
+<meta property="og:updated_time" content="2016-06-14T15:44:21.830Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Интернационализация (i18n)">
 <meta name="twitter:description" content="Что такое: i18n
-Можно использовать интернационализацию на вашем сайте для поддержки многоязычности. Язык по умолчанию устанавливается путем изменения настройки языка language в _config.yml. Возможно,">
+Можно использовать интернационализацию на вашем сайте для поддержки многоязычности. Язык по умолчанию устанавливается путём изменения настройки языка language в _config.yml. Возможно,">
 <meta name="twitter:site" content="hexojs">
 <meta property="fb:admins" content="100000247608790">
   <!-- Google Analytics -->
@@ -124,10 +124,10 @@
               </header>
               <div class="article-content" itemprop="articleBody">
                 <p><a href="https://ru.wiktionary.org/wiki/i18n" target="_blank" rel="external">Что такое: i18n</a></p>
-<p>Можно использовать интернационализацию на вашем сайте для поддержки многоязычности. Язык по умолчанию устанавливается путем изменения настройки языка <code>language</code> в <code>_config.yml</code>. Возможно, также, установить несколько языков и изменить их порядок по умолчанию.</p>
+<p>Можно использовать интернационализацию на вашем сайте для поддержки многоязычности. Язык по умолчанию устанавливается путём изменения настройки языка <code>language</code> в <code>_config.yml</code>. Возможно, также, установить несколько языков и изменить их порядок по умолчанию.</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">language:</span> ru</span><br><span class="line"></span><br><span class="line"><span class="attr">language:</span></span><br><span class="line"><span class="bullet">-</span> ru</span><br><span class="line"><span class="bullet">-</span> en</span><br><span class="line"><span class="bullet">-</span> zh-tw</span><br></pre></td></tr></table></figure>
 <h3 id="Языковые-файлы" class="article-heading"><a href="#Языковые-файлы" class="headerlink" title="Языковые файлы"></a>Языковые файлы<a class="article-anchor" href="#Языковые-файлы" aria-hidden="true"></a></h3><p>Языковые файлы могут быть в формате YAML или JSON. Нужно поместить их в папку языков <code>languages</code> в теме. Также поддерживается формат <a href="https://github.com/alexei/sprintf.js" target="_blank" rel="external">printf</a>.</p>
-<h3 id="Шаблоны" class="article-heading"><a href="#Шаблоны" class="headerlink" title="Шаблоны"></a>Шаблоны<a class="article-anchor" href="#Шаблоны" aria-hidden="true"></a></h3><p>Используйте <code>__</code> или <code>_p</code>  в шаблонах помощников, чтобы получить переведенные строки. Первое предназначено для нормального использования, а второе для многострочного использования. Например:</p>
+<h3 id="Шаблоны" class="article-heading"><a href="#Шаблоны" class="headerlink" title="Шаблоны"></a>Шаблоны<a class="article-anchor" href="#Шаблоны" aria-hidden="true"></a></h3><p>Используйте <code>__</code> или <code>_p</code>  в шаблонах помощников, чтобы получить переведённые строки. Первое предназначено для нормального использования, а второе для многострочного использования. Например:</p>
 <figure class="highlight yaml"><figcaption><span>ru.yml</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="attr">index:</span></span><br><span class="line"><span class="attr">  title:</span> Главная</span><br><span class="line"><span class="attr">  add:</span> Добавить</span><br><span class="line"><span class="attr">  video:</span></span><br><span class="line"><span class="attr">    zero:</span> Нет видео</span><br><span class="line"><span class="attr">    one:</span> Одно видео</span><br><span class="line"><span class="attr">    other:</span> %d видео</span><br></pre></td></tr></table></figure>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%= __(<span class="string">'index.title'</span>) %&gt;</span><br><span class="line"><span class="comment">// Home</span></span><br><span class="line"></span><br><span class="line">&lt;%= _p(<span class="string">'index.video'</span>, <span class="number">3</span>) %&gt;</span><br><span class="line"><span class="comment">// 3 videos</span></span><br></pre></td></tr></table></figure>
 <h3 id="Путь" class="article-heading"><a href="#Путь" class="headerlink" title="Путь"></a>Путь<a class="article-anchor" href="#Путь" aria-hidden="true"></a></h3><p>Вы можете установить язык в шапке страницы, или изменить <code>i18n_dir</code> установив значение в <code>_config.yml</code> для поддержки автоматического обнаружения в Hexo.</p>
@@ -138,7 +138,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-06-13T12:54:38.194Z" itemprop="dateModified">Последнее обновление: 2016-06-13</time>
+                <time class="article-footer-updated" datetime="2016-06-14T15:44:21.830Z" itemprop="dateModified">Последнее обновление: 2016-06-14</time>
                 <a href="helpers.html" class="article-footer-prev" title="Помощники"><i class="fa fa-chevron-left"></i><span>Пред</span></a><a href="plugins.html" class="article-footer-next" title="Плагины"><span>След</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
