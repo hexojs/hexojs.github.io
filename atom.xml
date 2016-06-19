@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hexo.io/"/>
-  <updated>2016-06-19T10:54:46.648Z</updated>
+  <updated>2016-06-19T10:57:55.746Z</updated>
   <id>https://hexo.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://hexo.io/news/2016/02/28/hexo-3-2-released/"/>
     <id>https://hexo.io/news/2016/02/28/hexo-3-2-released/</id>
     <published>2016-02-28T00:00:00.000Z</published>
-    <updated>2016-06-19T10:54:46.648Z</updated>
+    <updated>2016-06-19T10:57:55.746Z</updated>
     
     <content type="html">&lt;p&gt;It has been a long time that Hexo is poor at handling large website. (&lt;a href=&quot;https://github.com/hexojs/hexo/issues/710&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;#710&lt;/a&gt;, &lt;a href=&quot;https://github.com/hexojs/hexo/issues/1124&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;#1124&lt;/a&gt;, &lt;a href=&quot;https://github.com/hexojs/hexo/issues/283&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;#283&lt;/a&gt;, &lt;a href=&quot;https://github.com/hexojs/hexo/issues/1187&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;#1187&lt;/a&gt;, &lt;a href=&quot;https://github.com/hexojs/hexo/issues/550&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;#550&lt;/a&gt;, &lt;a href=&quot;https://github.com/hexojs/hexo/issues/1769&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;#1769&lt;/a&gt;, etc.) We tried hard to solve this problem and there’re several improvements in Hexo 3.2.&lt;/p&gt;
 &lt;h2 id=&quot;It’s-all-about-speed&quot;&gt;&lt;a href=&quot;#It’s-all-about-speed&quot; class=&quot;headerlink&quot; title=&quot;It’s all about speed&quot;&gt;&lt;/a&gt;It’s all about speed&lt;/h2&gt;&lt;h3 id=&quot;Caching-rendered-contents&quot;&gt;&lt;a href=&quot;#Caching-rendered-contents&quot; class=&quot;headerlink&quot; title=&quot;Caching rendered contents&quot;&gt;&lt;/a&gt;Caching rendered contents&lt;/h3&gt;&lt;p&gt;Rendered contents are cached in the warehouse. This saves a lot of time and made hot processing (2nd-time processing) &lt;strong&gt;1.7x faster&lt;/strong&gt;.&lt;/p&gt;
@@ -101,7 +101,7 @@
     <link href="https://hexo.io/news/2015/03/05/hexo-3-0-released/"/>
     <id>https://hexo.io/news/2015/03/05/hexo-3-0-released/</id>
     <published>2015-03-05T00:00:00.000Z</published>
-    <updated>2016-06-19T10:54:46.648Z</updated>
+    <updated>2016-06-19T10:57:55.746Z</updated>
     
     <content type="html">&lt;p&gt;Hexo 3.0 has finally come out! After four beta and four RC versions, Hexo 3 become more stable and more powerful. Thanks for the contributors and testers! &lt;/p&gt;
 &lt;h2 id=&quot;What’s-Changed&quot;&gt;&lt;a href=&quot;#What’s-Changed&quot; class=&quot;headerlink&quot; title=&quot;What’s Changed?&quot;&gt;&lt;/a&gt;What’s Changed?&lt;/h2&gt;&lt;p&gt;There’re many improvements in Hexo 3. Better performance, API is easier to use, higher coverage, etc. Here’re some notable changes:&lt;/p&gt;
@@ -147,7 +147,7 @@
     <link href="https://hexo.io/news/2015/02/27/new-documentation-and-registry/"/>
     <id>https://hexo.io/news/2015/02/27/new-documentation-and-registry/</id>
     <published>2015-02-27T00:00:00.000Z</published>
-    <updated>2016-06-19T10:54:46.648Z</updated>
+    <updated>2016-06-19T10:57:55.746Z</updated>
     
     <content type="html">&lt;p&gt;The Hexo site has just been updated and changed to a brand new theme. The documentation is also updated and more detailed. Some handy features will make your browsing more convenient.&lt;/p&gt;
 &lt;h2 id=&quot;Official-Registry&quot;&gt;&lt;a href=&quot;#Official-Registry&quot; class=&quot;headerlink&quot; title=&quot;Official Registry&quot;&gt;&lt;/a&gt;Official Registry&lt;/h2&gt;&lt;p&gt;Besides the new theme, a official registry for plugins and themes finally comes. The registry makes you easier to browse and search plugins. And you can preview themes with screenshots.&lt;/p&gt;
@@ -174,7 +174,7 @@
     <link href="https://hexo.io/news/2014/07/13/hexo-2-8-released/"/>
     <id>https://hexo.io/news/2014/07/13/hexo-2-8-released/</id>
     <published>2014-07-13T00:00:00.000Z</published>
-    <updated>2016-06-19T10:54:46.648Z</updated>
+    <updated>2016-06-19T10:57:55.746Z</updated>
     
     <content type="html">&lt;p&gt;Hexo 2.8 was rewritten, brings you better performance and many improvements. The following is the highlights in this version. You can check &lt;a href=&quot;https://github.com/hexojs/hexo/releases/tag/2.8.0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;detail&lt;/a&gt; on GitHub.&lt;/p&gt;
 &lt;h2 id=&quot;Faster-Processing-Speed&quot;&gt;&lt;a href=&quot;#Faster-Processing-Speed&quot; class=&quot;headerlink&quot; title=&quot;Faster Processing Speed&quot;&gt;&lt;/a&gt;Faster Processing Speed&lt;/h2&gt;&lt;p&gt;Before Hexo 2.8, all source files have to be processed each time you use Hexo. In Hexo 2.8, the entire database will be saved to &lt;code&gt;db.json&lt;/code&gt; so Hexo don’t have to process all files again. Also, a new data type “&lt;strong&gt;skip&lt;/strong&gt;“ was added for processors to detect whether a file was changed or not.&lt;/p&gt;
@@ -209,7 +209,7 @@
     <link href="https://hexo.io/news/2014/06/14/hexo-2-7-released/"/>
     <id>https://hexo.io/news/2014/06/14/hexo-2-7-released/</id>
     <published>2014-06-14T00:00:00.000Z</published>
-    <updated>2016-06-19T10:54:46.648Z</updated>
+    <updated>2016-06-19T10:57:55.746Z</updated>
     
     <content type="html">&lt;p&gt;Hexo 2.7 has been released with three new features. I’m going to introduce them below.&lt;/p&gt;
 &lt;h2 id=&quot;Fragment-Caching&quot;&gt;&lt;a href=&quot;#Fragment-Caching&quot; class=&quot;headerlink&quot; title=&quot;Fragment Caching&quot;&gt;&lt;/a&gt;Fragment Caching&lt;/h2&gt;&lt;p&gt;Although Hexo is fast, it may become slow if you have thousands of source files or complicated categories or tags. Before the data model upgraded, I borrowed a feature from Ruby on Rails: &lt;strong&gt;Fragment Caching&lt;/strong&gt;.&lt;/p&gt;
