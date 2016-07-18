@@ -57,7 +57,7 @@ $ npm install hexo-server --save
 安裝完畢後，輸入以下指令以啟動伺服器，您的網站預設會執行於 http://localhost:4000，在伺服器啟動期間，Hexo 會監看檔案變動並自動更新，您無須重啟伺服器。
 $ hexo server
 如果您想要變更連接">
-<meta property="og:updated_time" content="2016-07-17T04:02:52.627Z">
+<meta property="og:updated_time" content="2016-07-18T09:46:54.961Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Server">
 <meta name="twitter:description" content="hexo-serverHexo 3 把伺服器獨立成個別模組，您必須先安裝 hexo-server 才能使用。
@@ -133,24 +133,24 @@ $ hexo server
               </header>
               <div class="article-content" itemprop="articleBody">
                 <h2 id="hexo-server" class="article-heading"><a href="#hexo-server" class="headerlink" title="hexo-server"></a><a href="https://github.com/hexojs/hexo-server" target="_blank" rel="external">hexo-server</a><a class="article-anchor" href="#hexo-server" aria-hidden="true"></a></h2><p>Hexo 3 把伺服器獨立成個別模組，您必須先安裝 <a href="https://github.com/hexojs/hexo-server" target="_blank" rel="external">hexo-server</a> 才能使用。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-server --save</div></pre></td></tr></table></figure>
 <p>安裝完畢後，輸入以下指令以啟動伺服器，您的網站預設會執行於 <code>http://localhost:4000</code>，在伺服器啟動期間，Hexo 會監看檔案變動並自動更新，您無須重啟伺服器。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>如果您想要變更連接埠，或是在執行時遇到了 <code>EADDRINUSE</code> 錯誤，可以在執行時使用 <code>-p</code> 選項指定其他連接埠。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server -p 5000</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo server -p 5000</div></pre></td></tr></table></figure>
 <h3 id="靜態模式" class="article-heading"><a href="#靜態模式" class="headerlink" title="靜態模式"></a>靜態模式<a class="article-anchor" href="#靜態模式" aria-hidden="true"></a></h3><p>在靜態模式下，伺服器只會處理 <code>public</code> 資料夾內的檔案，而且不會處理檔案變動，在執行時，您應該先自行執行 <code>hexo generate</code>，此模式通常用於生產環境（production）下。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server <span class="_">-s</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo server <span class="_">-s</span></div></pre></td></tr></table></figure>
 <h3 id="自定-IP" class="article-heading"><a href="#自定-IP" class="headerlink" title="自定 IP"></a>自定 IP<a class="article-anchor" href="#自定-IP" aria-hidden="true"></a></h3><p>伺服器預設運作在 <code>0.0.0.0</code>，您可以覆蓋預設的 IP 設定。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server -i 192.168.1.1</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo server -i 192.168.1.1</div></pre></td></tr></table></figure>
 <h2 id="Pow" class="article-heading"><a href="#Pow" class="headerlink" title="Pow"></a>Pow<a class="article-anchor" href="#Pow" aria-hidden="true"></a></h2><p><a href="http://pow.cx/" target="_blank" rel="external">Pow</a> 是一個 Mac 系統上的零配置 Rack 伺服器，它也可作為一個簡單易用的靜態檔案伺服器來使用。</p>
-<h3 id="安裝" class="article-heading"><a href="#安裝" class="headerlink" title="安裝"></a>安裝<a class="article-anchor" href="#安裝" aria-hidden="true"></a></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ curl get.pow.cx | sh</span><br></pre></td></tr></table></figure>
+<h3 id="安裝" class="article-heading"><a href="#安裝" class="headerlink" title="安裝"></a>安裝<a class="article-anchor" href="#安裝" aria-hidden="true"></a></h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ curl get.pow.cx | sh</div></pre></td></tr></table></figure>
 <h3 id="設定" class="article-heading"><a href="#設定" class="headerlink" title="設定"></a>設定<a class="article-anchor" href="#設定" aria-hidden="true"></a></h3><p>在 <code>~/.pow</code> 資料夾建立連結（symlink）。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.pow</span><br><span class="line">$ ln <span class="_">-s</span> /path/to/myapp</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> ~/.pow</div><div class="line">$ ln <span class="_">-s</span> /path/to/myapp</div></pre></td></tr></table></figure>
 <p>您的網站將會執行於 <code>http://myapp.dev</code>，網址是根據連結名稱而定。</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-07-17T04:02:52.627Z" itemprop="dateModified">上次更新：2016-07-17</time>
+                <time class="article-footer-updated" datetime="2016-07-18T09:46:54.961Z" itemprop="dateModified">上次更新：2016-07-18</time>
                 <a href="data-files.html" class="article-footer-prev" title="資料檔案"><i class="fa fa-chevron-left"></i><span>上一頁</span></a><a href="generating.html" class="article-footer-next" title="產生檔案"><span>下一頁</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

@@ -53,7 +53,7 @@
 <meta property="og:description" content="本文件提供您更丰富的 API 信息，使您更容易修改 Hexo 源代码或编写插件。如果您只是想查询 Hexo 的基本使用方法，请参阅 文档。
 在开始之前，请注意本文件仅适用于 Hexo 3 及以上版本。
 初始化首先，我们必须建立一个 Hexo 实例（instance），第一个参数是网站的根目录，也就是 base_dir，而第二个参数则是初始化的选项。接著执行 init 方法后，Hexo 会加载插件及">
-<meta property="og:updated_time" content="2016-07-17T04:02:52.623Z">
+<meta property="og:updated_time" content="2016-07-18T09:46:54.957Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="API">
 <meta name="twitter:description" content="本文件提供您更丰富的 API 信息，使您更容易修改 Hexo 源代码或编写插件。如果您只是想查询 Hexo 的基本使用方法，请参阅 文档。
@@ -129,7 +129,7 @@
                 <p>本文件提供您更丰富的 API 信息，使您更容易修改 Hexo 源代码或编写插件。如果您只是想查询 Hexo 的基本使用方法，请参阅 <a href="../docs/">文档</a>。</p>
 <p>在开始之前，请注意本文件仅适用于 Hexo 3 及以上版本。</p>
 <h2 id="初始化" class="article-heading"><a href="#初始化" class="headerlink" title="初始化"></a>初始化<a class="article-anchor" href="#初始化" aria-hidden="true"></a></h2><p>首先，我们必须建立一个 Hexo 实例（instance），第一个参数是网站的根目录，也就是 <code>base_dir</code>，而第二个参数则是初始化的选项。接著执行 <code>init</code> 方法后，Hexo 会加载插件及配置文件。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> Hexo = <span class="built_in">require</span>(<span class="string">'hexo'</span>);</span><br><span class="line"><span class="keyword">var</span> hexo = <span class="keyword">new</span> Hexo(process.cwd(), &#123;&#125;);</span><br><span class="line"></span><br><span class="line">hexo.init().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> Hexo = <span class="built_in">require</span>(<span class="string">'hexo'</span>);</div><div class="line"><span class="keyword">var</span> hexo = <span class="keyword">new</span> Hexo(process.cwd(), &#123;&#125;);</div><div class="line"></div><div class="line">hexo.init().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -163,15 +163,15 @@
 </table>
 <h2 id="载入文件" class="article-heading"><a href="#载入文件" class="headerlink" title="载入文件"></a>载入文件<a class="article-anchor" href="#载入文件" aria-hidden="true"></a></h2><p>Hexo 提供了两种方法来载入文件：<code>load</code>, <code>watch</code>，前者用于载入 <code>source</code> 文件夹内的所有文件及主题资源；而后者除了执行 <code>load</code> 以外，还会继续监视文件变动。</p>
 <p>这两个方法实际上所做的，就是载入文件列表，并把文件传给相对应的处理器（Processor），当文件全部处理完毕后，就执行生成器（Generator）来建立路由。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.load().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">hexo.watch().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">// 之后可以调用 hexo.unwatch()，停止监视文件</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.load().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line">hexo.watch().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// 之后可以调用 hexo.unwatch()，停止监视文件</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h2 id="执行指令" class="article-heading"><a href="#执行指令" class="headerlink" title="执行指令"></a>执行指令<a class="article-anchor" href="#执行指令" aria-hidden="true"></a></h2><p>您可以通过 <code>call</code> 方法来调用控制台（Console），第一个参数是控制台的名称，而第二个参数是选项——根据不同控制台有所不同。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.call(<span class="string">'generate'</span>, &#123;&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.call(<span class="string">'generate'</span>, &#123;&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h2 id="结束" class="article-heading"><a href="#结束" class="headerlink" title="结束"></a>结束<a class="article-anchor" href="#结束" aria-hidden="true"></a></h2><p>当指令完毕后，请执行 <code>exit</code> 方法让 Hexo 退出结束前的准备工作（如存储资料库）。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.call(<span class="string">'generate'</span>).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> hexo.exit();</span><br><span class="line">&#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> hexo.exit(err);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.call(<span class="string">'generate'</span>).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> hexo.exit();</div><div class="line">&#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> hexo.exit(err);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-07-17T04:02:52.623Z" itemprop="dateModified">上次更新：2016-07-17</time>
+                <time class="article-footer-updated" datetime="2016-07-18T09:46:54.957Z" itemprop="dateModified">上次更新：2016-07-18</time>
                 <a href="events.html" class="article-footer-next" title="事件"><span>下一页</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

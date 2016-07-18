@@ -51,7 +51,7 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Helpers are used in templates to help you insert snippets quickly.  Helpers cannot be used in source files.
 URLurl_forReturns a url with the root path prefixed. You should use this helper instead of c">
-<meta property="og:updated_time" content="2016-07-17T04:02:52.567Z">
+<meta property="og:updated_time" content="2016-07-18T09:46:54.901Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Helpers">
 <meta name="twitter:description" content="Helpers are used in templates to help you insert snippets quickly.  Helpers cannot be used in source files.
@@ -125,23 +125,23 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
               <div class="article-content" itemprop="articleBody">
                 <p>Helpers are used in templates to help you insert snippets quickly.  Helpers cannot be used in source files.</p>
 <h2 id="URL" class="article-heading"><a href="#URL" class="headerlink" title="URL"></a>URL<a class="article-anchor" href="#URL" aria-hidden="true"></a></h2><h3 id="url-for" class="article-heading"><a href="#url-for" class="headerlink" title="url_for"></a>url_for<a class="article-anchor" href="#url-for" aria-hidden="true"></a></h3><p>Returns a url with the root path prefixed. You should use this helper instead of <code>config.root + path</code> since Hexo 2.7.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- url_for(path) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- url_for(path) %&gt;</div></pre></td></tr></table></figure>
 <h3 id="relative-url" class="article-heading"><a href="#relative-url" class="headerlink" title="relative_url"></a>relative_url<a class="article-anchor" href="#relative-url" aria-hidden="true"></a></h3><p>Returns the relative URL from <code>from</code> to <code>to</code>.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- relative_url(<span class="keyword">from</span>, to) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- relative_url(<span class="keyword">from</span>, to) %&gt;</div></pre></td></tr></table></figure>
 <h3 id="gravatar" class="article-heading"><a href="#gravatar" class="headerlink" title="gravatar"></a>gravatar<a class="article-anchor" href="#gravatar" aria-hidden="true"></a></h3><p>Inserts a Gravatar image.<br>If you don’t specify the [options] parameter, the default options will apply. Otherwise, you can set it to a number which will then be passed on as the size parameter to Gravatar. Finally, if you set it to an object, it will be converted into a query string of parameters for Gravatar.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- gravatar(email, [options]);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- gravatar(email, [options]);</div></pre></td></tr></table></figure>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>) %&gt;</span><br><span class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787</span></span><br><span class="line"></span><br><span class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>, <span class="number">40</span>) %&gt;</span><br><span class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40</span></span><br><span class="line"></span><br><span class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span> &#123;s: <span class="number">40</span>, d: <span class="string">'http://example.com/image.png'</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40&amp;d=http%3A%2F%2Fexample.com%2Fimage.png</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>) %&gt;</div><div class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787</span></div><div class="line"></div><div class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>, <span class="number">40</span>) %&gt;</div><div class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40</span></div><div class="line"></div><div class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span> &#123;s: <span class="number">40</span>, d: <span class="string">'http://example.com/image.png'</span>&#125;) %&gt;</div><div class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40&amp;d=http%3A%2F%2Fexample.com%2Fimage.png</span></div></pre></td></tr></table></figure>
 <h2 id="HTML-Tags" class="article-heading"><a href="#HTML-Tags" class="headerlink" title="HTML Tags"></a>HTML Tags<a class="article-anchor" href="#HTML-Tags" aria-hidden="true"></a></h2><h3 id="css" class="article-heading"><a href="#css" class="headerlink" title="css"></a>css<a class="article-anchor" href="#css" aria-hidden="true"></a></h3><p>Loads CSS files. <code>path</code> can be an array or a string. If <code>path</code> isn’t prefixed with <code>/</code> or any protocol, it’ll get prefixed with the root URL. If you didn’t add the <code>.css</code> extension after <code>path</code>, it will be added automatically.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- css(path, ...) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- css(path, ...) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- css(<span class="string">'style.css'</span>) %&gt;</span><br><span class="line"><span class="comment">// &lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;%- css([<span class="string">'style.css'</span>, <span class="string">'screen.css'</span>]) %&gt;</span><br><span class="line"><span class="comment">// &lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</span></span><br><span class="line"><span class="comment">// &lt;link rel="stylesheet" href="/screen.css" type="text/css"&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- css(<span class="string">'style.css'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</span></div><div class="line"></div><div class="line">&lt;%- css([<span class="string">'style.css'</span>, <span class="string">'screen.css'</span>]) %&gt;</div><div class="line"><span class="comment">// &lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</span></div><div class="line"><span class="comment">// &lt;link rel="stylesheet" href="/screen.css" type="text/css"&gt;</span></div></pre></td></tr></table></figure>
 <h3 id="js" class="article-heading"><a href="#js" class="headerlink" title="js"></a>js<a class="article-anchor" href="#js" aria-hidden="true"></a></h3><p>Loads JavaScript files. <code>path</code> can be an array or a string. If <code>path</code> isn’t prefixed with <code>/</code> or any protocol, it’ll get prefixed with the root URL. If you didn’t add the <code>.js</code> extension after <code>path</code>, it will be added automatically.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- js(path, ...) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- js(path, ...) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- js(<span class="string">'script.js'</span>) %&gt;</span><br><span class="line"><span class="comment">// &lt;script type="text/javascript" src="/script.js"&gt;&lt;/script&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;%- js([<span class="string">'script.js'</span>, <span class="string">'gallery.js'</span>]) %&gt;</span><br><span class="line"><span class="comment">// &lt;script type="text/javascript" src="/script.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="comment">// &lt;script type="text/javascript" src="/gallery.js"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- js(<span class="string">'script.js'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;script type="text/javascript" src="/script.js"&gt;&lt;/script&gt;</span></div><div class="line"></div><div class="line">&lt;%- js([<span class="string">'script.js'</span>, <span class="string">'gallery.js'</span>]) %&gt;</div><div class="line"><span class="comment">// &lt;script type="text/javascript" src="/script.js"&gt;&lt;/script&gt;</span></div><div class="line"><span class="comment">// &lt;script type="text/javascript" src="/gallery.js"&gt;&lt;/script&gt;</span></div></pre></td></tr></table></figure>
 <h3 id="link-to" class="article-heading"><a href="#link-to" class="headerlink" title="link_to"></a>link_to<a class="article-anchor" href="#link-to" aria-hidden="true"></a></h3><p>Inserts a link.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- link_to(path, [text], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- link_to(path, [text], [options]) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -169,9 +169,9 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>) %&gt;</span><br><span class="line"><span class="comment">// &lt;a href="http://www.google.com" title="http://www.google.com"&gt;http://www.google.com&lt;/a&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>) %&gt;</span><br><span class="line"><span class="comment">// &lt;a href="http://www.google.com" title="Google"&gt;Google&lt;/a&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>, &#123;external: <span class="literal">true</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// &lt;a href="http://www.google.com" title="Google" target="_blank" rel="external"&gt;Google&lt;/a&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;a href="http://www.google.com" title="http://www.google.com"&gt;http://www.google.com&lt;/a&gt;</span></div><div class="line"></div><div class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;a href="http://www.google.com" title="Google"&gt;Google&lt;/a&gt;</span></div><div class="line"></div><div class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>, &#123;external: <span class="literal">true</span>&#125;) %&gt;</div><div class="line"><span class="comment">// &lt;a href="http://www.google.com" title="Google" target="_blank" rel="external"&gt;Google&lt;/a&gt;</span></div></pre></td></tr></table></figure>
 <h3 id="mail-to" class="article-heading"><a href="#mail-to" class="headerlink" title="mail_to"></a>mail_to<a class="article-anchor" href="#mail-to" aria-hidden="true"></a></h3><p>Inserts a mail link.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- mail_to(path, [text], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- mail_to(path, [text], [options]) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -207,9 +207,9 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- mail_to(<span class="string">'a@abc.com'</span>) %&gt;</span><br><span class="line"><span class="comment">// &lt;a href="mailto:a@abc.com" title="a@abc.com"&gt;a@abc.com&lt;/a&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;%- mail_to(<span class="string">'a@abc.com'</span>, <span class="string">'Email'</span>) %&gt;</span><br><span class="line"><span class="comment">// &lt;a href="mailto:a@abc.com" title="Email"&gt;Email&lt;/a&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- mail_to(<span class="string">'a@abc.com'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;a href="mailto:a@abc.com" title="a@abc.com"&gt;a@abc.com&lt;/a&gt;</span></div><div class="line"></div><div class="line">&lt;%- mail_to(<span class="string">'a@abc.com'</span>, <span class="string">'Email'</span>) %&gt;</div><div class="line"><span class="comment">// &lt;a href="mailto:a@abc.com" title="Email"&gt;Email&lt;/a&gt;</span></div></pre></td></tr></table></figure>
 <h3 id="image-tag" class="article-heading"><a href="#image-tag" class="headerlink" title="image_tag"></a>image_tag<a class="article-anchor" href="#image-tag" aria-hidden="true"></a></h3><p>Inserts an image.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- image_tag(path, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- image_tag(path, [options]) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -241,9 +241,9 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <h3 id="favicon-tag" class="article-heading"><a href="#favicon-tag" class="headerlink" title="favicon_tag"></a>favicon_tag<a class="article-anchor" href="#favicon-tag" aria-hidden="true"></a></h3><p>Inserts a favicon.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- favicon_tag(path) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- favicon_tag(path) %&gt;</div></pre></td></tr></table></figure>
 <h3 id="feed-tag" class="article-heading"><a href="#feed-tag" class="headerlink" title="feed_tag"></a>feed_tag<a class="article-anchor" href="#feed-tag" aria-hidden="true"></a></h3><p>Inserts a feed link.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- feed_tag(path, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- feed_tag(path, [options]) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -266,47 +266,47 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <h3 id="Conditional-Tags" class="article-heading"><a href="#Conditional-Tags" class="headerlink" title="Conditional Tags"></a>Conditional Tags<a class="article-anchor" href="#Conditional-Tags" aria-hidden="true"></a></h3><h3 id="is-current" class="article-heading"><a href="#is-current" class="headerlink" title="is_current"></a>is_current<a class="article-anchor" href="#is-current" aria-hidden="true"></a></h3><p>Check whether <code>path</code> matches the URL of the current page. Use <code>strict</code> options to enable strict matching.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_current(path, [strict]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- is_current(path, [strict]) %&gt;</div></pre></td></tr></table></figure>
 <h3 id="is-home" class="article-heading"><a href="#is-home" class="headerlink" title="is_home"></a>is_home<a class="article-anchor" href="#is-home" aria-hidden="true"></a></h3><p>Check whether the current page is home page.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_home() %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- is_home() %&gt;</div></pre></td></tr></table></figure>
 <h3 id="is-post" class="article-heading"><a href="#is-post" class="headerlink" title="is_post"></a>is_post<a class="article-anchor" href="#is-post" aria-hidden="true"></a></h3><p>Check whether the current page is a post.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_post() %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- is_post() %&gt;</div></pre></td></tr></table></figure>
 <h3 id="is-archive" class="article-heading"><a href="#is-archive" class="headerlink" title="is_archive"></a>is_archive<a class="article-anchor" href="#is-archive" aria-hidden="true"></a></h3><p>Check whether the current page is an archive page.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_archive() %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- is_archive() %&gt;</div></pre></td></tr></table></figure>
 <h3 id="is-year" class="article-heading"><a href="#is-year" class="headerlink" title="is_year"></a>is_year<a class="article-anchor" href="#is-year" aria-hidden="true"></a></h3><p>Check whether the current page is a yearly archive page.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_year() %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- is_year() %&gt;</div></pre></td></tr></table></figure>
 <h3 id="is-month" class="article-heading"><a href="#is-month" class="headerlink" title="is_month"></a>is_month<a class="article-anchor" href="#is-month" aria-hidden="true"></a></h3><p>Check whether the current page is a monthly archive page.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_month() %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- is_month() %&gt;</div></pre></td></tr></table></figure>
 <h3 id="is-category" class="article-heading"><a href="#is-category" class="headerlink" title="is_category"></a>is_category<a class="article-anchor" href="#is-category" aria-hidden="true"></a></h3><p>Check whether the current page is a category page.<br>If a string is given as parameter, check whether the current page match the given category.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_category() %&gt;</span><br><span class="line">&lt;%- is_category('hobby') %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- is_category() %&gt;</div><div class="line">&lt;%- is_category('hobby') %&gt;</div></pre></td></tr></table></figure>
 <h3 id="is-tag" class="article-heading"><a href="#is-tag" class="headerlink" title="is_tag"></a>is_tag<a class="article-anchor" href="#is-tag" aria-hidden="true"></a></h3><p>Check whether the current page is a tag page.<br>If a string is given as parameter, check whether the current page match the given tag.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_tag() %&gt;</span><br><span class="line">&lt;%- is_tag('hobby') %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- is_tag() %&gt;</div><div class="line">&lt;%- is_tag('hobby') %&gt;</div></pre></td></tr></table></figure>
 <h2 id="String-Manipulation" class="article-heading"><a href="#String-Manipulation" class="headerlink" title="String Manipulation"></a>String Manipulation<a class="article-anchor" href="#String-Manipulation" aria-hidden="true"></a></h2><h3 id="trim" class="article-heading"><a href="#trim" class="headerlink" title="trim"></a>trim<a class="article-anchor" href="#trim" aria-hidden="true"></a></h3><p>Removes prefixing and trailing spaces of a string.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- trim(string) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- trim(string) %&gt;</div></pre></td></tr></table></figure>
 <h3 id="strip-html" class="article-heading"><a href="#strip-html" class="headerlink" title="strip_html"></a>strip_html<a class="article-anchor" href="#strip-html" aria-hidden="true"></a></h3><p>Sanitizes all HTML tags in a string.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- strip_html(string) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- strip_html(string) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>Examples:</strong></p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;%- strip_html('It's not &lt;b&gt;important&lt;/b&gt; anymore!') %&gt;</span><br><span class="line">// It's not important anymore!</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="code"><pre><div class="line">&lt;%- strip_html('It's not &lt;b&gt;important&lt;/b&gt; anymore!') %&gt;</div><div class="line">// It's not important anymore!</div></pre></td></tr></table></figure>
 <h3 id="titlecase" class="article-heading"><a href="#titlecase" class="headerlink" title="titlecase"></a>titlecase<a class="article-anchor" href="#titlecase" aria-hidden="true"></a></h3><p>Transforms a string into proper title caps.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- titlecase(string) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- titlecase(string) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>Examples:</strong></p>
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;%- titlecase('this is an apple') %&gt;</span><br><span class="line"># This is an Apple</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="code"><pre><div class="line">&lt;%- titlecase('this is an apple') %&gt;</div><div class="line"># This is an Apple</div></pre></td></tr></table></figure>
 <h3 id="markdown" class="article-heading"><a href="#markdown" class="headerlink" title="markdown"></a>markdown<a class="article-anchor" href="#markdown" aria-hidden="true"></a></h3><p>Renders a string with Markdown.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- markdown(str) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- markdown(str) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- markdown(<span class="string">'make me **strong**'</span>) %&gt;</span><br><span class="line"><span class="comment">// make me &lt;strong&gt;strong&lt;/strong&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- markdown(<span class="string">'make me **strong**'</span>) %&gt;</div><div class="line"><span class="comment">// make me &lt;strong&gt;strong&lt;/strong&gt;</span></div></pre></td></tr></table></figure>
 <h3 id="render" class="article-heading"><a href="#render" class="headerlink" title="render"></a>render<a class="article-anchor" href="#render" aria-hidden="true"></a></h3><p>Renders a string.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- render(str, engine, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- render(str, engine, [options]) %&gt;</div></pre></td></tr></table></figure>
 <h3 id="word-wrap" class="article-heading"><a href="#word-wrap" class="headerlink" title="word_wrap"></a>word_wrap<a class="article-anchor" href="#word-wrap" aria-hidden="true"></a></h3><p>Wraps text into lines no longer than <code>length</code>. <code>length</code> is 80 by default.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- word_wrap(str, [length]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- word_wrap(str, [length]) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- word_wrap(<span class="string">'Once upon a time'</span>, <span class="number">8</span>) %&gt;</span><br><span class="line"><span class="comment">// Once upon\n a time</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- word_wrap(<span class="string">'Once upon a time'</span>, <span class="number">8</span>) %&gt;</div><div class="line"><span class="comment">// Once upon\n a time</span></div></pre></td></tr></table></figure>
 <h3 id="truncate" class="article-heading"><a href="#truncate" class="headerlink" title="truncate"></a>truncate<a class="article-anchor" href="#truncate" aria-hidden="true"></a></h3><p>Truncates text after certain <code>length</code>. Default is 30 characters.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- truncate(text, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- truncate(text, [options]) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, &#123;length: <span class="number">17</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// Once upon a ti...</span></span><br><span class="line"></span><br><span class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, &#123;length: <span class="number">17</span>, separator: <span class="string">' '</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// Once upon a...</span></span><br><span class="line"></span><br><span class="line">&lt;%- truncate(<span class="string">'And they found that many people were sleeping better.'</span>, &#123;length: <span class="number">25</span>, omission: <span class="string">'... (continued)'</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// And they f... (continued)</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, &#123;length: <span class="number">17</span>&#125;) %&gt;</div><div class="line"><span class="comment">// Once upon a ti...</span></div><div class="line"></div><div class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, &#123;length: <span class="number">17</span>, separator: <span class="string">' '</span>&#125;) %&gt;</div><div class="line"><span class="comment">// Once upon a...</span></div><div class="line"></div><div class="line">&lt;%- truncate(<span class="string">'And they found that many people were sleeping better.'</span>, &#123;length: <span class="number">25</span>, omission: <span class="string">'... (continued)'</span>&#125;) %&gt;</div><div class="line"><span class="comment">// And they f... (continued)</span></div></pre></td></tr></table></figure>
 <h2 id="Templates" class="article-heading"><a href="#Templates" class="headerlink" title="Templates"></a>Templates<a class="article-anchor" href="#Templates" aria-hidden="true"></a></h2><h3 id="partial" class="article-heading"><a href="#partial" class="headerlink" title="partial"></a>partial<a class="article-anchor" href="#partial" aria-hidden="true"></a></h3><p>Loads other template files. You can define local variables in <code>locals</code>.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- partial(layout, [locals], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- partial(layout, [locals], [options]) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -329,28 +329,28 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <h3 id="fragment-cache" class="article-heading"><a href="#fragment-cache" class="headerlink" title="fragment_cache"></a>fragment_cache<a class="article-anchor" href="#fragment-cache" aria-hidden="true"></a></h3><p>Caches the contents in a fragment. It saves the contents within a fragment and serves the cache when the next request comes in.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- fragment_cache(id, fn);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- fragment_cache(id, fn);</div></pre></td></tr></table></figure>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</span><br><span class="line">&#125;) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</div><div class="line">&#125;) %&gt;</div></pre></td></tr></table></figure>
 <h2 id="Date-amp-Time" class="article-heading"><a href="#Date-amp-Time" class="headerlink" title="Date &amp; Time"></a>Date &amp; Time<a class="article-anchor" href="#Date-amp-Time" aria-hidden="true"></a></h2><h3 id="date" class="article-heading"><a href="#date" class="headerlink" title="date"></a>date<a class="article-anchor" href="#date" aria-hidden="true"></a></h3><p>Inserts formatted date. <code>date</code> can be unix time, ISO string, date object, or <a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object. <code>format</code> is <code>date_format</code> setting by default.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- date(date, [format]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- date(date, [format]) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- date(<span class="built_in">Date</span>.now()) %&gt;</span><br><span class="line"><span class="comment">// 2013-01-01</span></span><br><span class="line"></span><br><span class="line">&lt;%- date(<span class="built_in">Date</span>.now(), <span class="string">'YYYY/M/D'</span>) %&gt;</span><br><span class="line"><span class="comment">// Jan 1 2013</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- date(<span class="built_in">Date</span>.now()) %&gt;</div><div class="line"><span class="comment">// 2013-01-01</span></div><div class="line"></div><div class="line">&lt;%- date(<span class="built_in">Date</span>.now(), <span class="string">'YYYY/M/D'</span>) %&gt;</div><div class="line"><span class="comment">// Jan 1 2013</span></div></pre></td></tr></table></figure>
 <h3 id="date-xml" class="article-heading"><a href="#date-xml" class="headerlink" title="date_xml"></a>date_xml<a class="article-anchor" href="#date-xml" aria-hidden="true"></a></h3><p>Inserts date in XML format. <code>date</code> can be unix time, ISO string, date object, or <a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- date_xml(date) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- date_xml(date) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- date_xml(<span class="built_in">Date</span>.now()) %&gt;</span><br><span class="line"><span class="comment">// 2013-01-01T00:00:00.000Z</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- date_xml(<span class="built_in">Date</span>.now()) %&gt;</div><div class="line"><span class="comment">// 2013-01-01T00:00:00.000Z</span></div></pre></td></tr></table></figure>
 <h3 id="time" class="article-heading"><a href="#time" class="headerlink" title="time"></a>time<a class="article-anchor" href="#time" aria-hidden="true"></a></h3><p>Inserts formatted time. <code>date</code> can be unix time, ISO string, date object, or <a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object. <code>format</code> is <code>time_format</code> setting by default.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- time(date, [format]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- time(date, [format]) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- time(<span class="built_in">Date</span>.now()) %&gt;</span><br><span class="line"><span class="comment">// 13:05:12</span></span><br><span class="line"></span><br><span class="line">&lt;%- time(<span class="built_in">Date</span>.now(), <span class="string">'h:mm:ss a'</span>) %&gt;</span><br><span class="line"><span class="comment">// 1:05:12 pm</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- time(<span class="built_in">Date</span>.now()) %&gt;</div><div class="line"><span class="comment">// 13:05:12</span></div><div class="line"></div><div class="line">&lt;%- time(<span class="built_in">Date</span>.now(), <span class="string">'h:mm:ss a'</span>) %&gt;</div><div class="line"><span class="comment">// 1:05:12 pm</span></div></pre></td></tr></table></figure>
 <h3 id="full-date" class="article-heading"><a href="#full-date" class="headerlink" title="full_date"></a>full_date<a class="article-anchor" href="#full-date" aria-hidden="true"></a></h3><p>Inserts formatted date and time. <code>date</code> can be unix time, ISO string, date object, or <a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> object. <code>format</code> is <code>date_format + time_format</code> setting by default.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- full_date(date, [format]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- full_date(date, [format]) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>()) %&gt;</span><br><span class="line"><span class="comment">// Jan 1, 2013 0:00:00</span></span><br><span class="line"></span><br><span class="line">&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>(), <span class="string">'dddd, MMMM Do YYYY, h:mm:ss a'</span>) %&gt;</span><br><span class="line"><span class="comment">// Tuesday, January 1st 2013, 12:00:00 am</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>()) %&gt;</div><div class="line"><span class="comment">// Jan 1, 2013 0:00:00</span></div><div class="line"></div><div class="line">&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>(), <span class="string">'dddd, MMMM Do YYYY, h:mm:ss a'</span>) %&gt;</div><div class="line"><span class="comment">// Tuesday, January 1st 2013, 12:00:00 am</span></div></pre></td></tr></table></figure>
 <h3 id="moment" class="article-heading"><a href="#moment" class="headerlink" title="moment"></a>moment<a class="article-anchor" href="#moment" aria-hidden="true"></a></h3><p><a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a> library.</p>
 <h2 id="List" class="article-heading"><a href="#List" class="headerlink" title="List"></a>List<a class="article-anchor" href="#List" aria-hidden="true"></a></h2><h3 id="list-categories" class="article-heading"><a href="#list-categories" class="headerlink" title="list_categories"></a>list_categories<a class="article-anchor" href="#list-categories" aria-hidden="true"></a></h3><p>Inserts a list of all categories.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- list_categories([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- list_categories([options]) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -408,7 +408,7 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <h3 id="list-tags" class="article-heading"><a href="#list-tags" class="headerlink" title="list_tags"></a>list_tags<a class="article-anchor" href="#list-tags" aria-hidden="true"></a></h3><p>Inserts a list of all tags.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- list_tags([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- list_tags([options]) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -466,7 +466,7 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <h3 id="list-archives" class="article-heading"><a href="#list-archives" class="headerlink" title="list_archives"></a>list_archives<a class="article-anchor" href="#list-archives" aria-hidden="true"></a></h3><p>Inserts a list of archives.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- list_archives([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- list_archives([options]) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -519,7 +519,7 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <h3 id="list-posts" class="article-heading"><a href="#list-posts" class="headerlink" title="list_posts"></a>list_posts<a class="article-anchor" href="#list-posts" aria-hidden="true"></a></h3><p>Inserts a list of posts.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- list_posts([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- list_posts([options]) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -567,7 +567,7 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <h3 id="tagcloud" class="article-heading"><a href="#tagcloud" class="headerlink" title="tagcloud"></a>tagcloud<a class="article-anchor" href="#tagcloud" aria-hidden="true"></a></h3><p>Inserts a tag cloud.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- tagcloud([tags], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- tagcloud([tags], [options]) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -625,7 +625,7 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <h2 id="Miscellaneous" class="article-heading"><a href="#Miscellaneous" class="headerlink" title="Miscellaneous"></a>Miscellaneous<a class="article-anchor" href="#Miscellaneous" aria-hidden="true"></a></h2><h3 id="paginator" class="article-heading"><a href="#paginator" class="headerlink" title="paginator"></a>paginator<a class="article-anchor" href="#paginator" aria-hidden="true"></a></h3><p>Inserts a paginator.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- paginator(options) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- paginator(options) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -693,7 +693,7 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <h3 id="search-form" class="article-heading"><a href="#search-form" class="headerlink" title="search_form"></a>search_form<a class="article-anchor" href="#search-form" aria-hidden="true"></a></h3><p>Inserts a Google search form.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- search_form(options) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- search_form(options) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -721,7 +721,7 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <h3 id="number-format" class="article-heading"><a href="#number-format" class="headerlink" title="number_format"></a>number_format<a class="article-anchor" href="#number-format" aria-hidden="true"></a></h3><p>Formats a number.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- number_format(number, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- number_format(number, [options]) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -749,9 +749,9 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;precision: <span class="number">1</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// 12,345.68</span></span><br><span class="line"></span><br><span class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;precision: <span class="number">4</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// 12,345.6700</span></span><br><span class="line"></span><br><span class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;precision: <span class="number">0</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// 12,345</span></span><br><span class="line"></span><br><span class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;delimiter: <span class="string">''</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// 12345.67</span></span><br><span class="line"></span><br><span class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;separator: <span class="string">'/'</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// 12,345/67</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;precision: <span class="number">1</span>&#125;) %&gt;</div><div class="line"><span class="comment">// 12,345.68</span></div><div class="line"></div><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;precision: <span class="number">4</span>&#125;) %&gt;</div><div class="line"><span class="comment">// 12,345.6700</span></div><div class="line"></div><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;precision: <span class="number">0</span>&#125;) %&gt;</div><div class="line"><span class="comment">// 12,345</span></div><div class="line"></div><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;delimiter: <span class="string">''</span>&#125;) %&gt;</div><div class="line"><span class="comment">// 12345.67</span></div><div class="line"></div><div class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;separator: <span class="string">'/'</span>&#125;) %&gt;</div><div class="line"><span class="comment">// 12,345/67</span></div></pre></td></tr></table></figure>
 <h3 id="open-graph" class="article-heading"><a href="#open-graph" class="headerlink" title="open_graph"></a>open_graph<a class="article-anchor" href="#open-graph" aria-hidden="true"></a></h3><p>Inserts <a href="http://ogp.me/" target="_blank" rel="external">Open Graph</a> data.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- open_graph([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- open_graph([options]) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -824,7 +824,7 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <h3 id="toc" class="article-heading"><a href="#toc" class="headerlink" title="toc"></a>toc<a class="article-anchor" href="#toc" aria-hidden="true"></a></h3><p>Parses all heading tags (h1~h6) in the content and inserts a table of contents.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- toc(str, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- toc(str, [options]) %&gt;</div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -847,11 +847,11 @@ URLurl_forReturns a url with the root path prefixed. You should use this helper 
 </tbody>
 </table>
 <p><strong>Examples:</strong></p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- toc(page.content) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- toc(page.content) %&gt;</div></pre></td></tr></table></figure>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-07-17T04:02:52.567Z" itemprop="dateModified">Last updated: 2016-07-17</time>
+                <time class="article-footer-updated" datetime="2016-07-18T09:46:54.901Z" itemprop="dateModified">Last updated: 2016-07-18</time>
                 <a href="variables.html" class="article-footer-prev" title="Variables"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="internationalization.html" class="article-footer-next" title="Internationalization (i18n)"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

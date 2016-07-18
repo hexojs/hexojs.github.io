@@ -53,7 +53,7 @@ $ npm install hexo-server --save
 <meta property="og:description" content="hexo-serverС релизом Hexo 3 сервер был отделен от основного модуля. Чтобы начать использовать сервер, нужно установить hexo-server.
 $ npm install hexo-server --save
 После установки сервера, выполните">
-<meta property="og:updated_time" content="2016-07-17T04:02:52.571Z">
+<meta property="og:updated_time" content="2016-07-18T09:46:54.905Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Сервер">
 <meta name="twitter:description" content="hexo-serverС релизом Hexo 3 сервер был отделен от основного модуля. Чтобы начать использовать сервер, нужно установить hexo-server.
@@ -127,24 +127,24 @@ $ npm install hexo-server --save
               </header>
               <div class="article-content" itemprop="articleBody">
                 <h2 id="hexo-server" class="article-heading"><a href="#hexo-server" class="headerlink" title="hexo-server"></a><a href="https://github.com/hexojs/hexo-server" target="_blank" rel="external">hexo-server</a><a class="article-anchor" href="#hexo-server" aria-hidden="true"></a></h2><p>С релизом Hexo 3 сервер был отделен от основного модуля. Чтобы начать использовать сервер, нужно установить <a href="https://github.com/hexojs/hexo-server" target="_blank" rel="external">hexo-server</a>.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-server --save</div></pre></td></tr></table></figure>
 <p>После установки сервера, выполните эту команду для запуска сервера. Ваш сайт будет доступен по адресу <code>http://localhost:4000</code> по умолчанию. Когда сервер запущен, Hexo будет отслеживать изменения файлов и автоматически обновлять содержание сайта, поэтому нет нужды вручную перезапускать сервер.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>Если вы хотите изменить порт или появляется ошибка <code>EADDRINUSE</code>, используйте опцию <code>-p</code> для задания другого порта.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server -p 5000</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo server -p 5000</div></pre></td></tr></table></figure>
 <h3 id="Статичный-режим" class="article-heading"><a href="#Статичный-режим" class="headerlink" title="Статичный режим"></a>Статичный режим<a class="article-anchor" href="#Статичный-режим" aria-hidden="true"></a></h3><p>В статичном режиме, будут обработаны файлы только в общей папке <code>public</code>, отслеживание файлов будет отключено. Нужно запустить <code>hexo generate</code> перед запуском сервера. Обычно используется перед публикацией.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server <span class="_">-s</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo server <span class="_">-s</span></div></pre></td></tr></table></figure>
 <h3 id="Другой-IP" class="article-heading"><a href="#Другой-IP" class="headerlink" title="Другой IP"></a>Другой IP<a class="article-anchor" href="#Другой-IP" aria-hidden="true"></a></h3><p>Hexo запускает сервер с IP <code>127.0.0.1</code> по умолчанию. Это можно изменить в настройках IP по умолчанию.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server -i 192.168.1.1</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo server -i 192.168.1.1</div></pre></td></tr></table></figure>
 <h2 id="Pow" class="article-heading"><a href="#Pow" class="headerlink" title="Pow"></a>Pow<a class="article-anchor" href="#Pow" aria-hidden="true"></a></h2><p><a href="http://pow.cx/" target="_blank" rel="external">Pow</a> является нулевой конфигурацией сервера для Mac.</p>
-<h3 id="Установка" class="article-heading"><a href="#Установка" class="headerlink" title="Установка"></a>Установка<a class="article-anchor" href="#Установка" aria-hidden="true"></a></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ curl get.pow.cx | sh</span><br></pre></td></tr></table></figure>
+<h3 id="Установка" class="article-heading"><a href="#Установка" class="headerlink" title="Установка"></a>Установка<a class="article-anchor" href="#Установка" aria-hidden="true"></a></h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ curl get.pow.cx | sh</div></pre></td></tr></table></figure>
 <h3 id="Настройка" class="article-heading"><a href="#Настройка" class="headerlink" title="Настройка"></a>Настройка<a class="article-anchor" href="#Настройка" aria-hidden="true"></a></h3><p>Создайте символьную ссылку на папку <code>~/.pow</code></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.pow</span><br><span class="line">$ ln <span class="_">-s</span> /path/to/myapp</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> ~/.pow</div><div class="line">$ ln <span class="_">-s</span> /path/to/myapp</div></pre></td></tr></table></figure>
 <p>Ваш сайт будет запущен и заработает по адресу <code>http://myapp.dev</code> основываясь на имени символической ссылки.</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-07-17T04:02:52.571Z" itemprop="dateModified">Последнее обновление: 2016-07-17</time>
+                <time class="article-footer-updated" datetime="2016-07-18T09:46:54.905Z" itemprop="dateModified">Последнее обновление: 2016-07-18</time>
                 <a href="data-files.html" class="article-footer-prev" title="Файлы с данными"><i class="fa fa-chevron-left"></i><span>Пред</span></a><a href="generating.html" class="article-footer-next" title="Генерация"><span>След</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
