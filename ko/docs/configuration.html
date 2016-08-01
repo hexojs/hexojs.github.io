@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Configuration | Hexo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://hexo.io/ko/docs/configuration.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://hexo.io/docs/configuration.html">
+    
+      <link rel="alternative" hreflang="zh-tw" href="https://hexo.io/zh-tw/docs/configuration.html">
+    
+      <link rel="alternative" hreflang="zh-cn" href="https://hexo.io/zh-cn/docs/configuration.html">
+    
+      <link rel="alternative" hreflang="ru" href="https://hexo.io/ru/docs/configuration.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://hexo.io/ko/docs/configuration.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/build/css/navy-7504b77789.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="Hexo">
+  <!-- Open Graph -->
+  <meta name="description" content="_config.yml 파일의 사이트 환경 설정을 수정할 수 있습니다.
+Site
+
+
+설정
+설명
+
+
+
+
+title
+웹 사이트의 제목
+
+
+subtitle
+웹 사이트의 부제
+
+
+description
+웹 사이트에 대한 설명
+
+
+author
+작성자 이름
+
+
+language
+웹 사이트의 주 사용언어. 2-lettter ISO-639-1 code 참조. 기본값은 en.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Configuration">
+<meta property="og:url" content="https://hexo.io/ko/docs/configuration.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="_config.yml 파일의 사이트 환경 설정을 수정할 수 있습니다.
+Site
+
+
+설정
+설명
+
+
+
+
+title
+웹 사이트의 제목
+
+
+subtitle
+웹 사이트의 부제
+
+
+description
+웹 사이트에 대한 설명
+
+
+author
+작성자 이름
+
+
+language
+웹 사이트의 주 사용언어. 2-lettter ISO-639-1 code 참조. 기본값은 en.">
+<meta property="og:updated_time" content="2016-08-01T15:34:09.858Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Configuration">
+<meta name="twitter:description" content="_config.yml 파일의 사이트 환경 설정을 수정할 수 있습니다.
+Site
+
+
+설정
+설명
+
+
+
+
+title
+웹 사이트의 제목
+
+
+subtitle
+웹 사이트의 부제
+
+
+description
+웹 사이트에 대한 설명
+
+
+author
+작성자 이름
+
+
+language
+웹 사이트의 주 사용언어. 2-lettter ISO-639-1 code 참조. 기본값은 en.">
+<meta name="twitter:site" content="hexojs">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/ko/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/ko/docs/" class="main-nav-link">Docs</a><a href="/ko/api/" class="main-nav-link">API</a><a href="/news/" class="main-nav-link">News</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/themes/" class="main-nav-link">Themes</a>
+      <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>한국어</span></label>
+      <select id="lang-select" data-canonical="docs/configuration.html">
+        
+          <option value="en">English</option>
+        
+          <option value="zh-tw">正體中文</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+          <option value="ru">Русский</option>
+        
+          <option value="ko" selected>한국어</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Configuration</h1>
+                <a href="https://github.com/hexojs/site/edit/master/source/ko/docs/configuration.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p><code>_config.yml</code> 파일의 사이트 환경 설정을 수정할 수 있습니다.</p>
+<h3 id="Site" class="article-heading"><a href="#Site" class="headerlink" title="Site"></a>Site<a class="article-anchor" href="#Site" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>설정</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>웹 사이트의 제목</td>
+</tr>
+<tr>
+<td><code>subtitle</code></td>
+<td>웹 사이트의 부제</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>웹 사이트에 대한 설명</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>작성자 이름</td>
+</tr>
+<tr>
+<td><code>language</code></td>
+<td>웹 사이트의 주 사용언어. <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" target="_blank" rel="external">2-lettter ISO-639-1 code</a> 참조. 기본값은 <code>en</code>.</td>
+</tr>
+<tr>
+<td><code>timezone</code></td>
+<td>웹 사이트에서 사용하는 timezone. Hexo는 기본적으로 PC의 시간값을 사용합니다. 사용 가능한 timezone의 종류는 <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="external">여기</a>에서 확인할 수 있습니다. 다음과 같은 형식으로 사용하세요. <code>America/New_York</code>, <code>Japan</code>, <code>UTC</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="URL" class="article-heading"><a href="#URL" class="headerlink" title="URL"></a>URL<a class="article-anchor" href="#URL" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>설정</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>url</code></td>
+<td>웹 사이트의 URL</td>
+<td></td>
+</tr>
+<tr>
+<td><code>root</code></td>
+<td>웹 사이트의 루트 디렉토리</td>
+<td></td>
+</tr>
+<tr>
+<td><code>permalink</code></td>
+<td>게시글의 <a href="permalinks.html">permalink</a> 형식</td>
+<td><code>:year/:month/:day/:title/</code></td>
+</tr>
+<tr>
+<td><code>permalink_default</code></td>
+<td>Permalink 각 부분(segment)의 기본값</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="note info"><strong class="note-title">Website in subdirectory</strong><p>당신의 웹 사이트가 <code>http://example.org/blog</code>와 같이 서브디렉토리에 있다면 <code>url</code>은 <code>http://example.org/blog</code>고 설정하고 <code>root</code>는 <code>/blog/</code>로 설정하세요.</p>
+</blockquote>
+<h3 id="Directory" class="article-heading"><a href="#Directory" class="headerlink" title="Directory"></a>Directory<a class="article-anchor" href="#Directory" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>설정</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>source_dir</code></td>
+<td>컨텐츠들이 저장되어 있는 소스 폴더</td>
+<td><code>source</code></td>
+</tr>
+<tr>
+<td><code>public_dir</code></td>
+<td>생성된 정적 사이트들이 저장될 공용 폴더</td>
+<td><code>public</code></td>
+</tr>
+<tr>
+<td><code>tag_dir</code></td>
+<td>태그 디렉토리</td>
+<td><code>tags</code></td>
+</tr>
+<tr>
+<td><code>archive_dir</code></td>
+<td>저장소 디렉토리</td>
+<td><code>archives</code></td>
+</tr>
+<tr>
+<td><code>category_dir</code></td>
+<td>카테고리 디렉토리</td>
+<td><code>categories</code></td>
+</tr>
+<tr>
+<td><code>code_dir</code></td>
+<td>Code 디렉토리</td>
+<td><code>downloads/code</code></td>
+</tr>
+<tr>
+<td><code>i18n_dir</code></td>
+<td>i18n 디렉토리</td>
+<td><code>:lang</code></td>
+</tr>
+<tr>
+<td><code>skip_render</code></td>
+<td>렌더링하지 않을 경로. 경로 매칭을 위해 <a href="https://github.com/isaacs/minimatch" target="_blank" rel="external">glob expressions</a>를 사용할 수 있습니다.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Writing" class="article-heading"><a href="#Writing" class="headerlink" title="Writing"></a>Writing<a class="article-anchor" href="#Writing" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>설정</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>new_post_name</code></td>
+<td>새 포스트의 파일명 형식</td>
+<td><code>:title.md</code></td>
+</tr>
+<tr>
+<td><code>default_layout</code></td>
+<td>기본 레이아웃</td>
+<td><code>post</code></td>
+</tr>
+<tr>
+<td><code>titlecase</code></td>
+<td>제목을 제목에 맞는 대/소문자로 변경할 것인지 선택</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>external_link</code></td>
+<td>외부 링크를 새 탭에서 열 것인지 선택</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>filename_case</code></td>
+<td>파일명을 소문자(<code>1</code>) 또는 대문자(<code>2</code>)로 변경</td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>render_drafts</code></td>
+<td>Draft 문서를 표시할 것인지 선택</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>post_asset_folder</code></td>
+<td><a href="asset-folders.html">Asset 폴더</a>를 활성화 할 것인지 선택</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>relative_link</code></td>
+<td>루트 폴더에 대한 상대 경로로 링크를 만들 것인지 선택</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>future</code></td>
+<td>미래의 포스트를 표시할 것인지 선택</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>highlight</code></td>
+<td>Code block의 설정</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Category-amp-Tag" class="article-heading"><a href="#Category-amp-Tag" class="headerlink" title="Category &amp; Tag"></a>Category &amp; Tag<a class="article-anchor" href="#Category-amp-Tag" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>설정</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>default_category</code></td>
+<td>기본 분류</td>
+<td><code>uncategorized</code></td>
+</tr>
+<tr>
+<td><code>category_map</code></td>
+<td>분류 목록</td>
+<td></td>
+</tr>
+<tr>
+<td><code>tag_map</code></td>
+<td>태그 목록</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Date-Time-format" class="article-heading"><a href="#Date-Time-format" class="headerlink" title="Date / Time format"></a>Date / Time format<a class="article-anchor" href="#Date-Time-format" aria-hidden="true"></a></h3><p>Hexo는 날짜 처리 시 <a href="http://momentjs.com/" target="_blank" rel="external">Moment.js</a>를 사용합니다.</p>
+<table>
+<thead>
+<tr>
+<th>설정</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>date_format</code></td>
+<td>날짜 형식</td>
+<td><code>MMM D YYYY</code></td>
+</tr>
+<tr>
+<td><code>time_format</code></td>
+<td>시간 형식</td>
+<td><code>H:mm:ss</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Pagination" class="article-heading"><a href="#Pagination" class="headerlink" title="Pagination"></a>Pagination<a class="article-anchor" href="#Pagination" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>설정</th>
+<th>설명</th>
+<th>기본값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>per_page</code></td>
+<td>하나의 페이지에 표시할 포스트의 개수. <code>0</code>이면 pagination을 표시하지 않습니다.</td>
+<td><code>10</code></td>
+</tr>
+<tr>
+<td><code>pagination_dir</code></td>
+<td>Pagination 디렉토리</td>
+<td><code>page</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Extensions" class="article-heading"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions<a class="article-anchor" href="#Extensions" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>설정</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>theme</code></td>
+<td>테마명. <code>false</code>라면 테마를 끕니다.</td>
+</tr>
+<tr>
+<td><code>deploy</code></td>
+<td>Deployment 설정</td>
+</tr>
+</tbody>
+</table>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2016-08-01T15:34:09.858Z" itemprop="dateModified">Last updated: 2016-08-01</time>
+                <a href="setup.html" class="article-footer-prev" title="Setup"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="commands.html" class="article-footer-next" title="Commands"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'hexojs';
+  var disqus_url = 'https://hexo.io/ko/docs/configuration.html';
+  var disqus_title = "Configuration";
+  var disqus_config = function(){
+    this.language = 'ko';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Site"><span class="toc-text">Site</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#URL"><span class="toc-text">URL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Directory"><span class="toc-text">Directory</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Writing"><span class="toc-text">Writing</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Category-amp-Tag"><span class="toc-text">Category & Tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Date-Time-format"><span class="toc-text">Date / Time format</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pagination"><span class="toc-text">Pagination</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Extensions"><span class="toc-text">Extensions</span></a></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Getting Started</strong><a href="index.html" class="sidebar-link">Overview</a><a href="setup.html" class="sidebar-link">Setup</a><a href="configuration.html" class="sidebar-link current">Configuration</a><a href="commands.html" class="sidebar-link">Commands</a><a href="migration.html" class="sidebar-link">Migration</a><strong class="sidebar-title">Basic Usage</strong><a href="writing.html" class="sidebar-link">Writing</a><a href="front-matter.html" class="sidebar-link">Front-matter</a><a href="tag-plugins.html" class="sidebar-link">Tag Plugins</a><a href="asset-folders.html" class="sidebar-link">Asset Folders</a><a href="data-files.html" class="sidebar-link">Data Files</a><a href="server.html" class="sidebar-link">Server</a><a href="generating.html" class="sidebar-link">Generating</a><a href="deployment.html" class="sidebar-link">Deployment</a><strong class="sidebar-title">Customization</strong><a href="permalinks.html" class="sidebar-link">Permalinks</a><a href="themes.html" class="sidebar-link">Themes</a><a href="templates.html" class="sidebar-link">Templates</a><a href="variables.html" class="sidebar-link">Variables</a><a href="helpers.html" class="sidebar-link">Helpers</a><a href="internationalization.html" class="sidebar-link">Internationalization (i18n)</a><a href="plugins.html" class="sidebar-link">Plugins</a><strong class="sidebar-title">Miscellaneous</strong><a href="troubleshooting.html" class="sidebar-link">Troubleshooting</a><a href="contributing.html" class="sidebar-link">Contributing</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2016 <a href="https://zespia.tw/" target="_blank">Tommy Chen</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/hexojs" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/hexojs/hexo" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/ko/docs/" class="mobile-nav-link">Docs</a><a href="/ko/api/" class="mobile-nav-link">API</a><a href="/news/" class="mobile-nav-link">News</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/themes/" class="mobile-nav-link">Themes</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/hexojs/hexo" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Getting Started</strong><a href="index.html" class="mobile-nav-link">Overview</a><a href="setup.html" class="mobile-nav-link">Setup</a><a href="configuration.html" class="mobile-nav-link current">Configuration</a><a href="commands.html" class="mobile-nav-link">Commands</a><a href="migration.html" class="mobile-nav-link">Migration</a><strong class="mobile-nav-title">Basic Usage</strong><a href="writing.html" class="mobile-nav-link">Writing</a><a href="front-matter.html" class="mobile-nav-link">Front-matter</a><a href="tag-plugins.html" class="mobile-nav-link">Tag Plugins</a><a href="asset-folders.html" class="mobile-nav-link">Asset Folders</a><a href="data-files.html" class="mobile-nav-link">Data Files</a><a href="server.html" class="mobile-nav-link">Server</a><a href="generating.html" class="mobile-nav-link">Generating</a><a href="deployment.html" class="mobile-nav-link">Deployment</a><strong class="mobile-nav-title">Customization</strong><a href="permalinks.html" class="mobile-nav-link">Permalinks</a><a href="themes.html" class="mobile-nav-link">Themes</a><a href="templates.html" class="mobile-nav-link">Templates</a><a href="variables.html" class="mobile-nav-link">Variables</a><a href="helpers.html" class="mobile-nav-link">Helpers</a><a href="internationalization.html" class="mobile-nav-link">Internationalization (i18n)</a><a href="plugins.html" class="mobile-nav-link">Plugins</a><strong class="mobile-nav-title">Miscellaneous</strong><a href="troubleshooting.html" class="mobile-nav-link">Troubleshooting</a><a href="contributing.html" class="mobile-nav-link">Contributing</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>한국어</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/configuration.html">
+      
+        <option value="en">English</option>
+      
+        <option value="zh-tw">正體中文</option>
+      
+        <option value="zh-cn">简体中文</option>
+      
+        <option value="ru">Русский</option>
+      
+        <option value="ko" selected>한국어</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<script src="/build/js/main-d6635cef24.js"></script>
+<script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+
+<!-- Algolia -->
+
+
+</body>
+</html>

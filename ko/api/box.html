@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Box | Hexo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://hexo.io/ko/api/box.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://hexo.io/api/box.html">
+    
+      <link rel="alternative" hreflang="zh-tw" href="https://hexo.io/zh-tw/api/box.html">
+    
+      <link rel="alternative" hreflang="zh-cn" href="https://hexo.io/zh-cn/api/box.html">
+    
+      <link rel="alternative" hreflang="ru" href="https://hexo.io/ru/api/box.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://hexo.io/ko/api/box.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/build/css/navy-7504b77789.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="Hexo">
+  <!-- Open Graph -->
+  <meta name="description" content="Box는 특정 폴더 안의 파일들을 처리하기 위해 사용되는 컨테이너 입니다. Hexo는 hexo.source와 hexo.theme 두 가지 종류의 Box를 사용합니다: hexo.source는 source 폴더를 처리할 때 사용되고 hexo.theme는 theme 폴더를 처리할 때 사용됩니다.
+파일 불러오기Box는 process와 watch 두 가지 종류의 메">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Box">
+<meta property="og:url" content="https://hexo.io/ko/api/box.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Box는 특정 폴더 안의 파일들을 처리하기 위해 사용되는 컨테이너 입니다. Hexo는 hexo.source와 hexo.theme 두 가지 종류의 Box를 사용합니다: hexo.source는 source 폴더를 처리할 때 사용되고 hexo.theme는 theme 폴더를 처리할 때 사용됩니다.
+파일 불러오기Box는 process와 watch 두 가지 종류의 메">
+<meta property="og:updated_time" content="2016-08-01T15:34:09.854Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Box">
+<meta name="twitter:description" content="Box는 특정 폴더 안의 파일들을 처리하기 위해 사용되는 컨테이너 입니다. Hexo는 hexo.source와 hexo.theme 두 가지 종류의 Box를 사용합니다: hexo.source는 source 폴더를 처리할 때 사용되고 hexo.theme는 theme 폴더를 처리할 때 사용됩니다.
+파일 불러오기Box는 process와 watch 두 가지 종류의 메">
+<meta name="twitter:site" content="hexojs">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/ko/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/ko/docs/" class="main-nav-link">Docs</a><a href="/ko/api/" class="main-nav-link">API</a><a href="/news/" class="main-nav-link">News</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/themes/" class="main-nav-link">Themes</a>
+      <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>한국어</span></label>
+      <select id="lang-select" data-canonical="api/box.html">
+        
+          <option value="en">English</option>
+        
+          <option value="zh-tw">正體中文</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+          <option value="ru">Русский</option>
+        
+          <option value="ko" selected>한국어</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Box</h1>
+                <a href="https://github.com/hexojs/site/edit/master/source/ko/api/box.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p>Box는 특정 폴더 안의 파일들을 처리하기 위해 사용되는 컨테이너 입니다. Hexo는 <code>hexo.source</code>와 <code>hexo.theme</code> 두 가지 종류의 Box를 사용합니다: <code>hexo.source</code>는 <code>source</code> 폴더를 처리할 때 사용되고 <code>hexo.theme</code>는 <code>theme</code> 폴더를 처리할 때 사용됩니다.</p>
+<h2 id="파일-불러오기" class="article-heading"><a href="#파일-불러오기" class="headerlink" title="파일 불러오기"></a>파일 불러오기<a class="article-anchor" href="#파일-불러오기" aria-hidden="true"></a></h2><p>Box는 <code>process</code>와 <code>watch</code> 두 가지 종류의 메소드를 지원합니다. <code>process</code>는 폴더 안의 모든 파일을 불러옵니다. <code>watch</code>도 동일한 동작을 수행하지만 파일이 변경되는 것을 감지(watching)합니다.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">box.process().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line">box.watch().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// You can call box.unwatch() later to stop watching.</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h2 id="경로-매칭" class="article-heading"><a href="#경로-매칭" class="headerlink" title="경로 매칭"></a>경로 매칭<a class="article-anchor" href="#경로-매칭" aria-hidden="true"></a></h2><p>Box는 다양한 방법을 통해 경로를 매칭시킵니다. 당신은 함수 또는 Express-style pattern string을 통해 정규 표현식을 사용할 수 있습니다. 아래는 예시입니다:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">posts/:id =&gt; posts/89</div><div class="line">posts/*path =&gt; posts/2015/title</div></pre></td></tr></table></figure>
+<p><a href="https://github.com/hexojs/hexo-util#patternrule" target="_blank" rel="external">util.Pattern</a>에서 더 많은 정보를 확인하실 수 있습니다.</p>
+<h2 id="프로세서" class="article-heading"><a href="#프로세서" class="headerlink" title="프로세서"></a>프로세서<a class="article-anchor" href="#프로세서" aria-hidden="true"></a></h2><p>프로세서는 Box의 핵심이 되는 요소이며, 파일을 처리할 때 사용됩니다. 경로 매칭을 사용하여 프로세서가 어떤 프로세스를 처리해야 하는지 제한할 수 있습니다. 새로운 프로세서는 <code>addProcessor</code> 메소드를 통해 등록할 수 있습니다.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">box.addProcessor(<span class="string">'posts/:id'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">file</span>)</span>&#123;</div><div class="line">  <span class="comment">//</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>Box는 매칭된 파일의 콘텐츠를 프로세서로 넘겨줍니다. 이 정보는 callback의 <code>file</code> 인자로부터 직접 읽을 수 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>source</code></td>
+<td>파일의 전체 경로</td>
+</tr>
+<tr>
+<td><code>path</code></td>
+<td>파일의 box에 대한 상대 경로</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>파일의 형식. <code>create</code>, <code>update</code>, <code>skip</code>, <code>delete</code> 네 가지 값을 가질 수 있습니다.</td>
+</tr>
+<tr>
+<td><code>params</code></td>
+<td>경로 매칭으로부터 얻은 정보.</td>
+</tr>
+</tbody>
+</table>
+<p>Box는 개발자의 부담을 덜어주기 위해 file IO에 대한 몇 가지 메소드를 제공합니다.</p>
+<table>
+<thead>
+<tr>
+<th>메소드</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>read</code></td>
+<td>파일을 읽습니다</td>
+</tr>
+<tr>
+<td><code>readSync</code></td>
+<td>파일을 동기적으로 읽습니다</td>
+</tr>
+<tr>
+<td><code>stat</code></td>
+<td>파일의 상태를 읽습니다</td>
+</tr>
+<tr>
+<td><code>statSync</code></td>
+<td>파일의 상태를 동기적으로 읽습니다</td>
+</tr>
+<tr>
+<td><code>render</code></td>
+<td>파일을 생성합니다</td>
+</tr>
+<tr>
+<td><code>renderSync</code></td>
+<td>파일을 동기적으로 생성합니다</td>
+</tr>
+</tbody>
+</table>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2016-08-01T15:34:09.854Z" itemprop="dateModified">Last updated: 2016-08-01</time>
+                <a href="router.html" class="article-footer-prev" title="Router"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="rendering.html" class="article-footer-next" title="Rendering"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'hexojs';
+  var disqus_url = 'https://hexo.io/ko/api/box.html';
+  var disqus_title = "Box";
+  var disqus_config = function(){
+    this.language = 'ko';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#파일-불러오기"><span class="toc-text">파일 불러오기</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#경로-매칭"><span class="toc-text">경로 매칭</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#프로세서"><span class="toc-text">프로세서</span></a></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Core</strong><a href="index.html" class="sidebar-link">Overview</a><a href="events.html" class="sidebar-link">Events</a><a href="locals.html" class="sidebar-link">Locals</a><a href="router.html" class="sidebar-link">Router</a><a href="box.html" class="sidebar-link current">Box</a><a href="rendering.html" class="sidebar-link">Rendering</a><a href="posts.html" class="sidebar-link">Posts</a><a href="scaffolds.html" class="sidebar-link">Scaffolds</a><a href="themes.html" class="sidebar-link">Themes</a><strong class="sidebar-title">Extensions</strong><a href="console.html" class="sidebar-link">Console</a><a href="deployer.html" class="sidebar-link">Deployer</a><a href="filter.html" class="sidebar-link">Filter</a><a href="generator.html" class="sidebar-link">Generator</a><a href="helper.html" class="sidebar-link">Helper</a><a href="migrator.html" class="sidebar-link">Migrator</a><a href="processor.html" class="sidebar-link">Processor</a><a href="renderer.html" class="sidebar-link">Renderer</a><a href="tag.html" class="sidebar-link">Tag</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2016 <a href="https://zespia.tw/" target="_blank">Tommy Chen</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/hexojs" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/hexojs/hexo" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/ko/docs/" class="mobile-nav-link">Docs</a><a href="/ko/api/" class="mobile-nav-link">API</a><a href="/news/" class="mobile-nav-link">News</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/themes/" class="mobile-nav-link">Themes</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/hexojs/hexo" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Core</strong><a href="index.html" class="mobile-nav-link">Overview</a><a href="events.html" class="mobile-nav-link">Events</a><a href="locals.html" class="mobile-nav-link">Locals</a><a href="router.html" class="mobile-nav-link">Router</a><a href="box.html" class="mobile-nav-link current">Box</a><a href="rendering.html" class="mobile-nav-link">Rendering</a><a href="posts.html" class="mobile-nav-link">Posts</a><a href="scaffolds.html" class="mobile-nav-link">Scaffolds</a><a href="themes.html" class="mobile-nav-link">Themes</a><strong class="mobile-nav-title">Extensions</strong><a href="console.html" class="mobile-nav-link">Console</a><a href="deployer.html" class="mobile-nav-link">Deployer</a><a href="filter.html" class="mobile-nav-link">Filter</a><a href="generator.html" class="mobile-nav-link">Generator</a><a href="helper.html" class="mobile-nav-link">Helper</a><a href="migrator.html" class="mobile-nav-link">Migrator</a><a href="processor.html" class="mobile-nav-link">Processor</a><a href="renderer.html" class="mobile-nav-link">Renderer</a><a href="tag.html" class="mobile-nav-link">Tag</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>한국어</span></span>
+    <select id="mobile-lang-select" data-canonical="api/box.html">
+      
+        <option value="en">English</option>
+      
+        <option value="zh-tw">正體中文</option>
+      
+        <option value="zh-cn">简体中文</option>
+      
+        <option value="ru">Русский</option>
+      
+        <option value="ko" selected>한국어</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<script src="/build/js/main-d6635cef24.js"></script>
+<script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+
+<!-- Algolia -->
+
+
+</body>
+</html>

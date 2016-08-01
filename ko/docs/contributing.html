@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Contributing | Hexo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://hexo.io/ko/docs/contributing.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://hexo.io/docs/contributing.html">
+    
+      <link rel="alternative" hreflang="zh-tw" href="https://hexo.io/zh-tw/docs/contributing.html">
+    
+      <link rel="alternative" hreflang="zh-cn" href="https://hexo.io/zh-cn/docs/contributing.html">
+    
+      <link rel="alternative" hreflang="ru" href="https://hexo.io/ru/docs/contributing.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://hexo.io/ko/docs/contributing.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/build/css/navy-7504b77789.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="Hexo">
+  <!-- Open Graph -->
+  <meta name="description" content="개발우리는 당신이 Hexo의 개발에 참여하는 것을 환영합니다. 이 문서는 당신의 개발 프로세스에 도움을 줄 겁니다.
+시작하기 전에…아래의 코딩 스타일을 지켜주세요.
+
+Google JavaScript Style Guide를 따릅니다.
+두 개의 공백을 사용한 soft-tab을 사용합니다.
+콤마로 시작하지 마세요.
+
+워크플로우
+Fork hexojs/hexo.
+저">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contributing">
+<meta property="og:url" content="https://hexo.io/ko/docs/contributing.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="개발우리는 당신이 Hexo의 개발에 참여하는 것을 환영합니다. 이 문서는 당신의 개발 프로세스에 도움을 줄 겁니다.
+시작하기 전에…아래의 코딩 스타일을 지켜주세요.
+
+Google JavaScript Style Guide를 따릅니다.
+두 개의 공백을 사용한 soft-tab을 사용합니다.
+콤마로 시작하지 마세요.
+
+워크플로우
+Fork hexojs/hexo.
+저">
+<meta property="og:updated_time" content="2016-08-01T15:34:09.858Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Contributing">
+<meta name="twitter:description" content="개발우리는 당신이 Hexo의 개발에 참여하는 것을 환영합니다. 이 문서는 당신의 개발 프로세스에 도움을 줄 겁니다.
+시작하기 전에…아래의 코딩 스타일을 지켜주세요.
+
+Google JavaScript Style Guide를 따릅니다.
+두 개의 공백을 사용한 soft-tab을 사용합니다.
+콤마로 시작하지 마세요.
+
+워크플로우
+Fork hexojs/hexo.
+저">
+<meta name="twitter:site" content="hexojs">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4910098-10', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/ko/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/ko/docs/" class="main-nav-link">Docs</a><a href="/ko/api/" class="main-nav-link">API</a><a href="/news/" class="main-nav-link">News</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/themes/" class="main-nav-link">Themes</a>
+      <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>한국어</span></label>
+      <select id="lang-select" data-canonical="docs/contributing.html">
+        
+          <option value="en">English</option>
+        
+          <option value="zh-tw">正體中文</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+          <option value="ru">Русский</option>
+        
+          <option value="ko" selected>한국어</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Contributing</h1>
+                <a href="https://github.com/hexojs/site/edit/master/source/ko/docs/contributing.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h2 id="개발" class="article-heading"><a href="#개발" class="headerlink" title="개발"></a>개발<a class="article-anchor" href="#개발" aria-hidden="true"></a></h2><p>우리는 당신이 Hexo의 개발에 참여하는 것을 환영합니다. 이 문서는 당신의 개발 프로세스에 도움을 줄 겁니다.</p>
+<h3 id="시작하기-전에…" class="article-heading"><a href="#시작하기-전에…" class="headerlink" title="시작하기 전에…"></a>시작하기 전에…<a class="article-anchor" href="#시작하기-전에…" aria-hidden="true"></a></h3><p>아래의 코딩 스타일을 지켜주세요.</p>
+<ul>
+<li><a href="https://google.github.io/styleguide/javascriptguide.xml" target="_blank" rel="external">Google JavaScript Style Guide</a>를 따릅니다.</li>
+<li>두 개의 공백을 사용한 soft-tab을 사용합니다.</li>
+<li>콤마로 시작하지 마세요.</li>
+</ul>
+<h3 id="워크플로우" class="article-heading"><a href="#워크플로우" class="headerlink" title="워크플로우"></a>워크플로우<a class="article-anchor" href="#워크플로우" aria-hidden="true"></a></h3><ol>
+<li>Fork <a href="https://github.com/hexojs/hexo" target="_blank" rel="external">hexojs/hexo</a>.</li>
+<li><p>저장소를 당신의 컴퓨터에 clone하고 의존 사항들을 설치합니다.</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ git clone https://github.com/&lt;username&gt;/hexo.git</div><div class="line">$ cd hexo</div><div class="line">$ npm install</div><div class="line">$ git submodule update --init</div></pre></td></tr></table></figure>
+</li>
+<li><p>기능 branch를 생성합니다.</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ git checkout -b new_feature</div></pre></td></tr></table></figure>
+</li>
+<li><p>개발합니다.</p>
+</li>
+<li><p>Branch를 push합니다.</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ git push origin new_feature</div></pre></td></tr></table></figure>
+</li>
+<li><p>변경사항에 대한 설명을 포함하여 Pull request를 생성합니다.</p>
+</li>
+</ol>
+<h3 id="공지사항" class="article-heading"><a href="#공지사항" class="headerlink" title="공지사항"></a>공지사항<a class="article-anchor" href="#공지사항" aria-hidden="true"></a></h3><ul>
+<li><code>package.json</code>의 version number는 수정하지 마세요.</li>
+<li><p>당신의 Pull request는 테스트를 통과했을 때에만 merge됩니다. 반영하기 전에 test를 돌려보세요.</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ npm test</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="문서의-갱신" class="article-heading"><a href="#문서의-갱신" class="headerlink" title="문서의 갱신"></a>문서의 갱신<a class="article-anchor" href="#문서의-갱신" aria-hidden="true"></a></h2><p>Hexo 문서는 opensource이며 <a href="https://github.com/hexojs/site" target="_blank" rel="external">hexojs/site</a>에서 소스 코드를 검색할 수 있습니다.</p>
+<h3 id="Workflow" class="article-heading"><a href="#Workflow" class="headerlink" title="Workflow"></a>Workflow<a class="article-anchor" href="#Workflow" aria-hidden="true"></a></h3><ol>
+<li>Fork <a href="https://github.com/hexojs/site" target="_blank" rel="external">hexojs/site</a></li>
+<li><p>저장소를 당신의 컴퓨터에 clone하고 의존 사항들을 설치합니다.</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ git clone https://github.com/&lt;username&gt;/site.git</div><div class="line">$ cd site</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
+</li>
+<li><p>문서를 수정하세요. Server를 돌려서 실시간으로 확인할 수 있습니다.</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+</li>
+<li><p>Branch를 push합니다.</p>
+</li>
+<li>당신의 변경사항에 대한 설명을 포함하여 Pull request를 생성합니다.</li>
+</ol>
+<h3 id="번역" class="article-heading"><a href="#번역" class="headerlink" title="번역"></a>번역<a class="article-anchor" href="#번역" aria-hidden="true"></a></h3><ol>
+<li><code>source</code> 폴더 안에 새 언어에 대한 폴더를 생성하세요. (소문자로 생성하세요.)</li>
+<li><code>source</code> 폴더의 Markdown 및 템플릿 파일들을 새 언어 폴더에 복사하세요.</li>
+<li><code>source/_data/language.yml</code>에 새 언어를 추가하세요.</li>
+<li><code>themes/navy/languages</code>에 <code>en.yml</code> 파일을 복사하고 새 언어로 이름을 변경하세요. (소문자로 변경하세요.)</li>
+</ol>
+<h2 id="이슈-보고" class="article-heading"><a href="#이슈-보고" class="headerlink" title="이슈 보고"></a>이슈 보고<a class="article-anchor" href="#이슈-보고" aria-hidden="true"></a></h2><p>Hexo를 사용하다가 문제를 발견하면, <a href="troubleshooting.html">Troubleshooting</a>, <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>, <a href="https://groups.google.com/group/hexo" target="_blank" rel="external">Google Group</a>에서 이슈에 대해 답을 찾아보세요. 만약 답이 없다면 Github에 문제를 보고해 주세요.</p>
+<ol>
+<li>문제 재현은 <a href="commands.html#Debug_mode">debug mode</a>에서 해주세요.</li>
+<li><code>hexo version</code>명령을 수행해서 버전 정보를 알려주세요.</li>
+<li>디버그 메시지와 버전 정보를 Github에 올려주세요.</li>
+</ol>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2016-08-01T15:34:09.858Z" itemprop="dateModified">Last updated: 2016-08-01</time>
+                <a href="troubleshooting.html" class="article-footer-prev" title="Troubleshooting"><i class="fa fa-chevron-left"></i><span>Prev</span></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'hexojs';
+  var disqus_url = 'https://hexo.io/ko/docs/contributing.html';
+  var disqus_title = "Contributing";
+  var disqus_config = function(){
+    this.language = 'ko';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#개발"><span class="toc-text">개발</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#시작하기-전에…"><span class="toc-text">시작하기 전에…</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#워크플로우"><span class="toc-text">워크플로우</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#공지사항"><span class="toc-text">공지사항</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#문서의-갱신"><span class="toc-text">문서의 갱신</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Workflow"><span class="toc-text">Workflow</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#번역"><span class="toc-text">번역</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#이슈-보고"><span class="toc-text">이슈 보고</span></a></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner"><strong class="sidebar-title">Getting Started</strong><a href="index.html" class="sidebar-link">Overview</a><a href="setup.html" class="sidebar-link">Setup</a><a href="configuration.html" class="sidebar-link">Configuration</a><a href="commands.html" class="sidebar-link">Commands</a><a href="migration.html" class="sidebar-link">Migration</a><strong class="sidebar-title">Basic Usage</strong><a href="writing.html" class="sidebar-link">Writing</a><a href="front-matter.html" class="sidebar-link">Front-matter</a><a href="tag-plugins.html" class="sidebar-link">Tag Plugins</a><a href="asset-folders.html" class="sidebar-link">Asset Folders</a><a href="data-files.html" class="sidebar-link">Data Files</a><a href="server.html" class="sidebar-link">Server</a><a href="generating.html" class="sidebar-link">Generating</a><a href="deployment.html" class="sidebar-link">Deployment</a><strong class="sidebar-title">Customization</strong><a href="permalinks.html" class="sidebar-link">Permalinks</a><a href="themes.html" class="sidebar-link">Themes</a><a href="templates.html" class="sidebar-link">Templates</a><a href="variables.html" class="sidebar-link">Variables</a><a href="helpers.html" class="sidebar-link">Helpers</a><a href="internationalization.html" class="sidebar-link">Internationalization (i18n)</a><a href="plugins.html" class="sidebar-link">Plugins</a><strong class="sidebar-title">Miscellaneous</strong><a href="troubleshooting.html" class="sidebar-link">Troubleshooting</a><a href="contributing.html" class="sidebar-link current">Contributing</a></div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2016 <a href="https://zespia.tw/" target="_blank">Tommy Chen</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/hexojs" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/hexojs/hexo" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/ko/docs/" class="mobile-nav-link">Docs</a><a href="/ko/api/" class="mobile-nav-link">API</a><a href="/news/" class="mobile-nav-link">News</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/themes/" class="mobile-nav-link">Themes</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/hexojs/hexo" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Getting Started</strong><a href="index.html" class="mobile-nav-link">Overview</a><a href="setup.html" class="mobile-nav-link">Setup</a><a href="configuration.html" class="mobile-nav-link">Configuration</a><a href="commands.html" class="mobile-nav-link">Commands</a><a href="migration.html" class="mobile-nav-link">Migration</a><strong class="mobile-nav-title">Basic Usage</strong><a href="writing.html" class="mobile-nav-link">Writing</a><a href="front-matter.html" class="mobile-nav-link">Front-matter</a><a href="tag-plugins.html" class="mobile-nav-link">Tag Plugins</a><a href="asset-folders.html" class="mobile-nav-link">Asset Folders</a><a href="data-files.html" class="mobile-nav-link">Data Files</a><a href="server.html" class="mobile-nav-link">Server</a><a href="generating.html" class="mobile-nav-link">Generating</a><a href="deployment.html" class="mobile-nav-link">Deployment</a><strong class="mobile-nav-title">Customization</strong><a href="permalinks.html" class="mobile-nav-link">Permalinks</a><a href="themes.html" class="mobile-nav-link">Themes</a><a href="templates.html" class="mobile-nav-link">Templates</a><a href="variables.html" class="mobile-nav-link">Variables</a><a href="helpers.html" class="mobile-nav-link">Helpers</a><a href="internationalization.html" class="mobile-nav-link">Internationalization (i18n)</a><a href="plugins.html" class="mobile-nav-link">Plugins</a><strong class="mobile-nav-title">Miscellaneous</strong><a href="troubleshooting.html" class="mobile-nav-link">Troubleshooting</a><a href="contributing.html" class="mobile-nav-link current">Contributing</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>한국어</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/contributing.html">
+      
+        <option value="en">English</option>
+      
+        <option value="zh-tw">正體中文</option>
+      
+        <option value="zh-cn">简体中文</option>
+      
+        <option value="ru">Русский</option>
+      
+        <option value="ko" selected>한국어</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<script src="/build/js/main-d6635cef24.js"></script>
+<script src="https://cdn.jsdelivr.net/retinajs/1.3.0/retina.min.js" async></script>
+
+<!-- Algolia -->
+
+
+</body>
+</html>
