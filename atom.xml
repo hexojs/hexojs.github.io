@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hexo.io/"/>
-  <updated>2016-08-15T07:36:08.442Z</updated>
+  <updated>2016-08-17T11:37:39.900Z</updated>
   <id>https://hexo.io/</id>
   
   <author>
@@ -20,72 +20,72 @@
     <link href="https://hexo.io/news/2016/02/28/hexo-3-2-released/"/>
     <id>https://hexo.io/news/2016/02/28/hexo-3-2-released/</id>
     <published>2016-02-28T00:00:00.000Z</published>
-    <updated>2016-08-15T07:36:08.442Z</updated>
+    <updated>2016-08-17T11:37:39.900Z</updated>
     
-    <content type="html">&lt;p&gt;It has been a long time that Hexo is poor at handling large website. (&lt;a href=&quot;https://github.com/hexojs/hexo/issues/710&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;#710&lt;/a&gt;, &lt;a href=&quot;https://github.com/hexojs/hexo/issues/1124&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;#1124&lt;/a&gt;, &lt;a href=&quot;https://github.com/hexojs/hexo/issues/283&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;#283&lt;/a&gt;, &lt;a href=&quot;https://github.com/hexojs/hexo/issues/1187&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;#1187&lt;/a&gt;, &lt;a href=&quot;https://github.com/hexojs/hexo/issues/550&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;#550&lt;/a&gt;, &lt;a href=&quot;https://github.com/hexojs/hexo/issues/1769&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;#1769&lt;/a&gt;, etc.) We tried hard to solve this problem and there’re several improvements in Hexo 3.2.&lt;/p&gt;
-&lt;h2 id=&quot;It’s-all-about-speed&quot;&gt;&lt;a href=&quot;#It’s-all-about-speed&quot; class=&quot;headerlink&quot; title=&quot;It’s all about speed&quot;&gt;&lt;/a&gt;It’s all about speed&lt;/h2&gt;&lt;h3 id=&quot;Caching-rendered-contents&quot;&gt;&lt;a href=&quot;#Caching-rendered-contents&quot; class=&quot;headerlink&quot; title=&quot;Caching rendered contents&quot;&gt;&lt;/a&gt;Caching rendered contents&lt;/h3&gt;&lt;p&gt;Rendered contents are cached in the warehouse. This saves a lot of time and made hot processing (2nd-time processing) &lt;strong&gt;1.7x faster&lt;/strong&gt;.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Version&lt;/th&gt;
-&lt;th&gt;3.1&lt;/th&gt;
-&lt;th&gt;3.2&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Cold processing&lt;/td&gt;
-&lt;td&gt;6.094s&lt;/td&gt;
-&lt;td&gt;6.454s&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Hot processing&lt;/td&gt;
-&lt;td&gt;5.154s&lt;/td&gt;
-&lt;td&gt;3.002s&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id=&quot;Lazy-load-language-files-of-highlight-js&quot;&gt;&lt;a href=&quot;#Lazy-load-language-files-of-highlight-js&quot; class=&quot;headerlink&quot; title=&quot;Lazy load language files of highlight.js&quot;&gt;&lt;/a&gt;Lazy load language files of highlight.js&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/hexojs/hexo/issues/1036&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;highlight.js is slow&lt;/a&gt;. Especially when it try to detect the language. Lazy load language files make processing faster and don’t have to load bunch of unused language files. However there’re some limitations:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Auto detect must be disabled.&lt;/li&gt;
-&lt;li&gt;You have to specify language in code block.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You can set auto detect disabled in &lt;code&gt;_config.yml&lt;/code&gt;.&lt;/p&gt;
-&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;highlight:&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  auto_detect:&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&quot;Templates-precompilation&quot;&gt;&lt;a href=&quot;#Templates-precompilation&quot; class=&quot;headerlink&quot; title=&quot;Templates precompilation&quot;&gt;&lt;/a&gt;Templates precompilation&lt;/h3&gt;&lt;p&gt;Theme templates are precompiled if possible. It makes generation speed &lt;strong&gt;2x faster&lt;/strong&gt;.&lt;/p&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Version&lt;/th&gt;
-&lt;th&gt;3.1&lt;/th&gt;
-&lt;th&gt;3.2&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Cold generation&lt;/td&gt;
-&lt;td&gt;27.2s&lt;/td&gt;
-&lt;td&gt;13.6s&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;Hot generation&lt;/td&gt;
-&lt;td&gt;24.4s&lt;/td&gt;
-&lt;td&gt;12.6s&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;The following renderers have already supported this feature.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/hexojs/hexo-renderer-ejs&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-renderer-ejs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/hexojs/hexo-renderer-jade&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-renderer-jade&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://github.com/hexojs/hexo-renderer-swig&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-renderer-swig&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And it’s easy to implement precompilation for renderers. Just add a &lt;code&gt;compile&lt;/code&gt; function to the renderer. Take EJS renderer for example:&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; ejs = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;ejs&#39;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; assign = &lt;span class=&quot;built_in&quot;&gt;require&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&#39;object-assign&#39;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;ejsRenderer&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;data, locals&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ejs.render(data.text, assign(&amp;#123;filename: data.path&amp;#125;, locals));&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;ejsRenderer.compile = &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;data&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; ejs.compile(data.text, &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    filename: data.path&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;module&lt;/span&gt;.exports = ejsRenderer;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;Include-exclude-source-files&quot;&gt;&lt;a href=&quot;#Include-exclude-source-files&quot; class=&quot;headerlink&quot; title=&quot;Include/exclude source files&quot;&gt;&lt;/a&gt;Include/exclude source files&lt;/h2&gt;&lt;p&gt;You can include/exclude specified source files in &lt;code&gt;_config.yml&lt;/code&gt;.&lt;/p&gt;
-&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;include:&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;bullet&quot;&gt;  -&lt;/span&gt; .htaccess&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;exclude:&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;bullet&quot;&gt;  -&lt;/span&gt; tmp/**/*&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://github.com/hexojs/hexo/releases&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;changelog&lt;/a&gt;, &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1nLW3fPCtrkfMolz8UnUiKq5lqys6bIcZqrfksuvQHA0/edit?usp=sharing&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;benchmark results&lt;/a&gt;.&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<p>It has been a long time that Hexo is poor at handling large website. (<a href="https://github.com/hexojs/hexo/issues/710" target="_blank" rel="external">#710</a>, <a href="https://github.com/hexojs/hexo/issues/1124" target="_blank" rel="external">#1124</a>, <a href="https://github.com/hexojs/hexo/issues/283" target="_blank" rel="external">#283</a>, <a href="https://github.com/hexojs/hexo/issues/1187" target="_blank" rel="external">#1187</a>, <a href="https://github.com/hexojs/hexo/issues/550" target="_blank" rel="external">#550</a>, <a href="https://github.com/hexojs/hexo/issues/1769" target="_blank" rel="external">#1769</a>, etc.) We tried hard to solve this problem and there’re several improvements in Hexo 3.2.</p>
+<h2 id="It’s-all-about-speed"><a href="#It’s-all-about-speed" class="headerlink" title="It’s all about speed"></a>It’s all about speed</h2><h3 id="Caching-rendered-contents"><a href="#Caching-rendered-contents" class="headerlink" title="Caching rendered contents"></a>Caching rendered contents</h3><p>Rendered contents are cached in the warehouse. This saves a lot of time and made hot processing (2nd-time processing) <strong>1.7x faster</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>3.1</th>
+<th>3.2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cold processing</td>
+<td>6.094s</td>
+<td>6.454s</td>
+</tr>
+<tr>
+<td>Hot processing</td>
+<td>5.154s</td>
+<td>3.002s</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Lazy-load-language-files-of-highlight-js"><a href="#Lazy-load-language-files-of-highlight-js" class="headerlink" title="Lazy load language files of highlight.js"></a>Lazy load language files of highlight.js</h3><p><a href="https://github.com/hexojs/hexo/issues/1036" target="_blank" rel="external">highlight.js is slow</a>. Especially when it try to detect the language. Lazy load language files make processing faster and don’t have to load bunch of unused language files. However there’re some limitations:</p>
+<ul>
+<li>Auto detect must be disabled.</li>
+<li>You have to specify language in code block.</li>
+</ul>
+<p>You can set auto detect disabled in <code>_config.yml</code>.</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">highlight:</span></div><div class="line"><span class="attr">  auto_detect:</span> <span class="literal">false</span></div></pre></td></tr></table></figure>
+<h3 id="Templates-precompilation"><a href="#Templates-precompilation" class="headerlink" title="Templates precompilation"></a>Templates precompilation</h3><p>Theme templates are precompiled if possible. It makes generation speed <strong>2x faster</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>3.1</th>
+<th>3.2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cold generation</td>
+<td>27.2s</td>
+<td>13.6s</td>
+</tr>
+<tr>
+<td>Hot generation</td>
+<td>24.4s</td>
+<td>12.6s</td>
+</tr>
+</tbody>
+</table>
+<p>The following renderers have already supported this feature.</p>
+<ul>
+<li><a href="https://github.com/hexojs/hexo-renderer-ejs" target="_blank" rel="external">hexo-renderer-ejs</a></li>
+<li><a href="https://github.com/hexojs/hexo-renderer-jade" target="_blank" rel="external">hexo-renderer-jade</a></li>
+<li><a href="https://github.com/hexojs/hexo-renderer-swig" target="_blank" rel="external">hexo-renderer-swig</a></li>
+</ul>
+<p>And it’s easy to implement precompilation for renderers. Just add a <code>compile</code> function to the renderer. Take EJS renderer for example:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> ejs = <span class="built_in">require</span>(<span class="string">'ejs'</span>);</div><div class="line"><span class="keyword">var</span> assign = <span class="built_in">require</span>(<span class="string">'object-assign'</span>);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">ejsRenderer</span>(<span class="params">data, locals</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> ejs.render(data.text, assign(&#123;filename: data.path&#125;, locals));</div><div class="line">&#125;</div><div class="line"></div><div class="line">ejsRenderer.compile = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> ejs.compile(data.text, &#123;</div><div class="line">    filename: data.path</div><div class="line">  &#125;);</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = ejsRenderer;</div></pre></td></tr></table></figure>
+<h2 id="Include-exclude-source-files"><a href="#Include-exclude-source-files" class="headerlink" title="Include/exclude source files"></a>Include/exclude source files</h2><p>You can include/exclude specified source files in <code>_config.yml</code>.</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">include:</span></div><div class="line"><span class="bullet">  -</span> .htaccess</div><div class="line"></div><div class="line"><span class="attr">exclude:</span></div><div class="line"><span class="bullet">  -</span> tmp/**/*</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://github.com/hexojs/hexo/releases" target="_blank" rel="external">changelog</a>, <a href="https://docs.google.com/spreadsheets/d/1nLW3fPCtrkfMolz8UnUiKq5lqys6bIcZqrfksuvQHA0/edit?usp=sharing" target="_blank" rel="external">benchmark results</a>.</p>
+]]></content>
     
     <summary type="html">
     
@@ -101,37 +101,37 @@
     <link href="https://hexo.io/news/2015/03/05/hexo-3-0-released/"/>
     <id>https://hexo.io/news/2015/03/05/hexo-3-0-released/</id>
     <published>2015-03-05T00:00:00.000Z</published>
-    <updated>2016-08-15T07:36:08.442Z</updated>
+    <updated>2016-08-17T11:37:39.900Z</updated>
     
-    <content type="html">&lt;p&gt;Hexo 3.0 has finally come out! After four beta and four RC versions, Hexo 3 become more stable and more powerful. Thanks for the contributors and testers! &lt;/p&gt;
-&lt;h2 id=&quot;What’s-Changed&quot;&gt;&lt;a href=&quot;#What’s-Changed&quot; class=&quot;headerlink&quot; title=&quot;What’s Changed?&quot;&gt;&lt;/a&gt;What’s Changed?&lt;/h2&gt;&lt;p&gt;There’re many improvements in Hexo 3. Better performance, API is easier to use, higher coverage, etc. Here’re some notable changes:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#new-cli&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;New CLI&lt;/a&gt;&lt;/strong&gt;: Command line interface is separated into a stand-alone module: &lt;a href=&quot;https://github.com/hexojs/hexo-cli&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-cli&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#slimmer-core-module&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Slimmer Core Module&lt;/a&gt;&lt;/strong&gt;: Generators, deployers and server are also separated from the main module.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#new-generator-api&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;New Generator API&lt;/a&gt;&lt;/strong&gt;: Generator API changed a lot in Hexo 3.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#render-pipeline-changed&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Include Assets in a Post&lt;/a&gt;&lt;/strong&gt;: Serveral useful tag plugins are added in Hexo 3: &lt;code&gt;post_path&lt;/code&gt;, &lt;code&gt;post_link&lt;/code&gt;, &lt;code&gt;asset_path&lt;/code&gt;, &lt;code&gt;asset_link&lt;/code&gt;, &lt;code&gt;asset_img&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#async-tag-plugins&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Async Tag Plugins&lt;/a&gt;&lt;/strong&gt;: Tag plugins can do async jobs now!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#timezone-support&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Timezone Support&lt;/a&gt;&lt;/strong&gt;: You can define the timezone of your site now.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Breaking Changes in Hexo 3.0&lt;/a&gt;, &lt;a href=&quot;https://github.com/hexojs/hexo/releases&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;changelog&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;How-to-Update&quot;&gt;&lt;a href=&quot;#How-to-Update&quot; class=&quot;headerlink&quot; title=&quot;How to Update?&quot;&gt;&lt;/a&gt;How to Update?&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Modify &lt;code&gt;package.json&lt;/code&gt;.&lt;/p&gt;
- &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;quot;hexo&amp;quot;: &amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    &amp;quot;version&amp;quot;: &amp;quot;&amp;quot;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Install &lt;a href=&quot;https://github.com/hexojs/hexo-cli&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo-cli&lt;/a&gt;. If any error occurred, try to remove hexo first.&lt;/p&gt;
- &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ npm install hexo-cli -g&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Install Hexo.&lt;/p&gt;
- &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ npm install hexo --save&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Install plugins. You don’t have to install all the following plugins. It depends on your need.&lt;/p&gt;
- &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ npm install hexo-server --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ npm install hexo-generator-index --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ npm install hexo-generator-archive --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ npm install hexo-generator-category --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ npm install hexo-generator-tag --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ npm install hexo-deployer-git --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ npm install hexo-deployer-heroku --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ npm install hexo-deployer-rsync --save&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ npm install hexo-deployer-openshift --save&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Update plugins. Especially generators and filters. Since the API has breaking changes in Hexo 3.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://github.com/hexojs/hexo/wiki/Migrating-from-2.x-to-3.0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Migration from 2.x to 3.0&lt;/a&gt;&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<p>Hexo 3.0 has finally come out! After four beta and four RC versions, Hexo 3 become more stable and more powerful. Thanks for the contributors and testers! </p>
+<h2 id="What’s-Changed"><a href="#What’s-Changed" class="headerlink" title="What’s Changed?"></a>What’s Changed?</h2><p>There’re many improvements in Hexo 3. Better performance, API is easier to use, higher coverage, etc. Here’re some notable changes:</p>
+<ul>
+<li><strong><a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#new-cli" target="_blank" rel="external">New CLI</a></strong>: Command line interface is separated into a stand-alone module: <a href="https://github.com/hexojs/hexo-cli" target="_blank" rel="external">hexo-cli</a></li>
+<li><strong><a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#slimmer-core-module" target="_blank" rel="external">Slimmer Core Module</a></strong>: Generators, deployers and server are also separated from the main module.</li>
+<li><strong><a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#new-generator-api" target="_blank" rel="external">New Generator API</a></strong>: Generator API changed a lot in Hexo 3.</li>
+<li><strong><a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#render-pipeline-changed" target="_blank" rel="external">Include Assets in a Post</a></strong>: Serveral useful tag plugins are added in Hexo 3: <code>post_path</code>, <code>post_link</code>, <code>asset_path</code>, <code>asset_link</code>, <code>asset_img</code>.</li>
+<li><strong><a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#async-tag-plugins" target="_blank" rel="external">Async Tag Plugins</a></strong>: Tag plugins can do async jobs now!</li>
+<li><strong><a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0#timezone-support" target="_blank" rel="external">Timezone Support</a></strong>: You can define the timezone of your site now.</li>
+</ul>
+<p>More info: <a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0" target="_blank" rel="external">Breaking Changes in Hexo 3.0</a>, <a href="https://github.com/hexojs/hexo/releases" target="_blank" rel="external">changelog</a></p>
+<h2 id="How-to-Update"><a href="#How-to-Update" class="headerlink" title="How to Update?"></a>How to Update?</h2><ol>
+<li><p>Modify <code>package.json</code>.</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;hexo&quot;: &#123;</div><div class="line">    &quot;version&quot;: &quot;&quot;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>Install <a href="https://github.com/hexojs/hexo-cli" target="_blank" rel="external">hexo-cli</a>. If any error occurred, try to remove hexo first.</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div></pre></td></tr></table></figure>
+</li>
+<li><p>Install Hexo.</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ npm install hexo --save</div></pre></td></tr></table></figure>
+</li>
+<li><p>Install plugins. You don’t have to install all the following plugins. It depends on your need.</p>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-server --save</div><div class="line">$ npm install hexo-generator-index --save</div><div class="line">$ npm install hexo-generator-archive --save</div><div class="line">$ npm install hexo-generator-category --save</div><div class="line">$ npm install hexo-generator-tag --save</div><div class="line">$ npm install hexo-deployer-git --save</div><div class="line">$ npm install hexo-deployer-heroku --save</div><div class="line">$ npm install hexo-deployer-rsync --save</div><div class="line">$ npm install hexo-deployer-openshift --save</div></pre></td></tr></table></figure>
+</li>
+<li><p>Update plugins. Especially generators and filters. Since the API has breaking changes in Hexo 3.</p>
+</li>
+</ol>
+<p>More info: <a href="https://github.com/hexojs/hexo/wiki/Migrating-from-2.x-to-3.0" target="_blank" rel="external">Migration from 2.x to 3.0</a></p>
+]]></content>
     
     <summary type="html">
     
@@ -147,18 +147,18 @@
     <link href="https://hexo.io/news/2015/02/27/new-documentation-and-registry/"/>
     <id>https://hexo.io/news/2015/02/27/new-documentation-and-registry/</id>
     <published>2015-02-27T00:00:00.000Z</published>
-    <updated>2016-08-15T07:36:08.442Z</updated>
+    <updated>2016-08-17T11:37:39.900Z</updated>
     
-    <content type="html">&lt;p&gt;The Hexo site has just been updated and changed to a brand new theme. The documentation is also updated and more detailed. Some handy features will make your browsing more convenient.&lt;/p&gt;
-&lt;h2 id=&quot;Official-Registry&quot;&gt;&lt;a href=&quot;#Official-Registry&quot; class=&quot;headerlink&quot; title=&quot;Official Registry&quot;&gt;&lt;/a&gt;Official Registry&lt;/h2&gt;&lt;p&gt;Besides the new theme, a official registry for plugins and themes finally comes. The registry makes you easier to browse and search plugins. And you can preview themes with screenshots.&lt;/p&gt;
-&lt;h3 id=&quot;How-to-add-my-plugin-theme-to-the-registry&quot;&gt;&lt;a href=&quot;#How-to-add-my-plugin-theme-to-the-registry&quot; class=&quot;headerlink&quot; title=&quot;How to add my plugin/theme to the registry?&quot;&gt;&lt;/a&gt;How to add my plugin/theme to the registry?&lt;/h3&gt;&lt;p&gt;See the following articles for more info. Your plugin/theme will be published to the registry once the pull request is merged.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/docs/themes.html#Publishing&quot;&gt;Publish a theme&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/docs/plugins.html#Publishing&quot;&gt;Publish a plugin&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;Localization&quot;&gt;&lt;a href=&quot;#Localization&quot; class=&quot;headerlink&quot; title=&quot;Localization&quot;&gt;&lt;/a&gt;Localization&lt;/h2&gt;&lt;p&gt;We have add two new languages of documentation: &lt;a href=&quot;/zh-tw/&quot;&gt;Tranditional Chinese (正體中文)&lt;/a&gt; and &lt;a href=&quot;/zh-cn/&quot;&gt;Simplified Chinese (简体中文)&lt;/a&gt;. Thanks to &lt;a href=&quot;https://github.com/pinggod&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;pinggod&lt;/a&gt; for the Simplified Chinese translation. We very welcome you to help us translating and make more people easier to get started with Hexo! For more info, see &lt;a href=&quot;/docs/contributing.html#Translating&quot;&gt;translating documentation&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Where’s-API-Documentation&quot;&gt;&lt;a href=&quot;#Where’s-API-Documentation&quot; class=&quot;headerlink&quot; title=&quot;Where’s API Documentation?&quot;&gt;&lt;/a&gt;Where’s API Documentation?&lt;/h2&gt;&lt;p&gt;The API documentation is hidden so far. Please be patient. I’m updating it now. The new API doc will be released in a few days.&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<p>The Hexo site has just been updated and changed to a brand new theme. The documentation is also updated and more detailed. Some handy features will make your browsing more convenient.</p>
+<h2 id="Official-Registry"><a href="#Official-Registry" class="headerlink" title="Official Registry"></a>Official Registry</h2><p>Besides the new theme, a official registry for plugins and themes finally comes. The registry makes you easier to browse and search plugins. And you can preview themes with screenshots.</p>
+<h3 id="How-to-add-my-plugin-theme-to-the-registry"><a href="#How-to-add-my-plugin-theme-to-the-registry" class="headerlink" title="How to add my plugin/theme to the registry?"></a>How to add my plugin/theme to the registry?</h3><p>See the following articles for more info. Your plugin/theme will be published to the registry once the pull request is merged.</p>
+<ul>
+<li><a href="/docs/themes.html#Publishing">Publish a theme</a></li>
+<li><a href="/docs/plugins.html#Publishing">Publish a plugin</a></li>
+</ul>
+<h2 id="Localization"><a href="#Localization" class="headerlink" title="Localization"></a>Localization</h2><p>We have add two new languages of documentation: <a href="/zh-tw/">Tranditional Chinese (正體中文)</a> and <a href="/zh-cn/">Simplified Chinese (简体中文)</a>. Thanks to <a href="https://github.com/pinggod" target="_blank" rel="external">pinggod</a> for the Simplified Chinese translation. We very welcome you to help us translating and make more people easier to get started with Hexo! For more info, see <a href="/docs/contributing.html#Translating">translating documentation</a>.</p>
+<h2 id="Where’s-API-Documentation"><a href="#Where’s-API-Documentation" class="headerlink" title="Where’s API Documentation?"></a>Where’s API Documentation?</h2><p>The API documentation is hidden so far. Please be patient. I’m updating it now. The new API doc will be released in a few days.</p>
+]]></content>
     
     <summary type="html">
     
@@ -174,26 +174,26 @@
     <link href="https://hexo.io/news/2014/07/13/hexo-2-8-released/"/>
     <id>https://hexo.io/news/2014/07/13/hexo-2-8-released/</id>
     <published>2014-07-13T00:00:00.000Z</published>
-    <updated>2016-08-15T07:36:08.438Z</updated>
+    <updated>2016-08-17T11:37:39.892Z</updated>
     
-    <content type="html">&lt;p&gt;Hexo 2.8 was rewritten, brings you better performance and many improvements. The following is the highlights in this version. You can check &lt;a href=&quot;https://github.com/hexojs/hexo/releases/tag/2.8.0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;detail&lt;/a&gt; on GitHub.&lt;/p&gt;
-&lt;h2 id=&quot;Faster-Processing-Speed&quot;&gt;&lt;a href=&quot;#Faster-Processing-Speed&quot; class=&quot;headerlink&quot; title=&quot;Faster Processing Speed&quot;&gt;&lt;/a&gt;Faster Processing Speed&lt;/h2&gt;&lt;p&gt;Before Hexo 2.8, all source files have to be processed each time you use Hexo. In Hexo 2.8, the entire database will be saved to &lt;code&gt;db.json&lt;/code&gt; so Hexo don’t have to process all files again. Also, a new data type “&lt;strong&gt;skip&lt;/strong&gt;“ was added for processors to detect whether a file was changed or not.&lt;/p&gt;
-&lt;p&gt;Generating was also changed in Hexo 2.8. You can check the elapsed time of each file in console now. However, I found multi-process generating didn’t affect generating speed a lot. Thus, &lt;code&gt;multi_thread&lt;/code&gt; and &lt;code&gt;max_open_file&lt;/code&gt; setting are deprecated in Hexo 2.8.&lt;/p&gt;
-&lt;img src=&quot;/news/2014/07/13/hexo-2-8-released/generate-console.png&quot; alt=&quot;generate-console.png&quot; title=&quot;&quot;&gt;
-&lt;h2 id=&quot;Draft-Publish&quot;&gt;&lt;a href=&quot;#Draft-Publish&quot; class=&quot;headerlink&quot; title=&quot;Draft Publish&quot;&gt;&lt;/a&gt;Draft Publish&lt;/h2&gt;&lt;p&gt;You don’t have to enter full file name to publish a post anymore. Draft publish system is rewritten in Hexo 2.8. &lt;code&gt;new_post_name&lt;/code&gt; setting will be applied until drafts are published. Besides, you can choose which layout to apply when publishing.&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo publish [layout] &amp;lt;filename&amp;gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;A new API &lt;code&gt;post.publish&lt;/code&gt; was added to help you publish drafts more easily.&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;hexo.post.publish(&amp;#123;slug: &lt;span class=&quot;string&quot;&gt;&#39;hello-world&#39;&lt;/span&gt;, layout: &lt;span class=&quot;string&quot;&gt;&#39;post&#39;&lt;/span&gt;&amp;#125;, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;err, target&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;// ...&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;Permalink&quot;&gt;&lt;a href=&quot;#Permalink&quot; class=&quot;headerlink&quot; title=&quot;Permalink&quot;&gt;&lt;/a&gt;Permalink&lt;/h2&gt;&lt;p&gt;File name and permalink now share a more universal variable system. Every variables in file name can also be read in permalink. Here’s a config for example:&lt;/p&gt;
-&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;permalink:&lt;/span&gt; :type/:title/&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;new_post_name:&lt;/span&gt; :type/:title.md&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;When you create a post, the post will be saved to &lt;code&gt;source/_posts/test/Hello-World.md&lt;/code&gt; and the URL will be &lt;code&gt;http://localhost:4000/test/Hello-World/&lt;/code&gt;.&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt; --type &lt;span class=&quot;built_in&quot;&gt;test&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&quot;Multi-language-Support&quot;&gt;&lt;a href=&quot;#Multi-language-Support&quot; class=&quot;headerlink&quot; title=&quot;Multi-language Support&quot;&gt;&lt;/a&gt;Multi-language Support&lt;/h2&gt;&lt;p&gt;With the new permalink introduced in the previous section, it’s much easier to create a multi-language site. For example:&lt;/p&gt;
-&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;permalink:&lt;/span&gt; :lang/:title/&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;new_post_name:&lt;/span&gt; :lang/:title.md&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;Then you can create a post with &lt;code&gt;--lang&lt;/code&gt; option:&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;Hello World&quot;&lt;/span&gt; --lang en&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# =&amp;gt; This post will be saved to source/_posts/en/Hello-World.md&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# =&amp;gt; URL: http://localhost:4000/en/Hello-World/&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;你好世界&quot;&lt;/span&gt; --lang tw&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# =&amp;gt; This post will be saved to source/_posts/tw/你好世界.md&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# =&amp;gt; URL: http://localhost:4000/tw/你好世界/&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;You can define the default value of permalink variables in &lt;code&gt;permalink_defaults&lt;/code&gt; setting. For example, we define the defualt language as English.&lt;/p&gt;
-&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;permalink_defaults:&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  lang:&lt;/span&gt; en&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+    <content type="html"><![CDATA[<p>Hexo 2.8 was rewritten, brings you better performance and many improvements. The following is the highlights in this version. You can check <a href="https://github.com/hexojs/hexo/releases/tag/2.8.0" target="_blank" rel="external">detail</a> on GitHub.</p>
+<h2 id="Faster-Processing-Speed"><a href="#Faster-Processing-Speed" class="headerlink" title="Faster Processing Speed"></a>Faster Processing Speed</h2><p>Before Hexo 2.8, all source files have to be processed each time you use Hexo. In Hexo 2.8, the entire database will be saved to <code>db.json</code> so Hexo don’t have to process all files again. Also, a new data type “<strong>skip</strong>“ was added for processors to detect whether a file was changed or not.</p>
+<p>Generating was also changed in Hexo 2.8. You can check the elapsed time of each file in console now. However, I found multi-process generating didn’t affect generating speed a lot. Thus, <code>multi_thread</code> and <code>max_open_file</code> setting are deprecated in Hexo 2.8.</p>
+<img src="/news/2014/07/13/hexo-2-8-released/generate-console.png" alt="generate-console.png" title="">
+<h2 id="Draft-Publish"><a href="#Draft-Publish" class="headerlink" title="Draft Publish"></a>Draft Publish</h2><p>You don’t have to enter full file name to publish a post anymore. Draft publish system is rewritten in Hexo 2.8. <code>new_post_name</code> setting will be applied until drafts are published. Besides, you can choose which layout to apply when publishing.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo publish [layout] &lt;filename&gt;</div></pre></td></tr></table></figure>
+<p>A new API <code>post.publish</code> was added to help you publish drafts more easily.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.post.publish(&#123;slug: <span class="string">'hello-world'</span>, layout: <span class="string">'post'</span>&#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err, target</span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h2 id="Permalink"><a href="#Permalink" class="headerlink" title="Permalink"></a>Permalink</h2><p>File name and permalink now share a more universal variable system. Every variables in file name can also be read in permalink. Here’s a config for example:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">permalink:</span> :type/:title/</div><div class="line"><span class="attr">new_post_name:</span> :type/:title.md</div></pre></td></tr></table></figure>
+<p>When you create a post, the post will be saved to <code>source/_posts/test/Hello-World.md</code> and the URL will be <code>http://localhost:4000/test/Hello-World/</code>.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo new <span class="string">"Hello World"</span> --type <span class="built_in">test</span></div></pre></td></tr></table></figure>
+<h2 id="Multi-language-Support"><a href="#Multi-language-Support" class="headerlink" title="Multi-language Support"></a>Multi-language Support</h2><p>With the new permalink introduced in the previous section, it’s much easier to create a multi-language site. For example:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">permalink:</span> :lang/:title/</div><div class="line"><span class="attr">new_post_name:</span> :lang/:title.md</div></pre></td></tr></table></figure>
+<p>Then you can create a post with <code>--lang</code> option:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo new <span class="string">"Hello World"</span> --lang en</div><div class="line"><span class="comment"># =&gt; This post will be saved to source/_posts/en/Hello-World.md</span></div><div class="line"><span class="comment"># =&gt; URL: http://localhost:4000/en/Hello-World/</span></div><div class="line"></div><div class="line">$ hexo new <span class="string">"你好世界"</span> --lang tw</div><div class="line"><span class="comment"># =&gt; This post will be saved to source/_posts/tw/你好世界.md</span></div><div class="line"><span class="comment"># =&gt; URL: http://localhost:4000/tw/你好世界/</span></div></pre></td></tr></table></figure>
+<p>You can define the default value of permalink variables in <code>permalink_defaults</code> setting. For example, we define the defualt language as English.</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">permalink_defaults:</span></div><div class="line"><span class="attr">  lang:</span> en</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -209,28 +209,28 @@
     <link href="https://hexo.io/news/2014/06/14/hexo-2-7-released/"/>
     <id>https://hexo.io/news/2014/06/14/hexo-2-7-released/</id>
     <published>2014-06-14T00:00:00.000Z</published>
-    <updated>2016-08-15T07:36:08.438Z</updated>
+    <updated>2016-08-17T11:37:39.892Z</updated>
     
-    <content type="html">&lt;p&gt;Hexo 2.7 has been released with three new features. I’m going to introduce them below.&lt;/p&gt;
-&lt;h2 id=&quot;Fragment-Caching&quot;&gt;&lt;a href=&quot;#Fragment-Caching&quot; class=&quot;headerlink&quot; title=&quot;Fragment Caching&quot;&gt;&lt;/a&gt;Fragment Caching&lt;/h2&gt;&lt;p&gt;Although Hexo is fast, it may become slow if you have thousands of source files or complicated categories or tags. Before the data model upgraded, I borrowed a feature from Ruby on Rails: &lt;strong&gt;Fragment Caching&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Fragment Caching saves contents within a fragment and serves the cache when the next request come in. A fragment will only be processed once. It can reduce database queries and decrease generation time significantly. For instance, a Hexo site with 300+ source files needs 6 minutes to generate. In Hexo 2.7, it only need 10 seconds!&lt;/p&gt;
-&lt;p&gt;It can be used in header, footer, sidebar or static contents that won’t be changed during generating. For example:&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;%- fragment_cache(&lt;span class=&quot;string&quot;&gt;&#39;header&#39;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&#39;&amp;lt;header&amp;gt;&amp;lt;/header&amp;gt;&#39;&lt;/span&gt;;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;); %&amp;gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;By using &lt;code&gt;fragment_cache&lt;/code&gt; helper, contents in the function will be cached.&lt;/p&gt;
-&lt;p&gt;Partial helper also supports Fragment Caching, you only need to add a &lt;code&gt;{cache: true}&lt;/code&gt; option when using partial.&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;%- partial(&lt;span class=&quot;string&quot;&gt;&#39;header&#39;&lt;/span&gt;, &amp;#123;&amp;#125;, &amp;#123;cache: &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&amp;#125;) %&amp;gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/hexojs/hexo-theme-landscape&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Landscape&lt;/a&gt; is updated and supports Fragment Caching now. You can check &lt;a href=&quot;https://github.com/hexojs/hexo-theme-landscape/commit/d2aedda61571d6994eb72d784ceda2f59d2a8631&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;this commit&lt;/a&gt; to see what’s changed.&lt;/p&gt;
-&lt;h2 id=&quot;Relative-Link&quot;&gt;&lt;a href=&quot;#Relative-Link&quot; class=&quot;headerlink&quot; title=&quot;Relative Link&quot;&gt;&lt;/a&gt;Relative Link&lt;/h2&gt;&lt;p&gt;Relative Link is supported since Hexo 2.7. But your theme needs some modifications to support it. However, it’s not as hard as you think. You just need to replace the following contents in templates&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;%- config.root %&amp;gt;&amp;lt;%- path %&amp;gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;with &lt;code&gt;url_for&lt;/code&gt; helper.&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;&amp;lt;%- url_for(path) %&amp;gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;code&gt;url_for&lt;/code&gt; helper will add &lt;code&gt;config.root&lt;/code&gt; automatically for you. If you enable &lt;code&gt;relative_link&lt;/code&gt; setting, it’ll add a relative path.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/hexojs/hexo-theme-landscape&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Landscape&lt;/a&gt; is updated for Relative Link. You can check &lt;a href=&quot;https://github.com/hexojs/hexo-theme-landscape/commit/d29cbb83356373af27e7b98643f29a27804364af&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;this commit&lt;/a&gt; to see what’s changed.&lt;/p&gt;
-&lt;h2 id=&quot;Server-Middleware&quot;&gt;&lt;a href=&quot;#Server-Middleware&quot; class=&quot;headerlink&quot; title=&quot;Server Middleware&quot;&gt;&lt;/a&gt;Server Middleware&lt;/h2&gt;&lt;p&gt;Server Middleware would be familiar if you have ever used &lt;a href=&quot;http://www.senchalabs.org/connect/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Connect&lt;/a&gt; or &lt;a href=&quot;http://expressjs.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Express&lt;/a&gt; before. &lt;a href=&quot;http://www.senchalabs.org/connect/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Connect&lt;/a&gt; passes a request through functions called &lt;strong&gt;middleware&lt;/strong&gt;. You can make response to the coming in request in middleware.&lt;/p&gt;
-&lt;p&gt;In Hexo, middleware is served as a type of filter. You can add middleware by registering a new filter. For example:&lt;/p&gt;
-&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;hexo.extend.filter.register(&lt;span class=&quot;string&quot;&gt;&#39;server_middleware&#39;&lt;/span&gt;, &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;app&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  app.use(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;req, res, next&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    res.setHeader(&lt;span class=&quot;string&quot;&gt;&#39;X-Powered-By&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;Hexo&#39;&lt;/span&gt;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;    next();&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;  &amp;#125;);&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;&amp;#125;);&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;This middleware add a header &lt;code&gt;X-Powered-By&lt;/code&gt; and passes the request to the next middleware.&lt;/p&gt;
-</content>
+    <content type="html"><![CDATA[<p>Hexo 2.7 has been released with three new features. I’m going to introduce them below.</p>
+<h2 id="Fragment-Caching"><a href="#Fragment-Caching" class="headerlink" title="Fragment Caching"></a>Fragment Caching</h2><p>Although Hexo is fast, it may become slow if you have thousands of source files or complicated categories or tags. Before the data model upgraded, I borrowed a feature from Ruby on Rails: <strong>Fragment Caching</strong>.</p>
+<p>Fragment Caching saves contents within a fragment and serves the cache when the next request come in. A fragment will only be processed once. It can reduce database queries and decrease generation time significantly. For instance, a Hexo site with 300+ source files needs 6 minutes to generate. In Hexo 2.7, it only need 10 seconds!</p>
+<p>It can be used in header, footer, sidebar or static contents that won’t be changed during generating. For example:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</div><div class="line">&#125;); %&gt;</div></pre></td></tr></table></figure>
+<p>By using <code>fragment_cache</code> helper, contents in the function will be cached.</p>
+<p>Partial helper also supports Fragment Caching, you only need to add a <code>{cache: true}</code> option when using partial.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- partial(<span class="string">'header'</span>, &#123;&#125;, &#123;cache: <span class="literal">true</span>&#125;) %&gt;</div></pre></td></tr></table></figure>
+<p><a href="https://github.com/hexojs/hexo-theme-landscape" target="_blank" rel="external">Landscape</a> is updated and supports Fragment Caching now. You can check <a href="https://github.com/hexojs/hexo-theme-landscape/commit/d2aedda61571d6994eb72d784ceda2f59d2a8631" target="_blank" rel="external">this commit</a> to see what’s changed.</p>
+<h2 id="Relative-Link"><a href="#Relative-Link" class="headerlink" title="Relative Link"></a>Relative Link</h2><p>Relative Link is supported since Hexo 2.7. But your theme needs some modifications to support it. However, it’s not as hard as you think. You just need to replace the following contents in templates</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- config.root %&gt;&lt;%- path %&gt;</div></pre></td></tr></table></figure>
+<p>with <code>url_for</code> helper.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- url_for(path) %&gt;</div></pre></td></tr></table></figure>
+<p><code>url_for</code> helper will add <code>config.root</code> automatically for you. If you enable <code>relative_link</code> setting, it’ll add a relative path.</p>
+<p><a href="https://github.com/hexojs/hexo-theme-landscape" target="_blank" rel="external">Landscape</a> is updated for Relative Link. You can check <a href="https://github.com/hexojs/hexo-theme-landscape/commit/d29cbb83356373af27e7b98643f29a27804364af" target="_blank" rel="external">this commit</a> to see what’s changed.</p>
+<h2 id="Server-Middleware"><a href="#Server-Middleware" class="headerlink" title="Server Middleware"></a>Server Middleware</h2><p>Server Middleware would be familiar if you have ever used <a href="http://www.senchalabs.org/connect/" target="_blank" rel="external">Connect</a> or <a href="http://expressjs.com/" target="_blank" rel="external">Express</a> before. <a href="http://www.senchalabs.org/connect/" target="_blank" rel="external">Connect</a> passes a request through functions called <strong>middleware</strong>. You can make response to the coming in request in middleware.</p>
+<p>In Hexo, middleware is served as a type of filter. You can add middleware by registering a new filter. For example:</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(<span class="string">'server_middleware'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">app</span>)</span>&#123;</div><div class="line">  app.use(<span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>)</span>&#123;</div><div class="line">    res.setHeader(<span class="string">'X-Powered-By'</span>, <span class="string">'Hexo'</span>);</div><div class="line">    next();</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p>This middleware add a header <code>X-Powered-By</code> and passes the request to the next middleware.</p>
+]]></content>
     
     <summary type="html">
     
