@@ -2,1486 +2,1486 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://hexo.io/zh-tw/docs/migration.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/server.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/zh-tw/docs/writing.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/docs/themes.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/docs/templates.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/docs/tag-plugins.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/docs/setup.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/docs/server.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/docs/plugins.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/docs/permalinks.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/zh-tw/docs/troubleshooting.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-tw/docs/themes.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-tw/docs/templates.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-tw/docs/tag-plugins.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-tw/docs/setup.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-tw/docs/server.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-tw/docs/plugins.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-tw/docs/permalinks.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-tw/docs/migration.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/zh-tw/docs/internationalization.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/zh-tw/docs/index.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/zh-tw/docs/helpers.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/zh-tw/docs/generating.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/zh-tw/docs/front-matter.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/zh-tw/docs/deployment.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/zh-tw/docs/data-files.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/docs/variables.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/index.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.801Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/docs/configuration.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/docs/commands.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/docs/asset-folders.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/themes.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/tag.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/scaffolds.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/router.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/rendering.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/renderer.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/processor.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/posts.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/migrator.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/locals.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/index.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/helper.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/generator.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/filter.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/events.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/deployer.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/console.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-tw/api/box.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/docs/writing.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/api/box.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/docs/troubleshooting.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/docs/themes.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/docs/templates.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/index.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/zh-tw/docs/contributing.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/docs/tag-plugins.html</loc>
+    <loc>https://hexo.io/zh-tw/docs/configuration.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/docs/setup.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/docs/server.html</loc>
+    <loc>https://hexo.io/zh-tw/docs/commands.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/docs/plugins.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/docs/permalinks.html</loc>
+    <loc>https://hexo.io/zh-tw/docs/asset-folders.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/docs/migration.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/docs/internationalization.html</loc>
+    <loc>https://hexo.io/zh-tw/api/themes.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/docs/index.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/docs/helpers.html</loc>
+    <loc>https://hexo.io/zh-tw/api/tag.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/docs/generating.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/docs/front-matter.html</loc>
+    <loc>https://hexo.io/zh-tw/api/scaffolds.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/docs/deployment.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/docs/data-files.html</loc>
+    <loc>https://hexo.io/zh-tw/api/router.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/docs/contributing.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/docs/configuration.html</loc>
+    <loc>https://hexo.io/zh-tw/api/rendering.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/docs/commands.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/docs/asset-folders.html</loc>
+    <loc>https://hexo.io/zh-tw/api/renderer.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/api/themes.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/api/tag.html</loc>
+    <loc>https://hexo.io/zh-tw/api/processor.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/api/scaffolds.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/api/router.html</loc>
+    <loc>https://hexo.io/zh-tw/api/posts.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/api/rendering.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/api/renderer.html</loc>
+    <loc>https://hexo.io/zh-tw/api/migrator.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/api/processor.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/api/posts.html</loc>
+    <loc>https://hexo.io/zh-tw/api/locals.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/api/migrator.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/api/locals.html</loc>
+    <loc>https://hexo.io/zh-tw/api/index.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/api/index.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/api/helper.html</loc>
+    <loc>https://hexo.io/zh-tw/api/helper.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/api/generator.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/api/filter.html</loc>
+    <loc>https://hexo.io/zh-tw/api/generator.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/zh-cn/api/events.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/api/deployer.html</loc>
+    <loc>https://hexo.io/zh-tw/api/filter.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/zh-cn/api/console.html</loc>
+    <loc>https://hexo.io/zh-tw/api/events.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-tw/api/deployer.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-tw/api/console.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-tw/api/box.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/docs/writing.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/zh-cn/docs/variables.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.797Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/plugins/index.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/troubleshooting.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/index.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/themes/index.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/themes.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/api/router.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/index.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/templates.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/docs/templates.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/docs/themes.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/generating.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/docs/troubleshooting.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/docs/variables.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/front-matter.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/docs/writing.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/api/box.html</loc>
+    <loc>https://hexo.io/zh-cn/index.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/api/console.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/api/deployer.html</loc>
+    <loc>https://hexo.io/zh-tw/index.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/api/events.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/api/filter.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/tag-plugins.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/api/generator.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/api/helper.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/setup.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/api/index.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/api/locals.html</loc>
+    <loc>https://hexo.io/zh-tw/docs/variables.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/api/migrator.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/api/posts.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/plugins.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/api/processor.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/api/renderer.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/permalinks.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/api/rendering.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/docs/writing.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/migration.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/api/scaffolds.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/api/tag.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/internationalization.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/api/themes.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/docs/asset-folders.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/index.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/docs/commands.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/docs/configuration.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/helpers.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/docs/contributing.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/docs/data-files.html</loc>
+    <loc>https://hexo.io/zh-cn/api/filter.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/docs/deployment.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/docs/front-matter.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/deployment.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/docs/generating.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/docs/helpers.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/data-files.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/docs/index.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/docs/internationalization.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/contributing.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/docs/migration.html</loc>
+    <loc>https://hexo.io/zh-cn/docs/configuration.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/docs/commands.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/docs/asset-folders.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/themes.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/tag.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/scaffolds.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/router.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/rendering.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/renderer.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/processor.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/posts.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/migrator.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/locals.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/index.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/box.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/console.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/deployer.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/events.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/helper.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/zh-cn/api/generator.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.461Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/ru/docs/permalinks.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ru/docs/plugins.html</loc>
+    <loc>https://hexo.io/ru/docs/data-files.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/docs/server.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/docs/setup.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/docs/tag-plugins.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/docs/templates.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/docs/themes.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ru/docs/troubleshooting.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/ru/docs/variables.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.729Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/docs/tag-plugins.html</loc>
+    <loc>https://hexo.io/ru/docs/troubleshooting.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/docs/templates.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/docs/server.html</loc>
+    <loc>https://hexo.io/ru/docs/themes.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/docs/plugins.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/docs/permalinks.html</loc>
+    <loc>https://hexo.io/ru/docs/templates.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/docs/migration.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/docs/internationalization.html</loc>
+    <loc>https://hexo.io/ru/docs/tag-plugins.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/docs/index.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/docs/helpers.html</loc>
+    <loc>https://hexo.io/ru/docs/setup.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/docs/generating.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/docs/front-matter.html</loc>
+    <loc>https://hexo.io/ru/docs/server.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/docs/deployment.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/docs/data-files.html</loc>
+    <loc>https://hexo.io/ru/docs/plugins.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/docs/contributing.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/docs/configuration.html</loc>
+    <loc>https://hexo.io/ru/docs/writing.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/docs/commands.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/docs/asset-folders.html</loc>
+    <loc>https://hexo.io/ru/docs/migration.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/api/themes.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/api/tag.html</loc>
+    <loc>https://hexo.io/ru/docs/internationalization.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/api/scaffolds.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/api/router.html</loc>
+    <loc>https://hexo.io/ru/docs/index.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/api/rendering.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/api/renderer.html</loc>
+    <loc>https://hexo.io/ru/docs/helpers.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/api/processor.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/api/posts.html</loc>
+    <loc>https://hexo.io/ru/docs/generating.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/api/migrator.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/api/locals.html</loc>
+    <loc>https://hexo.io/ru/docs/front-matter.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/docs/deployment.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/themes/index.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/index.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/docs/contributing.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.377Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/processor.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/renderer.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/rendering.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/plugins/index.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/scaffolds.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/tag.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/themes.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/docs/asset-folders.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/docs/commands.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/docs/configuration.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/router.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/index.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/ko/api/index.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/api/helper.html</loc>
+    <loc>https://hexo.io/ko/api/locals.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/api/generator.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/api/filter.html</loc>
+    <loc>https://hexo.io/ko/api/migrator.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/api/events.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/api/deployer.html</loc>
+    <loc>https://hexo.io/ko/api/posts.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/ko/api/console.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/ko/api/box.html</loc>
+    <loc>https://hexo.io/ko/api/processor.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/docs/writing.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/docs/variables.html</loc>
+    <loc>https://hexo.io/ko/api/renderer.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/docs/troubleshooting.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/docs/themes.html</loc>
+    <loc>https://hexo.io/ko/api/rendering.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/api/router.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/api/scaffolds.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/api/tag.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/api/themes.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/asset-folders.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/commands.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/configuration.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/contributing.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/data-files.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/deployment.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/front-matter.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/generating.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/helpers.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/index.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/internationalization.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/migration.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/permalinks.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/plugins.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/docs/server.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/ko/docs/setup.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/docs/tag-plugins.html</loc>
+    <loc>https://hexo.io/ko/docs/tag-plugins.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/docs/setup.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/docs/server.html</loc>
+    <loc>https://hexo.io/ko/docs/templates.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/docs/plugins.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/docs/permalinks.html</loc>
+    <loc>https://hexo.io/ko/docs/themes.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/docs/migration.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/docs/internationalization.html</loc>
+    <loc>https://hexo.io/ko/docs/troubleshooting.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/docs/index.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/docs/helpers.html</loc>
+    <loc>https://hexo.io/ko/docs/variables.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/docs/generating.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/docs/front-matter.html</loc>
+    <loc>https://hexo.io/ko/docs/writing.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/docs/deployment.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://hexo.io/docs/data-files.html</loc>
+    <loc>https://hexo.io/ru/api/box.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/console.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/deployer.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/events.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/filter.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/generator.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/helper.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/index.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/locals.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/migrator.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ru/api/posts.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.373Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/api/helper.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/docs/contributing.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/api/filter.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/api/events.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/api/deployer.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/api/console.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/api/box.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/writing.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/variables.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/troubleshooting.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/themes.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/templates.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/tag-plugins.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/setup.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/server.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/plugins.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/permalinks.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/migration.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/internationalization.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/index.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/helpers.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/generating.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/front-matter.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/deployment.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/docs/data-files.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/ko/api/generator.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/docs/configuration.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/docs/commands.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/docs/asset-folders.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/api/themes.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/api/tag.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/api/scaffolds.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/api/router.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/api/rendering.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/index.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.725Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/api/events.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/api/processor.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/api/migrator.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/api/locals.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/api/index.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/api/helper.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/api/generator.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/api/filter.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/api/posts.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/api/deployer.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/api/console.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://hexo.io/api/box.html</loc>
-    
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/api/renderer.html</loc>
     
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/api/processor.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/api/posts.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/api/migrator.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/api/locals.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/api/index.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/api/helper.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/index.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/api/filter.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.365Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/api/events.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.365Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/api/deployer.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.365Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/api/console.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.365Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/api/box.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.365Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://hexo.io/api/generator.html</loc>
+    
+    <lastmod>2016-10-06T20:40:33.365Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/news/2016/02/28/hexo-3-2-released/</loc>
     
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.365Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/news/2015/03/05/hexo-3-0-released/</loc>
     
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.365Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/news/2015/02/27/new-documentation-and-registry/</loc>
     
-    <lastmod>2016-10-06T09:14:50.721Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.365Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/news/2014/07/13/hexo-2-8-released/</loc>
     
-    <lastmod>2016-10-06T09:14:50.717Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.361Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://hexo.io/news/2014/06/14/hexo-2-7-released/</loc>
     
-    <lastmod>2016-10-06T09:14:50.717Z</lastmod>
+    <lastmod>2016-10-06T20:40:33.361Z</lastmod>
     
   </url>
   
