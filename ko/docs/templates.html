@@ -107,7 +107,7 @@ index
 archive
 Archives
 index">
-<meta property="og:updated_time" content="2016-10-10T08:13:16.051Z">
+<meta property="og:updated_time" content="2016-10-16T10:17:43.684Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Templates">
 <meta name="twitter:description" content="템플릿은 당신의 웹 사이트를 외관을 어떻게 표현할지 정의합니다. 아래 표는 페이지에 따른 적절한 템플릿을 소개합니다. 테마는 최소한 index 템플릿은 가지고 있어야 합니다. 
@@ -271,12 +271,12 @@ index">
 <p>Fragment caching은 header, footer, sidebar, 다른 정적인 컨텐츠를 사용할 때 최고입니다.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>그렇다 하더라도 Partial을 사용하는 것이 더 쉬울 수 있습니다.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- partial(<span class="string">'header'</span>, &#123;&#125;, &#123;cache: <span class="literal">true</span>&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- partial(<span class="string">'header'</span>, &#123;&#125;, &#123;<span class="attr">cache</span>: <span class="literal">true</span>&#125;);</div></pre></td></tr></table></figure>
 <p><code>relative_link</code>가 활성화 상태일 때에는 fragment caching을 사용하지 마세요. 사용하게 되면 이슈가 발생할 수 있습니다. 왜냐하면 상대 링크는 표시되는 페이지에 따라 다를 수도 있기 때문입니다.</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-10-10T08:13:16.051Z" itemprop="dateModified">Last updated: 2016-10-10</time>
+                <time class="article-footer-updated" datetime="2016-10-16T10:17:43.684Z" itemprop="dateModified">Last updated: 2016-10-16</time>
                 <a href="themes.html" class="article-footer-prev" title="Themes"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="variables.html" class="article-footer-next" title="Variables"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

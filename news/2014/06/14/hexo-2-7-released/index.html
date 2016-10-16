@@ -41,7 +41,7 @@ Fragment CachingAlthough Hexo is fast, it may become slow if you have thousands 
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Hexo 2.7 has been released with three new features. I’m going to introduce them below.
 Fragment CachingAlthough Hexo is fast, it may become slow if you have thousands of source files or complicated ca">
-<meta property="og:updated_time" content="2016-10-10T08:13:16.043Z">
+<meta property="og:updated_time" content="2016-10-16T10:17:43.676Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 2.7 Released">
 <meta name="twitter:description" content="Hexo 2.7 has been released with three new features. I’m going to introduce them below.
@@ -121,7 +121,7 @@ Fragment CachingAlthough Hexo is fast, it may become slow if you have thousands 
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</div><div class="line">&#125;); %&gt;</div></pre></td></tr></table></figure>
 <p>By using <code>fragment_cache</code> helper, contents in the function will be cached.</p>
 <p>Partial helper also supports Fragment Caching, you only need to add a <code>{cache: true}</code> option when using partial.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- partial(<span class="string">'header'</span>, &#123;&#125;, &#123;cache: <span class="literal">true</span>&#125;) %&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- partial(<span class="string">'header'</span>, &#123;&#125;, &#123;<span class="attr">cache</span>: <span class="literal">true</span>&#125;) %&gt;</div></pre></td></tr></table></figure>
 <p><a href="https://github.com/hexojs/hexo-theme-landscape" target="_blank" rel="external">Landscape</a> is updated and supports Fragment Caching now. You can check <a href="https://github.com/hexojs/hexo-theme-landscape/commit/d2aedda61571d6994eb72d784ceda2f59d2a8631" target="_blank" rel="external">this commit</a> to see what’s changed.</p>
 <h2 id="Relative-Link" class="article-heading"><a href="#Relative-Link" class="headerlink" title="Relative Link"></a>Relative Link<a class="article-anchor" href="#Relative-Link" aria-hidden="true"></a></h2><p>Relative Link is supported since Hexo 2.7. But your theme needs some modifications to support it. However, it’s not as hard as you think. You just need to replace the following contents in templates</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- config.root %&gt;&lt;%- path %&gt;</div></pre></td></tr></table></figure>

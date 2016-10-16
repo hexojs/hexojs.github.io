@@ -51,7 +51,7 @@
 <meta property="og:url" content="https://hexo.io/docs/templates.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Templates define the presentation of your website by describing what each page should look like. The table below shows the corresponding template for every available page. At the very least, a theme s">
-<meta property="og:updated_time" content="2016-10-10T08:13:16.051Z">
+<meta property="og:updated_time" content="2016-10-16T10:17:43.680Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Templates">
 <meta name="twitter:description" content="Templates define the presentation of your website by describing what each page should look like. The table below shows the corresponding template for every available page. At the very least, a theme s">
@@ -187,12 +187,12 @@
 <p>Fragment caching is best used for headers, footers, sidebars or other static content that is unlikely to change from template to template. For example:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>Though it may be easier to use partials:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- partial(<span class="string">'header'</span>, &#123;&#125;, &#123;cache: <span class="literal">true</span>&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- partial(<span class="string">'header'</span>, &#123;&#125;, &#123;<span class="attr">cache</span>: <span class="literal">true</span>&#125;);</div></pre></td></tr></table></figure>
 <p>Don’t use fragment caching when the <code>relative_link</code> setting has been enabled. This may cause issues because relative links can and probably will be different depending on the pages they appear in.</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-10-10T08:13:16.051Z" itemprop="dateModified">Last updated: 2016-10-10</time>
+                <time class="article-footer-updated" datetime="2016-10-16T10:17:43.680Z" itemprop="dateModified">Last updated: 2016-10-16</time>
                 <a href="themes.html" class="article-footer-prev" title="Themes"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="variables.html" class="article-footer-next" title="Variables"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

@@ -51,7 +51,7 @@
 <meta property="og:url" content="https://hexo.io/ru/api/filter.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Фильтры используются для изменения указанных данных. Hexo передает данные для фильтров в определенной последовательности и фильтров изменения данных один за другим. Эта концепция была заимствована из">
-<meta property="og:updated_time" content="2016-10-10T08:13:16.055Z">
+<meta property="og:updated_time" content="2016-10-16T10:17:43.684Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Фильтры">
 <meta name="twitter:description" content="Фильтры используются для изменения указанных данных. Hexo передает данные для фильтров в определенной последовательности и фильтров изменения данных один за другим. Эта концепция была заимствована из">
@@ -147,7 +147,7 @@
 </tbody>
 </table>
 <p>Первый аргумент, передаваемый в каждый фильтр - <code>data</code>. Данные <code>data</code>, передаваемые в следующий фильтр могут быть изменены путем возврата нового значения. Если же ничего не возвращается, данные остаются без изменений. Вы даже можете использовать аргументы, чтобы указать другие аргументы в фильтрах. Например:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)</span>&#123;</div><div class="line">  <span class="comment">// data === 'some data'</span></div><div class="line">  <span class="comment">// arg1 === 'foo'</span></div><div class="line">  <span class="comment">// arg2 === 'bar'</span></div><div class="line"></div><div class="line">  <span class="keyword">return</span> <span class="string">'something'</span>;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">hexo.extend.filter.register(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)</span>&#123;</div><div class="line">  <span class="comment">// data === 'something'</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line">hexo.extend.filter.exec(<span class="string">'test'</span>, <span class="string">'some data'</span>, &#123;</div><div class="line">  args: [<span class="string">'foo'</span>, <span class="string">'bar'</span>]</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)</span>&#123;</div><div class="line">  <span class="comment">// data === 'some data'</span></div><div class="line">  <span class="comment">// arg1 === 'foo'</span></div><div class="line">  <span class="comment">// arg2 === 'bar'</span></div><div class="line"></div><div class="line">  <span class="keyword">return</span> <span class="string">'something'</span>;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">hexo.extend.filter.register(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)</span>&#123;</div><div class="line">  <span class="comment">// data === 'something'</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line">hexo.extend.filter.exec(<span class="string">'test'</span>, <span class="string">'some data'</span>, &#123;</div><div class="line">  <span class="attr">args</span>: [<span class="string">'foo'</span>, <span class="string">'bar'</span>]</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>Также можно использовать следующие методы для выполнения фильтров:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.execFilter(type, data, options);</div><div class="line">hexo.execFilterSync(type, data, options);</div></pre></td></tr></table></figure>
 <h2 id="Отмена-фильтров" class="article-heading"><a href="#Отмена-фильтров" class="headerlink" title="Отмена фильтров"></a>Отмена фильтров<a class="article-anchor" href="#Отмена-фильтров" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.unregister(type, filter);</div></pre></td></tr></table></figure>
@@ -180,7 +180,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-10-10T08:13:16.055Z" itemprop="dateModified">Последнее обновление: 2016-10-10</time>
+                <time class="article-footer-updated" datetime="2016-10-16T10:17:43.684Z" itemprop="dateModified">Последнее обновление: 2016-10-16</time>
                 <a href="deployer.html" class="article-footer-prev" title="Инструмент размещения"><i class="fa fa-chevron-left"></i><span>Пред</span></a><a href="generator.html" class="article-footer-next" title="Генератор"><span>След</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

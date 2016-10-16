@@ -99,7 +99,7 @@ options
 
 
 在函數中會傳入 args 參數，此參數是使用者在終端機所傳入的參數，是一個經 Mi">
-<meta property="og:updated_time" content="2016-10-10T08:13:16.131Z">
+<meta property="og:updated_time" content="2016-10-16T10:17:43.768Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="控制台（Console）">
 <meta name="twitter:description" content="控制台是 Hexo 與使用者之間溝通的橋樑。
@@ -222,17 +222,17 @@ options
 </table>
 <p>在函數中會傳入 <code>args</code> 參數，此參數是使用者在終端機所傳入的參數，是一個經 <a href="https://github.com/substack/minimist" target="_blank" rel="external">Minimist</a> 解析的物件。</p>
 <h2 id="選項" class="article-heading"><a href="#選項" class="headerlink" title="選項"></a>選項<a class="article-anchor" href="#選項" aria-hidden="true"></a></h2><h3 id="用法" class="article-heading"><a href="#用法" class="headerlink" title="用法"></a>用法<a class="article-anchor" href="#用法" aria-hidden="true"></a></h3><p>控制台的操作方法，例如：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&#123;usage: <span class="string">'[layout] &lt;title&gt;'</span>&#125;</div><div class="line"><span class="comment">// hexo new [layout] &lt;title&gt;</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&#123;<span class="attr">usage</span>: <span class="string">'[layout] &lt;title&gt;'</span>&#125;</div><div class="line"><span class="comment">// hexo new [layout] &lt;title&gt;</span></div></pre></td></tr></table></figure>
 <h3 id="參數" class="article-heading"><a href="#參數" class="headerlink" title="參數"></a>參數<a class="article-anchor" href="#參數" aria-hidden="true"></a></h3><p>控制台各個參數的說明，例如：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="built_in">arguments</span>: [</div><div class="line">    &#123;name: <span class="string">'layout'</span>, desc: <span class="string">'Post layout'</span>&#125;,</div><div class="line">    &#123;name: <span class="string">'title'</span>, desc: <span class="string">'Post title'</span>&#125;</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">arguments</span>: [</div><div class="line">    &#123;<span class="attr">name</span>: <span class="string">'layout'</span>, <span class="attr">desc</span>: <span class="string">'Post layout'</span>&#125;,</div><div class="line">    &#123;<span class="attr">name</span>: <span class="string">'title'</span>, <span class="attr">desc</span>: <span class="string">'Post title'</span>&#125;</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="選項-1" class="article-heading"><a href="#選項-1" class="headerlink" title="選項"></a>選項<a class="article-anchor" href="#選項-1" aria-hidden="true"></a></h3><p>控制台的選項，例如：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  options: [</div><div class="line">    &#123;name: <span class="string">'-r, --replace'</span>, desc: <span class="string">'Replace existing files'</span>&#125;</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">options</span>: [</div><div class="line">    &#123;<span class="attr">name</span>: <span class="string">'-r, --replace'</span>, <span class="attr">desc</span>: <span class="string">'Replace existing files'</span>&#125;</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="描述" class="article-heading"><a href="#描述" class="headerlink" title="描述"></a>描述<a class="article-anchor" href="#描述" aria-hidden="true"></a></h3><p>控制台更詳細的說明。</p>
 <h2 id="範例" class="article-heading"><a href="#範例" class="headerlink" title="範例"></a>範例<a class="article-anchor" href="#範例" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.console.register(<span class="string">'config'</span>, <span class="string">'Display configuration'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">args</span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(hexo.config);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-10-10T08:13:16.131Z" itemprop="dateModified">上次更新：2016-10-10</time>
+                <time class="article-footer-updated" datetime="2016-10-16T10:17:43.768Z" itemprop="dateModified">上次更新：2016-10-16</time>
                 <a href="themes.html" class="article-footer-prev" title="主題"><i class="fa fa-chevron-left"></i><span>上一頁</span></a><a href="deployer.html" class="article-footer-next" title="佈署器 (Deployer)"><span>下一頁</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

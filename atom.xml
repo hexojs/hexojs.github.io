@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hexo.io/"/>
-  <updated>2016-10-10T08:13:16.047Z</updated>
+  <updated>2016-10-16T10:17:43.680Z</updated>
   <id>https://hexo.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="https://hexo.io/news/2016/02/28/hexo-3-2-released/"/>
     <id>https://hexo.io/news/2016/02/28/hexo-3-2-released/</id>
     <published>2016-02-28T00:00:00.000Z</published>
-    <updated>2016-10-10T08:13:16.047Z</updated>
+    <updated>2016-10-16T10:17:43.680Z</updated>
     
     <content type="html"><![CDATA[<p>It has been a long time that Hexo is poor at handling large website. (<a href="https://github.com/hexojs/hexo/issues/710" target="_blank" rel="external">#710</a>, <a href="https://github.com/hexojs/hexo/issues/1124" target="_blank" rel="external">#1124</a>, <a href="https://github.com/hexojs/hexo/issues/283" target="_blank" rel="external">#283</a>, <a href="https://github.com/hexojs/hexo/issues/1187" target="_blank" rel="external">#1187</a>, <a href="https://github.com/hexojs/hexo/issues/550" target="_blank" rel="external">#550</a>, <a href="https://github.com/hexojs/hexo/issues/1769" target="_blank" rel="external">#1769</a>, etc.) We tried hard to solve this problem and there’re several improvements in Hexo 3.2.</p>
 <h2 id="It’s-all-about-speed"><a href="#It’s-all-about-speed" class="headerlink" title="It’s all about speed"></a>It’s all about speed</h2><h3 id="Caching-rendered-contents"><a href="#Caching-rendered-contents" class="headerlink" title="Caching rendered contents"></a>Caching rendered contents</h3><p>Rendered contents are cached in the warehouse. This saves a lot of time and made hot processing (2nd-time processing) <strong>1.7x faster</strong>.</p>
@@ -81,7 +81,7 @@
 <li><a href="https://github.com/hexojs/hexo-renderer-swig" target="_blank" rel="external">hexo-renderer-swig</a></li>
 </ul>
 <p>And it’s easy to implement precompilation for renderers. Just add a <code>compile</code> function to the renderer. Take EJS renderer for example:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> ejs = <span class="built_in">require</span>(<span class="string">'ejs'</span>);</div><div class="line"><span class="keyword">var</span> assign = <span class="built_in">require</span>(<span class="string">'object-assign'</span>);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">ejsRenderer</span>(<span class="params">data, locals</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> ejs.render(data.text, assign(&#123;filename: data.path&#125;, locals));</div><div class="line">&#125;</div><div class="line"></div><div class="line">ejsRenderer.compile = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> ejs.compile(data.text, &#123;</div><div class="line">    filename: data.path</div><div class="line">  &#125;);</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = ejsRenderer;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> ejs = <span class="built_in">require</span>(<span class="string">'ejs'</span>);</div><div class="line"><span class="keyword">var</span> assign = <span class="built_in">require</span>(<span class="string">'object-assign'</span>);</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">ejsRenderer</span>(<span class="params">data, locals</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> ejs.render(data.text, assign(&#123;<span class="attr">filename</span>: data.path&#125;, locals));</div><div class="line">&#125;</div><div class="line"></div><div class="line">ejsRenderer.compile = <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> ejs.compile(data.text, &#123;</div><div class="line">    <span class="attr">filename</span>: data.path</div><div class="line">  &#125;);</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="built_in">module</span>.exports = ejsRenderer;</div></pre></td></tr></table></figure>
 <h2 id="Include-exclude-source-files"><a href="#Include-exclude-source-files" class="headerlink" title="Include/exclude source files"></a>Include/exclude source files</h2><p>You can include/exclude specified source files in <code>_config.yml</code>.</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">include:</span></div><div class="line"><span class="bullet">  -</span> .htaccess</div><div class="line"></div><div class="line"><span class="attr">exclude:</span></div><div class="line"><span class="bullet">  -</span> tmp/**/*</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://github.com/hexojs/hexo/releases" target="_blank" rel="external">changelog</a>, <a href="https://docs.google.com/spreadsheets/d/1nLW3fPCtrkfMolz8UnUiKq5lqys6bIcZqrfksuvQHA0/edit?usp=sharing" target="_blank" rel="external">benchmark results</a>.</p>
@@ -101,7 +101,7 @@
     <link href="https://hexo.io/news/2015/03/05/hexo-3-0-released/"/>
     <id>https://hexo.io/news/2015/03/05/hexo-3-0-released/</id>
     <published>2015-03-05T00:00:00.000Z</published>
-    <updated>2016-10-10T08:13:16.047Z</updated>
+    <updated>2016-10-16T10:17:43.680Z</updated>
     
     <content type="html"><![CDATA[<p>Hexo 3.0 has finally come out! After four beta and four RC versions, Hexo 3 become more stable and more powerful. Thanks for the contributors and testers! </p>
 <h2 id="What’s-Changed"><a href="#What’s-Changed" class="headerlink" title="What’s Changed?"></a>What’s Changed?</h2><p>There’re many improvements in Hexo 3. Better performance, API is easier to use, higher coverage, etc. Here’re some notable changes:</p>
@@ -147,7 +147,7 @@
     <link href="https://hexo.io/news/2015/02/27/new-documentation-and-registry/"/>
     <id>https://hexo.io/news/2015/02/27/new-documentation-and-registry/</id>
     <published>2015-02-27T00:00:00.000Z</published>
-    <updated>2016-10-10T08:13:16.047Z</updated>
+    <updated>2016-10-16T10:17:43.680Z</updated>
     
     <content type="html"><![CDATA[<p>The Hexo site has just been updated and changed to a brand new theme. The documentation is also updated and more detailed. Some handy features will make your browsing more convenient.</p>
 <h2 id="Official-Registry"><a href="#Official-Registry" class="headerlink" title="Official Registry"></a>Official Registry</h2><p>Besides the new theme, a official registry for plugins and themes finally comes. The registry makes you easier to browse and search plugins. And you can preview themes with screenshots.</p>
@@ -174,7 +174,7 @@
     <link href="https://hexo.io/news/2014/07/13/hexo-2-8-released/"/>
     <id>https://hexo.io/news/2014/07/13/hexo-2-8-released/</id>
     <published>2014-07-13T00:00:00.000Z</published>
-    <updated>2016-10-10T08:13:16.043Z</updated>
+    <updated>2016-10-16T10:17:43.676Z</updated>
     
     <content type="html"><![CDATA[<p>Hexo 2.8 was rewritten, brings you better performance and many improvements. The following is the highlights in this version. You can check <a href="https://github.com/hexojs/hexo/releases/tag/2.8.0" target="_blank" rel="external">detail</a> on GitHub.</p>
 <h2 id="Faster-Processing-Speed"><a href="#Faster-Processing-Speed" class="headerlink" title="Faster Processing Speed"></a>Faster Processing Speed</h2><p>Before Hexo 2.8, all source files have to be processed each time you use Hexo. In Hexo 2.8, the entire database will be saved to <code>db.json</code> so Hexo don’t have to process all files again. Also, a new data type “<strong>skip</strong>“ was added for processors to detect whether a file was changed or not.</p>
@@ -183,7 +183,7 @@
 <h2 id="Draft-Publish"><a href="#Draft-Publish" class="headerlink" title="Draft Publish"></a>Draft Publish</h2><p>You don’t have to enter full file name to publish a post anymore. Draft publish system is rewritten in Hexo 2.8. <code>new_post_name</code> setting will be applied until drafts are published. Besides, you can choose which layout to apply when publishing.</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo publish [layout] &lt;filename&gt;</div></pre></td></tr></table></figure>
 <p>A new API <code>post.publish</code> was added to help you publish drafts more easily.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.post.publish(&#123;slug: <span class="string">'hello-world'</span>, layout: <span class="string">'post'</span>&#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err, target</span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.post.publish(&#123;<span class="attr">slug</span>: <span class="string">'hello-world'</span>, <span class="attr">layout</span>: <span class="string">'post'</span>&#125;, <span class="function"><span class="keyword">function</span>(<span class="params">err, target</span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h2 id="Permalink"><a href="#Permalink" class="headerlink" title="Permalink"></a>Permalink</h2><p>File name and permalink now share a more universal variable system. Every variables in file name can also be read in permalink. Here’s a config for example:</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">permalink:</span> :type/:title/</div><div class="line"><span class="attr">new_post_name:</span> :type/:title.md</div></pre></td></tr></table></figure>
 <p>When you create a post, the post will be saved to <code>source/_posts/test/Hello-World.md</code> and the URL will be <code>http://localhost:4000/test/Hello-World/</code>.</p>
@@ -209,7 +209,7 @@
     <link href="https://hexo.io/news/2014/06/14/hexo-2-7-released/"/>
     <id>https://hexo.io/news/2014/06/14/hexo-2-7-released/</id>
     <published>2014-06-14T00:00:00.000Z</published>
-    <updated>2016-10-10T08:13:16.043Z</updated>
+    <updated>2016-10-16T10:17:43.676Z</updated>
     
     <content type="html"><![CDATA[<p>Hexo 2.7 has been released with three new features. I’m going to introduce them below.</p>
 <h2 id="Fragment-Caching"><a href="#Fragment-Caching" class="headerlink" title="Fragment Caching"></a>Fragment Caching</h2><p>Although Hexo is fast, it may become slow if you have thousands of source files or complicated categories or tags. Before the data model upgraded, I borrowed a feature from Ruby on Rails: <strong>Fragment Caching</strong>.</p>
@@ -218,7 +218,7 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</div><div class="line">&#125;); %&gt;</div></pre></td></tr></table></figure>
 <p>By using <code>fragment_cache</code> helper, contents in the function will be cached.</p>
 <p>Partial helper also supports Fragment Caching, you only need to add a <code>{cache: true}</code> option when using partial.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- partial(<span class="string">'header'</span>, &#123;&#125;, &#123;cache: <span class="literal">true</span>&#125;) %&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- partial(<span class="string">'header'</span>, &#123;&#125;, &#123;<span class="attr">cache</span>: <span class="literal">true</span>&#125;) %&gt;</div></pre></td></tr></table></figure>
 <p><a href="https://github.com/hexojs/hexo-theme-landscape" target="_blank" rel="external">Landscape</a> is updated and supports Fragment Caching now. You can check <a href="https://github.com/hexojs/hexo-theme-landscape/commit/d2aedda61571d6994eb72d784ceda2f59d2a8631" target="_blank" rel="external">this commit</a> to see what’s changed.</p>
 <h2 id="Relative-Link"><a href="#Relative-Link" class="headerlink" title="Relative Link"></a>Relative Link</h2><p>Relative Link is supported since Hexo 2.7. But your theme needs some modifications to support it. However, it’s not as hard as you think. You just need to replace the following contents in templates</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- config.root %&gt;&lt;%- path %&gt;</div></pre></td></tr></table></figure>

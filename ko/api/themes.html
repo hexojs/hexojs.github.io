@@ -59,7 +59,7 @@ View 얻어오기hexo.theme.getView(path);
 View 설정하기hexo.theme.setView(path, data);
 View 제거하기hexo.theme.removeView(path);
 ViewView는 render와 renderSync 두 개의 메소드를 가지고 있습니다. 이">
-<meta property="og:updated_time" content="2016-10-10T08:13:16.051Z">
+<meta property="og:updated_time" content="2016-10-16T10:17:43.684Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Themes">
 <meta name="twitter:description" content="hexo.theme는 Box를 상속하며, 템플릿을 저장합니다.
@@ -141,12 +141,12 @@ ViewView는 render와 renderSync 두 개의 메소드를 가지고 있습니다.
 <h2 id="View-설정하기" class="article-heading"><a href="#View-설정하기" class="headerlink" title="View 설정하기"></a>View 설정하기<a class="article-anchor" href="#View-설정하기" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.theme.setView(path, data);</div></pre></td></tr></table></figure>
 <h2 id="View-제거하기" class="article-heading"><a href="#View-제거하기" class="headerlink" title="View 제거하기"></a>View 제거하기<a class="article-anchor" href="#View-제거하기" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.theme.removeView(path);</div></pre></td></tr></table></figure>
 <h2 id="View" class="article-heading"><a href="#View" class="headerlink" title="View"></a>View<a class="article-anchor" href="#View" aria-hidden="true"></a></h2><p>View는 <code>render</code>와 <code>renderSync</code> 두 개의 메소드를 가지고 있습니다. 이 두 메소드들은 같은 동작을 수행하지만 <code>render</code>는 비동기적으로 동작하고 <code>renderSync</code>는 동기적으로 동작합니다. 단순한 설명을 위해, 여기에서는 <code>render</code>에 대해서만 다루겠습니다.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> view = hexo.theme.getView(<span class="string">'layout.swig'</span>);</div><div class="line"></div><div class="line">view.render(&#123;foo: <span class="number">1</span>, bar: <span class="number">2</span>&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> view = hexo.theme.getView(<span class="string">'layout.swig'</span>);</div><div class="line"></div><div class="line">view.render(&#123;<span class="attr">foo</span>: <span class="number">1</span>, <span class="attr">bar</span>: <span class="number">2</span>&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">result</span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>당신은 <code>render</code> 메소드로 옵션을 전달할 수 있습니다. 이는 적절한 renderer를 통해 템플릿을 처리하고 <a href="helper.html">helpers</a>를 로딩합니다. 렌더링이 끝나면, 레이아웃이 존재하는지 확인합니다. 만약 <code>layout</code>이 <code>false</code>이거나 없다면, 결과가 직접 반환될 것이빈다.</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2016-10-10T08:13:16.051Z" itemprop="dateModified">Last updated: 2016-10-10</time>
+                <time class="article-footer-updated" datetime="2016-10-16T10:17:43.684Z" itemprop="dateModified">Last updated: 2016-10-16</time>
                 <a href="scaffolds.html" class="article-footer-prev" title="Scaffolds"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="console.html" class="article-footer-next" title="Console"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
