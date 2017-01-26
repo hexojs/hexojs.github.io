@@ -57,7 +57,7 @@ $ hexo init &amp;lt;folder&amp;gt;$ cd &amp;lt;folder&amp;gt;$ npm install
 $ hexo init &amp;lt;folder&amp;gt;$ cd &amp;lt;folder&amp;gt;$ npm install
 新建完成后，指定文件夹的目录如下：
 .├── _config.yml├── package.json├── scaffolds├── source|   ├── _drafts|   └── _">
-<meta property="og:updated_time" content="2017-01-19T14:45:58.778Z">
+<meta property="og:updated_time" content="2017-01-26T14:58:45.954Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="建站">
 <meta name="twitter:description" content="安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。
@@ -141,12 +141,13 @@ $ hexo init &amp;lt;folder&amp;gt;$ cd &amp;lt;folder&amp;gt;$ npm install
 <h3 id="package-json" class="article-heading"><a href="#package-json" class="headerlink" title="package.json"></a>package.json<a class="article-anchor" href="#package-json" aria-hidden="true"></a></h3><p>应用程序的信息。<a href="http://embeddedjs.com/" target="_blank" rel="external">EJS</a>, <a href="http://learnboost.github.io/stylus/" target="_blank" rel="external">Stylus</a> 和 <a href="http://daringfireball.net/projects/markdown/" target="_blank" rel="external">Markdown</a> renderer 已默认安装，您可以自由移除。</p>
 <figure class="highlight json"><figcaption><span>package.json</span></figcaption><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">"name"</span>: <span class="string">"hexo-site"</span>,</div><div class="line">  <span class="attr">"version"</span>: <span class="string">"0.0.0"</span>,</div><div class="line">  <span class="attr">"private"</span>: <span class="literal">true</span>,</div><div class="line">  <span class="attr">"hexo"</span>: &#123;</div><div class="line">    <span class="attr">"version"</span>: <span class="string">""</span></div><div class="line">  &#125;,</div><div class="line">  <span class="attr">"dependencies"</span>: &#123;</div><div class="line">    <span class="attr">"hexo"</span>: <span class="string">"^3.0.0"</span>,</div><div class="line">    <span class="attr">"hexo-generator-archive"</span>: <span class="string">"^0.1.0"</span>,</div><div class="line">    <span class="attr">"hexo-generator-category"</span>: <span class="string">"^0.1.0"</span>,</div><div class="line">    <span class="attr">"hexo-generator-index"</span>: <span class="string">"^0.1.0"</span>,</div><div class="line">    <span class="attr">"hexo-generator-tag"</span>: <span class="string">"^0.1.0"</span>,</div><div class="line">    <span class="attr">"hexo-renderer-ejs"</span>: <span class="string">"^0.1.0"</span>,</div><div class="line">    <span class="attr">"hexo-renderer-stylus"</span>: <span class="string">"^0.2.0"</span>,</div><div class="line">    <span class="attr">"hexo-renderer-marked"</span>: <span class="string">"^0.2.4"</span>,</div><div class="line">    <span class="attr">"hexo-server"</span>: <span class="string">"^0.1.2"</span></div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="scaffolds" class="article-heading"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds<a class="article-anchor" href="#scaffolds" aria-hidden="true"></a></h3><p><a href="writing.html">模版</a> 文件夹。当您新建文章时，Hexo 会根据 scaffold 来建立文件。</p>
+<p>Hexo的模板是指在新建的markdown文件中默认填充的内容。例如，如果您修改scaffold/post.md中的Front-matter内容，那么每次新建一篇文章时都会包含这个修改。</p>
 <h3 id="source" class="article-heading"><a href="#source" class="headerlink" title="source"></a>source<a class="article-anchor" href="#source" aria-hidden="true"></a></h3><p>资源文件夹是存放用户资源的地方。除 <code>_posts</code> 文件夹之外，开头命名为 <code>_</code> (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 <code>public</code> 文件夹，而其他文件会被拷贝过去。</p>
 <h3 id="themes" class="article-heading"><a href="#themes" class="headerlink" title="themes"></a>themes<a class="article-anchor" href="#themes" aria-hidden="true"></a></h3><p><a href="themes.html">主题</a> 文件夹。Hexo 会根据主题来生成静态页面。</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-01-19T14:45:58.778Z" itemprop="dateModified">上次更新：2017-01-19</time>
+                <time class="article-footer-updated" datetime="2017-01-26T14:58:45.954Z" itemprop="dateModified">上次更新：2017-01-26</time>
                 <a href="index.html" class="article-footer-prev" title="概述"><i class="fa fa-chevron-left"></i><span>上一页</span></a><a href="configuration.html" class="article-footer-next" title="配置"><span>下一页</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

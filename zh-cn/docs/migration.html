@@ -59,7 +59,7 @@ $ npm install hexo-migrator-rss --save
 插件安装完成后，执行下列命令，从 RSS 迁移所有文章。source 可以是文件路径或网址。
 $ hexo migrate rss &amp;lt;source&amp;gt;
 Jekyll把 _posts 文件夹内的所有文件复制到 source/_posts 文件夹，并在">
-<meta property="og:updated_time" content="2017-01-19T14:45:58.778Z">
+<meta property="og:updated_time" content="2017-01-26T14:58:45.954Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="迁移">
 <meta name="twitter:description" content="RSS首先，安装 hexo-migrator-rss 插件。
@@ -149,13 +149,16 @@ Jekyll把 _posts 文件夹内的所有文件复制到 source/_posts 文件夹，
 <p>在 WordPress 仪表盘中导出数据(“Tools” → “Export” → “WordPress”)（详情参考<a href="http://en.support.wordpress.com/export/" target="_blank" rel="external">WP支持页面</a>）。</p>
 <p>插件安装完成后，执行下列命令来迁移所有文章。<code>source</code> 可以是 WordPress 导出的文件路径或网址。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo migrate wordpress &lt;<span class="built_in">source</span>&gt;</div></pre></td></tr></table></figure>
+<blockquote class="note warn"><strong class="note-title">注意</strong><p>这个插件并不能完美地实现WordPress-&gt;Hexo的数据转换，尤其是在处理WordPress的分类方面存在问题（见<a href="https://hexo.io/zh-cn/docs/front-matter.html">Front-matter中的分类与标签</a>）。因此，建议您在迁移完成后，手工审阅所有生成的markdown文件，检查其中是否有错误。对于文章数量较大的WordPress站点，这项工作可能要花很长的时间。</p>
+</blockquote>
 <h2 id="Joomla" class="article-heading"><a href="#Joomla" class="headerlink" title="Joomla"></a>Joomla<a class="article-anchor" href="#Joomla" aria-hidden="true"></a></h2><p>首先，安装 <code>hexo-migrator-joomla</code> 插件。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-migrator-joomla --save</div></pre></td></tr></table></figure>
 <p>使用 <a href="http://extensions.joomla.org/extensions/migration-a-conversion/data-import-a-export/12816?qh=YToxOntpOjA7czo1OiJqMnhtbCI7fQ%3D%3D" target="_blank" rel="external">J2XML</a> 组件导出 Joomla 文章。<br>插件安装完成后，执行下列命令来迁移所有文章。<code>source</code> 可以是 Joomla 导出的文件路径或网址。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo migrate joomla &lt;<span class="built_in">source</span>&gt;</div></pre></td></tr></table></figure>
+
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-01-19T14:45:58.778Z" itemprop="dateModified">上次更新：2017-01-19</time>
+                <time class="article-footer-updated" datetime="2017-01-26T14:58:45.954Z" itemprop="dateModified">上次更新：2017-01-26</time>
                 <a href="commands.html" class="article-footer-prev" title="命令"><i class="fa fa-chevron-left"></i><span>上一页</span></a><a href="writing.html" class="article-footer-next" title="写作"><span>下一页</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
