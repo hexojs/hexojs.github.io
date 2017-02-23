@@ -55,7 +55,7 @@ Before your first deployment, you will have to modify some settin">
 <meta property="og:description" content="Hexo provides a fast and easy deployment strategy. You only need one single command to deploy your site to your servers.
 $ hexo deploy
 Before your first deployment, you will have to modify some settin">
-<meta property="og:updated_time" content="2017-02-23T04:22:32.365Z">
+<meta property="og:updated_time" content="2017-02-23T12:50:51.634Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Deployment">
 <meta name="twitter:description" content="Hexo provides a fast and easy deployment strategy. You only need one single command to deploy your site to your servers.
@@ -311,11 +311,66 @@ Before your first deployment, you will have to modify some settin">
 </tr>
 </tbody>
 </table>
+<h2 id="SFTP" class="article-heading"><a href="#SFTP" class="headerlink" title="SFTP"></a>SFTP<a class="article-anchor" href="#SFTP" aria-hidden="true"></a></h2><p>Install [hexo-deployer-sftp]. Deploys the site via SFTP, allowing for passwordless connections using ssh-agent.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-deployer-sftps --save</div></pre></td></tr></table></figure>
+<p>Edit settings.</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> sftp</div><div class="line"><span class="attr">  host:</span> &lt;host<span class="string">&gt;</span></div><div class="line"><span class="attr">  user:</span> &lt;user<span class="string">&gt;</span></div><div class="line"><span class="attr">  pass:</span> &lt;password<span class="string">&gt;</span></div><div class="line"><span class="attr">  remotePath:</span> [remote path]</div><div class="line"><span class="attr">  port:</span> [port]</div><div class="line"><span class="attr">  privateKey:</span> [path/to/privateKey]</div><div class="line"><span class="attr">  passphrase:</span> [passphrase]</div><div class="line"><span class="attr">  agent:</span> [path/to/agent/socket]</div><div class="line"><span class="attr">  remotePath:</span> [remotePath]</div></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>host</code></td>
+<td>Address of remote host</td>
+<td></td>
+</tr>
+<tr>
+<td><code>user</code></td>
+<td>Username</td>
+<td></td>
+</tr>
+<tr>
+<td><code>pass</code></td>
+<td>Password</td>
+<td></td>
+</tr>
+<tr>
+<td><code>remotePath</code></td>
+<td>Root directory of remote host</td>
+<td><code>/</code></td>
+</tr>
+<tr>
+<td><code>port</code></td>
+<td>Port</td>
+<td>22</td>
+</tr>
+<tr>
+<td><code>privateKey</code></td>
+<td>Path to a ssh private key</td>
+<td></td>
+</tr>
+<tr>
+<td><code>passphrase</code></td>
+<td>Optional passphrase for the private key</td>
+<td></td>
+</tr>
+<tr>
+<td><code>agent</code></td>
+<td>Path to the ssh-agent socket</td>
+<td><code>$SSH_AUTH_SOCK</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="Other-Methods" class="article-heading"><a href="#Other-Methods" class="headerlink" title="Other Methods"></a>Other Methods<a class="article-anchor" href="#Other-Methods" aria-hidden="true"></a></h2><p>All generated files are saved in the <code>public</code> folder. You can copy them to wherever you like.</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-02-23T04:22:32.365Z" itemprop="dateModified">Last updated: 2017-02-23</time>
+                <time class="article-footer-updated" datetime="2017-02-23T12:50:51.634Z" itemprop="dateModified">Last updated: 2017-02-23</time>
                 <a href="generating.html" class="article-footer-prev" title="Generating"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="permalinks.html" class="article-footer-next" title="Permalinks"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -341,7 +396,7 @@ Before your first deployment, you will have to modify some settin">
           <aside id="article-toc" role="navigation">
             <div id="article-toc-inner">
               <strong class="sidebar-title">Contents</strong>
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-text">Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Heroku"><span class="toc-text">Heroku</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rsync"><span class="toc-text">Rsync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OpenShift"><span class="toc-text">OpenShift</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#FTPSync"><span class="toc-text">FTPSync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Other-Methods"><span class="toc-text">Other Methods</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-text">Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Heroku"><span class="toc-text">Heroku</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rsync"><span class="toc-text">Rsync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OpenShift"><span class="toc-text">OpenShift</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#FTPSync"><span class="toc-text">FTPSync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SFTP"><span class="toc-text">SFTP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Other-Methods"><span class="toc-text">Other Methods</span></a></li></ol>
               <a href="#" id="article-toc-top">Back to Top</a>
             </div>
           </aside>
