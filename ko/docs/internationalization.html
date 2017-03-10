@@ -55,7 +55,7 @@ language: zh-twlanguage:- zh-tw- en
 <meta property="og:description" content="당신의 웹 사이트를 서로 다른 언어로 표시하기 위해 internationalization을 사용할 수 있습니다. 기본 언어의 변경은 _config.yml 파일의 language를 수정하면 됩니다. 다중 언어를 설정할 수도 있고 기본 언어의 순서를 수정할 수도 있습니다.
 language: zh-twlanguage:- zh-tw- en
 언어 파일언어 파일로 Y">
-<meta property="og:updated_time" content="2017-03-07T08:46:54.593Z">
+<meta property="og:updated_time" content="2017-03-10T10:17:01.079Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Internationalization (i18n)">
 <meta name="twitter:description" content="당신의 웹 사이트를 서로 다른 언어로 표시하기 위해 internationalization을 사용할 수 있습니다. 기본 언어의 변경은 _config.yml 파일의 language를 수정하면 됩니다. 다중 언어를 설정할 수도 있고 기본 언어의 순서를 수정할 수도 있습니다.
@@ -131,20 +131,20 @@ language: zh-twlanguage:- zh-tw- en
               </header>
               <div class="article-content" itemprop="articleBody">
                 <p>당신의 웹 사이트를 서로 다른 언어로 표시하기 위해 internationalization을 사용할 수 있습니다. 기본 언어의 변경은 <code>_config.yml</code> 파일의 <code>language</code>를 수정하면 됩니다. 다중 언어를 설정할 수도 있고 기본 언어의 순서를 수정할 수도 있습니다.</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">language:</span> zh-tw</div><div class="line"></div><div class="line"><span class="attr">language:</span></div><div class="line"><span class="bullet">-</span> zh-tw</div><div class="line"><span class="bullet">-</span> en</div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">language:</span> <span class="string">zh-tw</span></div><div class="line"></div><div class="line"><span class="attr">language:</span></div><div class="line"><span class="bullet">-</span> <span class="string">zh-tw</span></div><div class="line"><span class="bullet">-</span> <span class="string">en</span></div></pre></td></tr></table></figure>
 <h3 id="언어-파일" class="article-heading"><a href="#언어-파일" class="headerlink" title="언어 파일"></a>언어 파일<a class="article-anchor" href="#언어-파일" aria-hidden="true"></a></h3><p>언어 파일로 YAML 또는 JSON 파일을 사용할 수 있습니다. 테마의 <code>languages</code> 폴더에 이 파일을 넣어두면 됩니다. 언어 파일의 <a href="https://github.com/alexei/sprintf.js" target="_blank" rel="external">printf format</a>을 지원합니다. </p>
 <h3 id="템플릿" class="article-heading"><a href="#템플릿" class="headerlink" title="템플릿"></a>템플릿<a class="article-anchor" href="#템플릿" aria-hidden="true"></a></h3><p><code>__</code> 또는 <code>_p</code>를 사용하면 템플릿에서의 문자열의 번역을 위한 helper를 사용할 수 있습니다. <code>__</code>는 일반적인 사용 방법이고 <code>_p</code>는 여러 개의 문자열을 위해 사용하는 방법입니다. 아래 예시를 보세요.</p>
-<figure class="highlight yaml"><figcaption><span>en.yml</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="attr">index:</span></div><div class="line"><span class="attr">  title:</span> Home</div><div class="line"><span class="attr">  add:</span> Add</div><div class="line"><span class="attr">  video:</span></div><div class="line"><span class="attr">    zero:</span> <span class="literal">No</span> videos</div><div class="line"><span class="attr">    one:</span> One video</div><div class="line"><span class="attr">    other:</span> %d videos</div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><figcaption><span>en.yml</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="attr">index:</span></div><div class="line"><span class="attr">  title:</span> <span class="string">Home</span></div><div class="line"><span class="attr">  add:</span> <span class="string">Add</span></div><div class="line"><span class="attr">  video:</span></div><div class="line"><span class="attr">    zero:</span> <span class="literal">No</span> <span class="string">videos</span></div><div class="line"><span class="attr">    one:</span> <span class="string">One</span> <span class="string">video</span></div><div class="line"><span class="attr">    other:</span> <span class="string">%d</span> <span class="string">videos</span></div></pre></td></tr></table></figure>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%= __(<span class="string">'index.title'</span>) %&gt;</div><div class="line"><span class="comment">// Home</span></div><div class="line"></div><div class="line">&lt;%= _p(<span class="string">'index.video'</span>, <span class="number">3</span>) %&gt;</div><div class="line"><span class="comment">// 3 videos</span></div></pre></td></tr></table></figure>
 <h3 id="경로" class="article-heading"><a href="#경로" class="headerlink" title="경로"></a>경로<a class="article-anchor" href="#경로" aria-hidden="true"></a></h3><p>페이지에서 사용할 언어는 front-matter에서도 설정이 가능합니다. <code>_config.yml</code> 파일의 <code>i18n_dir</code> 항목을 수정하면 Hexo가 자동으로 감지할 수 있습니다.</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">i18n_dir:</span> :lang</div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">i18n_dir:</span> <span class="string">:lang</span></div></pre></td></tr></table></figure>
 <p><code>i18n_dir</code> 설정의 기본 값은 <code>:lang</code> 이며, Hexo는 URL의 첫 번째 세그먼트에서 언어를 감지합니다.</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">/index.html =&gt; en</div><div class="line">/archives/index.html =&gt; en</div><div class="line">/zh-tw/index.html =&gt; zh-tw</div></pre></td></tr></table></figure>
 <p>언어 파일이 존재할 때에만 문자열이 서로 다른 언어로 제공됩니다. 따라서 위 예시에서 <code>/archives/index.html</code>의 <code>archives</code>는 다른 언어로 제공되지 않습니다.</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-03-07T08:46:54.593Z" itemprop="dateModified">Last updated: 2017-03-07</time>
+                <time class="article-footer-updated" datetime="2017-03-10T10:17:01.079Z" itemprop="dateModified">Last updated: 2017-03-10</time>
                 <a href="helpers.html" class="article-footer-prev" title="Helpers"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="plugins.html" class="article-footer-next" title="Plugins"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

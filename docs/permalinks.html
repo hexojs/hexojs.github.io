@@ -63,7 +63,7 @@ VariablesBesides the following variables, you can use any attributes in the perm
 
 Variable
 Des">
-<meta property="og:updated_time" content="2017-03-07T08:46:54.593Z">
+<meta property="og:updated_time" content="2017-03-10T10:17:01.055Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Permalinks">
 <meta name="twitter:description" content="You can specify the permalinks for your site in _config.yml or in the front-matter for each post.
@@ -187,9 +187,9 @@ Des">
 </tbody>
 </table>
 <p>You can define the default value of each variable in the permalink through the <code>permalink_defaults</code> setting:</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">permalink_defaults:</span></div><div class="line"><span class="attr">  lang:</span> en</div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">permalink_defaults:</span></div><div class="line"><span class="attr">  lang:</span> <span class="string">en</span></div></pre></td></tr></table></figure>
 <h3 id="Examples" class="article-heading"><a href="#Examples" class="headerlink" title="Examples"></a>Examples<a class="article-anchor" href="#Examples" aria-hidden="true"></a></h3><p>Given a post named <code>hello-world.md</code> in the <code>source/_posts</code> folder with the following content.</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">title:</span> Hello World</div><div class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="bullet">-07</span><span class="bullet">-14</span> <span class="number">17</span>:<span class="number">01</span>:<span class="number">34</span></div><div class="line"><span class="attr">categories:</span></div><div class="line"><span class="bullet">-</span> foo</div><div class="line"><span class="bullet">-</span> bar</div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></div><div class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="bullet">-07</span><span class="bullet">-14</span> <span class="number">17</span><span class="string">:01:34</span></div><div class="line"><span class="attr">categories:</span></div><div class="line"><span class="bullet">-</span> <span class="string">foo</span></div><div class="line"><span class="bullet">-</span> <span class="string">bar</span></div></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -213,7 +213,7 @@ Des">
 </tbody>
 </table>
 <h3 id="Multi-language-Support" class="article-heading"><a href="#Multi-language-Support" class="headerlink" title="Multi-language Support"></a>Multi-language Support<a class="article-anchor" href="#Multi-language-Support" aria-hidden="true"></a></h3><p>To create a multi-language site, you can modify the <code>new_post_name</code> and <code>permalink</code> settings like this:</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">new_post_name:</span> :lang/:title.md</div><div class="line"><span class="attr">permalink:</span> :lang/:title/</div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">new_post_name:</span> <span class="string">:lang/:title.md</span></div><div class="line"><span class="attr">permalink:</span> <span class="string">:lang/:title/</span></div></pre></td></tr></table></figure>
 <p>When you create a new post, the post will be saved to:</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo new <span class="string">"Hello World"</span> --lang tw</div><div class="line"><span class="comment"># =&gt; source/_posts/tw/Hello-World.md</span></div></pre></td></tr></table></figure>
 <p>and the URL will be:</p>
@@ -221,7 +221,7 @@ Des">
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-03-07T08:46:54.593Z" itemprop="dateModified">Last updated: 2017-03-07</time>
+                <time class="article-footer-updated" datetime="2017-03-10T10:17:01.055Z" itemprop="dateModified">Last updated: 2017-03-10</time>
                 <a href="deployment.html" class="article-footer-prev" title="Deployment"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="themes.html" class="article-footer-next" title="Themes"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
