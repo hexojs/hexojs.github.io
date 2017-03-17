@@ -120,7 +120,6 @@ select {
   html,
   body {
     height: 100%;
-    overflow: hidden;
   }
 }
 body {
@@ -1306,7 +1305,6 @@ a.article-title:hover {
   -ms-transition: 0.4s;
   transition: 0.4s;
   height: 100%;
-  overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 .mobile-nav-on #container {
