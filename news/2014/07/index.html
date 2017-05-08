@@ -26,7 +26,7 @@
   <meta name="msapplication-TileColor" content="#2f83cd">
   <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
   <!-- CSS -->
-  <link rel="stylesheet" href="/build/css/navy-1e5f26717e.css">
+  <link rel="stylesheet" href="/build/css/navy-964429d56b.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
@@ -120,7 +120,7 @@
     <p>Hexo 2.8 was rewritten, brings you better performance and many improvements. The following is the highlights in this version. You can check <a href="https://github.com/hexojs/hexo/releases/tag/2.8.0" target="_blank" rel="external">detail</a> on GitHub.</p>
 <h2 id="Faster-Processing-Speed" class="article-heading"><a href="#Faster-Processing-Speed" class="headerlink" title="Faster Processing Speed"></a>Faster Processing Speed<a class="article-anchor" href="#Faster-Processing-Speed" aria-hidden="true"></a></h2><p>Before Hexo 2.8, all source files have to be processed each time you use Hexo. In Hexo 2.8, the entire database will be saved to <code>db.json</code> so Hexo don’t have to process all files again. Also, a new data type “<strong>skip</strong>“ was added for processors to detect whether a file was changed or not.</p>
 <p>Generating was also changed in Hexo 2.8. You can check the elapsed time of each file in console now. However, I found multi-process generating didn’t affect generating speed a lot. Thus, <code>multi_thread</code> and <code>max_open_file</code> setting are deprecated in Hexo 2.8.</p>
-<img src="/news/2014/07/13/hexo-2-8-released/generate-console.png" alt="generate-console.png" title="">
+{% asset_img generate-console.png %}
 <h2 id="Draft-Publish" class="article-heading"><a href="#Draft-Publish" class="headerlink" title="Draft Publish"></a>Draft Publish<a class="article-anchor" href="#Draft-Publish" aria-hidden="true"></a></h2><p>You don’t have to enter full file name to publish a post anymore. Draft publish system is rewritten in Hexo 2.8. <code>new_post_name</code> setting will be applied until drafts are published. Besides, you can choose which layout to apply when publishing.</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo publish [layout] &lt;filename&gt;</div></pre></td></tr></table></figure>
 <p>A new API <code>post.publish</code> was added to help you publish drafts more easily.</p>
