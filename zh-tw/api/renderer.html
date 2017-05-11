@@ -51,7 +51,7 @@
 <meta property="og:url" content="https://hexo.io/zh-tw/api/renderer.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="渲染引擎用於渲染內容。 概要hexo.extend.renderer.register(name, output, function(data, options)&amp;#123;  // ...&amp;#125;, sync);    參數 描述     name 輸入的副檔名（小寫，不含開頭的 .）   output 輸出的副檔名（小寫，不含開頭的 .）   sync 同步模式    渲染函數中會傳入兩個">
-<meta property="og:updated_time" content="2017-05-08T14:30:14.729Z">
+<meta property="og:updated_time" content="2017-05-11T19:09:09.018Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="渲染引擎（Renderer）">
 <meta name="twitter:description" content="渲染引擎用於渲染內容。 概要hexo.extend.renderer.register(name, output, function(data, options)&amp;#123;  // ...&amp;#125;, sync);    參數 描述     name 輸入的副檔名（小寫，不含開頭的 .）   output 輸出的副檔名（小寫，不含開頭的 .）   sync 同步模式    渲染函數中會傳入兩個">
@@ -173,7 +173,7 @@
 <h3 id="同步模式" class="article-heading"><a href="#同步模式" class="headerlink" title="同步模式"></a>同步模式<a class="article-anchor" href="#同步模式" aria-hidden="true"></a></h3><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> ejs = <span class="built_in">require</span>(<span class="string">'ejs'</span>);</div><div class="line"></div><div class="line">hexo.extend.renderer.register(<span class="string">'ejs'</span>, <span class="string">'html'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, options</span>)</span>&#123;</div><div class="line">  options.filename = data.path;</div><div class="line">  <span class="keyword">return</span> ejs.render(data.text, options);</div><div class="line">&#125;, <span class="literal">true</span>);</div></pre></td></tr></table></figure>
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-05-08T14:30:14.729Z" itemprop="dateModified">上次更新：2017-05-08</time>
+                <time class="article-footer-updated" datetime="2017-05-11T19:09:09.018Z" itemprop="dateModified">上次更新：2017-05-11</time>
                 <a href="processor.html" class="article-footer-prev" title="處理器 (Processor)"><i class="fa fa-chevron-left"></i><span>上一頁</span></a><a href="tag.html" class="article-footer-next" title="標籤外掛 (Tag)"><span>下一頁</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
