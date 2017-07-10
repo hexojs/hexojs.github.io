@@ -45,17 +45,17 @@
   <!-- RSS -->
   <link rel="alternate" href="/atom.xml" title="Hexo">
   <!-- Open Graph -->
-  <meta name="description" content="您可以在 _config.yml 中修改大部份的配置。 網站   設定 描述     title 網站標題   subtitle 網站副標題   description 網站描述   author 您的名字   language 網站使用的語言   timezone 網站時區。Hexo 預設使用您電腦的時區。時區列表    網址   設定 描述 預設值     url 網站的網址    root">
+  <meta name="description" content="您可以在 _config.yml 或 替代配置檔 中修改網站配置。 網站   設定 描述     title 網站標題   subtitle 網站副標題   description 網站描述   author 您的名字   language 網站使用的語言，參考 2-lettter ISO-639-1 code，預設為 en   timezone 網站時區，Hexo 預設使用您電腦的時區，您可以在">
 <meta property="og:type" content="website">
 <meta property="og:title" content="配置">
 <meta property="og:url" content="https://hexo.io/zh-tw/docs/configuration.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="您可以在 _config.yml 中修改大部份的配置。 網站   設定 描述     title 網站標題   subtitle 網站副標題   description 網站描述   author 您的名字   language 網站使用的語言   timezone 網站時區。Hexo 預設使用您電腦的時區。時區列表    網址   設定 描述 預設值     url 網站的網址    root">
+<meta property="og:description" content="您可以在 _config.yml 或 替代配置檔 中修改網站配置。 網站   設定 描述     title 網站標題   subtitle 網站副標題   description 網站描述   author 您的名字   language 網站使用的語言，參考 2-lettter ISO-639-1 code，預設為 en   timezone 網站時區，Hexo 預設使用您電腦的時區，您可以在">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2017-07-07T14:01:04.272Z">
+<meta property="og:updated_time" content="2017-07-10T13:45:10.935Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="配置">
-<meta name="twitter:description" content="您可以在 _config.yml 中修改大部份的配置。 網站   設定 描述     title 網站標題   subtitle 網站副標題   description 網站描述   author 您的名字   language 網站使用的語言   timezone 網站時區。Hexo 預設使用您電腦的時區。時區列表    網址   設定 描述 預設值     url 網站的網址    root">
+<meta name="twitter:description" content="您可以在 _config.yml 或 替代配置檔 中修改網站配置。 網站   設定 描述     title 網站標題   subtitle 網站副標題   description 網站描述   author 您的名字   language 網站使用的語言，參考 2-lettter ISO-639-1 code，預設為 en   timezone 網站時區，Hexo 預設使用您電腦的時區，您可以在">
 <meta name="twitter:site" content="hexojs">
 <meta property="fb:admins" content="100000247608790">
   <!-- Google Analytics -->
@@ -138,7 +138,7 @@
                 <a href="https://github.com/hexojs/site/edit/master/source/zh-tw/docs/configuration.md" class="article-edit-link" title="改善這篇文件"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <p>您可以在 <code>_config.yml</code> 中修改大部份的配置。</p>
+                <p>您可以在 <code>_config.yml</code> 或 <a href="#Using-an-Alternate-Config">替代配置檔</a> 中修改網站配置。</p>
 <h3 id="網站" class="article-heading"><a href="#網站" class="headerlink" title="網站"></a>網站<a class="article-anchor" href="#網站" aria-hidden="true"></a></h3><table>
 <thead>
 <tr>
@@ -165,11 +165,11 @@
 </tr>
 <tr>
 <td><code>language</code></td>
-<td>網站使用的語言</td>
+<td>網站使用的語言，參考 <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" target="_blank" rel="external">2-lettter ISO-639-1 code</a>，預設為 <code>en</code></td>
 </tr>
 <tr>
 <td><code>timezone</code></td>
-<td>網站時區。Hexo 預設使用您電腦的時區。<a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="external">時區列表</a></td>
+<td>網站時區，Hexo 預設使用您電腦的時區，您可以在 <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="external">時區列表</a> 尋找適當的時區，例如 <code>America/New_York</code> 、 <code>Japan</code> 與 <code>UTC</code></td>
 </tr>
 </tbody>
 </table>
@@ -195,16 +195,16 @@
 <tr>
 <td><code>permalink</code></td>
 <td>文章 <a href="permalinks.html">永久連結</a> 的格式</td>
-<td>:year/:month/:day/:title/</td>
+<td><code>:year/:month/:day/:title/</code></td>
 </tr>
 <tr>
 <td><code>permalink_defaults</code></td>
-<td>永久連結中各區段的預設值</td>
+<td><code>permalink</code> 中各區段的預設值</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<blockquote class="note info"><strong class="note-title">網站存放在子目錄</strong><p>如果您的網站存放在子目錄中，例如 <code>http://yoursite.com/blog</code>，則請將您的 <code>url</code> 設為 <code>http://yoursite.com/blog</code> 並把 <code>root</code> 設為 <code>/blog/</code>。</p>
+<blockquote class="note info"><strong class="note-title">網站存放在子目錄</strong><p>如果您的網站存放在子目錄中，例如 <code>http://example.org/blog</code>，請將您的 <code>url</code> 設為 <code>http://example.org/blog</code> 並把 <code>root</code> 設為 <code>/blog/</code>。</p>
 </blockquote>
 <h3 id="目錄" class="article-heading"><a href="#目錄" class="headerlink" title="目錄"></a>目錄<a class="article-anchor" href="#目錄" aria-hidden="true"></a></h3><table>
 <thead>
@@ -217,42 +217,42 @@
 <tbody>
 <tr>
 <td><code>source_dir</code></td>
-<td>原始檔案資料夾，這個資料夾用於存放您的內容。</td>
-<td>source</td>
+<td>原始檔案資料夾，這個資料夾用於存放您的內容</td>
+<td><code>source</code></td>
 </tr>
 <tr>
 <td><code>public_dir</code></td>
-<td>靜態檔案資料夾，這個資料夾用於存放建立完畢的檔案。</td>
+<td>靜態檔案資料夾，這個資料夾用於存放建立完畢的檔案</td>
 <td>public</td>
 </tr>
 <tr>
 <td><code>tag_dir</code></td>
 <td>標籤資料夾</td>
-<td>tags</td>
+<td><code>tags</code></td>
 </tr>
 <tr>
 <td><code>archive_dir</code></td>
 <td>彙整資料夾</td>
-<td>archives</td>
+<td><code>archives</code></td>
 </tr>
 <tr>
 <td><code>category_dir</code></td>
 <td>分類資料夾</td>
-<td>categories</td>
+<td><code>categories</code></td>
 </tr>
 <tr>
 <td><code>code_dir</code></td>
 <td>Include code 資料夾</td>
-<td>downloads/code</td>
+<td><code>downloads/code</code></td>
 </tr>
 <tr>
 <td><code>i18n_dir</code></td>
 <td>國際化（i18n）資料夾</td>
-<td>:lang</td>
+<td><code>:lang</code></td>
 </tr>
 <tr>
 <td><code>skip_render</code></td>
-<td>跳過指定檔案的渲染，您可使用 glob 來配對路徑。</td>
+<td>跳過指定檔案的渲染，您可使用 <a href="https://github.com/isaacs/minimatch" target="_blank" rel="external">glob 表達式</a> 來配對路徑</td>
 <td></td>
 </tr>
 </tbody>
@@ -269,52 +269,52 @@
 <tr>
 <td><code>new_post_name</code></td>
 <td>新文章的檔案名稱</td>
-<td>:title.md</td>
+<td><code>:title.md</code></td>
 </tr>
 <tr>
 <td><code>default_layout</code></td>
 <td>預設佈局</td>
-<td>post</td>
+<td><code>post</code></td>
 </tr>
 <tr>
 <td><code>auto_spacing</code></td>
 <td>在西方文字與東方文字中加入空白</td>
-<td>false</td>
+<td><code>false</code></td>
 </tr>
 <tr>
 <td><code>titlecase</code></td>
 <td>把標題轉換為 title case</td>
-<td>false</td>
+<td><code>false</code></td>
 </tr>
 <tr>
 <td><code>external_link</code></td>
 <td>在新頁籤中開啟連結</td>
-<td>true</td>
+<td><code>true</code></td>
 </tr>
 <tr>
 <td><code>filename_case</code></td>
-<td>把檔案名稱轉換為 (1) 小寫或 (2) 大寫</td>
-<td>0</td>
+<td>把檔案名稱轉換為: <code>1</code> 小寫或 <code>2</code> 大寫</td>
+<td><code>0</code></td>
 </tr>
 <tr>
 <td><code>render_drafts</code></td>
 <td>顯示草稿</td>
-<td>false</td>
+<td><code>false</code></td>
 </tr>
 <tr>
 <td><code>post_asset_folder</code></td>
 <td>啟動 <a href="asset-folders.html">Asset 資料夾</a></td>
-<td>false</td>
+<td><code>false</code></td>
 </tr>
 <tr>
 <td><code>relative_link</code></td>
 <td>把連結改為與根目錄的相對位址</td>
-<td>false</td>
+<td><code>false</code></td>
 </tr>
 <tr>
 <td><code>future</code></td>
 <td>顯示未來的文章</td>
-<td>true</td>
+<td><code>true</code></td>
 </tr>
 <tr>
 <td><code>highlight</code></td>
@@ -335,7 +335,7 @@
 <tr>
 <td><code>default_category</code></td>
 <td>預設分類</td>
-<td>uncategorized</td>
+<td><code>uncategorized</code></td>
 </tr>
 <tr>
 <td><code>category_map</code></td>
@@ -362,12 +362,12 @@
 <tr>
 <td><code>date_format</code></td>
 <td>日期格式</td>
-<td>YYYY-MM-DD</td>
+<td><code>YYYY-MM-DD</code></td>
 </tr>
 <tr>
 <td><code>time_format</code></td>
 <td>時間格式</td>
-<td>H:mm:ss</td>
+<td><code>HH:mm:ss</code></td>
 </tr>
 </tbody>
 </table>
@@ -382,13 +382,13 @@
 <tbody>
 <tr>
 <td><code>per_page</code></td>
-<td>一頁顯示的文章量 (0 = 關閉分頁功能)</td>
-<td>10</td>
+<td>一頁顯示的文章量 (<code>0</code> = 關閉分頁功能)</td>
+<td><code>10</code></td>
 </tr>
 <tr>
 <td><code>pagination_dir</code></td>
 <td>分頁目錄</td>
-<td>page</td>
+<td><code>page</code></td>
 </tr>
 </tbody>
 </table>
@@ -402,7 +402,7 @@
 <tbody>
 <tr>
 <td><code>theme</code></td>
-<td>目前主題</td>
+<td>使用主題名稱, 設為 <code>false</code> 表示關閉主題功能</td>
 </tr>
 <tr>
 <td><code>deploy</code></td>
@@ -410,10 +410,35 @@
 </tr>
 </tbody>
 </table>
+<h3 id="包含-排除-檔案或資料夾" class="article-heading"><a href="#包含-排除-檔案或資料夾" class="headerlink" title="包含/排除 檔案或資料夾"></a>包含/排除 檔案或資料夾<a class="article-anchor" href="#包含-排除-檔案或資料夾" aria-hidden="true"></a></h3><p>Hexo 會根據配置檔中 <code>include</code> / <code>exlude</code> 欄位設定，了解要 處理/忽略 哪些特定的檔案或資料夾。</p>
+<table>
+<thead>
+<tr>
+<th>設定</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>include</code></td>
+<td>Hexo 預設會忽略隱藏檔與隱藏資料夾，但列在這個欄位中的檔案，Hexo 仍然會去處理</td>
+</tr>
+<tr>
+<td><code>exclude</code></td>
+<td>列在這裡的檔案將會被 Hexo 忽略</td>
+</tr>
+</tbody>
+</table>
+<p>範例:<br><figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="comment"># 包含/排除 檔案或資料夾</span></div><div class="line"><span class="attr">include:</span></div><div class="line"><span class="bullet">  -</span> <span class="string">.nojekyll</span></div><div class="line"><span class="attr">exclude:</span></div><div class="line"><span class="bullet">  -</span> <span class="string">.DS_Store</span></div></pre></td></tr></table></figure></p>
+<h3 id="使用替代配置檔" class="article-heading"><a href="#使用替代配置檔" class="headerlink" title="使用替代配置檔"></a>使用替代配置檔<a class="article-anchor" href="#使用替代配置檔" aria-hidden="true"></a></h3><p>使用 <code>hexo</code> 指令時，只要在指令後面加上 <code>--config</code> 參數與自訂配置檔 (需為 JSON 或 YAML 檔) 路徑即可指定此次想要搭配使用的配置檔。該參數也可以是以逗號分隔的檔案列表 (注意中間不得有空格) 來滿足一次使用多個配置檔的需求。</p>
+<p>範例:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment"># 使用自訂的 'custom.yml' 取代預設的 '_config.yml'</span></div><div class="line">$ hexo server --config custom.yml</div><div class="line"></div><div class="line"><span class="comment"># 使用多個配置檔, 有衝突時優先使用 'custom2.json'</span></div><div class="line">$ hexo server --config custom.yml,custom2.json</div></pre></td></tr></table></figure>
+<p>使用多個配置檔會合併產生一個 <code>_multiconfig.yml</code>。當合併遇到衝突時，列在愈後面的檔案，有愈高的優先權。可以使用任意數量帶有任意層級物件的 JSON 或 YAML 檔。注意<strong>檔案列表字串中不得有空白</strong>。</p>
+<p>以前述的多個配置檔範例來說明，若 <code>custom.yml</code> 中有 <code>foo: bar</code>，且 <code>custom2.json</code> 中有 <code>&quot;foo&quot;: &quot;dinosaur&quot;</code>，最終在 <code>_multiconfig.yml</code> 裡的將會是 <code>foo: dinosaur</code>。</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-07-07T14:01:04.272Z" itemprop="dateModified">上次更新：2017-07-07</time>
+                <time class="article-footer-updated" datetime="2017-07-10T13:45:10.935Z" itemprop="dateModified">上次更新：2017-07-10</time>
                 <a href="setup.html" class="article-footer-prev" title="建立"><i class="fa fa-chevron-left"></i><span>上一頁</span></a><a href="commands.html" class="article-footer-next" title="指令"><span>下一頁</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -439,7 +464,7 @@
           <aside id="article-toc" role="navigation">
             <div id="article-toc-inner">
               <strong class="sidebar-title">目錄</strong>
-              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#網站"><span class="toc-text">網站</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#網址"><span class="toc-text">網址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#目錄"><span class="toc-text">目錄</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#寫作"><span class="toc-text">寫作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分類-amp-標籤"><span class="toc-text">分類 & 標籤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#日期-時間格式"><span class="toc-text">日期 / 時間格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分頁"><span class="toc-text">分頁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#擴充套件"><span class="toc-text">擴充套件</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#網站"><span class="toc-text">網站</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#網址"><span class="toc-text">網址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#目錄"><span class="toc-text">目錄</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#寫作"><span class="toc-text">寫作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分類-amp-標籤"><span class="toc-text">分類 & 標籤</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#日期-時間格式"><span class="toc-text">日期 / 時間格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分頁"><span class="toc-text">分頁</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#擴充套件"><span class="toc-text">擴充套件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#包含-排除-檔案或資料夾"><span class="toc-text">包含/排除 檔案或資料夾</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用替代配置檔"><span class="toc-text">使用替代配置檔</span></a></li></ol>
               <a href="#" id="article-toc-top">回到頁首</a>
             </div>
           </aside>
