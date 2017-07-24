@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Front-matter 是文件最上方以 --- 分隔的区域，用于指定个别文件的变量，举例来说： title: Hello Worlddate: 2013/7/13 20:46:25--- 以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。    参数 描述 默认值     layout 布局    title 标题    date 建立日期 文件建立日期   updated 更新日期">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2017-07-24T15:24:30.669Z">
+<meta property="og:updated_time" content="2017-07-24T15:28:35.508Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Front-matter">
 <meta name="twitter:description" content="Front-matter 是文件最上方以 --- 分隔的区域，用于指定个别文件的变量，举例来说： title: Hello Worlddate: 2013/7/13 20:46:25--- 以下是预先定义的参数，您可在模板中使用这些参数值并加以利用。    参数 描述 默认值     layout 布局    title 标题    date 建立日期 文件建立日期   updated 更新日期">
@@ -194,18 +194,14 @@
 </table>
 <h2 id="分类和标签" class="article-heading"><a href="#分类和标签" class="headerlink" title="分类和标签"></a>分类和标签<a class="article-anchor" href="#分类和标签" aria-hidden="true"></a></h2><p>只有文章支持分类和标签，您可以在 Front-matter 中设置。在其他系统中，分类和标签听起来很接近，但是在 Hexo 中两者有着明显的差别：分类具有顺序性和层次性，也就是说 <code>Foo, Bar</code> 不等于 <code>Bar, Foo</code>；而标签没有顺序和层次。</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">categories:</span></div><div class="line"><span class="bullet">-</span> <span class="string">Diary</span></div><div class="line"><span class="attr">tags:</span></div><div class="line"><span class="bullet">-</span> <span class="string">PS3</span></div><div class="line"><span class="bullet">-</span> <span class="string">Games</span></div></pre></td></tr></table></figure>
-<blockquote class="note warn"><strong class="note-title">分类方法的分歧</strong><p>如果您有过使用WordPress的经验，就很容易误解Hexo的分类方式。WordPress支持对一篇文章设置多个分类，而且这些分类可以是同级的，也可以是父子分类。但是Hexo不支持指定多个同级分类。下面的指定方法：<br>categories:</p>
-<ul>
-<li>Diary</li>
-<li>Life<br>会使分类<code>Life</code>成为<code>Diary</code>的子分类，而不是并列分类。因此，有必要为您的文章选择尽可能准确的分类。</li>
-</ul>
+<blockquote class="note warn"><strong class="note-title">分类方法的分歧</strong><p>如果您有过使用WordPress的经验，就很容易误解Hexo的分类方式。WordPress支持对一篇文章设置多个分类，而且这些分类可以是同级的，也可以是父子分类。但是Hexo不支持指定多个同级分类。下面的指定方法：<br>categories:<br>- Diary<br>- Life<br>会使分类<code>Life</code>成为<code>Diary</code>的子分类，而不是并列分类。因此，有必要为您的文章选择尽可能准确的分类。</p>
 </blockquote>
 <h2 id="JSON-Front-matter" class="article-heading"><a href="#JSON-Front-matter" class="headerlink" title="JSON Front-matter"></a>JSON Front-matter<a class="article-anchor" href="#JSON-Front-matter" aria-hidden="true"></a></h2><p>除了 YAML 外，你也可以使用 JSON 来编写 Front-matter，只要将 <code>---</code> 代换成 <code>;;;</code> 即可。</p>
 <figure class="highlight"><table><tr><td class="code"><pre><div class="line">"title": "Hello World",</div><div class="line">"date": "2013/7/13 20:46:25"</div><div class="line">;;;</div></pre></td></tr></table></figure>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-07-24T15:24:30.669Z" itemprop="dateModified">上次更新：2017-07-24</time>
+                <time class="article-footer-updated" datetime="2017-07-24T15:28:35.508Z" itemprop="dateModified">上次更新：2017-07-24</time>
                 <a href="writing.html" class="article-footer-prev" title="写作"><i class="fa fa-chevron-left"></i><span>上一页</span></a><a href="tag-plugins.html" class="article-footer-next" title="标签插件"><span>下一页</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
