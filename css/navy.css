@@ -1071,7 +1071,18 @@ a.article-title:hover {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+.plugin-screenshot-img.lazyload,
+.plugin-screenshot-img.lazyloading {
+  opacity: 0;
+}
+.plugin-screenshot-img.lazyloaded {
+  opacity: 1;
 }
 .plugin-preview-link {
   position: absolute;
