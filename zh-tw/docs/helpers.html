@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="輔助函數幫助您在模版中快速插入內容。 網址url_for在路徑前加上根路徑，從 Hexo 2.7 開始您應該使用此函數，避免使用 config.root + path。 &amp;lt;%- url_for(path) %&amp;gt; relative_url取得與 from 相對的 to 路徑。 &amp;lt;%- relative_url(from, to) %&amp;gt; gravatar插入 Gravatar">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2017-08-28T18:43:29.692Z">
+<meta property="og:updated_time" content="2017-09-05T15:19:22.044Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="輔助函數（Helpers）">
 <meta name="twitter:description" content="輔助函數幫助您在模版中快速插入內容。 網址url_for在路徑前加上根路徑，從 Hexo 2.7 開始您應該使用此函數，避免使用 config.root + path。 &amp;lt;%- url_for(path) %&amp;gt; relative_url取得與 from 相對的 to 路徑。 &amp;lt;%- relative_url(from, to) %&amp;gt; gravatar插入 Gravatar">
@@ -288,11 +288,11 @@
 <h3 id="strip-html" class="article-heading"><a href="#strip-html" class="headerlink" title="strip_html"></a>strip_html<a class="article-anchor" href="#strip-html" aria-hidden="true"></a></h3><p>清除字串中的 HTML 標籤。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- strip_html(string) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>範例：</strong></p>
-<figure class="highlight"><table><tr><td class="code"><pre><div class="line">&lt;%- strip_html('It's not &lt;b&gt;important&lt;/b&gt; anymore!') %&gt;</div><div class="line">// It's not important anymore!</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- strip_html(<span class="string">'It'</span>s not &lt;b&gt;important&lt;<span class="regexp">/b&gt; anymore!') %&gt;</span></div><div class="line"><span class="regexp">/</span><span class="regexp">/ It's not important anymore!</span></div></pre></td></tr></table></figure>
 <h3 id="titlecase" class="article-heading"><a href="#titlecase" class="headerlink" title="titlecase"></a>titlecase<a class="article-anchor" href="#titlecase" aria-hidden="true"></a></h3><p>把字串轉換為正確的 Title case。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- titlecase(string) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>範例：</strong></p>
-<figure class="highlight"><table><tr><td class="code"><pre><div class="line">&lt;%- titlecase('this is an apple') %&gt;</div><div class="line"># This is an Apple</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="code"><pre><div class="line">&lt;%- titlecase(<span class="string">'this is an apple'</span>) %&gt;</div><div class="line"># This is an Apple</div></pre></td></tr></table></figure>
 <h3 id="markdown" class="article-heading"><a href="#markdown" class="headerlink" title="markdown"></a>markdown<a class="article-anchor" href="#markdown" aria-hidden="true"></a></h3><p>使用 Markdown 渲染字串。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- markdown(str) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>範例：</strong></p>
@@ -843,7 +843,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-08-28T18:43:29.692Z" itemprop="dateModified">上次更新：2017-08-28</time>
+                <time class="article-footer-updated" datetime="2017-09-05T15:19:22.044Z" itemprop="dateModified">上次更新：2017-09-05</time>
                 <a href="variables.html" class="article-footer-prev" title="變數"><i class="fa fa-chevron-left"></i><span>上一頁</span></a><a href="internationalization.html" class="article-footer-next" title="國際化 (i18n)"><span>下一頁</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

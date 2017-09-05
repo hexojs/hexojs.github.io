@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Console은 Hexo와 사용자 간의 교두보 역할을 합니다. 사용 가능한 console 명령어를 등록하고 설명합니다. 개요hexo.extend.console.register(name, desc, options, function(args)&amp;#123;  // ...&amp;#125;);    인자 설명     name 이름   desc 설명   options 옵션">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2017-08-28T18:43:29.536Z">
+<meta property="og:updated_time" content="2017-09-05T15:19:21.800Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Console">
 <meta name="twitter:description" content="Console은 Hexo와 사용자 간의 교두보 역할을 합니다. 사용 가능한 console 명령어를 등록하고 설명합니다. 개요hexo.extend.console.register(name, desc, options, function(args)&amp;#123;  // ...&amp;#125;);    인자 설명     name 이름   desc 설명   options 옵션">
@@ -153,15 +153,15 @@
 <h2 id="옵션" class="article-heading"><a href="#옵션" class="headerlink" title="옵션"></a>옵션<a class="article-anchor" href="#옵션" aria-hidden="true"></a></h2><h3 id="사용법" class="article-heading"><a href="#사용법" class="headerlink" title="사용법"></a>사용법<a class="article-anchor" href="#사용법" aria-hidden="true"></a></h3><p>Console 명령어의 사용법의 예시입니다:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&#123;<span class="attr">usage</span>: <span class="string">'[layout] &lt;title&gt;'</span>&#125;</div><div class="line"><span class="comment">// hexo new [layout] &lt;title&gt;</span></div></pre></td></tr></table></figure>
 <h3 id="인자" class="article-heading"><a href="#인자" class="headerlink" title="인자"></a>인자<a class="article-anchor" href="#인자" aria-hidden="true"></a></h3><p>Console 명령어의 각 인자에 대한 예시입니다:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">arguments</span>: [</div><div class="line">    &#123;<span class="attr">name</span>: <span class="string">'layout'</span>, <span class="attr">desc</span>: <span class="string">'Post layout'</span>&#125;,</div><div class="line">    &#123;<span class="attr">name</span>: <span class="string">'title'</span>, <span class="attr">desc</span>: <span class="string">'Post title'</span>&#125;</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="built_in">arguments</span>: [</div><div class="line">    &#123;<span class="attr">name</span>: <span class="string">'layout'</span>, <span class="attr">desc</span>: <span class="string">'Post layout'</span>&#125;,</div><div class="line">    &#123;<span class="attr">name</span>: <span class="string">'title'</span>, <span class="attr">desc</span>: <span class="string">'Post title'</span>&#125;</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="옵션-1" class="article-heading"><a href="#옵션-1" class="headerlink" title="옵션"></a>옵션<a class="article-anchor" href="#옵션-1" aria-hidden="true"></a></h3><p>Console 명령어의 각 옵션에 대한 예시입니다:</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  <span class="attr">options</span>: [</div><div class="line">    &#123;<span class="attr">name</span>: <span class="string">'-r, --replace'</span>, <span class="attr">desc</span>: <span class="string">'Replace existing files'</span>&#125;</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  options: [</div><div class="line">    &#123;<span class="attr">name</span>: <span class="string">'-r, --replace'</span>, <span class="attr">desc</span>: <span class="string">'Replace existing files'</span>&#125;</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="설명" class="article-heading"><a href="#설명" class="headerlink" title="설명"></a>설명<a class="article-anchor" href="#설명" aria-hidden="true"></a></h3><p>Console 명령어에 대한 더 자세한 정보입니다.</p>
 <h2 id="예시" class="article-heading"><a href="#예시" class="headerlink" title="예시"></a>예시<a class="article-anchor" href="#예시" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.console.register(<span class="string">'config'</span>, <span class="string">'Display configuration'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">args</span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(hexo.config);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-08-28T18:43:29.536Z" itemprop="dateModified">Last updated: 2017-08-28</time>
+                <time class="article-footer-updated" datetime="2017-09-05T15:19:21.800Z" itemprop="dateModified">Last updated: 2017-09-05</time>
                 <a href="themes.html" class="article-footer-prev" title="Themes"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="deployer.html" class="article-footer-next" title="Deployer"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

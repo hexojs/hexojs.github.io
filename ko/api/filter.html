@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Filter는 특정한 데이터를 수정할 때 사용합니다. Hexo는 데이터를 filter로 순차적으로 전달하고 filter들은 교대로 데이터를 수정할 수 있습니다. 이 컨셉은 WordPress에서 차용하였습니다. 개요hexo.extend.filter.register(type, function()&amp;#123;  // ...&amp;#125;, priority); 당신은">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2017-08-28T18:43:29.536Z">
+<meta property="og:updated_time" content="2017-09-05T15:19:21.800Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Filter">
 <meta name="twitter:description" content="Filter는 특정한 데이터를 수정할 때 사용합니다. Hexo는 데이터를 filter로 순차적으로 전달하고 filter들은 교대로 데이터를 수정할 수 있습니다. 이 컨셉은 WordPress에서 차용하였습니다. 개요hexo.extend.filter.register(type, function()&amp;#123;  // ...&amp;#125;, priority); 당신은">
@@ -148,7 +148,7 @@
 </tbody>
 </table>
 <p>Filter의 첫 번째 인자는 <code>data</code> 입니다. 다음 filter로 전달 된 <code>data</code>는 새 값으로 변경되어 반환될 수 있습니다. 아무런 값도 반환되지 않았다면 data의 값이 변경되지 않았다는 의미입니다. Filter의 다른 인자를 지정하기 위해 <code>args</code>를 사용할 수도 있습니다. 아래 예시를 봐주세요.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)</span>&#123;</div><div class="line">  <span class="comment">// data === 'some data'</span></div><div class="line">  <span class="comment">// arg1 === 'foo'</span></div><div class="line">  <span class="comment">// arg2 === 'bar'</span></div><div class="line"></div><div class="line">  <span class="keyword">return</span> <span class="string">'something'</span>;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">hexo.extend.filter.register(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)</span>&#123;</div><div class="line">  <span class="comment">// data === 'something'</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line">hexo.extend.filter.exec(<span class="string">'test'</span>, <span class="string">'some data'</span>, &#123;</div><div class="line">  <span class="attr">args</span>: [<span class="string">'foo'</span>, <span class="string">'bar'</span>]</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)</span>&#123;</div><div class="line">  <span class="comment">// data === 'some data'</span></div><div class="line">  <span class="comment">// arg1 === 'foo'</span></div><div class="line">  <span class="comment">// arg2 === 'bar'</span></div><div class="line"></div><div class="line">  <span class="keyword">return</span> <span class="string">'something'</span>;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">hexo.extend.filter.register(<span class="string">'test'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data, arg1, arg2</span>)</span>&#123;</div><div class="line">  <span class="comment">// data === 'something'</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line">hexo.extend.filter.exec(<span class="string">'test'</span>, <span class="string">'some data'</span>, &#123;</div><div class="line">  args: [<span class="string">'foo'</span>, <span class="string">'bar'</span>]</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>Filter를 실행하기 위해 아래 메소드들을 사용할 수도 있습니다.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.execFilter(type, data, options);</div><div class="line">hexo.execFilterSync(type, data, options);</div></pre></td></tr></table></figure>
 <h2 id="Filter의-등록-해제" class="article-heading"><a href="#Filter의-등록-해제" class="headerlink" title="Filter의 등록 해제"></a>Filter의 등록 해제<a class="article-anchor" href="#Filter의-등록-해제" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.unregister(type, filter);</div></pre></td></tr></table></figure>
@@ -181,7 +181,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-08-28T18:43:29.536Z" itemprop="dateModified">Last updated: 2017-08-28</time>
+                <time class="article-footer-updated" datetime="2017-09-05T15:19:21.800Z" itemprop="dateModified">Last updated: 2017-09-05</time>
                 <a href="deployer.html" class="article-footer-prev" title="Deployer"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="generator.html" class="article-footer-next" title="Generator"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

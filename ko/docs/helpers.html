@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Helper는 템플릿에 정보(snippet)를 쉽게 삽입할 수 있도록 도와줍니다. 소스 파일에서는 Helper를 사용할 수 없습니다. URLurl_for루트 경로를 포함한 url을 반환합니다. Hexo 2.7부터 config.root + path 대신 이 helper를 사용할 수 있습니다. &amp;lt;%- url_for(path) %&amp;gt; relative_u">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2017-08-28T18:43:29.536Z">
+<meta property="og:updated_time" content="2017-09-05T15:19:21.804Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Helpers">
 <meta name="twitter:description" content="Helper는 템플릿에 정보(snippet)를 쉽게 삽입할 수 있도록 도와줍니다. 소스 파일에서는 Helper를 사용할 수 없습니다. URLurl_for루트 경로를 포함한 url을 반환합니다. Hexo 2.7부터 config.root + path 대신 이 helper를 사용할 수 있습니다. &amp;lt;%- url_for(path) %&amp;gt; relative_u">
@@ -280,19 +280,19 @@
 <h3 id="is-month" class="article-heading"><a href="#is-month" class="headerlink" title="is_month"></a>is_month<a class="article-anchor" href="#is-month" aria-hidden="true"></a></h3><p>현재 페이지가 월간 아카이브 페이지인지 체크합니다.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- is_month() %&gt;</div></pre></td></tr></table></figure>
 <h3 id="is-category" class="article-heading"><a href="#is-category" class="headerlink" title="is_category"></a>is_category<a class="article-anchor" href="#is-category" aria-hidden="true"></a></h3><p>현재 페이지가 카테고리 페이지인지 체크합니다.<br>파라미터에 문자열을 넣으면, 현재 페이지가 해당 문자열의 카테고리에 속해있는지 체크합니다.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- is_category() %&gt;</div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%-</span> <span class="attr">is_category</span>('<span class="attr">hobby</span>') %&gt;</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- is_category() %&gt;</div><div class="line">&lt;%- is_category(<span class="string">'hobby'</span>) %&gt;</div></pre></td></tr></table></figure>
 <h3 id="is-tag" class="article-heading"><a href="#is-tag" class="headerlink" title="is_tag"></a>is_tag<a class="article-anchor" href="#is-tag" aria-hidden="true"></a></h3><p>현재 페이지가 태그 페이지인지 체크합니다.<br>파라미터에 문자열을 넣으면, 현재 페이지가 해당 문자열의 태그에 속해있는지 체크합니다.</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- is_tag() %&gt;</div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">%-</span> <span class="attr">is_tag</span>('<span class="attr">hobby</span>') %&gt;</span></span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- is_tag() %&gt;</div><div class="line">&lt;%- is_tag(<span class="string">'hobby'</span>) %&gt;</div></pre></td></tr></table></figure>
 <h2 id="문자열-조작" class="article-heading"><a href="#문자열-조작" class="headerlink" title="문자열 조작"></a>문자열 조작<a class="article-anchor" href="#문자열-조작" aria-hidden="true"></a></h2><h3 id="trim" class="article-heading"><a href="#trim" class="headerlink" title="trim"></a>trim<a class="article-anchor" href="#trim" aria-hidden="true"></a></h3><p>문자열에서 공백을 제거합니다.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- trim(string) %&gt;</div></pre></td></tr></table></figure>
 <h3 id="strip-html" class="article-heading"><a href="#strip-html" class="headerlink" title="strip_html"></a>strip_html<a class="article-anchor" href="#strip-html" aria-hidden="true"></a></h3><p>문자열에서 모든 HTML 태그를 제거합니다.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- strip_html(string) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>예시:</strong></p>
-<figure class="highlight"><table><tr><td class="code"><pre><div class="line">&lt;%- strip_html('It's not &lt;b&gt;important&lt;/b&gt; anymore!') %&gt;</div><div class="line">// It's not important anymore!</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- strip_html(<span class="string">'It'</span>s not &lt;b&gt;important&lt;<span class="regexp">/b&gt; anymore!') %&gt;</span></div><div class="line"><span class="regexp">/</span><span class="regexp">/ It's not important anymore!</span></div></pre></td></tr></table></figure>
 <h3 id="titlecase" class="article-heading"><a href="#titlecase" class="headerlink" title="titlecase"></a>titlecase<a class="article-anchor" href="#titlecase" aria-hidden="true"></a></h3><p>문자열을 적절한 타이틀 케이스(소문자/대문자)에 맞게 변환합니다.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- titlecase(string) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>예시:</strong></p>
-<figure class="highlight"><table><tr><td class="code"><pre><div class="line">&lt;%- titlecase('this is an apple') %&gt;</div><div class="line"># This is an Apple</div></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="code"><pre><div class="line">&lt;%- titlecase(<span class="string">'this is an apple'</span>) %&gt;</div><div class="line"># This is an Apple</div></pre></td></tr></table></figure>
 <h3 id="markdown" class="article-heading"><a href="#markdown" class="headerlink" title="markdown"></a>markdown<a class="article-anchor" href="#markdown" aria-hidden="true"></a></h3><p>Markdown에 맞게 문자열을 렌더링합니다.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- markdown(str) %&gt;</div></pre></td></tr></table></figure>
 <p><strong>예시:</strong></p>
@@ -853,7 +853,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-08-28T18:43:29.536Z" itemprop="dateModified">Last updated: 2017-08-28</time>
+                <time class="article-footer-updated" datetime="2017-09-05T15:19:21.804Z" itemprop="dateModified">Last updated: 2017-09-05</time>
                 <a href="variables.html" class="article-footer-prev" title="Variables"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="internationalization.html" class="article-footer-next" title="Internationalization (i18n)"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
