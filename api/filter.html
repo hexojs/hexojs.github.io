@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="A filter is used to modify some specified data. Hexo passes data to filters in sequence and the filters then modify the data one after the other. This concept was borrowed from WordPress. Synopsishexo">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-10-27T15:16:58.473Z">
+<meta property="og:updated_time" content="2017-11-06T10:30:58.055Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Filter">
 <meta name="twitter:description" content="A filter is used to modify some specified data. Hexo passes data to filters in sequence and the filters then modify the data one after the other. This concept was borrowed from WordPress. Synopsishexo">
@@ -125,7 +125,7 @@
                 <a href="https://github.com/hexojs/site/edit/master/source/api/filter.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <p>A filter is used to modify some specified data. Hexo passes data to filters in sequence and the filters then modify the data one after the other. This concept was borrowed from <a href="http://codex.wordpress.org/Plugin_API#Filters" target="_blank" rel="external">WordPress</a>.</p>
+                <p>A filter is used to modify some specified data. Hexo passes data to filters in sequence and the filters then modify the data one after the other. This concept was borrowed from <a href="http://codex.wordpress.org/Plugin_API#Filters" target="_blank" rel="noopener">WordPress</a>.</p>
 <h2 id="Synopsis" class="article-heading"><a href="#Synopsis" class="headerlink" title="Synopsis"></a>Synopsis<a class="article-anchor" href="#Synopsis" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(type, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;, priority);</div></pre></td></tr></table></figure>
 <p>You can define the <code>priority</code>. Lower <code>priority</code> means that it will be executed first. The default <code>priority</code> is 10.</p>
 <h2 id="Execute-Filters" class="article-heading"><a href="#Execute-Filters" class="headerlink" title="Execute Filters"></a>Execute Filters<a class="article-anchor" href="#Execute-Filters" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.exec(type, data, options);</div><div class="line">hexo.extend.filter.execSync(type, data, options);</div></pre></td></tr></table></figure>
@@ -175,13 +175,13 @@
 <h3 id="post-permalink" class="article-heading"><a href="#post-permalink" class="headerlink" title="post_permalink"></a>post_permalink<a class="article-anchor" href="#post-permalink" aria-hidden="true"></a></h3><p>Used to determine the permalink of posts.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(<span class="string">'post_permalink'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h3 id="after-render" class="article-heading"><a href="#after-render" class="headerlink" title="after_render"></a>after_render<a class="article-anchor" href="#after-render" aria-hidden="true"></a></h3><p>Executed after rendering finishes. You can see <a href="rendering.html#after_render_Filters">rendering</a> for more info.</p>
-<h3 id="server-middleware" class="article-heading"><a href="#server-middleware" class="headerlink" title="server_middleware"></a>server_middleware<a class="article-anchor" href="#server-middleware" aria-hidden="true"></a></h3><p>Add middleware to the server. <code>app</code> is a <a href="https://github.com/senchalabs/connect" target="_blank" rel="external">Connect</a> instance.</p>
+<h3 id="server-middleware" class="article-heading"><a href="#server-middleware" class="headerlink" title="server_middleware"></a>server_middleware<a class="article-anchor" href="#server-middleware" aria-hidden="true"></a></h3><p>Add middleware to the server. <code>app</code> is a <a href="https://github.com/senchalabs/connect" target="_blank" rel="noopener">Connect</a> instance.</p>
 <p>For example, to add <code>X-Powered-By: Hexo</code> to the response header:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(<span class="string">'server_middleware'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">app</span>)</span>&#123;</div><div class="line">  app.use(<span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>)</span>&#123;</div><div class="line">    res.setHeader(<span class="string">'X-Powered-By'</span>, <span class="string">'Hexo'</span>);</div><div class="line">    next();</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-10-27T15:16:58.473Z" itemprop="dateModified">Last updated: 2017-10-27</time>
+                <time class="article-footer-updated" datetime="2017-11-06T10:30:58.055Z" itemprop="dateModified">Last updated: 2017-11-06</time>
                 <a href="deployer.html" class="article-footer-prev" title="Deployer"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="generator.html" class="article-footer-next" title="Generator"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

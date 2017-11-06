@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="hexo-serverHexo 3.0 把服务器独立成了个别模块，您必须先安装 hexo-server 才能使用。 $ npm install hexo-server --save 安装完成后，输入以下命令以启动服务器，您的网站会在 http://localhost:4000 下启动。在服务器启动期间，Hexo 会监视文件变动并自动更新，您无须重启服务器。 $ hexo server 如果您想要更">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2017-10-27T15:16:58.661Z">
+<meta property="og:updated_time" content="2017-11-06T10:30:58.235Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="服务器">
 <meta name="twitter:description" content="hexo-serverHexo 3.0 把服务器独立成了个别模块，您必须先安装 hexo-server 才能使用。 $ npm install hexo-server --save 安装完成后，输入以下命令以启动服务器，您的网站会在 http://localhost:4000 下启动。在服务器启动期间，Hexo 会监视文件变动并自动更新，您无须重启服务器。 $ hexo server 如果您想要更">
@@ -125,7 +125,7 @@
                 <a href="https://github.com/hexojs/site/edit/master/source/zh-cn/docs/server.md" class="article-edit-link" title="改进本文"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <h2 id="hexo-server" class="article-heading"><a href="#hexo-server" class="headerlink" title="hexo-server"></a><a href="https://github.com/hexojs/hexo-server" target="_blank" rel="external">hexo-server</a><a class="article-anchor" href="#hexo-server" aria-hidden="true"></a></h2><p>Hexo 3.0 把服务器独立成了个别模块，您必须先安装 <a href="https://github.com/hexojs/hexo-server" target="_blank" rel="external">hexo-server</a> 才能使用。</p>
+                <h2 id="hexo-server" class="article-heading"><a href="#hexo-server" class="headerlink" title="hexo-server"></a><a href="https://github.com/hexojs/hexo-server" target="_blank" rel="noopener">hexo-server</a><a class="article-anchor" href="#hexo-server" aria-hidden="true"></a></h2><p>Hexo 3.0 把服务器独立成了个别模块，您必须先安装 <a href="https://github.com/hexojs/hexo-server" target="_blank" rel="noopener">hexo-server</a> 才能使用。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-server --save</div></pre></td></tr></table></figure>
 <p>安装完成后，输入以下命令以启动服务器，您的网站会在 <code>http://localhost:4000</code> 下启动。在服务器启动期间，Hexo 会监视文件变动并自动更新，您无须重启服务器。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
@@ -136,7 +136,7 @@
 <h3 id="自定义-IP" class="article-heading"><a href="#自定义-IP" class="headerlink" title="自定义 IP"></a>自定义 IP<a class="article-anchor" href="#自定义-IP" aria-hidden="true"></a></h3><p>服务器默认运行在 <code>0.0.0.0</code>，您可以覆盖默认的 IP 设置，如下：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo server -i 192.168.1.1</div></pre></td></tr></table></figure>
 <p>指定这个参数后，您就只能通过该IP才能访问站点。例如，对于一台使用无线网络的笔记本电脑，除了指向本机的<code>127.0.0.1</code>外，通常还有一个<code>192.168.*.*</code>的局域网IP，如果像上面那样使用<code>-i</code>参数，就不能用<code>127.0.0.1</code>来访问站点了。对于有公网IP的主机，如果您指定一个局域网IP作为<code>-i</code>参数的值，那么就无法通过公网来访问站点。</p>
-<h2 id="Pow" class="article-heading"><a href="#Pow" class="headerlink" title="Pow"></a>Pow<a class="article-anchor" href="#Pow" aria-hidden="true"></a></h2><p><a href="http://pow.cx/" target="_blank" rel="external">Pow</a> 是一个 Mac 系统上的零配置 Rack 服务器，它也可以作为一个简单易用的静态文件服务器来使用。</p>
+<h2 id="Pow" class="article-heading"><a href="#Pow" class="headerlink" title="Pow"></a>Pow<a class="article-anchor" href="#Pow" aria-hidden="true"></a></h2><p><a href="http://pow.cx/" target="_blank" rel="noopener">Pow</a> 是一个 Mac 系统上的零配置 Rack 服务器，它也可以作为一个简单易用的静态文件服务器来使用。</p>
 <h3 id="安装" class="article-heading"><a href="#安装" class="headerlink" title="安装"></a>安装<a class="article-anchor" href="#安装" aria-hidden="true"></a></h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ curl get.pow.cx | sh</div></pre></td></tr></table></figure>
 <h3 id="设置" class="article-heading"><a href="#设置" class="headerlink" title="设置"></a>设置<a class="article-anchor" href="#设置" aria-hidden="true"></a></h3><p>在 <code>~/.pow</code> 文件夹建立链接（symlink）。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> ~/.pow</div><div class="line">$ ln -s /path/to/myapp</div></pre></td></tr></table></figure>
@@ -144,7 +144,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-10-27T15:16:58.661Z" itemprop="dateModified">上次更新：2017-10-27</time>
+                <time class="article-footer-updated" datetime="2017-11-06T10:30:58.235Z" itemprop="dateModified">上次更新：2017-11-06</time>
                 <a href="data-files.html" class="article-footer-prev" title="数据文件夹"><i class="fa fa-chevron-left"></i><span>上一页</span></a><a href="generating.html" class="article-footer-next" title="生成器"><span>下一页</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

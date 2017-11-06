@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="模板決定了網站內容的呈現方式，每個主題至少都應包含一個 index 模板，以下是各頁面相對應的模板名稱：    模板 用途 Fallback     index 首頁    post 文章 index   page 分頁 index   archive 彙整 index   category 分類彙整 archive   tag 標籤彙整 archive    佈局（Layout）如果頁面結構類似">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2017-10-27T15:16:58.661Z">
+<meta property="og:updated_time" content="2017-11-06T10:30:58.235Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="模版">
 <meta name="twitter:description" content="模板決定了網站內容的呈現方式，每個主題至少都應包含一個 index 模板，以下是各頁面相對應的模板名稱：    模板 用途 Fallback     index 首頁    post 文章 index   page 分頁 index   archive 彙整 index   category 分類彙整 archive   tag 標籤彙整 archive    佈局（Layout）如果頁面結構類似">
@@ -184,7 +184,7 @@
 <p>產生：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">h1</span> <span class="attr">id</span>=<span class="string">"logo"</span>&gt;</span>Hello World<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"content"</span>&gt;</span>Home page<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
 <h2 id="最佳化" class="article-heading"><a href="#最佳化" class="headerlink" title="最佳化"></a>最佳化<a class="article-anchor" href="#最佳化" aria-hidden="true"></a></h2><p>如果您的主題太過於複雜，或是需要產生的檔案量太過於龐大，可能會大幅降低效能，除了簡化主題外，您可以考慮 Hexo 2.7 新增的局部快取（Fragment Caching）功能。</p>
-<p>本功能借鑑於 <a href="http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching" target="_blank" rel="external">Ruby on Rails</a>，它儲存局部區塊的內容，下次便能直接使用快取內容，可以減少資料庫查詢並使產生速度更快。</p>
+<p>本功能借鑑於 <a href="http://guides.rubyonrails.org/caching_with_rails.html#fragment-caching" target="_blank" rel="noopener">Ruby on Rails</a>，它儲存局部區塊的內容，下次便能直接使用快取內容，可以減少資料庫查詢並使產生速度更快。</p>
 <p>它可用於頁首、頁尾、側邊欄等資料不常變動的位置，舉例來說：</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <p>如果您使用局部模板的話，可以更簡單：</p>
@@ -193,7 +193,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-10-27T15:16:58.661Z" itemprop="dateModified">上次更新：2017-10-27</time>
+                <time class="article-footer-updated" datetime="2017-11-06T10:30:58.235Z" itemprop="dateModified">上次更新：2017-11-06</time>
                 <a href="themes.html" class="article-footer-prev" title="主題"><i class="fa fa-chevron-left"></i><span>上一頁</span></a><a href="variables.html" class="article-footer-next" title="變數"><span>下一頁</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

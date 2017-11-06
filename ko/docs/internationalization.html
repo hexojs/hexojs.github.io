@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="당신의 웹 사이트를 서로 다른 언어로 표시하기 위해 internationalization을 사용할 수 있습니다. 기본 언어의 변경은 _config.yml 파일의 language를 수정하면 됩니다. 다중 언어를 설정할 수도 있고 기본 언어의 순서를 수정할 수도 있습니다. language: zh-twlanguage:- zh-tw- en 언어 파일언어 파일로 Y">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2017-10-27T15:16:58.477Z">
+<meta property="og:updated_time" content="2017-11-06T10:30:58.063Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Internationalization (i18n)">
 <meta name="twitter:description" content="당신의 웹 사이트를 서로 다른 언어로 표시하기 위해 internationalization을 사용할 수 있습니다. 기본 언어의 변경은 _config.yml 파일의 language를 수정하면 됩니다. 다중 언어를 설정할 수도 있고 기본 언어의 순서를 수정할 수도 있습니다. language: zh-twlanguage:- zh-tw- en 언어 파일언어 파일로 Y">
@@ -127,7 +127,7 @@
               <div class="article-content" itemprop="articleBody">
                 <p>당신의 웹 사이트를 서로 다른 언어로 표시하기 위해 internationalization을 사용할 수 있습니다. 기본 언어의 변경은 <code>_config.yml</code> 파일의 <code>language</code>를 수정하면 됩니다. 다중 언어를 설정할 수도 있고 기본 언어의 순서를 수정할 수도 있습니다.</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">language:</span> <span class="string">zh-tw</span></div><div class="line"></div><div class="line"><span class="attr">language:</span></div><div class="line"><span class="bullet">-</span> <span class="string">zh-tw</span></div><div class="line"><span class="bullet">-</span> <span class="string">en</span></div></pre></td></tr></table></figure>
-<h3 id="언어-파일" class="article-heading"><a href="#언어-파일" class="headerlink" title="언어 파일"></a>언어 파일<a class="article-anchor" href="#언어-파일" aria-hidden="true"></a></h3><p>언어 파일로 YAML 또는 JSON 파일을 사용할 수 있습니다. 테마의 <code>languages</code> 폴더에 이 파일을 넣어두면 됩니다. 언어 파일의 <a href="https://github.com/alexei/sprintf.js" target="_blank" rel="external">printf format</a>을 지원합니다. </p>
+<h3 id="언어-파일" class="article-heading"><a href="#언어-파일" class="headerlink" title="언어 파일"></a>언어 파일<a class="article-anchor" href="#언어-파일" aria-hidden="true"></a></h3><p>언어 파일로 YAML 또는 JSON 파일을 사용할 수 있습니다. 테마의 <code>languages</code> 폴더에 이 파일을 넣어두면 됩니다. 언어 파일의 <a href="https://github.com/alexei/sprintf.js" target="_blank" rel="noopener">printf format</a>을 지원합니다. </p>
 <h3 id="템플릿" class="article-heading"><a href="#템플릿" class="headerlink" title="템플릿"></a>템플릿<a class="article-anchor" href="#템플릿" aria-hidden="true"></a></h3><p><code>__</code> 또는 <code>_p</code>를 사용하면 템플릿에서의 문자열의 번역을 위한 helper를 사용할 수 있습니다. <code>__</code>는 일반적인 사용 방법이고 <code>_p</code>는 여러 개의 문자열을 위해 사용하는 방법입니다. 아래 예시를 보세요.</p>
 <figure class="highlight yaml"><figcaption><span>en.yml</span></figcaption><table><tr><td class="code"><pre><div class="line"><span class="attr">index:</span></div><div class="line"><span class="attr">  title:</span> <span class="string">Home</span></div><div class="line"><span class="attr">  add:</span> <span class="string">Add</span></div><div class="line"><span class="attr">  video:</span></div><div class="line"><span class="attr">    zero:</span> <span class="literal">No</span> <span class="string">videos</span></div><div class="line"><span class="attr">    one:</span> <span class="string">One</span> <span class="string">video</span></div><div class="line"><span class="attr">    other:</span> <span class="string">%d</span> <span class="string">videos</span></div></pre></td></tr></table></figure>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">&lt;%= __(<span class="string">'index.title'</span>) %&gt;</div><div class="line"><span class="comment">// Home</span></div><div class="line"></div><div class="line">&lt;%= _p(<span class="string">'index.video'</span>, <span class="number">3</span>) %&gt;</div><div class="line"><span class="comment">// 3 videos</span></div></pre></td></tr></table></figure>
@@ -139,7 +139,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-10-27T15:16:58.477Z" itemprop="dateModified">Last updated: 2017-10-27</time>
+                <time class="article-footer-updated" datetime="2017-11-06T10:30:58.063Z" itemprop="dateModified">Last updated: 2017-11-06</time>
                 <a href="helpers.html" class="article-footer-prev" title="Helpers"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="plugins.html" class="article-footer-next" title="Plugins"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

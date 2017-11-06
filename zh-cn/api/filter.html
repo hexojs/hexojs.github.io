@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="过滤器用于修改特定文件，Hexo 将这些文件依序传给过滤器，而过滤器可以针对文件进行修改，这个概念借鉴自 WordPress。 概要hexo.extend.filter.register(type, function()&amp;#123;&amp;#125;, priority); 您可以指定过滤器的优先级 priority，priority 值越低，过滤器会越早执行，默认的 priority 是 10。 执行">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2017-10-27T15:16:58.657Z">
+<meta property="og:updated_time" content="2017-11-06T10:30:58.231Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="过滤器（Filter）">
 <meta name="twitter:description" content="过滤器用于修改特定文件，Hexo 将这些文件依序传给过滤器，而过滤器可以针对文件进行修改，这个概念借鉴自 WordPress。 概要hexo.extend.filter.register(type, function()&amp;#123;&amp;#125;, priority); 您可以指定过滤器的优先级 priority，priority 值越低，过滤器会越早执行，默认的 priority 是 10。 执行">
@@ -125,7 +125,7 @@
                 <a href="https://github.com/hexojs/site/edit/master/source/zh-cn/api/filter.md" class="article-edit-link" title="改进本文"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <p>过滤器用于修改特定文件，Hexo 将这些文件依序传给过滤器，而过滤器可以针对文件进行修改，这个概念借鉴自 <a href="http://codex.wordpress.org/Plugin_API#Filters" target="_blank" rel="external">WordPress</a>。</p>
+                <p>过滤器用于修改特定文件，Hexo 将这些文件依序传给过滤器，而过滤器可以针对文件进行修改，这个概念借鉴自 <a href="http://codex.wordpress.org/Plugin_API#Filters" target="_blank" rel="noopener">WordPress</a>。</p>
 <h2 id="概要" class="article-heading"><a href="#概要" class="headerlink" title="概要"></a>概要<a class="article-anchor" href="#概要" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(type, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">&#125;, priority);</div></pre></td></tr></table></figure>
 <p>您可以指定过滤器的优先级 <code>priority</code>，<code>priority</code> 值越低，过滤器会越早执行，默认的 <code>priority</code> 是 10。</p>
 <h2 id="执行过滤器" class="article-heading"><a href="#执行过滤器" class="headerlink" title="执行过滤器"></a>执行过滤器<a class="article-anchor" href="#执行过滤器" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.exec(type, data, options);</div><div class="line">hexo.extend.filter.execSync(type, data, options);</div></pre></td></tr></table></figure>
@@ -175,13 +175,13 @@
 <h3 id="post-permalink" class="article-heading"><a href="#post-permalink" class="headerlink" title="post_permalink"></a>post_permalink<a class="article-anchor" href="#post-permalink" aria-hidden="true"></a></h3><p>用来决定文章的永久链接。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(<span class="string">'post_permalink'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h3 id="after-render" class="article-heading"><a href="#after-render" class="headerlink" title="after_render"></a>after_render<a class="article-anchor" href="#after-render" aria-hidden="true"></a></h3><p>在渲染后执行，您可以参考 <a href="rendering.html#after_render_过滤器">渲染</a> 以了解更多信息。</p>
-<h3 id="server-middleware" class="article-heading"><a href="#server-middleware" class="headerlink" title="server_middleware"></a>server_middleware<a class="article-anchor" href="#server-middleware" aria-hidden="true"></a></h3><p>新增服务器的 Middleware。<code>app</code> 是一个 <a href="https://github.com/senchalabs/connect" target="_blank" rel="external">Connect</a> 实例。</p>
+<h3 id="server-middleware" class="article-heading"><a href="#server-middleware" class="headerlink" title="server_middleware"></a>server_middleware<a class="article-anchor" href="#server-middleware" aria-hidden="true"></a></h3><p>新增服务器的 Middleware。<code>app</code> 是一个 <a href="https://github.com/senchalabs/connect" target="_blank" rel="noopener">Connect</a> 实例。</p>
 <p>举例来说，在响应头中新增 <code>X-Powered-By: Hexo</code>。</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(<span class="string">'server_middleware'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">app</span>)</span>&#123;</div><div class="line">  app.use(<span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>)</span>&#123;</div><div class="line">    res.setHeader(<span class="string">'X-Powered-By'</span>, <span class="string">'Hexo'</span>);</div><div class="line">    next();</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-10-27T15:16:58.657Z" itemprop="dateModified">上次更新：2017-10-27</time>
+                <time class="article-footer-updated" datetime="2017-11-06T10:30:58.231Z" itemprop="dateModified">上次更新：2017-11-06</time>
                 <a href="deployer.html" class="article-footer-prev" title="部署器 (Deployer)"><i class="fa fa-chevron-left"></i><span>上一页</span></a><a href="generator.html" class="article-footer-next" title="生成器 (Generator)"><span>下一页</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

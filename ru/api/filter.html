@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Фильтры используются для изменения указанных данных. Hexo передает данные для фильтров в определенной последовательности и фильтров изменения данных один за другим. Эта концепция была заимствована из">
 <meta property="og:locale" content="ru">
-<meta property="og:updated_time" content="2017-10-27T15:16:58.481Z">
+<meta property="og:updated_time" content="2017-11-06T10:30:58.063Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Фильтры">
 <meta name="twitter:description" content="Фильтры используются для изменения указанных данных. Hexo передает данные для фильтров в определенной последовательности и фильтров изменения данных один за другим. Эта концепция была заимствована из">
@@ -125,7 +125,7 @@
                 <a href="https://github.com/hexojs/site/edit/master/source/ru/api/filter.md" class="article-edit-link" title="Предложить улучшение"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <p>Фильтры используются для изменения указанных данных. Hexo передает данные для фильтров в определенной последовательности и фильтров изменения данных один за другим. Эта концепция была заимствована из <a href="http://codex.wordpress.org/Plugin_API#Filters" target="_blank" rel="external">WordPress</a></p>
+                <p>Фильтры используются для изменения указанных данных. Hexo передает данные для фильтров в определенной последовательности и фильтров изменения данных один за другим. Эта концепция была заимствована из <a href="http://codex.wordpress.org/Plugin_API#Filters" target="_blank" rel="noopener">WordPress</a></p>
 <h2 id="Краткий-обзор" class="article-heading"><a href="#Краткий-обзор" class="headerlink" title="Краткий обзор"></a>Краткий обзор<a class="article-anchor" href="#Краткий-обзор" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(type, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;, priority);</div></pre></td></tr></table></figure>
 <p>Вы можете определить приоритет. Низкий приоритет означает, что он будет выполняться в первую очередь. Приоритет по умолчанию равен 10</p>
 <h2 id="Использование-фильтров" class="article-heading"><a href="#Использование-фильтров" class="headerlink" title="Использование фильтров"></a>Использование фильтров<a class="article-anchor" href="#Использование-фильтров" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.exec(type, data, options);</div><div class="line">hexo.extend.filter.execSync(type, data, options);</div></pre></td></tr></table></figure>
@@ -175,13 +175,13 @@
 <h3 id="post-permalink" class="article-heading"><a href="#post-permalink" class="headerlink" title="post_permalink"></a>post_permalink<a class="article-anchor" href="#post-permalink" aria-hidden="true"></a></h3><p>Выполняется при создании поста, для определения пути постоянной ссылки.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(<span class="string">'post_permalink'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h3 id="after-render" class="article-heading"><a href="#after-render" class="headerlink" title="after_render"></a>after_render<a class="article-anchor" href="#after-render" aria-hidden="true"></a></h3><p>Выполнится после завершения обработки. См. <a href="rendering.html#after_render_Filters">рендеринг</a> для подробностей.</p>
-<h3 id="server-middleware" class="article-heading"><a href="#server-middleware" class="headerlink" title="server_middleware"></a>server_middleware<a class="article-anchor" href="#server-middleware" aria-hidden="true"></a></h3><p>Добавляет промежуточные задачи для сервера. <code>app</code> является экземпляром <a href="https://github.com/senchalabs/connect" target="_blank" rel="external">Connect</a>.</p>
+<h3 id="server-middleware" class="article-heading"><a href="#server-middleware" class="headerlink" title="server_middleware"></a>server_middleware<a class="article-anchor" href="#server-middleware" aria-hidden="true"></a></h3><p>Добавляет промежуточные задачи для сервера. <code>app</code> является экземпляром <a href="https://github.com/senchalabs/connect" target="_blank" rel="noopener">Connect</a>.</p>
 <p>Например, чтобы добавить <code>X-Powered-By: Hexo</code> в заголовке ответа:</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(<span class="string">'server_middleware'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">app</span>)</span>&#123;</div><div class="line">  app.use(<span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>)</span>&#123;</div><div class="line">    res.setHeader(<span class="string">'X-Powered-By'</span>, <span class="string">'Hexo'</span>);</div><div class="line">    next();</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-10-27T15:16:58.481Z" itemprop="dateModified">Последнее обновление: 2017-10-27</time>
+                <time class="article-footer-updated" datetime="2017-11-06T10:30:58.063Z" itemprop="dateModified">Последнее обновление: 2017-11-06</time>
                 <a href="deployer.html" class="article-footer-prev" title="Инструмент размещения"><i class="fa fa-chevron-left"></i><span>Пред</span></a><a href="generator.html" class="article-footer-next" title="Генератор"><span>След</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               

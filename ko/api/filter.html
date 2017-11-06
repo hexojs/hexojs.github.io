@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Filter는 특정한 데이터를 수정할 때 사용합니다. Hexo는 데이터를 filter로 순차적으로 전달하고 filter들은 교대로 데이터를 수정할 수 있습니다. 이 컨셉은 WordPress에서 차용하였습니다. 개요hexo.extend.filter.register(type, function()&amp;#123;  // ...&amp;#125;, priority); 당신은">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2017-10-27T15:16:58.477Z">
+<meta property="og:updated_time" content="2017-11-06T10:30:58.063Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Filter">
 <meta name="twitter:description" content="Filter는 특정한 데이터를 수정할 때 사용합니다. Hexo는 데이터를 filter로 순차적으로 전달하고 filter들은 교대로 데이터를 수정할 수 있습니다. 이 컨셉은 WordPress에서 차용하였습니다. 개요hexo.extend.filter.register(type, function()&amp;#123;  // ...&amp;#125;, priority); 당신은">
@@ -125,7 +125,7 @@
                 <a href="https://github.com/hexojs/site/edit/master/source/ko/api/filter.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
               </header>
               <div class="article-content" itemprop="articleBody">
-                <p>Filter는 특정한 데이터를 수정할 때 사용합니다. Hexo는 데이터를 filter로 순차적으로 전달하고 filter들은 교대로 데이터를 수정할 수 있습니다. 이 컨셉은 <a href="http://codex.wordpress.org/Plugin_API#Filters" target="_blank" rel="external">WordPress</a>에서 차용하였습니다.</p>
+                <p>Filter는 특정한 데이터를 수정할 때 사용합니다. Hexo는 데이터를 filter로 순차적으로 전달하고 filter들은 교대로 데이터를 수정할 수 있습니다. 이 컨셉은 <a href="http://codex.wordpress.org/Plugin_API#Filters" target="_blank" rel="noopener">WordPress</a>에서 차용하였습니다.</p>
 <h2 id="개요" class="article-heading"><a href="#개요" class="headerlink" title="개요"></a>개요<a class="article-anchor" href="#개요" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(type, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;, priority);</div></pre></td></tr></table></figure>
 <p>당신은 <code>priority</code>을 정의할 수 있습니다. 기본값은 10이며, 값이 낮을 수록 먼저 실행됩니다.</p>
 <h2 id="Filter의-실행" class="article-heading"><a href="#Filter의-실행" class="headerlink" title="Filter의 실행"></a>Filter의 실행<a class="article-anchor" href="#Filter의-실행" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.exec(type, data, options);</div><div class="line">hexo.extend.filter.execSync(type, data, options);</div></pre></td></tr></table></figure>
@@ -175,13 +175,13 @@
 <h3 id="post-permalink" class="article-heading"><a href="#post-permalink" class="headerlink" title="post_permalink"></a>post_permalink<a class="article-anchor" href="#post-permalink" aria-hidden="true"></a></h3><p>Post의 permalink를 결정하기 위해 사용합니다.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(<span class="string">'post_permalink'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 <h3 id="after-render" class="article-heading"><a href="#after-render" class="headerlink" title="after_render"></a>after_render<a class="article-anchor" href="#after-render" aria-hidden="true"></a></h3><p>렌더링이 완료된 후 실행됩니다. <a href="rendering.html#after_render_Filters">Rendering</a>에서 더 많은 정보를 확인하실 수 있습니다.</p>
-<h3 id="server-middleware" class="article-heading"><a href="#server-middleware" class="headerlink" title="server_middleware"></a>server_middleware<a class="article-anchor" href="#server-middleware" aria-hidden="true"></a></h3><p>서버에 미들웨어를 추가합니다. <code>app</code>은 <a href="https://github.com/senchalabs/connect" target="_blank" rel="external">Connect</a> 인스턴스입니다.</p>
+<h3 id="server-middleware" class="article-heading"><a href="#server-middleware" class="headerlink" title="server_middleware"></a>server_middleware<a class="article-anchor" href="#server-middleware" aria-hidden="true"></a></h3><p>서버에 미들웨어를 추가합니다. <code>app</code>은 <a href="https://github.com/senchalabs/connect" target="_blank" rel="noopener">Connect</a> 인스턴스입니다.</p>
 <p>아래 예시는 response header에 <code>X-Powered-By: Hexo</code>를 추가합니다.</p>
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.extend.filter.register(<span class="string">'server_middleware'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">app</span>)</span>&#123;</div><div class="line">  app.use(<span class="function"><span class="keyword">function</span>(<span class="params">req, res, next</span>)</span>&#123;</div><div class="line">    res.setHeader(<span class="string">'X-Powered-By'</span>, <span class="string">'Hexo'</span>);</div><div class="line">    next();</div><div class="line">  &#125;);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-10-27T15:16:58.477Z" itemprop="dateModified">Last updated: 2017-10-27</time>
+                <time class="article-footer-updated" datetime="2017-11-06T10:30:58.063Z" itemprop="dateModified">Last updated: 2017-11-06</time>
                 <a href="deployer.html" class="article-footer-prev" title="Deployer"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="generator.html" class="article-footer-next" title="Generator"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
