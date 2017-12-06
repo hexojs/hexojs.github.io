@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="接下來，我們要在網誌中建立第一篇新文章，您可以直接從現有的範例文章「Hello World」改寫，但我們更建議您學習 new 指令。 $ hexo new [layout] &amp;lt;title&amp;gt; 您可以在指令中指定文章的佈局（layout），預設為 post，您可以透過修改 _config.yml 中的 default_layout 設定來指定預設佈局。 佈局（Layout）Hexo 有三種">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2017-11-29T02:06:21.156Z">
+<meta property="og:updated_time" content="2017-12-06T17:53:10.906Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="寫作">
 <meta name="twitter:description" content="接下來，我們要在網誌中建立第一篇新文章，您可以直接從現有的範例文章「Hello World」改寫，但我們更建議您學習 new 指令。 $ hexo new [layout] &amp;lt;title&amp;gt; 您可以在指令中指定文章的佈局（layout），預設為 post，您可以透過修改 _config.yml 中的 default_layout 設定來指定預設佈局。 佈局（Layout）Hexo 有三種">
@@ -126,7 +126,7 @@
               </header>
               <div class="article-content" itemprop="articleBody">
                 <p>接下來，我們要在網誌中建立第一篇新文章，您可以直接從現有的範例文章「Hello World」改寫，但我們更建議您學習 <code>new</code> 指令。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo new [layout] &lt;title&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
 <p>您可以在指令中指定文章的佈局（layout），預設為 <code>post</code>，您可以透過修改 <code>_config.yml</code> 中的 <code>default_layout</code> 設定來指定預設佈局。</p>
 <h3 id="佈局（Layout）" class="article-heading"><a href="#佈局（Layout）" class="headerlink" title="佈局（Layout）"></a>佈局（Layout）<a class="article-anchor" href="#佈局（Layout）" aria-hidden="true"></a></h3><p>Hexo 有三種預設佈局：<code>post</code>、<code>page</code> 和 <code>draft</code>，它們分別對應不同的路徑，而您所自定的其他佈局和 <code>post</code> 相同，都儲存至 <code>source/_posts</code> 資料夾。</p>
 <table>
@@ -187,10 +187,10 @@
 </tbody>
 </table>
 <h3 id="草稿" class="article-heading"><a href="#草稿" class="headerlink" title="草稿"></a>草稿<a class="article-anchor" href="#草稿" aria-hidden="true"></a></h3><p>剛剛提到了 Hexo 的一種特殊佈局：<code>draft</code>，這種佈局在建立時會被儲存於 <code>source/_drafts</code> 資料夾，您可透過 <code>publish</code> 指令將草稿移動到 <code>source/_posts</code> 資料夾，這項指令的使用方式與 <code>new</code> 十分類似，您也可在指令中指定 <code>layout</code> 來指定佈局。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo publish [layout] &lt;title&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
 <p>草稿預設不會顯示於頁面中，您可在執行時加上 <code>--draft</code> 選項，或是把 <code>render_drafts</code> 設定改為 <code>true</code> 來預覽草稿。</p>
 <h3 id="鷹架（Scaffold）" class="article-heading"><a href="#鷹架（Scaffold）" class="headerlink" title="鷹架（Scaffold）"></a>鷹架（Scaffold）<a class="article-anchor" href="#鷹架（Scaffold）" aria-hidden="true"></a></h3><p>在建立文章時，Hexo 會根據 <code>scaffolds</code> 資料夾內相對應的檔案來建立檔案，例如：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo new photo <span class="string">"My Gallery"</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new photo <span class="string">"My Gallery"</span></span><br></pre></td></tr></table></figure>
 <p>在執行這行指令時，Hexo 會嘗試在 <code>scaffolds</code> 資料夾中找尋 <code>photo.md</code>，並根據其內容建立文章，以下是您可在鷹架中使用的變數：</p>
 <table>
 <thead>
@@ -217,7 +217,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-11-29T02:06:21.156Z" itemprop="dateModified">上次更新：2017-11-29</time>
+                <time class="article-footer-updated" datetime="2017-12-06T17:53:10.906Z" itemprop="dateModified">上次更新：2017-12-06</time>
                 <a href="migration.html" class="article-footer-prev" title="轉移"><i class="fa fa-chevron-left"></i><span>上一頁</span></a><a href="front-matter.html" class="article-footer-next" title="Front-matter"><span>下一頁</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -244,7 +244,7 @@
             <div id="article-toc-inner">
               <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
               <strong class="sidebar-title">目錄</strong>
-              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#佈局（Layout）"><span class="toc-text">佈局（Layout）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#檔案名稱"><span class="toc-text">檔案名稱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#草稿"><span class="toc-text">草稿</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#鷹架（Scaffold）"><span class="toc-text">鷹架（Scaffold）</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#佈局（Layout）"><span class="toc-text"><a href="#&#x4F48;&#x5C40;&#xFF08;Layout&#xFF09;" class="headerlink" title="&#x4F48;&#x5C40;&#xFF08;Layout&#xFF09;"></a>&#x4F48;&#x5C40;&#xFF08;Layout&#xFF09;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#檔案名稱"><span class="toc-text"><a href="#&#x6A94;&#x6848;&#x540D;&#x7A31;" class="headerlink" title="&#x6A94;&#x6848;&#x540D;&#x7A31;"></a>&#x6A94;&#x6848;&#x540D;&#x7A31;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#草稿"><span class="toc-text"><a href="#&#x8349;&#x7A3F;" class="headerlink" title="&#x8349;&#x7A3F;"></a>&#x8349;&#x7A3F;</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#鷹架（Scaffold）"><span class="toc-text"><a href="#&#x9DF9;&#x67B6;&#xFF08;Scaffold&#xFF09;" class="headerlink" title="&#x9DF9;&#x67B6;&#xFF08;Scaffold&#xFF09;"></a>&#x9DF9;&#x67B6;&#xFF08;Scaffold&#xFF09;</span></a></li></ol>
               <a href="#" id="article-toc-top">回到頁首</a>
             </div>
           </aside>

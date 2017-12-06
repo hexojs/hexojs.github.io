@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="RSS먼저 hexo-migrator-rss 플러그인을 설치하세요. $ npm install hexo-migrator-rss --save 플러그인 설치 후에는 아래의 명령어를 수행하여 RSS의 모든 포스트를 마이그레이션 하세요. source에는 파일 경로나 URL를 사용할 수 있습니다. $ hexo migrate rss &amp;lt;source&amp;gt; Jekyll">
 <meta property="og:locale" content="ko">
-<meta property="og:updated_time" content="2017-11-29T02:06:20.964Z">
+<meta property="og:updated_time" content="2017-12-06T17:53:10.742Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Migration">
 <meta name="twitter:description" content="RSS먼저 hexo-migrator-rss 플러그인을 설치하세요. $ npm install hexo-migrator-rss --save 플러그인 설치 후에는 아래의 명령어를 수행하여 RSS의 모든 포스트를 마이그레이션 하세요. source에는 파일 경로나 URL를 사용할 수 있습니다. $ hexo migrate rss &amp;lt;source&amp;gt; Jekyll">
@@ -126,31 +126,31 @@
               </header>
               <div class="article-content" itemprop="articleBody">
                 <h2 id="RSS" class="article-heading"><a href="#RSS" class="headerlink" title="RSS"></a>RSS<a class="article-anchor" href="#RSS" aria-hidden="true"></a></h2><p>먼저 <code>hexo-migrator-rss</code> 플러그인을 설치하세요.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-migrator-rss --save</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-rss --save</span><br></pre></td></tr></table></figure>
 <p>플러그인 설치 후에는 아래의 명령어를 수행하여 RSS의 모든 포스트를 마이그레이션 하세요. <code>source</code>에는 파일 경로나 URL를 사용할 수 있습니다.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo migrate rss &lt;<span class="built_in">source</span>&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo migrate rss &lt;<span class="built_in">source</span>&gt;</span><br></pre></td></tr></table></figure>
 <h2 id="Jekyll" class="article-heading"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll<a class="article-anchor" href="#Jekyll" aria-hidden="true"></a></h2><p>Jekyll의 <code>_posts</code> 폴더의 모든 파일을 Hexo의 <code>source/_posts</code> 폴더로 옮기세요.</p>
 <p><code>_config.yml</code>파일의 <code>new_post_name</code> 설정을 다음과 같이 수정하세요.</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">new_post_name:</span> <span class="string">:year-:month-:day-:title.md</span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">new_post_name:</span> <span class="string">:year-:month-:day-:title.md</span></span><br></pre></td></tr></table></figure>
 <h2 id="Octopress" class="article-heading"><a href="#Octopress" class="headerlink" title="Octopress"></a>Octopress<a class="article-anchor" href="#Octopress" aria-hidden="true"></a></h2><p>Octopress <code>source/_posts</code> 폴더의 모든 파일을 Hexo의 <code>source/_posts</code> 폴더로 옮기세요.</p>
 <p><code>_config.yml</code>파일의 <code>new_post_name</code> 설정을 다음과 같이 수정하세요.</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">new_post_name:</span> <span class="string">:year-:month-:day-:title.md</span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">new_post_name:</span> <span class="string">:year-:month-:day-:title.md</span></span><br></pre></td></tr></table></figure>
 <h2 id="WordPress" class="article-heading"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress<a class="article-anchor" href="#WordPress" aria-hidden="true"></a></h2><p>먼저, <code>hexo-migrator-wordpress</code> plugin을 설치하세요.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-migrator-wordpress --save</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-wordpress --save</span><br></pre></td></tr></table></figure>
 <p>WordPress의 dashboard에서 “Tools” → “Export” → “WordPress” 를 통해 사용하던 WordPress 사이트를 Export하세요. (<a href="http://en.support.wordpress.com/export/" target="_blank" rel="noopener">WordPress support page</a>에 더 자세한 정보가 있습니다.)</p>
 <p>그 후 아래 명령어를 수행하세요:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo migrate wordpress &lt;<span class="built_in">source</span>&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo migrate wordpress &lt;<span class="built_in">source</span>&gt;</span><br></pre></td></tr></table></figure>
 <p>여기서 <code>source</code>는 WordPress의 export 파일이 있는 파일 경로 또는 URL을 의미합니다.</p>
 <h2 id="Joomla" class="article-heading"><a href="#Joomla" class="headerlink" title="Joomla"></a>Joomla<a class="article-anchor" href="#Joomla" aria-hidden="true"></a></h2><p>먼저, <code>hexo-migrator-joomla</code> 플러그인을 설치하세요.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-migrator-joomla --save</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-migrator-joomla --save</span><br></pre></td></tr></table></figure>
 <p>Joomla 게시물을 <a href="http://extensions.joomla.org/extensions/migration-a-conversion/data-import-a-export/12816?qh=YToxOntpOjA7czo1OiJqMnhtbCI7fQ%3D%3D" target="_blank" rel="noopener">J2XML</a>를 사용하여 export하세요.</p>
 <p>그 후 아래 명령어를 ㅅ수행하세요:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo migrate joomla &lt;<span class="built_in">source</span>&gt;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo migrate joomla &lt;<span class="built_in">source</span>&gt;</span><br></pre></td></tr></table></figure>
 <p>여기서 <code>source</code>는 Joonla의 export 파일이 있는 파일 경로 또는 URL을 의미합니다.</p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-11-29T02:06:20.964Z" itemprop="dateModified">Last updated: 2017-11-29</time>
+                <time class="article-footer-updated" datetime="2017-12-06T17:53:10.742Z" itemprop="dateModified">Last updated: 2017-12-06</time>
                 <a href="commands.html" class="article-footer-prev" title="Commands"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="writing.html" class="article-footer-next" title="Writing"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -177,7 +177,7 @@
             <div id="article-toc-inner">
               <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
               <strong class="sidebar-title">Contents</strong>
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#RSS"><span class="toc-text">RSS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jekyll"><span class="toc-text">Jekyll</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Octopress"><span class="toc-text">Octopress</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WordPress"><span class="toc-text">WordPress</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Joomla"><span class="toc-text">Joomla</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#RSS"><span class="toc-text"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jekyll"><span class="toc-text"><a href="#Jekyll" class="headerlink" title="Jekyll"></a>Jekyll</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Octopress"><span class="toc-text"><a href="#Octopress" class="headerlink" title="Octopress"></a>Octopress</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#WordPress"><span class="toc-text"><a href="#WordPress" class="headerlink" title="WordPress"></a>WordPress</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Joomla"><span class="toc-text"><a href="#Joomla" class="headerlink" title="Joomla"></a>Joomla</span></a></li></ol>
               <a href="#" id="article-toc-top">Back to Top</a>
             </div>
           </aside>

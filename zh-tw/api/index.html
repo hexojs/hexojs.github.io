@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="本文件提供您更豐富的 API 資訊，使您更容易修改 Hexo 原始碼或撰寫外掛。如果您只是想要查詢關於 Hexo 的基本使用方法，請參閱 文件。 在開始之前，請注意本文件僅適用於 Hexo 3 及以上版本。 初始化首先，我們必須建立一個 Hexo 實例（instance），第一個參數是網站的根目錄，也就是 base_dir，而第二個參數則是初始化的選項。接著執行 init 方法後，Hexo 會載入">
 <meta property="og:locale" content="zh-tw">
-<meta property="og:updated_time" content="2017-11-29T02:06:21.156Z">
+<meta property="og:updated_time" content="2017-12-06T17:53:10.902Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="API">
 <meta name="twitter:description" content="本文件提供您更豐富的 API 資訊，使您更容易修改 Hexo 原始碼或撰寫外掛。如果您只是想要查詢關於 Hexo 的基本使用方法，請參閱 文件。 在開始之前，請注意本文件僅適用於 Hexo 3 及以上版本。 初始化首先，我們必須建立一個 Hexo 實例（instance），第一個參數是網站的根目錄，也就是 base_dir，而第二個參數則是初始化的選項。接著執行 init 方法後，Hexo 會載入">
@@ -128,7 +128,7 @@
                 <p>本文件提供您更豐富的 API 資訊，使您更容易修改 Hexo 原始碼或撰寫外掛。如果您只是想要查詢關於 Hexo 的基本使用方法，請參閱 <a href="../docs/">文件</a>。</p>
 <p>在開始之前，請注意本文件僅適用於 Hexo 3 及以上版本。</p>
 <h2 id="初始化" class="article-heading"><a href="#初始化" class="headerlink" title="初始化"></a>初始化<a class="article-anchor" href="#初始化" aria-hidden="true"></a></h2><p>首先，我們必須建立一個 Hexo 實例（instance），第一個參數是網站的根目錄，也就是 <code>base_dir</code>，而第二個參數則是初始化的選項。接著執行 <code>init</code> 方法後，Hexo 會載入外掛及配置檔案。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> Hexo = <span class="built_in">require</span>(<span class="string">'hexo'</span>);</div><div class="line"><span class="keyword">var</span> hexo = <span class="keyword">new</span> Hexo(process.cwd(), &#123;&#125;);</div><div class="line"></div><div class="line">hexo.init().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> Hexo = <span class="built_in">require</span>(<span class="string">'hexo'</span>);</span><br><span class="line"><span class="keyword">var</span> hexo = <span class="keyword">new</span> Hexo(process.cwd(), &#123;&#125;);</span><br><span class="line"></span><br><span class="line">hexo.init().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -162,14 +162,14 @@
 </table>
 <h2 id="載入檔案" class="article-heading"><a href="#載入檔案" class="headerlink" title="載入檔案"></a>載入檔案<a class="article-anchor" href="#載入檔案" aria-hidden="true"></a></h2><p>Hexo 提供了兩種方法來載入檔案：<code>load</code>, <code>watch</code>，前者用於載入 <code>source</code> 資料夾內的所有檔案及主題資料；而後者除了執行 <code>load</code> 以外，還會繼續監看檔案變動。</p>
 <p>這兩個方法實際上所做的，就是載入檔案列表，並把檔案傳給相對應的處理器（Processor），當檔案全部處理完畢後，就執行產生器（Generator）來建立路由。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.load().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div><div class="line"></div><div class="line">hexo.watch().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// 之後可呼叫 hexo.unwatch() 停止檔案監看</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.load().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">hexo.watch().then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">// 之後可呼叫 hexo.unwatch() 停止檔案監看</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <h2 id="執行指令" class="article-heading"><a href="#執行指令" class="headerlink" title="執行指令"></a>執行指令<a class="article-anchor" href="#執行指令" aria-hidden="true"></a></h2><p>您可透過 <code>call</code> 方法來呼叫控制台（Console），第一個參數是控制台的名稱，而第二個參數是選項，根據不同控制台而有所不同。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.call(<span class="string">'generate'</span>, &#123;&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="comment">// ...</span></div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.call(<span class="string">'generate'</span>, &#123;&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <h2 id="結束" class="article-heading"><a href="#結束" class="headerlink" title="結束"></a>結束<a class="article-anchor" href="#結束" aria-hidden="true"></a></h2><p>當指令完畢後，請執行 <code>exit</code> 方法讓 Hexo 完成結束前的準備工作（如儲存資料庫）。</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><div class="line">hexo.call(<span class="string">'generate'</span>).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> hexo.exit();</div><div class="line">&#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> hexo.exit(err);</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.call(<span class="string">'generate'</span>).then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> hexo.exit();</span><br><span class="line">&#125;).catch(<span class="function"><span class="keyword">function</span>(<span class="params">err</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> hexo.exit(err);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-11-29T02:06:21.156Z" itemprop="dateModified">上次更新：2017-11-29</time>
+                <time class="article-footer-updated" datetime="2017-12-06T17:53:10.902Z" itemprop="dateModified">上次更新：2017-12-06</time>
                 <a href="events.html" class="article-footer-next" title="事件"><span>下一頁</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -196,7 +196,7 @@
             <div id="article-toc-inner">
               <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
               <strong class="sidebar-title">目錄</strong>
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#初始化"><span class="toc-text">初始化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#載入檔案"><span class="toc-text">載入檔案</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#執行指令"><span class="toc-text">執行指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#結束"><span class="toc-text">結束</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#初始化"><span class="toc-text"><a href="#&#x521D;&#x59CB;&#x5316;" class="headerlink" title="&#x521D;&#x59CB;&#x5316;"></a>&#x521D;&#x59CB;&#x5316;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#載入檔案"><span class="toc-text"><a href="#&#x8F09;&#x5165;&#x6A94;&#x6848;" class="headerlink" title="&#x8F09;&#x5165;&#x6A94;&#x6848;"></a>&#x8F09;&#x5165;&#x6A94;&#x6848;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#執行指令"><span class="toc-text"><a href="#&#x57F7;&#x884C;&#x6307;&#x4EE4;" class="headerlink" title="&#x57F7;&#x884C;&#x6307;&#x4EE4;"></a>&#x57F7;&#x884C;&#x6307;&#x4EE4;</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#結束"><span class="toc-text"><a href="#&#x7D50;&#x675F;" class="headerlink" title="&#x7D50;&#x675F;"></a>&#x7D50;&#x675F;</span></a></li></ol>
               <a href="#" id="article-toc-top">回到頁首</a>
             </div>
           </aside>

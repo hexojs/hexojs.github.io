@@ -52,7 +52,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Hexo обеспечивает быстрый и простой способ размещения. Нужна только одна команда, чтобы развернуть свой сайт на сервере. $ hexo deploy Перед первой публикацией сайта, нужно изменить некоторые настройк">
 <meta property="og:locale" content="ru">
-<meta property="og:updated_time" content="2017-11-29T02:06:20.988Z">
+<meta property="og:updated_time" content="2017-12-06T17:53:10.746Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Публикация">
 <meta name="twitter:description" content="Hexo обеспечивает быстрый и простой способ размещения. Нужна только одна команда, чтобы развернуть свой сайт на сервере. $ hexo deploy Перед первой публикацией сайта, нужно изменить некоторые настройк">
@@ -126,15 +126,15 @@
               </header>
               <div class="article-content" itemprop="articleBody">
                 <p>Hexo обеспечивает быстрый и простой способ размещения. Нужна только одна команда, чтобы развернуть свой сайт на сервере.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>Перед первой публикацией сайта, нужно изменить некоторые настройки в <code>_config.yml</code>. Правильные параметры развёртывания должны иметь поле <code>type</code>. Например:</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br></pre></td></tr></table></figure>
 <p>Вы можете использовать несколько сервисов размещения. Hexo будет выполнять все в том порядке, какой указан в файле.</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">- type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span></div><div class="line"><span class="attr">- type:</span> <span class="string">heroku</span></div><div class="line"><span class="attr">  repo:</span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">- type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span></span><br><span class="line"><span class="attr">- type:</span> <span class="string">heroku</span></span><br><span class="line"><span class="attr">  repo:</span></span><br></pre></td></tr></table></figure>
 <h2 id="Git" class="article-heading"><a href="#Git" class="headerlink" title="Git"></a>Git<a class="article-anchor" href="#Git" aria-hidden="true"></a></h2><p>Установите <a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener">hexo-deployer-git</a>.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>Изменение параметров.</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">[branch]</span></div><div class="line"><span class="attr">  message:</span> <span class="string">[message]</span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">[branch]</span></span><br><span class="line"><span class="attr">  message:</span> <span class="string">[message]</span></span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -158,9 +158,9 @@
 </tbody>
 </table>
 <h2 id="Heroku" class="article-heading"><a href="#Heroku" class="headerlink" title="Heroku"></a>Heroku<a class="article-anchor" href="#Heroku" aria-hidden="true"></a></h2><p>Установите <a href="https://github.com/hexojs/hexo-deployer-heroku" target="_blank" rel="noopener">hexo-deployer-heroku</a>.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-deployer-heroku --save</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-heroku --save</span><br></pre></td></tr></table></figure>
 <p>Изменение параметров.</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">heroku</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></div><div class="line"><span class="attr">  message:</span> <span class="string">[message]</span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">heroku</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></span><br><span class="line"><span class="attr">  message:</span> <span class="string">[message]</span></span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -180,9 +180,9 @@
 </tbody>
 </table>
 <h2 id="Rsync" class="article-heading"><a href="#Rsync" class="headerlink" title="Rsync"></a>Rsync<a class="article-anchor" href="#Rsync" aria-hidden="true"></a></h2><p>Установите <a href="https://github.com/hexojs/hexo-deployer-rsync" target="_blank" rel="noopener">hexo-deployer-rsync</a>.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-deployer-rsync --save</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-rsync --save</span><br></pre></td></tr></table></figure>
 <p>Изменение параметров.</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">rsync</span></div><div class="line"><span class="attr">  host:</span> <span class="string">&lt;host&gt;</span></div><div class="line"><span class="attr">  user:</span> <span class="string">&lt;user&gt;</span></div><div class="line"><span class="attr">  root:</span> <span class="string">&lt;root&gt;</span></div><div class="line"><span class="attr">  port:</span> <span class="string">[port]</span></div><div class="line"><span class="attr">  delete:</span> <span class="string">[true|false]</span></div><div class="line"><span class="attr">  verbose:</span> <span class="string">[true|false]</span></div><div class="line"><span class="attr">  ignore_errors:</span> <span class="string">[true|false]</span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">rsync</span></span><br><span class="line"><span class="attr">  host:</span> <span class="string">&lt;host&gt;</span></span><br><span class="line"><span class="attr">  user:</span> <span class="string">&lt;user&gt;</span></span><br><span class="line"><span class="attr">  root:</span> <span class="string">&lt;root&gt;</span></span><br><span class="line"><span class="attr">  port:</span> <span class="string">[port]</span></span><br><span class="line"><span class="attr">  delete:</span> <span class="string">[true|false]</span></span><br><span class="line"><span class="attr">  verbose:</span> <span class="string">[true|false]</span></span><br><span class="line"><span class="attr">  ignore_errors:</span> <span class="string">[true|false]</span></span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -230,9 +230,9 @@
 </tbody>
 </table>
 <h2 id="OpenShift" class="article-heading"><a href="#OpenShift" class="headerlink" title="OpenShift"></a>OpenShift<a class="article-anchor" href="#OpenShift" aria-hidden="true"></a></h2><p>Установите <a href="https://github.com/hexojs/hexo-deployer-openshift" target="_blank" rel="noopener">hexo-deployer-openshift</a>.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-deployer-openshift --save</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-openshift --save</span><br></pre></td></tr></table></figure>
 <p>Изменение параметров.</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">openshift</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></div><div class="line"><span class="attr">  message:</span> <span class="string">[message]</span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">openshift</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></span><br><span class="line"><span class="attr">  message:</span> <span class="string">[message]</span></span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -252,9 +252,9 @@
 </tbody>
 </table>
 <h2 id="FTPSync" class="article-heading"><a href="#FTPSync" class="headerlink" title="FTPSync"></a>FTPSync<a class="article-anchor" href="#FTPSync" aria-hidden="true"></a></h2><p>Установите <a href="https://github.com/hexojs/hexo-deployer-ftpsync" target="_blank" rel="noopener">hexo-deployer-ftpsync</a>.</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-deployer-ftpsync --save</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-ftpsync --save</span><br></pre></td></tr></table></figure>
 <p>Изменение параметров.</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">ftpsync</span></div><div class="line"><span class="attr">  host:</span> <span class="string">&lt;host&gt;</span></div><div class="line"><span class="attr">  user:</span> <span class="string">&lt;user&gt;</span></div><div class="line"><span class="attr">  pass:</span> <span class="string">&lt;password&gt;</span></div><div class="line"><span class="attr">  remote:</span> <span class="string">[remote]</span></div><div class="line"><span class="attr">  port:</span> <span class="string">[port]</span></div><div class="line"><span class="attr">  ignore:</span> <span class="string">[ignore]</span></div><div class="line"><span class="attr">  connections:</span> <span class="string">[connections]</span></div><div class="line"><span class="attr">  verbose:</span> <span class="string">[true|false]</span></div></pre></td></tr></table></figure>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">ftpsync</span></span><br><span class="line"><span class="attr">  host:</span> <span class="string">&lt;host&gt;</span></span><br><span class="line"><span class="attr">  user:</span> <span class="string">&lt;user&gt;</span></span><br><span class="line"><span class="attr">  pass:</span> <span class="string">&lt;password&gt;</span></span><br><span class="line"><span class="attr">  remote:</span> <span class="string">[remote]</span></span><br><span class="line"><span class="attr">  port:</span> <span class="string">[port]</span></span><br><span class="line"><span class="attr">  ignore:</span> <span class="string">[ignore]</span></span><br><span class="line"><span class="attr">  connections:</span> <span class="string">[connections]</span></span><br><span class="line"><span class="attr">  verbose:</span> <span class="string">[true|false]</span></span><br></pre></td></tr></table></figure>
 <table>
 <thead>
 <tr>
@@ -310,7 +310,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2017-11-29T02:06:20.988Z" itemprop="dateModified">Последнее обновление: 2017-11-29</time>
+                <time class="article-footer-updated" datetime="2017-12-06T17:53:10.746Z" itemprop="dateModified">Последнее обновление: 2017-12-06</time>
                 <a href="generating.html" class="article-footer-prev" title="Генерация"><i class="fa fa-chevron-left"></i><span>Пред</span></a><a href="permalinks.html" class="article-footer-next" title="Постоянные ссылки"><span>След</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -337,7 +337,7 @@
             <div id="article-toc-inner">
               <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
               <strong class="sidebar-title">Содержание</strong>
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-text">Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Heroku"><span class="toc-text">Heroku</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rsync"><span class="toc-text">Rsync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OpenShift"><span class="toc-text">OpenShift</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#FTPSync"><span class="toc-text">FTPSync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Другие-способы"><span class="toc-text">Другие способы</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-text"><a href="#Git" class="headerlink" title="Git"></a>Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Heroku"><span class="toc-text"><a href="#Heroku" class="headerlink" title="Heroku"></a>Heroku</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rsync"><span class="toc-text"><a href="#Rsync" class="headerlink" title="Rsync"></a>Rsync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OpenShift"><span class="toc-text"><a href="#OpenShift" class="headerlink" title="OpenShift"></a>OpenShift</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#FTPSync"><span class="toc-text"><a href="#FTPSync" class="headerlink" title="FTPSync"></a>FTPSync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Другие-способы"><span class="toc-text"><a href="#&#x414;&#x440;&#x443;&#x433;&#x438;&#x435;-&#x441;&#x43F;&#x43E;&#x441;&#x43E;&#x431;&#x44B;" class="headerlink" title="&#x414;&#x440;&#x443;&#x433;&#x438;&#x435; &#x441;&#x43F;&#x43E;&#x441;&#x43E;&#x431;&#x44B;"></a>&#x414;&#x440;&#x443;&#x433;&#x438;&#x435; &#x441;&#x43F;&#x43E;&#x441;&#x43E;&#x431;&#x44B;</span></a></li></ol>
               <a href="#" id="article-toc-top">Наверх</a>
             </div>
           </aside>

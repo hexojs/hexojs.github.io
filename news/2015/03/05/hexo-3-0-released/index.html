@@ -40,7 +40,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Hexo 3.0 has finally come out! After four beta and four RC versions, Hexo 3 become more stable and more powerful. Thanks for the contributors and testers!  What’s Changed?There’re many improvements in">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2017-11-29T02:06:20.956Z">
+<meta property="og:updated_time" content="2017-12-06T17:53:10.734Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 3.0 Released">
 <meta name="twitter:description" content="Hexo 3.0 has finally come out! After four beta and four RC versions, Hexo 3 become more stable and more powerful. Thanks for the contributors and testers!  What’s Changed?There’re many improvements in">
@@ -125,16 +125,16 @@
 <p>More info: <a href="https://github.com/hexojs/hexo/wiki/Breaking-Changes-in-Hexo-3.0" target="_blank" rel="noopener">Breaking Changes in Hexo 3.0</a>, <a href="https://github.com/hexojs/hexo/releases" target="_blank" rel="noopener">changelog</a></p>
 <h2 id="How-to-Update" class="article-heading"><a href="#How-to-Update" class="headerlink" title="How to Update?"></a>How to Update?<a class="article-anchor" href="#How-to-Update" aria-hidden="true"></a></h2><ol>
 <li><p>Modify <code>package.json</code>.</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">&#123;</div><div class="line">  &quot;hexo&quot;: &#123;</div><div class="line">    &quot;version&quot;: &quot;&quot;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;hexo&quot;: &#123;</span><br><span class="line">    &quot;version&quot;: &quot;&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Install <a href="https://github.com/hexojs/hexo-cli" target="_blank" rel="noopener">hexo-cli</a>. If any error occurred, try to remove hexo first.</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Install Hexo.</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ npm install hexo --save</div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo --save</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Install plugins. You don’t have to install all the following plugins. It depends on your need.</p>
- <figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ npm install hexo-server --save</div><div class="line">$ npm install hexo-generator-index --save</div><div class="line">$ npm install hexo-generator-archive --save</div><div class="line">$ npm install hexo-generator-category --save</div><div class="line">$ npm install hexo-generator-tag --save</div><div class="line">$ npm install hexo-deployer-git --save</div><div class="line">$ npm install hexo-deployer-heroku --save</div><div class="line">$ npm install hexo-deployer-rsync --save</div><div class="line">$ npm install hexo-deployer-openshift --save</div></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br><span class="line">$ npm install hexo-generator-index --save</span><br><span class="line">$ npm install hexo-generator-archive --save</span><br><span class="line">$ npm install hexo-generator-category --save</span><br><span class="line">$ npm install hexo-generator-tag --save</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ npm install hexo-deployer-heroku --save</span><br><span class="line">$ npm install hexo-deployer-rsync --save</span><br><span class="line">$ npm install hexo-deployer-openshift --save</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Update plugins. Especially generators and filters. Since the API has breaking changes in Hexo 3.</p>
 </li>
