@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Helpers | Hexo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://hexo.io/pt-br/docs/helpers.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://hexo.io/docs/helpers.html">
+    
+      <link rel="alternative" hreflang="zh-tw" href="https://hexo.io/zh-tw/docs/helpers.html">
+    
+      <link rel="alternative" hreflang="zh-cn" href="https://hexo.io/zh-cn/docs/helpers.html">
+    
+      <link rel="alternative" hreflang="ru" href="https://hexo.io/ru/docs/helpers.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://hexo.io/ko/docs/helpers.html">
+    
+      <link rel="alternative" hreflang="pt-br" href="https://hexo.io/pt-br/docs/helpers.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/build/css/navy-a475bf266d.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="Hexo">
+  <!-- Open Graph -->
+  <meta name="description" content="Os Helpers são usados em templates para ajudá-lo a inserir snippets (trechos de código) rapidamente. Os helpers não podem ser usados em arquivos de source (arquivos de postagem em Markdown por exemplo">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Helpers">
+<meta property="og:url" content="https://hexo.io/pt-br/docs/helpers.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Os Helpers são usados em templates para ajudá-lo a inserir snippets (trechos de código) rapidamente. Os helpers não podem ser usados em arquivos de source (arquivos de postagem em Markdown por exemplo">
+<meta property="og:locale" content="pt-br">
+<meta property="og:updated_time" content="2017-12-11T16:40:21.559Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Helpers">
+<meta name="twitter:description" content="Os Helpers são usados em templates para ajudá-lo a inserir snippets (trechos de código) rapidamente. Os helpers não podem ser usados em arquivos de source (arquivos de postagem em Markdown por exemplo">
+<meta name="twitter:site" content="hexojs">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48498357-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/pt-br/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/pt-br/docs/" class="main-nav-link">Docs</a><a href="/pt-br/api/" class="main-nav-link">API</a><a href="/news/" class="main-nav-link">Novidades</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/themes/" class="main-nav-link">Temas</a>
+      <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>Português (Brasil)</span></label>
+      <select id="lang-select" data-canonical="docs/helpers.html">
+        
+          <option value="en">English</option>
+        
+          <option value="zh-tw">正體中文</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+          <option value="ru">Русский</option>
+        
+          <option value="ko">한국어</option>
+        
+          <option value="pt-br" selected>Português (Brasil)</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Helpers</h1>
+                <a href="https://github.com/hexojs/site/edit/master/source/pt-br/docs/helpers.md" class="article-edit-link" title="Melhore esta Documentação"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p>Os Helpers são usados em templates para ajudá-lo a inserir snippets (trechos de código) rapidamente. Os helpers não podem ser usados em arquivos de source (arquivos de postagem em Markdown por exemplo).</p>
+<div class="video-container"><iframe src="//www.youtube.com/embed/Uc53pW0GJHU" frameborder="0" allowfullscreen></iframe></div>
+<h2 id="URL" class="article-heading"><a href="#URL" class="headerlink" title="URL"></a>URL<a class="article-anchor" href="#URL" aria-hidden="true"></a></h2><h3 id="url-for" class="article-heading"><a href="#url-for" class="headerlink" title="url_for"></a>url_for<a class="article-anchor" href="#url-for" aria-hidden="true"></a></h3><p>Retorna uma url com o caminho raiz prefixado. Você deve usar esse helper em vez de <code>config.root + path</code> desde a versão 2.7 do Hexo.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- url_for(path) %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="relative-url" class="article-heading"><a href="#relative-url" class="headerlink" title="relative_url"></a>relative_url<a class="article-anchor" href="#relative-url" aria-hidden="true"></a></h3><p>Retorna a URL relativa de <code>from</code> para <code>to</code>.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- relative_url(<span class="keyword">from</span>, to) %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="gravatar" class="article-heading"><a href="#gravatar" class="headerlink" title="gravatar"></a>gravatar<a class="article-anchor" href="#gravatar" aria-hidden="true"></a></h3><p>Insere uma imagem do Gravatar.<br>Se você não especificar o parâmetro [options], as opções padrão serão aplicadas. Caso contrário, você pode configurá-lo para um número que será passado como parâmetro de tamanho para o Gravatar. Finalmente, se você configurá-lo para um objeto, ele será convertido em uma string de consulta de parâmetros para o Gravatar.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- gravatar(email, [options]);</span><br></pre></td></tr></table></figure>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>) %&gt;</span><br><span class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787</span></span><br><span class="line"></span><br><span class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span>, <span class="number">40</span>) %&gt;</span><br><span class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40</span></span><br><span class="line"></span><br><span class="line">&lt;%- gravatar(<span class="string">'a@abc.com'</span> &#123;<span class="attr">s</span>: <span class="number">40</span>, <span class="attr">d</span>: <span class="string">'http://example.com/image.png'</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// http://www.gravatar.com/avatar/b9b00e66c6b8a70f88c73cb6bdb06787?s=40&amp;d=http%3A%2F%2Fexample.com%2Fimage.png</span></span><br></pre></td></tr></table></figure>
+<h2 id="HTML-Tags" class="article-heading"><a href="#HTML-Tags" class="headerlink" title="HTML Tags"></a>HTML Tags<a class="article-anchor" href="#HTML-Tags" aria-hidden="true"></a></h2><h3 id="css" class="article-heading"><a href="#css" class="headerlink" title="css"></a>css<a class="article-anchor" href="#css" aria-hidden="true"></a></h3><p>Carrega arquivos CSS. Onde <code>path</code> pode ser um array ou uma string. Se <code>path</code> não for prefixado com <code>/</code> ou com qualquer protocolo, ele será prefixado com a URL raiz. Se você não adicionar a extensão <code>.css</code> após <code>path</code>, ela será adicionada automaticamente.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- css(path, ...) %&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- css(<span class="string">'style.css'</span>) %&gt;</span><br><span class="line"><span class="comment">// &lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;%- css([<span class="string">'style.css'</span>, <span class="string">'screen.css'</span>]) %&gt;</span><br><span class="line"><span class="comment">// &lt;link rel="stylesheet" href="/style.css" type="text/css"&gt;</span></span><br><span class="line"><span class="comment">// &lt;link rel="stylesheet" href="/screen.css" type="text/css"&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="js" class="article-heading"><a href="#js" class="headerlink" title="js"></a>js<a class="article-anchor" href="#js" aria-hidden="true"></a></h3><p>Carrega arquivos JavaScript. O <code>path</code> pode ser uma array ou uma string. Se <code>path</code> não for prefixado com <code>/</code> ou com qualquer protocolo, ele será prefixado com a URL raiz. Se você não adicionar a extensão <code>.js</code> após <code>path</code>, ela será adicionada automaticamente.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- js(path, ...) %&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- js(<span class="string">'script.js'</span>) %&gt;</span><br><span class="line"><span class="comment">// &lt;script type="text/javascript" src="/script.js"&gt;&lt;/script&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;%- js([<span class="string">'script.js'</span>, <span class="string">'gallery.js'</span>]) %&gt;</span><br><span class="line"><span class="comment">// &lt;script type="text/javascript" src="/script.js"&gt;&lt;/script&gt;</span></span><br><span class="line"><span class="comment">// &lt;script type="text/javascript" src="/gallery.js"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="link-to" class="article-heading"><a href="#link-to" class="headerlink" title="link_to"></a>link_to<a class="article-anchor" href="#link-to" aria-hidden="true"></a></h3><p>Insere um link.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- link_to(path, [text], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>external</code></td>
+<td>Abre o link em uma nova aba</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>class</code></td>
+<td>Nome da classe</td>
+<td></td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td>ID</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>) %&gt;</span><br><span class="line"><span class="comment">// &lt;a href="http://www.google.com" title="http://www.google.com"&gt;http://www.google.com&lt;/a&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>) %&gt;</span><br><span class="line"><span class="comment">// &lt;a href="http://www.google.com" title="Google"&gt;Google&lt;/a&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;%- link_to(<span class="string">'http://www.google.com'</span>, <span class="string">'Google'</span>, &#123;<span class="attr">external</span>: <span class="literal">true</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// &lt;a href="http://www.google.com" title="Google" target="_blank" rel="external"&gt;Google&lt;/a&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="mail-to" class="article-heading"><a href="#mail-to" class="headerlink" title="mail_to"></a>mail_to<a class="article-anchor" href="#mail-to" aria-hidden="true"></a></h3><p>Insere um link de e-mail.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- mail_to(path, [text], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>class</code></td>
+<td>Nome da classe</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td>ID</td>
+</tr>
+<tr>
+<td><code>subject</code></td>
+<td>Assunto do e-mail</td>
+</tr>
+<tr>
+<td><code>cc</code></td>
+<td>CC</td>
+</tr>
+<tr>
+<td><code>bcc</code></td>
+<td>BCC</td>
+</tr>
+<tr>
+<td><code>body</code></td>
+<td>Conteúdo do e-mail</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- mail_to(<span class="string">'a@abc.com'</span>) %&gt;</span><br><span class="line"><span class="comment">// &lt;a href="mailto:a@abc.com" title="a@abc.com"&gt;a@abc.com&lt;/a&gt;</span></span><br><span class="line"></span><br><span class="line">&lt;%- mail_to(<span class="string">'a@abc.com'</span>, <span class="string">'Email'</span>) %&gt;</span><br><span class="line"><span class="comment">// &lt;a href="mailto:a@abc.com" title="Email"&gt;Email&lt;/a&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="image-tag" class="article-heading"><a href="#image-tag" class="headerlink" title="image_tag"></a>image_tag<a class="article-anchor" href="#image-tag" aria-hidden="true"></a></h3><p>Insere uma imagem.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- image_tag(path, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>alt</code></td>
+<td>Texto alternativo da imagem</td>
+</tr>
+<tr>
+<td><code>class</code></td>
+<td>Nome da classe</td>
+</tr>
+<tr>
+<td><code>id</code></td>
+<td>ID</td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td>Largura da imagem</td>
+</tr>
+<tr>
+<td><code>height</code></td>
+<td>Altura da imagem</td>
+</tr>
+</tbody>
+</table>
+<h3 id="favicon-tag" class="article-heading"><a href="#favicon-tag" class="headerlink" title="favicon_tag"></a>favicon_tag<a class="article-anchor" href="#favicon-tag" aria-hidden="true"></a></h3><p>Insere um favicon.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- favicon_tag(path) %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="feed-tag" class="article-heading"><a href="#feed-tag" class="headerlink" title="feed_tag"></a>feed_tag<a class="article-anchor" href="#feed-tag" aria-hidden="true"></a></h3><p>Insere um link de feed.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- feed_tag(path, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>Título do feed</td>
+<td></td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>Tipo do feed</td>
+<td>atom</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Tags-condicionais" class="article-heading"><a href="#Tags-condicionais" class="headerlink" title="Tags condicionais"></a>Tags condicionais<a class="article-anchor" href="#Tags-condicionais" aria-hidden="true"></a></h2><h3 id="is-current" class="article-heading"><a href="#is-current" class="headerlink" title="is_current"></a>is_current<a class="article-anchor" href="#is-current" aria-hidden="true"></a></h3><p>Verifica se <code>path</code> corresponde à URL da página atual. Use opções <code>strict</code> para habilitar um modo estrito de correspondência.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_current(path, [strict]) %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="is-home" class="article-heading"><a href="#is-home" class="headerlink" title="is_home"></a>is_home<a class="article-anchor" href="#is-home" aria-hidden="true"></a></h3><p>Verifica se a página atual é a pagina home.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_home() %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="is-post" class="article-heading"><a href="#is-post" class="headerlink" title="is_post"></a>is_post<a class="article-anchor" href="#is-post" aria-hidden="true"></a></h3><p>Verifica se a página atual é uma postagem.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_post() %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="is-archive" class="article-heading"><a href="#is-archive" class="headerlink" title="is_archive"></a>is_archive<a class="article-anchor" href="#is-archive" aria-hidden="true"></a></h3><p>Verifica se a página atual é uma página de arquivo.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_archive() %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="is-year" class="article-heading"><a href="#is-year" class="headerlink" title="is_year"></a>is_year<a class="article-anchor" href="#is-year" aria-hidden="true"></a></h3><p>Verifica se a página atual é uma página de arquivo anual.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_year() %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="is-month" class="article-heading"><a href="#is-month" class="headerlink" title="is_month"></a>is_month<a class="article-anchor" href="#is-month" aria-hidden="true"></a></h3><p>Verifica se a página atual é uma página de arquivo mensal.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_month() %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="is-category" class="article-heading"><a href="#is-category" class="headerlink" title="is_category"></a>is_category<a class="article-anchor" href="#is-category" aria-hidden="true"></a></h3><p>Verifica se a página atual é uma página de categoria.<br>Se uma string for dada como parâmetro, também é verificado se a página atual corresponde à categoria dada.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_category() %&gt;</span><br><span class="line">&lt;%- is_category(<span class="string">'hobby'</span>) %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="is-tag" class="article-heading"><a href="#is-tag" class="headerlink" title="is_tag"></a>is_tag<a class="article-anchor" href="#is-tag" aria-hidden="true"></a></h3><p>Verifica se a página atual é uma página de tag.<br>Se uma string for dada como parâmetro, também é verificado se a página atual corresponde à tag fornecida.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- is_tag() %&gt;</span><br><span class="line">&lt;%- is_tag(<span class="string">'hobby'</span>) %&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Manipulacao-de-String" class="article-heading"><a href="#Manipulacao-de-String" class="headerlink" title="Manipulação de String"></a>Manipulação de String<a class="article-anchor" href="#Manipulacao-de-String" aria-hidden="true"></a></h2><h3 id="trim" class="article-heading"><a href="#trim" class="headerlink" title="trim"></a>trim<a class="article-anchor" href="#trim" aria-hidden="true"></a></h3><p>Remove espaços em branco no inicio e fim de uma string.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- trim(string) %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="strip-html" class="article-heading"><a href="#strip-html" class="headerlink" title="strip_html"></a>strip_html<a class="article-anchor" href="#strip-html" aria-hidden="true"></a></h3><p>Remove as tags HTML de uma string.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- strip_html(string) %&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>Exemplo:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- strip_html(<span class="string">'It\'s not &lt;b&gt;important&lt;/b&gt; anymore!'</span>) %&gt;</span><br><span class="line"><span class="comment">// It's not important anymore!</span></span><br></pre></td></tr></table></figure>
+<h3 id="titlecase" class="article-heading"><a href="#titlecase" class="headerlink" title="titlecase"></a>titlecase<a class="article-anchor" href="#titlecase" aria-hidden="true"></a></h3><p>Formata um título com as primeiras letras de palavras importantes em maiúsculo.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- titlecase(string) %&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&lt;%- titlecase(<span class="string">'this is an apple'</span>) %&gt;</span><br><span class="line"># This is an Apple</span><br></pre></td></tr></table></figure>
+<h3 id="markdown" class="article-heading"><a href="#markdown" class="headerlink" title="markdown"></a>markdown<a class="article-anchor" href="#markdown" aria-hidden="true"></a></h3><p>Renderiza um conteúdo em Markdown.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- markdown(str) %&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- markdown(<span class="string">'make me **strong**'</span>) %&gt;</span><br><span class="line"><span class="comment">// make me &lt;strong&gt;strong&lt;/strong&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="render" class="article-heading"><a href="#render" class="headerlink" title="render"></a>render<a class="article-anchor" href="#render" aria-hidden="true"></a></h3><p>Renderiza uma string.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- render(str, engine, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="word-wrap" class="article-heading"><a href="#word-wrap" class="headerlink" title="word_wrap"></a>word_wrap<a class="article-anchor" href="#word-wrap" aria-hidden="true"></a></h3><p>Coloca uma quebra de linha no texto a partir de um limite de caracteres, o limite é <code>length</code>. Por padrão, o valor de <code>length</code> é 80.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- word_wrap(str, [length]) %&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- word_wrap(<span class="string">'Once upon a time'</span>, <span class="number">8</span>) %&gt;</span><br><span class="line"><span class="comment">// Once upon\n a time</span></span><br></pre></td></tr></table></figure>
+<h3 id="truncate" class="article-heading"><a href="#truncate" class="headerlink" title="truncate"></a>truncate<a class="article-anchor" href="#truncate" aria-hidden="true"></a></h3><p>Omite o texto após um certo valor de <code>length</code>. O valor padrão de <code>length</code> é 30 caracteres.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- truncate(text, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>Examples:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, &#123;<span class="attr">length</span>: <span class="number">17</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// Once upon a ti...</span></span><br><span class="line"></span><br><span class="line">&lt;%- truncate(<span class="string">'Once upon a time in a world far far away'</span>, &#123;<span class="attr">length</span>: <span class="number">17</span>, <span class="attr">separator</span>: <span class="string">' '</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// Once upon a...</span></span><br><span class="line"></span><br><span class="line">&lt;%- truncate(<span class="string">'And they found that many people were sleeping better.'</span>, &#123;<span class="attr">length</span>: <span class="number">25</span>, <span class="attr">omission</span>: <span class="string">'... (continued)'</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// And they f... (continued)</span></span><br></pre></td></tr></table></figure>
+<h2 id="Templates" class="article-heading"><a href="#Templates" class="headerlink" title="Templates"></a>Templates<a class="article-anchor" href="#Templates" aria-hidden="true"></a></h2><h3 id="partial" class="article-heading"><a href="#partial" class="headerlink" title="partial"></a>partial<a class="article-anchor" href="#partial" aria-hidden="true"></a></h3><p>Carrega outros arquivos de template. Você pode definir variáveis locais em <code>locals</code>.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- partial(layout, [locals], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cache</code></td>
+<td>Conteúdo da cache (usa fragmento de cache)</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>only</code></td>
+<td>Variáveis locais estritas. Só usa variáveis definidas em <code>locals</code> dentro de templates.</td>
+<td><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="fragment-cache" class="article-heading"><a href="#fragment-cache" class="headerlink" title="fragment_cache"></a>fragment_cache<a class="article-anchor" href="#fragment-cache" aria-hidden="true"></a></h3><p>Cache do conteúdo em um fragmento. Salva o conteúdo dentro de um fragmento e serve o cache quando a próxima requisição chegar.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- fragment_cache(id, fn);</span><br></pre></td></tr></table></figure>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- fragment_cache(<span class="string">'header'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'&lt;header&gt;&lt;/header&gt;'</span>;</span><br><span class="line">&#125;) %&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="Date-amp-Time" class="article-heading"><a href="#Date-amp-Time" class="headerlink" title="Date &amp; Time"></a>Date &amp; Time<a class="article-anchor" href="#Date-amp-Time" aria-hidden="true"></a></h2><h3 id="date" class="article-heading"><a href="#date" class="headerlink" title="date"></a>date<a class="article-anchor" href="#date" aria-hidden="true"></a></h3><p>Insere a data formatada. <code>date</code> pode ser data no padrão Unix, string ISO, objeto de data ou objeto <a href="http://momentjs.com/" target="_blank" rel="noopener">Moment.js</a>. A Opção <code>format</code> usa a definição <code>date_format</code> por padrão.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- date(date, [format]) %&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- date(<span class="built_in">Date</span>.now()) %&gt;</span><br><span class="line"><span class="comment">// 2013-01-01</span></span><br><span class="line"></span><br><span class="line">&lt;%- date(<span class="built_in">Date</span>.now(), <span class="string">'YYYY/M/D'</span>) %&gt;</span><br><span class="line"><span class="comment">// Jan 1 2013</span></span><br></pre></td></tr></table></figure>
+<h3 id="date-xml" class="article-heading"><a href="#date-xml" class="headerlink" title="date_xml"></a>date_xml<a class="article-anchor" href="#date-xml" aria-hidden="true"></a></h3><p>Insere a data no formato XML. <code>date</code> pode ser data no padrão Unix, string ISO, objeto de data ou objeto <a href="http://momentjs.com/" target="_blank" rel="noopener">Moment.js</a>.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- date_xml(date) %&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- date_xml(<span class="built_in">Date</span>.now()) %&gt;</span><br><span class="line"><span class="comment">// 2013-01-01T00:00:00.000Z</span></span><br></pre></td></tr></table></figure>
+<h3 id="time" class="article-heading"><a href="#time" class="headerlink" title="time"></a>time<a class="article-anchor" href="#time" aria-hidden="true"></a></h3><p>Insere a hora formatada. <code>date</code> pode ser data no padrão Unix, string ISO, objeto de data ou objeto <a href="http://momentjs.com/" target="_blank" rel="noopener">Moment.js</a>. A Opção <code>format</code> usa a definição <code>time_format</code> por padrão.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- time(date, [format]) %&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>Exemplo:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- time(<span class="built_in">Date</span>.now()) %&gt;</span><br><span class="line"><span class="comment">// 13:05:12</span></span><br><span class="line"></span><br><span class="line">&lt;%- time(<span class="built_in">Date</span>.now(), <span class="string">'h:mm:ss a'</span>) %&gt;</span><br><span class="line"><span class="comment">// 1:05:12 pm</span></span><br></pre></td></tr></table></figure>
+<h3 id="full-date" class="article-heading"><a href="#full-date" class="headerlink" title="full_date"></a>full_date<a class="article-anchor" href="#full-date" aria-hidden="true"></a></h3><p>Insere a data e a hora formatadas. <code>date</code> pode ser data no padrão Unix, string ISO, objeto de data ou objeto <a href="http://momentjs.com/" target="_blank" rel="noopener">Moment.js</a>. A Opção <code>format</code> usa a definição <code>date_format + time_format</code> por padrão.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- full_date(date, [format]) %&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>()) %&gt;</span><br><span class="line"><span class="comment">// Jan 1, 2013 0:00:00</span></span><br><span class="line"></span><br><span class="line">&lt;%- full_date(<span class="keyword">new</span> <span class="built_in">Date</span>(), <span class="string">'dddd, MMMM Do YYYY, h:mm:ss a'</span>) %&gt;</span><br><span class="line"><span class="comment">// Tuesday, January 1st 2013, 12:00:00 am</span></span><br></pre></td></tr></table></figure>
+<h3 id="moment" class="article-heading"><a href="#moment" class="headerlink" title="moment"></a>moment<a class="article-anchor" href="#moment" aria-hidden="true"></a></h3><p>Biblioteca <a href="http://momentjs.com/" target="_blank" rel="noopener">Moment.js</a>.</p>
+<h2 id="List" class="article-heading"><a href="#List" class="headerlink" title="List"></a>List<a class="article-anchor" href="#List" aria-hidden="true"></a></h2><h3 id="list-categories" class="article-heading"><a href="#list-categories" class="headerlink" title="list_categories"></a>list_categories<a class="article-anchor" href="#list-categories" aria-hidden="true"></a></h3><p>Insere uma lista de todas as categorias.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- list_categories([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>orderby</code></td>
+<td>Critério de ordenação das categorias</td>
+<td>name</td>
+</tr>
+<tr>
+<td><code>order</code></td>
+<td>Tipo de ordenação. <code>1</code>, <code>asc</code> para ascendente; <code>-1</code>, <code>desc</code> para descendente</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>show_count</code></td>
+<td>Exibir o número de postagens para cada categoria</td>
+<td>true</td>
+</tr>
+<tr>
+<td><code>style</code></td>
+<td>Estilo para exibir a lista de categorias. <code>list</code> exibe as categorias em uma lista não ordenada.</td>
+<td>list</td>
+</tr>
+<tr>
+<td><code>separator</code></td>
+<td>Separador entre categorias. (Só funciona se <code>style</code> não for <code>list</code>).</td>
+<td>,</td>
+</tr>
+<tr>
+<td><code>depth</code></td>
+<td>Níveis de categorias a serem exibidos. <code>0</code> exibe todas as categorias e suas categorias filhas; <code>-1</code> é semelhante a <code>0</code>, mas exibe as categorias e suas filhas em um mesmo nível hierárquico; <code>1</code> exibe apenas as categorias de nível superior.</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>class</code></td>
+<td>Nome da classe da lista de categorias.</td>
+<td>category</td>
+</tr>
+<tr>
+<td><code>transform</code></td>
+<td>A função que altera a exibição do nome da categoria.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>suffix</code></td>
+<td>Adiciona um sufixo para o link.</td>
+<td>None</td>
+</tr>
+</tbody>
+</table>
+<h3 id="list-tags" class="article-heading"><a href="#list-tags" class="headerlink" title="list_tags"></a>list_tags<a class="article-anchor" href="#list-tags" aria-hidden="true"></a></h3><p>Insere uma lista de tags.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- list_tags([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>orderby</code></td>
+<td>Critério de ordenação das tags</td>
+<td>name</td>
+</tr>
+<tr>
+<td><code>order</code></td>
+<td>Tipo de ordem. <code>1</code>, <code>asc</code> para ascendente; <code>-1</code>, <code>desc</code> para descendente</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>show_count</code></td>
+<td>Exibir o número de postagens para cada tag</td>
+<td>true</td>
+</tr>
+<tr>
+<td><code>style</code></td>
+<td>Estilo para exibir a lista de tags. <code>list</code> exibe as tags em uma lista não ordenada.</td>
+<td>list</td>
+</tr>
+<tr>
+<td><code>separator</code></td>
+<td>Separador entre tags. (Só funciona se <code>style</code> não for <code>list</code>).</td>
+<td>,</td>
+</tr>
+<tr>
+<td><code>class</code></td>
+<td>Nome da classe da lista de tags.</td>
+<td>tag</td>
+</tr>
+<tr>
+<td><code>transform</code></td>
+<td>A função que altera a exibição do nome da tag.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>amount</code></td>
+<td>O número de tags a exibir (0 = ilimitado)</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>suffix</code></td>
+<td>Adiciona um sufixo para o link.</td>
+<td>Nenhum</td>
+</tr>
+</tbody>
+</table>
+<h3 id="list-archives" class="article-heading"><a href="#list-archives" class="headerlink" title="list_archives"></a>list_archives<a class="article-anchor" href="#list-archives" aria-hidden="true"></a></h3><p>Insere uma lista de arquivos (archives).</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- list_archives([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>type</code></td>
+<td>Tipo. Esse valor pode ser <code>yearly</code> ou <code>monthly</code>.</td>
+<td>monthly</td>
+</tr>
+<tr>
+<td><code>order</code></td>
+<td>Tipo de ordem. <code>1</code>, <code>asc</code> para ascendente; <code>-1</code>, <code>desc</code> para descendente</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>show_count</code></td>
+<td>Exibir o número de postagens para cada arquivo</td>
+<td>true</td>
+</tr>
+<tr>
+<td><code>format</code></td>
+<td>Formato da data</td>
+<td>MMMM YYYY</td>
+</tr>
+<tr>
+<td><code>style</code></td>
+<td>Estilo para exibir a lista de arquivos. <code>list</code> exibe arquivos em uma lista não ordenada.</td>
+<td>list</td>
+</tr>
+<tr>
+<td><code>separator</code></td>
+<td>Separador entre arquivos. (Só funciona se <code>style</code> não for <code>list</code>)</td>
+<td>,</td>
+</tr>
+<tr>
+<td><code>class</code></td>
+<td>Nome da classe da lista de arquivos.</td>
+<td>archive</td>
+</tr>
+<tr>
+<td><code>transform</code></td>
+<td>A função que altera a exibição do nome do archive.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="list-posts" class="article-heading"><a href="#list-posts" class="headerlink" title="list_posts"></a>list_posts<a class="article-anchor" href="#list-posts" aria-hidden="true"></a></h3><p>Insere uma lista de posts.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- list_posts([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>orderby</code></td>
+<td>Critério de ordenação de postagens</td>
+<td>date</td>
+</tr>
+<tr>
+<td><code>order</code></td>
+<td>Tipo de ordem. <code>1</code>, <code>asc</code> para ascendente; <code>-1</code>, <code>desc</code> para descendente</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>style</code></td>
+<td>Estilo para exibir a lista de postagens. <code>list</code> exibe as postagens em uma lista não ordenada.</td>
+<td>list</td>
+</tr>
+<tr>
+<td><code>separator</code></td>
+<td>Separador entre postagens. (Só funciona se <code>style</code> não for <code>list</code>)</td>
+<td>,</td>
+</tr>
+<tr>
+<td><code>class</code></td>
+<td>Nome da classe da lista de postagem.</td>
+<td>post</td>
+</tr>
+<tr>
+<td><code>amount</code></td>
+<td>O número de postagens a serem exibidas (0 = ilimitado)</td>
+<td>6</td>
+</tr>
+<tr>
+<td><code>transform</code></td>
+<td>A função que altera a exibição do nome do post.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="tagcloud" class="article-heading"><a href="#tagcloud" class="headerlink" title="tagcloud"></a>tagcloud<a class="article-anchor" href="#tagcloud" aria-hidden="true"></a></h3><p>Insere uma nuvem de tags.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- tagcloud([tags], [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>min_font</code></td>
+<td>Tamanho mínimo da fonte</td>
+<td>10</td>
+</tr>
+<tr>
+<td><code>max_font</code></td>
+<td>Tamanho máximo da fonte</td>
+<td>20</td>
+</tr>
+<tr>
+<td><code>unit</code></td>
+<td>Unidade de tamanho de fonte</td>
+<td>px</td>
+</tr>
+<tr>
+<td><code>amount</code></td>
+<td>Quantidade total de tags</td>
+<td>40</td>
+</tr>
+<tr>
+<td><code>orderby</code></td>
+<td>Critério de ordenação de tags</td>
+<td>name</td>
+</tr>
+<tr>
+<td><code>order</code></td>
+<td>Tipo de ordem. <code>1</code>, <code>asc</code> para ascendente; <code>-1</code>, <code>desc</code> para descendente</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>color</code></td>
+<td>Colorizar a nuvem de tags?</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>start_color</code></td>
+<td>Cor inicial. Você pode usar o padrão hexadecimal (<code>#b700ff</code>), rgba (<code>rgba(183, 0, 255, 1)</code>), hsla (<code>hsla(283, 100%, 50%, 1)</code>) ou <a href="http://www.w3.org/TR/css3-color/#svg-color" target="_blank" rel="noopener">color keywords</a>. Esta opção só funciona quando <code>color</code> é <code>true</code>.</td>
+<td></td>
+</tr>
+<tr>
+<td><code>end_color</code></td>
+<td>Cor final. Você pode usar o padrão hexadecimal (<code>#b700ff</code>), rgba (<code>rgba(183, 0, 255, 1)</code>), hsla (<code>hsla(283, 100%, 50%, 1)</code>) ou <a href="http://www.w3.org/TR/css3-color/#svg-color" target="_blank" rel="noopener">color keywords</a>. Esta opção só funciona quando <code>color</code> é <code>true</code>.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Miscelanea" class="article-heading"><a href="#Miscelanea" class="headerlink" title="Miscelânea"></a>Miscelânea<a class="article-anchor" href="#Miscelanea" aria-hidden="true"></a></h2><h3 id="paginator" class="article-heading"><a href="#paginator" class="headerlink" title="paginator"></a>paginator<a class="article-anchor" href="#paginator" aria-hidden="true"></a></h3><p>Insere um paginador.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- paginator(options) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>base</code></td>
+<td>URL base</td>
+<td>/</td>
+</tr>
+<tr>
+<td><code>format</code></td>
+<td>Formato da URL</td>
+<td>page/%d/</td>
+</tr>
+<tr>
+<td><code>total</code></td>
+<td>Número de páginas</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>current</code></td>
+<td>Número da página atual</td>
+<td>0</td>
+</tr>
+<tr>
+<td><code>prev_text</code></td>
+<td>O texto do link da página anterior. Funciona apenas se <code>prev_next</code> estiver definido como <code>true</code>.</td>
+<td>Prev</td>
+</tr>
+<tr>
+<td><code>next_text</code></td>
+<td>O texto do link da próxima página. Funciona apenas se <code>prev_next</code> estiver definido como <code>true</code>.</td>
+<td>Next</td>
+</tr>
+<tr>
+<td><code>space</code></td>
+<td>Espaço do texto</td>
+<td>&hellp;</td>
+</tr>
+<tr>
+<td><code>prev_next</code></td>
+<td>Exibir os links anteriores e seguintes</td>
+<td>true</td>
+</tr>
+<tr>
+<td><code>end_size</code></td>
+<td>O número de páginas exibidas no início e no final</td>
+<td>1</td>
+</tr>
+<tr>
+<td><code>mid_size</code></td>
+<td>O número de páginas exibidas entre a página atual, mas não incluindo a página atual</td>
+<td>2</td>
+</tr>
+<tr>
+<td><code>show_all</code></td>
+<td>Exibir todas as páginas. Se isso for definido como <code>true</code>, <code>end_size</code> e<code>mid_size</code> não irão funcionar.</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<h3 id="search-form" class="article-heading"><a href="#search-form" class="headerlink" title="search_form"></a>search_form<a class="article-anchor" href="#search-form" aria-hidden="true"></a></h3><p>Insere o formulário de busca do Google.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- search_form(options) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>class</code></td>
+<td>O nome da classe do formulário</td>
+<td>search-form</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td>Palavra de sugestão de busca</td>
+<td>Search</td>
+</tr>
+<tr>
+<td><code>button</code></td>
+<td>Exibir o botão de busca. O valor pode ser um booleano ou uma string. Quando o valor é uma string, ele será o texto do botão.</td>
+<td>false</td>
+</tr>
+</tbody>
+</table>
+<h3 id="number-format" class="article-heading"><a href="#number-format" class="headerlink" title="number_format"></a>number_format<a class="article-anchor" href="#number-format" aria-hidden="true"></a></h3><p>Formata um número.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- number_format(number, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>precision</code></td>
+<td>A precisão do número. O valor pode ser <code>false</code> ou um número inteiro não negativo.</td>
+<td>false</td>
+</tr>
+<tr>
+<td><code>delimiter</code></td>
+<td>O delimitador de casa de milhares</td>
+<td>,</td>
+</tr>
+<tr>
+<td><code>separator</code></td>
+<td>O separador entre os dígitos fracionários e inteiros.</td>
+<td>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;<span class="attr">precision</span>: <span class="number">1</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// 12,345.68</span></span><br><span class="line"></span><br><span class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;<span class="attr">precision</span>: <span class="number">4</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// 12,345.6700</span></span><br><span class="line"></span><br><span class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;<span class="attr">precision</span>: <span class="number">0</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// 12,345</span></span><br><span class="line"></span><br><span class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;<span class="attr">delimiter</span>: <span class="string">''</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// 12345.67</span></span><br><span class="line"></span><br><span class="line">&lt;%- number_format(<span class="number">12345.67</span>, &#123;<span class="attr">separator</span>: <span class="string">'/'</span>&#125;) %&gt;</span><br><span class="line"><span class="comment">// 12,345/67</span></span><br></pre></td></tr></table></figure>
+<h3 id="open-graph" class="article-heading"><a href="#open-graph" class="headerlink" title="open_graph"></a>open_graph<a class="article-anchor" href="#open-graph" aria-hidden="true"></a></h3><p>Insere dados do <a href="http://ogp.me/" target="_blank" rel="noopener">Open Graph</a>.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- open_graph([options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>Título da página (<code>og:title</code>)</td>
+<td><code>page.title</code></td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>Tipo de página (<code>og:type</code>)</td>
+<td>blog</td>
+</tr>
+<tr>
+<td><code>url</code></td>
+<td>URL da página (<code>og:url</code>)</td>
+<td><code>url</code></td>
+</tr>
+<tr>
+<td><code>image</code></td>
+<td>Capa da página (<code>og:image</code>)</td>
+<td>Primeira imagem no conteúdo</td>
+</tr>
+<tr>
+<td><code>site_name</code></td>
+<td>Nome do site (<code>og:site_name</code>)</td>
+<td><code>config.title</code></td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>Descrição da página (<code>og:desription</code>)</td>
+<td>Trecho da página ou os 200 primeiros caracteres do conteúdo</td>
+</tr>
+<tr>
+<td><code>twitter_card</code></td>
+<td>Tipo de Twitter card (<code>twitter:card</code>)</td>
+<td>summary</td>
+</tr>
+<tr>
+<td><code>twitter_id</code></td>
+<td>Twitter ID (<code>twitter:creator</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>twitter_site</code></td>
+<td>Site do Twitter (<code>twitter:site</code>)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>google_plus</code></td>
+<td>Link de perfil do Google+</td>
+<td></td>
+</tr>
+<tr>
+<td><code>fb_admins</code></td>
+<td>ID de administrador do Facebook</td>
+<td></td>
+</tr>
+<tr>
+<td><code>fb_app_id</code></td>
+<td>ID da aplicação do Facebook</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="toc" class="article-heading"><a href="#toc" class="headerlink" title="toc"></a>toc<a class="article-anchor" href="#toc" aria-hidden="true"></a></h3><p>Analisa todas as tags de título (h1~h6) no conteúdo e insere um índice.</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- toc(str, [options]) %&gt;</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Opção</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>class</code></td>
+<td>Nome da classe</td>
+<td>toc</td>
+</tr>
+<tr>
+<td><code>list_number</code></td>
+<td>Exibe o número da lista</td>
+<td>true</td>
+</tr>
+<tr>
+<td><code>max_depth</code></td>
+<td>Profundidade máxima do cabeçalho gerado</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Exemplos:</strong></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- toc(page.content) %&gt;</span><br></pre></td></tr></table></figure>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2017-12-11T16:40:21.559Z" itemprop="dateModified">Última Atualização: 2017-12-11</time>
+                <a href="variables.html" class="article-footer-prev" title="Variáveis"><i class="fa fa-chevron-left"></i><span>Anterior</span></a><a href="internationalization.html" class="article-footer-next" title="Internacionalização (i18n)"><span>Próximo</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'hexojs';
+  var disqus_url = 'https://hexo.io/pt-br/docs/helpers.html';
+  var disqus_title = "Helpers";
+  var disqus_config = function(){
+    this.language = 'pt-br';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
+              <strong class="sidebar-title">Conteúdo</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#URL"><span class="toc-text"><a href="#URL" class="headerlink" title="URL"></a>URL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#url-for"><span class="toc-text"><a href="#url-for" class="headerlink" title="url_for"></a>url_for</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#relative-url"><span class="toc-text"><a href="#relative-url" class="headerlink" title="relative_url"></a>relative_url</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gravatar"><span class="toc-text"><a href="#gravatar" class="headerlink" title="gravatar"></a>gravatar</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML-Tags"><span class="toc-text"><a href="#HTML-Tags" class="headerlink" title="HTML Tags"></a>HTML Tags</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#css"><span class="toc-text"><a href="#css" class="headerlink" title="css"></a>css</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#js"><span class="toc-text"><a href="#js" class="headerlink" title="js"></a>js</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#link-to"><span class="toc-text"><a href="#link-to" class="headerlink" title="link_to"></a>link_to</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mail-to"><span class="toc-text"><a href="#mail-to" class="headerlink" title="mail_to"></a>mail_to</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#image-tag"><span class="toc-text"><a href="#image-tag" class="headerlink" title="image_tag"></a>image_tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#favicon-tag"><span class="toc-text"><a href="#favicon-tag" class="headerlink" title="favicon_tag"></a>favicon_tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#feed-tag"><span class="toc-text"><a href="#feed-tag" class="headerlink" title="feed_tag"></a>feed_tag</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tags-condicionais"><span class="toc-text"><a href="#Tags-condicionais" class="headerlink" title="Tags condicionais"></a>Tags condicionais</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#is-current"><span class="toc-text"><a href="#is-current" class="headerlink" title="is_current"></a>is_current</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#is-home"><span class="toc-text"><a href="#is-home" class="headerlink" title="is_home"></a>is_home</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#is-post"><span class="toc-text"><a href="#is-post" class="headerlink" title="is_post"></a>is_post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#is-archive"><span class="toc-text"><a href="#is-archive" class="headerlink" title="is_archive"></a>is_archive</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#is-year"><span class="toc-text"><a href="#is-year" class="headerlink" title="is_year"></a>is_year</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#is-month"><span class="toc-text"><a href="#is-month" class="headerlink" title="is_month"></a>is_month</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#is-category"><span class="toc-text"><a href="#is-category" class="headerlink" title="is_category"></a>is_category</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#is-tag"><span class="toc-text"><a href="#is-tag" class="headerlink" title="is_tag"></a>is_tag</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Manipulacao-de-String"><span class="toc-text"><a href="#Manipulacao-de-String" class="headerlink" title="Manipula&#xE7;&#xE3;o de String"></a>Manipula&#xE7;&#xE3;o de String</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#trim"><span class="toc-text"><a href="#trim" class="headerlink" title="trim"></a>trim</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#strip-html"><span class="toc-text"><a href="#strip-html" class="headerlink" title="strip_html"></a>strip_html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#titlecase"><span class="toc-text"><a href="#titlecase" class="headerlink" title="titlecase"></a>titlecase</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#markdown"><span class="toc-text"><a href="#markdown" class="headerlink" title="markdown"></a>markdown</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#render"><span class="toc-text"><a href="#render" class="headerlink" title="render"></a>render</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#word-wrap"><span class="toc-text"><a href="#word-wrap" class="headerlink" title="word_wrap"></a>word_wrap</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#truncate"><span class="toc-text"><a href="#truncate" class="headerlink" title="truncate"></a>truncate</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Templates"><span class="toc-text"><a href="#Templates" class="headerlink" title="Templates"></a>Templates</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#partial"><span class="toc-text"><a href="#partial" class="headerlink" title="partial"></a>partial</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#fragment-cache"><span class="toc-text"><a href="#fragment-cache" class="headerlink" title="fragment_cache"></a>fragment_cache</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date-amp-Time"><span class="toc-text"><a href="#Date-amp-Time" class="headerlink" title="Date &amp; Time"></a>Date &amp; Time</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#date"><span class="toc-text"><a href="#date" class="headerlink" title="date"></a>date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#date-xml"><span class="toc-text"><a href="#date-xml" class="headerlink" title="date_xml"></a>date_xml</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#time"><span class="toc-text"><a href="#time" class="headerlink" title="time"></a>time</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#full-date"><span class="toc-text"><a href="#full-date" class="headerlink" title="full_date"></a>full_date</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#moment"><span class="toc-text"><a href="#moment" class="headerlink" title="moment"></a>moment</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#List"><span class="toc-text"><a href="#List" class="headerlink" title="List"></a>List</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#list-categories"><span class="toc-text"><a href="#list-categories" class="headerlink" title="list_categories"></a>list_categories</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list-tags"><span class="toc-text"><a href="#list-tags" class="headerlink" title="list_tags"></a>list_tags</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list-archives"><span class="toc-text"><a href="#list-archives" class="headerlink" title="list_archives"></a>list_archives</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#list-posts"><span class="toc-text"><a href="#list-posts" class="headerlink" title="list_posts"></a>list_posts</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tagcloud"><span class="toc-text"><a href="#tagcloud" class="headerlink" title="tagcloud"></a>tagcloud</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Miscelanea"><span class="toc-text"><a href="#Miscelanea" class="headerlink" title="Miscel&#xE2;nea"></a>Miscel&#xE2;nea</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#paginator"><span class="toc-text"><a href="#paginator" class="headerlink" title="paginator"></a>paginator</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#search-form"><span class="toc-text"><a href="#search-form" class="headerlink" title="search_form"></a>search_form</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#number-format"><span class="toc-text"><a href="#number-format" class="headerlink" title="number_format"></a>number_format</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#open-graph"><span class="toc-text"><a href="#open-graph" class="headerlink" title="open_graph"></a>open_graph</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#toc"><span class="toc-text"><a href="#toc" class="headerlink" title="toc"></a>toc</span></a></li></ol></li></ol>
+              <a href="#" id="article-toc-top">Ir para o Topo</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">Começando</strong><a href="index.html" class="sidebar-link">Visão Geral</a><a href="setup.html" class="sidebar-link">Setup</a><a href="configuration.html" class="sidebar-link">Configuração</a><a href="commands.html" class="sidebar-link">Comandos</a><a href="migration.html" class="sidebar-link">Migração</a><strong class="sidebar-title">Uso Básico</strong><a href="writing.html" class="sidebar-link">Escrevendo</a><a href="front-matter.html" class="sidebar-link">Front-matter</a><a href="tag-plugins.html" class="sidebar-link">Tag Plugins</a><a href="asset-folders.html" class="sidebar-link">Diretórios de Recursos</a><a href="data-files.html" class="sidebar-link">Arquivos de Dados</a><a href="server.html" class="sidebar-link">Servidor</a><a href="generating.html" class="sidebar-link">Gerando</a><a href="deployment.html" class="sidebar-link">Implantação</a><strong class="sidebar-title">Customização</strong><a href="permalinks.html" class="sidebar-link">Links Permanentes</a><a href="themes.html" class="sidebar-link">Temas</a><a href="templates.html" class="sidebar-link">Templates</a><a href="variables.html" class="sidebar-link">Variáveis</a><a href="helpers.html" class="sidebar-link current">Helpers</a><a href="internationalization.html" class="sidebar-link">Internacionalização (i18n)</a><a href="plugins.html" class="sidebar-link">Plugins</a><strong class="sidebar-title">Miscelânea</strong><a href="troubleshooting.html" class="sidebar-link">Soluções de Problemas</a><a href="contributing.html" class="sidebar-link">Contribuindo</a>
+  </div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2017 <a href="https://github.com/hexojs/hexo/graphs/contributors" target="_blank">Hexo</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/hexojs" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/hexojs/hexo" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/pt-br/docs/" class="mobile-nav-link">Docs</a><a href="/pt-br/api/" class="mobile-nav-link">API</a><a href="/news/" class="mobile-nav-link">Novidades</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/themes/" class="mobile-nav-link">Temas</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/hexojs/hexo" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Começando</strong><a href="index.html" class="mobile-nav-link">Visão Geral</a><a href="setup.html" class="mobile-nav-link">Setup</a><a href="configuration.html" class="mobile-nav-link">Configuração</a><a href="commands.html" class="mobile-nav-link">Comandos</a><a href="migration.html" class="mobile-nav-link">Migração</a><strong class="mobile-nav-title">Uso Básico</strong><a href="writing.html" class="mobile-nav-link">Escrevendo</a><a href="front-matter.html" class="mobile-nav-link">Front-matter</a><a href="tag-plugins.html" class="mobile-nav-link">Tag Plugins</a><a href="asset-folders.html" class="mobile-nav-link">Diretórios de Recursos</a><a href="data-files.html" class="mobile-nav-link">Arquivos de Dados</a><a href="server.html" class="mobile-nav-link">Servidor</a><a href="generating.html" class="mobile-nav-link">Gerando</a><a href="deployment.html" class="mobile-nav-link">Implantação</a><strong class="mobile-nav-title">Customização</strong><a href="permalinks.html" class="mobile-nav-link">Links Permanentes</a><a href="themes.html" class="mobile-nav-link">Temas</a><a href="templates.html" class="mobile-nav-link">Templates</a><a href="variables.html" class="mobile-nav-link">Variáveis</a><a href="helpers.html" class="mobile-nav-link current">Helpers</a><a href="internationalization.html" class="mobile-nav-link">Internacionalização (i18n)</a><a href="plugins.html" class="mobile-nav-link">Plugins</a><strong class="mobile-nav-title">Miscelânea</strong><a href="troubleshooting.html" class="mobile-nav-link">Soluções de Problemas</a><a href="contributing.html" class="mobile-nav-link">Contribuindo</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>Português (Brasil)</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/helpers.html">
+      
+        <option value="en">English</option>
+      
+        <option value="zh-tw">正體中文</option>
+      
+        <option value="zh-cn">简体中文</option>
+      
+        <option value="ru">Русский</option>
+      
+        <option value="ko">한국어</option>
+      
+        <option value="pt-br" selected>Português (Brasil)</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<script src="/build/js/main-8827054328.js"></script>
+
+<!-- Algolia -->
+
+
+</body>
+</html>

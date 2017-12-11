@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Soluções de Problemas | Hexo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://hexo.io/pt-br/docs/troubleshooting.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://hexo.io/docs/troubleshooting.html">
+    
+      <link rel="alternative" hreflang="zh-tw" href="https://hexo.io/zh-tw/docs/troubleshooting.html">
+    
+      <link rel="alternative" hreflang="zh-cn" href="https://hexo.io/zh-cn/docs/troubleshooting.html">
+    
+      <link rel="alternative" hreflang="ru" href="https://hexo.io/ru/docs/troubleshooting.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://hexo.io/ko/docs/troubleshooting.html">
+    
+      <link rel="alternative" hreflang="pt-br" href="https://hexo.io/pt-br/docs/troubleshooting.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/build/css/navy-a475bf266d.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="Hexo">
+  <!-- Open Graph -->
+  <meta name="description" content="No caso de você ter problemas com o uso do Hexo, aqui está uma lista de soluções para alguns dos problemas mais frequentes. Se esta página não ajudar a resolver seu problema, tente fazer uma pesquisa">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Soluções de Problemas">
+<meta property="og:url" content="https://hexo.io/pt-br/docs/troubleshooting.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="No caso de você ter problemas com o uso do Hexo, aqui está uma lista de soluções para alguns dos problemas mais frequentes. Se esta página não ajudar a resolver seu problema, tente fazer uma pesquisa">
+<meta property="og:locale" content="pt-br">
+<meta property="og:updated_time" content="2017-12-11T16:40:21.563Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Soluções de Problemas">
+<meta name="twitter:description" content="No caso de você ter problemas com o uso do Hexo, aqui está uma lista de soluções para alguns dos problemas mais frequentes. Se esta página não ajudar a resolver seu problema, tente fazer uma pesquisa">
+<meta name="twitter:site" content="hexojs">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48498357-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/pt-br/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/pt-br/docs/" class="main-nav-link">Docs</a><a href="/pt-br/api/" class="main-nav-link">API</a><a href="/news/" class="main-nav-link">Novidades</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/themes/" class="main-nav-link">Temas</a>
+      <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>Português (Brasil)</span></label>
+      <select id="lang-select" data-canonical="docs/troubleshooting.html">
+        
+          <option value="en">English</option>
+        
+          <option value="zh-tw">正體中文</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+          <option value="ru">Русский</option>
+        
+          <option value="ko">한국어</option>
+        
+          <option value="pt-br" selected>Português (Brasil)</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Soluções de Problemas</h1>
+                <a href="https://github.com/hexojs/site/edit/master/source/pt-br/docs/troubleshooting.md" class="article-edit-link" title="Melhore esta Documentação"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p>No caso de você ter problemas com o uso do Hexo, aqui está uma lista de soluções para alguns dos problemas mais frequentes. Se esta página não ajudar a resolver seu problema, tente fazer uma pesquisa no nosso <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a> ou no nosso <a href="https://groups.google.com/group/hexo" target="_blank" rel="noopener">Google Group</a>.</p>
+<h2 id="YAML-Parsing-Error" class="article-heading"><a href="#YAML-Parsing-Error" class="headerlink" title="YAML Parsing Error"></a>YAML Parsing Error<a class="article-anchor" href="#YAML-Parsing-Error" aria-hidden="true"></a></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">JS-YAML: incomplete explicit mapping pair; a key node is missed at line 18, column 29:</span><br><span class="line">      last_updated: Last updated: %s</span><br></pre></td></tr></table></figure>
+<p>Delimite a string com aspas duplas se ela contiver dois pontos (:).</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">JS-YAML: bad indentation of a mapping entry at line 18, column 31:</span><br><span class="line">      last_updated:&quot;Last updated: %s&quot;</span><br></pre></td></tr></table></figure>
+<p>Certifique-se de que está usando indentação por espaço (soft tabs) e adicione um espaço após os dois pontos.</p>
+<p>Para mais informações, veja <a href="http://www.yaml.org/spec/1.2/spec.html" target="_blank" rel="noopener">YAML Spec</a>.</p>
+<h2 id="EMFILE-Error" class="article-heading"><a href="#EMFILE-Error" class="headerlink" title="EMFILE Error"></a>EMFILE Error<a class="article-anchor" href="#EMFILE-Error" aria-hidden="true"></a></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Error: EMFILE, too many open files</span><br></pre></td></tr></table></figure>
+<p>Embora o Node.js tenha I/O não bloqueante, o número máximo de I/O síncronas ainda é limitado pelo sistema. Você pode encontrar um erro EMFILE ao tentar gerar uma grande quantidade de arquivos. Você pode tentar executar o seguinte comando para aumentar o número de operações de I/O síncronas permitidas.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">ulimit</span> -n 10000</span><br></pre></td></tr></table></figure>
+<h2 id="Processos-com-Pouca-Memoria" class="article-heading"><a href="#Processos-com-Pouca-Memoria" class="headerlink" title="Processos com Pouca Memória"></a>Processos com Pouca Memória<a class="article-anchor" href="#Processos-com-Pouca-Memoria" aria-hidden="true"></a></h2><p>Quando você encontrar esse erro durante a geração:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">FATAL ERROR: CALL_AND_RETRY_LAST Allocation failed - process out of memory</span><br></pre></td></tr></table></figure></p>
+<p>Aumente o tamanho da memória heap do Node.js alterando a primeira linha de <code>hexo-cli</code> (o comando <code>which hexo</code> encontra o arquivo).<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#!/usr/bin/env node --max_old_space_size=8192</span><br></pre></td></tr></table></figure></p>
+<p><a href="https://github.com/hexojs/hexo/issues/1735" target="_blank" rel="noopener">Out of memory while generating a huge blog · Issue #1735 · hexojs/hexo</a></p>
+<h2 id="Problemas-de-Deploy-com-Git" class="article-heading"><a href="#Problemas-de-Deploy-com-Git" class="headerlink" title="Problemas de Deploy com Git"></a>Problemas de Deploy com Git<a class="article-anchor" href="#Problemas-de-Deploy-com-Git" aria-hidden="true"></a></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">error: RPC failed; result=22, HTTP code = 403</span><br><span class="line"></span><br><span class="line">fatal: &apos;username.github.io&apos; does not appear to be a git repository</span><br></pre></td></tr></table></figure>
+<p>Certifique-se de ter <a href="https://help.github.com/articles/set-up-git" target="_blank" rel="noopener">configurado o git</a> corretamente no seu computador ou tente usar a URL HTTPS do repositório ao invés da URL SSH.</p>
+<h2 id="Problemas-de-Servidor" class="article-heading"><a href="#Problemas-de-Servidor" class="headerlink" title="Problemas de Servidor"></a>Problemas de Servidor<a class="article-anchor" href="#Problemas-de-Servidor" aria-hidden="true"></a></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Error: listen EADDRINUSE</span><br></pre></td></tr></table></figure>
+<p>Você pode ter iniciado dois servidores do Hexo ao mesmo tempo ou pode haver outro aplicativo usando a mesma porta. Tente modificar a configuração <code>port</code> ou iniciar o servidor do Hexo com o argumento <code>-p</code>.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server -p 5000</span><br></pre></td></tr></table></figure>
+<h2 id="Problemas-na-Instalacao-de-Plugins" class="article-heading"><a href="#Problemas-na-Instalacao-de-Plugins" class="headerlink" title="Problemas na Instalação de Plugins"></a>Problemas na Instalação de Plugins<a class="article-anchor" href="#Problemas-na-Instalacao-de-Plugins" aria-hidden="true"></a></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm ERR! node-waf configure build</span><br></pre></td></tr></table></figure>
+<p>Este erro pode ocorrer ao tentar instalar um plugin escrito em C, C++ ou outra linguagem diferente de JavaScript. Verifique se você instalou o compilador correto em seu computador.</p>
+<h2 id="Error-com-DTrace-Mac-OS-X" class="article-heading"><a href="#Error-com-DTrace-Mac-OS-X" class="headerlink" title="Error com DTrace (Mac OS X)"></a>Error com DTrace (Mac OS X)<a class="article-anchor" href="#Error-com-DTrace-Mac-OS-X" aria-hidden="true"></a></h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123; [Error: Cannot find module &apos;./build/Release/DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; &#125;</span><br><span class="line">&#123; [Error: Cannot find module &apos;./build/default/DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; &#125;</span><br><span class="line">&#123; [Error: Cannot find module &apos;./build/Debug/DTraceProviderBindings&apos;] code: &apos;MODULE_NOT_FOUND&apos; &#125;</span><br></pre></td></tr></table></figure>
+<p>A instalação do DTrace pode ter problemas, use isso:<br><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ npm install hexo --no-optional</span><br></pre></td></tr></table></figure></p>
+<p>Veja a issue <a href="https://github.com/hexojs/hexo/issues/1326#issuecomment-113871796" target="_blank" rel="noopener">#1326</a> no Github.</p>
+<h2 id="Iterando-o-Modelo-de-Dados-em-Jade-ou-Swig" class="article-heading"><a href="#Iterando-o-Modelo-de-Dados-em-Jade-ou-Swig" class="headerlink" title="Iterando o Modelo de Dados em Jade ou Swig"></a>Iterando o Modelo de Dados em Jade ou Swig<a class="article-anchor" href="#Iterando-o-Modelo-de-Dados-em-Jade-ou-Swig" aria-hidden="true"></a></h2><p>A Hexo usa <a href="https://github.com/tommy351/warehouse" target="_blank" rel="noopener">Warehouse</a> para o seu modelo de dados. Ele não é um array, então você pode ter que transformar objetos em iteráveis.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% for post in site.posts.toArray() %&#125;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Dados-nao-Atualizados" class="article-heading"><a href="#Dados-nao-Atualizados" class="headerlink" title="Dados não Atualizados"></a>Dados não Atualizados<a class="article-anchor" href="#Dados-nao-Atualizados" aria-hidden="true"></a></h2><p>Alguns dados não podem ser atualizados ou os arquivos recém-gerados são idênticos aos da última versão. Limpe o cache e tente novamente.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+<h2 id="Nenhum-Comando-e-Executado" class="article-heading"><a href="#Nenhum-Comando-e-Executado" class="headerlink" title="Nenhum Comando é Executado"></a>Nenhum Comando é Executado<a class="article-anchor" href="#Nenhum-Comando-e-Executado" aria-hidden="true"></a></h2><p>Quando você não consegue executar nenhum comando do Hexo, com exceção de <code>help</code>, <code>init</code> e <code>version</code>, isso pode estar acontecendo pela falta do <code>hexo</code> no <code>package.json</code>:</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">"hexo"</span>: &#123;</span><br><span class="line">    <span class="attr">"version"</span>: <span class="string">"3.2.2"</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Conteudo-Escapando" class="article-heading"><a href="#Conteudo-Escapando" class="headerlink" title="Conteúdo Escapando"></a>Conteúdo Escapando<a class="article-anchor" href="#Conteudo-Escapando" aria-hidden="true"></a></h2><p>O Hexo usa <a href="http://mozilla.github.io/nunjucks/" target="_blank" rel="noopener">Nunjucks</a> para renderizar posts (<a href="http://paularmstrong.github.io/swig/" target="_blank" rel="noopener">Swig</a> foi usado na versão mais antiga, que compartilha uma sintaxe semelhante). O conteúdo delimitado com <code>{{ }}</code> ou <code>{% %}</code> será “parseado” e pode causar problemas. Você pode empacotar um conteúdo sensível com a <a href="tag-plugins.html#Raw">tag plugin <code>raw</code></a>.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% raw %&#125;</span><br><span class="line">Hello &#123;&#123; sensitive &#125;&#125;</span><br><span class="line">&#123;% endraw %&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="ENOSPC-Error-Linux" class="article-heading"><a href="#ENOSPC-Error-Linux" class="headerlink" title="ENOSPC Error (Linux)"></a>ENOSPC Error (Linux)<a class="article-anchor" href="#ENOSPC-Error-Linux" aria-hidden="true"></a></h2><p>Às vezes, ao executar o comando <code>$ hexo server</code> é retornado o seguinte erro:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Error: watch ENOSPC ...</span><br></pre></td></tr></table></figure></p>
+<p>Isto pode ser consertado através do comando <code>$ npm dedupe</code> ou, se isso não funcionar, tente o seguinte comando no terminal do Linux:<br><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">echo</span> fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf &amp;&amp; sudo sysctl -p</span><br></pre></td></tr></table></figure></p>
+<p>Isso aumentará o limite do número de arquivos que você pode assistir.</p>
+<h2 id="EMPERM-Error-Windows-Subsystem-for-Linux" class="article-heading"><a href="#EMPERM-Error-Windows-Subsystem-for-Linux" class="headerlink" title="EMPERM Error (Windows Subsystem for Linux)"></a>EMPERM Error (Windows Subsystem for Linux)<a class="article-anchor" href="#EMPERM-Error-Windows-Subsystem-for-Linux" aria-hidden="true"></a></h2><p>Ao executar <code>$ hexo server</code> em um ambiente BashOnWindows, ele retorna o seguinte erro:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Error: watch /path/to/hexo/theme/ EMPERM</span><br></pre></td></tr></table></figure></p>
+<p>Infelizmente, o WSL (Windows Subsystem for Linux) atualmente não suporta os observadores (watchers) do sistema de arquivos. Portanto, o recurso de atualização em tempo real do servidor do Hexo não está disponível no momento. Contudo, ainda é possível executar o servidor a partir de um ambiente WSL, primeiro gere os arquivos e depois execute servidor em modo estático:<br><figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br><span class="line">$ hexo server -s</span><br></pre></td></tr></table></figure></p>
+<p>Este é <a href="https://github.com/Microsoft/BashOnWindows/issues/216" target="_blank" rel="noopener">um problema no BashOnWindows conhecido</a>, e em 15 de agosto de 2016, a equipe do Windows disse que eles trabalhariam nisso. Você pode obter atualizações de progresso e encorajá-los a priorizá-lo na <a href="https://wpdev.uservoice.com/forums/266908-command-prompt-console-bash-on-ubuntu-on-windo/suggestions/13469097-support-for-filesystem-watchers-like-inotify" target="_blank" rel="noopener">página UserVoice do problema</a>.</p>
+<h2 id="Erro-de-Renderizacao-de-Template" class="article-heading"><a href="#Erro-de-Renderizacao-de-Template" class="headerlink" title="Erro de Renderização de Template"></a>Erro de Renderização de Template<a class="article-anchor" href="#Erro-de-Renderizacao-de-Template" aria-hidden="true"></a></h2><p>Às vezes, ao executar o comando <code>$ hexo generate</code>, ele retorna um erro:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">FATAL Something&apos;s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span><br><span class="line">Template render error: (unknown path)</span><br></pre></td></tr></table></figure></p>
+<p>Isso significa que existem algumas palavras irreconhecíveis no seu arquivo. Existem duas possibilidades, uma é seu novo page/post, a outra é o <code>_config.yml</code>.<br>Em <code>_config.yml</code>, não esqueça de adicionar espaços em branco antes de uma lista no hash. Existe uma página wiki sobre <a href="https://en.wikipedia.org/wiki/YAML" target="_blank" rel="noopener">YAML</a>.</p>
+<p>Forma errada:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">plugins:</span><br><span class="line">- hexo-generator-feed</span><br><span class="line">- hexo-generator-sitemap</span><br></pre></td></tr></table></figure></p>
+<p>Forma correta:<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">plugins:</span><br><span class="line">  - hexo-generator-feed</span><br><span class="line">  - hexo-generator-sitemap</span><br></pre></td></tr></table></figure></p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2017-12-11T16:40:21.563Z" itemprop="dateModified">Última Atualização: 2017-12-11</time>
+                <a href="plugins.html" class="article-footer-prev" title="Plugins"><i class="fa fa-chevron-left"></i><span>Anterior</span></a><a href="contributing.html" class="article-footer-next" title="Contribuindo"><span>Próximo</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'hexojs';
+  var disqus_url = 'https://hexo.io/pt-br/docs/troubleshooting.html';
+  var disqus_title = "Soluções de Problemas";
+  var disqus_config = function(){
+    this.language = 'pt-br';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
+              <strong class="sidebar-title">Conteúdo</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#YAML-Parsing-Error"><span class="toc-text"><a href="#YAML-Parsing-Error" class="headerlink" title="YAML Parsing Error"></a>YAML Parsing Error</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EMFILE-Error"><span class="toc-text"><a href="#EMFILE-Error" class="headerlink" title="EMFILE Error"></a>EMFILE Error</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Processos-com-Pouca-Memoria"><span class="toc-text"><a href="#Processos-com-Pouca-Memoria" class="headerlink" title="Processos com Pouca Mem&#xF3;ria"></a>Processos com Pouca Mem&#xF3;ria</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Problemas-de-Deploy-com-Git"><span class="toc-text"><a href="#Problemas-de-Deploy-com-Git" class="headerlink" title="Problemas de Deploy com Git"></a>Problemas de Deploy com Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Problemas-de-Servidor"><span class="toc-text"><a href="#Problemas-de-Servidor" class="headerlink" title="Problemas de Servidor"></a>Problemas de Servidor</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Problemas-na-Instalacao-de-Plugins"><span class="toc-text"><a href="#Problemas-na-Instalacao-de-Plugins" class="headerlink" title="Problemas na Instala&#xE7;&#xE3;o de Plugins"></a>Problemas na Instala&#xE7;&#xE3;o de Plugins</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Error-com-DTrace-Mac-OS-X"><span class="toc-text"><a href="#Error-com-DTrace-Mac-OS-X" class="headerlink" title="Error com DTrace (Mac OS X)"></a>Error com DTrace (Mac OS X)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Iterando-o-Modelo-de-Dados-em-Jade-ou-Swig"><span class="toc-text"><a href="#Iterando-o-Modelo-de-Dados-em-Jade-ou-Swig" class="headerlink" title="Iterando o Modelo de Dados em Jade ou Swig"></a>Iterando o Modelo de Dados em Jade ou Swig</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Dados-nao-Atualizados"><span class="toc-text"><a href="#Dados-nao-Atualizados" class="headerlink" title="Dados n&#xE3;o Atualizados"></a>Dados n&#xE3;o Atualizados</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Nenhum-Comando-e-Executado"><span class="toc-text"><a href="#Nenhum-Comando-e-Executado" class="headerlink" title="Nenhum Comando &#xE9; Executado"></a>Nenhum Comando &#xE9; Executado</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Conteudo-Escapando"><span class="toc-text"><a href="#Conteudo-Escapando" class="headerlink" title="Conte&#xFA;do Escapando"></a>Conte&#xFA;do Escapando</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ENOSPC-Error-Linux"><span class="toc-text"><a href="#ENOSPC-Error-Linux" class="headerlink" title="ENOSPC Error (Linux)"></a>ENOSPC Error (Linux)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#EMPERM-Error-Windows-Subsystem-for-Linux"><span class="toc-text"><a href="#EMPERM-Error-Windows-Subsystem-for-Linux" class="headerlink" title="EMPERM Error (Windows Subsystem for Linux)"></a>EMPERM Error (Windows Subsystem for Linux)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Erro-de-Renderizacao-de-Template"><span class="toc-text"><a href="#Erro-de-Renderizacao-de-Template" class="headerlink" title="Erro de Renderiza&#xE7;&#xE3;o de Template"></a>Erro de Renderiza&#xE7;&#xE3;o de Template</span></a></li></ol>
+              <a href="#" id="article-toc-top">Ir para o Topo</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">Começando</strong><a href="index.html" class="sidebar-link">Visão Geral</a><a href="setup.html" class="sidebar-link">Setup</a><a href="configuration.html" class="sidebar-link">Configuração</a><a href="commands.html" class="sidebar-link">Comandos</a><a href="migration.html" class="sidebar-link">Migração</a><strong class="sidebar-title">Uso Básico</strong><a href="writing.html" class="sidebar-link">Escrevendo</a><a href="front-matter.html" class="sidebar-link">Front-matter</a><a href="tag-plugins.html" class="sidebar-link">Tag Plugins</a><a href="asset-folders.html" class="sidebar-link">Diretórios de Recursos</a><a href="data-files.html" class="sidebar-link">Arquivos de Dados</a><a href="server.html" class="sidebar-link">Servidor</a><a href="generating.html" class="sidebar-link">Gerando</a><a href="deployment.html" class="sidebar-link">Implantação</a><strong class="sidebar-title">Customização</strong><a href="permalinks.html" class="sidebar-link">Links Permanentes</a><a href="themes.html" class="sidebar-link">Temas</a><a href="templates.html" class="sidebar-link">Templates</a><a href="variables.html" class="sidebar-link">Variáveis</a><a href="helpers.html" class="sidebar-link">Helpers</a><a href="internationalization.html" class="sidebar-link">Internacionalização (i18n)</a><a href="plugins.html" class="sidebar-link">Plugins</a><strong class="sidebar-title">Miscelânea</strong><a href="troubleshooting.html" class="sidebar-link current">Soluções de Problemas</a><a href="contributing.html" class="sidebar-link">Contribuindo</a>
+  </div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2017 <a href="https://github.com/hexojs/hexo/graphs/contributors" target="_blank">Hexo</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/hexojs" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/hexojs/hexo" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/pt-br/docs/" class="mobile-nav-link">Docs</a><a href="/pt-br/api/" class="mobile-nav-link">API</a><a href="/news/" class="mobile-nav-link">Novidades</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/themes/" class="mobile-nav-link">Temas</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/hexojs/hexo" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Começando</strong><a href="index.html" class="mobile-nav-link">Visão Geral</a><a href="setup.html" class="mobile-nav-link">Setup</a><a href="configuration.html" class="mobile-nav-link">Configuração</a><a href="commands.html" class="mobile-nav-link">Comandos</a><a href="migration.html" class="mobile-nav-link">Migração</a><strong class="mobile-nav-title">Uso Básico</strong><a href="writing.html" class="mobile-nav-link">Escrevendo</a><a href="front-matter.html" class="mobile-nav-link">Front-matter</a><a href="tag-plugins.html" class="mobile-nav-link">Tag Plugins</a><a href="asset-folders.html" class="mobile-nav-link">Diretórios de Recursos</a><a href="data-files.html" class="mobile-nav-link">Arquivos de Dados</a><a href="server.html" class="mobile-nav-link">Servidor</a><a href="generating.html" class="mobile-nav-link">Gerando</a><a href="deployment.html" class="mobile-nav-link">Implantação</a><strong class="mobile-nav-title">Customização</strong><a href="permalinks.html" class="mobile-nav-link">Links Permanentes</a><a href="themes.html" class="mobile-nav-link">Temas</a><a href="templates.html" class="mobile-nav-link">Templates</a><a href="variables.html" class="mobile-nav-link">Variáveis</a><a href="helpers.html" class="mobile-nav-link">Helpers</a><a href="internationalization.html" class="mobile-nav-link">Internacionalização (i18n)</a><a href="plugins.html" class="mobile-nav-link">Plugins</a><strong class="mobile-nav-title">Miscelânea</strong><a href="troubleshooting.html" class="mobile-nav-link current">Soluções de Problemas</a><a href="contributing.html" class="mobile-nav-link">Contribuindo</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>Português (Brasil)</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/troubleshooting.html">
+      
+        <option value="en">English</option>
+      
+        <option value="zh-tw">正體中文</option>
+      
+        <option value="zh-cn">简体中文</option>
+      
+        <option value="ru">Русский</option>
+      
+        <option value="ko">한국어</option>
+      
+        <option value="pt-br" selected>Português (Brasil)</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<script src="/build/js/main-8827054328.js"></script>
+
+<!-- Algolia -->
+
+
+</body>
+</html>

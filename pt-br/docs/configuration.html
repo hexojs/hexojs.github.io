@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Configuração | Hexo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://hexo.io/pt-br/docs/configuration.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://hexo.io/docs/configuration.html">
+    
+      <link rel="alternative" hreflang="zh-tw" href="https://hexo.io/zh-tw/docs/configuration.html">
+    
+      <link rel="alternative" hreflang="zh-cn" href="https://hexo.io/zh-cn/docs/configuration.html">
+    
+      <link rel="alternative" hreflang="ru" href="https://hexo.io/ru/docs/configuration.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://hexo.io/ko/docs/configuration.html">
+    
+      <link rel="alternative" hreflang="pt-br" href="https://hexo.io/pt-br/docs/configuration.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/build/css/navy-a475bf266d.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="Hexo">
+  <!-- Open Graph -->
+  <meta name="description" content="Você pode modificar as configurações do site em _config.yml ou em um arquivo de configuração alternativo. Site   Configuração Descrição     title O título do seu site   subtitle O subtítulo do seu sit">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Configuração">
+<meta property="og:url" content="https://hexo.io/pt-br/docs/configuration.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Você pode modificar as configurações do site em _config.yml ou em um arquivo de configuração alternativo. Site   Configuração Descrição     title O título do seu site   subtitle O subtítulo do seu sit">
+<meta property="og:locale" content="pt-br">
+<meta property="og:updated_time" content="2017-12-11T16:40:21.559Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Configuração">
+<meta name="twitter:description" content="Você pode modificar as configurações do site em _config.yml ou em um arquivo de configuração alternativo. Site   Configuração Descrição     title O título do seu site   subtitle O subtítulo do seu sit">
+<meta name="twitter:site" content="hexojs">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48498357-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/pt-br/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/pt-br/docs/" class="main-nav-link">Docs</a><a href="/pt-br/api/" class="main-nav-link">API</a><a href="/news/" class="main-nav-link">Novidades</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/themes/" class="main-nav-link">Temas</a>
+      <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>Português (Brasil)</span></label>
+      <select id="lang-select" data-canonical="docs/configuration.html">
+        
+          <option value="en">English</option>
+        
+          <option value="zh-tw">正體中文</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+          <option value="ru">Русский</option>
+        
+          <option value="ko">한국어</option>
+        
+          <option value="pt-br" selected>Português (Brasil)</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Configuração</h1>
+                <a href="https://github.com/hexojs/site/edit/master/source/pt-br/docs/configuration.md" class="article-edit-link" title="Melhore esta Documentação"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p>Você pode modificar as configurações do site em <code>_config.yml</code> ou em um <a href="#Usando-uma-Configuracao-Alternativa">arquivo de configuração alternativo</a>.</p>
+<h3 id="Site" class="article-heading"><a href="#Site" class="headerlink" title="Site"></a>Site<a class="article-anchor" href="#Site" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Configuração</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code></td>
+<td>O título do seu site</td>
+</tr>
+<tr>
+<td><code>subtitle</code></td>
+<td>O subtítulo do seu site</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>A descrição do seu site</td>
+</tr>
+<tr>
+<td><code>author</code></td>
+<td>Seu nome</td>
+</tr>
+<tr>
+<td><code>language</code></td>
+<td>O idioma do seu site. Use a <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" target="_blank" rel="noopener">2-lettter ISO-639-1 code</a>. O padrão é <code>en</code>.</td>
+</tr>
+<tr>
+<td><code>timezone</code></td>
+<td>O fuso horário do seu site. O Hexo usa a configuração do seu computador por padrão. Você pode encontrar a lista de fusos horários disponíveis <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank" rel="noopener">aqui</a>. Alguns exemplos são <code>America/New_York</code>, <code>Japan</code> e <code>UTC</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="URL" class="article-heading"><a href="#URL" class="headerlink" title="URL"></a>URL<a class="article-anchor" href="#URL" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Configuração</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>url</code></td>
+<td>A URL do seu site</td>
+<td></td>
+</tr>
+<tr>
+<td><code>root</code></td>
+<td>O diretório raiz do seu site</td>
+<td></td>
+</tr>
+<tr>
+<td><code>permalink</code></td>
+<td>O formato de <a href="permalinks.html">permalink</a> dos artigos</td>
+<td><code>:year/:month/:day/:title/</code></td>
+</tr>
+<tr>
+<td><code>permalink_defaults</code></td>
+<td>Valores padrão de cada segmento no permalink</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="note info"><strong class="note-title">Site em subdiretório</strong><p>Se o seu site estiver em um subdiretório (como por exemplo <code>http://example.org/blog</code>) defina <code>url</code> para <code>http://example.org/blog</code> e defina <code>root</code> para <code>/blog/</code>.</p>
+</blockquote>
+<h3 id="Diretorio" class="article-heading"><a href="#Diretorio" class="headerlink" title="Diretório"></a>Diretório<a class="article-anchor" href="#Diretorio" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Configuração</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>source_dir</code></td>
+<td>Diretório dos fonte. Onde seu conteúdo está armazenado</td>
+<td><code>source</code></td>
+</tr>
+<tr>
+<td><code>public_dir</code></td>
+<td>Diretório dos arquivos públicos. Onde o site estático será gerado</td>
+<td><code>public</code></td>
+</tr>
+<tr>
+<td><code>tag_dir</code></td>
+<td>Diretório de tags</td>
+<td><code>tags</code></td>
+</tr>
+<tr>
+<td><code>archive_dir</code></td>
+<td>Diretório de archives</td>
+<td><code>archives</code></td>
+</tr>
+<tr>
+<td><code>category_dir</code></td>
+<td>Diretório de categorias</td>
+<td><code>categories</code></td>
+</tr>
+<tr>
+<td><code>code_dir</code></td>
+<td>Diretório de código (subdiretório de <code>source_dir</code>)</td>
+<td><code>downloads/code</code></td>
+</tr>
+<tr>
+<td><code>i18n_dir</code></td>
+<td>Diretório de internacionalização (i18n)</td>
+<td><code>:lang</code></td>
+</tr>
+<tr>
+<td><code>skip_render</code></td>
+<td>Caminhos que não devem ser renderizados. Você pode usar <a href="https://github.com/isaacs/minimatch" target="_blank" rel="noopener">expressões globais</a> para fazer correspondência de caminho</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Escrita" class="article-heading"><a href="#Escrita" class="headerlink" title="Escrita"></a>Escrita<a class="article-anchor" href="#Escrita" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Configuração</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>new_post_name</code></td>
+<td>O formato do nome do arquivo para novas postagens</td>
+<td><code>:title.md</code></td>
+</tr>
+<tr>
+<td><code>default_layout</code></td>
+<td>Layout padrão</td>
+<td><code>post</code></td>
+</tr>
+<tr>
+<td><code>titlecase</code></td>
+<td>Transformar títulos em maiúsculo?</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>external_link</code></td>
+<td>Abrir links externos em uma nova aba?</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>filename_case</code></td>
+<td>Converter nomes de arquivos para minúsculos <code>1</code>; maiúsculos <code>2</code></td>
+<td><code>0</code></td>
+</tr>
+<tr>
+<td><code>render_drafts</code></td>
+<td>Exibir rascunhos?</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>post_asset_folder</code></td>
+<td>Ativar o <a href="asset-folders.html">diretório de Asset</a>?</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>relative_link</code></td>
+<td>Links para o diretório raiz?</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>future</code></td>
+<td>Exibir postagens futuras?</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>highlight</code></td>
+<td>Configurações de bloco de código</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Categoria-amp-Tag" class="article-heading"><a href="#Categoria-amp-Tag" class="headerlink" title="Categoria &amp; Tag"></a>Categoria &amp; Tag<a class="article-anchor" href="#Categoria-amp-Tag" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Configuração</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>default_category</code></td>
+<td>Categoria padrão</td>
+<td><code>uncategorized</code></td>
+</tr>
+<tr>
+<td><code>category_map</code></td>
+<td>Mapa de Categoria</td>
+<td></td>
+</tr>
+<tr>
+<td><code>tag_map</code></td>
+<td>Mapa de Tag</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Formato-de-Data-Hora" class="article-heading"><a href="#Formato-de-Data-Hora" class="headerlink" title="Formato de Data / Hora"></a>Formato de Data / Hora<a class="article-anchor" href="#Formato-de-Data-Hora" aria-hidden="true"></a></h3><p>Hexo usa <a href="http://momentjs.com/" target="_blank" rel="noopener">Moment.js</a> para processar datas.</p>
+<table>
+<thead>
+<tr>
+<th>Configuração</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>date_format</code></td>
+<td>Formato de data</td>
+<td><code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td><code>time_format</code></td>
+<td>Formado de hora</td>
+<td><code>HH:mm:ss</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Paginacao" class="article-heading"><a href="#Paginacao" class="headerlink" title="Paginação"></a>Paginação<a class="article-anchor" href="#Paginacao" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Configuração</th>
+<th>Descrição</th>
+<th>Padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>per_page</code></td>
+<td>A quantidade de postagens exibidas em uma única página. <code>0</code> desabilita paginação</td>
+<td><code>10</code></td>
+</tr>
+<tr>
+<td><code>pagination_dir</code></td>
+<td>Diretório de paginação</td>
+<td><code>page</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="Extensoes" class="article-heading"><a href="#Extensoes" class="headerlink" title="Extensões"></a>Extensões<a class="article-anchor" href="#Extensoes" aria-hidden="true"></a></h3><table>
+<thead>
+<tr>
+<th>Configuração</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>theme</code></td>
+<td>Nome do tema. <code>false</code> desabilita o tema</td>
+</tr>
+<tr>
+<td><code>deploy</code></td>
+<td>Configuração de implantação</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Incluir-Excluir-Arquivos-ou-Diretorios" class="article-heading"><a href="#Incluir-Excluir-Arquivos-ou-Diretorios" class="headerlink" title="Incluir/Excluir Arquivos ou Diretórios"></a>Incluir/Excluir Arquivos ou Diretórios<a class="article-anchor" href="#Incluir-Excluir-Arquivos-ou-Diretorios" aria-hidden="true"></a></h3><p>No arquivo de configuração, defina a chave de include/exlude para que o hexo processe ou ignore, explicitamente, determinados arquivos/diretórios.</p>
+<table>
+<thead>
+<tr>
+<th>Configuração</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>include</code></td>
+<td>Por padrão, o Hexo ignora os arquivos e diretórios ocultos, mas configurar este campo fará com que o Hexo os processe também</td>
+</tr>
+<tr>
+<td><code>exclude</code></td>
+<td>O Hexo irá ignorar os arquivos e diretórios listados abaixo deste campo</td>
+</tr>
+</tbody>
+</table>
+<p>Exemplo:<br><figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Incluir/Excluir Arquivos/Diretórios</span></span><br><span class="line"><span class="attr">include:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">.nojekyll</span></span><br><span class="line"><span class="attr">exclude:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">.DS_Store</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="Usando-uma-Configuracao-Alternativa" class="article-heading"><a href="#Usando-uma-Configuracao-Alternativa" class="headerlink" title="Usando uma Configuração Alternativa"></a>Usando uma Configuração Alternativa<a class="article-anchor" href="#Usando-uma-Configuracao-Alternativa" aria-hidden="true"></a></h3><p>Um arquivo de configuração personalizado pode ser especificado adicionando o sinalizador <code>--config</code> aos comandos do <code>hexo</code> com o caminho para o arquivo alternativo de configuração YAML ou JSON, ou até mesmo uma lista separada por vírgulas (sem espaços) de múltiplos arquivos YAML ou JSON.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># usando 'custom.yml' no lugar de '_config.yml'</span></span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"><span class="comment"># usando 'custom.yml' e 'custom2.json', priorizando 'custom2.json'</span></span><br><span class="line">$ hexo server --config custom.yml,custom2.json</span><br></pre></td></tr></table></figure>
+<p>O uso de vários arquivos combina todos os arquivos de configuração e salva as configurações mescladas para <code>_multiconfig.yml</code>. Os valores posteriores prevalecem. Este recurso funciona com qualquer quantidade de arquivos JSON e YAML com objetos arbitrariamente profundos. Observe que <strong>nenhum espaço é permitido na lista</strong>.</p>
+<p>Por exemplo, no exemplo acima se <code>foo: bar</code> estiver em <code>custom.yml</code>, mas <code>&quot;foo&quot;: &quot;dinosaur&quot;</code> estiver em <code>custom2.json</code>, <code>_multiconfig.yml</code> irá conter <code>foo: dinosaur</code>.</p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2017-12-11T16:40:21.559Z" itemprop="dateModified">Última Atualização: 2017-12-11</time>
+                <a href="setup.html" class="article-footer-prev" title="Setup"><i class="fa fa-chevron-left"></i><span>Anterior</span></a><a href="commands.html" class="article-footer-next" title="Comandos"><span>Próximo</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'hexojs';
+  var disqus_url = 'https://hexo.io/pt-br/docs/configuration.html';
+  var disqus_title = "Configuração";
+  var disqus_config = function(){
+    this.language = 'pt-br';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
+              <strong class="sidebar-title">Conteúdo</strong>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Site"><span class="toc-text"><a href="#Site" class="headerlink" title="Site"></a>Site</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#URL"><span class="toc-text"><a href="#URL" class="headerlink" title="URL"></a>URL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Diretorio"><span class="toc-text"><a href="#Diretorio" class="headerlink" title="Diret&#xF3;rio"></a>Diret&#xF3;rio</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Escrita"><span class="toc-text"><a href="#Escrita" class="headerlink" title="Escrita"></a>Escrita</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Categoria-amp-Tag"><span class="toc-text"><a href="#Categoria-amp-Tag" class="headerlink" title="Categoria &amp; Tag"></a>Categoria &amp; Tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Formato-de-Data-Hora"><span class="toc-text"><a href="#Formato-de-Data-Hora" class="headerlink" title="Formato de Data / Hora"></a>Formato de Data / Hora</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Paginacao"><span class="toc-text"><a href="#Paginacao" class="headerlink" title="Pagina&#xE7;&#xE3;o"></a>Pagina&#xE7;&#xE3;o</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Extensoes"><span class="toc-text"><a href="#Extensoes" class="headerlink" title="Extens&#xF5;es"></a>Extens&#xF5;es</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Incluir-Excluir-Arquivos-ou-Diretorios"><span class="toc-text"><a href="#Incluir-Excluir-Arquivos-ou-Diretorios" class="headerlink" title="Incluir/Excluir Arquivos ou Diret&#xF3;rios"></a>Incluir/Excluir Arquivos ou Diret&#xF3;rios</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Usando-uma-Configuracao-Alternativa"><span class="toc-text"><a href="#Usando-uma-Configuracao-Alternativa" class="headerlink" title="Usando uma Configura&#xE7;&#xE3;o Alternativa"></a>Usando uma Configura&#xE7;&#xE3;o Alternativa</span></a></li></ol>
+              <a href="#" id="article-toc-top">Ir para o Topo</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">Começando</strong><a href="index.html" class="sidebar-link">Visão Geral</a><a href="setup.html" class="sidebar-link">Setup</a><a href="configuration.html" class="sidebar-link current">Configuração</a><a href="commands.html" class="sidebar-link">Comandos</a><a href="migration.html" class="sidebar-link">Migração</a><strong class="sidebar-title">Uso Básico</strong><a href="writing.html" class="sidebar-link">Escrevendo</a><a href="front-matter.html" class="sidebar-link">Front-matter</a><a href="tag-plugins.html" class="sidebar-link">Tag Plugins</a><a href="asset-folders.html" class="sidebar-link">Diretórios de Recursos</a><a href="data-files.html" class="sidebar-link">Arquivos de Dados</a><a href="server.html" class="sidebar-link">Servidor</a><a href="generating.html" class="sidebar-link">Gerando</a><a href="deployment.html" class="sidebar-link">Implantação</a><strong class="sidebar-title">Customização</strong><a href="permalinks.html" class="sidebar-link">Links Permanentes</a><a href="themes.html" class="sidebar-link">Temas</a><a href="templates.html" class="sidebar-link">Templates</a><a href="variables.html" class="sidebar-link">Variáveis</a><a href="helpers.html" class="sidebar-link">Helpers</a><a href="internationalization.html" class="sidebar-link">Internacionalização (i18n)</a><a href="plugins.html" class="sidebar-link">Plugins</a><strong class="sidebar-title">Miscelânea</strong><a href="troubleshooting.html" class="sidebar-link">Soluções de Problemas</a><a href="contributing.html" class="sidebar-link">Contribuindo</a>
+  </div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2017 <a href="https://github.com/hexojs/hexo/graphs/contributors" target="_blank">Hexo</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/hexojs" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/hexojs/hexo" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/pt-br/docs/" class="mobile-nav-link">Docs</a><a href="/pt-br/api/" class="mobile-nav-link">API</a><a href="/news/" class="mobile-nav-link">Novidades</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/themes/" class="mobile-nav-link">Temas</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/hexojs/hexo" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Começando</strong><a href="index.html" class="mobile-nav-link">Visão Geral</a><a href="setup.html" class="mobile-nav-link">Setup</a><a href="configuration.html" class="mobile-nav-link current">Configuração</a><a href="commands.html" class="mobile-nav-link">Comandos</a><a href="migration.html" class="mobile-nav-link">Migração</a><strong class="mobile-nav-title">Uso Básico</strong><a href="writing.html" class="mobile-nav-link">Escrevendo</a><a href="front-matter.html" class="mobile-nav-link">Front-matter</a><a href="tag-plugins.html" class="mobile-nav-link">Tag Plugins</a><a href="asset-folders.html" class="mobile-nav-link">Diretórios de Recursos</a><a href="data-files.html" class="mobile-nav-link">Arquivos de Dados</a><a href="server.html" class="mobile-nav-link">Servidor</a><a href="generating.html" class="mobile-nav-link">Gerando</a><a href="deployment.html" class="mobile-nav-link">Implantação</a><strong class="mobile-nav-title">Customização</strong><a href="permalinks.html" class="mobile-nav-link">Links Permanentes</a><a href="themes.html" class="mobile-nav-link">Temas</a><a href="templates.html" class="mobile-nav-link">Templates</a><a href="variables.html" class="mobile-nav-link">Variáveis</a><a href="helpers.html" class="mobile-nav-link">Helpers</a><a href="internationalization.html" class="mobile-nav-link">Internacionalização (i18n)</a><a href="plugins.html" class="mobile-nav-link">Plugins</a><strong class="mobile-nav-title">Miscelânea</strong><a href="troubleshooting.html" class="mobile-nav-link">Soluções de Problemas</a><a href="contributing.html" class="mobile-nav-link">Contribuindo</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>Português (Brasil)</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/configuration.html">
+      
+        <option value="en">English</option>
+      
+        <option value="zh-tw">正體中文</option>
+      
+        <option value="zh-cn">简体中文</option>
+      
+        <option value="ru">Русский</option>
+      
+        <option value="ko">한국어</option>
+      
+        <option value="pt-br" selected>Português (Brasil)</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<script src="/build/js/main-8827054328.js"></script>
+
+<!-- Algolia -->
+
+
+</body>
+</html>

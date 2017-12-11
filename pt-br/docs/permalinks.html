@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Links Permanentes (Permalinks) | Hexo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://hexo.io/pt-br/docs/permalinks.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://hexo.io/docs/permalinks.html">
+    
+      <link rel="alternative" hreflang="zh-tw" href="https://hexo.io/zh-tw/docs/permalinks.html">
+    
+      <link rel="alternative" hreflang="zh-cn" href="https://hexo.io/zh-cn/docs/permalinks.html">
+    
+      <link rel="alternative" hreflang="ru" href="https://hexo.io/ru/docs/permalinks.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://hexo.io/ko/docs/permalinks.html">
+    
+      <link rel="alternative" hreflang="pt-br" href="https://hexo.io/pt-br/docs/permalinks.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/build/css/navy-a475bf266d.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="Hexo">
+  <!-- Open Graph -->
+  <meta name="description" content="Você pode especificar os links permanentes (permalinks) para o seu site em _config.yml ou no front-matter de cada postagem. VariáveisAlém das seguintes variáveis, você pode usar quaisquer atributos no">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Links Permanentes (Permalinks)">
+<meta property="og:url" content="https://hexo.io/pt-br/docs/permalinks.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Você pode especificar os links permanentes (permalinks) para o seu site em _config.yml ou no front-matter de cada postagem. VariáveisAlém das seguintes variáveis, você pode usar quaisquer atributos no">
+<meta property="og:locale" content="pt-br">
+<meta property="og:updated_time" content="2017-12-11T16:40:21.559Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Links Permanentes (Permalinks)">
+<meta name="twitter:description" content="Você pode especificar os links permanentes (permalinks) para o seu site em _config.yml ou no front-matter de cada postagem. VariáveisAlém das seguintes variáveis, você pode usar quaisquer atributos no">
+<meta name="twitter:site" content="hexojs">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48498357-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/pt-br/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/pt-br/docs/" class="main-nav-link">Docs</a><a href="/pt-br/api/" class="main-nav-link">API</a><a href="/news/" class="main-nav-link">Novidades</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/themes/" class="main-nav-link">Temas</a>
+      <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>Português (Brasil)</span></label>
+      <select id="lang-select" data-canonical="docs/permalinks.html">
+        
+          <option value="en">English</option>
+        
+          <option value="zh-tw">正體中文</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+          <option value="ru">Русский</option>
+        
+          <option value="ko">한국어</option>
+        
+          <option value="pt-br" selected>Português (Brasil)</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Links Permanentes (Permalinks)</h1>
+                <a href="https://github.com/hexojs/site/edit/master/source/pt-br/docs/permalinks.md" class="article-edit-link" title="Melhore esta Documentação"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <p>Você pode especificar os links permanentes (permalinks) para o seu site em <code>_config.yml</code> ou no <a href="front-matter.html">front-matter</a> de cada postagem.</p>
+<h3 id="Variaveis" class="article-heading"><a href="#Variaveis" class="headerlink" title="Variáveis"></a>Variáveis<a class="article-anchor" href="#Variaveis" aria-hidden="true"></a></h3><p>Além das seguintes variáveis, você pode usar quaisquer atributos no permalink.</p>
+<table>
+<thead>
+<tr>
+<th>Variável</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:year</code></td>
+<td>Ano da publicação da postagem (4 dígitos)</td>
+</tr>
+<tr>
+<td><code>:month</code></td>
+<td>Mês da publicação da postagem (2 dígitos)</td>
+</tr>
+<tr>
+<td><code>:i_month</code></td>
+<td>Mês da publicação da postagem (sem zero à esquerda)</td>
+</tr>
+<tr>
+<td><code>:day</code></td>
+<td>Dia da publicação da postagem (2 dígitos)</td>
+</tr>
+<tr>
+<td><code>:i_day</code></td>
+<td>Dia da publicação da postagem (sem zero à esquerda)</td>
+</tr>
+<tr>
+<td><code>:title</code></td>
+<td>Nome do arquivo (sem sua extensão)</td>
+</tr>
+<tr>
+<td><code>:id</code></td>
+<td>ID da postagem</td>
+</tr>
+<tr>
+<td><code>:category</code></td>
+<td>Categorias. Se a postagem não possuir uma categoria, será usado o valor de <code>default_category</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Você pode definir o valor padrão de cada variável do permalink através da definição <code>permalink_defaults</code>:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">permalink_defaults:</span></span><br><span class="line"><span class="attr">  lang:</span> <span class="string">en</span></span><br></pre></td></tr></table></figure>
+<h3 id="Exemplos" class="article-heading"><a href="#Exemplos" class="headerlink" title="Exemplos"></a>Exemplos<a class="article-anchor" href="#Exemplos" aria-hidden="true"></a></h3><p>Dado uma postagem nomeada <code>hello-world.md</code> no diretório <code>source/_posts</code> com o seguinte conteúdo:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2013</span><span class="bullet">-07</span><span class="bullet">-14</span> <span class="number">17</span><span class="string">:01:34</span></span><br><span class="line"><span class="attr">categories:</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">foo</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">bar</span></span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>Definição</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>:year/:month/:day/:title/</code></td>
+<td>2013/07/14/hello-world</td>
+</tr>
+<tr>
+<td><code>:year-:month-:day-:title.html</code></td>
+<td>2013-07-14-hello-world.html</td>
+</tr>
+<tr>
+<td><code>:category/:title</code></td>
+<td>foo/bar/hello-world</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Suporte-Multi-idioma" class="article-heading"><a href="#Suporte-Multi-idioma" class="headerlink" title="Suporte Multi-idioma"></a>Suporte Multi-idioma<a class="article-anchor" href="#Suporte-Multi-idioma" aria-hidden="true"></a></h3><p>Para criar um site multi-idioma, você pode modificar as definições de <code>new_post_name</code> e <code>permalink</code> da seguinte forma:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">new_post_name:</span> <span class="string">:lang/:title.md</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:lang/:title/</span></span><br></pre></td></tr></table></figure>
+<p>Quando você criar uma nova postagem, esta será salva em:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"Hello World"</span> --lang tw</span><br><span class="line"><span class="comment"># =&gt; source/_posts/tw/Hello-World.md</span></span><br></pre></td></tr></table></figure>
+<p>e a URL será:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">http://localhost:4000/tw/hello-world/</span><br></pre></td></tr></table></figure>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2017-12-11T16:40:21.559Z" itemprop="dateModified">Última Atualização: 2017-12-11</time>
+                <a href="deployment.html" class="article-footer-prev" title="Implantação"><i class="fa fa-chevron-left"></i><span>Anterior</span></a><a href="themes.html" class="article-footer-next" title="Temas"><span>Próximo</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'hexojs';
+  var disqus_url = 'https://hexo.io/pt-br/docs/permalinks.html';
+  var disqus_title = "Links Permanentes (Permalinks)";
+  var disqus_config = function(){
+    this.language = 'pt-br';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
+              <strong class="sidebar-title">Conteúdo</strong>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Variaveis"><span class="toc-text"><a href="#Variaveis" class="headerlink" title="Vari&#xE1;veis"></a>Vari&#xE1;veis</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Exemplos"><span class="toc-text"><a href="#Exemplos" class="headerlink" title="Exemplos"></a>Exemplos</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Suporte-Multi-idioma"><span class="toc-text"><a href="#Suporte-Multi-idioma" class="headerlink" title="Suporte Multi-idioma"></a>Suporte Multi-idioma</span></a></li></ol>
+              <a href="#" id="article-toc-top">Ir para o Topo</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">Começando</strong><a href="index.html" class="sidebar-link">Visão Geral</a><a href="setup.html" class="sidebar-link">Setup</a><a href="configuration.html" class="sidebar-link">Configuração</a><a href="commands.html" class="sidebar-link">Comandos</a><a href="migration.html" class="sidebar-link">Migração</a><strong class="sidebar-title">Uso Básico</strong><a href="writing.html" class="sidebar-link">Escrevendo</a><a href="front-matter.html" class="sidebar-link">Front-matter</a><a href="tag-plugins.html" class="sidebar-link">Tag Plugins</a><a href="asset-folders.html" class="sidebar-link">Diretórios de Recursos</a><a href="data-files.html" class="sidebar-link">Arquivos de Dados</a><a href="server.html" class="sidebar-link">Servidor</a><a href="generating.html" class="sidebar-link">Gerando</a><a href="deployment.html" class="sidebar-link">Implantação</a><strong class="sidebar-title">Customização</strong><a href="permalinks.html" class="sidebar-link current">Links Permanentes</a><a href="themes.html" class="sidebar-link">Temas</a><a href="templates.html" class="sidebar-link">Templates</a><a href="variables.html" class="sidebar-link">Variáveis</a><a href="helpers.html" class="sidebar-link">Helpers</a><a href="internationalization.html" class="sidebar-link">Internacionalização (i18n)</a><a href="plugins.html" class="sidebar-link">Plugins</a><strong class="sidebar-title">Miscelânea</strong><a href="troubleshooting.html" class="sidebar-link">Soluções de Problemas</a><a href="contributing.html" class="sidebar-link">Contribuindo</a>
+  </div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2017 <a href="https://github.com/hexojs/hexo/graphs/contributors" target="_blank">Hexo</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/hexojs" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/hexojs/hexo" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/pt-br/docs/" class="mobile-nav-link">Docs</a><a href="/pt-br/api/" class="mobile-nav-link">API</a><a href="/news/" class="mobile-nav-link">Novidades</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/themes/" class="mobile-nav-link">Temas</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/hexojs/hexo" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Começando</strong><a href="index.html" class="mobile-nav-link">Visão Geral</a><a href="setup.html" class="mobile-nav-link">Setup</a><a href="configuration.html" class="mobile-nav-link">Configuração</a><a href="commands.html" class="mobile-nav-link">Comandos</a><a href="migration.html" class="mobile-nav-link">Migração</a><strong class="mobile-nav-title">Uso Básico</strong><a href="writing.html" class="mobile-nav-link">Escrevendo</a><a href="front-matter.html" class="mobile-nav-link">Front-matter</a><a href="tag-plugins.html" class="mobile-nav-link">Tag Plugins</a><a href="asset-folders.html" class="mobile-nav-link">Diretórios de Recursos</a><a href="data-files.html" class="mobile-nav-link">Arquivos de Dados</a><a href="server.html" class="mobile-nav-link">Servidor</a><a href="generating.html" class="mobile-nav-link">Gerando</a><a href="deployment.html" class="mobile-nav-link">Implantação</a><strong class="mobile-nav-title">Customização</strong><a href="permalinks.html" class="mobile-nav-link current">Links Permanentes</a><a href="themes.html" class="mobile-nav-link">Temas</a><a href="templates.html" class="mobile-nav-link">Templates</a><a href="variables.html" class="mobile-nav-link">Variáveis</a><a href="helpers.html" class="mobile-nav-link">Helpers</a><a href="internationalization.html" class="mobile-nav-link">Internacionalização (i18n)</a><a href="plugins.html" class="mobile-nav-link">Plugins</a><strong class="mobile-nav-title">Miscelânea</strong><a href="troubleshooting.html" class="mobile-nav-link">Soluções de Problemas</a><a href="contributing.html" class="mobile-nav-link">Contribuindo</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>Português (Brasil)</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/permalinks.html">
+      
+        <option value="en">English</option>
+      
+        <option value="zh-tw">正體中文</option>
+      
+        <option value="zh-cn">简体中文</option>
+      
+        <option value="ru">Русский</option>
+      
+        <option value="ko">한국어</option>
+      
+        <option value="pt-br" selected>Português (Brasil)</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<script src="/build/js/main-8827054328.js"></script>
+
+<!-- Algolia -->
+
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>Servidor | Hexo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://hexo.io/pt-br/docs/server.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://hexo.io/docs/server.html">
+    
+      <link rel="alternative" hreflang="zh-tw" href="https://hexo.io/zh-tw/docs/server.html">
+    
+      <link rel="alternative" hreflang="zh-cn" href="https://hexo.io/zh-cn/docs/server.html">
+    
+      <link rel="alternative" hreflang="ru" href="https://hexo.io/ru/docs/server.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://hexo.io/ko/docs/server.html">
+    
+      <link rel="alternative" hreflang="pt-br" href="https://hexo.io/pt-br/docs/server.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/build/css/navy-a475bf266d.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="Hexo">
+  <!-- Open Graph -->
+  <meta name="description" content="hexo-serverCom o lançamento do Hexo 3, o servidor foi separado do módulo principal. Para começar a usar o servidor, primeiro você deve instalar o pacote hexo-server. $ npm install hexo-server --save U">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Servidor">
+<meta property="og:url" content="https://hexo.io/pt-br/docs/server.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="hexo-serverCom o lançamento do Hexo 3, o servidor foi separado do módulo principal. Para começar a usar o servidor, primeiro você deve instalar o pacote hexo-server. $ npm install hexo-server --save U">
+<meta property="og:locale" content="pt-br">
+<meta property="og:updated_time" content="2017-12-11T16:40:21.559Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Servidor">
+<meta name="twitter:description" content="hexo-serverCom o lançamento do Hexo 3, o servidor foi separado do módulo principal. Para começar a usar o servidor, primeiro você deve instalar o pacote hexo-server. $ npm install hexo-server --save U">
+<meta name="twitter:site" content="hexojs">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48498357-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/pt-br/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/pt-br/docs/" class="main-nav-link">Docs</a><a href="/pt-br/api/" class="main-nav-link">API</a><a href="/news/" class="main-nav-link">Novidades</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/themes/" class="main-nav-link">Temas</a>
+      <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>Português (Brasil)</span></label>
+      <select id="lang-select" data-canonical="docs/server.html">
+        
+          <option value="en">English</option>
+        
+          <option value="zh-tw">正體中文</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+          <option value="ru">Русский</option>
+        
+          <option value="ko">한국어</option>
+        
+          <option value="pt-br" selected>Português (Brasil)</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name">Servidor</h1>
+                <a href="https://github.com/hexojs/site/edit/master/source/pt-br/docs/server.md" class="article-edit-link" title="Melhore esta Documentação"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h2 id="hexo-server" class="article-heading"><a href="#hexo-server" class="headerlink" title="hexo-server"></a><a href="https://github.com/hexojs/hexo-server" target="_blank" rel="noopener">hexo-server</a><a class="article-anchor" href="#hexo-server" aria-hidden="true"></a></h2><p>Com o lançamento do Hexo 3, o servidor foi separado do módulo principal. Para começar a usar o servidor, primeiro você deve instalar o pacote <a href="https://github.com/hexojs/hexo-server" target="_blank" rel="noopener">hexo-server</a>.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-server --save</span><br></pre></td></tr></table></figure>
+<p>Uma vez instalado o servidor, execute o comando a seguir para iniciar o servidor. Seu site será acessível em <code>http://localhost:4000</code> por padrão. Quando o servidor estiver sendo executado, o Hexo assistirá por alterações nos arquivos do projeto e atualizará automaticamente a página, por isso não é necessário reiniciar manualmente o servidor.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>Se você quiser mudar a porta ou se estiver encontrando erros <code>EADDRINUSE</code>, use a opção <code>-p</code> para configurar uma porta diferente.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server -p 5000</span><br></pre></td></tr></table></figure>
+<h3 id="Modo-Estatico" class="article-heading"><a href="#Modo-Estatico" class="headerlink" title="Modo Estático"></a>Modo Estático<a class="article-anchor" href="#Modo-Estatico" aria-hidden="true"></a></h3><p>No modo estático, somente arquivos do diretório <code>public</code> serão servidos e nenhum arquivo será assistido por mudanças. Você deve executar <code>hexo generate</code> antes de iniciar o servidor. Em geral, é desta forma que o site é servido em produção.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server -s</span><br></pre></td></tr></table></figure>
+<h3 id="Ip-Customizado" class="article-heading"><a href="#Ip-Customizado" class="headerlink" title="Ip Customizado"></a>Ip Customizado<a class="article-anchor" href="#Ip-Customizado" aria-hidden="true"></a></h3><p>O Hexo executa o servidor em <code>0.0.0.0</code> por padrão. Você pode substituir a configuração de IP padrão.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server -i 192.168.1.1</span><br></pre></td></tr></table></figure>
+<h2 id="Pow" class="article-heading"><a href="#Pow" class="headerlink" title="Pow"></a>Pow<a class="article-anchor" href="#Pow" aria-hidden="true"></a></h2><p><a href="http://pow.cx/" target="_blank" rel="noopener">Pow</a> é um servidor Rack sem configuração para Mac.</p>
+<h3 id="Instalacaos" class="article-heading"><a href="#Instalacaos" class="headerlink" title="Instalaçãos"></a>Instalaçãos<a class="article-anchor" href="#Instalacaos" aria-hidden="true"></a></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ curl get.pow.cx | sh</span><br></pre></td></tr></table></figure>
+<h3 id="Configuracao" class="article-heading"><a href="#Configuracao" class="headerlink" title="Configuração"></a>Configuração<a class="article-anchor" href="#Configuracao" aria-hidden="true"></a></h3><p>Link simbólico no diretório <code>~/.pow</code></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.pow</span><br><span class="line">$ ln -s /path/to/myapp</span><br></pre></td></tr></table></figure>
+<p>Seu site estará funcionando em <code>http://myapp.dev</code>. A URL é baseada no nome do link simbólico.</p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2017-12-11T16:40:21.559Z" itemprop="dateModified">Última Atualização: 2017-12-11</time>
+                <a href="data-files.html" class="article-footer-prev" title="Arquivos de Dados"><i class="fa fa-chevron-left"></i><span>Anterior</span></a><a href="generating.html" class="article-footer-next" title="Gerando"><span>Próximo</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'hexojs';
+  var disqus_url = 'https://hexo.io/pt-br/docs/server.html';
+  var disqus_title = "Servidor";
+  var disqus_config = function(){
+    this.language = 'pt-br';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
+              <strong class="sidebar-title">Conteúdo</strong>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo-server"><span class="toc-text"><a href="#hexo-server" class="headerlink" title="hexo-server"></a><a href="https://github.com/hexojs/hexo-server" target="_blank" rel="noopener">hexo-server</a></span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Modo-Estatico"><span class="toc-text"><a href="#Modo-Estatico" class="headerlink" title="Modo Est&#xE1;tico"></a>Modo Est&#xE1;tico</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Ip-Customizado"><span class="toc-text"><a href="#Ip-Customizado" class="headerlink" title="Ip Customizado"></a>Ip Customizado</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pow"><span class="toc-text"><a href="#Pow" class="headerlink" title="Pow"></a>Pow</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Instalacaos"><span class="toc-text"><a href="#Instalacaos" class="headerlink" title="Instala&#xE7;&#xE3;os"></a>Instala&#xE7;&#xE3;os</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Configuracao"><span class="toc-text"><a href="#Configuracao" class="headerlink" title="Configura&#xE7;&#xE3;o"></a>Configura&#xE7;&#xE3;o</span></a></li></ol></li></ol>
+              <a href="#" id="article-toc-top">Ir para o Topo</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">Começando</strong><a href="index.html" class="sidebar-link">Visão Geral</a><a href="setup.html" class="sidebar-link">Setup</a><a href="configuration.html" class="sidebar-link">Configuração</a><a href="commands.html" class="sidebar-link">Comandos</a><a href="migration.html" class="sidebar-link">Migração</a><strong class="sidebar-title">Uso Básico</strong><a href="writing.html" class="sidebar-link">Escrevendo</a><a href="front-matter.html" class="sidebar-link">Front-matter</a><a href="tag-plugins.html" class="sidebar-link">Tag Plugins</a><a href="asset-folders.html" class="sidebar-link">Diretórios de Recursos</a><a href="data-files.html" class="sidebar-link">Arquivos de Dados</a><a href="server.html" class="sidebar-link current">Servidor</a><a href="generating.html" class="sidebar-link">Gerando</a><a href="deployment.html" class="sidebar-link">Implantação</a><strong class="sidebar-title">Customização</strong><a href="permalinks.html" class="sidebar-link">Links Permanentes</a><a href="themes.html" class="sidebar-link">Temas</a><a href="templates.html" class="sidebar-link">Templates</a><a href="variables.html" class="sidebar-link">Variáveis</a><a href="helpers.html" class="sidebar-link">Helpers</a><a href="internationalization.html" class="sidebar-link">Internacionalização (i18n)</a><a href="plugins.html" class="sidebar-link">Plugins</a><strong class="sidebar-title">Miscelânea</strong><a href="troubleshooting.html" class="sidebar-link">Soluções de Problemas</a><a href="contributing.html" class="sidebar-link">Contribuindo</a>
+  </div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2017 <a href="https://github.com/hexojs/hexo/graphs/contributors" target="_blank">Hexo</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/hexojs" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/hexojs/hexo" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/pt-br/docs/" class="mobile-nav-link">Docs</a><a href="/pt-br/api/" class="mobile-nav-link">API</a><a href="/news/" class="mobile-nav-link">Novidades</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/themes/" class="mobile-nav-link">Temas</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/hexojs/hexo" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Começando</strong><a href="index.html" class="mobile-nav-link">Visão Geral</a><a href="setup.html" class="mobile-nav-link">Setup</a><a href="configuration.html" class="mobile-nav-link">Configuração</a><a href="commands.html" class="mobile-nav-link">Comandos</a><a href="migration.html" class="mobile-nav-link">Migração</a><strong class="mobile-nav-title">Uso Básico</strong><a href="writing.html" class="mobile-nav-link">Escrevendo</a><a href="front-matter.html" class="mobile-nav-link">Front-matter</a><a href="tag-plugins.html" class="mobile-nav-link">Tag Plugins</a><a href="asset-folders.html" class="mobile-nav-link">Diretórios de Recursos</a><a href="data-files.html" class="mobile-nav-link">Arquivos de Dados</a><a href="server.html" class="mobile-nav-link current">Servidor</a><a href="generating.html" class="mobile-nav-link">Gerando</a><a href="deployment.html" class="mobile-nav-link">Implantação</a><strong class="mobile-nav-title">Customização</strong><a href="permalinks.html" class="mobile-nav-link">Links Permanentes</a><a href="themes.html" class="mobile-nav-link">Temas</a><a href="templates.html" class="mobile-nav-link">Templates</a><a href="variables.html" class="mobile-nav-link">Variáveis</a><a href="helpers.html" class="mobile-nav-link">Helpers</a><a href="internationalization.html" class="mobile-nav-link">Internacionalização (i18n)</a><a href="plugins.html" class="mobile-nav-link">Plugins</a><strong class="mobile-nav-title">Miscelânea</strong><a href="troubleshooting.html" class="mobile-nav-link">Soluções de Problemas</a><a href="contributing.html" class="mobile-nav-link">Contribuindo</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>Português (Brasil)</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/server.html">
+      
+        <option value="en">English</option>
+      
+        <option value="zh-tw">正體中文</option>
+      
+        <option value="zh-cn">简体中文</option>
+      
+        <option value="ru">Русский</option>
+      
+        <option value="ko">한국어</option>
+      
+        <option value="pt-br" selected>Português (Brasil)</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<script src="/build/js/main-8827054328.js"></script>
+
+<!-- Algolia -->
+
+
+</body>
+</html>
