@@ -54,7 +54,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Você pode modificar as configurações do site em _config.yml ou em um arquivo de configuração alternativo. Site   Configuração Descrição     title O título do seu site   subtitle O subtítulo do seu sit">
 <meta property="og:locale" content="pt-br">
-<meta property="og:updated_time" content="2018-01-25T06:33:28.654Z">
+<meta property="og:updated_time" content="2018-01-30T18:46:09.632Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Configuração">
 <meta name="twitter:description" content="Você pode modificar as configurações do site em _config.yml ou em um arquivo de configuração alternativo. Site   Configuração Descrição     title O título do seu site   subtitle O subtítulo do seu sit">
@@ -391,6 +391,10 @@
 <td>Nome do tema. <code>false</code> desabilita o tema</td>
 </tr>
 <tr>
+<td><code>theme_config</code></td>
+<td>Configuração do tema. Inclui quaisquer configurações de tema personalizado sob esta chave para substituir os padrões do tema.</td>
+</tr>
+<tr>
 <td><code>deploy</code></td>
 <td>Configuração de implantação</td>
 </tr>
@@ -420,10 +424,17 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># usando 'custom.yml' no lugar de '_config.yml'</span></span><br><span class="line">$ hexo server --config custom.yml</span><br><span class="line"></span><br><span class="line"><span class="comment"># usando 'custom.yml' e 'custom2.json', priorizando 'custom2.json'</span></span><br><span class="line">$ hexo server --config custom.yml,custom2.json</span><br></pre></td></tr></table></figure>
 <p>O uso de vários arquivos combina todos os arquivos de configuração e salva as configurações mescladas para <code>_multiconfig.yml</code>. Os valores posteriores prevalecem. Este recurso funciona com qualquer quantidade de arquivos JSON e YAML com objetos arbitrariamente profundos. Observe que <strong>nenhum espaço é permitido na lista</strong>.</p>
 <p>Por exemplo, no exemplo acima se <code>foo: bar</code> estiver em <code>custom.yml</code>, mas <code>&quot;foo&quot;: &quot;dinosaur&quot;</code> estiver em <code>custom2.json</code>, <code>_multiconfig.yml</code> irá conter <code>foo: dinosaur</code>.</p>
+<h3 id="Sobrescrevendo-as-Configuracoes-do-Tema" class="article-heading"><a href="#Sobrescrevendo-as-Configuracoes-do-Tema" class="headerlink" title="Sobrescrevendo as Configurações do Tema"></a>Sobrescrevendo as Configurações do Tema<a class="article-anchor" href="#Sobrescrevendo-as-Configuracoes-do-Tema" aria-hidden="true"></a></h3><p>Os temas do Hexo são projetos independentes, com arquivos <code>_config.yml</code> separados.</p>
+<p>Em vez de dar fork em um tema e manter uma branch personalizada com suas configurações, você pode configurá-lo a partir do arquivo de configuração principal do seu site.</p>
+<p>Exemplo de configuração:</p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># _config.yml</span></span><br><span class="line"><span class="attr">theme_config:</span></span><br><span class="line"><span class="attr">  bio:</span> <span class="string">"My awesome bio"</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># themes/my-theme/_config.yml</span></span><br><span class="line"><span class="attr">bio:</span> <span class="string">"Some generic bio"</span></span><br><span class="line"><span class="attr">logo:</span> <span class="string">"a-cool-image.png"</span></span><br></pre></td></tr></table></figure>
+<p>Resultado da configuração do tema:</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  bio: "My awesome bio",</span><br><span class="line">  logo: "a-cool-image.png"</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2018-01-25T06:33:28.654Z" itemprop="dateModified">Última Atualização: 2018-01-25</time>
+                <time class="article-footer-updated" datetime="2018-01-30T18:46:09.632Z" itemprop="dateModified">Última Atualização: 2018-01-30</time>
                 <a href="setup.html" class="article-footer-prev" title="Setup"><i class="fa fa-chevron-left"></i><span>Anterior</span></a><a href="commands.html" class="article-footer-next" title="Comandos"><span>Próximo</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -450,7 +461,7 @@
             <div id="article-toc-inner">
               <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
               <strong class="sidebar-title">Conteúdo</strong>
-              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Site"><span class="toc-text">Site</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#URL"><span class="toc-text">URL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Diretorio"><span class="toc-text">Diretório</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Escrita"><span class="toc-text">Escrita</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Categoria-amp-Tag"><span class="toc-text">Categoria &amp; Tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Formato-de-Data-Hora"><span class="toc-text">Formato de Data / Hora</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Paginacao"><span class="toc-text">Paginação</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Extensoes"><span class="toc-text">Extensões</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Incluir-Excluir-Arquivos-ou-Diretorios"><span class="toc-text">Incluir/Excluir Arquivos ou Diretórios</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Usando-uma-Configuracao-Alternativa"><span class="toc-text">Usando uma Configuração Alternativa</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Site"><span class="toc-text">Site</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#URL"><span class="toc-text">URL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Diretorio"><span class="toc-text">Diretório</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Escrita"><span class="toc-text">Escrita</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Categoria-amp-Tag"><span class="toc-text">Categoria &amp; Tag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Formato-de-Data-Hora"><span class="toc-text">Formato de Data / Hora</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Paginacao"><span class="toc-text">Paginação</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Extensoes"><span class="toc-text">Extensões</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Incluir-Excluir-Arquivos-ou-Diretorios"><span class="toc-text">Incluir/Excluir Arquivos ou Diretórios</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Usando-uma-Configuracao-Alternativa"><span class="toc-text">Usando uma Configuração Alternativa</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Sobrescrevendo-as-Configuracoes-do-Tema"><span class="toc-text">Sobrescrevendo as Configurações do Tema</span></a></li></ol>
               <a href="#" id="article-toc-top">Ir para o Topo</a>
             </div>
           </aside>
