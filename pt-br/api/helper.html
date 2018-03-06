@@ -55,7 +55,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Um helper facilita a adição de snippets (trechos de código) aos seus templates. Recomendamos usar helpers em vez de templates quando estiver lidando com código mais complicado. Os Helpers não podem se">
 <meta property="og:locale" content="pt-br">
-<meta property="og:updated_time" content="2018-03-06T02:53:20.067Z">
+<meta property="og:updated_time" content="2018-03-06T02:58:18.723Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Helper">
 <meta name="twitter:description" content="Um helper facilita a adição de snippets (trechos de código) aos seus templates. Recomendamos usar helpers em vez de templates quando estiver lidando com código mais complicado. Os Helpers não podem se">
@@ -135,10 +135,11 @@
 <h2 id="Resumo" class="article-heading"><a href="#Resumo" class="headerlink" title="Resumo"></a>Resumo<a class="article-anchor" href="#Resumo" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.extend.helper.register(name, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <h2 id="Exemplo" class="article-heading"><a href="#Exemplo" class="headerlink" title="Exemplo"></a>Exemplo<a class="article-anchor" href="#Exemplo" aria-hidden="true"></a></h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">hexo.extend.helper.register(<span class="string">'js'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">path</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="string">'&lt;script type="text/javascript" src="'</span> + path + <span class="string">'"&gt;&lt;/script&gt;'</span>;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;%- js(<span class="string">'script.js'</span>) %&gt;</span><br><span class="line"><span class="comment">// &lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="FAQ" class="article-heading"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ<a class="article-anchor" href="#FAQ" aria-hidden="true"></a></h2><h3 id="Onde-por-um-helper-personalizado" class="article-heading"><a href="#Onde-por-um-helper-personalizado" class="headerlink" title="Onde pôr um helper personalizado?"></a>Onde pôr um helper personalizado?<a class="article-anchor" href="#Onde-por-um-helper-personalizado" aria-hidden="true"></a></h3><p>Coloque-o dentro de <code>themes/&lt;yourtheme&gt;/scripts</code></p>
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2018-03-06T02:53:20.067Z" itemprop="dateModified">Última Atualização: 2018-03-06</time>
+                <time class="article-footer-updated" datetime="2018-03-06T02:58:18.723Z" itemprop="dateModified">Última Atualização: 2018-03-06</time>
                 <a href="generator.html" class="article-footer-prev" title="Generator"><i class="fa fa-chevron-left"></i><span>Anterior</span></a><a href="migrator.html" class="article-footer-next" title="Migrator"><span>Próximo</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -165,7 +166,7 @@
             <div id="article-toc-inner">
               <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
               <strong class="sidebar-title">Conteúdo</strong>
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Resumo"><span class="toc-text">Resumo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Exemplo"><span class="toc-text">Exemplo</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Resumo"><span class="toc-text">Resumo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Exemplo"><span class="toc-text">Exemplo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#FAQ"><span class="toc-text">FAQ</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Onde-por-um-helper-personalizado"><span class="toc-text">Onde pôr um helper personalizado?</span></a></li></ol></li></ol>
               <a href="#" id="article-toc-top">Ir para o Topo</a>
             </div>
           </aside>
