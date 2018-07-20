@@ -55,7 +55,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="This documentation provides more detailed information about the API and will be particularly helpful for people who want to modify the Hexo source code or write new plugins. If you are interested in m">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-19T21:40:56.037Z">
+<meta property="og:updated_time" content="2018-07-20T14:43:55.159Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="API">
 <meta name="twitter:description" content="This documentation provides more detailed information about the API and will be particularly helpful for people who want to modify the Hexo source code or write new plugins. If you are interested in m">
@@ -163,6 +163,11 @@
 <td>Specify the path of the configuration file.</td>
 <td><code>_config.yml</code></td>
 </tr>
+<tr>
+<td><code>draft</code> / <code>drafts</code></td>
+<td>Enable to add drafts to the posts list.<br> example: when you use <code>hexo.locals.get(&#39;posts&#39;)</code></td>
+<td><code>render_drafts</code> of _config.yml </td>
+</tr>
 </tbody>
 </table>
 <h2 id="Load-Files" class="article-heading"><a href="#Load-Files" class="headerlink" title="Load Files"></a>Load Files<a class="article-anchor" href="#Load-Files" aria-hidden="true"></a></h2><p>Hexo provides two methods for loading files: <code>load</code> and <code>watch</code>. <code>load</code> is used for loading all files in the <code>source</code> folder as well as the theme data. <code>watch</code> does the same things <code>load</code> does, but will also start watching for file changes continuously.</p>
@@ -176,7 +181,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2018-07-19T21:40:56.037Z" itemprop="dateModified">Last updated: 2018-07-19</time>
+                <time class="article-footer-updated" datetime="2018-07-20T14:43:55.159Z" itemprop="dateModified">Last updated: 2018-07-20</time>
                 <a href="events.html" class="article-footer-next" title="Events"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
