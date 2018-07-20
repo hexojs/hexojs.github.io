@@ -55,10 +55,22 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Hexo provides a fast and easy deployment strategy. You only need one single command to deploy your site to your servers. $ hexo deploy Before your first deployment, you will have to modify some settin">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-20T14:48:33.956Z">
+<meta property="og:image" content="https://hexo.io/docs/deployment/sign_up.png">
+<meta property="og:image" content="https://hexo.io/docs/deployment/github_auth.png">
+<meta property="og:image" content="https://hexo.io/docs/deployment/create_new_site.png">
+<meta property="og:image" content="https://hexo.io/docs/deployment/auth_to_repo.png">
+<meta property="og:image" content="https://hexo.io/docs/deployment/github_auth_repo.png">
+<meta property="og:image" content="https://hexo.io/docs/deployment/link_repo.png">
+<meta property="og:image" content="https://hexo.io/docs/deployment/deployment_config.png">
+<meta property="og:image" content="https://hexo.io/docs/deployment/deploy_in_progress.png">
+<meta property="og:image" content="https://hexo.io/docs/deployment/finish_deployment.png">
+<meta property="og:image" content="https://hexo.io/docs/deployment/deploy_overview.png">
+<meta property="og:image" content="https://hexo.io/docs/deployment/update_subdomain.png">
+<meta property="og:updated_time" content="2018-07-20T22:01:17.599Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Deployment">
 <meta name="twitter:description" content="Hexo provides a fast and easy deployment strategy. You only need one single command to deploy your site to your servers. $ hexo deploy Before your first deployment, you will have to modify some settin">
+<meta name="twitter:image" content="https://hexo.io/docs/deployment/sign_up.png">
 <meta name="twitter:site" content="hexojs">
 <meta property="fb:admins" content="100000247608790">
   <!-- Google Analytics -->
@@ -184,6 +196,43 @@
 </tr>
 </tbody>
 </table>
+<h2 id="Netlify" class="article-heading"><a href="#Netlify" class="headerlink" title="Netlify"></a>Netlify<a class="article-anchor" href="#Netlify" aria-hidden="true"></a></h2><p><a href="https://www.netlify.com/" target="_blank" rel="noopener">Netlify</a> provides continuous deployment services, global CDN, ultra-fast DNS, atomic deploys, instant cache invalidation, automatic HTTPS, a browser-based interface, a CLI, and many other features for managing your Hexo website. </p>
+<p>Go to <a href="https://app.netlify.com/signup" target="_blank" rel="noopener">https://app.netlify.com/signup</a> and select your preferred signup method. This will likely be a hosted Git provider, although you also have the option to sign up with an email address.</p>
+<p>There are two different ways to deploy your sites on Netlify. The most common way is to use the web UI. The following examples use GitHub, but other git providers will follow a similar process.</p>
+<ol>
+<li>Create a Netlify account</li>
+</ol>
+<p><img src="deployment/sign_up.png" alt="step 1: sign up"></p>
+<p>Selecting GitHub will bring up an authorization modal for authentication.</p>
+<p><img src="deployment/github_auth.png" alt="step 2: GitHub authentication"></p>
+<ol start="2">
+<li>Create a new site with continuous deployment</li>
+</ol>
+<p>You’re now already a Netlify member and should be brought to your new dashboard. Select “New site from git.”</p>
+<p><img src="deployment/create_new_site.png" alt="step 3: Create a new site from git"></p>
+<p>Netlify will then start walking you through the steps necessary for continuous deployment. First, you’ll need to select your git provider again, but this time you are giving Netlify added permissions to your repositories.</p>
+<p><img src="deployment/auth_to_repo.png" alt="step 4: Select Git provider to give Netlify permissions to repositories"></p>
+<p>And then again with the GitHub authorization window:</p>
+<p><img src="deployment/github_auth_repo.png" alt="step 5: GitHub authentication for repositories"></p>
+<p>Select the repo you want to use for continuous deployment. If you have a large number of repositories, you can filter through them in real time using repo search:</p>
+<p><img src="deployment/link_repo.png" alt="step 6: Find repo"></p>
+<p>Once selected, you’ll be brought to a screen for basic setup. Here you can select the branch you wanted published, your build command, and your publish (i.e. deploy) directory. </p>
+<p><img src="deployment/deployment_config.png" alt="step 7: Deployment configurations"></p>
+<p>The publish directory should mirror that of what you’ve set in your site configuration, the default of which is “public”. </p>
+<ol start="3">
+<li>Build and Deploy Site</li>
+</ol>
+<p>Once you click on the “Deploy site” button, Netlify will start building and deploying your site.<br>You’ll be taken to the site dashboard. You should see some yellow text on the “Hero Card” indicating that your site is being deployed in progress.</p>
+<p><img src="deployment/deploy_in_progress.png" alt="step 8: Deploy in progress"></p>
+<p>Once the build is finished—this should only take a few seconds–you should now see an auto generated URL of your site in green. </p>
+<p><img src="deployment/finish_deployment.png" alt="step 9: Finish deployment"></p>
+<p>Under your site’s “Overview”, you’ll find the “Production Deploys” section and “Deploy Preview” section side by side. One of the most helpful features of Netlify is “Deploy Preview”. It allows you and your team to preview changes from a branch deploy before publishing your site.</p>
+<p><img src="deployment/deploy_overview.png" alt="step 10: Deploy preview"></p>
+<p>You can customize the subdomain URL under “Domain Settings” to make it look better before you add a domain. You can add or buy domain under <a href="https://app.netlify.com/account/dns" target="_blank" rel="noopener">https://app.netlify.com/account/dns</a>.</p>
+<p><img src="deployment/update_subdomain.png" alt="step 11: Customize subdomain"></p>
+<p>Now every time you push changes to your hosted git repository, Netlify will rebuild and redeploy your site automatically.</p>
+<p>Alternatively, you can use <a href="https://github.com/netlify/netlifyctl" target="_blank" rel="noopener">netlifyctl</a> to manage and deploy sites on Netlify without leaving your terminal.</p>
+<p>You can also add a <a href="https://www.netlify.com/docs/deploy-button/" target="_blank" rel="noopener">Deploy to Netlify Button</a> in your README.file to allow others to create a copy of your repository and be deployed to Netlify via one click.</p>
 <h2 id="Rsync" class="article-heading"><a href="#Rsync" class="headerlink" title="Rsync"></a>Rsync<a class="article-anchor" href="#Rsync" aria-hidden="true"></a></h2><p>Install <a href="https://github.com/hexojs/hexo-deployer-rsync" target="_blank" rel="noopener">hexo-deployer-rsync</a>.</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-rsync --save</span><br></pre></td></tr></table></figure>
 <p>Edit settings.</p>
@@ -370,7 +419,7 @@
 
               </div>
               <footer class="article-footer">
-                <time class="article-footer-updated" datetime="2018-07-20T14:48:33.956Z" itemprop="dateModified">Last updated: 2018-07-20</time>
+                <time class="article-footer-updated" datetime="2018-07-20T22:01:17.599Z" itemprop="dateModified">Last updated: 2018-07-20</time>
                 <a href="generating.html" class="article-footer-prev" title="Generating"><i class="fa fa-chevron-left"></i><span>Prev</span></a><a href="permalinks.html" class="article-footer-next" title="Permalinks"><span>Next</span><i class="fa fa-chevron-right"></i></a>
               </footer>
               
@@ -397,7 +446,7 @@
             <div id="article-toc-inner">
               <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
               <strong class="sidebar-title">Contents</strong>
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-text">Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Heroku"><span class="toc-text">Heroku</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rsync"><span class="toc-text">Rsync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OpenShift"><span class="toc-text">OpenShift</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#FTPSync"><span class="toc-text">FTPSync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SFTP"><span class="toc-text">SFTP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Other-Methods"><span class="toc-text">Other Methods</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-text">Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Heroku"><span class="toc-text">Heroku</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Netlify"><span class="toc-text">Netlify</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rsync"><span class="toc-text">Rsync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#OpenShift"><span class="toc-text">OpenShift</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#FTPSync"><span class="toc-text">FTPSync</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SFTP"><span class="toc-text">SFTP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Other-Methods"><span class="toc-text">Other Methods</span></a></li></ol>
               <a href="#" id="article-toc-top">Back to Top</a>
             </div>
           </aside>
